@@ -4,7 +4,7 @@
 
 ## §2 集合论基础
 
-**定理 2.8** (施罗德-伯恩斯坦定理). $|A|\le|B|$ 且 $|B|\le|A|$ 蕴含 $|A|=|B|$. (教材 §2)
+**定理 2.8** (施罗德-伯恩斯坦定理). $\left|A\right|\le\left|B\right|$ 且 $\left|B\right|\le\left|A\right|$ 蕴含 $\left|A\right|=\left|B\right|$. (教材 §2)
 
 **定理 2.13** (实数与自然数幂集等势). $\left|\mathbb R\right|=\left|\mathcal P\left(\mathbb N\right)\right|$. (教材 §2)
 
@@ -34,7 +34,7 @@
 
 **定义 3.9** (可分). 称拓扑空间 $X$ 是可分的, 若它有可数稠密子集. (题集 §1.1)
 
-**定义 3.10** (豪斯多夫 空间). 称 $X$ 是豪斯多夫的, 若任意一对不同点都有不相交的邻域. 此时极限是唯一的. (教材 §3)
+**定义 3.10** (豪斯多夫空间). 称 $X$ 是豪斯多夫的, 若任意一对不同点都有不相交的邻域. 此时极限是唯一的. (教材 §3)
 
 **定义 3.11** (乘积拓扑). 设 $X,Y$ 为拓扑空间. $X\times Y$ 上的乘积拓扑以形如 $U\times V$ 的集合为基, 其中 $U,V$ 分别是 $X,Y$ 中的开集. (教材 §3)
 
@@ -54,7 +54,7 @@
 
 **定义 3.20** (边界). $\partial A=\overline{A}-\operatorname{int}\left(A\right)$; $x\in\partial A$ 当且仅当 $x$ 的每个邻域同时交 $A$ 与 $X-A$. (教材 §3, p18)
 
-**定义 3.24** ($T_1$ 空间). 单点集皆闭; 豪斯多夫 ($T_2$) 蕴含 $T_1$. (教材 §3, p20)
+**定义 3.24** ($T_1$ 空间). 单点集皆闭; 豪斯多夫($T_2$) 蕴含 $T_1$. (教材 §3, p20)
 
 **定义 3.27** (余可数拓扑). 非空开集为可数集的补集. (题集 §1.4 C7)
 
@@ -268,7 +268,7 @@
 
 **定义 11.11** (悬垂). $SX=X\times\left[-1,1\right]/X\times\left\{-1\right\}\cup X\times\left\{1\right\}$ (两端各捏成一点); $S^n$ 的悬垂同胚 $S^{n+1}$. (题集 §5 Q10)
 
-**定义 11.12** (塌缩商 $X/\langle A\rangle$). 将闭 (或开) 子集 $A$ 整捏成一点所得商空间; $CX/\left\langle X\right\rangle\cong SX$. (题集 §5 Q11)
+**定义 11.12** (塌缩商 $X/\left\langle A\right\rangle$). 将闭 (或开) 子集 $A$ 整捏成一点所得商空间; $CX/\left\langle X\right\rangle\cong SX$. (题集 §5 Q11)
 
 **定义 11.13** ($n$-维环面). $T^n=\mathbb R^n/\mathbb Z^n\cong\left(S^1\right)^n$. (题集 §5 Q13)
 
