@@ -18,7 +18,7 @@
 
 > **定理 5.4** (闭子集紧)<br>若 $X$ 紧致, 则 $X$ 的任意闭子集 $A\subset X$ 也紧致. (教材 $\S5$)
 
-> **定理 5.5** (豪斯多夫中紧集闭)<br>若 $X$ 是 豪斯多夫 空间, 则 $X$ 中任意紧子集 $K\subset X$ 是闭的. (教材 $\S5$)
+> **定理 5.5** (豪斯多夫中紧集闭)<br>若 $X$ 是豪斯多夫空间, 则 $X$ 中任意紧子集 $K\subset X$ 是闭的. (教材 $\S5$)
 
 > **推论 5.6** (紧豪斯多夫间的连续双射)<br>紧豪斯多夫空间之间的连续双射是同胚. (教材 $\S5$)
 
@@ -80,7 +80,7 @@ $$
 
 $f$ 单: 由**定义 6.18** (等距映射), $f\left(x\right)=f\left(y\right)$ 蕴含 $d\left(x,y\right)=d\left(f\left(x\right),f\left(y\right)\right)=0$, 故 $x=y$.
 
-证 $f$ 满. 反证, 取 $a\notin f\left(X\right)$. $f\left(X\right)$ 是紧空间 $X$ 的连续像, 由**定理 5.1** (紧空间连续像紧), $f\left(X\right)$ 紧致; 度量空间是 豪斯多夫 的, 由**定理 5.5** (豪斯多夫中紧集闭), $f\left(X\right)$ 闭. 故 $\varepsilon=d\left(a,f\left(X\right)\right)>0$. 对 $n\neq m$, 由**定义 6.18** (等距映射) 及 $f$ 的迭代仍是等距,
+证 $f$ 满. 反证, 取 $a\notin f\left(X\right)$. $f\left(X\right)$ 是紧空间 $X$ 的连续像, 由**定理 5.1** (紧空间连续像紧), $f\left(X\right)$ 紧致; 度量空间是豪斯多夫的, 由**定理 5.5** (豪斯多夫中紧集闭), $f\left(X\right)$ 闭. 故 $\varepsilon=d\left(a,f\left(X\right)\right)>0$. 对 $n\neq m$, 由**定义 6.18** (等距映射) 及 $f$ 的迭代仍是等距,
 
 $$
 d\left(f^n\left(a\right),f^m\left(a\right)\right)=d\left(a,f^{\left|n-m\right|}\left(a\right)\right)\ge\varepsilon.
@@ -130,7 +130,7 @@ $$
 
 ### 习题六
 
-设 $X$ 是 豪斯多夫 空间. 证明: $X$ 局部紧 (即每点有紧邻域基) 当且仅当每点有一个紧邻域.
+设 $X$ 是豪斯多夫空间. 证明: $X$ 局部紧 (即每点有紧邻域基) 当且仅当每点有一个紧邻域.
 
 ### 解答 习题六
 

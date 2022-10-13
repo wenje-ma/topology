@@ -10,9 +10,9 @@
 
 > **定义 3.6** (闭包)<br>集合 $A\subset X$ 的闭包 $\overline A$ 就是包含 $A$ 的最小闭集. (教材 $\S3$)
 
-> **定义 3.10** (豪斯多夫 空间)<br>称 $X$ 是 豪斯多夫 的, 若任意一对不同点都有不相交的邻域. 此时极限是唯一的. (教材 $\S3$)
+> **定义 3.10** (豪斯多夫空间)<br>称 $X$ 是豪斯多夫的, 若任意一对不同点都有不相交的邻域. 此时极限是唯一的. (教材 $\S3$)
 
-> **定义 4.5** (路径连通)<br>任意 $x,y\in X$ 有连续路径 $f:[a,b]\to X$ 以 $x,y$ 为端点. (教材 $\S4$)
+> **定义 4.5** (路径连通)<br>任意 $x,y\in X$ 有连续路径 $f:\left[a,b\right]\to X$ 以 $x,y$ 为端点. (教材 $\S4$)
 
 > **定义 4.6** (凸集)<br>$K\subset\mathbb R^n$ 凸当且仅当 $x,y\in K$ 蕴含连线含于 $K$; 凸集必路径连通. (教材 $\S4$)
 
@@ -128,7 +128,7 @@ $$
 f\left(x_n\right)=\dfrac{n\,x_n-a}{n-1}.
 $$
 
-沿子列 $n_j\to\infty$, $x_{n_j}\to x$, 故 $\dfrac{n_j x_{n_j}-a}{n_j-1}\to x$, 即 $f\left(x_{n_j}\right)\to x$. 另一方面 $f$ 连续, 故 $f\left(x_{n_j}\right)\to f\left(x\right)$. 由**定义 3.10** (豪斯多夫 空间) 极限唯一, 得 $f\left(x\right)=x$. 即 $f$ 有不动点. $\blacksquare$
+沿子列 $n_j\to\infty$, $x_{n_j}\to x$, 故 $\dfrac{n_j x_{n_j}-a}{n_j-1}\to x$, 即 $f\left(x_{n_j}\right)\to x$. 另一方面 $f$ 连续, 故 $f\left(x_{n_j}\right)\to f\left(x\right)$. 由**定义 3.10** (豪斯多夫空间) 极限唯一, 得 $f\left(x\right)=x$. 即 $f$ 有不动点. $\blacksquare$
 
 ### 习题四
 

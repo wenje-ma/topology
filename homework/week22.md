@@ -128,7 +128,7 @@
 
 (3) 设 $F$ 非空有限, 取 $x\in F$. 任何 $S\left(a,x\right)$ ($a\neq0$) 都是无穷集, 不可能含于 $F$. 由第 1 小题, $F$ 不满足开集条件, 故不是开集.
 
-(4) 若 $x\in\mathbb Z\setminus\left\{-1,1\right\}$, 则 $|x|>1$, $x$ 有质因子 $p$, 即 $x=pn\in S\left(p,0\right)$. 反之 $S\left(p,0\right)=\left\{pn\right\}$ 对 $p\ge2$ 不含 $\pm1$, 故 $S\left(p,0\right)\subset\mathbb Z\setminus\left\{-1,1\right\}$. 两边相等.
+(4) 若 $x\in\mathbb Z\setminus\left\{-1,1\right\}$, 则 $\left|x\right|>1$, $x$ 有质因子 $p$, 即 $x=pn\in S\left(p,0\right)$. 反之 $S\left(p,0\right)=\left\{pn\right\}$ 对 $p\ge2$ 不含 $\pm1$, 故 $S\left(p,0\right)\subset\mathbb Z\setminus\left\{-1,1\right\}$. 两边相等.
 
 (5) 反设质数有限: $P=\left\{p_1,\dots,p_r\right\}$. 由第 4 小题, $\mathbb Z\setminus\left\{-1,1\right\}=\bigcup_{i=1}^r S\left(p_i,0\right)$. 由第 2 小题每个 $S\left(p_i,0\right)$ 既开又闭, 有限个既开又闭集之并既开又闭. 故补集 $\left\{-1,1\right\}$ 既开又闭, 特别它是开集, 与第 3 小题 (非空有限集不能开) 矛盾. 故质数无穷多. $\blacksquare$
 

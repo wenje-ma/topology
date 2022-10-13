@@ -10,7 +10,7 @@
 
 > **定义 3.8** (稠密)<br>我们称 $A\subset X$ 在 $X$ 中稠密, 若 $\overline A=X$. (教材 $\S3$)
 
-> **定义 3.10** (豪斯多夫 空间)<br>称 $X$ 是 豪斯多夫 的, 若任意一对不同点都有不相交的邻域. 此时极限是唯一的. (教材 $\S3$)
+> **定义 3.10** (豪斯多夫空间)<br>称 $X$ 是豪斯多夫的, 若任意一对不同点都有不相交的邻域. 此时极限是唯一的. (教材 $\S3$)
 
 > **定义 3.14** (初始拓扑)<br>设 $f:X\to Y$ 是函数, 且 $Y$ 赋予拓扑 $\mathcal O$. 称 $\mathcal O_f=\left\{f^{-1}\left(O\right):O\in\mathcal O\right\}$ 为 $X$ 上由 $f$ 诱导的**初始拓扑**; 它是使 $f$ 连续的最粗拓扑. (题集 $\S1.1$)
 
@@ -142,15 +142,15 @@ $$
 
 ### 解答 习题八
 
-任取 $x,y\in A$ 且 $x\neq y$. 由**定义 3.10** (豪斯多夫 空间), 因 $X$ 是豪斯多夫 的, 存在 $X$ 中不相交的开集 $U,V$ 使 $x\in U$, $y\in V$. 由**定义 3.19** (子空间拓扑), $U\cap A$ 与 $V\cap A$ 都是 $A$ 中开集, 且 $x\in U\cap A$, $y\in V\cap A$. 又因 $U\cap V=\emptyset$, 故 $\left(U\cap A\right)\cap\left(V\cap A\right)=\emptyset$. 由**定义 3.10** (豪斯多夫 空间), $A$ 中任意一对不同点都有不相交的邻域, 故 $A$ 是 豪斯多夫 空间. $\blacksquare$
+任取 $x,y\in A$ 且 $x\neq y$. 由**定义 3.10** (豪斯多夫空间), 因 $X$ 是豪斯多夫的, 存在 $X$ 中不相交的开集 $U,V$ 使 $x\in U$, $y\in V$. 由**定义 3.19** (子空间拓扑), $U\cap A$ 与 $V\cap A$ 都是 $A$ 中开集, 且 $x\in U\cap A$, $y\in V\cap A$. 又因 $U\cap V=\emptyset$, 故 $\left(U\cap A\right)\cap\left(V\cap A\right)=\emptyset$. 由**定义 3.10** (豪斯多夫空间), $A$ 中任意一对不同点都有不相交的邻域, 故 $A$ 是豪斯多夫空间. $\blacksquare$
 
 ### 习题九
 
-构造例子: 子空间 $A\subset Y$ 是 豪斯多夫 的, 但 $A$ 中两点在 $Y$ 中没有不相交的邻域. 可考虑 $Y=X\cup\left\{\omega\right\}$, 其中 $\omega$ 是额外一点, $Y$ 的任一非空开集形如 $O\cup\left\{\omega\right\}$, 其中 $O$ 是 $X$ 中的开集.
+构造例子: 子空间 $A\subset Y$ 是豪斯多夫的, 但 $A$ 中两点在 $Y$ 中没有不相交的邻域. 可考虑 $Y=X\cup\left\{\omega\right\}$, 其中 $\omega$ 是额外一点, $Y$ 的任一非空开集形如 $O\cup\left\{\omega\right\}$, 其中 $O$ 是 $X$ 中的开集.
 
 ### 解答 习题九
 
-取 $X=\mathbb R$ 装备通常拓扑, 由**定义 3.10** (豪斯多夫 空间) 它是 豪斯多夫 的. 令 $Y=X\cup\left\{\omega\right\}$, 规定 $Y$ 的开集为 $\emptyset$ 与一切形如 $O\cup\left\{\omega\right\}$ 的集合, 其中 $O$ 取遍 $X$ 中开集. 验证这是 $Y$ 上的拓扑: $\emptyset$ 开; 取 $O=X$ 得 $Y=X\cup\left\{\omega\right\}$ 开; 任意并
+取 $X=\mathbb R$ 装备通常拓扑, 由**定义 3.10** (豪斯多夫空间) 它是豪斯多夫的. 令 $Y=X\cup\left\{\omega\right\}$, 规定 $Y$ 的开集为 $\emptyset$ 与一切形如 $O\cup\left\{\omega\right\}$ 的集合, 其中 $O$ 取遍 $X$ 中开集. 验证这是 $Y$ 上的拓扑: $\emptyset$ 开; 取 $O=X$ 得 $Y=X\cup\left\{\omega\right\}$ 开; 任意并
 
 $$
 \bigcup_i\left(O_i\cup\left\{\omega\right\}\right)=\left(\bigcup_iO_i\right)\cup\left\{\omega\right\},
@@ -164,6 +164,6 @@ $$
 
 同理由**定义 3.1** (拓扑空间) 是 $Y$ 中开集. 故这确为 $Y$ 上的拓扑.
 
-取 $A=X$ 作为 $Y$ 的子空间. 由**定义 3.19** (子空间拓扑), $A$ 中开集为 $\left(O\cup\left\{\omega\right\}\right)\cap A=O$, 即 $X$ 的通常开集, 故 $A$ 上的拓扑就是原来的通常拓扑, 由**定义 3.10** (豪斯多夫 空间) $A$ 是 豪斯多夫 的.
+取 $A=X$ 作为 $Y$ 的子空间. 由**定义 3.19** (子空间拓扑), $A$ 中开集为 $\left(O\cup\left\{\omega\right\}\right)\cap A=O$, 即 $X$ 的通常开集, 故 $A$ 上的拓扑就是原来的通常拓扑, 由**定义 3.10** (豪斯多夫空间) $A$ 是豪斯多夫的.
 
 另一方面, 任取 $x,y\in A$ 且 $x\neq y$. $Y$ 中含 $x$ 的开集必非空, 故形如 $O\cup\left\{\omega\right\}$ 且 $x\in O$, 因而含 $\omega$; $Y$ 中含 $y$ 的开集同理形如 $O'\cup\left\{\omega\right\}$ 且 $y\in O'$, 亦含 $\omega$. 任何 $x$ 的邻域含某含 $x$ 的开集, 任何 $y$ 的邻域含某含 $y$ 的开集, 因而两邻域都含 $\omega$, 必相交. 故 $A$ 中任两点在 $Y$ 中没有不相交的邻域. $\blacksquare$

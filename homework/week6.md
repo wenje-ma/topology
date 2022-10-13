@@ -12,7 +12,7 @@
 
 > **定义 3.9** (可分)<br>称拓扑空间 $X$ 是可分的, 若它有可数稠密子集. (题集 $\S1.1$)
 
-> **定义 3.10** (豪斯多夫 空间)<br>称 $X$ 是 豪斯多夫 的, 若任意一对不同点都有不相交的邻域. (教材 $\S3$)
+> **定义 3.10** (豪斯多夫空间)<br>称 $X$ 是豪斯多夫的, 若任意一对不同点都有不相交的邻域. (教材 $\S3$)
 
 > **定义 3.15** (拓扑基)<br>$\mathcal B\subset\mathcal P\left(X\right)$ 满足 $X=\bigcup\mathcal B$ 且 $B_1\cap B_2$ 含某 $B_3$, 则以 $\mathcal B$ 中元素之并为开集生成最粗拓扑. (教材 $\S3$)
 
@@ -96,9 +96,9 @@ $$
 
 豪斯多夫条件.
 
-(1) 证明度量空间总是 豪斯多夫 的;
+(1) 证明度量空间总是豪斯多夫的;
 
-(2) 证明 $\mathbb A^n\left(\mathbb R\right)$ (或 $\mathbb R^n$) 的每个扎里斯基开集在通常拓扑下既开又稠密; 证明 $\mathbb A^n\left(\mathbb R\right)$ 的扎里斯基拓扑对任意 $n>0$ 都不是 豪斯多夫 的.
+(2) 证明 $\mathbb A^n\left(\mathbb R\right)$ (或 $\mathbb R^n$) 的每个扎里斯基开集在通常拓扑下既开又稠密; 证明 $\mathbb A^n\left(\mathbb R\right)$ 的扎里斯基拓扑对任意 $n>0$ 都不是豪斯多夫的.
 
 ### 解答 习题三
 
@@ -108,19 +108,19 @@ $$
 d\left(x,y\right)\le d\left(x,z\right)+d\left(z,y\right)<2r=\frac23 d\left(x,y\right),
 $$
 
-矛盾. 故 $B\left(x,r\right)\cap B\left(y,r\right)=\emptyset$. 由**定义 3.10** (豪斯多夫 空间), 度量空间是 豪斯多夫 的.
+矛盾. 故 $B\left(x,r\right)\cap B\left(y,r\right)=\emptyset$. 由**定义 3.10** (豪斯多夫空间), 度量空间是豪斯多夫的.
 
 (2) 由**定义 3.28** (扎里斯基拓扑), 扎里斯基闭集是若干多项式公共零点集. 非零多项式不能在任一通常开集上恒为零, 故扎里斯基闭集在通常拓扑下内部为空. 于是其补集, 即扎里斯基开集, 在通常拓扑下稠密 (**定义 3.8** (稠密)).
 
-再证非 豪斯多夫. 任取 $x\neq y$. 任一非空扎里斯基开集都稠密, 故任意两个非空扎里斯基开集相交. 因而不存在不相交的两个扎里斯基开集分别含 $x$ 与 $y$, 由**定义 3.10** (豪斯多夫 空间), 扎里斯基拓扑不是 豪斯多夫 的. $\blacksquare$
+再证非豪斯多夫. 任取 $x\neq y$. 任一非空扎里斯基开集都稠密, 故任意两个非空扎里斯基开集相交. 因而不存在不相交的两个扎里斯基开集分别含 $x$ 与 $y$, 由**定义 3.10** (豪斯多夫空间), 扎里斯基拓扑不是豪斯多夫的. $\blacksquare$
 
 ### 习题四
 
-正规空间. 称拓扑空间 $X$ 是正规的, 若对任意含于开集 $V$ 的闭集 $F$, 存在开集 $U$ 使 $F\subset U\subset\overline U\subset V$. 证明这等价于说 $X$ 是 豪斯多夫 的, 且任意两不相交闭集有不相交邻域 (即**定义 7.1** (正规空间)). 证明度量空间正规 (可先证 $f:x\mapsto d\left(x,F\right)$ 当 $F$ 闭时连续).
+正规空间. 称拓扑空间 $X$ 是正规的, 若对任意含于开集 $V$ 的闭集 $F$, 存在开集 $U$ 使 $F\subset U\subset\overline U\subset V$. 证明这等价于说 $X$ 是豪斯多夫的, 且任意两不相交闭集有不相交邻域 (即**定义 7.1** (正规空间)). 证明度量空间正规 (可先证 $f:x\mapsto d\left(x,F\right)$ 当 $F$ 闭时连续).
 
 ### 解答 习题四
 
-先证两种定义等价. 设 $F$ 闭, $V$ 开, $F\subset V$. 若 $X$ 满足**定义 7.1** (正规空间), 对不相交闭集 $F$ 与 $X-V$ 取不相交开集 $U\supset F$ 与 $W\supset X-V$. 则 $\overline U\subset X-W\subset V$, 故 $F\subset U\subset\overline U\subset V$. 反过来, 设任意闭 $F\subset$ 开 $V$ 有 $U$ 使 $F\subset U\subset\overline U\subset V$. 对不相交闭集 $F,F'$, 取 $V=X-F'$ (开). 由假设存在 $U\supset F$ 使 $\overline U\subset X-F'$. 令 $W=X-\overline U$ (开, 由**定义 3.6** (闭包) 与**定义 3.2** (闭集)), 则 $F'\subset W$ 且 $U\cap W=\emptyset$. 故 $F,F'$ 有不相交邻域. 特别地单点闭 (取 $F=\left\{x\right\}$, 若 $X$ 满足条件则单点为闭), 即 $T_1$, 故为 豪斯多夫 的.
+先证两种定义等价. 设 $F$ 闭, $V$ 开, $F\subset V$. 若 $X$ 满足**定义 7.1** (正规空间), 对不相交闭集 $F$ 与 $X-V$ 取不相交开集 $U\supset F$ 与 $W\supset X-V$. 则 $\overline U\subset X-W\subset V$, 故 $F\subset U\subset\overline U\subset V$. 反过来, 设任意闭 $F\subset$ 开 $V$ 有 $U$ 使 $F\subset U\subset\overline U\subset V$. 对不相交闭集 $F,F'$, 取 $V=X-F'$ (开). 由假设存在 $U\supset F$ 使 $\overline U\subset X-F'$. 令 $W=X-\overline U$ (开, 由**定义 3.6** (闭包) 与**定义 3.2** (闭集)), 则 $F'\subset W$ 且 $U\cap W=\emptyset$. 故 $F,F'$ 有不相交邻域. 特别地单点闭 (取 $F=\left\{x\right\}$, 若 $X$ 满足条件则单点为闭), 即 $T_1$, 故为豪斯多夫的.
 
 再证度量空间正规. 设 $F$ 闭. 由**定义 6.15** (点到集合的距离), $d\left(x,F\right)=\inf_{a\in F}d\left(x,a\right)$. 由**定义 6.1** (度量空间) 的三角不等式,
 
@@ -151,13 +151,13 @@ $$
 \mathcal B\left(0^{\pm}\right)=\left\{\left\{0^{\pm}\right\}\cup\left(0,\frac1n\right):n\in\mathbb Z_{>0}\right\}.
 $$
 
-证明 $\mathcal B=\bigcup_{x\in X}\mathcal B\left(x\right)$ 是某拓扑的基; 证明该拓扑不是 豪斯多夫 的; 证明 $0^{+}$ 没有由闭邻域组成的基本邻域系.
+证明 $\mathcal B=\bigcup_{x\in X}\mathcal B\left(x\right)$ 是某拓扑的基; 证明该拓扑不是豪斯多夫的; 证明 $0^{+}$ 没有由闭邻域组成的基本邻域系.
 
 ### 解答 习题五
 
 先验基条件. 对 $x\in\left(0,1\right]$, 两个形如 $\left(x-\frac1n,x+\frac1n\right)\cap\left(0,1\right]$ 的集之交仍含一个同形集; 对 $0^{\pm}$, $\left\{0^{\pm}\right\}\cup\left(0,\frac1n\right)$ 之交为 $\left\{0^{\pm}\right\}\cup\left(0,1/\max\left(n,m\right)\right)$. 全体覆盖 $X$. 由**定义 3.15** (拓扑基), $\mathcal B$ 是某拓扑的基.
 
-**非 豪斯多夫**: 任取 $0^{-}$ 的邻域, 它含某 $\left\{0^{-}\right\}\cup\left(0,\frac1n\right)$; $0^{+}$ 的邻域含某 $\left\{0^{+}\right\}\cup\left(0,\frac1m\right)$. 二者都含 $\left(0,1/\max\left(n,m\right)\right)$, 故相交. 不存在不相交开集分别含 $0^{-}$ 与 $0^{+}$, 由**定义 3.10** (豪斯多夫 空间), 该拓扑非 豪斯多夫.
+**非豪斯多夫**: 任取 $0^{-}$ 的邻域, 它含某 $\left\{0^{-}\right\}\cup\left(0,\frac1n\right)$; $0^{+}$ 的邻域含某 $\left\{0^{+}\right\}\cup\left(0,\frac1m\right)$. 二者都含 $\left(0,1/\max\left(n,m\right)\right)$, 故相交. 不存在不相交开集分别含 $0^{-}$ 与 $0^{+}$, 由**定义 3.10** (豪斯多夫空间), 该拓扑非豪斯多夫.
 
 **$0^{+}$ 无闭邻域基本系**: 设 $C$ 是 $0^{+}$ 的任一闭邻域. 它必含某基本开邻域 $\left\{0^{+}\right\}\cup\left(0,\frac1m\right)$, 特别含区间 $\left(0,\frac1m\right)$. 点 $0^{-}$ 的每个邻域含某 $\left\{0^{-}\right\}\cup\left(0,\frac1n\right)$, 与 $\left(0,\frac1m\right)$ 相交, 故 $0^{-}\in\overline{\left(0,\frac1m\right)}$ (**定义 3.6** (闭包)). $C$ 闭且含 $\left(0,\frac1m\right)$, 故 $C$ 含其闭包, 从而 $0^{-}\in C$. 于是 $0^{+}$ 的任何闭邻域都含 $0^{-}$, 不可能含于开集 $U=\left\{0^{+}\right\}\cup\left(0,1\right)$ (它不含 $0^{-}$). 由**定义 3.30** (基本邻域系), $0^{+}$ 没有由闭邻域组成的基本邻域系. $\blacksquare$
 
@@ -167,9 +167,9 @@ $$
 
 ### 解答 习题六
 
-$(\Rightarrow)$ 若 $f:Z\to Y$ 连续, 由**定义 3.19** (子空间拓扑), 含映射 $\iota:Y\to X$ 连续. 由**定理 3.1** (复合连续), $\iota\circ f:Z\to X$ 连续.
+$\left(\Rightarrow\right)$ 若 $f:Z\to Y$ 连续, 由**定义 3.19** (子空间拓扑), 含映射 $\iota:Y\to X$ 连续. 由**定理 3.1** (复合连续), $\iota\circ f:Z\to X$ 连续.
 
-$(\Leftarrow)$ 设 $\iota\circ f:Z\to X$ 连续. 任取 $Y$ 中开集 $O$. 由**定义 3.19** (子空间拓扑), $O=Y\cap U$, 其中 $U$ 是 $X$ 中开集. 于是
+$\left(\Leftarrow\right)$ 设 $\iota\circ f:Z\to X$ 连续. 任取 $Y$ 中开集 $O$. 由**定义 3.19** (子空间拓扑), $O=Y\cap U$, 其中 $U$ 是 $X$ 中开集. 于是
 
 $$
 f^{-1}\left(O\right)=f^{-1}\left(Y\cap U\right)=f^{-1}\left(U\right)=\left(\iota\circ f\right)^{-1}\left(U\right),

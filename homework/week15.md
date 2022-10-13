@@ -10,7 +10,7 @@
 
 > **定义 3.8** (稠密)<br>称 $A\subset X$ 在 $X$ 中稠密, 若 $\overline A=X$. (教材 $\S3$)
 
-> **定义 3.10** (豪斯多夫 空间)<br>称 $X$ 是 豪斯多夫 的, 若任意一对不同点都有不相交的邻域. (教材 $\S3$)
+> **定义 3.10** (豪斯多夫空间)<br>称 $X$ 是豪斯多夫的, 若任意一对不同点都有不相交的邻域. (教材 $\S3$)
 
 > **定义 3.11** (乘积拓扑)<br>$X\times Y$ 上的乘积拓扑以形如 $U\times V$ 的集合为基, 其中 $U,V$ 分别是 $X,Y$ 中的开集. (教材 $\S3$)
 
@@ -166,7 +166,7 @@ $$
 
 包含 $\subset$: 若 $z$ 使 $d'\left(\left[z\right],\left[x\right]\right)<\varepsilon$, 即 $d\left(z,x\right)<\varepsilon$, 则 $z\in B_d\left(x,\varepsilon\right)$. 包含 $\supset$: 若 $z\in B_d\left(x,\varepsilon\right)$, 则 $d'\left(\left[z\right],\left[x\right]\right)=d\left(z,x\right)<\varepsilon$. 由**定义 11.1** (商拓扑), $B_{d'}\left(\left[x\right],\varepsilon\right)$ 是商开集, 故度量拓扑粗于商拓扑. 反之, 若 $U$ 是商开集, 则 $\pi^{-1}\left(U\right)$ 是 $d$-开集, 从而是若干 $d$-球之并, 其像 $U=\pi\left(\pi^{-1}\left(U\right)\right)$ 是若干 $d'$-球之并, 故 $U$ 是度量开集. 二者一致.
 
-**泛分解**: 设 $F$ 豪斯多夫, $f:X\to F$ 连续. 先证 $f$ 在等价类上取常值. 若 $x\sim x'$, 即 $d\left(x,x'\right)=0$, 则 $x$ 与 $x'$ 在 $X$ 中无法用开集分离: 对任意 $\varepsilon>0$, $B_d\left(x,\varepsilon\right)=B_d\left(x',\varepsilon\right)$. 若 $f\left(x\right)\neq f\left(x'\right)$, 由**定义 3.10** (豪斯多夫 空间) 存在不相交开邻域 $V\ni f\left(x\right)$, $W\ni f\left(x'\right)$. 由**定义 3.3** (连续映射), $f^{-1}\left(V\right)$ 是 $x$ 的开邻域, 从而含 $x'$, 故 $f\left(x'\right)\in V$, 与 $V\cap W=\emptyset$ 及 $f\left(x'\right)\in W$ 矛盾. 故 $f\left(x\right)=f\left(x'\right)$.
+**泛分解**: 设 $F$ 豪斯多夫, $f:X\to F$ 连续. 先证 $f$ 在等价类上取常值. 若 $x\sim x'$, 即 $d\left(x,x'\right)=0$, 则 $x$ 与 $x'$ 在 $X$ 中无法用开集分离: 对任意 $\varepsilon>0$, $B_d\left(x,\varepsilon\right)=B_d\left(x',\varepsilon\right)$. 若 $f\left(x\right)\neq f\left(x'\right)$, 由**定义 3.10** (豪斯多夫空间) 存在不相交开邻域 $V\ni f\left(x\right)$, $W\ni f\left(x'\right)$. 由**定义 3.3** (连续映射), $f^{-1}\left(V\right)$ 是 $x$ 的开邻域, 从而含 $x'$, 故 $f\left(x'\right)\in V$, 与 $V\cap W=\emptyset$ 及 $f\left(x'\right)\in W$ 矛盾. 故 $f\left(x\right)=f\left(x'\right)$.
 
 于是可定义 $f'\left(\left[x\right]\right)=f\left(x\right)$, 适定. 由**定义 11.2** (商映射), 为证 $f'$ 连续, 只需对任意开集 $O\subset F$, $\left(f'\right)^{-1}\left(O\right)$ 商开, 即 $\pi^{-1}\left(\left(f'\right)^{-1}\left(O\right)\right)=f^{-1}\left(O\right)$ 在 $X$ 中开; 这由 $f$ 连续保证. 故 $f=f'\circ\pi$. $\blacksquare$
 
@@ -204,7 +204,7 @@ $$
 
 **有理斜率**: 设 $\alpha=p/q$, $p,q\in\mathbb Z$, $\gcd\left(p,q\right)=1$. 映射 $g:\mathbb R/q\mathbb Z\to T^2$, $g\left(t\right)=\pi\left(t,\alpha t\right)$. 它良定义且连续. 它是单射: 若 $\pi\left(t,\alpha t\right)=\pi\left(t',\alpha t'\right)$, 则 $t-t'\in\mathbb Z$ 且 $p\left(t-t'\right)/q\in\mathbb Z$, 即 $q\mid p\left(t-t'\right)$; 由 $\gcd\left(p,q\right)=1$, $q\mid t-t'$, 即在 $\mathbb R/q\mathbb Z$ 中相等. $\mathbb R/q\mathbb Z$ 是紧圆 (同胚于 $S^1$), $T^2$ 是豪斯多夫的 (乘积空间 $S^1\times S^1$ 豪斯多夫). 由**推论 5.6** (紧豪斯多夫间的连续双射), $g$ 是同胚. 故 $\pi\left(D\right)=g\left(\mathbb R/q\mathbb Z\right)$ 同胚于圆.
 
-**无理斜率**: 设 $\alpha\notin\mathbb Q$. 先证 $\pi\left(D\right)$ 在 $T^2$ 中稠密. 由**定义 3.8** (稠密), 只需证其闭包为全空间. 注意 $\pi\left(D\right)$ 是 $T^2$ 的子群, 且包含循环子群 $H=\left\{\pi\left(n,n\alpha\right):n\in\mathbb Z\right\}$. 由无理数的狄利克雷逼近, 对任意 $\varepsilon>0$, 存在非零整数 $n$ 使 $\left\|n\alpha\right\|<\varepsilon$ ($\|\cdot\|$ 表示到最近整数距离). 于是 $H$ 中含一个离 $\left(0,0\right)$ 极近的非零点, 其整数倍数在 $T^2$ 中环绕出稠密的一维子群; 故 $H$ 在 $T^2$ 中稠密. 因 $\pi\left(D\right)\supset H$, $\pi\left(D\right)$ 在 $T^2$ 中稠密.
+**无理斜率**: 设 $\alpha\notin\mathbb Q$. 先证 $\pi\left(D\right)$ 在 $T^2$ 中稠密. 由**定义 3.8** (稠密), 只需证其闭包为全空间. 注意 $\pi\left(D\right)$ 是 $T^2$ 的子群, 且包含循环子群 $H=\left\{\pi\left(n,n\alpha\right):n\in\mathbb Z\right\}$. 由无理数的狄利克雷逼近, 对任意 $\varepsilon>0$, 存在非零整数 $n$ 使 $\left\|n\alpha\right\|<\varepsilon$ ($\left\|\cdot\right\|$ 表示到最近整数距离). 于是 $H$ 中含一个离 $\left(0,0\right)$ 极近的非零点, 其整数倍数在 $T^2$ 中环绕出稠密的一维子群; 故 $H$ 在 $T^2$ 中稠密. 因 $\pi\left(D\right)\supset H$, $\pi\left(D\right)$ 在 $T^2$ 中稠密.
 
 $\pi|_D:D\to\pi\left(D\right)$ 连续 (商映射限制) 且为双射: 若 $\pi\left(t,\alpha t\right)=\pi\left(t',\alpha t'\right)$, 则 $t-t'\in\mathbb Z$ 且 $\alpha\left(t-t'\right)\in\mathbb Z$, 由 $\alpha$ 无理必有 $t-t'=0$. 但它不是同胚: $D$ 与 $\mathbb R$ 同胚, 不紧, 而 $\pi\left(D\right)$ 在 $T^2$ 中稠密 (因 $T^2$ 紧, $\pi\left(D\right)$ 的闭包紧); 若它同胚于 $D\cong\mathbb R$, 则它不闭, 但上面已证它稠密, 不影响连续性, 关键是开映射性失效: 取 $D$ 中一小段, 其像在 $\pi\left(D\right)$ 中并不总是开的. $\blacksquare$
 
@@ -224,7 +224,7 @@ $$
 \varphi:T^2\to S^1,\quad \varphi\left(u,v\right)=qu-pv\pmod 1.
 $$
 
-$\varphi$ 连续, 其核恰为 $H$ (即 $\varphi\left(u,v\right)=0\Leftrightarrow\left(u,v\right)\in H$). 由商空间泛性质, $\varphi$ 诱导连续双射 $\overline\varphi:T^2/H\to S^1$. $T^2/H$ 紧 ($T^2$ 紧, 商连续像紧), $S^1$ 豪斯多夫. 由**推论 5.6** (紧豪斯多夫间的连续双射), $\overline\varphi$ 是同胚. 故 $T^2/H$ 同胚于圆, 且圆豪斯多夫, 由**定义 3.10** (豪斯多夫 空间) 商空间豪斯多夫.
+$\varphi$ 连续, 其核恰为 $H$ (即 $\varphi\left(u,v\right)=0\Leftrightarrow\left(u,v\right)\in H$). 由商空间泛性质, $\varphi$ 诱导连续双射 $\overline\varphi:T^2/H\to S^1$. $T^2/H$ 紧 ($T^2$ 紧, 商连续像紧), $S^1$ 豪斯多夫. 由**推论 5.6** (紧豪斯多夫间的连续双射), $\overline\varphi$ 是同胚. 故 $T^2/H$ 同胚于圆, 且圆豪斯多夫, 由**定义 3.10** (豪斯多夫空间) 商空间豪斯多夫.
 
 **无理斜率**: 由习题七, $H$ 在 $T^2$ 中稠密. 商拓扑下, 由**定义 11.1** (商拓扑), 开集 $U\subset T^2/H$ 对应于 $T^2$ 中的 $H$-饱和开集. 若 $U$ 非空, 取饱和开集 $V\subset T^2$, $V\neq\emptyset$. 因 $H$ 稠密, $V+H=T^2$; 而 $V$ 已饱和, $V+H=V$, 故 $V=T^2$, 即 $U=T^2/H$. 故仅有的开集是 $\emptyset$ 与全空间, 即平凡拓扑. 此时商空间不豪斯多夫 (除非单点), 与有理情形对照. $\blacksquare$
 

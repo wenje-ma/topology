@@ -4,11 +4,11 @@
 
 > **定义 3.2** (闭集)<br>集合 $F$ 称为闭的, 若其补集 $X-F$ 是开的. (教材 $\S3$)
 
-> **定义 3.10** (豪斯多夫 空间)<br>称 $X$ 是 豪斯多夫 的, 若任意一对不同点都有不相交的邻域. (教材 $\S3$)
+> **定义 3.10** (豪斯多夫空间)<br>称 $X$ 是豪斯多夫的, 若任意一对不同点都有不相交的邻域. (教材 $\S3$)
 
 > **定义 3.15** (拓扑基)<br>$\mathcal B\subset\mathcal P\left(X\right)$ 满足 $X=\bigcup\mathcal B$ 且 $B_1\cap B_2$ 含某 $B_3$, 则以 $\mathcal B$ 中元素之并为开集生成最粗拓扑. (教材 $\S3$)
 
-> **定义 3.24** ($T_1$ 空间)<br>单点集皆闭; 豪斯多夫 空间必为 $T_1$ 空间. (教材 $\S3$)
+> **定义 3.24** ($T_1$ 空间)<br>单点集皆闭; 豪斯多夫空间必为 $T_1$ 空间. (教材 $\S3$)
 
 > **定义 4.1** (连通空间)<br>$X$ 不能写成两个非空不相交开集之并. (教材 $\S4$)
 
@@ -122,15 +122,15 @@ $$
 
 考察上述拓扑的拓扑性质.
 
-(1) 证明弗斯滕伯格拓扑是 豪斯多夫 的且正则; 它可度量化但不可完备度量化, 实际上它与带通常子空间拓扑的有理数集 $\mathbb Q$ 同胚;
+(1) 证明弗斯滕伯格拓扑是豪斯多夫的且正则; 它可度量化但不可完备度量化, 实际上它与带通常子空间拓扑的有理数集 $\mathbb Q$ 同胚;
 
-(2) 证明戈洛姆拓扑与基尔希拓扑是 豪斯多夫 的但不正则;
+(2) 证明戈洛姆拓扑与基尔希拓扑是豪斯多夫的但不正则;
 
 (3) 证明弗斯滕伯格拓扑完全不连通, 戈洛姆拓扑连通但不局部连通, 基尔希拓扑既连通又局部连通.
 
 ### 解答 习题三
 
-(1) **豪斯多夫**: 取 $x\neq y$. 选非零 $a$ 使 $a>\left|x-y\right|$. 若 $S\left(a,x\right)\cap S\left(a,y\right)\neq\emptyset$, 则 $x+an=y+am$, 即 $a\left(n-m\right)=y-x$, 与 $a>\left|x-y\right|$ 矛盾. 故 $S\left(a,x\right)$ 与 $S\left(a,y\right)$ 不相交. 由**定义 3.10** (豪斯多夫 空间), 弗斯滕伯格拓扑是 豪斯多夫 的. 由**定义 3.24** ($T_1$ 空间), 单点集皆闭.
+(1) **豪斯多夫**: 取 $x\neq y$. 选非零 $a$ 使 $a>\left|x-y\right|$. 若 $S\left(a,x\right)\cap S\left(a,y\right)\neq\emptyset$, 则 $x+an=y+am$, 即 $a\left(n-m\right)=y-x$, 与 $a>\left|x-y\right|$ 矛盾. 故 $S\left(a,x\right)$ 与 $S\left(a,y\right)$ 不相交. 由**定义 3.10** (豪斯多夫空间), 弗斯滕伯格拓扑是豪斯多夫的. 由**定义 3.24** ($T_1$ 空间), 单点集皆闭.
 
    **正则**: 设 $A$ 闭, $x\notin A$. 则 $\mathbb Z-A$ 是开集且含 $x$, 由习题一第 1 小题存在 $a\neq0$ 使 $S\left(a,x\right)\subset\mathbb Z-A$, 即 $S\left(a,x\right)\cap A=\emptyset$. 由习题一第 4 小题 $S\left(a,x\right)$ 既开又闭 (**定义 4.2** (既开又闭集)), 且 $A\subset\mathbb Z-S\left(a,x\right)$, 后者开. 故 $x$ 与 $A$ 有不相交开邻域, 由**定义 7.2** (正则空间) 弗斯滕伯格拓扑正则.
 
@@ -138,7 +138,7 @@ $$
 
    **不可完备度量化**: 若它可完备度量化, 则同胚于它的 $\mathbb Q$ 也可完备度量化. 但 $\mathbb Q=\bigcup_{q\in\mathbb Q}\left\{q\right\}$ 是可数个无处稠密单点集之并, 与**定理 6.13** (贝尔纲定理) 矛盾. 故它不可完备度量化.
 
-(2) **豪斯多夫**: 取 $x\neq y\in\mathbb Z_{>0}$. 选素数 $p$ 使 $p>\left|x-y\right|$ 且 $p\nmid x$, $p\nmid y$ (这样的素数存在, 因素数无穷). 则 $S\left(p,x\right)$ 与 $S\left(p,y\right)$ 分别是**定义 4.12** (戈洛姆拓扑) 与**定义 4.13** (基尔希拓扑) 的基元素; 若相交则 $p\mid\left(x-y\right)$, 与 $p>\left|x-y\right|$ 矛盾. 由**定义 3.10** (豪斯多夫 空间), 两拓扑均 豪斯多夫.
+(2) **豪斯多夫**: 取 $x\neq y\in\mathbb Z_{>0}$. 选素数 $p$ 使 $p>\left|x-y\right|$ 且 $p\nmid x$, $p\nmid y$ (这样的素数存在, 因素数无穷). 则 $S\left(p,x\right)$ 与 $S\left(p,y\right)$ 分别是**定义 4.12** (戈洛姆拓扑) 与**定义 4.13** (基尔希拓扑) 的基元素; 若相交则 $p\mid\left(x-y\right)$, 与 $p>\left|x-y\right|$ 矛盾. 由**定义 3.10** (豪斯多夫空间), 两拓扑均豪斯多夫.
 
    **不正则**: 以戈洛姆拓扑为例. 取闭集 $E$ 为全体偶正整数 (奇数集开: 对奇 $x$, $S\left(2,x\right)=\left\{x+2n\right\}$ 全奇且 $\gcd\left(2,x\right)=1$), 再取点 $1$. 点 $1$ 的任一邻域形如 $S\left(a,1\right)=\left\{1+an:n\in\mathbb N\right\}$, 而含偶数 $2$ 的任一开集必含某 $S\left(b,2\right)=\left\{2+bn:n\in\mathbb N\right\}$ ($\gcd\left(b,2\right)=1$, 即 $b$ 奇). 由同余式相容, $S\left(a,1\right)\cap S\left(b,2\right)$ 非空, 故无法用不相交开集分离 $1$ 与闭集 $E$. 由**定义 7.2** (正则空间), 戈洛姆拓扑不正则. 基尔希拓扑同理不正则.
 

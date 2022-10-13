@@ -4,7 +4,7 @@
 
 > **定义 3.8** (稠密)<br>称 $A\subset X$ 在 $X$ 中稠密, 若 $\overline A=X$. (教材 $\S3$)
 
-> **定义 3.10** (豪斯多夫 空间)<br>称 $X$ 是 豪斯多夫 的, 若任意一对不同点都有不相交的邻域. (教材 $\S3$)
+> **定义 3.10** (豪斯多夫空间)<br>称 $X$ 是豪斯多夫的, 若任意一对不同点都有不相交的邻域. (教材 $\S3$)
 
 > **定义 3.20** (边界)<br>$\partial A=\overline A\setminus\operatorname{int}\left(A\right)$. (教材 $\S3$)
 
@@ -252,7 +252,7 @@ $$
 
 由**定义 6.20** (赋范线性空间), 范数满足三角不等式, 故 $\left|\left\|x\right\|-\left\|y\right\|\right|\le\left\|x-y\right\|$. 当 $x\to y$ 时 $\left\|x\right\|\to\left\|y\right\|$, 即范数连续.
 
-豪斯多夫: 设 $x\neq y$, $r=\left\|x-y\right\|>0$. 取 $\varepsilon=r/3$. 由**定义 3.10** (豪斯多夫 空间), 开球 $B\left(x,\varepsilon\right)$ 与 $B\left(y,\varepsilon\right)$ 不相交 (否则由三角不等式 $\left\|x-y\right\|\le 2\varepsilon<r$, 矛盾). 故赋范空间豪斯多夫. $\blacksquare$
+豪斯多夫: 设 $x\neq y$, $r=\left\|x-y\right\|>0$. 取 $\varepsilon=r/3$. 由**定义 3.10** (豪斯多夫空间), 开球 $B\left(x,\varepsilon\right)$ 与 $B\left(y,\varepsilon\right)$ 不相交 (否则由三角不等式 $\left\|x-y\right\|\le 2\varepsilon<r$, 矛盾). 故赋范空间豪斯多夫. $\blacksquare$
 
 ### 习题十七
 

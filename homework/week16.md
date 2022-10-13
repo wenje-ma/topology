@@ -4,7 +4,7 @@
 
 > **定义 3.4** (同胚)<br>空间之间的双射 $f:X\to Y$ 称为同胚, 若 $f$ 与 $f^{-1}$ 都连续. (教材 $\S3$)
 
-> **定义 3.10** (豪斯多夫 空间)<br>称 $X$ 是 豪斯多夫 的, 若任意一对不同点都有不相交的邻域. (教材 $\S3$)
+> **定义 3.10** (豪斯多夫空间)<br>称 $X$ 是豪斯多夫的, 若任意一对不同点都有不相交的邻域. (教材 $\S3$)
 
 > **定义 3.11** (乘积拓扑)<br>$X\times Y$ 上的乘积拓扑以形如 $U\times V$ 的集合为基. (教材 $\S3$)
 
@@ -200,7 +200,7 @@ $$
 
 ### 解答 习题八
 
-由**定义 6.31** (弱星拓扑), $E^*$ 上的弱星拓扑是由赋值映射 $\operatorname{ev}_x:E^*\to\mathbb R$, $\operatorname{ev}_x\left(\varphi\right)=\varphi\left(x\right)$, $x\in E$, 诱导的初始拓扑. 由**定义 3.3** (连续映射), $\operatorname{ev}_x$ 连续. 任取 $\varphi,\psi\in E^*$, $\varphi\neq\psi$. 由**定义 6.32** (拓扑对偶) 二者为连续线性泛函, 存在 $x\in E$ 使 $\varphi\left(x\right)\neq\psi\left(x\right)$. 取不相交开区间 $I\ni\varphi\left(x\right)$, $J\ni\psi\left(x\right)$. 由**定义 3.14** (初始拓扑), $\operatorname{ev}_x^{-1}\left(I\right)$ 与 $\operatorname{ev}_x^{-1}\left(J\right)$ 是 $E^*$ 中不相交开集, 分别含 $\varphi,\psi$. 由**定义 3.10** (豪斯多夫 空间), 弱星拓扑豪斯多夫. $\blacksquare$
+由**定义 6.31** (弱星拓扑), $E^*$ 上的弱星拓扑是由赋值映射 $\operatorname{ev}_x:E^*\to\mathbb R$, $\operatorname{ev}_x\left(\varphi\right)=\varphi\left(x\right)$, $x\in E$, 诱导的初始拓扑. 由**定义 3.3** (连续映射), $\operatorname{ev}_x$ 连续. 任取 $\varphi,\psi\in E^*$, $\varphi\neq\psi$. 由**定义 6.32** (拓扑对偶) 二者为连续线性泛函, 存在 $x\in E$ 使 $\varphi\left(x\right)\neq\psi\left(x\right)$. 取不相交开区间 $I\ni\varphi\left(x\right)$, $J\ni\psi\left(x\right)$. 由**定义 3.14** (初始拓扑), $\operatorname{ev}_x^{-1}\left(I\right)$ 与 $\operatorname{ev}_x^{-1}\left(J\right)$ 是 $E^*$ 中不相交开集, 分别含 $\varphi,\psi$. 由**定义 3.10** (豪斯多夫空间), 弱星拓扑豪斯多夫. $\blacksquare$
 
 ### 习题九
 
