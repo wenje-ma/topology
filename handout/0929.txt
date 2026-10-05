@@ -1,0 +1,64 @@
+乘积拓扑. {x_n}_n=1,2,..., x_k in X. 定义一个 x_n to x in X iff forall O open, x in O, exist N, forall n ge N, x_n in O.
+
+例子. 实数集上, X=R, co-countalbe topology, i.e. O subset X is open, O ne varnothing, iff O^c is countable.
+
+B=B(0,1)=(-1,1) is not open. What is oveline B (closure of B)?
+
+Answer: bar B=R.
+
+Does {x_k} converge to 2 in bar B=R?
+
+{x_k} to 2 iff forall O open, 2 in O, exist N, forall N, x_n in O.
+
+Consider O=R setminus {x_k}_kge1 => notexist such N => x_k notto 2.
+
+hausdorff 分离定理: forall x ne y, exist open O_x, O_y, O_x cap O_y = varnothing.
+
+T_2-separation.
+
+---
+
+subspace topology: (X,O), A subset X, then (A,O_A): u in O_A open iff exist O in O, u=j^-1(O).
+
+product topology. (X,O_X), (Y,O_Y). goal: construct a "natural" topology in X times Y.
+
+(1) U times Y, X times V
+(2) U times V
+
+Is (1) a basis? Is (2) a bias? Is (1)+(2) a bias?
+
+(1) no. (2) yes. U_3 times V_3 subset (U_1 times V_1) cap (U_2 times V_2), then talce U_3 = U_1 cap U_2, V_3=V_1 cap V_2. (3) yes.
+
+拓扑基里要是加一个新元素后还能是拓扑基吗? 除非是拓扑基生成的, 否则不再是.
+
+(E, sigma_E), (F, sigma_F), 我要定义 (E times F, sigma_{E times F}).
+
+U times V 就是乘积拓扑基.
+
+basis. 1 ok 2 forall B_1 B_2 in cal B, B_1 cap B_2 =cup_{B_alpha subset B_1 cap B_2, B+alpha in cal B} B_alpha
+
+hint, forall O open, O = cap_{x in B_ x subset O} B_x.
+
+(X_alpha, O_{X_alpha})_{alpha in cal A}, 则 (prod_{alpha in cal A}X_alpha, O_pi)
+
+(1) A' subset A 有限, U_alpha open in X_alpha, 由 (prod_{alpha in A'}U_alpha times prod_{alpha in A setminus A'} X_alpha) 生成的拓扑.
+
+(2) A' subset A 任意, 由 (prod_{alpha in A'}U_alpha times prod_{alpha in A setminus A'} X_alpha) 生成的拓扑.
+
+(3) 由 (prod_{alpha in cal A}U_alpha) 生成的拓扑.
+
+(2) iff (3)
+
+(1') A' subset A 可数, U_alpha open in X_alpha, 由 (prod_{alpha in A'}U_alpha times prod_{alpha in A setminus A'} X_alpha) 生成的拓扑.
+
+(1') 和 (1) 一样吗? 老师觉得不一样但没理由.
+
+(1) 和 (3) 不一样.
+
+例子. 取 f R to R^N, x mapto (x,x,...). 假设我们想要 f 连续, 我们应该使用 (1).
+
+习题. 证明, 我要是选了 (1), f 连续; (3) 则不连续.
+
+R^N ni (x,x,x,...), forall i in N, 考虑 O_i 使得 x in O_i, 则在 (1) 下是开集, (3) 下不是.
+
+考虑 f^-1(prod O_i)=cap_{i in N} O_i.
