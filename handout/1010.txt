@@ -1,0 +1,71 @@
+两个集合 A B, 其定义笛卡尔积是为了创造一个新的集合 A times B.
+
+A times B = {(a,b); a in A, b in B}. (=: C (by Shi))
+
+一个设想:
+
+定义: A times B 是一个集合, 伴随着两个映射 pi_A: A times B to A, pi_B: A times B to B, 使得对于所有的映射 f: Z to A, g: Z to B, 都存在唯一的一个映射 h: Z to A times B, 使得 f = pi_A circ h 且 g = pi_B circ h. 这是一个新的关于集合乘积的定义.
+
+豆包: 第一种为构造性定义, 第二种为范性质定义.
+
+额外地, 能不能对加法做这样一致地转化? 甚至于是任意的构造性定义, 都可以吗?
+
+豆包: 集合的加法 (不交并) 的确可以这样转化, 但只有范构造才支持这种转化. 范构造分为两大类, 极限 (类比乘积), 余极限 (类比不交并).
+
+Cai: pi_A pi_B 应该是满射; 对于任何的 a in A, b in B, a 在 pi_A, b 在 pi_B 的原像集的交集是一个 A times B 的唯一元素.
+
+假如把构造定义代入范性质定义, pi_A, pi_B 应该长什么样?
+
+豆包 / Shi: pi_A: A times B to A, (a,b) mapsto a; pi_B: A times B to B, (a,b) to b.
+
+Zhu: 要是能证明范性质定义是良定义, 证明就结束了.
+
+存在性.
+
+Shi: pi_A: A times B to A, (a,b) mapsto a; pi_B: A times B to B, (a,b) to b. h: Z to A times B, z to (f(z), g(z)).
+
+下证唯一性.
+
+Shi: 设 h' 同样满足..., h: Z to A times B, z mapsto (h_A(z), h_B(z)), 因为 f = pi_A circ h, 所以 f(z) = (pi_A circ h)(z) = h_A(z). 同理 g(z) = (pi_B circ h)(z) = h_B(z), 所以 h(z) 一定是 (f(z), g(z)).
+
+因此上推下成立. 下证为什么范性质的定义是唯一的.
+
+依据范畴论, 此时的证明不能再使用构造性定义了.
+
+定义: pi'_A: Z to A, pi'_B: Z to B.
+
+Shi: 假设 Z 为一个满足范性质定义的集合, 选取 pi_A: C to A, pi_B: C to B, pi'_A: Z to A, pi'_B: Z to B, 存在一个唯一的 tilde h: C to Z. f = pi_A circ h, pi_A = pi'_A circ tilde h. 因此 pi_A = pi_A circ h circ tilde h, 那么 h circ tilde h 为恒同变换 (Sure by Huang?)
+
+任意的 C, A, {C to A} 构成群? No.
+
+群: 集合 X, 其上的二元运算为 circ, circ: X times X to X, (x, y) mapsto x circ y. 因此 {C to A} 并不是群, 因为运算不封闭. 运算需要结合性: x circ y circ z = x circ (y circ z). 单位元: 存在一个 e in X, 使得 e circ x = x = x circ e. 逆元: 任意的 x in X, 存在元素 y, 使得 x circ y = e = y circ x, 则 y = x^(-1).
+
+在群上加个拓扑: x mapsto x^(-1) 是连续的; 任意的 g in X, x mapsto g circ x, x mapsto x circ g 是连续的.
+
+拓扑向量空间: 多了个外积 kx, 再要求其连续即可...
+
+群 (mathbb R, +) 是拓扑群, (mathbb R, +, *) 是拓扑域, (mathbb R^3, +, *) 是拓扑向量空间, ...
+
+Shi: (因此 pi_A = pi_A circ h circ tilde h) pi^(-1)_A(c) := {c | pi_A(c) = a}, h circ tilde h: C to C. 左侧: pi_A(pi^(-1)_A(a))={a}, 右侧: pi_A(D) = {a}. H(c) in pi^(-1)_A(a) 且 H(c) in pi^(-1)_B(b).
+
+...
+
+乘积拓扑.
+
+{X_alpha}_(alpha in A) 是一个拓扑空间, prod_(alpha in A) X_alpha 通过令所以的集合 prod_(i in B) X_i prod_(j not in A setminus B) X_j, 其中 B 有限, 且 u_i in 开集 X_i.
+
+(1) 等价于: exists i in A, mu_i times prod_(alpha ne i) X_i 是开集, 其中 mu_i subset 开集 X_i.
+
+例如 mu_1 times mu_2 times prod_(i = 3) X_i = (u_1 times prod_(i ne 1) X_i) cap (u_2 times prod_(i ne 2) X_i)
+
+(2) 等价于: 任意的 i, prod_i: prod_(alpha in A) X_alpha to X_i 都是连续的.
+
+刻画: prod_1 连续, 则任意的 u_1 subset 开集 X_1, pi^(-1)_1(u_1) 是开集. u_1 times prod_(i ne 1) X_i.
+
+定义: prod_(alpha in A) X_alpha 上的拓扑空间是最小的拓扑, 使得任意的 alpha in A, 投影 prod_alpha 连续.
+
+课后习题: X, Y, X times Y. pi_X: X times Y to X, pi_Y: X times Y to Y. Z, f: Z to X, g: Z to Y, 则存在唯一的 h: Z to X times Y. X times Y 上的乘积拓扑满足对任意的连续 f: Z to X, g: Z to Y, 存在一个唯一的连续 h: Z to X times Y, 使得 f = pi_A circ h, g = pi_B circ h.
+
+课后习题: 为不交和写一个范性质的定义. A, B, C = A sqcup B.
+
+铺垫: 为子空间拓扑写一个范性质的定义.
