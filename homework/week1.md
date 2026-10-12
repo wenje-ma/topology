@@ -68,7 +68,7 @@
 
 > **定义 15.1** (基数的序)<br>设 $A,B$ 为集合. $\left|A\right|\le\left|B\right|$, 若存在单射 $A\to B$; $\left|A\right|=\left|B\right|$, 若存在双射.
 
-> **基础知识**<br>(1) **选择公理 (AC)**: 对任意非空集族 $\left\{B_\alpha\right\}$, 存在选择函数从每个 $B_\alpha$ 中各取一元; 据此可对满射 $g:B\to A$ 的每个纤维 $g^{-1}\left(a\right)$ 各选一个代表元;<br>(2) **集合运算 (德摩根律, 原像/直接像)**: $f^{-1}\left(\bigcup V_\alpha\right)=\bigcup f^{-1}\left(V_\alpha\right)$, $f^{-1}\left(\bigcap V_\alpha\right)=\bigcap f^{-1}\left(V_\alpha\right)$; 直接像仅保持并 $f\left(\bigcup A_\alpha\right)=\bigcup f\left(A_\alpha\right)$, 一般不保持交;<br>(3) **实数完备性 (上确界原理)**: $\mathbb R$ 中任意有上界的非空集有上确界; 由此有初等事实: 一个开区间不能被两个非空不交开子集之并覆盖 (若 $\left(a,b\right)=U\sqcup V$, $U,V$ 非空开, 取 $c=\sup\left(U\cap\left(a,b\right)\right)$, 由开性推出 $c$ 既不能落在 $U$ 也不能落在 $V$, 矛盾);<br>(4) **模算术与数论**: $S\left(a,b\right)=a\mathbb Z+b=\left\{an+b:n\in\mathbb Z\right\}$ 即模 $a$ 余 $b$ 的整数类; 任一 $|n|\ge2$ 的整数有素因子; 有限个闭集之并仍闭 (**定义 4.2**).
+> **基础知识**<br>(1) **选择公理 (AC)**: 对任意非空集族 $\left\{B_\alpha\right\}$, 存在选择函数从每个 $B_\alpha$ 中各取一元; 据此可对满射 $g:B\to A$ 的每个纤维 $g^{-1}\left(a\right)$ 各选一个代表元;<br>(2) **集合运算 (德摩根律, 原像/直接像)**: $f^{-1}\left(\bigcup V_\alpha\right)=\bigcup f^{-1}\left(V_\alpha\right)$, $f^{-1}\left(\bigcap V_\alpha\right)=\bigcap f^{-1}\left(V_\alpha\right)$; 直接像仅保持并 $f\left(\bigcup A_\alpha\right)=\bigcup f\left(A_\alpha\right)$, 一般不保持交;<br>(3) **实数完备性 (上确界原理)**: $\mathbb R$ 中任意有上界的非空集有上确界; 由此有初等事实: 一个开区间不能被两个非空不交开子集之并覆盖 (若 $\left(a,b\right)=U\sqcup V$, $U,V$ 非空开, 取 $c=\sup\left(U\cap\left(a,b\right)\right)$, 由开性推出 $c$ 既不能落在 $U$ 也不能落在 $V$, 矛盾);<br>(4) **模算术与数论**: $S\left(a,b\right)=a\mathbb Z+b=\left\{an+b:n\in\mathbb Z\right\}$ 即模 $a$ 余 $b$ 的整数类; 任一 $\left|n\right|\ge2$ 的整数有素因子; 有限个闭集之并仍闭 (**定义 4.2**).
 
 ## 1
 
@@ -618,7 +618,7 @@ $$
 
 (3) 设 $F$ 是非空有限集, 反设 $F$ 开. 由 (1), 对每个 $x\in F$ 存在 $a\neq0$ 使 $S\left(a,x\right)\subset F$. 但 $S\left(a,x\right)=\left\{an+n\text{ 型整数}\right\}$ 当 $a\neq0$ 时有无穷多个元素, 不可能含于有限集 $F$, 矛盾. 故非空有限集不能开. $\blacksquare$
 
-(4) $S\left(p,0\right)=p\mathbb Z$ 即 $p$ 的全体倍数. 并集 $\bigcup_{p\in\mathbb P}S\left(p,0\right)$ 就是被某个质数整除的整数全体. 对任意 $n\in\mathbb Z\setminus\left\{-1,1\right\}$ (含 $n=0$ 与 $|n|\ge2$): 若 $|n|\ge2$, 由**基础知识 (数论)**, $n$ 有素因子 $p$, 故 $n\in p\mathbb Z=S\left(p,0\right)$; 若 $n=0$, 则 $0=0\cdot p\in S\left(p,0\right)$ 对任意 $p$. 反之 $\pm1$ 不被任何质数整除, 不在并集中. 故
+(4) $S\left(p,0\right)=p\mathbb Z$ 即 $p$ 的全体倍数. 并集 $\bigcup_{p\in\mathbb P}S\left(p,0\right)$ 就是被某个质数整除的整数全体. 对任意 $n\in\mathbb Z\setminus\left\{-1,1\right\}$ (含 $n=0$ 与 $\left|n\right|\ge2$): 若 $\left|n\right|\ge2$, 由**基础知识 (数论)**, $n$ 有素因子 $p$, 故 $n\in p\mathbb Z=S\left(p,0\right)$; 若 $n=0$, 则 $0=0\cdot p\in S\left(p,0\right)$ 对任意 $p$. 反之 $\pm1$ 不被任何质数整除, 不在并集中. 故
 
 $$
 \boxed{\mathbb Z\setminus\left\{-1,1\right\}=\bigcup_{p\in\mathbb P}S\left(p,0\right).}
