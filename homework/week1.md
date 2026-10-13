@@ -75,7 +75,7 @@ $$
 
 反之, 常值映射 $f\equiv0$ 与 $f\equiv1$ 及恒等映射都满足: 对 $\mathcal O$ 中每个开集 $V$, 其逆像 $f^{-1}\left(V\right)$ 是 $\emptyset,\left\{0\right\},\left\{0,1\right\}$ 之一, 由**定义 3.1** (拓扑空间) 均为开集, 由**定义 3.3** (连续映射) 故它们都连续. 因此从 $\left(X,\mathcal O\right)$ 到自身的连续映射恰为这三个. $\blacksquare$
 
-> 看似我们未讨论 $f^{-1}(\emptyset)$ 与 $f^{-1}(\{0,1\})$, 只讨论了 $f^{-1}(\{0\})$, 但实际上我们永远有 $f^{-1}(\emptyset)\equiv\emptyset$, $f^{-1}(\{0,1\})\equiv\{0,1\}$, 因此其为平凡情形故省略.
+> 看似我们未讨论 $f^{-1}\left(\emptyset\right)$ 与 $f^{-1}\left(\left\{0,1\right\}\right)$, 只讨论了 $f^{-1}\left(\left\{0\right\}\right)$, 但实际上我们永远有 $f^{-1}\left(\emptyset\right)\equiv\emptyset$, $f^{-1}\left(\left\{0,1\right\}\right)\equiv\left\{0,1\right\}$, 因此其为平凡情形故省略.
 
 ### 习题二
 
