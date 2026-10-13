@@ -75,6 +75,8 @@ $$
 
 反之, 常值映射 $f\equiv0$ 与 $f\equiv1$ 及恒等映射都满足: 对 $\mathcal O$ 中每个开集 $V$, 其逆像 $f^{-1}\left(V\right)$ 是 $\emptyset,\left\{0\right\},\left\{0,1\right\}$ 之一, 由**定义 3.1** (拓扑空间) 均为开集, 由**定义 3.3** (连续映射) 故它们都连续. 因此从 $\left(X,\mathcal O\right)$ 到自身的连续映射恰为这三个. $\blacksquare$
 
+> 看似我们未讨论 $f^{-1}(\emptyset)$ 与 $f^{-1}(\{0,1\})$, 只讨论了 $f^{-1}(\{0\})$, 但实际上我们永远有 $f^{-1}(\emptyset)\equiv\emptyset$, $f^{-1}(\{0,1\})\equiv\{0,1\}$, 因此其为平凡情形故省略.
+
 ### 习题二
 
 设 $f:X\to Y$ 是函数, 且 $Y$ 赋予一个拓扑 $\mathcal O$. 证明: 若 $\mathcal O_f=\left\{f^{-1}\left(O\right)\subset X:O\in\mathcal O\right\}$, 则 $\mathcal O_f$ 是 $X$ 上的拓扑; 且它是使 $f$ 连续的最粗拓扑. 上述拓扑称为由 $f$ 诱导的初始拓扑.
@@ -101,6 +103,8 @@ $$
 
 其次, $f$ 关于 $\mathcal O_f$ 连续: 对任意 $O\in\mathcal O$, $f^{-1}\left(O\right)\in\mathcal O_f$ 是开集, 由**定义 3.3** (连续映射) 即得 $f$ 连续. 最粗性: 设 $\tau$ 是 $X$ 上任意使 $f$ 连续的拓扑, 则对任意 $O\in\mathcal O$, 由**定义 3.3** (连续映射) $f^{-1}\left(O\right)\in\tau$, 故 $\mathcal O_f\subset\tau$. 所以 $\mathcal O_f$ 是使 $f$ 连续的最粗拓扑. 由**定义 3.14** (初始拓扑), 它正是 $f$ 诱导的初始拓扑. $\blacksquare$
 
+> 证明拓扑最粗的思路是: 证明该拓扑最小.
+
 ### 习题三
 
 证明: 给定一族拓扑 $\left\{\left(X,\mathcal O_\alpha\right)\right\}_{\alpha\in A}$, 它们的交集 (即 $X$ 的子集 $U$ 使得 $U$ 在每个 $\mathcal O_\alpha$ 中都是开的) 仍是拓扑. 论证将交集换成并集则不成立.
@@ -123,6 +127,8 @@ $$
 
 将交集换成并集不成立. 考虑 $X=\left\{0,1,2\right\}$, 取 $\mathcal O_1=\left\{\emptyset,X,\left\{0,1\right\}\right\}$, $\mathcal O_2=\left\{\emptyset,X,\left\{1,2\right\}\right\}$. 由**定义 3.1** (拓扑空间) 直接验证, 两者都是拓扑 (都含 $\emptyset,X$, 且含于其中的有限交与任意并仍是空集、$X$ 或自身). 但并集中 $\left\{0,1\right\}$ 与 $\left\{1,2\right\}$ 的交 $\left\{1\right\}$ 不在并集中, 由**定义 3.1** (拓扑空间) 并集对有限交不封闭, 故不是拓扑. $\blacksquare$
 
+> 在拓扑的 3 条公理中, 对有限交封闭这一性质最难保持, 因此反例的寻找策略就是找两个拓扑 $\mathcal O_1$, $\mathcal O_2$, 使得存在 $U\in\mathcal O_1$, $V\in\mathcal O_2$, 但是 $U\cap V\not\in\mathcal O_1 \cup\mathcal O_2$.
+
 ### 习题四
 
 证明下列是 "$\mathcal O_1$ 比 $\mathcal O_2$ 细" 的等价定义:
@@ -135,13 +141,13 @@ $$
 
 ### 解答 习题四
 
-由**定义 3.13** (细), "$\mathcal O_1$ 比 $\mathcal O_2$ 细" 即 $\mathcal O_2\subset\mathcal O_1$. 我们证明链条 $\mathcal O_2\subset\mathcal O_1\Rightarrow\left(1\right)\Rightarrow\left(2\right)\Rightarrow\left(3\right)\Rightarrow\mathcal O_2\subset\mathcal O_1$, 从而三者都与细等价.
+由**定义 3.13** (细), "$\mathcal O_1$ 比 $\mathcal O_2$ 细" 即 $\mathcal O_2\subset\mathcal O_1$. 我们证明链条 $\mathcal O_2\subset\mathcal O_1\Rightarrow$ (1) $\Rightarrow$ (2) $\Rightarrow$ (3) $\Rightarrow\mathcal O_2\subset\mathcal O_1$, 从而三者都与细等价.
 
-**$\mathcal O_2\subset\mathcal O_1\Rightarrow\left(1\right)$**: 设 $F$ 在 $\mathcal O_2$ 中闭. 由**定义 3.2** (闭集), $F^{c}\in\mathcal O_2$; 由**定义 3.13** (细), $F^{c}\in\mathcal O_1$, 再由**定义 3.2** (闭集) $F$ 在 $\mathcal O_1$ 中闭.
+**$\mathcal O_2\subset\mathcal O_1\Rightarrow$ (1)**: 设 $F$ 在 $\mathcal O_2$ 中闭. 由**定义 3.2** (闭集), $F^{c}\in\mathcal O_2$; 由**定义 3.13** (细), $F^{c}\in\mathcal O_1$, 再由**定义 3.2** (闭集) $F$ 在 $\mathcal O_1$ 中闭.
 
-**(1) $\Rightarrow\left(2\right)$**: 对任意 $V\in\mathcal O_2$, 由**定义 3.2** (闭集) 其补集 $V^{c}$ 在 $\mathcal O_2$ 中闭, 由假设在 $\mathcal O_1$ 中闭, 再由**定义 3.2** (闭集) $V$ 在 $\mathcal O_1$ 中开. 而恒等映射 $\operatorname{id}$ 的逆像 $\operatorname{id}^{-1}\left(V\right)=V$, 故 $V$ 在 $\mathcal O_1$ 中开. 由**定义 3.3** (连续映射), $\operatorname{id}$ 连续.
+**(1) $\Rightarrow$ (2)**: 对任意 $V\in\mathcal O_2$, 由**定义 3.2** (闭集) 其补集 $V^{c}$ 在 $\mathcal O_2$ 中闭, 由假设在 $\mathcal O_1$ 中闭, 再由**定义 3.2** (闭集) $V$ 在 $\mathcal O_1$ 中开. 而恒等映射 $\operatorname{id}$ 的逆像 $\operatorname{id}^{-1}\left(V\right)=V$, 故 $V$ 在 $\mathcal O_1$ 中开. 由**定义 3.3** (连续映射), $\operatorname{id}$ 连续.
 
-**(2) $\Rightarrow\left(3\right)$**: 设 $N$ 是 $x$ 在 $\mathcal O_2$ 中的邻域. 由**定义 3.5** (邻域与极限), 存在 $V\in\mathcal O_2$ 使 $x\in V\subset N$. 因 $\operatorname{id}$ 连续, 由**定义 3.3** (连续映射) $V=\operatorname{id}^{-1}\left(V\right)\in\mathcal O_1$, 故 $N$ 含 $\mathcal O_1$ 中的开集 $V$, 由**定义 3.5** (邻域与极限) $N$ 是 $x$ 在 $\mathcal O_1$ 中的邻域.
+**(2) $\Rightarrow$ (3)**: 设 $N$ 是 $x$ 在 $\mathcal O_2$ 中的邻域. 由**定义 3.5** (邻域与极限), 存在 $V\in\mathcal O_2$ 使 $x\in V\subset N$. 因 $\operatorname{id}$ 连续, 由**定义 3.3** (连续映射) $V=\operatorname{id}^{-1}\left(V\right)\in\mathcal O_1$, 故 $N$ 含 $\mathcal O_1$ 中的开集 $V$, 由**定义 3.5** (邻域与极限) $N$ 是 $x$ 在 $\mathcal O_1$ 中的邻域.
 
 **(3) $\Rightarrow\mathcal O_2\subset\mathcal O_1$**: 设 $V\in\mathcal O_2$. 任取 $x\in V$, 由**定义 3.5** (邻域与极限) $V$ 是 $x$ 在 $\mathcal O_2$ 中的邻域, 由假设也是 $x$ 在 $\mathcal O_1$ 中的邻域, 故存在 $U_x\in\mathcal O_1$ 使 $x\in U_x\subset V$. 于是 $V=\bigcup_{x\in V}U_x$, 由**定义 3.1** (拓扑空间) $V\in\mathcal O_1$. 故 $\mathcal O_2\subset\mathcal O_1$. $\blacksquare$
 
@@ -181,7 +187,7 @@ $$
 
 ### 解答 习题六
 
-**$\left(\Rightarrow\right)$** 设 $X$ 是豪斯多夫的, 证 $\Delta$ 闭, 即由**定义 3.2** (闭集) 证其补集 $\left(X\times X\right)\setminus\Delta$ 开. 取 $\left(x,y\right)\notin\Delta$, 由**定义 3.12** (对角线) 则 $x\neq y$. 由**定义 3.10** (豪斯多夫空间), 存在不相交开集 $U,V$ 使 $x\in U$, $y\in V$. 由**定义 3.11** (乘积拓扑), $U\times V$ 是乘积拓扑的开集, 且因 $U\cap V=\emptyset$, $U\times V\cap\Delta=\emptyset$, 即
+**$\left(\Rightarrow\right)$** 已知 $X$ 是豪斯多夫的, 证 $\Delta$ 闭, 即由**定义 3.2** (闭集) 证其补集 $\left(X\times X\right)\setminus\Delta$ 开. 取 $\left(x,y\right)\notin\Delta$, 由**定义 3.12** (对角线) 则 $x\neq y$. 由**定义 3.10** (豪斯多夫空间), 存在不相交开集 $U,V$ 使 $x\in U$, $y\in V$. 由**定义 3.11** (乘积拓扑), $U\times V$ 是乘积拓扑的开集, 且因 $U\cap V=\emptyset$, $U\times V\cap\Delta=\emptyset$, 即
 
 $$
 \left(x,y\right)\in U\times V\subset\left(X\times X\right)\setminus\Delta.
@@ -189,4 +195,4 @@ $$
 
 故 $\left(X\times X\right)\setminus\Delta$ 每点都有开邻域含于其中, 由**定义 3.1** (拓扑空间) 它是开集, 由**定义 3.2** (闭集) $\Delta$ 闭.
 
-**$\left(\Leftarrow\right)$** 设 $\Delta$ 闭. 取 $x\neq y$, 由**定义 3.12** (对角线) 则 $\left(x,y\right)\notin\Delta$, 故存在乘积拓扑开集 $W$ 使 $\left(x,y\right)\in W\subset\left(X\times X\right)\setminus\Delta$. 由**定义 3.11** (乘积拓扑), $W$ 是若干基本开集之并, 故存在基本开集 $U\times V$ 使 $\left(x,y\right)\in U\times V\subset W\subset\left(X\times X\right)\setminus\Delta$, 其中 $U,V$ 为开集. 则 $x\in U$, $y\in V$ 且 $U\cap V=\emptyset$ (否则 $U\times V\cap\Delta\neq\emptyset$, 与含于 $\left(X\times X\right)\setminus\Delta$ 矛盾). 由**定义 3.10** (豪斯多夫空间), $X$ 是豪斯多夫的. $\blacksquare$
+**$\left(\Leftarrow\right)$** 已知 $\Delta$ 闭. 取 $x\neq y$, 由**定义 3.12** (对角线) 则 $\left(x,y\right)\notin\Delta$, 故存在乘积拓扑开集 $W$ 使 $\left(x,y\right)\in W\subset\left(X\times X\right)\setminus\Delta$. 由**定义 3.11** (乘积拓扑), $W$ 是若干基本开集之并, 故存在基本开集 $U\times V$ 使 $\left(x,y\right)\in U\times V\subset W\subset\left(X\times X\right)\setminus\Delta$, 其中 $U,V$ 为开集. 则 $x\in U$, $y\in V$ 且 $U\cap V=\emptyset$ (否则 $U\times V\cap\Delta\neq\emptyset$, 与含于 $\left(X\times X\right)\setminus\Delta$ 矛盾). 由**定义 3.10** (豪斯多夫空间), $X$ 是豪斯多夫的. $\blacksquare$
