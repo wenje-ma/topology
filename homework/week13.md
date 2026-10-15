@@ -42,7 +42,7 @@ $$
 
 ### 解答 习题二
 
-$\left(E,\left\|\cdot\right\|\right)$ 是**定义 6.20** (赋范线性空间). 由 $f$ 在 $0$ 连续, 存在 $\delta>0$, 使 $\left\|z\right\|<\delta$ 时 $\left\|f\left(z\right)\right\|\le1$. 对任意 $x\neq0$, 令 $z=\dfrac{\delta}{2\left\|x\right\|}x$, 则 $\left\|z\right\|=\delta/2<\delta$, 故 $\left\|f\left(z\right)\right\|\le1$. 由线性性,
+$\left(E,\left\|\cdot\right\|\right)$ 是**定义 6.20** (赋范线性空间). 由 $f$ 在 $0$ 连续, 存在 $\delta>0$, 使 $\left\|z\right\|<\delta$ 时 $\left\|f\left(z\right)\right\|\le1$. 对任意 $x\neq0$, 令 $z=\frac{\delta}{2\left\|x\right\|}x$, 则 $\left\|z\right\|=\delta/2<\delta$, 故 $\left\|f\left(z\right)\right\|\le1$. 由线性性,
 
 $$
 \left\|f\left(x\right)\right\|=\frac{2\left\|x\right\|}{\delta}\left\|f\left(z\right)\right\|\le\frac{2}{\delta}\left\|x\right\|.
@@ -78,7 +78,7 @@ $$
 
 ### 习题四
 
-证明 $\left\|J\left(a\right)-J\left(b\right)\right\|\le\dfrac{1}{\left|\lambda\right|-K}\left\|a-b\right\|$.
+证明 $\left\|J\left(a\right)-J\left(b\right)\right\|\le\frac{1}{\left|\lambda\right|-K}\left\|a-b\right\|$.
 
 ### 解答 习题四
 
@@ -122,4 +122,4 @@ $$
 
 由习题三, $g_a$ 是**定义 6.19** (压缩映射), 由**定理 6.16** (巴拿赫不动点定理), 该方程有唯一解 $J\left(a\right)$.
 
-由习题四, $\left\|J\left(a\right)-J\left(b\right)\right\|\le\dfrac{1}{\left|\lambda\right|-K}\left\|a-b\right\|$, 即 $J$ 是利普希茨映射. 利普希茨映射连续: 对任意开集 $U\subset E$ 与 $a\in J^{-1}\left(U\right)$, 取 $\varepsilon>0$ 使 $B\left(J\left(a\right),\varepsilon\right)\subset U$, 则 $\left\|b-a\right\|<\left(\left|\lambda\right|-K\right)\varepsilon$ 蕴含 $\left\|J\left(b\right)-J\left(a\right)\right\|<\varepsilon$, 即 $J^{-1}\left(U\right)$ 含 $a$ 的一个邻域. 由**定义 3.3** (连续映射), $J$ 连续. $\blacksquare$
+由习题四, $\left\|J\left(a\right)-J\left(b\right)\right\|\le\frac{1}{\left|\lambda\right|-K}\left\|a-b\right\|$, 即 $J$ 是利普希茨映射. 利普希茨映射连续: 对任意开集 $U\subset E$ 与 $a\in J^{-1}\left(U\right)$, 取 $\varepsilon>0$ 使 $B\left(J\left(a\right),\varepsilon\right)\subset U$, 则 $\left\|b-a\right\|<\left(\left|\lambda\right|-K\right)\varepsilon$ 蕴含 $\left\|J\left(b\right)-J\left(a\right)\right\|<\varepsilon$, 即 $J^{-1}\left(U\right)$ 含 $a$ 的一个邻域. 由**定义 3.3** (连续映射), $J$ 连续. $\blacksquare$

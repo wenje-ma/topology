@@ -32,35 +32,35 @@
 
 设 $f:\left[0,1\right]\to\mathbb R$ 是一个连续函数并且 $f\left(0\right)=f\left(1\right)$.
 
-(1) (10 分) 证明存在 $x\in\left[0,\dfrac12\right]$ 使得 $f\left(x\right)=f\left(x+\dfrac12\right)$.
+(1) (10 分) 证明存在 $x\in\left[0,\frac12\right]$ 使得 $f\left(x\right)=f\left(x+\frac12\right)$.
 
-(2) (10 分) 证明对于任意的整数 $n\ge2$, 存在 $x\in\left[0,1-\dfrac1n\right]$ 使得 $f\left(x\right)=f\left(x+\dfrac1n\right)$.
+(2) (10 分) 证明对于任意的整数 $n\ge2$, 存在 $x\in\left[0,1-\frac1n\right]$ 使得 $f\left(x\right)=f\left(x+\frac1n\right)$.
 
-(3) (5 分) 证明存在一个连续函数 $f:\left[0,1\right]\to\mathbb R$ 使得对于任意的 $x\in\left[0,\dfrac35\right]$ 都有 $f\left(x\right)\neq f\left(x+\dfrac25\right)$.
+(3) (5 分) 证明存在一个连续函数 $f:\left[0,1\right]\to\mathbb R$ 使得对于任意的 $x\in\left[0,\frac35\right]$ 都有 $f\left(x\right)\neq f\left(x+\frac25\right)$.
 
 ### 解答 习题一
 
-(1) 令 $g\left(x\right)=f\left(x\right)-f\left(x+\dfrac12\right)$, 定义域 $\left[0,\dfrac12\right]$. 若 $g\left(0\right)=0$, 则 $x=0$ 已满足. 否则
+(1) 令 $g\left(x\right)=f\left(x\right)-f\left(x+\frac12\right)$, 定义域 $\left[0,\frac12\right]$. 若 $g\left(0\right)=0$, 则 $x=0$ 已满足. 否则
 
 $$
-g\left(\tfrac12\right)=f\left(\tfrac12\right)-f\left(1\right)=f\left(\tfrac12\right)-f\left(0\right)=-g\left(0\right),
+g\left(\frac12\right)=f\left(\frac12\right)-f\left(1\right)=f\left(\frac12\right)-f\left(0\right)=-g\left(0\right),
 $$
 
-故 $g\left(0\right)$ 与 $g\left(\dfrac12\right)$ 异号. 由介值定理 (连续函数在区间上取得中间值), 存在 $x\in\left[0,\dfrac12\right]$ 使 $g\left(x\right)=0$, 即 $f\left(x\right)=f\left(x+\dfrac12\right)$.
+故 $g\left(0\right)$ 与 $g\left(\frac12\right)$ 异号. 由介值定理 (连续函数在区间上取得中间值), 存在 $x\in\left[0,\frac12\right]$ 使 $g\left(x\right)=0$, 即 $f\left(x\right)=f\left(x+\frac12\right)$.
 
-(2) 令 $g\left(x\right)=f\left(x\right)-f\left(x+\dfrac1n\right)$, 定义域 $\left[0,1-\dfrac1n\right]$. 累加得
+(2) 令 $g\left(x\right)=f\left(x\right)-f\left(x+\frac1n\right)$, 定义域 $\left[0,1-\frac1n\right]$. 累加得
 
 $$
-\sum_{j=0}^{n-1}g\left(\tfrac{j}{n}\right)=\sum_{j=0}^{n-1}\left(f\left(\tfrac{j}{n}\right)-f\left(\tfrac{j+1}{n}\right)\right)=f\left(0\right)-f\left(1\right)=0.
+\sum_{j=0}^{n-1}g\left(\frac{j}{n}\right)=\sum_{j=0}^{n-1}\left(f\left(\frac{j}{n}\right)-f\left(\frac{j+1}{n}\right)\right)=f\left(0\right)-f\left(1\right)=0.
 $$
 
-若 $g$ 在 $\left[0,1-\dfrac1n\right]$ 上恒不为 $0$, 因该区间连通 (由**定理 4.1** (区间连通)), 连续函数 $g$ 必恒正或恒负, 从而各 $g\left(\dfrac{j}{n}\right)$ 同号, 其和不为 $0$, 矛盾. 故存在 $x$ 使 $g\left(x\right)=0$, 即 $f\left(x\right)=f\left(x+\dfrac1n\right)$.
+若 $g$ 在 $\left[0,1-\frac1n\right]$ 上恒不为 $0$, 因该区间连通 (由**定理 4.1** (区间连通)), 连续函数 $g$ 必恒正或恒负, 从而各 $g\left(\frac{j}{n}\right)$ 同号, 其和不为 $0$, 矛盾. 故存在 $x$ 使 $g\left(x\right)=0$, 即 $f\left(x\right)=f\left(x+\frac1n\right)$.
 
-(3) 取 $f\left(x\right)=x$. 它连续, 且对任意 $x\in\left[0,\dfrac35\right]$, $f\left(x+\dfrac25\right)-f\left(x\right)=\dfrac25\neq0$, 故 $f\left(x\right)\neq f\left(x+\dfrac25\right)$. 此例即满足要求. $\blacksquare$
+(3) 取 $f\left(x\right)=x$. 它连续, 且对任意 $x\in\left[0,\frac35\right]$, $f\left(x+\frac25\right)-f\left(x\right)=\frac25\neq0$, 故 $f\left(x\right)\neq f\left(x+\frac25\right)$. 此例即满足要求. $\blacksquare$
 
 ### 习题二
 
-考虑在 $x,y\in\left(0,\infty\right)$ 上定义的函数 $\delta\left(x,y\right)=\left|\dfrac1x-\dfrac1y\right|$.
+考虑在 $x,y\in\left(0,\infty\right)$ 上定义的函数 $\delta\left(x,y\right)=\left|\frac1x-\frac1y\right|$.
 
 (1) (10 分) 证明 $\delta$ 是一个在 $\left(0,\infty\right)$ 上的度量.
 
@@ -72,7 +72,7 @@ $$
 
 ### 解答 习题二
 
-(1) 令 $\varphi:\left(0,\infty\right)\to\left(0,\infty\right)$ 为 $\varphi\left(x\right)=\dfrac1x$, 则 $\delta\left(x,y\right)=\left|\varphi\left(x\right)-\varphi\left(y\right)\right|$. 它是由通常绝对值度量经双射 $\varphi$ 拉回的. 逐条验证**定义 6.1** (度量空间) 的公理: $\delta\left(x,x\right)=0$; $\delta\left(x,y\right)=0\Rightarrow\left|\varphi\left(x\right)-\varphi\left(y\right)\right|=0\Rightarrow\varphi\left(x\right)=\varphi\left(y\right)\Rightarrow x=y$; 对称性显然; 三角不等式由绝对值的三角不等式给出:
+(1) 令 $\varphi:\left(0,\infty\right)\to\left(0,\infty\right)$ 为 $\varphi\left(x\right)=\frac1x$, 则 $\delta\left(x,y\right)=\left|\varphi\left(x\right)-\varphi\left(y\right)\right|$. 它是由通常绝对值度量经双射 $\varphi$ 拉回的. 逐条验证**定义 6.1** (度量空间) 的公理: $\delta\left(x,x\right)=0$; $\delta\left(x,y\right)=0\Rightarrow\left|\varphi\left(x\right)-\varphi\left(y\right)\right|=0\Rightarrow\varphi\left(x\right)=\varphi\left(y\right)\Rightarrow x=y$; 对称性显然; 三角不等式由绝对值的三角不等式给出:
 
 $$
 \delta\left(x,z\right)=\left|\varphi\left(x\right)-\varphi\left(z\right)\right|\le\left|\varphi\left(x\right)-\varphi\left(y\right)\right|+\left|\varphi\left(y\right)-\varphi\left(z\right)\right|=\delta\left(x,y\right)+\delta\left(y,z\right).
@@ -80,11 +80,11 @@ $$
 
 故 $\delta$ 是度量.
 
-(2) 映射 $\varphi\left(x\right)=\dfrac1x$ 及其逆 $\varphi^{-1}\left(y\right)=\dfrac1y$ 在通常拓扑下都连续, 故由**定义 3.4** (同胚), $\varphi$ 是 $\left(0,\infty\right)$ 到自身的同胚, 且由第 1 小题它保持距离 (即**定义 6.18** (等距映射)). 由**定义 6.2** (开球), $\delta$ 的开球 $B_\delta\left(x,r\right)=\varphi^{-1}\left(\left(\varphi\left(x\right)-r,\varphi\left(x\right)+r\right)\right)$ 是通常拓扑下的开集; 反之通常开球也同理是 $\delta$-开集. 故两种开球生成同一拓扑, 即 $\delta$ 诱导通常拓扑.
+(2) 映射 $\varphi\left(x\right)=\frac1x$ 及其逆 $\varphi^{-1}\left(y\right)=\frac1y$ 在通常拓扑下都连续, 故由**定义 3.4** (同胚), $\varphi$ 是 $\left(0,\infty\right)$ 到自身的同胚, 且由第 1 小题它保持距离 (即**定义 6.18** (等距映射)). 由**定义 6.2** (开球), $\delta$ 的开球 $B_\delta\left(x,r\right)=\varphi^{-1}\left(\left(\varphi\left(x\right)-r,\varphi\left(x\right)+r\right)\right)$ 是通常拓扑下的开集; 反之通常开球也同理是 $\delta$-开集. 故两种开球生成同一拓扑, 即 $\delta$ 诱导通常拓扑.
 
-(3) 取 $x_n=n$. 则 $\delta\left(n,m\right)=\left|\dfrac1n-\dfrac1m\right|\to0$ ($n,m\to\infty$), 由**定义 6.3** (柯西列) $\left(x_n\right)$ 是 $\delta$-柯西列. 若它在 $\left(0,\infty\right)$ 中收敛于 $x$, 则 $\delta\left(n,x\right)=\left|\dfrac1n-\dfrac1x\right|\to0$, 即 $\dfrac1x=0$, 不可能. 故该柯西列不收敛, 由**定义 6.4** (完备度量空间), $\left(\left(0,\infty\right),\delta\right)$ 不完备.
+(3) 取 $x_n=n$. 则 $\delta\left(n,m\right)=\left|\frac1n-\frac1m\right|\to0$ ($n,m\to\infty$), 由**定义 6.3** (柯西列) $\left(x_n\right)$ 是 $\delta$-柯西列. 若它在 $\left(0,\infty\right)$ 中收敛于 $x$, 则 $\delta\left(n,x\right)=\left|\frac1n-\frac1x\right|\to0$, 即 $\frac1x=0$, 不可能. 故该柯西列不收敛, 由**定义 6.4** (完备度量空间), $\left(\left(0,\infty\right),\delta\right)$ 不完备.
 
-(4) 在 $\varphi\left(x\right)=\dfrac1x$ 下, $\left(\left(0,1\right],\delta\right)$ 等距 (由**定义 6.18** (等距映射)) 于 $\left(\left[1,\infty\right),\left|\cdot\right|\right)$. 设 $\left(y_n\right)$ 是 $\left[1,\infty\right)$ 中的柯西列, 则它也是 $\mathbb R$ 中的柯西列, 故在 $\mathbb R$ 中收敛于 $y$; 又每个 $y_n\ge1$, 极限保持 $y\ge1$, 故 $y\in\left[1,\infty\right]$, 即 $\left[1,\infty\right)$ 完备. 等距把收敛性搬过去, 故 $\left(\left(0,1\right],\delta\right)$ 完备. $\blacksquare$
+(4) 在 $\varphi\left(x\right)=\frac1x$ 下, $\left(\left(0,1\right],\delta\right)$ 等距 (由**定义 6.18** (等距映射)) 于 $\left(\left[1,\infty\right),\left|\cdot\right|\right)$. 设 $\left(y_n\right)$ 是 $\left[1,\infty\right)$ 中的柯西列, 则它也是 $\mathbb R$ 中的柯西列, 故在 $\mathbb R$ 中收敛于 $y$; 又每个 $y_n\ge1$, 极限保持 $y\ge1$, 故 $y\in\left[1,\infty\right]$, 即 $\left[1,\infty\right)$ 完备. 等距把收敛性搬过去, 故 $\left(\left(0,1\right],\delta\right)$ 完备. $\blacksquare$
 
 ### 习题三
 
@@ -100,9 +100,9 @@ $$
 
 (1) 因 $A$ 无界, 对每个 $p$, 存在 $M_p\in A$ 使 $\left|M_p\right|\ge p$ (否则 $A$ 含于半径 $p$ 的球内, 有界). 由**定义 4.6** (凸集), $O\in A$ 与 $M_p\in A$ 的连线线段 $OM_p$ 含于 $A$, 且其长度 $\left|OM_p\right|=\left|M_p\right|\ge p$.
 
-(2) 令 $r_p=\left|M_p\right|$, $u_p=\dfrac{M_p}{r_p}$, 则 $u_p$ 在单位圆周 $S^1=\left\{v\in\mathbb R^2:\left|v\right|=1\right\}$ 上. $S^1$ 闭且有界, 由**定理 5.3** ($\mathbb R^n$ 中的紧集) $S^1$ 紧. 由**定理 6.1** (紧=序列紧), 序列 $\left(u_p\right)\subset S^1$ 有收敛子列 $u_{p_j}\to u\in S^1$.
+(2) 令 $r_p=\left|M_p\right|$, $u_p=\frac{M_p}{r_p}$, 则 $u_p$ 在单位圆周 $S^1=\left\{v\in\mathbb R^2:\left|v\right|=1\right\}$ 上. $S^1$ 闭且有界, 由**定理 5.3** ($\mathbb R^n$ 中的紧集) $S^1$ 紧. 由**定理 6.1** (紧=序列紧), 序列 $\left(u_p\right)\subset S^1$ 有收敛子列 $u_{p_j}\to u\in S^1$.
 
-(3) 固定 $\lambda\ge0$. 对充分大的 $j$, $r_{p_j}\ge\lambda$ (因 $r_{p_j}\ge p_j\to\infty$). 由**定义 4.6** (凸集), $\lambda u_{p_j}=\dfrac{\lambda}{r_{p_j}}M_{p_j}+\left(1-\dfrac{\lambda}{r_{p_j}}\right)O$ 是 $M_{p_j}$ 与 $O$ 的凸组合, 故 $\lambda u_{p_j}\in A$. 当 $j\to\infty$, $u_{p_j}\to u$, 故 $\lambda u_{p_j}\to\lambda u$. 因 $A$ 闭 (由**定义 3.2** (闭集), 闭集含其序列极限), $\lambda u\in A$. 由 $\lambda\ge0$ 任意, 半直线 $\left\{\lambda u:\lambda\ge0\right\}\subset A$, 即 $A$ 含一条从原点出发的无穷长半直线. $\blacksquare$
+(3) 固定 $\lambda\ge0$. 对充分大的 $j$, $r_{p_j}\ge\lambda$ (因 $r_{p_j}\ge p_j\to\infty$). 由**定义 4.6** (凸集), $\lambda u_{p_j}=\frac{\lambda}{r_{p_j}}M_{p_j}+\left(1-\frac{\lambda}{r_{p_j}}\right)O$ 是 $M_{p_j}$ 与 $O$ 的凸组合, 故 $\lambda u_{p_j}\in A$. 当 $j\to\infty$, $u_{p_j}\to u$, 故 $\lambda u_{p_j}\to\lambda u$. 因 $A$ 闭 (由**定义 3.2** (闭集), 闭集含其序列极限), $\lambda u\in A$. 由 $\lambda\ge0$ 任意, 半直线 $\left\{\lambda u:\lambda\ge0\right\}\subset A$, 即 $A$ 含一条从原点出发的无穷长半直线. $\blacksquare$
 
 ### 习题四
 
@@ -116,9 +116,9 @@ $$
 
 ### 解答 习题四
 
-(1) 开: $\Omega_n=\bigcup_{p\ge n}\left\{x:px\in\Omega\right\}=\bigcup_{p\ge n}\dfrac1p\,\Omega$. 每个 $\dfrac1p\Omega$ 是开集的相似像, 由**定义 3.3** (连续映射) 相似映射 $x\mapsto px$ 是同胚, 故 $\dfrac1p\Omega$ 开; 由**定义 3.1** (拓扑空间) 开集任意并开, $\Omega_n$ 开.
+(1) 开: $\Omega_n=\bigcup_{p\ge n}\left\{x:px\in\Omega\right\}=\bigcup_{p\ge n}\frac1p\,\Omega$. 每个 $\frac1p\Omega$ 是开集的相似像, 由**定义 3.3** (连续映射) 相似映射 $x\mapsto px$ 是同胚, 故 $\frac1p\Omega$ 开; 由**定义 3.1** (拓扑空间) 开集任意并开, $\Omega_n$ 开.
 
-稠: 任取非空开区间 $\left(a,b\right)$. 因 $\Omega$ 无界, 取 $y\in\Omega$ 充分大. 取 $p=\left\lceil\dfrac yb\right\rceil$, 则 $pb\ge y$ 且 $\left(p-1\right)b<y$, 从而 $x=\dfrac yp$ 满足 $x\le b$ 且 $x>\dfrac{\left(p-1\right)b}{p}=b\left(1-\dfrac1p\right)$. 取 $y$ 足够大使 $p\ge n$ 且 $b\left(1-\dfrac1p\right)>a$, 则 $x\in\left(a,b\right)$ 且 $px=y\in\Omega$. 故 $\left(a,b\right)$ 交 $\Omega_n$, $\Omega_n$ 稠密.
+稠: 任取非空开区间 $\left(a,b\right)$. 因 $\Omega$ 无界, 取 $y\in\Omega$ 充分大. 取 $p=\left\lceil\frac yb\right\rceil$, 则 $pb\ge y$ 且 $\left(p-1\right)b<y$, 从而 $x=\frac yp$ 满足 $x\le b$ 且 $x>\frac{\left(p-1\right)b}{p}=b\left(1-\frac1p\right)$. 取 $y$ 足够大使 $p\ge n$ 且 $b\left(1-\frac1p\right)>a$, 则 $x\in\left(a,b\right)$ 且 $px=y\in\Omega$. 故 $\left(a,b\right)$ 交 $\Omega_n$, $\Omega_n$ 稠密.
 
 (2) $\mathbb R$ 完备. 由第 1 小题, 每个 $\Omega_n$ 是稠密开集. 由**定理 6.13** (贝尔纲定理), 可数交 $\bigcap_{n\ge1}\Omega_n$ 稠密, 故非空, 取 $x_0\in\bigcap_{n\ge1}\Omega_n$. 则对任意 $N$, $x_0\in\Omega_N$, 即存在 $p\ge N$ 使 $px_0\in\Omega$.
 

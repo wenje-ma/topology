@@ -44,7 +44,7 @@
 
 (1) (10 分) 考虑集合 $A=\left\{\left(x,y\right)\in I^2:x<y\right\}$. 证明 $A$ 在最自然的拓扑下是一个连通集合.
 
-(2) (10 分) 考虑在 $A$ 上定义的实函数 $F\left(x,y\right)=\dfrac{f\left(x\right)-f\left(y\right)}{x-y}$. 证明 $\Gamma=F\left(A\right)$ 是 $\mathbb R$ 中的一个连通集.
+(2) (10 分) 考虑在 $A$ 上定义的实函数 $F\left(x,y\right)=\frac{f\left(x\right)-f\left(y\right)}{x-y}$. 证明 $\Gamma=F\left(A\right)$ 是 $\mathbb R$ 中的一个连通集.
 
 (3) (5 分) 证明 $\Gamma\subset f'\left(I\right)\subset\overline{\Gamma}$ (这里 $f'\left(I\right)$ 指的是 $I$ 被 $f'$ 这个函数映射到的像集).
 
@@ -60,11 +60,11 @@ $$
 
 故整条线段含于 $A$. 由**定义 4.6** (凸集), $A$ 是凸集, 凸集必路径连通 (由**定义 4.5** (路径连通)), 再由**定理 4.3** (路径连通蕴含连通) $A$ 连通.
 
-(2) 因 $f$ 可微, $f$ 连续; 在 $A$ 上恒有 $x-y\neq0$, 故 $F\left(x,y\right)=\dfrac{f\left(x\right)-f\left(y\right)}{x-y}$ 是 $A$ 上的连续函数. 由第 1 小题 $A$ 连通, 由**定理 4.2** (连续像连通), $\Gamma=F\left(A\right)$ 连通.
+(2) 因 $f$ 可微, $f$ 连续; 在 $A$ 上恒有 $x-y\neq0$, 故 $F\left(x,y\right)=\frac{f\left(x\right)-f\left(y\right)}{x-y}$ 是 $A$ 上的连续函数. 由第 1 小题 $A$ 连通, 由**定理 4.2** (连续像连通), $\Gamma=F\left(A\right)$ 连通.
 
-(3) 先证 $\Gamma\subset f'\left(I\right)$. 任取 $\left(x,y\right)\in A$, $x<y$. 因 $f$ 在 $\left[x,y\right]$ 上连续且在 $\left(x,y\right)$ 上可微, 由微分中值定理, 存在 $c\in\left(x,y\right)\subset I$ 使 $\dfrac{f\left(x\right)-f\left(y\right)}{x-y}=f'\left(c\right)$. 故 $F\left(x,y\right)\in f'\left(I\right)$, 即 $\Gamma\subset f'\left(I\right)$.
+(3) 先证 $\Gamma\subset f'\left(I\right)$. 任取 $\left(x,y\right)\in A$, $x<y$. 因 $f$ 在 $\left[x,y\right]$ 上连续且在 $\left(x,y\right)$ 上可微, 由微分中值定理, 存在 $c\in\left(x,y\right)\subset I$ 使 $\frac{f\left(x\right)-f\left(y\right)}{x-y}=f'\left(c\right)$. 故 $F\left(x,y\right)\in f'\left(I\right)$, 即 $\Gamma\subset f'\left(I\right)$.
 
-再证 $f'\left(I\right)\subset\overline{\Gamma}$. 任取 $t\in I$ (因 $I$ 为开区间, $t$ 非端点). 取充分小的 $h$ 使 $t+h\in I$, 则 $q_h=\dfrac{f\left(t+h\right)-f\left(t\right)}{h}\in\Gamma$. 由导数定义 $q_h\to f'\left(t\right)$ ($h\to0$). 故 $f'\left(t\right)$ 是 $\Gamma$ 的极限点, 由**定理 3.5** (闭包与极限点) 它含于 $\overline{\Gamma}$ (由**定义 3.6** (闭包), $\overline{\Gamma}$ 是含 $\Gamma$ 的最小闭集). 即 $f'\left(I\right)\subset\overline{\Gamma}$.
+再证 $f'\left(I\right)\subset\overline{\Gamma}$. 任取 $t\in I$ (因 $I$ 为开区间, $t$ 非端点). 取充分小的 $h$ 使 $t+h\in I$, 则 $q_h=\frac{f\left(t+h\right)-f\left(t\right)}{h}\in\Gamma$. 由导数定义 $q_h\to f'\left(t\right)$ ($h\to0$). 故 $f'\left(t\right)$ 是 $\Gamma$ 的极限点, 由**定理 3.5** (闭包与极限点) 它含于 $\overline{\Gamma}$ (由**定义 3.6** (闭包), $\overline{\Gamma}$ 是含 $\Gamma$ 的最小闭集). 即 $f'\left(I\right)\subset\overline{\Gamma}$.
 
 (4) 由第 2 小题, $\Gamma$ 是 $\mathbb R$ 中的连通集, 而 $\mathbb R$ 中连通集必为区间 (若 $a<c<b$ 且 $a,b\in S$, $c\notin S$, 则 $S=\left(S\cap\left(-\infty,c\right)\right)\cup\left(S\cap\left(c,\infty\right)\right)$ 是一个分离, 矛盾). 故 $\Gamma$ 是区间. 由第 3 小题, $\Gamma\subset f'\left(I\right)\subset\overline{\Gamma}$. 一个区间与其闭包之间的差别至多是它的两个端点; 在区间上任意添去两端点的一个子集仍得区间. 因此夹在区间 $\Gamma$ 与 $\overline{\Gamma}$ 之间的 $f'\left(I\right)$ 仍是区间. $\blacksquare$
 
@@ -106,7 +106,7 @@ $$
 
 (1) (10 分) 证明如果条件改为对于任意 $x,y\in K$ 且 $x\neq y$ 时 $\left\|f\left(x\right)-f\left(y\right)\right\|<\left\|x-y\right\|$, 那么 $f$ 一定至少有一个不动点. (不需要证明, 只需要说出相关定理或构造即可.)
 
-(2) (10 分) 取定 $a\in K$. 证明对于任意 $n\ge1$, 函数 $f_n\left(x\right)=\dfrac{1}{n}a+\left(1-\dfrac{1}{n}\right)f\left(x\right)$ 是一个从 $K$ 到 $K$ 的映射. 证明对于任意 $n\ge1$, $f_n$ 至少有一个不动点 $x_n\in K$.
+(2) (10 分) 取定 $a\in K$. 证明对于任意 $n\ge1$, 函数 $f_n\left(x\right)=\frac{1}{n}a+\left(1-\frac{1}{n}\right)f\left(x\right)$ 是一个从 $K$ 到 $K$ 的映射. 证明对于任意 $n\ge1$, $f_n$ 至少有一个不动点 $x_n\in K$.
 
 (3) (5 分) 运用数列 $\left\{x_n\right\}$ 及 $K$ 的紧性证明满足最初题设条件的 $f$ 也有一个不动点.
 
@@ -114,21 +114,21 @@ $$
 
 (1) 在严格条件 $\left\|f\left(x\right)-f\left(y\right)\right\|<\left\|x-y\right\|$ ($x\neq y$) 下, 由 $K$ 紧可推出 $f$ 实际上是**定义 6.19** (压缩映射) 意义下的压缩映射 (存在统一的 $0<k<1$). 再由**定理 6.16** (巴拿赫不动点定理), $f$ 有唯一不动点.
 
-(2) 由**定义 4.6** (凸集), $a\in K$ 且 $f\left(x\right)\in K$, 故凸组合 $f_n\left(x\right)=\dfrac{1}{n}a+\left(1-\dfrac{1}{n}\right)f\left(x\right)\in K$, 即 $f_n:K\to K$. 对 $x,y\in K$,
+(2) 由**定义 4.6** (凸集), $a\in K$ 且 $f\left(x\right)\in K$, 故凸组合 $f_n\left(x\right)=\frac{1}{n}a+\left(1-\frac{1}{n}\right)f\left(x\right)\in K$, 即 $f_n:K\to K$. 对 $x,y\in K$,
 
 $$
-\left\|f_n\left(x\right)-f_n\left(y\right)\right\|=\left(1-\dfrac{1}{n}\right)\left\|f\left(x\right)-f\left(y\right)\right\|\le\left(1-\dfrac{1}{n}\right)\left\|x-y\right\|,
+\left\|f_n\left(x\right)-f_n\left(y\right)\right\|=\left(1-\frac{1}{n}\right)\left\|f\left(x\right)-f\left(y\right)\right\|\le\left(1-\frac{1}{n}\right)\left\|x-y\right\|,
 $$
 
-其中压缩系数 $k=1-\dfrac{1}{n}<1$, 故 $f_n$ 是**定义 6.19** (压缩映射). 又 $K$ 紧, 由**推论 6.3** (紧度量空间完备) $K$ 完备. 由**定理 6.16** (巴拿赫不动点定理), $f_n$ 有唯一不动点 $x_n\in K$, 即 $x_n=f_n\left(x_n\right)$.
+其中压缩系数 $k=1-\frac{1}{n}<1$, 故 $f_n$ 是**定义 6.19** (压缩映射). 又 $K$ 紧, 由**推论 6.3** (紧度量空间完备) $K$ 完备. 由**定理 6.16** (巴拿赫不动点定理), $f_n$ 有唯一不动点 $x_n\in K$, 即 $x_n=f_n\left(x_n\right)$.
 
-(3) 因 $K$ 紧, 由**定理 6.1** (紧=序列紧), 序列 $\left(x_n\right)\subset K$ 有收敛子列 $x_{n_j}\to x\in K$. 由 $x_n=f_n\left(x_n\right)=\dfrac{1}{n}a+\left(1-\dfrac{1}{n}\right)f\left(x_n\right)$ 整理得
+(3) 因 $K$ 紧, 由**定理 6.1** (紧=序列紧), 序列 $\left(x_n\right)\subset K$ 有收敛子列 $x_{n_j}\to x\in K$. 由 $x_n=f_n\left(x_n\right)=\frac{1}{n}a+\left(1-\frac{1}{n}\right)f\left(x_n\right)$ 整理得
 
 $$
-f\left(x_n\right)=\dfrac{n\,x_n-a}{n-1}.
+f\left(x_n\right)=\frac{n\,x_n-a}{n-1}.
 $$
 
-沿子列 $n_j\to\infty$, $x_{n_j}\to x$, 故 $\dfrac{n_j x_{n_j}-a}{n_j-1}\to x$, 即 $f\left(x_{n_j}\right)\to x$. 另一方面 $f$ 连续, 故 $f\left(x_{n_j}\right)\to f\left(x\right)$. 由**定义 3.10** (豪斯多夫空间) 极限唯一, 得 $f\left(x\right)=x$. 即 $f$ 有不动点. $\blacksquare$
+沿子列 $n_j\to\infty$, $x_{n_j}\to x$, 故 $\frac{n_j x_{n_j}-a}{n_j-1}\to x$, 即 $f\left(x_{n_j}\right)\to x$. 另一方面 $f$ 连续, 故 $f\left(x_{n_j}\right)\to f\left(x\right)$. 由**定义 3.10** (豪斯多夫空间) 极限唯一, 得 $f\left(x\right)=x$. 即 $f$ 有不动点. $\blacksquare$
 
 ### 习题四
 

@@ -118,13 +118,13 @@ $$
 
 ### 习题三
 
-设 $\left(X,d\right)$ 是度量空间. 证明 $d^{*}\left(x,y\right)=\min\left(d\left(x,y\right),1\right)$ 与 $d^{**}\left(x,y\right)=\dfrac{d\left(x,y\right)}{1+d\left(x,y\right)}$ 都是度量, 且与 $d$ 诱导同一拓扑. 注意有界性依赖于度量的选取, 而不依赖于拓扑.
+设 $\left(X,d\right)$ 是度量空间. 证明 $d^{*}\left(x,y\right)=\min\left(d\left(x,y\right),1\right)$ 与 $d^{**}\left(x,y\right)=\frac{d\left(x,y\right)}{1+d\left(x,y\right)}$ 都是度量, 且与 $d$ 诱导同一拓扑. 注意有界性依赖于度量的选取, 而不依赖于拓扑.
 
 ### 解答 习题三
 
 先验证 $d^{*}$ 是度量. 由**定义 6.1** (度量空间) 逐条: (1) $d^{*}\left(x,x\right)=\min\left(0,1\right)=0$. (2) 若 $d^{*}\left(x,y\right)=0$, 则 $\min\left(d\left(x,y\right),1\right)=0$, 故 $d\left(x,y\right)=0$, 由**定义 6.1** (度量空间) 得 $x=y$. (3) 对称性由 $d$ 的对称性直接得到. (4) 对任意 $a,b\ge0$, 有 $\min\left(a+b,1\right)\le\min\left(a,1\right)+\min\left(b,1\right)$; 取 $a=d\left(x,y\right)$, $b=d\left(y,z\right)$, 并用**定义 6.1** (度量空间) 的三角不等式 $d\left(x,z\right)\le d\left(x,y\right)+d\left(y,z\right)$, 得 $d^{*}\left(x,z\right)\le d^{*}\left(x,y\right)+d^{*}\left(y,z\right)$. 故 $d^{*}$ 是度量.
 
-再验证 $d^{**}$ 是度量. 记 $\varphi\left(t\right)=\dfrac{t}{1+t}$, 它在 $\left[0,\infty\right)$ 上严格递增, $\varphi\left(0\right)=0$, 反函数 $\varphi^{-1}\left(t\right)=\dfrac{t}{1-t}$. (1) $d^{**}\left(x,x\right)=\varphi\left(0\right)=0$. (2) 若 $d^{**}\left(x,y\right)=0$, 则 $\varphi\left(d\left(x,y\right)\right)=0$, 由 $\varphi$ 严格递增知 $d\left(x,y\right)=0$, 由**定义 6.1** (度量空间) 得 $x=y$. (3) 对称性显然. (4) 由**定义 6.1** (度量空间) 的三角不等式与 $\varphi$ 递增, $d^{**}\left(x,z\right)=\varphi\left(d\left(x,z\right)\right)\le\varphi\left(d\left(x,y\right)+d\left(y,z\right)\right)$. 而对 $a,b\ge0$ 有
+再验证 $d^{**}$ 是度量. 记 $\varphi\left(t\right)=\frac{t}{1+t}$, 它在 $\left[0,\infty\right)$ 上严格递增, $\varphi\left(0\right)=0$, 反函数 $\varphi^{-1}\left(t\right)=\frac{t}{1-t}$. (1) $d^{**}\left(x,x\right)=\varphi\left(0\right)=0$. (2) 若 $d^{**}\left(x,y\right)=0$, 则 $\varphi\left(d\left(x,y\right)\right)=0$, 由 $\varphi$ 严格递增知 $d\left(x,y\right)=0$, 由**定义 6.1** (度量空间) 得 $x=y$. (3) 对称性显然. (4) 由**定义 6.1** (度量空间) 的三角不等式与 $\varphi$ 递增, $d^{**}\left(x,z\right)=\varphi\left(d\left(x,z\right)\right)\le\varphi\left(d\left(x,y\right)+d\left(y,z\right)\right)$. 而对 $a,b\ge0$ 有
 
 $$
 \varphi\left(a+b\right)=\frac{a+b}{1+a+b}\le\frac{a}{1+a}+\frac{b}{1+b}=\varphi\left(a\right)+\varphi\left(b\right),

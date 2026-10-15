@@ -60,7 +60,7 @@
 
 (3) (20 分) 设 $\left(X,d\right)$ 是一个完备度量空间. 证明如果 $F\subset X$ 是 $X$ 的闭子空间, 那么 $\left(F,d\right)$ 是完备的. 证明如果 $O\subset X$ 是 $X$ 的开子空间, 那么 $\left(O,d\right)$ 不一定是完备的.
 
-(4) (附加题, 10 分) 设 $\left(X,d\right)$ 是完备度量空间, $O\subset X$ 开. 证明存在 $O$ 上由 $d$ 诱导的度量 $d'$ 使 $\left(O,d'\right)$ 完备. 提示: 考虑 $\phi\left(x\right)=\dfrac1{d\left(x,X-O\right)}$ 及嵌入 $x\mapsto\left(x,\phi\left(x\right)\right)$.
+(4) (附加题, 10 分) 设 $\left(X,d\right)$ 是完备度量空间, $O\subset X$ 开. 证明存在 $O$ 上由 $d$ 诱导的度量 $d'$ 使 $\left(O,d'\right)$ 完备. 提示: 考虑 $\phi\left(x\right)=\frac1{d\left(x,X-O\right)}$ 及嵌入 $x\mapsto\left(x,\phi\left(x\right)\right)$.
 
 ### 解答 习题一
 
@@ -72,9 +72,9 @@
 
 (3) 设 $\left(x_n\right)$ 是 $F$ 中的柯西列. 因 $F$ 上度量即 $d$, 它也是 $X$ 中的柯西列; 由**定义 6.4** (完备度量空间) $X$ 完备, 故 $x_n\to x\in X$. 因 $F$ 闭 (由**定义 3.2** (闭集)), 序列极限 $x\in F$. 故 $F$ 中柯西列在 $F$ 中收敛, 由**定义 6.4** (完备度量空间) $F$ 完备.
 
-   开子空间不必完备: 取 $X=\mathbb R$ (完备), $O=\left(0,1\right)$ 开. $x_n=\dfrac1n$ 由**定义 6.3** (柯西列) 是 $O$ 中柯西列, 但其极限 $0\notin O$, 故不收敛, $\left(O,d\right)$ 不完备.
+   开子空间不必完备: 取 $X=\mathbb R$ (完备), $O=\left(0,1\right)$ 开. $x_n=\frac1n$ 由**定义 6.3** (柯西列) 是 $O$ 中柯西列, 但其极限 $0\notin O$, 故不收敛, $\left(O,d\right)$ 不完备.
 
-(4) 由**定义 6.15** (点到集合的距离), $d\left(x,X-O\right)>0$ 对 $x\in O$ 成立. 令 $\phi\left(x\right)=\dfrac1{d\left(x,X-O\right)}$, 定义嵌入 $i:O\to X\times\mathbb R$, $i\left(x\right)=\left(x,\phi\left(x\right)\right)$. 证 $i\left(O\right)$ 在 $X\times\mathbb R$ 中闭: 取 $i\left(x_n\right)\to\left(y,t\right)$, 则 $x_n\to y$ 于 $X$. 若 $y\in O$, 则 $\phi$ 在 $O$ 上连续, $\phi\left(x_n\right)\to\phi\left(y\right)$, 故 $t=\phi\left(y\right)$, $\left(y,t\right)=i\left(y\right)$. 若 $y\notin O$, 则 $d\left(x_n,X-O\right)\to0$, $\phi\left(x_n\right)\to\infty$, 与有限 $t$ 矛盾. 故 $y\in O$, $i\left(O\right)$ 闭. $X\times\mathbb R$ 完备 (两完备空间之积), 由第 3 小题闭子空间 $i\left(O\right)$ 完备. 用 $i$ 把度量拉回 $O$: $d'\left(x,y\right)=d_{X\times\mathbb R}\left(i\left(x\right),i\left(y\right)\right)$, 则 $\left(O,d'\right)$ 与完备空间 $i\left(O\right)$ 等距, 故完备. $\blacksquare$
+(4) 由**定义 6.15** (点到集合的距离), $d\left(x,X-O\right)>0$ 对 $x\in O$ 成立. 令 $\phi\left(x\right)=\frac1{d\left(x,X-O\right)}$, 定义嵌入 $i:O\to X\times\mathbb R$, $i\left(x\right)=\left(x,\phi\left(x\right)\right)$. 证 $i\left(O\right)$ 在 $X\times\mathbb R$ 中闭: 取 $i\left(x_n\right)\to\left(y,t\right)$, 则 $x_n\to y$ 于 $X$. 若 $y\in O$, 则 $\phi$ 在 $O$ 上连续, $\phi\left(x_n\right)\to\phi\left(y\right)$, 故 $t=\phi\left(y\right)$, $\left(y,t\right)=i\left(y\right)$. 若 $y\notin O$, 则 $d\left(x_n,X-O\right)\to0$, $\phi\left(x_n\right)\to\infty$, 与有限 $t$ 矛盾. 故 $y\in O$, $i\left(O\right)$ 闭. $X\times\mathbb R$ 完备 (两完备空间之积), 由第 3 小题闭子空间 $i\left(O\right)$ 完备. 用 $i$ 把度量拉回 $O$: $d'\left(x,y\right)=d_{X\times\mathbb R}\left(i\left(x\right),i\left(y\right)\right)$, 则 $\left(O,d'\right)$ 与完备空间 $i\left(O\right)$ 等距, 故完备. $\blacksquare$
 
 ### 习题二
 
@@ -92,7 +92,7 @@
 
 ### 解答 习题二
 
-(1) 固定 $\delta>0$. 依次选 $x_1,x_2,\dots$ 使 $d\left(x_i,x_j\right)\ge\delta$ ($i\neq j$). 若此过程无穷, $\left\{x_i\right\}$ 是无穷集, 由题设有极限点 $x$. 由**定义 6.2** (开球), $B\left(x,\dfrac\delta2\right)$ 含两个不同的 $x_i,x_j$, 则 $d\left(x_i,x_j\right)<\delta$, 矛盾. 故过程有限停止, 得 $x_1,\dots,x_m$, 且 $\bigcup_{i=1}^m B\left(x_i,\delta\right)=X$ (否则可再选一点), 即有限 $\delta$-覆盖. 由**定义 6.8** (完全有界), $X$ 完全有界.
+(1) 固定 $\delta>0$. 依次选 $x_1,x_2,\dots$ 使 $d\left(x_i,x_j\right)\ge\delta$ ($i\neq j$). 若此过程无穷, $\left\{x_i\right\}$ 是无穷集, 由题设有极限点 $x$. 由**定义 6.2** (开球), $B\left(x,\frac\delta2\right)$ 含两个不同的 $x_i,x_j$, 则 $d\left(x_i,x_j\right)<\delta$, 矛盾. 故过程有限停止, 得 $x_1,\dots,x_m$, 且 $\bigcup_{i=1}^m B\left(x_i,\delta\right)=X$ (否则可再选一点), 即有限 $\delta$-覆盖. 由**定义 6.8** (完全有界), $X$ 完全有界.
 
 (2) 对每个 $n$, 由第 1 小题取半径 $1/n$ 的有限覆盖球心集 $C_n$. 令 $C=\bigcup_{n\ge1}C_n$, 可数. 任取 $x$ 与 $r>0$, 取 $n$ 使 $1/n<r$, 存在 $c\in C_n$ 使 $d\left(x,c\right)<1/n<r$, 即 $c\in B\left(x,r\right)$. 故 $C$ 稠密, 由**定义 3.9** (可分) $X$ 可分.
 
@@ -134,7 +134,7 @@
 
 ### 习题四
 
-(2025 年卷 A 题目二, 50 分). 研究角谷-马尔可夫不动点定理的一个简单版本. 设 $E$ 为一个有限维 $\mathbb R$ 线性空间. 设 $K$ 为 $E$ 的一个非空紧凸集合. 设 $u:E\to E$ 是一个线性映射使得 $u\left(K\right)\subset K$. 对 $n\ge1$ 定义 $u_n=\dfrac1n\left(\operatorname{Id}_E+u+u^2+\cdots+u^{n-1}\right)$, 其中 $\operatorname{Id}_E$ 是 $E$ 上的恒同映射.
+(2025 年卷 A 题目二, 50 分). 研究角谷-马尔可夫不动点定理的一个简单版本. 设 $E$ 为一个有限维 $\mathbb R$ 线性空间. 设 $K$ 为 $E$ 的一个非空紧凸集合. 设 $u:E\to E$ 是一个线性映射使得 $u\left(K\right)\subset K$. 对 $n\ge1$ 定义 $u_n=\frac1n\left(\operatorname{Id}_E+u+u^2+\cdots+u^{n-1}\right)$, 其中 $\operatorname{Id}_E$ 是 $E$ 上的恒同映射.
 
 (0) 证明 $u$ 是连续的.
 
