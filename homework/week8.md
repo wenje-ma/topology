@@ -23,7 +23,7 @@
 在 $\mathbb R^2$ (配通常欧氏距离) 中取
 
 $$
-A=\left\{\left(x,0\right):x\in\mathbb R\right\},\qquad B=\left\{\left(n,1/n\right):n\in\mathbb Z_{>0}\right\}.
+A=\left\{\left(x,0\right):x\in\mathbb R\right\},\quad B=\left\{\left(n,1/n\right):n\in\mathbb Z_{>0}\right\}.
 $$
 
 由**定义 6.15** (点到集合的距离),

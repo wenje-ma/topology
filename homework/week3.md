@@ -171,7 +171,7 @@ $$
 设 $f:X\to Y$. 原像定义为 $f^{-1}\left(B\right)=\left\{x\in X:f\left(x\right)\in B\right\}$, 其中 $B\subset Y$. 对任意一族 $\left\{B_j\right\}_{j\in J}$ 有
 
 $$
-f^{-1}\left(\bigcup_jB_j\right)=\bigcup_jf^{-1}\left(B_j\right),\qquad f^{-1}\left(\bigcap_jB_j\right)=\bigcap_jf^{-1}\left(B_j\right).
+f^{-1}\left(\bigcup_jB_j\right)=\bigcup_jf^{-1}\left(B_j\right),\quad f^{-1}\left(\bigcap_jB_j\right)=\bigcap_jf^{-1}\left(B_j\right).
 $$
 
 事实上, $x$ 属于左端当且仅当 $f\left(x\right)$ 属于相应的并或交, 直接由定义展开即得. 故原像与并、交均可交换.

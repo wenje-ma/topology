@@ -85,7 +85,7 @@ $$
 由 $J\left(a\right)$ 与 $J\left(b\right)$ 分别是 $g_a$ 与 $g_b$ 的不动点,
 
 $$
-J\left(a\right)=\frac{a-f\left(J\left(a\right)\right)}{\lambda},\qquad J\left(b\right)=\frac{b-f\left(J\left(b\right)\right)}{\lambda}.
+J\left(a\right)=\frac{a-f\left(J\left(a\right)\right)}{\lambda},\quad J\left(b\right)=\frac{b-f\left(J\left(b\right)\right)}{\lambda}.
 $$
 
 两式相减,

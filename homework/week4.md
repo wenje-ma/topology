@@ -143,7 +143,7 @@ $$
 记
 
 $$
-G=\left\{\left(x,\sin\frac1x\right):0<x\le1\right\},\qquad L=\left\{0\right\}\times\left[-1,1\right],\qquad S=G\cup L.
+G=\left\{\left(x,\sin\frac1x\right):0<x\le1\right\},\quad L=\left\{0\right\}\times\left[-1,1\right],\quad S=G\cup L.
 $$
 
 由**定义 4.7** (拓扑学家正弦曲线), $S$ 即拓扑学家正弦曲线.

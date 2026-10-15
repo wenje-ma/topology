@@ -47,7 +47,7 @@
 (3) (蒂茨-乌雷松扩张定理) 设 $\left(E,d\right)$ 是度量空间, $A\subset E$ 闭, $f:A\to\mathbb R$ 连续有界. 证明存在连续 $g:E\to\mathbb R$, $g\big|_A=f$, 且
 
 $$
-\sup_{x\in E}g\left(x\right)=\sup_{x\in A}f\left(x\right),\qquad
+\sup_{x\in E}g\left(x\right)=\sup_{x\in A}f\left(x\right),\quad
 \inf_{x\in E}g\left(x\right)=\inf_{x\in A}f\left(x\right).
 $$
 
@@ -130,7 +130,7 @@ $$
 ($\Leftarrow$) 设每个**定义 6.22** (绝对收敛级数) 都收敛. 任取**定义 6.3** (柯西列) $\left(x_n\right)$. 选子列 $\left(x_{\varphi\left(n\right)}\right)$ 使对 $p\ge\varphi\left(n\right)$, $\left\|x_p-x_{\varphi\left(n\right)}\right\|\le 2^{-n}$. 令
 
 $$
-a_1=x_{\varphi\left(1\right)},\qquad a_n=x_{\varphi\left(n\right)}-x_{\varphi\left(n-1\right)}\ \left(n\ge 2\right).
+a_1=x_{\varphi\left(1\right)},\quad a_n=x_{\varphi\left(n\right)}-x_{\varphi\left(n-1\right)}\ \left(n\ge 2\right).
 $$
 
 则 $\left\|a_n\right\|\le 2^{-\left(n-1\right)}$, 故 $\sum a_n$ 绝对收敛. 由假设它收敛于 $s$, 其部分和正是 $x_{\varphi\left(n\right)}$, 故子列收敛于 $s$. 由柯西列性质, 原列 $x_n\to s$. 故 $E$ 完备.

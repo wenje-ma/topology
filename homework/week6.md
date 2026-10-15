@@ -131,7 +131,7 @@ $$
 故 $x\mapsto d\left(x,F\right)$ 连续. 现取不相交闭集 $F,F'$. 令
 
 $$
-U=\left\{x:d\left(x,F\right)<d\left(x,F'\right)\right\},\qquad
+U=\left\{x:d\left(x,F\right)<d\left(x,F'\right)\right\},\quad
 V=\left\{x:d\left(x,F'\right)<d\left(x,F\right)\right\}.
 $$
 

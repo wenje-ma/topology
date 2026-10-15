@@ -28,7 +28,7 @@
 
 ### 解答 习题一
 
-**($\Leftarrow$)** 设存在 $X$ 中闭集 $F'$ 使 $F=F'\cap A$. 由**定义 3.2** (闭集), $X\setminus F'$ 是 $X$ 中开集. 由**定义 3.19** (子空间拓扑), $A\cap\left(X\setminus F'\right)$ 是 $A$ 中开集. 由集合恒等式 $A\setminus\left(F'\cap A\right)=A\cap\left(X\setminus F'\right)$, 故 $A\setminus F$ 是 $A$ 中开集. 再由**定义 3.2** (闭集), $F$ 在 $A$ 中闭.
+**($\Leftarrow$)** 设存在 $X$ 中闭集 $F'$ 使 $F=F'\cap A$. 由**定义 3.2** (闭集), $X\setminus F'$ 是 $X$ 中开集. 由**定义 3.19** (子空间拓扑), $A\cap\left(X\setminus F'\right)$ 是 $A$ 中开集. 由**集合恒等式** $A\setminus\left(F'\cap A\right)=A\cap\left(X\setminus F'\right)$, 故 $A\setminus F$ 是 $A$ 中开集. 再由**定义 3.2** (闭集), $F$ 在 $A$ 中闭.
 
 **($\Rightarrow$)** 设 $F$ 在 $A$ 中闭. 由**定义 3.2** (闭集), $A\setminus F$ 是 $A$ 中开集. 由**定义 3.19** (子空间拓扑), 存在 $X$ 中开集 $O$ 使 $A\setminus F=O\cap A$. 令 $F'=X\setminus O$, 则由**定义 3.2** (闭集) $F'$ 是 $X$ 中闭集, 且
 
@@ -62,7 +62,7 @@ $$
 
 ### 习题三
 
-证明: $A$ 在 $X$ 中开 (相应地, 闭), 当且仅当 $A$ 的每个开集 (相应地, 闭集) $U$ 在 $X$ 中开 (相应地, 闭).
+证明: $A$ 在 $X$ 中开 (闭), 当且仅当 $A$ 的每个开集 (闭集) $U$ 在 $X$ 中开 (相应地, 闭).
 
 ### 解答 习题三
 

@@ -125,7 +125,7 @@ $$
 取线性泛函 $\varphi$ 使 $H=\ker\varphi$ (习题三). 记
 
 $$
-H^{-}=\varphi^{-1}\left(\left(-\infty,0\right)\right),\qquad H^{+}=\varphi^{-1}\left(\left(0,\infty\right)\right).
+H^{-}=\varphi^{-1}\left(\left(-\infty,0\right)\right),\quad H^{+}=\varphi^{-1}\left(\left(0,\infty\right)\right).
 $$
 
 由 $\varphi$ 线性, $H^{-}$ 与 $H^{+}$ 都是凸集, 由**定义 4.6** (凸集) 它们道路连通.
