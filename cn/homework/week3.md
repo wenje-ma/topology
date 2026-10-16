@@ -72,19 +72,13 @@ $$
 d\left(x,z\right)\le\max\left(d\left(x,y\right),d\left(y,z\right)\right).
 $$
 
-(1) 设 $d\left(x,y\right)\neq d\left(x,z\right)$. 不妨设 $d\left(x,y\right)<d\left(x,z\right)$. 由上式,
+(1) 设 $d\left(x,y\right)\neq d\left(x,z\right)$. 不妨设 $d\left(x,y\right)<d\left(x,z\right)$ ($>$ 同理). 由上式,
 
 $$
 d\left(x,z\right)\le\max\left(d\left(x,y\right),d\left(y,z\right)\right).
 $$
 
-因右端 $\ge d\left(x,z\right)$ 而 $d\left(x,y\right)<d\left(x,z\right)$, 故必须 $\max\left(d\left(x,y\right),d\left(y,z\right)\right)=d\left(y,z\right)\ge d\left(x,z\right)$. 再对三元组 $\left(y,x,z\right)$ 用**定义 6.13** (超度量):
-
-$$
-d\left(y,z\right)\le\max\left(d\left(y,x\right),d\left(x,z\right)\right)=\max\left(d\left(x,y\right),d\left(x,z\right)\right)=d\left(x,z\right).
-$$
-
-合之得 $d\left(y,z\right)=d\left(x,z\right)=\max\left(d\left(x,y\right),d\left(x,z\right)\right)$.
+因右端 $\ge d\left(x,z\right)$ 而 $d\left(x,y\right)<d\left(x,z\right)$, 故必须 $\max\left(d\left(x,y\right),d\left(y,z\right)\right)=d\left(y,z\right)\ge d\left(x,z\right)$.
 
 (2) 设 $z\in B\left(x,r\right)$, 即由**定义 6.2** (开球) $d\left(x,z\right)<r$. 任取 $w\in B\left(x,r\right)$, 由**定义 6.13** (超度量),
 
@@ -106,13 +100,13 @@ $$
 d\left(z,w\right)=\max\left(d\left(x,z\right),d\left(x,w\right)\right)=r,
 $$
 
-即 $w\in S\left(z,r\right)$. 反之, 任取 $w\in S\left(z,r\right)$, 即 $d\left(z,w\right)=r$. 因 $d\left(z,x\right)=d\left(x,z\right)<r=d\left(z,w\right)$, 对以 $z$ 为基点的三元组 $\left(z,x,w\right)$ 用第 1 小题, 得
+故 $w\in S\left(z,r\right)$, 即 $S(x,r)\subset S(z,r)$. 反之, 任取 $w\in S\left(z,r\right)$, 即 $d\left(z,w\right)=r$. 因 $d\left(z,x\right)=d\left(x,z\right)<r=d\left(z,w\right)$, 对以 $z$ 为基点的三元组 $\left(z,x,w\right)$ 用第 1 小题, 得
 
 $$
 d\left(x,w\right)=\max\left(d\left(z,x\right),d\left(z,w\right)\right)=r,
 $$
 
-即 $w\in S\left(x,r\right)$. 故 $S\left(x,r\right)=S\left(z,r\right)$, 即 $z$ 也是该球面的中心.
+故 $w\in S\left(x,r\right)$, 即 $S(z,r)\subset S(x,r)$. 故 $S\left(x,r\right)=S\left(z,r\right)$, 即 $z$ 也是该球面的中心.
 
 (4) 设 $B\left(x,r\right)$ 与 $B\left(y,s\right)$ 为两个开球. 若不相交则结论已成立. 若相交, 取 $z\in B\left(x,r\right)\cap B\left(y,s\right)$. 由第 2 小题, $B\left(x,r\right)=B\left(z,r\right)$ 且 $B\left(y,s\right)=B\left(z,s\right)$. 不妨设 $r\le s$. 若 $w\in B\left(z,r\right)$, 则 $d\left(z,w\right)<r\le s$, 故 $w\in B\left(z,s\right)$. 因此 $B\left(z,r\right)\subset B\left(z,s\right)$, 即 $B\left(x,r\right)\subset B\left(y,s\right)$. $\blacksquare$
 
@@ -183,6 +177,8 @@ f\left(\bigcap_jA_j\right)\subset\bigcap_jf\left(A_j\right),
 $$
 
 等号一般不成立. 反例: 取 $f\left(t\right)=t^2$, $A_1=\left[-1,0\right]$, $A_2=\left[0,1\right]$. 则 $A_1\cap A_2=\left\{0\right\}$, 故 $f\left(A_1\cap A_2\right)=\left\{0\right\}$; 但 $f\left(A_1\right)=f\left(A_2\right)=\left[0,1\right]$, 故 $\bigcap_jf\left(A_j\right)=\left[0,1\right]$. 包含而不相等. $\blacksquare$
+
+> (1) 原像的交可交换, 但直接像的交不可交换: 因为考虑原像时是看着 $x$ 找 $y$, 都是一一对应的; 考虑直接像时是看着 $y$ 找 $x$, 而一个 $y$ 可能对应多个 $x$, 因此不可逆, 自然也不可交换.<br>(2) 直接像的并可交换, 但直接像的交不可交换: 考虑并时, 虽然是看着 $y$ 找 $x$, 但并集的含义是 "存在一个" 即可, 因此虽然可能有多个 $x$, 找到一个就行; 考虑交时, 交集的含义是 "任意一个" 均需要满足, 这就要求了 $x$ 需唯一才行, 因此不可逆, 自然也不可交换.
 
 ### 习题六
 
