@@ -1,7 +1,5 @@
 # 拓扑学
 
-本文件汇总拓扑学课程作业中引用的全部定义、定理、推论、引理与命题, 按教材章节分节, 编号与各周作业文首引用块一致.
-
 ## §2 集合论基础
 
 **定理 2.8** (施罗德-伯恩斯坦定理). $\left|A\right|\le\left|B\right|$ 且 $\left|B\right|\le\left|A\right|$ 蕴含 $\left|A\right|=\left|B\right|$. (教材 §2)
@@ -10,7 +8,13 @@
 
 ## §3 拓扑空间与连续函数
 
-**定义 3.1** (拓扑空间). 拓扑空间是一个集合 $X$, 配有一族公认的开集 $T\subset\mathcal P\left(X\right)$. 即 $U\subset X$ 是开的当且仅当 $U\in T$. 我们要求:<br>(1) $\emptyset,X\in T$;<br>(2) 若 $U,V\in T$, 则 $U\cap V\in T$;<br>(3) 若 $A\subset T$, 则 $\bigcup A\in T$. (教材 §3)
+**定义 3.1** (拓扑空间). 拓扑空间是一个集合 $X$, 配有一族公认的开集 $T\subset\mathcal P\left(X\right)$. 即 $U\subset X$ 是开的当且仅当 $U\in T$. 我们要求:
+
+(1) $\emptyset,X\in T$;
+
+(2) 若 $U,V\in T$, 则 $U\cap V\in T$;
+
+(3) 若 $A\subset T$, 则 $\bigcup A\in T$. (教材 §3)
 
 **定理 3.1** (复合连续). 两个连续映射的复合连续. (教材 §3)
 
@@ -100,11 +104,11 @@
 
 **定义 4.11** (弗斯滕伯格拓扑). $\mathbb Z$ 上以非平凡等差数列 $\mathcal S\left(a,b\right)=a\mathbb Z+b$ ($a\ne0$) 为基的拓扑; $\mathcal S\left(a,b\right)$ 既开又闭. (题集 §2.2 A)
 
-**定义 4.12** (戈洛姆拓扑). $\mathbb Z_{>0}$ 上以 $\left\{an+b:n\in\mathbb N\right\}$ ($a,b$ 互素) 为基的拓扑. (题集 §2.2 B)
+**定义 4.12** (戈洛姆拓扑). $\mathbb Z_{> 0}$ 上以 $\left\{an+b:n\in\mathbb N\right\}$ ($a,b$ 互素) 为基的拓扑. (题集 §2.2 B)
 
-**定义 4.13** (基尔希拓扑). $\mathbb Z_{>0}$ 上以 $\left\{pn+b:n\in\mathbb N\right\}$ ($p$ 素数且 $p\nmid b$) 为基的拓扑. (题集 §2.2 B)
+**定义 4.13** (基尔希拓扑). $\mathbb Z_{> 0}$ 上以 $\left\{pn+b:n\in\mathbb N\right\}$ ($p$ 素数且 $p\nmid b$) 为基的拓扑. (题集 §2.2 B)
 
-**定义 4.14** ($\epsilon$-链空间). $X$ 是 $\varepsilon$-链的: 任意 $a,b$ 可由相邻距离 $<\varepsilon$ 的有限点列连接; 对一切 $\varepsilon>0$ 都成立称全链. (题集 §4.5 C5)
+**定义 4.14** ($\epsilon$-链空间). $X$ 是 $\varepsilon$-链的: 任意 $a,b$ 可由相邻距离 $< \varepsilon$ 的有限点列连接; 对一切 $\varepsilon> 0$ 都成立称全链. (题集 §4.5 C5)
 
 **定理 4.15** (闭包保持连通性). 连通集的闭包仍连通. (教材 §4)
 
@@ -148,9 +152,9 @@
 
 **定理 6.1** (紧=序列紧). 度量空间中紧致与序列紧致等价. (教材 §6)
 
-**定义 6.2** (开球). $B\left(x,r\right)=\left\{y:d\left(x,y\right)<r\right\}$; 开球全体是度量拓扑的基. (教材 §3 p13/§6 p33)
+**定义 6.2** (开球). $B\left(x,r\right)=\left\{y:d\left(x,y\right)< r\right\}$; 开球全体是度量拓扑的基. (教材 §3 p13/§6 p33)
 
-**定义 6.3** (柯西列). $\lim_{N\to\infty}\sup_{i,j>N}d\left(x_i,x_j\right)=0$. (教材 §6, p33)
+**定义 6.3** (柯西列). $\lim_{N\to\infty}\sup_{i,j> N}d\left(x_i,x_j\right)=0$. (教材 §6, p33)
 
 **推论 6.3** (紧度量空间完备). 紧度量空间是完备的. (教材 §6)
 
@@ -168,7 +172,7 @@
 
 **定理 6.7** (连续函数的一致极限连续). $C\left(X,Y\right)$ 在 $Y^X$ 中闭. (教材 §6)
 
-**定义 6.8** (完全有界). 对每个 $r>0$, $X$ 可被有限个半径 $r$ 的球覆盖. (教材 §6, p37)
+**定义 6.8** (完全有界). 对每个 $r> 0$, $X$ 可被有限个半径 $r$ 的球覆盖. (教材 §6, p37)
 
 **定义 6.9** (上确界度量). $K$ 紧时 $C\left(K\right)$ 上 $d\left(f,g\right)=\sup\left|f-g\right|$, 即上确界范数诱导的度量. (教材 §6, p39)
 
@@ -182,11 +186,17 @@
 
 **定义 6.15** (点到集合的距离). $d\left(x,A\right)=\inf_{a\in A}d\left(x,a\right)$. (题集 §3.2 Q2)
 
-**定义 6.16** ($\epsilon$-邻域). $U_{\varepsilon}\left(A\right)=\left\{x:d\left(x,A\right)<\varepsilon\right\}$. (题集 §3.2 Q2)
+**定义 6.16** ($\epsilon$-邻域). $U_{\varepsilon}\left(A\right)=\left\{x:d\left(x,A\right)< \varepsilon\right\}$. (题集 §3.2 Q2)
 
 **定理 6.16** (巴拿赫不动点定理). 非空完备度量空间上压缩映射有唯一不动点. (题集 §4.3 Q1)
 
-**定义 6.17** (豪斯多夫距离). $d\left(A,B\right)=\inf\left\{r>0:A\subset U_r\left(B\right),B\subset U_r\left(A\right)\right\}$; 在紧子集族 $K\left(X\right)$ 上是真度量. (题集 §3.2 Q3-5)
+**定义 6.17** (豪斯多夫距离).
+
+$$
+d\left(A,B\right)=\inf\left\{r> 0:A\subset U_r\left(B\right),B\subset U_r\left(A\right)\right\};
+$$
+
+在紧子集族 $K\left(X\right)$ 上是真度量. (题集 §3.2 Q3-5)
 
 **定理 6.17** (里茨定理). 无穷维赋范线性空间的闭单位球非紧 (不能被有限个单位开球覆盖). (题集 §7.1)
 
@@ -194,7 +204,7 @@
 
 **定理 6.18** (蒂茨-乌雷松扩张定理). 度量空间闭子集 $A$ 上的连续有界函数可保持 $\sup/\inf$ 地扩张到全空间. (题集 §7.1)
 
-**定义 6.19** (压缩映射). 存在 $0<k<1$ 使 $d\left(f\left(x\right),f\left(y\right)\right)\le k\cdot d\left(x,y\right)$. (题集 §4.3 Q1)
+**定义 6.19** (压缩映射). 存在 $0< k< 1$ 使 $d\left(f\left(x\right),f\left(y\right)\right)\le k\cdot d\left(x,y\right)$. (题集 §4.3 Q1)
 
 **定义 6.20** (赋范线性空间). 向量空间上装备满足范数三公理的 $\left\|\cdot\right\|$. (题集 §4.3 Q2/§5.1)
 
@@ -210,7 +220,7 @@
 
 **定义 6.26** (局部凸空间). 拓扑向量空间的拓扑由一族半范数定义. (题集 §5 Q6)
 
-**定义 6.27** (规范函数). 凸邻域 $C$ 的闵可夫斯基泛函 $\left\|x\right\|_C=\inf\left\{1/t:tx\in C,t>0\right\}$. (题集 §5 Q14)
+**定义 6.27** (规范函数). 凸邻域 $C$ 的闵可夫斯基泛函 $\left\|x\right\|_C=\inf\left\{1/t:tx\in C,t> 0\right\}$. (题集 §5 Q14)
 
 **定义 6.28** (算子范数). $L\left(E,F\right)$ 上 $\left\|T\right\|=\sup_{\left\|x\right\|\le1}\left\|Tx\right\|$. (题集 §5 Q15)
 
@@ -234,11 +244,11 @@
 
 **定理 6.57** (开映射定理). 巴拿赫空间之间的连续满线性映射是开映射 (把开集映为开集); 推论: 巴拿赫空间之间的连续线性双射之逆连续. (题集 §6)
 
-**定理 6.58** (巴拿赫-施坦豪斯定理). 设 $E$ 是巴拿赫空间, $F$ 是赋范线性空间, $\left\{T_i\right\}_{i\in I}$ 是一族连续线性映射 $T_i:E\to F$. 若对每个 $x\in E$, $\sup_i\left\|T_i x\right\|<\infty$, 则 $\sup_i\left\|T_i\right\|<\infty$. (题集 §6)
+**定理 6.58** (巴拿赫-施坦豪斯定理). 设 $E$ 是巴拿赫空间, $F$ 是赋范线性空间, $\left\{T_i\right\}_{i\in I}$ 是一族连续线性映射 $T_i:E\to F$. 若对每个 $x\in E$, $\sup_i\left\|T_i x\right\|< \infty$, 则 $\sup_i\left\|T_i\right\|< \infty$. (题集 §6)
 
 **定理 6.59** (巴拿赫-绍德不动点定理). 巴拿赫空间中非空紧凸子集到自身的连续映射有不动点. (题集 §6)
 
-**定义 6.60** (序列空间 $\ell^p$). $\ell^p=\left\{x=\left(x_n\right):\sum_{n\ge1}\left|x_n\right|^p<\infty\right\}$, 装备 $\left\|x\right\|_p=\left(\sum\left|x_n\right|^p\right)^{1/p}$; 当 $1\le p<\infty$ 时是巴拿赫空间. (题集 §6)
+**定义 6.60** (序列空间 $\ell^p$). $\ell^p=\left\{x=\left(x_n\right):\sum_{n\ge1}\left|x_n\right|^p< \infty\right\}$, 装备 $\left\|x\right\|_p=\left(\sum\left|x_n\right|^p\right)^{1/p}$; 当 $1\le p< \infty$ 时是巴拿赫空间. (题集 §6)
 
 ## §7 正规空间与紧化
 
@@ -266,7 +276,13 @@
 
 **定义 11.7** (环面). 正方形对边同向粘合所得 $S^1\times S^1$. (教材 §11, p64)
 
-**定义 11.11** (悬垂). $SX=X\times\left[-1,1\right]/X\times\left\{-1\right\}\cup X\times\left\{1\right\}$ (两端各捏成一点); $S^n$ 的悬垂同胚 $S^{n+1}$. (题集 §5 Q10)
+**定义 11.11** (悬垂).
+
+$$
+SX=X\times\left[-1,1\right]/X\times\left\{-1\right\}\cup X\times\left\{1\right\}
+$$
+
+(两端各捏成一点); $S^n$ 的悬垂同胚 $S^{n+1}$. (题集 §5 Q10)
 
 **定义 11.12** (塌缩商 $X/\left\langle A\right\rangle$). 将闭 (或开) 子集 $A$ 整捏成一点所得商空间; $CX/\left\langle X\right\rangle\cong SX$. (题集 §5 Q11)
 
