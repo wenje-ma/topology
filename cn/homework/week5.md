@@ -86,7 +86,7 @@ $$
 
 ### 习题二
 
-在 $\mathbb Z_{>0}$ 上分别用 (非平凡) 等差数列 $a\mathbb N+b=\left\{an+b:n\in\mathbb N\right\}$ ($a,b$ 互素) 与 $p\mathbb N+b=\left\{pn+b:n\in\mathbb N\right\}$ ($p$ 为素数且 $p\nmid b$) 为基 (前者) 与预基 (后者) 定义两个拓扑.
+在 $\mathbb Z_{>0}$ 上分别用 (非平凡) 等差数列 $a\mathbb N+b=\left\{an+b:n\in\mathbb N\right\}$ ($a,b$ 互素) 与 $p\mathbb N+b=\left\{pn+b:n\in\mathbb N\right\}$ ($p$ 为素数且 $p\nmid b$) 为基 (前者) 与子基 (后者) 定义两个拓扑.
 
 (1) (戈洛姆) 证明基可限制到满足 $0\le b<a$ 且 $a,b$ 互素的偶对;
 
@@ -110,7 +110,7 @@ $$
 
 (3) 对基尔希的 $S\left(p,b\right)=\left\{pn+b:n\in\mathbb N\right\}$, $p$ 素数, $p\nmid b$. 作带余除法 $b=qp+r$, $0\le r<p$, 则 $p\nmid r$ (否则 $p\mid b$), 且 $S\left(p,b\right)\subset S\left(p,r\right)$. 同第 1 小题, 对 $x=pn_0+b\in S\left(p,b\right)$ 有 $p\nmid x$, 故 $S\left(p,x\right)\subset S\left(p,b\right)$. 基可限制到 $0\le b<p$ 且 $p\nmid b$ 的偶对.
 
-(4) 以 $\left\{S\left(p,b\right)\right\}$ 为预基, 其有限交
+(4) 以 $\left\{S\left(p,b\right)\right\}$ 为子基, 其有限交
 
 $$
 S\left(p_1,b_1\right)\cap\cdots\cap S\left(p_k,b_k\right)
