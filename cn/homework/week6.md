@@ -34,6 +34,8 @@
 
 > **定理 3.1** (复合连续)<br>两个连续映射的复合连续. (教材 $\S3$)
 
+> **定理 7.3** (乌雷松度量化定理)<br>有可数基的正则空间可度量化. (教材 $\S7$)
+
 ### 习题一
 
 可分空间与具有可数基的空间.
@@ -64,7 +66,7 @@ $$
 
 $W_{n\left(x\right)}$ 作为某 $\left(a,b\right]$ 之并, 其右端点不超过 $x$ 且含 $x$, 故其右端点恰为 $x$. 于是 $x\neq y$ 时 $W_{n\left(x\right)}\neq W_{n\left(y\right)}$ (右端点不同). 这给出从不可数集 $\mathbb R$ 到可数集 $\left\{W_n\right\}$ 的单射, 矛盾. 故 $\mathcal O$ 无可数基.
 
-**不可度量化**: 若 $\mathcal O$ 来自某度量 $d$ (**定义 6.1** (度量空间)), 则因 $\mathcal O$ 可分, 取可数稠密集 $D$, 全体开球 $B\left(q,1/k\right)$ ($q\in D$, $k\ge1$, 见**定义 6.2** (开球)) 构成 $\mathcal O$ 的可数基, 与上一段矛盾. 故 $\mathcal O$ 不可度量化. $\blacksquare$
+**不可度量化**: 依据**定理 7.3** (乌雷松度量化定理), $\mathcal O$ 连可数基都没有, 更别说是不是正则空间了. 故 $\mathcal O$ 不可度量化. $\blacksquare$
 
 ### 习题二
 
@@ -91,6 +93,8 @@ a=\left(\frac{\epsilon}{2},\frac{2}{\epsilon}\right)\in A,
 $$
 
 再取 $a'=\left(-\frac{\epsilon}{4},\frac{2}{\epsilon}\right)$. 由**定义 6.15** (点到集合的距离), $d\left(a',A\right)\le d\left(a',a\right)=\frac{3\epsilon}{4}<\epsilon$, 故 $a'\in V_{\epsilon}\left(A\right)$ (**定义 6.16** ($\epsilon$-邻域)). 但 $a'$ 的横坐标为负, $a'\notin U$. 于是对每个 $\epsilon>0$, $V_{\epsilon}\left(A\right)\not\subset U$. 故没有任何 $V_{\epsilon}\left(A\right)$ 含于 $U$, 由**定义 3.30** (基本邻域系), $\left\{V_{\epsilon}\left(A\right)\right\}$ 不是 $A$ 的基本邻域系. $\blacksquare$
+
+> 同样的构造基本邻域系的规则, 为什么全集就满足, 子集就不满足呢? 因为全集上定义的邻域必定全在全集内部; 而对于子集, 我们可以找到该子集的边界作为反例的邻域, 在其上的任何 $\epsilon$-邻域都会超出其范围, 导致了这种构造方法的失效.
 
 ### 习题三
 
