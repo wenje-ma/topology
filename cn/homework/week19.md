@@ -40,7 +40,7 @@
 
 (7.1 紧性)
 
-(1) 设 $\left(E,d\right)$ 是度量空间, $f:E\to\mathbb R$ 连续, $K\subset E$ 紧. 假设 $f$ 在 $K$ 上单射, 且对每个 $x\in K$ 存在 $\varepsilon>0$ 使 $f$ 在 $B\left(x,\varepsilon\right)$ 上单射. 证明存在含 $K$ 的开集 $\Omega$ 使 $f$ 在 $\Omega$ 上单射.
+(1) 设 $\left(E,d\right)$ 是度量空间, $f:E\to\mathbb R$ 连续, $K\subset E$ 紧. 假设 $f$ 在 $K$ 上单射, 且对每个 $x\in K$ 存在 $\epsilon>0$ 使 $f$ 在 $B\left(x,\epsilon\right)$ 上单射. 证明存在含 $K$ 的开集 $\Omega$ 使 $f$ 在 $\Omega$ 上单射.
 
 (2) (里茨定理) 设 $E$ 是实无穷维赋范线性空间. 证明 $E$ 的闭单位球不能被有限个半径 $1$ 的开球覆盖.
 
@@ -53,7 +53,7 @@ $$
 
 ### 解答 习题一
 
-**第 1 小题**: 对 $n\ge 1$, 定义 $K_n=\left\{x\in E:d\left(x,K\right)<1/n\right\}$. 每个 $K_n$ 是开集且含 $K$. 反证: 若对每个 $n$, $f$ 在 $K_n$ 上不单射, 则存在 $x_n,y_n\in K_n$, $x_n\neq y_n$, 使 $f\left(x_n\right)=f\left(y_n\right)$. 由 $x_n,y_n\in K_n$, 可取 $x'_n,y'_n\in K$ 使 $d\left(x_n,x'_n\right)<1/n$, $d\left(y_n,y'_n\right)<1/n$. 由**定义 5.2** (紧致空间), $K\times K$ 紧; 由**定理 6.1** (紧=序列紧), 存在子列 $\left(x'_{\varphi\left(n\right)},y'_{\varphi\left(n\right)}\right)\to\left(x,y\right)\in K\times K$. 由三角不等式, $x_{\varphi\left(n\right)}\to x$, $y_{\varphi\left(n\right)}\to y$. 由 $f$ 连续, $f\left(x_{\varphi\left(n\right)}\right)=f\left(y_{\varphi\left(n\right)}\right)$ 取极限得 $f\left(x\right)=f\left(y\right)$. 因 $f$ 在 $K$ 上单射, $x=y$. 但由假设, $x$ 有邻域 $B\left(x,\varepsilon\right)$ 使 $f$ 单射, 而 $x_{\varphi\left(n\right)}\neq y_{\varphi\left(n\right)}$ 且当 $n$ 充分大时二者都在 $B\left(x,\varepsilon\right)$ 内, $f\left(x_{\varphi\left(n\right)}\right)=f\left(y_{\varphi\left(n\right)}\right)$, 矛盾. 故存在 $n$ 使 $f$ 在 $K_n$ 上单射, 取 $\Omega=K_n$ 即可.
+**第 1 小题**: 对 $n\ge 1$, 定义 $K_n=\left\{x\in E:d\left(x,K\right)<1/n\right\}$. 每个 $K_n$ 是开集且含 $K$. 反证: 若对每个 $n$, $f$ 在 $K_n$ 上不单射, 则存在 $x_n,y_n\in K_n$, $x_n\neq y_n$, 使 $f\left(x_n\right)=f\left(y_n\right)$. 由 $x_n,y_n\in K_n$, 可取 $x'_n,y'_n\in K$ 使 $d\left(x_n,x'_n\right)<1/n$, $d\left(y_n,y'_n\right)<1/n$. 由**定义 5.2** (紧致空间), $K\times K$ 紧; 由**定理 6.1** (紧=序列紧), 存在子列 $\left(x'_{\varphi\left(n\right)},y'_{\varphi\left(n\right)}\right)\to\left(x,y\right)\in K\times K$. 由三角不等式, $x_{\varphi\left(n\right)}\to x$, $y_{\varphi\left(n\right)}\to y$. 由 $f$ 连续, $f\left(x_{\varphi\left(n\right)}\right)=f\left(y_{\varphi\left(n\right)}\right)$ 取极限得 $f\left(x\right)=f\left(y\right)$. 因 $f$ 在 $K$ 上单射, $x=y$. 但由假设, $x$ 有邻域 $B\left(x,\epsilon\right)$ 使 $f$ 单射, 而 $x_{\varphi\left(n\right)}\neq y_{\varphi\left(n\right)}$ 且当 $n$ 充分大时二者都在 $B\left(x,\epsilon\right)$ 内, $f\left(x_{\varphi\left(n\right)}\right)=f\left(y_{\varphi\left(n\right)}\right)$, 矛盾. 故存在 $n$ 使 $f$ 在 $K_n$ 上单射, 取 $\Omega=K_n$ 即可.
 
 **第 2 小题**: 反证. 设闭单位球 $\overline B\left(0,1\right)$ 被开单位球 $B\left(x_i,1\right)$ ($i=1,\dots,m$) 覆盖. 令 $F=\operatorname{span}\left(x_1,\dots,x_m\right)$, 它是有限维子空间. 因 $E$ 无穷维, 存在 $y\in E\setminus F$. 由有限维子空间闭, 取 $x\in F$ 使 $\left\|y-x\right\|=d\left(y,F\right)$ (有限维中距离可达). 令
 
@@ -75,7 +75,7 @@ $$
 g\left(x\right)=\frac{1}{d\left(x,A\right)}\inf_{y\in A}\left(f\left(y\right)d\left(x,y\right)\right),
 $$
 
-对 $x\in A$ 令 $g\left(x\right)=f\left(x\right)$. 由平移缩放 (不妨设 $\inf_A f=1$, $\sup_A f=2$), 可验证 $g$ 连续: $x\in\operatorname{int}A$ 时 $g=f$ 连续; $x\notin A$ 时由三角不等式 $d\left(x,A\right)$ 连续且正, $g$ 连续; $x\in\partial A$ 时由 $f$ 在 $A$ 上连续, 对 $\varepsilon>0$ 取 $r>0$ 使 $y\in B\left(x,r\right)\cap A$ 时 $\left|f\left(y\right)-f\left(x\right)\right|<\varepsilon$, 再对 $z\notin A$ 且 $\left\|z-x\right\|<r/4$ 用三角不等式估计得 $\left|g\left(z\right)-f\left(x\right)\right|<\varepsilon$. 由**定义 3.3** (连续映射), $g$ 在全 $E$ 上连续. 由构造 $\inf_E g=\inf_A f$, $\sup_E g=\sup_A f$. 这就是**定理 6.18** (蒂茨-乌雷松扩张定理). $\blacksquare$
+对 $x\in A$ 令 $g\left(x\right)=f\left(x\right)$. 由平移缩放 (不妨设 $\inf_A f=1$, $\sup_A f=2$), 可验证 $g$ 连续: $x\in\operatorname{int}A$ 时 $g=f$ 连续; $x\notin A$ 时由三角不等式 $d\left(x,A\right)$ 连续且正, $g$ 连续; $x\in\partial A$ 时由 $f$ 在 $A$ 上连续, 对 $\epsilon>0$ 取 $r>0$ 使 $y\in B\left(x,r\right)\cap A$ 时 $\left|f\left(y\right)-f\left(x\right)\right|<\epsilon$, 再对 $z\notin A$ 且 $\left\|z-x\right\|<r/4$ 用三角不等式估计得 $\left|g\left(z\right)-f\left(x\right)\right|<\epsilon$. 由**定义 3.3** (连续映射), $g$ 在全 $E$ 上连续. 由构造 $\inf_E g=\inf_A f$, $\sup_E g=\sup_A f$. 这就是**定理 6.18** (蒂茨-乌雷松扩张定理). $\blacksquare$
 
 ### 习题二
 
@@ -151,29 +151,29 @@ $$
 
 (1) 设 $E$ 是有可数无穷基的赋范线性空间. 令 $F_n=\operatorname{span}\left(e_1,\dots,e_n\right)$. 用**定理 6.13** (贝尔纲定理) 证明 $E$ 不完备.
 
-(2) 设 $\left(E,d\right)$ 完备, $\left(F,\delta\right)$ 是度量空间, $f_n:E\to F$ 连续且逐点收敛到 $f:E\to F$. (a) 对 $\varepsilon>0$ 与 $n\in\mathbb N$, 令
+(2) 设 $\left(E,d\right)$ 完备, $\left(F,\delta\right)$ 是度量空间, $f_n:E\to F$ 连续且逐点收敛到 $f:E\to F$. (a) 对 $\epsilon>0$ 与 $n\in\mathbb N$, 令
 
 $$
-F_{n,\varepsilon}=\left\{x\in E:\ \forall p\ge n,\ \delta\left(f_p\left(x\right),f_n\left(x\right)\right)\le\varepsilon\right\}.
+F_{n,\epsilon}=\left\{x\in E:\ \forall p\ge n,\ \delta\left(f_p\left(x\right),f_n\left(x\right)\right)\le\epsilon\right\}.
 $$
 
-用贝尔纲定理证明 $\Omega_\varepsilon=\bigcup_n\operatorname{int}F_{n,\varepsilon}$ 在 $E$ 中稠密. (b) 证明对 $x_0\in\Omega_\varepsilon$, 存在邻域 $V$ 使对 $x\in V$, $\delta\left(f\left(x_0\right),f\left(x\right)\right)\le 3\varepsilon$. (c) 证明 $f$ 的连续点集稠密. (d) 证明可导函数 $f:\mathbb R\to\mathbb R$ 的导函数 $f'$ 的连续点集在 $\mathbb R$ 中稠密.
+用贝尔纲定理证明 $\Omega_\epsilon=\bigcup_n\operatorname{int}F_{n,\epsilon}$ 在 $E$ 中稠密. (b) 证明对 $x_0\in\Omega_\epsilon$, 存在邻域 $V$ 使对 $x\in V$, $\delta\left(f\left(x_0\right),f\left(x\right)\right)\le 3\epsilon$. (c) 证明 $f$ 的连续点集稠密. (d) 证明可导函数 $f:\mathbb R\to\mathbb R$ 的导函数 $f'$ 的连续点集在 $\mathbb R$ 中稠密.
 
 ### 解答 习题四
 
 **第 1 小题**: 每个 $F_n$ 是有限维子空间, 故闭 (**定义 3.2** (闭集)), 且无内部 (真子空间不含开球). $E=\bigcup_n F_n$. 若 $E$ 完备, 由**推论 6.14** (递增闭集族), 某个 $F_n$ 有非空内部, 矛盾. 故 $E$ 不完备.
 
-**第 2 小题 (a)**: 每个 $F_{n,\varepsilon}$ 闭: 对固定 $p\ge n$, $\left\{x:\delta\left(f_p\left(x\right),f_n\left(x\right)\right)\le\varepsilon\right\}$ 由**定义 3.3** (连续映射) 连续, 故闭; $F_{n,\varepsilon}$ 是它们的交, 闭. 因 $f_n$ 逐点收敛, $\bigcup_n F_{n,\varepsilon}=E$. 令 $G=E\setminus\Omega_\varepsilon=\bigcap_n\left(E\setminus\operatorname{int}F_{n,\varepsilon}\right)$. $G$ 闭. 每个 $G\cap F_{n,\varepsilon}$ 是闭且无内部 (因 $G$ 去掉了所有内部). 由**定理 6.13** (贝尔纲定理) 及其**推论 6.14** (递增闭集族), $G$ 无内部, 即 $\Omega_\varepsilon$ 稠密.
+**第 2 小题 (a)**: 每个 $F_{n,\epsilon}$ 闭: 对固定 $p\ge n$, $\left\{x:\delta\left(f_p\left(x\right),f_n\left(x\right)\right)\le\epsilon\right\}$ 由**定义 3.3** (连续映射) 连续, 故闭; $F_{n,\epsilon}$ 是它们的交, 闭. 因 $f_n$ 逐点收敛, $\bigcup_n F_{n,\epsilon}=E$. 令 $G=E\setminus\Omega_\epsilon=\bigcap_n\left(E\setminus\operatorname{int}F_{n,\epsilon}\right)$. $G$ 闭. 每个 $G\cap F_{n,\epsilon}$ 是闭且无内部 (因 $G$ 去掉了所有内部). 由**定理 6.13** (贝尔纲定理) 及其**推论 6.14** (递增闭集族), $G$ 无内部, 即 $\Omega_\epsilon$ 稠密.
 
-**(b)**: 取 $x_0\in\Omega_\varepsilon$, 则 $x_0\in\operatorname{int}F_{n,\varepsilon}$ 对某个 $n$, 故存在邻域 $V\subset F_{n,\varepsilon}$. 对 $x\in V$ 与 $p\ge n$, $\delta\left(f_p\left(x\right),f_n\left(x\right)\right)\le\varepsilon$. 令 $p\to\infty$ 得 $\delta\left(f\left(x\right),f_n\left(x\right)\right)\le\varepsilon$. 特别对 $x_0\in V$, $\delta\left(f\left(x_0\right),f_n\left(x_0\right)\right)\le\varepsilon$. 故
+**(b)**: 取 $x_0\in\Omega_\epsilon$, 则 $x_0\in\operatorname{int}F_{n,\epsilon}$ 对某个 $n$, 故存在邻域 $V\subset F_{n,\epsilon}$. 对 $x\in V$ 与 $p\ge n$, $\delta\left(f_p\left(x\right),f_n\left(x\right)\right)\le\epsilon$. 令 $p\to\infty$ 得 $\delta\left(f\left(x\right),f_n\left(x\right)\right)\le\epsilon$. 特别对 $x_0\in V$, $\delta\left(f\left(x_0\right),f_n\left(x_0\right)\right)\le\epsilon$. 故
 
 $$
 \delta\left(f\left(x_0\right),f\left(x\right)\right)\le\delta\left(f\left(x_0\right),f_n\left(x_0\right)\right)+\delta\left(f_n\left(x_0\right),f_n\left(x\right)\right)+\delta\left(f_n\left(x\right),f\left(x\right)\right).
 $$
 
-第三项 $\le\varepsilon$. 第一项 $\le\varepsilon$. 中间项由 $f_n$ 连续, 可取 $V$ 更小使 $\delta\left(f_n\left(x_0\right),f_n\left(x\right)\right)\le\varepsilon$. 合计 $\le 3\varepsilon$.
+第三项 $\le\epsilon$. 第一项 $\le\epsilon$. 中间项由 $f_n$ 连续, 可取 $V$ 更小使 $\delta\left(f_n\left(x_0\right),f_n\left(x\right)\right)\le\epsilon$. 合计 $\le 3\epsilon$.
 
-**(c)**: 令 $\Omega=\bigcap_{m\ge 1}\Omega_{1/m}$. 由**定义 3.8** (稠密), 每个 $\Omega_{1/m}$ 稠密开 (或至少稠密), 由**定理 6.13** (贝尔纲定理), $\Omega$ 稠密. 对 $x_0\in\Omega$ 与任意 $\varepsilon>0$, 由 (b) 存在邻域 $V$ 使 $\delta\left(f\left(x_0\right),f\left(x\right)\right)\le 3/m<\varepsilon$ (取 $m$ 使 $3/m<\varepsilon$). 故 $f$ 在 $x_0$ 连续. 因而连续点集 $\Omega$ 稠密.
+**(c)**: 令 $\Omega=\bigcap_{m\ge 1}\Omega_{1/m}$. 由**定义 3.8** (稠密), 每个 $\Omega_{1/m}$ 稠密开 (或至少稠密), 由**定理 6.13** (贝尔纲定理), $\Omega$ 稠密. 对 $x_0\in\Omega$ 与任意 $\epsilon>0$, 由 (b) 存在邻域 $V$ 使 $\delta\left(f\left(x_0\right),f\left(x\right)\right)\le 3/m<\epsilon$ (取 $m$ 使 $3/m<\epsilon$). 故 $f$ 在 $x_0$ 连续. 因而连续点集 $\Omega$ 稠密.
 
 **(d)**: 令 $f:\mathbb R\to\mathbb R$ 可导. 定义差商
 

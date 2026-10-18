@@ -10,7 +10,7 @@
 
 > **定义 6.15** (点到集合的距离)<br>$d\left(x,A\right)=\inf_{a\in A}d\left(x,a\right)$. (题集 $\S3.2$)
 
-> **定义 6.16** ($\epsilon$-邻域)<br>$U_\varepsilon\left(A\right)=\left\{x\in X:d\left(x,A\right)<\varepsilon\right\}$. (题集 $\S3.2$)
+> **定义 6.16** ($\epsilon$-邻域)<br>$U_\epsilon\left(A\right)=\left\{x\in X:d\left(x,A\right)<\epsilon\right\}$. (题集 $\S3.2$)
 
 > **定义 6.17** (豪斯多夫距离)<br>$d\left(A,B\right)=\inf\left\{r>0:A\subset U_r\left(B\right),\,B\subset U_r\left(A\right)\right\}$; 在紧子集族 $\mathcal K\left(X\right)$ 上是真度量. (题集 $\S3.2$)
 
@@ -36,7 +36,7 @@ $$
 
 ### 习题二
 
-定义集合 $A\subset X$ 的 $\varepsilon$-邻域 $U_\varepsilon\left(A\right)=\left\{x\in X:d\left(x,A\right)<\varepsilon\right\}$, 其中 $d\left(x,A\right)=\inf_{a\in A}d\left(x,a\right)$. 证明: 对 $r_1,r_2>0$ 与任意 $A\subset X$,
+定义集合 $A\subset X$ 的 $\epsilon$-邻域 $U_\epsilon\left(A\right)=\left\{x\in X:d\left(x,A\right)<\epsilon\right\}$, 其中 $d\left(x,A\right)=\inf_{a\in A}d\left(x,a\right)$. 证明: 对 $r_1,r_2>0$ 与任意 $A\subset X$,
 
 $$
 U_{r_1}\left(U_{r_2}\left(A\right)\right)\subset U_{r_1+r_2}\left(A\right),

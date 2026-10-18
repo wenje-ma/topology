@@ -182,17 +182,17 @@ $$
 
 ### 解答 习题八
 
-固定 $\varepsilon>0$. 定义
+固定 $\epsilon>0$. 定义
 
 $$
-F_m=\left\{x\ge 0:\ \text{对一切 }k\ge m,\ \left|f\left(kx\right)\right|\le\varepsilon\right\}.
+F_m=\left\{x\ge 0:\ \text{对一切 }k\ge m,\ \left|f\left(kx\right)\right|\le\epsilon\right\}.
 $$
 
-对固定 $k$, 条件 $\left|f\left(kx\right)\right|\le\varepsilon$ 是 $x$ 的闭条件 ($f$ 连续); $F_m$ 是这些闭集 ($k\ge m$) 之交, 故闭. 由假设, 每个 $x\ge 0$ 属于某个 $F_m$, 故 $\mathbb R_{\ge 0}=\bigcup_{m\ge 1}F_m$, 且 $F_m$ 递增.
+对固定 $k$, 条件 $\left|f\left(kx\right)\right|\le\epsilon$ 是 $x$ 的闭条件 ($f$ 连续); $F_m$ 是这些闭集 ($k\ge m$) 之交, 故闭. 由假设, 每个 $x\ge 0$ 属于某个 $F_m$, 故 $\mathbb R_{\ge 0}=\bigcup_{m\ge 1}F_m$, 且 $F_m$ 递增.
 
-由**定理 6.13** (贝尔纲定理) 及其**推论 6.14** (递增闭集族), 某个 $F_N$ 有非空内部, 故存在区间 $\left[a,b\right]\subset F_N$, $0<a<b$. 于是对一切 $x\in\left[a,b\right]$ 与 $k\ge N$, $\left|f\left(kx\right)\right|\le\varepsilon$.
+由**定理 6.13** (贝尔纲定理) 及其**推论 6.14** (递增闭集族), 某个 $F_N$ 有非空内部, 故存在区间 $\left[a,b\right]\subset F_N$, $0<a<b$. 于是对一切 $x\in\left[a,b\right]$ 与 $k\ge N$, $\left|f\left(kx\right)\right|\le\epsilon$.
 
-任取 $t$ 充分大, 考虑整数区间 $\left[t/b,t/a\right]$. 其长度为 $t\left(1/a-1/b\right)\to\infty$, 故当 $t$ 充分大时其中含某整数 $k\ge N$. 令 $x=t/k$, 则 $x\in\left[a,b\right]$, 故 $\left|f\left(t\right)\right|=\left|f\left(kx\right)\right|\le\varepsilon$. 因而 $\limsup_{t\to\infty}\left|f\left(t\right)\right|\le\varepsilon$. 由 $\varepsilon>0$ 任意, $\lim_{t\to\infty}f\left(t\right)=0$. $\blacksquare$
+任取 $t$ 充分大, 考虑整数区间 $\left[t/b,t/a\right]$. 其长度为 $t\left(1/a-1/b\right)\to\infty$, 故当 $t$ 充分大时其中含某整数 $k\ge N$. 令 $x=t/k$, 则 $x\in\left[a,b\right]$, 故 $\left|f\left(t\right)\right|=\left|f\left(kx\right)\right|\le\epsilon$. 因而 $\limsup_{t\to\infty}\left|f\left(t\right)\right|\le\epsilon$. 由 $\epsilon>0$ 任意, $\lim_{t\to\infty}f\left(t\right)=0$. $\blacksquare$
 
 ### 习题九
 
@@ -216,13 +216,13 @@ $$
 
 ### 解答 习题十
 
-固定 $\varepsilon>0$. 定义
+固定 $\epsilon>0$. 定义
 
 $$
-F_m=\left\{\lambda\in\left[a,b\right]:\ \text{对一切 }x\ge m,\ \left|f\left(x+\lambda\right)-f\left(x\right)\right|\le\varepsilon\right\}.
+F_m=\left\{\lambda\in\left[a,b\right]:\ \text{对一切 }x\ge m,\ \left|f\left(x+\lambda\right)-f\left(x\right)\right|\le\epsilon\right\}.
 $$
 
-对固定 $x$, 条件 $\left|f\left(x+\lambda\right)-f\left(x\right)\right|\le\varepsilon$ 是 $\lambda$ 的闭条件 ($f$ 连续); $F_m$ 是这些闭集 ($x\ge m$) 之交, 故闭. 由假设, 每个 $\lambda\in\left[a,b\right]$ 属于某个 $F_m$, 故 $\left[a,b\right]=\bigcup_m F_m$, 且 $F_m$ 递增.
+对固定 $x$, 条件 $\left|f\left(x+\lambda\right)-f\left(x\right)\right|\le\epsilon$ 是 $\lambda$ 的闭条件 ($f$ 连续); $F_m$ 是这些闭集 ($x\ge m$) 之交, 故闭. 由假设, 每个 $\lambda\in\left[a,b\right]$ 属于某个 $F_m$, 故 $\left[a,b\right]=\bigcup_m F_m$, 且 $F_m$ 递增.
 
 $\left[a,b\right]$ 是紧度量空间, 因而完备. 由**推论 6.14** (递增闭集族), 某个 $F_N$ 有非空内部, 即存在开区间 $\left(c,d\right)\subset F_N$. 对任意 $\lambda\in\left[a,b\right]$, 取 $\lambda_0\in\left(c,d\right)$ 使 $\left|\lambda-\lambda_0\right|$ 很小. 分解
 
@@ -230,9 +230,9 @@ $$
 f\left(x+\lambda\right)-f\left(x\right)=\left[f\left(x+\lambda\right)-f\left(x+\lambda_0\right)\right]+\left[f\left(x+\lambda_0\right)-f\left(x\right)\right].
 $$
 
-第二项对 $x\ge N$ 绝对值 $\le\varepsilon$. 第一项是 $f\left(\left(x+\lambda_0\right)+\delta\right)-f\left(x+\lambda_0\right)$, 其中 $\delta=\lambda-\lambda_0$ 固定. 由假设, 对每个固定 $\delta$, 当 $x+\lambda_0\to\infty$ 时该项趋于 $0$.
+第二项对 $x\ge N$ 绝对值 $\le\epsilon$. 第一项是 $f\left(\left(x+\lambda_0\right)+\delta\right)-f\left(x+\lambda_0\right)$, 其中 $\delta=\lambda-\lambda_0$ 固定. 由假设, 对每个固定 $\delta$, 当 $x+\lambda_0\to\infty$ 时该项趋于 $0$.
 
-由 $\left[c,d\right]$ 紧与贝尔纲得到的非空内部, 进一步用有限覆盖: $\left[a,b\right]$ 被有限个形如 $\lambda_0+\eta$ 的平移区间覆盖 ($\eta$ 取自一个固定有限网), 对每个固定的 $\eta$ 取 $M_\eta$ 使 $x\ge M_\eta$ 时 $\left|f\left(x+\eta\right)-f\left(x\right)\right|\le\varepsilon$. 取 $M=\max\left(N,M_\eta\right)$, 则对一切 $\lambda\in\left[a,b\right]$ 与 $x\ge M$, 上述两项均 $\le\varepsilon$, 故 $\left|f\left(x+\lambda\right)-f\left(x\right)\right|\le 2\varepsilon$. 收敛一致. $\blacksquare$
+由 $\left[c,d\right]$ 紧与贝尔纲得到的非空内部, 进一步用有限覆盖: $\left[a,b\right]$ 被有限个形如 $\lambda_0+\eta$ 的平移区间覆盖 ($\eta$ 取自一个固定有限网), 对每个固定的 $\eta$ 取 $M_\eta$ 使 $x\ge M_\eta$ 时 $\left|f\left(x+\eta\right)-f\left(x\right)\right|\le\epsilon$. 取 $M=\max\left(N,M_\eta\right)$, 则对一切 $\lambda\in\left[a,b\right]$ 与 $x\ge M$, 上述两项均 $\le\epsilon$, 故 $\left|f\left(x+\lambda\right)-f\left(x\right)\right|\le 2\epsilon$. 收敛一致. $\blacksquare$
 
 ### 习题十一
 
@@ -244,7 +244,7 @@ $$
 
 下面证明每个 $\ell^p$ ($p<q$) 在 $\ell^q$ 中是无处稠密的. 由**定义 3.2** (闭集), $\ell^p$ 在 $\ell^q$ 中闭: 若 $x^{\left(m\right)}\in\ell^p$ 在 $\ell^q$ 中收敛到 $x$, 则 $x^{\left(m\right)}_n\to x_n$ 对每个 $n$, 由法图引理 (点集分析基本事实) $\sum\left|x_n\right|^p\le\liminf_m\sum\left|x^{\left(m\right)}_n\right|^p<\infty$, 故 $x\in\ell^p$.
 
-$\ell^p$ 无内部: 任取 $x\in\ell^p$ 与 $\varepsilon>0$, 构造 $y$ 使 $\left\|y-x\right\|_q<\varepsilon$ 但 $y\notin\ell^p$. 取稀疏下标 $n_k$ 使 $\left|x_{n_k}\right|$ 很小, 令 $y_{n_k}=k^{-1/p}$ (其余 $y_n=x_n$). 则 $\sum\left|y_{n_k}\right|^p=\sum 1/k=\infty$, 故 $y\notin\ell^p$; 而 $\sum\left|y_{n_k}\right|^q=\sum k^{-q/p}<\infty$ (因 $q/p>1$), 且可使 $\left\|y-x\right\|_q$ 任意小. 故 $\ell^p$ 在 $\ell^q$ 中无内部.
+$\ell^p$ 无内部: 任取 $x\in\ell^p$ 与 $\epsilon>0$, 构造 $y$ 使 $\left\|y-x\right\|_q<\epsilon$ 但 $y\notin\ell^p$. 取稀疏下标 $n_k$ 使 $\left|x_{n_k}\right|$ 很小, 令 $y_{n_k}=k^{-1/p}$ (其余 $y_n=x_n$). 则 $\sum\left|y_{n_k}\right|^p=\sum 1/k=\infty$, 故 $y\notin\ell^p$; 而 $\sum\left|y_{n_k}\right|^q=\sum k^{-q/p}<\infty$ (因 $q/p>1$), 且可使 $\left\|y-x\right\|_q$ 任意小. 故 $\ell^p$ 在 $\ell^q$ 中无内部.
 
 由**推论 6.14** (递增闭集族), $\ell^q$ (完备, 因 $\ell^q$ 是巴拿赫空间) 不能写成可数个无内部闭集之并. 取有理数集 $\mathbb Q\cap\left(1,q\right)$, 它是可数稠密子集; $\bigcup_{p\in\mathbb Q\cap\left(1,q\right)}\ell^p$ 是可数个无内部闭集之并, 故不等于 $\ell^q$. 而
 

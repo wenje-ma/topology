@@ -22,7 +22,7 @@
 
 > **推论 4.7** (乘积连通)<br>连通集 $A,B$ 之积 $A\times B$ 连通; 有限个连通集的乘积连通. (教材 $\S4$)
 
-> **定义 4.14** ($\epsilon$-链空间)<br>$X$ 是 $\varepsilon$-链的, 若任意 $a,b\in X$ 可由相邻距离 $<\varepsilon$ 的有限点列连接; 对一切 $\varepsilon>0$ 都成立称 $\varepsilon$-链空间. (题集 $\S4.5$)
+> **定义 4.14** ($\epsilon$-链空间)<br>$X$ 是 $\epsilon$-链的, 若任意 $a,b\in X$ 可由相邻距离 $<\epsilon$ 的有限点列连接; 对一切 $\epsilon>0$ 都成立称 $\epsilon$-链空间. (题集 $\S4.5$)
 
 > **定理 5.3** ($\mathbb R^n$ 中的紧集)<br>$K\subset\mathbb R^n$ 紧当且仅当 $K$ 闭且有界. (教材 $\S5$)
 
@@ -92,15 +92,15 @@ $$
 
 ### 习题五
 
-链空间. 称度量空间 $X$ 是 $\varepsilon$-链的, 若任意 $a,b\in X$ 可由有限点列 $x_0=a,\dots,x_n=b$ 连接使 $d\left(x_i,x_{i+1}\right)<\varepsilon$; 对一切 $\varepsilon>0$ 都成立称**定义 4.14** ($\epsilon$-链空间). 证明: $X$ 连通则 $X$ 是 $\varepsilon$-链空间; $X$ 紧且 $\varepsilon$-链则 $X$ 连通; 举例说明 $\varepsilon$-链空间可以不连通.
+链空间. 称度量空间 $X$ 是 $\epsilon$-链的, 若任意 $a,b\in X$ 可由有限点列 $x_0=a,\dots,x_n=b$ 连接使 $d\left(x_i,x_{i+1}\right)<\epsilon$; 对一切 $\epsilon>0$ 都成立称**定义 4.14** ($\epsilon$-链空间). 证明: $X$ 连通则 $X$ 是 $\epsilon$-链空间; $X$ 紧且 $\epsilon$-链则 $X$ 连通; 举例说明 $\epsilon$-链空间可以不连通.
 
 ### 解答 习题五
 
-连通 $\Rightarrow$ $\varepsilon$-链: 固定 $\varepsilon>0$, 定义 $a\sim b$ 为存在 $\varepsilon$-链. 等价类在**定义 6.2** (开球) $B\left(x,\varepsilon\right)$ 下封闭, 故每个等价类开; 其余等价类之并也开. 由**定义 4.2** (既开又闭集), 连通空间只有一个等价类, 即 $X$ 是**定义 4.14** ($\epsilon$-链空间).
+连通 $\Rightarrow$ $\epsilon$-链: 固定 $\epsilon>0$, 定义 $a\sim b$ 为存在 $\epsilon$-链. 等价类在**定义 6.2** (开球) $B\left(x,\epsilon\right)$ 下封闭, 故每个等价类开; 其余等价类之并也开. 由**定义 4.2** (既开又闭集), 连通空间只有一个等价类, 即 $X$ 是**定义 4.14** ($\epsilon$-链空间).
 
-紧且 $\varepsilon$-链 $\Rightarrow$ 连通: 反设 $X$ 不连通, 则 $X=A\cup B$ 为非空不交闭集分离. $A,B$ 是紧度量空间, 距离 $\delta=d\left(A,B\right)>0$: 取 $a_n\in A$, $b_n\in B$ 使 $d\left(a_n,b_n\right)\to\delta$, 由**定理 6.1** (紧=序列紧) 抽子列 $a_{n_j}\to a\in A$, $b_{n_j}\to b\in B$, 得 $d\left(a,b\right)=\delta>0$. 取 $\varepsilon<\delta$, 则 $\varepsilon$-链不可能从 $A$ 跨到 $B$, 与 $\varepsilon$-链矛盾.
+紧且 $\epsilon$-链 $\Rightarrow$ 连通: 反设 $X$ 不连通, 则 $X=A\cup B$ 为非空不交闭集分离. $A,B$ 是紧度量空间, 距离 $\delta=d\left(A,B\right)>0$: 取 $a_n\in A$, $b_n\in B$ 使 $d\left(a_n,b_n\right)\to\delta$, 由**定理 6.1** (紧=序列紧) 抽子列 $a_{n_j}\to a\in A$, $b_{n_j}\to b\in B$, 得 $d\left(a,b\right)=\delta>0$. 取 $\epsilon<\delta$, 则 $\epsilon$-链不可能从 $A$ 跨到 $B$, 与 $\epsilon$-链矛盾.
 
-$\varepsilon$-链但不连通的例子: 有理数集 $\mathbb Q$ 装备通常度量. 对任意 $\varepsilon>0$, 任意两个有理数之间可插入间距小于 $\varepsilon$ 的有理点列, 故 $\mathbb Q$ 是 $\varepsilon$-链的; 但 $\mathbb Q$ 完全不连通. $\blacksquare$
+$\epsilon$-链但不连通的例子: 有理数集 $\mathbb Q$ 装备通常度量. 对任意 $\epsilon>0$, 任意两个有理数之间可插入间距小于 $\epsilon$ 的有理点列, 故 $\mathbb Q$ 是 $\epsilon$-链的; 但 $\mathbb Q$ 完全不连通. $\blacksquare$
 
 ### 习题六
 
@@ -120,15 +120,15 @@ $\varepsilon$-链但不连通的例子: 有理数集 $\mathbb Q$ 装备通常度
 
 记 $x_n=f^n\left(x_0\right)$, 设唯一聚点为 $z$. 取子列 $x_{n_j}\to z$. 由 $f$ 连续, $x_{n_j+1}=f\left(x_{n_j}\right)\to f\left(z\right)$. 而 $\left(x_{n_j+1}\right)$ 是 $\left(x_n\right)$ 的子列, 其极限 $f\left(z\right)$ 必为聚点, 由唯一性 $f\left(z\right)=z$.
 
-反设 $\left(x_n\right)$ 不收敛到 $z$. 则存在 $\varepsilon>0$ 与无穷多个 $n$ 使 $\left\|x_n-z\right\|\ge\varepsilon$. 从每个 $n_j$ 出发, 若其后轨道始终在 $B\left(z,\varepsilon\right)$ 内, 则尾部落在紧闭球中, 由**推论 5.8** ($\mathbb R^n$ 紧集判据) 与**定理 6.1** (紧=序列紧), 该尾部的任何聚点都是 $z$, 矛盾于不收敛. 故从每个 $n_j$ 出发, 存在第一个 $m_j>n_j$ 使 $\left\|x_{m_j}-z\right\|=\varepsilon$. 点 $x_{m_j}$ 都落在紧球面 $\partial B\left(z,\varepsilon\right)$ 上, 抽子列 $x_{m_{j_k}}\to w$, $\left\|w-z\right\|=\varepsilon$. 则 $w$ 是 $\left(x_n\right)$ 的聚点且 $w\neq z$, 矛盾. 故 $\left(x_n\right)\to z$. $\blacksquare$
+反设 $\left(x_n\right)$ 不收敛到 $z$. 则存在 $\epsilon>0$ 与无穷多个 $n$ 使 $\left\|x_n-z\right\|\ge\epsilon$. 从每个 $n_j$ 出发, 若其后轨道始终在 $B\left(z,\epsilon\right)$ 内, 则尾部落在紧闭球中, 由**推论 5.8** ($\mathbb R^n$ 紧集判据) 与**定理 6.1** (紧=序列紧), 该尾部的任何聚点都是 $z$, 矛盾于不收敛. 故从每个 $n_j$ 出发, 存在第一个 $m_j>n_j$ 使 $\left\|x_{m_j}-z\right\|=\epsilon$. 点 $x_{m_j}$ 都落在紧球面 $\partial B\left(z,\epsilon\right)$ 上, 抽子列 $x_{m_{j_k}}\to w$, $\left\|w-z\right\|=\epsilon$. 则 $w$ 是 $\left(x_n\right)$ 的聚点且 $w\neq z$, 矛盾. 故 $\left(x_n\right)\to z$. $\blacksquare$
 
 ### 习题八
 
-等距与紧性. 设 $K\subset\mathbb R^n$ 是非空紧集, $\varepsilon>0$. 称 $A\subset K$ 是 $\varepsilon$-分离的, 若 $x\neq y$ 蕴含 $\left|x-y\right|>\varepsilon$. 证明存在有限数 $M\left(\varepsilon\right)$, 使 $K$ 中任何 $\varepsilon$-分离集的基数不超过 $M\left(\varepsilon\right)$. 再证明: 若 $f:K\to K$ 是**定义 6.18** (等距映射), 则 $f$ 满.
+等距与紧性. 设 $K\subset\mathbb R^n$ 是非空紧集, $\epsilon>0$. 称 $A\subset K$ 是 $\epsilon$-分离的, 若 $x\neq y$ 蕴含 $\left|x-y\right|>\epsilon$. 证明存在有限数 $M\left(\epsilon\right)$, 使 $K$ 中任何 $\epsilon$-分离集的基数不超过 $M\left(\epsilon\right)$. 再证明: 若 $f:K\to K$ 是**定义 6.18** (等距映射), 则 $f$ 满.
 
 ### 解答 习题八
 
-反设存在任意大的 $\varepsilon$-分离集. 则可取两两不同的点列 $x_m\in K$ 使 $m\neq m'$ 时 $\left|x_m-x_{m'}\right|>\varepsilon$. 由**定理 5.3** ($\mathbb R^n$ 中的紧集) 与**定理 6.1** (紧=序列紧), $\left(x_m\right)$ 有收敛子列; 收敛子列是**定义 6.3** (柯西列), 充分靠后两项距离 $<\varepsilon$, 与 $\varepsilon$-分离矛盾. 故存在 $M\left(\varepsilon\right)$.
+反设存在任意大的 $\epsilon$-分离集. 则可取两两不同的点列 $x_m\in K$ 使 $m\neq m'$ 时 $\left|x_m-x_{m'}\right|>\epsilon$. 由**定理 5.3** ($\mathbb R^n$ 中的紧集) 与**定理 6.1** (紧=序列紧), $\left(x_m\right)$ 有收敛子列; 收敛子列是**定义 6.3** (柯西列), 充分靠后两项距离 $<\epsilon$, 与 $\epsilon$-分离矛盾. 故存在 $M\left(\epsilon\right)$.
 
 满性: 反设 $f$ 不满, 取 $p\notin f\left(K\right)$. $f\left(K\right)$ 紧, 由**定理 5.3** ($\mathbb R^n$ 中的紧集) 闭, 故 $\delta=d\left(p,f\left(K\right)\right)>0$. 轨道 $p,f\left(p\right),f^2\left(p\right),\dots$ 满足
 

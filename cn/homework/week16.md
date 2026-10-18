@@ -183,10 +183,10 @@ $$
 由**定义 6.30** (弱拓扑), 弱拓扑是由 $E^*$ 中全体连续线性泛函诱导的初始拓扑. 由**定理 6.50** (哈恩-巴拿赫定理), $E^*$ 分离 $E$ 的点. 弱拓扑的基本邻域形如
 
 $$
-U\left(x_0;\varphi_1,\dots,\varphi_n;\varepsilon\right)=\left\{x:\left|\varphi_i\left(x-x_0\right)\right|<\varepsilon,\ i=1,\dots,n\right\}.
+U\left(x_0;\varphi_1,\dots,\varphi_n;\epsilon\right)=\left\{x:\left|\varphi_i\left(x-x_0\right)\right|<\epsilon,\ i=1,\dots,n\right\}.
 $$
 
-它是 $x_0$ 加上有限个超平面交 (即无穷维仿射子空间) 的 $\varepsilon$-管.
+它是 $x_0$ 加上有限个超平面交 (即无穷维仿射子空间) 的 $\epsilon$-管.
 
 **强 $\neq$ 弱**: 在无穷维, 任意弱开邻域 $U$ 都含一个无穷维仿射子空间, 故不可能含于一个强有界集; 特别地强开单位球不是弱开的. 故弱拓扑严格粗于强拓扑.
 
@@ -210,7 +210,7 @@ $$
 
 **粗于弱星拓扑**: 由**定义 6.31** (弱星拓扑), 弱星拓扑由全部 $x\in E$ 的赋值诱导. 本题初始拓扑仅用 $x\in D\subset E$. 映射更少, 由**定义 3.14** (初始拓扑) 的"最粗性", 用较少映射得到的拓扑粗于用全部映射得到的弱星拓扑.
 
-**稠密 $D$ 时在有界集上相同**: 设 $B\subset E^*$ 有界, 即 $\sup_{\varphi\in B}\left\|\varphi\right\|<\infty$. 已知弱星 $\Rightarrow$ 初始方向 (上一问). 反之, 设网 $\left\{\varphi_\alpha\right\}\subset B$ 在初始拓扑下收敛到 $\varphi\in B$, 即对每个 $x\in D$, $\varphi_\alpha\left(x\right)\to\varphi\left(x\right)$. 任取 $y\in E$, 由 $D$ 稠密取 $x_n\in D\to y$. 对 $\varepsilon>0$, 取 $x_n$ 使 $\left\|y-x_n\right\|<\varepsilon/\left(\sup_B\left\|\varphi_\alpha\right\|+\sup_B\left\|\varphi\right\|+1\right)$. 则
+**稠密 $D$ 时在有界集上相同**: 设 $B\subset E^*$ 有界, 即 $\sup_{\varphi\in B}\left\|\varphi\right\|<\infty$. 已知弱星 $\Rightarrow$ 初始方向 (上一问). 反之, 设网 $\left\{\varphi_\alpha\right\}\subset B$ 在初始拓扑下收敛到 $\varphi\in B$, 即对每个 $x\in D$, $\varphi_\alpha\left(x\right)\to\varphi\left(x\right)$. 任取 $y\in E$, 由 $D$ 稠密取 $x_n\in D\to y$. 对 $\epsilon>0$, 取 $x_n$ 使 $\left\|y-x_n\right\|<\epsilon/\left(\sup_B\left\|\varphi_\alpha\right\|+\sup_B\left\|\varphi\right\|+1\right)$. 则
 
 $$
 \left|\varphi_\alpha\left(y\right)-\varphi\left(y\right)\right|\le\left|\varphi_\alpha\left(y-x_n\right)\right|+\left|\varphi_\alpha\left(x_n\right)-\varphi\left(x_n\right)\right|+\left|\varphi\left(x_n-y\right)\right|.

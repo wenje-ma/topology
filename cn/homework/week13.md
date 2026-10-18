@@ -122,4 +122,4 @@ $$
 
 由习题三, $g_a$ 是**定义 6.19** (压缩映射), 由**定理 6.16** (巴拿赫不动点定理), 该方程有唯一解 $J\left(a\right)$.
 
-由习题四, $\left\|J\left(a\right)-J\left(b\right)\right\|\le\frac{1}{\left|\lambda\right|-K}\left\|a-b\right\|$, 即 $J$ 是利普希茨映射. 利普希茨映射连续: 对任意开集 $U\subset E$ 与 $a\in J^{-1}\left(U\right)$, 取 $\varepsilon>0$ 使 $B\left(J\left(a\right),\varepsilon\right)\subset U$, 则 $\left\|b-a\right\|<\left(\left|\lambda\right|-K\right)\varepsilon$ 蕴含 $\left\|J\left(b\right)-J\left(a\right)\right\|<\varepsilon$, 即 $J^{-1}\left(U\right)$ 含 $a$ 的一个邻域. 由**定义 3.3** (连续映射), $J$ 连续. $\blacksquare$
+由习题四, $\left\|J\left(a\right)-J\left(b\right)\right\|\le\frac{1}{\left|\lambda\right|-K}\left\|a-b\right\|$, 即 $J$ 是利普希茨映射. 利普希茨映射连续: 对任意开集 $U\subset E$ 与 $a\in J^{-1}\left(U\right)$, 取 $\epsilon>0$ 使 $B\left(J\left(a\right),\epsilon\right)\subset U$, 则 $\left\|b-a\right\|<\left(\left|\lambda\right|-K\right)\epsilon$ 蕴含 $\left\|J\left(b\right)-J\left(a\right)\right\|<\epsilon$, 即 $J^{-1}\left(U\right)$ 含 $a$ 的一个邻域. 由**定义 3.3** (连续映射), $J$ 连续. $\blacksquare$

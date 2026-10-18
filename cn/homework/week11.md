@@ -130,7 +130,7 @@ $$
 
 先证 $A_n$ 闭. 设 $f_k\in A_n$ 且 $f_k$ 依**定义 6.7** (一致收敛与一致度量) 一致收敛到 $f$. 取见证点 $x_k$; 由**定理 5.2** (区间紧) 与**定理 6.1** (紧=序列紧), $\left[0,1-1/n\right]$ 中 $\left(x_k\right)$ 有收敛子列 $x_{k_j}\to x$. 对一切 $0<h<1/n$, 由一致收敛可在 $\left|f_{k_j}\left(x_{k_j}+h\right)-f_{k_j}\left(x_{k_j}\right)\right|\le n h$ 中取极限, 得 $\left|f\left(x+h\right)-f\left(x\right)\right|\le n h$, 即 $f\in A_n$. 由**定义 3.2** (闭集), $A_n$ 闭.
 
-再证 $A_n$ 无内部. 任给 $f\in C\left[0,1\right]$ 与 $\varepsilon>0$, 用折线函数 $g$ 一致逼近 $f$ 使 $\left\|g-f\right\|_\infty<\varepsilon$, 并把 $g$ 的每个折段改造成斜率绝对值大于 $n$ 的细密锯齿, 改造幅度仍小于 $\varepsilon$. 则 $g\notin A_n$ (任何点 $x$ 处都有任意小的 $h$ 使 $\left|g\left(x+h\right)-g\left(x\right)\right|/h>n$). 故 $A_n$ 的每个邻域都含 $A_n$ 外的点, $A_n$ 无内部, 即 $A_n$ 是无处稠密闭集.
+再证 $A_n$ 无内部. 任给 $f\in C\left[0,1\right]$ 与 $\epsilon>0$, 用折线函数 $g$ 一致逼近 $f$ 使 $\left\|g-f\right\|_\infty<\epsilon$, 并把 $g$ 的每个折段改造成斜率绝对值大于 $n$ 的细密锯齿, 改造幅度仍小于 $\epsilon$. 则 $g\notin A_n$ (任何点 $x$ 处都有任意小的 $h$ 使 $\left|g\left(x+h\right)-g\left(x\right)\right|/h>n$). 故 $A_n$ 的每个邻域都含 $A_n$ 外的点, $A_n$ 无内部, 即 $A_n$ 是无处稠密闭集.
 
 由**定理 6.13** (贝尔纲定理), 完备度量空间中可数个无处稠密闭集之并不能是全空间, 故
 
@@ -152,9 +152,9 @@ $$
 
 (1) $\left(\Rightarrow\right)$ 设 $f$ 连续, $K\subset E$ 紧. 由**定理 5.1** (紧空间连续像紧), $f\left(K\right)$ 紧.
 
-   $\left(\Leftarrow\right)$ 设对每个紧集 $K\subset E$, $f\left(K\right)$ 紧. 反设 $f$ 在某点 $x$ 不连续. 由**定义 3.5** (邻域与极限), 存在 $\varepsilon>0$ 与序列 $x_n\to x$ 使 $d_F\left(f\left(x_n\right),f\left(x\right)\right)\ge\varepsilon$. 由 $f$ 单射及 $d_F\left(f\left(x_n\right),f\left(x\right)\right)\ge\varepsilon>0$ 知 $x_n\neq x$. 令 $K=\left\{x\right\}\cup\left\{x_n:n\ge1\right\}$, 它是收敛序列加极限, 故紧. 由假设 $f\left(K\right)$ 紧; 度量空间是**定义 3.10** (豪斯多夫空间), 由**定理 5.5** (豪斯多夫中紧集闭), $f\left(K\right)$ 在 $F$ 中闭.
+   $\left(\Leftarrow\right)$ 设对每个紧集 $K\subset E$, $f\left(K\right)$ 紧. 反设 $f$ 在某点 $x$ 不连续. 由**定义 3.5** (邻域与极限), 存在 $\epsilon>0$ 与序列 $x_n\to x$ 使 $d_F\left(f\left(x_n\right),f\left(x\right)\right)\ge\epsilon$. 由 $f$ 单射及 $d_F\left(f\left(x_n\right),f\left(x\right)\right)\ge\epsilon>0$ 知 $x_n\neq x$. 令 $K=\left\{x\right\}\cup\left\{x_n:n\ge1\right\}$, 它是收敛序列加极限, 故紧. 由假设 $f\left(K\right)$ 紧; 度量空间是**定义 3.10** (豪斯多夫空间), 由**定理 5.5** (豪斯多夫中紧集闭), $f\left(K\right)$ 在 $F$ 中闭.
 
-   由**定理 6.1** (紧=序列紧), $f\left(x_n\right)$ 在紧集 $f\left(K\right)$ 中有收敛子列 $f\left(x_{n_j}\right)\to y\in f\left(K\right)$. 设 $y=f\left(z\right)$, $z\in K$. 若 $z=x$, 则 $f\left(x_{n_j}\right)\to f\left(x\right)$, 与 $d_F\left(f\left(x_{n_j}\right),f\left(x\right)\right)\ge\varepsilon$ 矛盾. 故 $z=x_m$ 是某固定项. 取尾部紧集 $K'=\left\{x\right\}\cup\left\{x_{n_j}:j>m\right\}$. 由假设 $f\left(K'\right)$ 紧, 再由**定理 5.5** (豪斯多夫中紧集闭) $f\left(K'\right)$ 闭. 但 $f\left(x_{n_j}\right)\to f\left(x_m\right)$ 且 $x_m\notin K'$, 由 $f$ 单射 $f\left(x_m\right)\notin f\left(K'\right)$, 与 $f\left(K'\right)$ 闭矛盾. 故 $f$ 连续.
+   由**定理 6.1** (紧=序列紧), $f\left(x_n\right)$ 在紧集 $f\left(K\right)$ 中有收敛子列 $f\left(x_{n_j}\right)\to y\in f\left(K\right)$. 设 $y=f\left(z\right)$, $z\in K$. 若 $z=x$, 则 $f\left(x_{n_j}\right)\to f\left(x\right)$, 与 $d_F\left(f\left(x_{n_j}\right),f\left(x\right)\right)\ge\epsilon$ 矛盾. 故 $z=x_m$ 是某固定项. 取尾部紧集 $K'=\left\{x\right\}\cup\left\{x_{n_j}:j>m\right\}$. 由假设 $f\left(K'\right)$ 紧, 再由**定理 5.5** (豪斯多夫中紧集闭) $f\left(K'\right)$ 闭. 但 $f\left(x_{n_j}\right)\to f\left(x_m\right)$ 且 $x_m\notin K'$, 由 $f$ 单射 $f\left(x_m\right)\notin f\left(K'\right)$, 与 $f\left(K'\right)$ 闭矛盾. 故 $f$ 连续.
 
 (2) 取 $E=\left\{0\right\}\cup\left\{1/n:n\ge1\right\}$, $F=\left\{0,1\right\}$ 装备离散度量, $f\left(0\right)=0$, $f\left(1/n\right)=1$ 对一切 $n$. $f$ 不单射. $E$ 中任何紧集 (即 $E$ 的子集) 的像为 $\left\{0\right\}$, $\left\{1\right\}$ 或 $\left\{0,1\right\}$, 在离散空间中皆紧, 故 $f$ 保持紧集; 但 $x_n=1/n\to0$ 时 $f\left(x_n\right)=1$ 不趋于 $f\left(0\right)=0$, 由**定义 3.5** (邻域与极限) $f$ 不连续. 可见单射不可少. $\blacksquare$
 
@@ -164,26 +164,26 @@ $$
 
 (1) 用对角线论证证明 $\left(f_n\right)$ 有子列在 $\left[0,1\right]$ 的全体有理点处逐点收敛;
 
-(2) 记该子列为 $\left(g_n\right)$, 用 $\varepsilon/3$ 论证证明 $\left(g_n\right)$ 在 $\left[0,1\right]$ 的每一点都逐点收敛;
+(2) 记该子列为 $\left(g_n\right)$, 用 $\epsilon/3$ 论证证明 $\left(g_n\right)$ 在 $\left[0,1\right]$ 的每一点都逐点收敛;
 
-(3) 记上一问中的逐点极限为 $g$, 再用 $\varepsilon/3$ 论证证明 $g$ 实际上是 $\left(g_n\right)$ 在 $\left[0,1\right]$ 上的一致极限.
+(3) 记上一问中的逐点极限为 $g$, 再用 $\epsilon/3$ 论证证明 $g$ 实际上是 $\left(g_n\right)$ 在 $\left[0,1\right]$ 上的一致极限.
 
 ### 解答 习题五
 
 (1) 设 $\left\{r_1,r_2,\dots\right\}$ 是 $\left[0,1\right]$ 中全体有理数. 固定 $k$, 数列 $\left(f_n\left(r_k\right)\right)_{n\ge1}$ 有界: $\left|f_n\left(r_k\right)\right|\le M$. 由**定理 5.2** (区间紧), 有界闭区间 $\left[-M,M\right]$ 紧, 再由**定理 6.1** (紧=序列紧), $\left(f_n\left(r_1\right)\right)$ 有收敛子列 $\left(f_{n_i^{\left(1\right)}}\left(r_1\right)\right)$. 接着在该子列内取子列使 $\left(f_n\left(r_2\right)\right)$ 收敛; 如此归纳, 得一串嵌套子列 $\left(f_{n_i^{\left(k\right)}}\right)$ 使第 $k$ 个子列在 $r_1,\dots,r_k$ 处都收敛. 对角线子列 $g_i=f_{n_i^{\left(i\right)}}$ 是每个嵌套子列的尾部, 故在每个有理点 $r_k$ 处收敛.
 
-(2) 固定 $x\in\left[0,1\right]$ 与 $\varepsilon>0$. 由 $\left|g_n'\left(t\right)\right|\le M$ 与中值定理, $\left|g_n\left(x\right)-g_n\left(r\right)\right|\le M\left|x-r\right|$. 取有理点 $r$ 使 $\left|x-r\right|<\varepsilon/\left(3M\right)$. 则
+(2) 固定 $x\in\left[0,1\right]$ 与 $\epsilon>0$. 由 $\left|g_n'\left(t\right)\right|\le M$ 与中值定理, $\left|g_n\left(x\right)-g_n\left(r\right)\right|\le M\left|x-r\right|$. 取有理点 $r$ 使 $\left|x-r\right|<\epsilon/\left(3M\right)$. 则
 
 $$
 \left|g_n\left(x\right)-g_m\left(x\right)\right|\le\left|g_n\left(x\right)-g_n\left(r\right)\right|+\left|g_n\left(r\right)-g_m\left(r\right)\right|+\left|g_m\left(r\right)-g_m\left(x\right)\right|.
 $$
 
-由有理点处收敛, $\left(g_n\left(r\right)\right)$ 是**定义 6.3** (柯西列), 对充分大的 $n,m$ 中间项 $<\varepsilon/3$; 两端各 $<\varepsilon/3$. 故 $\left|g_n\left(x\right)-g_m\left(x\right)\right|<\varepsilon$, 即 $\left(g_n\left(x\right)\right)$ 是柯西列. 实数完备, 故逐点极限 $g\left(x\right)$ 存在.
+由有理点处收敛, $\left(g_n\left(r\right)\right)$ 是**定义 6.3** (柯西列), 对充分大的 $n,m$ 中间项 $<\epsilon/3$; 两端各 $<\epsilon/3$. 故 $\left|g_n\left(x\right)-g_m\left(x\right)\right|<\epsilon$, 即 $\left(g_n\left(x\right)\right)$ 是柯西列. 实数完备, 故逐点极限 $g\left(x\right)$ 存在.
 
-(3) 由**定理 5.2** (区间紧) 与**定理 6.1** (紧=序列紧), $\left[0,1\right]$ 可被有限个有理点 $r^{\left(1\right)},\dots,r^{\left(L\right)}$ 的邻域覆盖, 使每个 $x$ 到某 $r^{\left(j\right)}$ 的距离 $<\varepsilon/\left(3M\right)$. 对这有限个有理点, 由收敛性可取公共的 $N$, 使 $n\ge N$ 时 $\left|g_n\left(r^{\left(j\right)}\right)-g\left(r^{\left(j\right)}\right)\right|<\varepsilon/3$ 对一切 $j$ 成立. 又由 $\left|g_n'\right|\le M$ 取极限得 $\left|g\left(x\right)-g\left(r^{\left(j\right)}\right)\right|\le M\left|x-r^{\left(j\right)}\right|<\varepsilon/3$. 于是对任意 $x$,
+(3) 由**定理 5.2** (区间紧) 与**定理 6.1** (紧=序列紧), $\left[0,1\right]$ 可被有限个有理点 $r^{\left(1\right)},\dots,r^{\left(L\right)}$ 的邻域覆盖, 使每个 $x$ 到某 $r^{\left(j\right)}$ 的距离 $<\epsilon/\left(3M\right)$. 对这有限个有理点, 由收敛性可取公共的 $N$, 使 $n\ge N$ 时 $\left|g_n\left(r^{\left(j\right)}\right)-g\left(r^{\left(j\right)}\right)\right|<\epsilon/3$ 对一切 $j$ 成立. 又由 $\left|g_n'\right|\le M$ 取极限得 $\left|g\left(x\right)-g\left(r^{\left(j\right)}\right)\right|\le M\left|x-r^{\left(j\right)}\right|<\epsilon/3$. 于是对任意 $x$,
 
 $$
-\left|g_n\left(x\right)-g\left(x\right)\right|\le\left|g_n\left(x\right)-g_n\left(r^{\left(j\right)}\right)\right|+\left|g_n\left(r^{\left(j\right)}\right)-g\left(r^{\left(j\right)}\right)\right|+\left|g\left(r^{\left(j\right)}\right)-g\left(x\right)\right|<\varepsilon.
+\left|g_n\left(x\right)-g\left(x\right)\right|\le\left|g_n\left(x\right)-g_n\left(r^{\left(j\right)}\right)\right|+\left|g_n\left(r^{\left(j\right)}\right)-g\left(r^{\left(j\right)}\right)\right|+\left|g\left(r^{\left(j\right)}\right)-g\left(x\right)\right|<\epsilon.
 $$
 
 由**定义 6.7** (一致收敛与一致度量), $g_n$ 一致收敛到 $g$. $\blacksquare$

@@ -48,7 +48,7 @@
 
 可数性: 每个 $I_x$ 是非空开区间, 可取其中一个有理数 $q_x$. 因诸 $I_x$ 互不相交, 不同 $x$ 给出不同 $q_x$, 故 $\left\{I_x:x\in U\right\}$ 与 $\mathbb Q$ 的某子集一一对应, 因而是可数族. 又因每个 $x\in U$ 都含于 $I_x$, 故 $U=\bigcup_{x\in U}I_x$.
 
-端点: 写 $I_x=\left(a_x,b_x\right)$. 若 $a_x\in U$, 则 $a_x\in I_y$ 对某 $y\in U$. 因 $I_y$ 开, 存在 $\varepsilon>0$ 使 $\left(a_x-\varepsilon,a_x+\varepsilon\right)\subset I_y\subset U$. 于是 $\left(a_x-\varepsilon,b_x\right)$ 是含 $x$ 且含于 $U$ 的开区间, 它比 $I_x$ 向左更长, 与 $I_x$ 的极大性矛盾. 故 $a_x\notin U$. 同理 $b_x\notin U$.
+端点: 写 $I_x=\left(a_x,b_x\right)$. 若 $a_x\in U$, 则 $a_x\in I_y$ 对某 $y\in U$. 因 $I_y$ 开, 存在 $\epsilon>0$ 使 $\left(a_x-\epsilon,a_x+\epsilon\right)\subset I_y\subset U$. 于是 $\left(a_x-\epsilon,b_x\right)$ 是含 $x$ 且含于 $U$ 的开区间, 它比 $I_x$ 向左更长, 与 $I_x$ 的极大性矛盾. 故 $a_x\notin U$. 同理 $b_x\notin U$.
 
 唯一性: 若另有分解 $U=\bigcup_{j\in J}J_j$, 其中 $J_j$ 为互不相交开区间. 对每个 $x\in U$, $x$ 属于唯一的 $J_{j\left(x\right)}$. $J_{j\left(x\right)}$ 是含 $x$ 且含于 $U$ 的开区间, 由 $I_x$ 的极大性 $J_{j\left(x\right)}\subset I_x$; 反之, $I_x$ 是含 $x$ 且含于 $U$ 的开区间, 而 $J_{j\left(x\right)}$ 是含 $x$ 的极大连通开块, 故 $I_x\subset J_{j\left(x\right)}$. 因此 $J_{j\left(x\right)}=I_x$, 两分解一致. $\blacksquare$
 
@@ -206,7 +206,7 @@ $$
 
 **($\Rightarrow$)** 设 $F$ 闭. 由**定义 3.2** (闭集), $\mathbb R\setminus F$ 开. 设 $x_n\in F$ 且 $x_n\to L$. 若 $L\notin F$, 则 $L\in\mathbb R\setminus F$, 而 $\mathbb R\setminus F$ 是 $L$ 的邻域. 由**定义 3.5** (邻域与极限), 对所有充分大的 $n$ 有 $x_n\in\mathbb R\setminus F$, 与 $x_n\in F$ 矛盾. 故 $L\in F$.
 
-**($\Leftarrow$)** 反证. 设 $F$ 不闭. 由**定义 3.2** (闭集), $\mathbb R\setminus F$ 不开. 故存在 $L\notin F$ 使 $L$ 的任何邻域都不含于 $\mathbb R\setminus F$, 即 $L$ 的任何邻域都与 $F$ 相交. 由**定义 6.2** (开球), 球 $B\left(L,1/n\right)=\left(L-\frac1n,L+\frac1n\right)$ 与 $F$ 相交, 取 $x_n\in F\cap B\left(L,1/n\right)$, 则 $d\left(x_n,L\right)<1/n$. 任给 $L$ 的邻域, 由**定义 6.2** (开球) 它包含某 $B\left(L,\varepsilon\right)$; 当 $n>1/\varepsilon$ 时 $x_n\in B\left(L,\varepsilon\right)$, 故由**定义 3.5** (邻域与极限) $x_n\to L$. 但 $L\notin F$, 与假设矛盾. 故 $F$ 闭. $\blacksquare$
+**($\Leftarrow$)** 反证. 设 $F$ 不闭. 由**定义 3.2** (闭集), $\mathbb R\setminus F$ 不开. 故存在 $L\notin F$ 使 $L$ 的任何邻域都不含于 $\mathbb R\setminus F$, 即 $L$ 的任何邻域都与 $F$ 相交. 由**定义 6.2** (开球), 球 $B\left(L,1/n\right)=\left(L-\frac1n,L+\frac1n\right)$ 与 $F$ 相交, 取 $x_n\in F\cap B\left(L,1/n\right)$, 则 $d\left(x_n,L\right)<1/n$. 任给 $L$ 的邻域, 由**定义 6.2** (开球) 它包含某 $B\left(L,\epsilon\right)$; 当 $n>1/\epsilon$ 时 $x_n\in B\left(L,\epsilon\right)$, 故由**定义 3.5** (邻域与极限) $x_n\to L$. 但 $L\notin F$, 与假设矛盾. 故 $F$ 闭. $\blacksquare$
 
 ### 习题八
 

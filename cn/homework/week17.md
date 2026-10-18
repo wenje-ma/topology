@@ -53,7 +53,7 @@
 (半范数拓扑) 设 $E$ 是向量空间, $\left\{p_\alpha\right\}_{\alpha\in A}$ 是一族半范数. 证明以
 
 $$
-\left\{x:p_{\alpha_i}\left(x\right)<\varepsilon,\ i=1,\dots,n\right\}
+\left\{x:p_{\alpha_i}\left(x\right)<\epsilon,\ i=1,\dots,n\right\}
 $$
 
 为 $0$ 的邻域基生成的拓扑使 $E$ 成为**定义 6.24** (拓扑向量空间) 意义下的拓扑向量空间, 且 $E$ 局部凸.
@@ -62,7 +62,7 @@ $$
 
 由**定义 6.25** (半范数), 每个 $p_\alpha$ 是凸函数. 上面的基本邻域是有限个凸集之交, 由**定义 4.6** (凸集) 仍凸, 故 $0$ 有凸邻域基, 由**定义 6.26** (局部凸空间) $E$ 局部凸.
 
-加法连续: 对 $0$ 的基本邻域 $U=\left\{p_{\alpha_i}<\varepsilon\right\}$, 取 $V=\left\{p_{\alpha_i}<\varepsilon/2\right\}$, 则 $V+V\subset U$. 数乘连续由半范数齐次性与 $p_\alpha\left(\lambda x\right)$ 在 $\left(\lambda,x\right)$ 上连续 (局部估计) 推出. 由**定义 6.24** (拓扑向量空间), 加法与数乘连续, 故 $E$ 是拓扑向量空间. 由**定义 3.1** (拓扑空间) 该邻域基满足拓扑公理. $\blacksquare$
+加法连续: 对 $0$ 的基本邻域 $U=\left\{p_{\alpha_i}<\epsilon\right\}$, 取 $V=\left\{p_{\alpha_i}<\epsilon/2\right\}$, 则 $V+V\subset U$. 数乘连续由半范数齐次性与 $p_\alpha\left(\lambda x\right)$ 在 $\left(\lambda,x\right)$ 上连续 (局部估计) 推出. 由**定义 6.24** (拓扑向量空间), 加法与数乘连续, 故 $E$ 是拓扑向量空间. 由**定义 3.1** (拓扑空间) 该邻域基满足拓扑公理. $\blacksquare$
 
 ### 习题二
 
@@ -222,10 +222,10 @@ $$
 
 ### 解答 习题十四
 
-由**推论 6.5** (紧空间上连续一致连续), $\left[a,b\right]$ 紧, $\varphi$ 在 $\mathbb R$ 上连续, 但 $f$ 的像有界; 进一步, $\varphi$ 在有界区间上一致连续. 对 $\varepsilon>0$, 存在 $\delta>0$, 使 $\left|u-v\right|<\delta$ 时 $\left|\varphi\left(u\right)-\varphi\left(v\right)\right|<\varepsilon$. 若 $\left\|f-g\right\|_\infty<\delta$, 则对一切 $x\in\left[a,b\right]$, $\left|f\left(x\right)-g\left(x\right)\right|<\delta$, 故
+由**推论 6.5** (紧空间上连续一致连续), $\left[a,b\right]$ 紧, $\varphi$ 在 $\mathbb R$ 上连续, 但 $f$ 的像有界; 进一步, $\varphi$ 在有界区间上一致连续. 对 $\epsilon>0$, 存在 $\delta>0$, 使 $\left|u-v\right|<\delta$ 时 $\left|\varphi\left(u\right)-\varphi\left(v\right)\right|<\epsilon$. 若 $\left\|f-g\right\|_\infty<\delta$, 则对一切 $x\in\left[a,b\right]$, $\left|f\left(x\right)-g\left(x\right)\right|<\delta$, 故
 
 $$
-\left\|\varphi\circ f-\varphi\circ g\right\|_\infty=\sup_x\left|\varphi\left(f\left(x\right)\right)-\varphi\left(g\left(x\right)\right)\right|\le\varepsilon.
+\left\|\varphi\circ f-\varphi\circ g\right\|_\infty=\sup_x\left|\varphi\left(f\left(x\right)\right)-\varphi\left(g\left(x\right)\right)\right|\le\epsilon.
 $$
 
 故 $f\mapsto\varphi\circ f$ 连续. $\blacksquare$
@@ -252,7 +252,7 @@ $$
 
 由**定义 6.20** (赋范线性空间), 范数满足三角不等式, 故 $\left|\left\|x\right\|-\left\|y\right\|\right|\le\left\|x-y\right\|$. 当 $x\to y$ 时 $\left\|x\right\|\to\left\|y\right\|$, 即范数连续.
 
-豪斯多夫: 设 $x\neq y$, $r=\left\|x-y\right\|>0$. 取 $\varepsilon=r/3$. 由**定义 3.10** (豪斯多夫空间), 开球 $B\left(x,\varepsilon\right)$ 与 $B\left(y,\varepsilon\right)$ 不相交 (否则由三角不等式 $\left\|x-y\right\|\le 2\varepsilon<r$, 矛盾). 故赋范空间豪斯多夫. $\blacksquare$
+豪斯多夫: 设 $x\neq y$, $r=\left\|x-y\right\|>0$. 取 $\epsilon=r/3$. 由**定义 3.10** (豪斯多夫空间), 开球 $B\left(x,\epsilon\right)$ 与 $B\left(y,\epsilon\right)$ 不相交 (否则由三角不等式 $\left\|x-y\right\|\le 2\epsilon<r$, 矛盾). 故赋范空间豪斯多夫. $\blacksquare$
 
 ### 习题十七
 

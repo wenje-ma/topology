@@ -44,35 +44,35 @@
 
 ### 习题四
 
-第二部分是 $\varepsilon/3$ 论证. 设 $C\left[a,b\right]$ 是 $\left[a,b\right]$ 上连续实值函数空间, 装备**定义 6.9** (上确界度量) $d\left(f,g\right)=\sup_{x\in\left[a,b\right]}\left|f\left(x\right)-g\left(x\right)\right|$. 设 $\left(f_n\right)$ 是该度量下的**定义 6.3** (柯西列). 证明对每个 $x\in\left[a,b\right]$, $\left(f_n\left(x\right)\right)$ 收敛到某个 $f\left(x\right)\in\mathbb R$.
+第二部分是 $\epsilon/3$ 论证. 设 $C\left[a,b\right]$ 是 $\left[a,b\right]$ 上连续实值函数空间, 装备**定义 6.9** (上确界度量) $d\left(f,g\right)=\sup_{x\in\left[a,b\right]}\left|f\left(x\right)-g\left(x\right)\right|$. 设 $\left(f_n\right)$ 是该度量下的**定义 6.3** (柯西列). 证明对每个 $x\in\left[a,b\right]$, $\left(f_n\left(x\right)\right)$ 收敛到某个 $f\left(x\right)\in\mathbb R$.
 
 ### 解答 习题四
 
-由 $\left(f_n\right)$ 是**定义 6.3** (柯西列), 对任意 $\varepsilon>0$ 存在 $N$, 使 $n,m\ge N$ 时
+由 $\left(f_n\right)$ 是**定义 6.3** (柯西列), 对任意 $\epsilon>0$ 存在 $N$, 使 $n,m\ge N$ 时
 
 $$
-\sup_{x\in\left[a,b\right]}\left|f_n\left(x\right)-f_m\left(x\right)\right|<\varepsilon.
+\sup_{x\in\left[a,b\right]}\left|f_n\left(x\right)-f_m\left(x\right)\right|<\epsilon.
 $$
 
-固定 $x\in\left[a,b\right]$, 则 $\left|f_n\left(x\right)-f_m\left(x\right)\right|\le\sup<\varepsilon$, 故 $\left(f_n\left(x\right)\right)$ 是 $\mathbb R$ 中的**定义 6.3** (柯西列). 由**定义 6.5** (完备化), $\mathbb R$ 是**定义 6.4** (完备度量空间), 故 $\left(f_n\left(x\right)\right)$ 收敛. 记其极限为 $f\left(x\right)$. 逐点极限 $f$ 由此定义. $\blacksquare$
+固定 $x\in\left[a,b\right]$, 则 $\left|f_n\left(x\right)-f_m\left(x\right)\right|\le\sup<\epsilon$, 故 $\left(f_n\left(x\right)\right)$ 是 $\mathbb R$ 中的**定义 6.3** (柯西列). 由**定义 6.5** (完备化), $\mathbb R$ 是**定义 6.4** (完备度量空间), 故 $\left(f_n\left(x\right)\right)$ 收敛. 记其极限为 $f\left(x\right)$. 逐点极限 $f$ 由此定义. $\blacksquare$
 
 ### 习题五
 
-设 $f$ 是连续函数列 $\left(f_n\right)$ 的极限. 固定 $x\in\left[a,b\right]$ 与 $\varepsilon>0$. 证明可选取 $n$ 使 $\left\|f_n-f\right\|_\infty<\varepsilon/3$; 证明可选取 $\delta>0$, 使 $\left|x-y\right|<\delta$ 蕴含 $\left|f_n\left(x\right)-f_n\left(y\right)\right|<\varepsilon/3$; 由此证明 $f$ 连续.
+设 $f$ 是连续函数列 $\left(f_n\right)$ 的极限. 固定 $x\in\left[a,b\right]$ 与 $\epsilon>0$. 证明可选取 $n$ 使 $\left\|f_n-f\right\|_\infty<\epsilon/3$; 证明可选取 $\delta>0$, 使 $\left|x-y\right|<\delta$ 蕴含 $\left|f_n\left(x\right)-f_n\left(y\right)\right|<\epsilon/3$; 由此证明 $f$ 连续.
 
 ### 解答 习题五
 
-第一步, 由习题六的结论 $\left(f_n\right)$ 依**定义 6.7** (一致收敛与一致度量) 一致收敛到 $f$, 故存在 $n$ 使 $\left\|f_n-f\right\|_\infty<\varepsilon/3$.
+第一步, 由习题六的结论 $\left(f_n\right)$ 依**定义 6.7** (一致收敛与一致度量) 一致收敛到 $f$, 故存在 $n$ 使 $\left\|f_n-f\right\|_\infty<\epsilon/3$.
 
-第二步, 固定该 $n$, 由 $f_n$ 连续, 存在 $\delta>0$, 使 $y\in\left[a,b\right]$ 且 $\left|x-y\right|<\delta$ 时 $\left|f_n\left(x\right)-f_n\left(y\right)\right|<\varepsilon/3$.
+第二步, 固定该 $n$, 由 $f_n$ 连续, 存在 $\delta>0$, 使 $y\in\left[a,b\right]$ 且 $\left|x-y\right|<\delta$ 时 $\left|f_n\left(x\right)-f_n\left(y\right)\right|<\epsilon/3$.
 
 第三步, 对满足 $\left|x-y\right|<\delta$ 的 $y$,
 
 $$
-\left|f\left(x\right)-f\left(y\right)\right|\le\left|f\left(x\right)-f_n\left(x\right)\right|+\left|f_n\left(x\right)-f_n\left(y\right)\right|+\left|f_n\left(y\right)-f\left(y\right)\right|<\frac{\varepsilon}{3}+\frac{\varepsilon}{3}+\frac{\varepsilon}{3}=\varepsilon.
+\left|f\left(x\right)-f\left(y\right)\right|\le\left|f\left(x\right)-f_n\left(x\right)\right|+\left|f_n\left(x\right)-f_n\left(y\right)\right|+\left|f_n\left(y\right)-f\left(y\right)\right|<\frac{\epsilon}{3}+\frac{\epsilon}{3}+\frac{\epsilon}{3}=\epsilon.
 $$
 
-这正是**定理 6.7** (连续函数的一致极限连续) 的 $\varepsilon/3$ 论证, 故 $f$ 在 $x$ 连续. $x$ 任意, $f$ 在 $\left[a,b\right]$ 上连续. $\blacksquare$
+这正是**定理 6.7** (连续函数的一致极限连续) 的 $\epsilon/3$ 论证, 故 $f$ 在 $x$ 连续. $x$ 任意, $f$ 在 $\left[a,b\right]$ 上连续. $\blacksquare$
 
 ### 习题六
 
@@ -80,12 +80,12 @@ $$
 
 ### 解答 习题六
 
-由习题四, $\left(f_n\right)$ 逐点收敛到 $f$. 由 $\left(f_n\right)$ 是**定义 6.3** (柯西列), 对任意 $\varepsilon>0$ 存在 $N$, 使 $n,m\ge N$ 时 $\sup_x\left|f_n\left(x\right)-f_m\left(x\right)\right|<\varepsilon$. 固定 $n\ge N$ 与任意 $x$, 令 $m\to\infty$, 由习题四 $f_m\left(x\right)\to f\left(x\right)$, 故
+由习题四, $\left(f_n\right)$ 逐点收敛到 $f$. 由 $\left(f_n\right)$ 是**定义 6.3** (柯西列), 对任意 $\epsilon>0$ 存在 $N$, 使 $n,m\ge N$ 时 $\sup_x\left|f_n\left(x\right)-f_m\left(x\right)\right|<\epsilon$. 固定 $n\ge N$ 与任意 $x$, 令 $m\to\infty$, 由习题四 $f_m\left(x\right)\to f\left(x\right)$, 故
 
 $$
-\left|f_n\left(x\right)-f\left(x\right)\right|=\lim_{m\to\infty}\left|f_n\left(x\right)-f_m\left(x\right)\right|\le\varepsilon.
+\left|f_n\left(x\right)-f\left(x\right)\right|=\lim_{m\to\infty}\left|f_n\left(x\right)-f_m\left(x\right)\right|\le\epsilon.
 $$
 
-对 $x$ 取上确界, 得 $\left\|f_n-f\right\|_\infty\le\varepsilon$ 对一切 $n\ge N$ 成立. 由**定义 6.7** (一致收敛与一致度量) 与**定义 6.9** (上确界度量), $f_n\to f$ 一致收敛, 即在 $C\left[a,b\right]$ 中收敛.
+对 $x$ 取上确界, 得 $\left\|f_n-f\right\|_\infty\le\epsilon$ 对一切 $n\ge N$ 成立. 由**定义 6.7** (一致收敛与一致度量) 与**定义 6.9** (上确界度量), $f_n\to f$ 一致收敛, 即在 $C\left[a,b\right]$ 中收敛.
 
 由习题五, $f$ 连续, 故 $f\in C\left[a,b\right]$. 于是 $C\left[a,b\right]$ 中每个**定义 6.3** (柯西列) 都收敛到 $C\left[a,b\right]$ 中的元素, 由**定义 6.4** (完备度量空间), $C\left[a,b\right]$ 完备, 即**推论 6.8** ($C\left(X,Y\right)$ 完备) 的特例. $\blacksquare$

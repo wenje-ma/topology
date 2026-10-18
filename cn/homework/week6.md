@@ -28,7 +28,7 @@
 
 > **定义 6.15** (点到集合的距离)<br>$d\left(x,A\right)=\inf_{a\in A}d\left(x,a\right)$. (题集 $\S3.2$)
 
-> **定义 6.16** ($\epsilon$-邻域)<br>$U_{\varepsilon}\left(A\right)=\left\{x:d\left(x,A\right)<\varepsilon\right\}$. (题集 $\S3.2$)
+> **定义 6.16** ($\epsilon$-邻域)<br>$U_{\epsilon}\left(A\right)=\left\{x:d\left(x,A\right)<\epsilon\right\}$. (题集 $\S3.2$)
 
 > **定义 7.1** (正规空间)<br>单点闭且任意两不相交闭集可被不相交开集分离, 即 $T_4$. (教材 $\S7$)
 
@@ -72,7 +72,7 @@ $W_{n\left(x\right)}$ 作为某 $\left(a,b\right]$ 之并, 其右端点不超过
 
 (1) 证明度量空间中, 任取 $r_n\to0$, $B\left(x,r_n\right)$ 是 $x$ 的基本邻域系;
 
-(2) 但当 $A$ 是子集时, $V_{\varepsilon}\left(A\right)=\left\{x:d\left(x,A\right)<\varepsilon\right\}$ 不一定是 $A$ 的基本邻域系. 例如取 $A=\left\{xy=1,x>0\right\}\subset\mathbb R^2$ 与 $U=\left\{x,y>0\right\}\subset\mathbb R^2$.
+(2) 但当 $A$ 是子集时, $V_{\epsilon}\left(A\right)=\left\{x:d\left(x,A\right)<\epsilon\right\}$ 不一定是 $A$ 的基本邻域系. 例如取 $A=\left\{xy=1,x>0\right\}\subset\mathbb R^2$ 与 $U=\left\{x,y>0\right\}\subset\mathbb R^2$.
 
 ### 解答 习题二
 
@@ -84,13 +84,13 @@ $$
 
 由**定义 3.30** (基本邻域系), $\left\{B\left(x,r_n\right)\right\}$ 是 $x$ 的基本邻域系.
 
-(2) 取题中 $A=\left\{\left(x,1/x\right):x>0\right\}\subset\mathbb R^2$, $U=\left\{\left(x,y\right):x>0,y>0\right\}$. $U$ 开且 $A\subset U$, 故 $U$ 是 $A$ 的邻域. 对任意 $\varepsilon>0$, 取点
+(2) 取题中 $A=\left\{\left(x,1/x\right):x>0\right\}\subset\mathbb R^2$, $U=\left\{\left(x,y\right):x>0,y>0\right\}$. $U$ 开且 $A\subset U$, 故 $U$ 是 $A$ 的邻域. 对任意 $\epsilon>0$, 取点
 
 $$
-a=\left(\frac{\varepsilon}{2},\frac{2}{\varepsilon}\right)\in A,
+a=\left(\frac{\epsilon}{2},\frac{2}{\epsilon}\right)\in A,
 $$
 
-再取 $a'=\left(-\frac{\varepsilon}{4},\frac{2}{\varepsilon}\right)$. 由**定义 6.15** (点到集合的距离), $d\left(a',A\right)\le d\left(a',a\right)=\frac{3\varepsilon}{4}<\varepsilon$, 故 $a'\in V_{\varepsilon}\left(A\right)$ (**定义 6.16** ($\epsilon$-邻域)). 但 $a'$ 的横坐标为负, $a'\notin U$. 于是对每个 $\varepsilon>0$, $V_{\varepsilon}\left(A\right)\not\subset U$. 故没有任何 $V_{\varepsilon}\left(A\right)$ 含于 $U$, 由**定义 3.30** (基本邻域系), $\left\{V_{\varepsilon}\left(A\right)\right\}$ 不是 $A$ 的基本邻域系. $\blacksquare$
+再取 $a'=\left(-\frac{\epsilon}{4},\frac{2}{\epsilon}\right)$. 由**定义 6.15** (点到集合的距离), $d\left(a',A\right)\le d\left(a',a\right)=\frac{3\epsilon}{4}<\epsilon$, 故 $a'\in V_{\epsilon}\left(A\right)$ (**定义 6.16** ($\epsilon$-邻域)). 但 $a'$ 的横坐标为负, $a'\notin U$. 于是对每个 $\epsilon>0$, $V_{\epsilon}\left(A\right)\not\subset U$. 故没有任何 $V_{\epsilon}\left(A\right)$ 含于 $U$, 由**定义 3.30** (基本邻域系), $\left\{V_{\epsilon}\left(A\right)\right\}$ 不是 $A$ 的基本邻域系. $\blacksquare$
 
 ### 习题三
 
