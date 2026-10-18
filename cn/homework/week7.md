@@ -10,8 +10,6 @@
 
 > **定理 5.4** (闭子集紧)<br>若 $X$ 紧致, 则 $X$ 的任意闭子集 $A\subset X$ 也紧致. (教材 $\S5$)
 
-> **定理 5.9** (吉洪诺夫定理)<br>任意一族紧致空间的乘积在乘积拓扑下紧致. (教材 $\S5$)
-
 > **推论 5.11** (紧空间上连续函数取最大值)<br>紧致空间 $X$ 上的连续函数 $f:X\to\mathbb R$ 能取到最大值 (同理也取到最小值). (教材 $\S5$)
 
 > **定义 6.1** (度量空间)<br>$d:X\times X\to\mathbb R_{\ge0}$ 满足 $d\left(x,x\right)=0$, $d\left(x,y\right)=0\Rightarrow x=y$, 对称性与三角不等式. (教材 $\S6$)
@@ -22,7 +20,7 @@
 
 > **定义 6.15** (点到集合的距离)<br>$d\left(x,A\right)=\inf_{a\in A}d\left(x,a\right)$. (题集 $\S3.2$)
 
-> **定义 7.5** (单点紧化)<br>亚历山德罗夫紧化 $X^{*}=X\cup\left\{\infty\right\}$, 以 $\left(X-K\right)\cup\left\{\infty\right\}$ (其中 $K\subset X$ 紧致) 为 $\infty$ 的邻域. (教材 $\S7$)
+> **定义 7.5** (单点紧化)<br>亚历山德罗夫紧化 $\overline X=X\cup\left\{\infty\right\}$, 以 $\left(X-K\right)\cup\left\{\infty\right\}$ (其中 $K\subset X$ 紧致) 为 $\infty$ 的邻域. (教材 $\S7$)
 
 ### 习题一
 
@@ -33,8 +31,6 @@
 把 $\left\{0,1\right\}^{\left[0,1\right]}$ 中的点视为函数 $f:\left[0,1\right]\to\left\{0,1\right\}$. 由**定义 3.11** (乘积拓扑), 在乘积拓扑下 $f_n\to f$ 当且仅当每个坐标 $t\in\left[0,1\right]$ 都有 $f_n\left(t\right)\to f\left(t\right)$.
 
 对每个 $n\ge1$, 定义 $f_n\left(t\right)$ 为 $t$ 的二进制展开中小数点后第 $n$ 位数字 (二进有理点固定取其一展开). 任取严格递增的正整数列 $n_1<n_2<\dots$, 我们证明 $\left\{f_{n_k}\right\}$ 不收敛. 取 $t^{*}\in\left[0,1\right]$, 使其二进制展开在第 $n_{2k-1}$ 位为 $0$, 在第 $n_{2k}$ 位为 $1$, 其余位任意 (例如取 $0$). 则坐标 $t^{*}$ 处 $f_{n_k}\left(t^{*}\right)$ 依次为 $0,1,0,1,\dots$, 不收敛. 由上一段的坐标判据, $\left\{f_{n_k}\right\}$ 在乘积拓扑下不收敛. 由**定义 6.6** (序列紧致), 任意子列都不收敛, 故 $\left\{0,1\right\}^{\left[0,1\right]}$ 不是序列紧致的.
-
-补充: 由**定理 5.9** (吉洪诺夫定理), 每个因子 $\left\{0,1\right\}$ 有限故紧致, 其乘积 $\left\{0,1\right\}^{\left[0,1\right]}$ 其实是紧致的. 这说明在非度量空间中, 紧致与序列紧致可以不等价. $\blacksquare$
 
 ### 习题二
 
@@ -86,14 +82,14 @@ $$
 
 ### 习题五
 
-考虑 $\mathbb C$ 与一个无穷远点 $\left\{\infty\right\}$. 记 $b\mathbb C=\mathbb C\cup\left\{\infty\right\}$, 规定 $U\subset b\mathbb C$ 的拓扑为: 若 $\infty\notin U$, 则 $U$ 开当且仅当它是 $\mathbb C$ 中通常开集; 若 $\infty\in U$, 则 $U$ 开当且仅当 $\mathbb C\setminus\left(U\cap\mathbb C\right)$ 在 $\mathbb C$ 中紧致. 证明 $b\mathbb C$ 紧致. 此即亚历山德罗夫单点紧化, $b\mathbb C$ 称为黎曼球面.
+考虑 $\mathbb C$ 与一个无穷远点 $\left\{\infty\right\}$. 记 $\overline{\mathbb C}=\mathbb C\cup\left\{\infty\right\}$, 规定 $U\subset \overline{\mathbb C}$ 的拓扑为: 若 $\infty\notin U$, 则 $U$ 开当且仅当它是 $\mathbb C$ 中通常开集; 若 $\infty\in U$, 则 $U$ 开当且仅当 $\mathbb C\setminus\left(U\cap\mathbb C\right)$ 在 $\mathbb C$ 中紧致. 证明 $\overline{\mathbb C}$ 紧致. 此即亚历山德罗夫单点紧化, $\overline{\mathbb C}$ 称为黎曼球面.
 
 ### 解答 习题五
 
-由**定义 7.5** (单点紧化), $b\mathbb C$ 正是 $\mathbb C$ 的单点紧化. 任取 $b\mathbb C$ 的开覆盖 $\mathcal U$. 取 $U_\infty\in\mathcal U$ 使 $\infty\in U_\infty$. 由拓扑定义, $K=\mathbb C\setminus\left(U_\infty\cap\mathbb C\right)$ 在 $\mathbb C$ 中紧致. 族
+由**定义 7.5** (单点紧化), $\overline{\mathbb C}$ 正是 $\mathbb C$ 的单点紧化. 任取 $\overline{\mathbb C}$ 的开覆盖 $\mathcal U$. 取 $U_\infty\in\mathcal U$ 使 $\infty\in U_\infty$. 由拓扑定义, $K=\mathbb C\setminus\left(U_\infty\cap\mathbb C\right)$ 在 $\mathbb C$ 中紧致. 族
 
 $$
 \left\{U\cap\mathbb C:U\in\mathcal U\setminus\left\{U_\infty\right\}\right\}
 $$
 
-中每个集合是 $\mathbb C$ 中开集 (不含 $\infty$ 的开集在 $b\mathbb C$ 与在 $\mathbb C$ 中同样开), 且它们覆盖 $K$. 由 $K$ 紧致, 即由**定义 5.2** (紧致空间), 有有限子族 $U_1,\dots,U_m$ 使 $K\subset\bigcup_{i=1}^{m}U_i$. 于是 $U_\infty,U_1,\dots,U_m$ 覆盖 $b\mathbb C$: $U_\infty$ 含 $\infty$ 与 $U_\infty\cap\mathbb C$, 其余集合覆盖 $K$. 故 $b\mathbb C$ 的任意开覆盖都有有限子覆盖, 由**定义 5.2** (紧致空间), $b\mathbb C$ 紧致. $\blacksquare$
+中每个集合是 $\mathbb C$ 中开集 (不含 $\infty$ 的开集在 $\overline{\mathbb C}$ 与在 $\mathbb C$ 中同样开), 且它们覆盖 $K$. 由 $K$ 紧致, 即由**定义 5.2** (紧致空间), 有有限子族 $U_1,\dots,U_m$ 使 $K\subset\bigcup_{i=1}^{m}U_i$. 于是 $U_\infty,U_1,\dots,U_m$ 覆盖 $\overline{\mathbb C}$: $U_\infty$ 含 $\infty$ 与 $U_\infty\cap\mathbb C$, 其余集合覆盖 $K$. 故 $\overline{\mathbb C}$ 的任意开覆盖都有有限子覆盖, 由**定义 5.2** (紧致空间), $\overline{\mathbb C}$ 紧致. $\blacksquare$
