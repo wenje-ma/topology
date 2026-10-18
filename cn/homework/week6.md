@@ -44,7 +44,7 @@
 
 ### 解答 习题一
 
-(1) 设 $\left\{B_n\right\}_{n\ge1}$ 是 $X$ 的可数基. 每点取 $x_n\in B_n$, 令 $D=\left\{x_n:n\ge1\right\}$. 任取非空开集 $U$, 由**定义 3.15** (拓扑基) 存在某 $B_n\subset U$, 故 $x_n\in D\cap U\neq\emptyset$. 由**定义 3.8** (稠密), $D$ 在 $X$ 中稠密; 由**定义 3.9** (可分), $X$ 可分.
+(1) 设 $\left\{B_n\right\}_{n\ge1}$ 是 $X$ 的可数基. 每点取 $x_n\in B_n$, 令 $D=\left\{x_n:n\ge1\right\}$. 由于 $\overline D\subset X$ 显然, 只需证明 $X\subset\overline D$. 任取 $x\in B_n\subset X$, 任取非空开集 $U\ni x$, 由**定义 3.15** (拓扑基) 存在某 $B_n\subset U$, 故存在一个 $x_n$ 满足 $x_n\in D\cap U\neq\emptyset$, 这说明 $x$ 是 $D$ 的边界点, 即 $x\in\overline D$. 由**定义 3.8** (稠密), $D$ 在 $X$ 中稠密; 由**定义 3.9** (可分), $X$ 可分.
 
 (2) 先验基条件:
 
