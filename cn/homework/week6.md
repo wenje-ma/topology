@@ -180,3 +180,5 @@ f^{-1}\left(O\right)=f^{-1}\left(Y\cap U\right)=f^{-1}\left(U\right)=\left(\iota
 $$
 
 最后一步用到 $f$ 映到 $Y$ 中. 由 $\iota\circ f$ 连续及**定义 3.3** (连续映射), 右端为 $Z$ 中开集. 故 $f^{-1}\left(O\right)$ 开, 由**定义 3.3** (连续映射), $f$ 连续. $\blacksquare$
+
+> 证明中的核心步骤是 $f^{-1}\left(U\right)=\left(\iota\circ f\right)^{-1}\left(U\right)$, 这都归功于 $\iota$ 是含入映射, 即映射到 $Y$ 上的就相当于映射到 $X$ 上.
