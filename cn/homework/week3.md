@@ -367,7 +367,7 @@ $$
 
 由开集任意并仍开, $p_k\left(W\right)$ 是开集. 故每个 $p_k$ 都是开映射.
 
-(2) 取 $\mathbb R^2$, 令 $A=\left\{\left(x,y\right):xy=1\right\}$. $A$ 是连续函数 $xy-1$ 的零集, 故是闭集; 由**定义 3.21** (闭集) 其补集 $\left\{xy\neq1\right\}$ 开. 但
+(2) 取 $\mathbb R^2$, 令 $A=\left\{\left(x,y\right):xy=1\right\}$. $A$ 包含它所有的极限点, 故是闭集; 由**定义 3.21** (闭集) 其补集 $\left\{xy\neq1\right\}$ 开. 但
 
 $$
 p_1\left(A\right)=\left\{x\in\mathbb R:\exists y,\,xy=1\right\}=\mathbb R\setminus\left\{0\right\},
@@ -387,7 +387,7 @@ $\left(\Rightarrow\right)$ 设 $f$ 连续, $x_n\to x$. 任取 $f\left(x\right)$ 
 
 $\left(\Leftarrow\right)$ 设序列保持收敛. 反设 $f$ 在 $x$ 不连续, 则存在 $f\left(x\right)$ 的邻域 $V$ 使 $f^{-1}\left(V\right)$ 不是 $x$ 的邻域. 由**定义 6.36** (开球), $B\left(x,1/n\right)\not\subset f^{-1}\left(V\right)$, 取 $x_n\in B\left(x,1/n\right)\setminus f^{-1}\left(V\right)$. 则 $d\left(x_n,x\right)<1/n\to0$, 即 $x_n\to x$, 但 $f\left(x_n\right)\notin V$, 故 $\left(f\left(x_n\right)\right)$ 不收敛到 $f\left(x\right)$, 矛盾.
 
-用到度量结构之处在于: 用可数邻域基 $B\left(x,1/n\right)$ 把"$f^{-1}\left(V\right)$ 不是邻域"翻译成一列点 $\left(x_n\right)$, 即把否定连续性直接转化为序列. 在一般拓扑空间中, 这一翻译不成立, 但可放松为第一可数空间 (每点有可数邻域基); 一般空间中相应的等价刻画要用网. $\blacksquare$
+用到度量结构之处在于: 用可数邻域基 $B\left(x,1/n\right)$ 把"$f^{-1}\left(V\right)$ 不是邻域"翻译成一列点 $\left(x_n\right)$, 即把否定连续性直接转化为序列. 在一般拓扑空间中, 这一翻译不成立, 但可放松为第一可数空间 (每点有可数邻域基). $\blacksquare$
 
 ### 习题十八
 
@@ -395,6 +395,6 @@ $\left(\Leftarrow\right)$ 设序列保持收敛. 反设 $f$ 在 $x$ 不连续, �
 
 ### 解答 习题十八
 
-不覆盖. 设 $X=\mathbb R$, $D=\mathbb Q$ 是**定义 3.32** (稠密) 的. 取 $U=\mathbb R\setminus\left\{\sqrt2\right\}$. $U$ 是开集, 由**定义 3.21** (闭集) 单点 $\left\{\sqrt2\right\}$ 闭故其补集开; $U$ 含 $\mathbb Q$, 即 $U$ 是稠密集 $\mathbb Q$ 的一个邻域, 但 $U\neq\mathbb R$.
+不覆盖. 设 $X=\mathbb R$, $D=\mathbb Q$ 是**定义 3.32** (稠密) 的. 取 $U=\mathbb R\setminus\left\{\sqrt2\right\}$. $U$ 是开集, 由**定义 3.21** (闭集) 单点 $\left\{\sqrt2\right\}$ 闭故其补集开; $U$ 含 $\mathbb Q$, 即 $U$ 是稠密集 $\mathbb Q$ 的一个邻域, 但 $U\neq\mathbb R$. $\blacksquare$
 
-一般地, 若 $D$ 稠密而 $U$ 是含 $D$ 的开集, 只能推出 $\overline U=X$: 由**定义 3.26** (闭包), $D\subset U$ 给出 $X=\overline D\subset\overline U$; 开集稠密不必等于全空间. 题中 $\bigcup_{p/q}B\left(p/q,1/q^k\right)$ 也是开稠密集, 取 $k$ 充分大时仍遗漏某些有理逼近系数很小的无理数, 故不等于 $\mathbb R$. $\blacksquare$
+> 一般地, 若 $D$ 稠密而 $U$ 是含 $D$ 的开集, 只能推出 $\overline U=X$: 由**定义 3.26** (闭包), $D\subset U$ 给出 $X=\overline D\subset\overline U$; 开集稠密不必等于全空间. 题中 $\bigcup_{p/q}B\left(p/q,1/q^k\right)$ 也是开稠密集, 取 $k$ 充分大时仍遗漏某些有理逼近系数很小的无理数, 故不等于 $\mathbb R$.
