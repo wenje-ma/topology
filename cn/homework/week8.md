@@ -124,7 +124,7 @@ $$
 
 由**定义 6.44** (伪距离), 它满足除"距离为零蕴含相等"外全部公理, 故是伪距离. $\blacksquare$
 
-> $d_H(A,B)=0\not\Rightarrow A=B$: 取 $A=(0,1)$, $B=[0,1]$, $d_H(A,B)=0$ 但 $A\ne B$.
+> $d_H\left(A,B\right)=0\not\Rightarrow A=B$: 取 $A=\left(0,1\right)$, $B=\left[0,1\right]$, $d_H\left(A,B\right)=0$ 但 $A\ne B$.
 
 ### 习题四
 
