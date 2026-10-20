@@ -278,4 +278,4 @@ $$
 
 (3) 取 $f\left(x\right)=x$. 它连续, 且对任意 $x\in\left[0,\frac35\right]$, $f\left(x+\frac25\right)-f\left(x\right)=\frac25\neq0$, 故 $f\left(x\right)\neq f\left(x+\frac25\right)$. 此例即满足要求. $\blacksquare$
 
-> 这说明, 当步长为 $1/n$ 时能取等, 不是 $1/n$ 则不一定.<br>$1/n$ 特殊的原因在于其经过有限次求和后为 $1$, 因此可以利用望远镜级数, 最终求和得到 $f(0)-f(1)=0$, 即第 2 问的证明过程.
+> 这说明, 当步长为 $1/n$ 时能取等, 不是 $1/n$ 则不一定.<br>$1/n$ 特殊的原因在于其经过有限次求和后为 $1$, 因此可以利用望远镜级数, 最终求和得到 $f\left(0\right)-f\left(1\right)=0$, 即第 2 问的证明过程.
