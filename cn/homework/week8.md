@@ -14,7 +14,7 @@
 
 > **定理 5.8** ($\mathbb R^n$ 紧集判据)<br>$F\subset\mathbb R^n$ 紧当且仅当 $F$ 闭且有界. (教材 $\S5$)
 
-> **定理 6.1** (紧=序列紧)<br>度量空间中紧致与序列紧致等价, 即每个序列都有收敛子列. (教材 $\S6$)
+> **定理 6.1** (紧 $=$ 序列紧)<br>度量空间中紧致与序列紧致等价, 即每个序列都有收敛子列. (教材 $\S6$)
 
 > **定理 6.7** (连续函数的一致极限连续)<br>连续函数列的一致极限连续, 即连续函数空间在有界函数空间中闭. (教材 $\S6$)
 
@@ -174,7 +174,7 @@ $$
 
 ### 解答 习题七
 
-(1) 由**定义 6.46** (点到集合的距离), $d\left(K,F\right)=\inf_{x\in K,\,y\in F}\left\|x-y\right\|$. 取序列 $x_n\in K$, $y_n\in F$ 使 $\left\|x_n-y_n\right\|\to d\left(K,F\right)$. 由**定理 6.1** (紧=序列紧), $K$ 紧故 $\left(x_n\right)$ 有收敛子列 $x_{n_j}\to x\in K$. 此时 $\left\|y_{n_j}\right\|\le\left\|y_{n_j}-x_{n_j}\right\|+\left\|x_{n_j}-x\right\|+\left\|x\right\|$ 有界, 故 $y_{n_j}$ 落在某个闭球内; 由**定理 5.8** ($\mathbb R^n$ 紧集判据) 该闭球闭且有界故紧, 再由**定理 6.1** (紧=序列紧) 抽出子列 $y_{n_{j_k}}\to y$. 因 $F$ 闭, 由**定义 3.21** (闭集) $y\in F$. 取极限得
+(1) 由**定义 6.46** (点到集合的距离), $d\left(K,F\right)=\inf_{x\in K,\,y\in F}\left\|x-y\right\|$. 取序列 $x_n\in K$, $y_n\in F$ 使 $\left\|x_n-y_n\right\|\to d\left(K,F\right)$. 由**定理 6.1** (紧 $=$ 序列紧), $K$ 紧故 $\left(x_n\right)$ 有收敛子列 $x_{n_j}\to x\in K$. 此时 $\left\|y_{n_j}\right\|\le\left\|y_{n_j}-x_{n_j}\right\|+\left\|x_{n_j}-x\right\|+\left\|x\right\|$ 有界, 故 $y_{n_j}$ 落在某个闭球内; 由**定理 5.8** ($\mathbb R^n$ 紧集判据) 该闭球闭且有界故紧, 再由**定理 6.1** (紧 $=$ 序列紧) 抽出子列 $y_{n_{j_k}}\to y$. 因 $F$ 闭, 由**定义 3.21** (闭集) $y\in F$. 取极限得
 
 $$
 \left\|x-y\right\|=\lim_{k\to\infty}\left\|x_{n_{j_k}}-y_{n_{j_k}}\right\|=d\left(K,F\right).
@@ -208,7 +208,7 @@ $$
 
 ### 解答 习题八
 
-(1) 设 $\left\{r_1,r_2,\dots\right\}$ 是 $\left[0,1\right]$ 中全体有理数. 固定 $k$, 数列 $\left(f_n\left(r_k\right)\right)_{n\ge1}$ 有界: $\left|f_n\left(r_k\right)\right|\le M$. 由**定理 5.2** (区间紧), 有界闭区间 $\left[-M,M\right]$ 紧, 再由**定理 6.1** (紧=序列紧), $\left(f_n\left(r_1\right)\right)$ 有收敛子列 $\left(f_{n_i^{\left(1\right)}}\left(r_1\right)\right)$. 接着在该子列内取子列使 $\left(f_n\left(r_2\right)\right)$ 收敛; 如此归纳, 得一串嵌套子列 $\left(f_{n_i^{\left(k\right)}}\right)$ 使第 $k$ 个子列在 $r_1,\dots,r_k$ 处都收敛. 对角线子列 $g_i=f_{n_i^{\left(i\right)}}$ 是每个嵌套子列的尾部, 故在每个有理点 $r_k$ 处收敛.
+(1) 设 $\left\{r_1,r_2,\dots\right\}$ 是 $\left[0,1\right]$ 中全体有理数. 固定 $k$, 数列 $\left(f_n\left(r_k\right)\right)_{n\ge1}$ 有界: $\left|f_n\left(r_k\right)\right|\le M$. 由**定理 5.2** (区间紧), 有界闭区间 $\left[-M,M\right]$ 紧, 再由**定理 6.1** (紧 $=$ 序列紧), $\left(f_n\left(r_1\right)\right)$ 有收敛子列 $\left(f_{n_i^{\left(1\right)}}\left(r_1\right)\right)$. 接着在该子列内取子列使 $\left(f_n\left(r_2\right)\right)$ 收敛; 如此归纳, 得一串嵌套子列 $\left(f_{n_i^{\left(k\right)}}\right)$ 使第 $k$ 个子列在 $r_1,\dots,r_k$ 处都收敛. 对角线子列 $g_i=f_{n_i^{\left(i\right)}}$ 是每个嵌套子列的尾部, 故在每个有理点 $r_k$ 处收敛.
 
 (2) 固定 $x\in\left[0,1\right]$ 与 $\epsilon>0$. 由 $\left|g_n'\left(t\right)\right|\le M$ 与中值定理, $\left|g_n\left(x\right)-g_n\left(r\right)\right|\le M\left|x-r\right|$. 取有理点 $r$ 使 $\left|x-r\right|<\epsilon/\left(3M\right)$. 则
 
@@ -218,7 +218,7 @@ $$
 
 由有理点处收敛, $\left(g_n\left(r\right)\right)$ 是**定义 6.37** (柯西列), 对充分大的 $n,m$ 中间项 $<\epsilon/3$; 两端各 $<\epsilon/3$. 故 $\left|g_n\left(x\right)-g_m\left(x\right)\right|<\epsilon$, 即 $\left(g_n\left(x\right)\right)$ 是柯西列. 实数完备, 故逐点极限 $g\left(x\right)$ 存在.
 
-(3) 由**定理 5.2** (区间紧) 与**定理 6.1** (紧=序列紧), $\left[0,1\right]$ 可被有限个有理点 $r^{\left(1\right)},\dots,r^{\left(L\right)}$ 的邻域覆盖, 使每个 $x$ 到某 $r^{\left(j\right)}$ 的距离 $<\epsilon/\left(3M\right)$. 对这有限个有理点, 由收敛性可取公共的 $N$, 使 $n\ge N$ 时 $\left|g_n\left(r^{\left(j\right)}\right)-g\left(r^{\left(j\right)}\right)\right|<\epsilon/3$ 对一切 $j$ 成立. 又由 $\left|g_n'\right|\le M$ 取极限得 $\left|g\left(x\right)-g\left(r^{\left(j\right)}\right)\right|\le M\left|x-r^{\left(j\right)}\right|<\epsilon/3$. 于是对任意 $x$,
+(3) 由**定理 5.2** (区间紧) 与**定理 6.1** (紧 $=$ 序列紧), $\left[0,1\right]$ 可被有限个有理点 $r^{\left(1\right)},\dots,r^{\left(L\right)}$ 的邻域覆盖, 使每个 $x$ 到某 $r^{\left(j\right)}$ 的距离 $<\epsilon/\left(3M\right)$. 对这有限个有理点, 由收敛性可取公共的 $N$, 使 $n\ge N$ 时 $\left|g_n\left(r^{\left(j\right)}\right)-g\left(r^{\left(j\right)}\right)\right|<\epsilon/3$ 对一切 $j$ 成立. 又由 $\left|g_n'\right|\le M$ 取极限得 $\left|g\left(x\right)-g\left(r^{\left(j\right)}\right)\right|\le M\left|x-r^{\left(j\right)}\right|<\epsilon/3$. 于是对任意 $x$,
 
 $$
 \left|g_n\left(x\right)-g\left(x\right)\right|\le\left|g_n\left(x\right)-g_n\left(r^{\left(j\right)}\right)\right|+\left|g_n\left(r^{\left(j\right)}\right)-g\left(r^{\left(j\right)}\right)\right|+\left|g\left(r^{\left(j\right)}\right)-g\left(x\right)\right|<\epsilon.
@@ -232,7 +232,7 @@ $$
 
 ### 解答 习题九
 
-数列 $\left(f_n\left(1\right)\right)_{n\ge0}$ 含于有界闭区间 $\left[-C,C\right]$. 由**定理 5.2** (区间紧) 平移即知 $\left[-C,C\right]$ 是紧集; 由**定理 6.1** (紧=序列紧), 紧度量空间中每个序列都有收敛子列. 故存在子列 $\left(f_{n_i^{\left(1\right)}}\left(1\right)\right)_{i\ge0}$ 收敛. $\blacksquare$
+数列 $\left(f_n\left(1\right)\right)_{n\ge0}$ 含于有界闭区间 $\left[-C,C\right]$. 由**定理 5.2** (区间紧) 平移即知 $\left[-C,C\right]$ 是紧集; 由**定理 6.1** (紧 $=$ 序列紧), 紧度量空间中每个序列都有收敛子列. 故存在子列 $\left(f_{n_i^{\left(1\right)}}\left(1\right)\right)_{i\ge0}$ 收敛. $\blacksquare$
 
 ### 习题十
 
@@ -240,7 +240,7 @@ $$
 
 ### 解答 习题十
 
-归纳构造. $k=1$ 时由习题一已得子列 $\left(f_{n_i^{\left(1\right)}}\right)$, 使 $\left(f_{n_i^{\left(1\right)}}\left(1\right)\right)$ 收敛. 设已构造第 $k$ 个子列 $\left(f_{n_i^{\left(k\right)}}\right)$. 数列 $\left(f_{n_i^{\left(k\right)}}\left(k+1\right)\right)_{i\ge0}$ 仍含于 $\left[-C,C\right]$, 由**定理 5.2** (区间紧) 与**定理 6.1** (紧=序列紧), 有收敛子列, 记为 $\left(f_{n_i^{\left(k+1\right)}}\left(k+1\right)\right)_{i\ge0}$, 其中 $\left(n_i^{\left(k+1\right)}\right)$ 是 $\left(n_i^{\left(k\right)}\right)$ 的子列. 于是 $\left(f_{n_i^{\left(k+1\right)}}\right)$ 是 $\left(f_{n_i^{\left(k\right)}}\right)$ 的子列, 且由构造 $\left(f_{n_i^{\left(k\right)}}\left(k\right)\right)_{i\ge0}$ 收敛. 归纳完成. $\blacksquare$
+归纳构造. $k=1$ 时由习题一已得子列 $\left(f_{n_i^{\left(1\right)}}\right)$, 使 $\left(f_{n_i^{\left(1\right)}}\left(1\right)\right)$ 收敛. 设已构造第 $k$ 个子列 $\left(f_{n_i^{\left(k\right)}}\right)$. 数列 $\left(f_{n_i^{\left(k\right)}}\left(k+1\right)\right)_{i\ge0}$ 仍含于 $\left[-C,C\right]$, 由**定理 5.2** (区间紧) 与**定理 6.1** (紧 $=$ 序列紧), 有收敛子列, 记为 $\left(f_{n_i^{\left(k+1\right)}}\left(k+1\right)\right)_{i\ge0}$, 其中 $\left(n_i^{\left(k+1\right)}\right)$ 是 $\left(n_i^{\left(k\right)}\right)$ 的子列. 于是 $\left(f_{n_i^{\left(k+1\right)}}\right)$ 是 $\left(f_{n_i^{\left(k\right)}}\right)$ 的子列, 且由构造 $\left(f_{n_i^{\left(k\right)}}\left(k\right)\right)_{i\ge0}$ 收敛. 归纳完成. $\blacksquare$
 
 ### 习题十一
 
@@ -318,7 +318,7 @@ $$
 
 记 $x_n=f^n\left(x_0\right)$, 设唯一聚点为 $z$. 取子列 $x_{n_j}\to z$. 由 $f$ 连续, $x_{n_j+1}=f\left(x_{n_j}\right)\to f\left(z\right)$. 而 $\left(x_{n_j+1}\right)$ 是 $\left(x_n\right)$ 的子列, 其极限 $f\left(z\right)$ 必为聚点, 由唯一性 $f\left(z\right)=z$.
 
-反设 $\left(x_n\right)$ 不收敛到 $z$. 则存在 $\epsilon>0$ 与无穷多个 $n$ 使 $\left\|x_n-z\right\|\ge\epsilon$. 从每个 $n_j$ 出发, 若其后轨道始终在 $B\left(z,\epsilon\right)$ 内, 则尾部落在紧闭球中, 由**定理 5.8** ($\mathbb R^n$ 紧集判据) 与**定理 6.1** (紧=序列紧), 该尾部的任何聚点都是 $z$, 矛盾于不收敛. 故从每个 $n_j$ 出发, 存在第一个 $m_j>n_j$ 使 $\left\|x_{m_j}-z\right\|=\epsilon$. 点 $x_{m_j}$ 都落在紧球面 $\partial B\left(z,\epsilon\right)$ 上, 抽子列 $x_{m_{j_k}}\to w$, $\left\|w-z\right\|=\epsilon$. 则 $w$ 是 $\left(x_n\right)$ 的聚点且 $w\neq z$, 矛盾. 故 $\left(x_n\right)\to z$. $\blacksquare$
+反设 $\left(x_n\right)$ 不收敛到 $z$. 则存在 $\epsilon>0$ 与无穷多个 $n$ 使 $\left\|x_n-z\right\|\ge\epsilon$. 从每个 $n_j$ 出发, 若其后轨道始终在 $B\left(z,\epsilon\right)$ 内, 则尾部落在紧闭球中, 由**定理 5.8** ($\mathbb R^n$ 紧集判据) 与**定理 6.1** (紧 $=$ 序列紧), 该尾部的任何聚点都是 $z$, 矛盾于不收敛. 故从每个 $n_j$ 出发, 存在第一个 $m_j>n_j$ 使 $\left\|x_{m_j}-z\right\|=\epsilon$. 点 $x_{m_j}$ 都落在紧球面 $\partial B\left(z,\epsilon\right)$ 上, 抽子列 $x_{m_{j_k}}\to w$, $\left\|w-z\right\|=\epsilon$. 则 $w$ 是 $\left(x_n\right)$ 的聚点且 $w\neq z$, 矛盾. 故 $\left(x_n\right)\to z$. $\blacksquare$
 
 ### 习题十七
 
@@ -330,7 +330,7 @@ $$
 
 ### 解答 习题十七
 
-(1) 取序列 $a_n+b_n\in A+B$ 收敛到 $y$. 由**定理 6.1** (紧=序列紧), $A$ 紧, 故 $\left(a_n\right)$ 有子列 $a_{n_j}\to a\in A$. 则 $b_{n_j}=\left(a_{n_j}+b_{n_j}\right)-a_{n_j}\to y-a$. 因 $B$ 闭, 由**定义 3.21** (闭集), $y-a\in B$. 故 $y=a+\left(y-a\right)\in A+B$. $A+B$ 含一切收敛序列的极限, 故闭.
+(1) 取序列 $a_n+b_n\in A+B$ 收敛到 $y$. 由**定理 6.1** (紧 $=$ 序列紧), $A$ 紧, 故 $\left(a_n\right)$ 有子列 $a_{n_j}\to a\in A$. 则 $b_{n_j}=\left(a_{n_j}+b_{n_j}\right)-a_{n_j}\to y-a$. 因 $B$ 闭, 由**定义 3.21** (闭集), $y-a\in B$. 故 $y=a+\left(y-a\right)\in A+B$. $A+B$ 含一切收敛序列的极限, 故闭.
 
 (2) 反例: 取 $A=\left\{\left(x,0\right):x\in\mathbb R\right\}$, $B=\left\{\left(x,1/x\right):x>0\right\}$. $A$ 与 $B$ 都闭. 但
 

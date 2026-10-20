@@ -20,7 +20,7 @@
 
 > **定理 5.2** (区间紧)<br>区间 $\left[0,1\right]$ 是紧的. (教材 $\S5$)
 
-> **定理 6.1** (紧=序列紧)<br>度量空间中紧致与序列紧致等价, 即每个序列都有收敛子列. (教材 $\S6$)
+> **定理 6.1** (紧 $=$ 序列紧)<br>度量空间中紧致与序列紧致等价, 即每个序列都有收敛子列. (教材 $\S6$)
 
 > **定理 6.3** (紧度量空间完备)<br>紧度量空间是完备的. (教材 $\S6$)
 
@@ -68,7 +68,7 @@ $$
 A_n=\left\{f\in C\left[0,1\right]:\exists x\in\left[0,1-1/n\right],\ \text{使 }\left|f\left(x+h\right)-f\left(x\right)\right|\le nh\text{ 对一切 }0<h<1/n\text{ 成立}\right\}.
 $$
 
-先证 $A_n$ 闭. 设 $f_k\in A_n$ 且 $f_k$ 依**定义 6.41** (一致收敛与一致度量) 一致收敛到 $f$. 取见证点 $x_k$; 由**定理 5.2** (区间紧) 与**定理 6.1** (紧=序列紧), $\left[0,1-1/n\right]$ 中 $\left(x_k\right)$ 有收敛子列 $x_{k_j}\to x$. 对一切 $0<h<1/n$, 由一致收敛可在 $\left|f_{k_j}\left(x_{k_j}+h\right)-f_{k_j}\left(x_{k_j}\right)\right|\le n h$ 中取极限, 得 $\left|f\left(x+h\right)-f\left(x\right)\right|\le n h$, 即 $f\in A_n$. 由**定义 3.21** (闭集), $A_n$ 闭.
+先证 $A_n$ 闭. 设 $f_k\in A_n$ 且 $f_k$ 依**定义 6.41** (一致收敛与一致度量) 一致收敛到 $f$. 取见证点 $x_k$; 由**定理 5.2** (区间紧) 与**定理 6.1** (紧 $=$ 序列紧), $\left[0,1-1/n\right]$ 中 $\left(x_k\right)$ 有收敛子列 $x_{k_j}\to x$. 对一切 $0<h<1/n$, 由一致收敛可在 $\left|f_{k_j}\left(x_{k_j}+h\right)-f_{k_j}\left(x_{k_j}\right)\right|\le n h$ 中取极限, 得 $\left|f\left(x+h\right)-f\left(x\right)\right|\le n h$, 即 $f\in A_n$. 由**定义 3.21** (闭集), $A_n$ 闭.
 
 再证 $A_n$ 无内部. 任给 $f\in C\left[0,1\right]$ 与 $\epsilon>0$, 用折线函数 $g$ 一致逼近 $f$ 使 $\left\|g-f\right\|_\infty<\epsilon$, 并把 $g$ 的每个折段改造成斜率绝对值大于 $n$ 的细密锯齿, 改造幅度仍小于 $\epsilon$. 则 $g\notin A_n$ (任何点 $x$ 处都有任意小的 $h$ 使 $\left|g\left(x+h\right)-g\left(x\right)\right|/h>n$). 故 $A_n$ 的每个邻域都含 $A_n$ 外的点, $A_n$ 无内部, 即 $A_n$ 是无处稠密闭集.
 

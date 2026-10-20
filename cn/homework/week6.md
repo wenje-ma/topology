@@ -34,7 +34,7 @@
 
 > **定义 5.17** (有限交性质)<br>闭集族 $\mathcal F$ 具有有限交性质, 若其任意有限子族之交非空; $X$ 紧致当且仅当任意具有限交性质的闭集族之交非空. (教材 $\S5$; 题集 $\S3.1$)
 
-> **定理 6.1** (紧=序列紧)<br>度量空间中紧致与序列紧致等价, 即每个序列都有收敛子列. (教材 $\S6$)
+> **定理 6.1** (紧 $=$ 序列紧)<br>度量空间中紧致与序列紧致等价, 即每个序列都有收敛子列. (教材 $\S6$)
 
 > **定理 6.17** (里茨定理)<br>无穷维赋范线性空间的闭单位球非紧 (不能被有限个半径 $1$ 的开球覆盖). (题集 $\S7.1$)
 
@@ -108,7 +108,7 @@ $$
 
 ($\Rightarrow$) 设 $X$ 紧致, $A,B$ 为不相交闭集. 由**定理 5.4** (闭子集紧), $A$ 紧致. 由习题三的论证 (连续函数 $d\left(\cdot,B\right)$ 在 $A$ 上取到正最小值) 即得 $d\left(A,B\right)>0$.
 
-($\Leftarrow$) 反证, 设 $X$ 不紧致. 由**定理 6.1** (紧=序列紧), $X$ 不是序列紧致的, 故存在序列 $\left\{x_n\right\}$ 无收敛子列. 必要时取子列使 $x_n$ 两两不同. 于是 $S=\left\{x_n:n\ge1\right\}$ 无极限点, 故 $S$ 闭 (否则其极限点给出收敛子列). 因 $X$ 无孤立点, 每个 $x_n$ 的任意邻域都含异于 $x_n$ 的点; 归纳地选取 $y_n$, 使 $0<d\left(y_n,x_n\right)<1/n$, 且 $y_n\notin S\cup\left\{y_1,\dots,y_{n-1}\right\}$. 则 $\left\{y_n\right\}$ 也无收敛子列: 若 $y_{n_k}\to y$, 则由**定义 6.35** (度量空间) 的三角不等式,
+($\Leftarrow$) 反证, 设 $X$ 不紧致. 由**定理 6.1** (紧 $=$ 序列紧), $X$ 不是序列紧致的, 故存在序列 $\left\{x_n\right\}$ 无收敛子列. 必要时取子列使 $x_n$ 两两不同. 于是 $S=\left\{x_n:n\ge1\right\}$ 无极限点, 故 $S$ 闭 (否则其极限点给出收敛子列). 因 $X$ 无孤立点, 每个 $x_n$ 的任意邻域都含异于 $x_n$ 的点; 归纳地选取 $y_n$, 使 $0<d\left(y_n,x_n\right)<1/n$, 且 $y_n\notin S\cup\left\{y_1,\dots,y_{n-1}\right\}$. 则 $\left\{y_n\right\}$ 也无收敛子列: 若 $y_{n_k}\to y$, 则由**定义 6.35** (度量空间) 的三角不等式,
 
 $$
 d\left(x_{n_k},y\right)\le d\left(x_{n_k},y_{n_k}\right)+d\left(y_{n_k},y\right)\to0,
@@ -194,7 +194,7 @@ $$
 
    $\left(\Leftarrow\right)$ 设对每个紧集 $K\subset E$, $f\left(K\right)$ 紧. 反设 $f$ 在某点 $x$ 不连续. 由**定义 3.25** (邻域与极限), 存在 $\epsilon>0$ 与序列 $x_n\to x$ 使 $d_F\left(f\left(x_n\right),f\left(x\right)\right)\ge\epsilon$. 由 $f$ 单射及 $d_F\left(f\left(x_n\right),f\left(x\right)\right)\ge\epsilon>0$ 知 $x_n\neq x$. 令 $K=\left\{x\right\}\cup\left\{x_n:n\ge1\right\}$, 它是收敛序列加极限, 故紧. 由假设 $f\left(K\right)$ 紧; 度量空间是**定义 3.10** (豪斯多夫空间), 由**定理 5.5** (豪斯多夫中紧集闭), $f\left(K\right)$ 在 $F$ 中闭.
 
-   由**定理 6.1** (紧=序列紧), $f\left(x_n\right)$ 在紧集 $f\left(K\right)$ 中有收敛子列 $f\left(x_{n_j}\right)\to y\in f\left(K\right)$. 设 $y=f\left(z\right)$, $z\in K$. 若 $z=x$, 则 $f\left(x_{n_j}\right)\to f\left(x\right)$, 与 $d_F\left(f\left(x_{n_j}\right),f\left(x\right)\right)\ge\epsilon$ 矛盾. 故 $z=x_m$ 是某固定项. 取尾部紧集 $K'=\left\{x\right\}\cup\left\{x_{n_j}:j>m\right\}$. 由假设 $f\left(K'\right)$ 紧, 再由**定理 5.5** (豪斯多夫中紧集闭) $f\left(K'\right)$ 闭. 但 $f\left(x_{n_j}\right)\to f\left(x_m\right)$ 且 $x_m\notin K'$, 由 $f$ 单射 $f\left(x_m\right)\notin f\left(K'\right)$, 与 $f\left(K'\right)$ 闭矛盾. 故 $f$ 连续.
+   由**定理 6.1** (紧 $=$ 序列紧), $f\left(x_n\right)$ 在紧集 $f\left(K\right)$ 中有收敛子列 $f\left(x_{n_j}\right)\to y\in f\left(K\right)$. 设 $y=f\left(z\right)$, $z\in K$. 若 $z=x$, 则 $f\left(x_{n_j}\right)\to f\left(x\right)$, 与 $d_F\left(f\left(x_{n_j}\right),f\left(x\right)\right)\ge\epsilon$ 矛盾. 故 $z=x_m$ 是某固定项. 取尾部紧集 $K'=\left\{x\right\}\cup\left\{x_{n_j}:j>m\right\}$. 由假设 $f\left(K'\right)$ 紧, 再由**定理 5.5** (豪斯多夫中紧集闭) $f\left(K'\right)$ 闭. 但 $f\left(x_{n_j}\right)\to f\left(x_m\right)$ 且 $x_m\notin K'$, 由 $f$ 单射 $f\left(x_m\right)\notin f\left(K'\right)$, 与 $f\left(K'\right)$ 闭矛盾. 故 $f$ 连续.
 
 (2) 取 $E=\left\{0\right\}\cup\left\{1/n:n\ge1\right\}$, $F=\left\{0,1\right\}$ 装备离散度量, $f\left(0\right)=0$, $f\left(1/n\right)=1$ 对一切 $n$. $f$ 不单射. $E$ 中任何紧集 (即 $E$ 的子集) 的像为 $\left\{0\right\}$, $\left\{1\right\}$ 或 $\left\{0,1\right\}$, 在离散空间中皆紧, 故 $f$ 保持紧集; 但 $x_n=1/n\to0$ 时 $f\left(x_n\right)=1$ 不趋于 $f\left(0\right)=0$, 由**定义 3.25** (邻域与极限) $f$ 不连续. 可见单射不可少. $\blacksquare$
 

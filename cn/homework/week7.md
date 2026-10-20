@@ -28,7 +28,7 @@
 
 > **定义 5.17** (有限交性质)<br>闭集族 $\mathcal F$ 具有有限交性质, 若其任意有限子族之交非空; $X$ 紧致当且仅当任意具有限交性质的闭集族之交非空. (教材 $\S5$; 题集 $\S3.1$)
 
-> **定理 6.1** (紧=序列紧)<br>度量空间中紧致与序列紧致等价, 即每个序列都有收敛子列. (教材 $\S6$)
+> **定理 6.1** (紧 $=$ 序列紧)<br>度量空间中紧致与序列紧致等价, 即每个序列都有收敛子列. (教材 $\S6$)
 
 > **定理 6.17** (里茨定理)<br>无穷维赋范线性空间的闭单位球非紧 (不能被有限个半径 $1$ 的开球覆盖). (题集 $\S7.1$)
 
@@ -136,7 +136,7 @@ $$
 \delta/6\le h\left(p\right)\le\delta/2.
 $$
 
-对任意大的这样的 $n,m$ 重复选取 $p$, 并由 $X$ 紧致经**定理 6.1** (紧=序列紧) 提取收敛子列, 其极限 $z$ 满足 $d\left(z,C\right)\ge\delta/6$ 且 $d\left(z,D\right)\ge\delta/2$, 故 $z$ 是聚点但 $z\notin C\cup D=L$, 矛盾. 由**定义 4.18** (连通空间), $L$ 连通. $\blacksquare$
+对任意大的这样的 $n,m$ 重复选取 $p$, 并由 $X$ 紧致经**定理 6.1** (紧 $=$ 序列紧) 提取收敛子列, 其极限 $z$ 满足 $d\left(z,C\right)\ge\delta/6$ 且 $d\left(z,D\right)\ge\delta/2$, 故 $z$ 是聚点但 $z\notin C\cup D=L$, 矛盾. 由**定义 4.18** (连通空间), $L$ 连通. $\blacksquare$
 
 ### 习题七
 
@@ -152,7 +152,7 @@ $$
 d\left(f^n\left(a\right),f^m\left(a\right)\right)=d\left(a,f^{\left|n-m\right|}\left(a\right)\right)\ge\epsilon.
 $$
 
-但 $\left\{f^n\left(a\right)\right\}$ 是紧空间 $X$ 中的序列, 由**定理 6.1** (紧=序列紧) 有收敛子列, 它必是**定义 6.37** (柯西列), 与两两距离 $\ge\epsilon$ 矛盾. 故 $f$ 满.
+但 $\left\{f^n\left(a\right)\right\}$ 是紧空间 $X$ 中的序列, 由**定理 6.1** (紧 $=$ 序列紧) 有收敛子列, 它必是**定义 6.37** (柯西列), 与两两距离 $\ge\epsilon$ 矛盾. 故 $f$ 满.
 
 $f$ 连续 (等距蕴含利普希茨连续), $X$ 紧致故为紧豪斯多夫空间, 由**定理 5.6** (紧豪斯多夫间的连续双射), $f$ 是同胚. $\blacksquare$
 
@@ -162,7 +162,7 @@ $f$ 连续 (等距蕴含利普希茨连续), $X$ 紧致故为紧豪斯多夫空�
 
 ### 解答 习题八
 
-由**定理 6.1** (紧=序列紧), 对任意 $a\in X$, 序列 $f^n\left(a\right)$ 有收敛子列. 记步长 $d_n=\left|f^n\left(a\right)-f^{n-1}\left(a\right)\right|$. 由膨胀条件,
+由**定理 6.1** (紧 $=$ 序列紧), 对任意 $a\in X$, 序列 $f^n\left(a\right)$ 有收敛子列. 记步长 $d_n=\left|f^n\left(a\right)-f^{n-1}\left(a\right)\right|$. 由膨胀条件,
 
 $$
 d_{n+1}=\left|f^n\left(a\right)-f^{n-1}\left(a\right)\right|\ge d_n,
@@ -184,7 +184,7 @@ $$
 \left|f^2\left(x_0\right)-f\left(x_0\right)\right|<\left|f\left(x_0\right)-x_0\right|=g\left(x_0\right),
 $$
 
-即 $g\left(f\left(x_0\right)\right)<g\left(x_0\right)$, 矛盾. 故 $g\left(x_0\right)=0$, $x_0$ 是不动点. 唯一性: 若另有不动点 $y$, 则 $0<\left|y-x_0\right|=\left|f\left(y\right)-f\left(x_0\right)\right|<\left|y-x_0\right|$, 矛盾. 对 $a\in K$, $\left|f^{n+1}\left(a\right)-x_0\right|<\left|f^n\left(a\right)-x_0\right|$ 单调下降, 由 $K$ 紧 (**定理 6.1** (紧=序列紧)) 收敛到 $x_0$. $\blacksquare$
+即 $g\left(f\left(x_0\right)\right)<g\left(x_0\right)$, 矛盾. 故 $g\left(x_0\right)=0$, $x_0$ 是不动点. 唯一性: 若另有不动点 $y$, 则 $0<\left|y-x_0\right|=\left|f\left(y\right)-f\left(x_0\right)\right|<\left|y-x_0\right|$, 矛盾. 对 $a\in K$, $\left|f^{n+1}\left(a\right)-x_0\right|<\left|f^n\left(a\right)-x_0\right|$ 单调下降, 由 $K$ 紧 (**定理 6.1** (紧 $=$ 序列紧)) 收敛到 $x_0$. $\blacksquare$
 
 ### 习题十
 
@@ -196,7 +196,7 @@ $$
 
 ### 解答 习题十
 
-(1) ($\Rightarrow$) 显然. ($\Leftarrow$) 设唯一子列极限为 $L$. 若序列不收敛到 $L$, 则存在 $\epsilon>0$ 与子列恒在 $B\left(L,\epsilon\right)$ 外; 由**定理 6.1** (紧=序列紧), 该子列有收敛子列, 其极限异于 $L$, 矛盾. 故序列收敛到 $L$.
+(1) ($\Rightarrow$) 显然. ($\Leftarrow$) 设唯一子列极限为 $L$. 若序列不收敛到 $L$, 则存在 $\epsilon>0$ 与子列恒在 $B\left(L,\epsilon\right)$ 外; 由**定理 6.1** (紧 $=$ 序列紧), 该子列有收敛子列, 其极限异于 $L$, 矛盾. 故序列收敛到 $L$.
 
 (2) 若序列不最终落入 $V_0\cup V_1$, 则有子列恒在 $V_0\cup V_1$ 外; 由紧性它有收敛子列, 其极限不在 $V_0\cup V_1$ 中, 即第三个子列极限, 矛盾.
 
@@ -214,7 +214,7 @@ $f$ 连续, 把子列极限映为序列 $f^{n+1}\left(x\right)$ 的子列极限,
 
 ### 解答 习题十一
 
-(1) 固定 $x,y\in E$, 记 $a_n=d\left(f^n\left(x\right),f^n\left(y\right)\right)$. 由条件应用于 $\left(f^{n-1}\left(x\right),f^{n-1}\left(y\right)\right)$, $a_{n+1}\ge a_n$, 又 $a_n\le\operatorname{diam}\left(E\right)$, 故 $a_n\uparrow L$. 由**定理 6.1** (紧=序列紧), $E\times E$ 紧, $\left(f^n\left(x\right),f^n\left(y\right)\right)$ 有子列 $\left(f^{n_j}\left(x\right),f^{n_j}\left(y\right)\right)\to\left(u,v\right)$, 于是 $d\left(u,v\right)=L$. 因 $a_{n_j}\to L$ 且 $a_{n_j+1}\to L$, 由三角不等式
+(1) 固定 $x,y\in E$, 记 $a_n=d\left(f^n\left(x\right),f^n\left(y\right)\right)$. 由条件应用于 $\left(f^{n-1}\left(x\right),f^{n-1}\left(y\right)\right)$, $a_{n+1}\ge a_n$, 又 $a_n\le\operatorname{diam}\left(E\right)$, 故 $a_n\uparrow L$. 由**定理 6.1** (紧 $=$ 序列紧), $E\times E$ 紧, $\left(f^n\left(x\right),f^n\left(y\right)\right)$ 有子列 $\left(f^{n_j}\left(x\right),f^{n_j}\left(y\right)\right)\to\left(u,v\right)$, 于是 $d\left(u,v\right)=L$. 因 $a_{n_j}\to L$ 且 $a_{n_j+1}\to L$, 由三角不等式
 
 $$
 \left|a_{n_j+1}-a_{n_j}\right|\le d\bigl(f^{n_j+1}\left(x\right),f^{n_j}\left(x\right)\bigr)+d\bigl(f^{n_j+1}\left(y\right),f^{n_j}\left(y\right)\bigr).
@@ -230,7 +230,7 @@ $$
 d\left(f^{n+1}\left(p\right),f^n\left(p\right)\right)\ge d\left(f^n\left(p\right),f^{n-1}\left(p\right)\right)\ge\cdots\ge d\left(f\left(p\right),p\right)\ge\delta,
 $$
 
-其中最后一步用 $f\left(p\right)\in f\left(E\right)$ 而 $p\notin f\left(E\right)$. 但由**定理 6.1** (紧=序列紧), 紧度量空间 $E$ 中序列 $\left(f^n\left(p\right)\right)$ 有收敛子列, 而收敛子列必是**定义 6.37** (柯西列), 与相邻项距离恒 $\ge\delta$ 矛盾. 故 $f$ 满. 结合第 1 小题的等距性, $d\left(f\left(x\right),f\left(y\right)\right)=0$ 推出 $d\left(x,y\right)=0$ 即 $x=y$, $f$ 单射. 故 $f$ 双射.
+其中最后一步用 $f\left(p\right)\in f\left(E\right)$ 而 $p\notin f\left(E\right)$. 但由**定理 6.1** (紧 $=$ 序列紧), 紧度量空间 $E$ 中序列 $\left(f^n\left(p\right)\right)$ 有收敛子列, 而收敛子列必是**定义 6.37** (柯西列), 与相邻项距离恒 $\ge\delta$ 矛盾. 故 $f$ 满. 结合第 1 小题的等距性, $d\left(f\left(x\right),f\left(y\right)\right)=0$ 推出 $d\left(x,y\right)=0$ 即 $x=y$, $f$ 单射. 故 $f$ 双射.
 
 (3) $E$ 紧且是**定义 3.10** (豪斯多夫空间), $g$ 是紧豪斯多夫空间之间的连续双射, 由**定理 5.6** (紧豪斯多夫间的连续双射), $g^{-1}$ 连续. 条件 $d\left(g\left(x\right),g\left(y\right)\right)\le d\left(x,y\right)$ 改写为: 对任意 $u,v\in E$, 令 $u=g\left(x\right)$, $v=g\left(y\right)$, 则 $d\left(g^{-1}\left(u\right),g^{-1}\left(v\right)\right)\ge d\left(u,v\right)$. 即 $g^{-1}$ 是紧度量空间上连续且距离不减的映射. 由第 1 小题, $g^{-1}$ 是**定义 6.49** (等距映射), 从而 $g$ 也是等距. $\blacksquare$
 
@@ -240,7 +240,7 @@ $$
 
 ### 解答 习题十二
 
-反设存在任意大的 $\epsilon$-分离集. 则可取两两不同的点列 $x_m\in K$ 使 $m\neq m'$ 时 $\left|x_m-x_{m'}\right|>\epsilon$. 由**定理 5.3** ($\mathbb R^n$ 中的紧集) 与**定理 6.1** (紧=序列紧), $\left(x_m\right)$ 有收敛子列; 收敛子列是**定义 6.37** (柯西列), 充分靠后两项距离 $<\epsilon$, 与 $\epsilon$-分离矛盾. 故存在 $M\left(\epsilon\right)$.
+反设存在任意大的 $\epsilon$-分离集. 则可取两两不同的点列 $x_m\in K$ 使 $m\neq m'$ 时 $\left|x_m-x_{m'}\right|>\epsilon$. 由**定理 5.3** ($\mathbb R^n$ 中的紧集) 与**定理 6.1** (紧 $=$ 序列紧), $\left(x_m\right)$ 有收敛子列; 收敛子列是**定义 6.37** (柯西列), 充分靠后两项距离 $<\epsilon$, 与 $\epsilon$-分离矛盾. 故存在 $M\left(\epsilon\right)$.
 
 满性: 反设 $f$ 不满, 取 $p\notin f\left(K\right)$. $f\left(K\right)$ 紧, 由**定理 5.3** ($\mathbb R^n$ 中的紧集) 闭, 故 $\delta=d\left(p,f\left(K\right)\right)>0$. 轨道 $p,f\left(p\right),f^2\left(p\right),\dots$ 满足
 
@@ -248,7 +248,7 @@ $$
 \left|f^{n+1}\left(p\right)-f^n\left(p\right)\right|=\left|f\left(f^n\left(p\right)\right)-f\left(f^{n-1}\left(p\right)\right)\right|=\left|f^n\left(p\right)-f^{n-1}\left(p\right)\right|\ge\cdots\ge\left|f\left(p\right)-p\right|\ge\delta,
 $$
 
-其中等号用了**定义 6.49** (等距映射). 但由**定理 6.1** (紧=序列紧), $K$ 中轨道有收敛子列, 必为**定义 6.37** (柯西列), 与相邻项距离恒 $\ge\delta$ 矛盾. 故 $f$ 满. $\blacksquare$
+其中等号用了**定义 6.49** (等距映射). 但由**定理 6.1** (紧 $=$ 序列紧), $K$ 中轨道有收敛子列, 必为**定义 6.37** (柯西列), 与相邻项距离恒 $\ge\delta$ 矛盾. 故 $f$ 满. $\blacksquare$
 
 ### 习题十三
 
@@ -267,7 +267,7 @@ $$
 
 ### 解答 习题十三
 
-**第 1 小题**: 对 $n\ge 1$, 定义 $K_n=\left\{x\in E:d\left(x,K\right)<1/n\right\}$. 每个 $K_n$ 是开集且含 $K$. 反证: 若对每个 $n$, $f$ 在 $K_n$ 上不单射, 则存在 $x_n,y_n\in K_n$, $x_n\neq y_n$, 使 $f\left(x_n\right)=f\left(y_n\right)$. 由 $x_n,y_n\in K_n$, 可取 $x'_n,y'_n\in K$ 使 $d\left(x_n,x'_n\right)<1/n$, $d\left(y_n,y'_n\right)<1/n$. 由**定义 5.16** (紧致空间), $K\times K$ 紧; 由**定理 6.1** (紧=序列紧), 存在子列 $\left(x'_{\varphi\left(n\right)},y'_{\varphi\left(n\right)}\right)\to\left(x,y\right)\in K\times K$. 由三角不等式, $x_{\varphi\left(n\right)}\to x$, $y_{\varphi\left(n\right)}\to y$. 由 $f$ 连续, $f\left(x_{\varphi\left(n\right)}\right)=f\left(y_{\varphi\left(n\right)}\right)$ 取极限得 $f\left(x\right)=f\left(y\right)$. 因 $f$ 在 $K$ 上单射, $x=y$. 但由假设, $x$ 有邻域 $B\left(x,\epsilon\right)$ 使 $f$ 单射, 而 $x_{\varphi\left(n\right)}\neq y_{\varphi\left(n\right)}$ 且当 $n$ 充分大时二者都在 $B\left(x,\epsilon\right)$ 内, $f\left(x_{\varphi\left(n\right)}\right)=f\left(y_{\varphi\left(n\right)}\right)$, 矛盾. 故存在 $n$ 使 $f$ 在 $K_n$ 上单射, 取 $\Omega=K_n$ 即可.
+**第 1 小题**: 对 $n\ge 1$, 定义 $K_n=\left\{x\in E:d\left(x,K\right)<1/n\right\}$. 每个 $K_n$ 是开集且含 $K$. 反证: 若对每个 $n$, $f$ 在 $K_n$ 上不单射, 则存在 $x_n,y_n\in K_n$, $x_n\neq y_n$, 使 $f\left(x_n\right)=f\left(y_n\right)$. 由 $x_n,y_n\in K_n$, 可取 $x'_n,y'_n\in K$ 使 $d\left(x_n,x'_n\right)<1/n$, $d\left(y_n,y'_n\right)<1/n$. 由**定义 5.16** (紧致空间), $K\times K$ 紧; 由**定理 6.1** (紧 $=$ 序列紧), 存在子列 $\left(x'_{\varphi\left(n\right)},y'_{\varphi\left(n\right)}\right)\to\left(x,y\right)\in K\times K$. 由三角不等式, $x_{\varphi\left(n\right)}\to x$, $y_{\varphi\left(n\right)}\to y$. 由 $f$ 连续, $f\left(x_{\varphi\left(n\right)}\right)=f\left(y_{\varphi\left(n\right)}\right)$ 取极限得 $f\left(x\right)=f\left(y\right)$. 因 $f$ 在 $K$ 上单射, $x=y$. 但由假设, $x$ 有邻域 $B\left(x,\epsilon\right)$ 使 $f$ 单射, 而 $x_{\varphi\left(n\right)}\neq y_{\varphi\left(n\right)}$ 且当 $n$ 充分大时二者都在 $B\left(x,\epsilon\right)$ 内, $f\left(x_{\varphi\left(n\right)}\right)=f\left(y_{\varphi\left(n\right)}\right)$, 矛盾. 故存在 $n$ 使 $f$ 在 $K_n$ 上单射, 取 $\Omega=K_n$ 即可.
 
 **第 2 小题**: 反证. 设闭单位球 $\overline B\left(0,1\right)$ 被开单位球 $B\left(x_i,1\right)$ ($i=1,\dots,m$) 覆盖. 令 $F=\operatorname{span}\left(x_1,\dots,x_m\right)$, 它是有限维子空间. 因 $E$ 无穷维, 存在 $y\in E\setminus F$. 由有限维子空间闭, 取 $x\in F$ 使 $\left\|y-x\right\|=d\left(y,F\right)$ (有限维中距离可达). 令
 

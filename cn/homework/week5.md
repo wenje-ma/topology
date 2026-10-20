@@ -62,7 +62,7 @@
 
 > **定理 5.11** (紧空间上连续函数取最大值)<br>紧致空间 $X$ 上的连续函数 $f:X\to\mathbb R$ 能取到最大值 (同理也取到最小值). (教材 $\S5$)
 
-> **定理 6.1** (紧=序列紧)<br>度量空间中紧致与序列紧致等价, 即每个序列都有收敛子列. (教材 $\S6$)
+> **定理 6.1** (紧 $=$ 序列紧)<br>度量空间中紧致与序列紧致等价, 即每个序列都有收敛子列. (教材 $\S6$)
 
 > **定理 6.13** (贝尔纲定理)<br>完备度量空间中可数个稠密开集之交非空 (且稠密). (教材 $\S6$)
 
@@ -402,7 +402,7 @@ $$
 
 (1) 因 $A$ 无界, 对每个 $p$, 存在 $M_p\in A$ 使 $\left|M_p\right|\ge p$ (否则 $A$ 含于半径 $p$ 的球内, 有界). 由**定义 4.23** (凸集), $O\in A$ 与 $M_p\in A$ 的连线线段 $OM_p$ 含于 $A$, 且其长度 $\left|OM_p\right|=\left|M_p\right|\ge p$.
 
-(2) 令 $r_p=\left|M_p\right|$, $u_p=\frac{M_p}{r_p}$, 则 $u_p$ 在单位圆周 $S^1=\left\{v\in\mathbb R^2:\left|v\right|=1\right\}$ 上. $S^1$ 闭且有界, 由**定理 5.3** ($\mathbb R^n$ 中的紧集) $S^1$ 紧. 由**定理 6.1** (紧=序列紧), 序列 $\left(u_p\right)\subset S^1$ 有收敛子列 $u_{p_j}\to u\in S^1$.
+(2) 令 $r_p=\left|M_p\right|$, $u_p=\frac{M_p}{r_p}$, 则 $u_p$ 在单位圆周 $S^1=\left\{v\in\mathbb R^2:\left|v\right|=1\right\}$ 上. $S^1$ 闭且有界, 由**定理 5.3** ($\mathbb R^n$ 中的紧集) $S^1$ 紧. 由**定理 6.1** (紧 $=$ 序列紧), 序列 $\left(u_p\right)\subset S^1$ 有收敛子列 $u_{p_j}\to u\in S^1$.
 
 (3) 固定 $\lambda\ge0$. 对充分大的 $j$, $r_{p_j}\ge\lambda$ (因 $r_{p_j}\ge p_j\to\infty$). 由**定义 4.23** (凸集), $\lambda u_{p_j}=\frac{\lambda}{r_{p_j}}M_{p_j}+\left(1-\frac{\lambda}{r_{p_j}}\right)O$ 是 $M_{p_j}$ 与 $O$ 的凸组合, 故 $\lambda u_{p_j}\in A$. 当 $j\to\infty$, $u_{p_j}\to u$, 故 $\lambda u_{p_j}\to\lambda u$. 因 $A$ 闭 (由**定义 3.21** (闭集), 闭集含其序列极限), $\lambda u\in A$. 由 $\lambda\ge0$ 任意, 半直线 $\left\{\lambda u:\lambda\ge0\right\}\subset A$, 即 $A$ 含一条从原点出发的无穷长半直线. $\blacksquare$
 
