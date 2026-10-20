@@ -192,11 +192,11 @@ $\left(\Rightarrow\right)$ 设 $X$ 是**定义 4.18** (连通空间), $f:X\to\le
 
 $\left(\Leftarrow\right)$ 若 $X$ 不连通, 则 $X=U\cup V$, $U,V$ 非空不相交开集. 定义 $f$ 在 $U$ 上取 $0$, 在 $V$ 上取 $1$; 因 $U,V$ 既开又闭, 由**定义 3.22** (连续映射) $f$ 连续, 但 $f$ 非常值. 矛盾.
 
-第二问: $C=\left(\left(A\setminus X\right)\times B\right)\cup\left(A\times\left(B\setminus Y\right)\right)$. 因 $X,Y$ 是真子集, 可取 $a_0\in A\setminus X$, $b_0\in B\setminus Y$. 固定 $b_0$, 集合 $A\times\left\{b_0\right\}$ 由**定理 4.7** (乘积连通) 连通. 对每个 $a\in A\setminus X$, 纤维 $\left\{a\right\}\times B$ 连通 (**定理 4.7** (乘积连通)), 且与 $A\times\left\{b_0\right\}$ 交于 $\left(a,b_0\right)$. 由**定理 4.6** (扇形连通), $S=A\times\left\{b_0\right\}\cup\bigcup_{a\in A\setminus X}\left\{a\right\}\times B$ 连通. 再对每个 $b\in B\setminus Y$, 纤维 $A\times\left\{b\right\}$ 连通, 且与 $S$ 交于 $\left(a_0,b\right)$. 再用**定理 4.6** (扇形连通), 加入所有 $A\times\left\{b\right\}$ 后仍连通, 所得正是 $C$. $\blacksquare$
+第二问: $C=\left(\left(A\setminus X\right)\times B\right)\cup\left(A\times\left(B\setminus Y\right)\right)$. 因 $X,Y$ 是真子集, 可取 $a_0\in A\setminus X$, $b_0\in B\setminus Y$. 固定 $b_0$, 集合 $A\times\left\{b_0\right\}$ 由**定理 4.7** (乘积连通) 连通. 对每个 $a\in A\setminus X$, 集合 $\left\{a\right\}\times B$ 连通 (**定理 4.7** (乘积连通)), 且与 $A\times\left\{b_0\right\}$ 交于 $\left(a,b_0\right)$. 由**定理 4.6** (扇形连通), $S=A\times\left\{b_0\right\}\cup\bigcup_{a\in A\setminus X}\left\{a\right\}\times B$ 连通. 再对每个 $b\in B\setminus Y$, 集合 $A\times\left\{b\right\}$ 连通, 且与 $S$ 交于 $\left(a_0,b\right)$. 再用**定理 4.6** (扇形连通), 加入所有 $A\times\left\{b\right\}$ 后仍连通, 所得正是 $C$. $\blacksquare$
 
 ### 习题九
 
-连通性与边界. 设 $E$ 是连通度量空间, $F$ 是 $E$ 的闭集. 证明: 若 $F$ 的边界 $\partial F$ 连通, 则 $F$ 连通. 可先证明连续函数的限制连续. 再举例说明 $F$ 不假设闭时结论失效.
+连通性与边界. 设 $E$ 是连通度量空间, $F$ 是 $E$ 的闭集. 证明: 若 $F$ 的边界 $\partial F$ 连通, 则 $F$ 连通. 再举例说明 $F$ 不假设闭时结论失效.
 
 ### 解答 习题九
 
@@ -218,7 +218,7 @@ $$
 
 连通 $\Rightarrow$ $\epsilon$-链: 固定 $\epsilon>0$, 定义 $a\sim b$ 为存在 $\epsilon$-链. 等价类在**定义 6.36** (开球) $B\left(x,\epsilon\right)$ 下封闭, 故每个等价类开; 其余等价类之并也开. 由**定义 4.19** (既开又闭集), 连通空间只有一个等价类, 即 $X$ 是**定义 4.14** ($\epsilon$-链空间).
 
-紧且 $\epsilon$-链 $\Rightarrow$ 连通: 反设 $X$ 不连通, 则 $X=A\cup B$ 为非空不交闭集分离. $A,B$ 是紧度量空间, 距离 $\delta=d\left(A,B\right)>0$: 取 $a_n\in A$, $b_n\in B$ 使 $d\left(a_n,b_n\right)\to\delta$, 由**定理 6.1** (紧=序列紧) 抽子列 $a_{n_j}\to a\in A$, $b_{n_j}\to b\in B$, 得 $d\left(a,b\right)=\delta>0$. 取 $\epsilon<\delta$, 则 $\epsilon$-链不可能从 $A$ 跨到 $B$, 与 $\epsilon$-链矛盾.
+紧且 $\epsilon$-链 $\Rightarrow$ 连通: 反设 $X$ 不连通, 则 $X=A\cup B$ 为非空不交闭集分离. $A,B$ 是紧度量空间, 距离 $\delta=d\left(A,B\right)>0$: 取 $a_n\in A$, $b_n\in B$ 使 $d\left(a_n,b_n\right)\to\delta$, 由**定理 6.1** (紧 $=$ 序列紧) 抽子列 $a_{n_j}\to a\in A$, $b_{n_j}\to b\in B$, 得 $d\left(a,b\right)=\delta>0$. 取 $\epsilon<\delta$, 则 $\epsilon$-链不可能从 $A$ 跨到 $B$, 与 $\epsilon$-链矛盾.
 
 $\epsilon$-链但不连通的例子: 有理数集 $\mathbb Q$ 装备通常度量. 对任意 $\epsilon>0$, 任意两个有理数之间可插入间距小于 $\epsilon$ 的有理点列, 故 $\mathbb Q$ 是 $\epsilon$-链的; 但 $\mathbb Q$ 完全不连通. $\blacksquare$
 
@@ -230,7 +230,9 @@ $\epsilon$-链但不连通的例子: 有理数集 $\mathbb Q$ 装备通常度量
 
 反设 $X$ 不连通, 则 $X=A\cup B$, $A,B$ 非空不相交且由**定义 4.19** (既开又闭集) 既开又闭. 取 $a\in A$, $b\in B$, 定义 $f$: 在 $A$ 上取常值 $b$, 在 $B$ 上取常值 $a$. 因 $A,B$ 既开又闭, 由**定义 3.22** (连续映射) $f$ 连续; 但 $f\left(A\right)\subset B$, $f\left(B\right)\subset A$, 而 $A\cap B=\emptyset$, 故 $f$ 无不动点. 矛盾. 故 $X$ 连通.
 
-紧且连通不足以保证不动点: 取圆周 $X=S^1$, 旋转 $90^\circ$ 的映射 $f\left(e^{i\theta}\right)=e^{i\left(\theta+\pi/2\right)}$. $S^1$ 紧且连通, $f$ 连续, 但 $f$ 无不动点. $\blacksquare$
+不一定. 紧且连通不足以保证不动点: 取圆周 $X=S^1$, 旋转 $90^\circ$ 的映射 $f\left(e^{i\theta}\right)=e^{i\left(\theta+\pi/2\right)}$. $S^1$ 紧且连通, $f$ 连续, 但 $f$ 无不动点. $\blacksquare$
+
+> 紧与连通只能保证空间是连在一起的, 而不动点与空间的自同胚相关, 这是两件事.
 
 ### 习题十二
 
@@ -238,11 +240,13 @@ $\epsilon$-链但不连通的例子: 有理数集 $\mathbb Q$ 装备通常度量
 
 ### 解答 习题十二
 
-反证. 若 $F$ 不连通, 由**定义 4.18** (连通空间), 存在 $F=A\sqcup B$, $A,B$ 非空、在 $F$ 中既开又闭. 因 $F$ 闭于 $E$, $A,B$ 闭于 $E$.
+反设 $F$ 不连通. 则 $F$ 有非空分离 $F=A\cup B$, $A,B$ 非空不相交, 且在 $F$ 中既开又闭. 因 $F$ 在 $E$ 中闭, 由**定义 3.21** (闭集), $A,B$ 在 $E$ 中也闭. 边界 $\partial F=F\cap\overline{E\setminus F}$. 断言
 
-由**定义 3.20** (边界), $\partial F=\overline F\setminus\operatorname{int}\left(F\right)=F\setminus\operatorname{int}\left(F\right)$. 因 $\partial F$ 连通, 它不能同时与 $A,B$ 相交 (否则 $\partial F\cap A$ 与 $\partial F\cap B$ 是 $\partial F$ 的非空分离). 故不妨 $\partial F\subset A$. 于是 $B\cap\partial F=\emptyset$, 即 $B\subset\operatorname{int}\left(F\right)$.
+$$
+\partial F=\left(A\cap\overline{E\setminus F}\right)\cup\left(B\cap\overline{E\setminus F}\right),
+$$
 
-$B$ 闭于 $E$, 且 $B\subset\operatorname{int}\left(F\right)$. 又 $B$ 在 $F$ 中开, 即 $B=F\cap O$, $O$ 开于 $E$. 因 $B\subset\operatorname{int}\left(F\right)$, $B=O\cap\operatorname{int}\left(F\right)$, 即 $B$ 开于 $E$. 故 $B$ 既开又闭于 $E$, 非空且不等于 $E$ ($B\subset F\subsetneq E$, 否则 $\partial F=\emptyset$). 这与 $E$ 连通矛盾. 故 $F$ 连通. $\blacksquare$
+两边都非空. 若 $A\cap\overline{E\setminus F}=\emptyset$, 则 $A\subset\operatorname{int}\left(F\right)$; 又 $A$ 在 $F$ 中开, 即 $A=F\cap O$ ($O$ 开于 $E$), 于是 $A=O\cap\operatorname{int}\left(F\right)$ 在 $E$ 中开. $A$ 在 $E$ 中既开又闭, 由**定义 4.19** (既开又闭集), $E$ 连通推出 $A=\emptyset$ 或 $E$, 与 $A$ 是 $F$ 的非空真子集矛盾. 故 $A\cap\overline{E\setminus F}\neq\emptyset$, 同理 $B\cap\overline{E\setminus F}\neq\emptyset$. 这两个非空不交闭集分离了 $\partial F$, 与 $\partial F$ 连通矛盾. 故 $F$ 连通. $\blacksquare$
 
 ### 习题十三
 
@@ -273,3 +277,5 @@ $$
 若 $g$ 在 $\left[0,1-\frac1n\right]$ 上恒不为 $0$, 因该区间连通 (由**定理 4.1** (区间连通)), 连续函数 $g$ 必恒正或恒负, 从而各 $g\left(\frac{j}{n}\right)$ 同号, 其和不为 $0$, 矛盾. 故存在 $x$ 使 $g\left(x\right)=0$, 即 $f\left(x\right)=f\left(x+\frac1n\right)$.
 
 (3) 取 $f\left(x\right)=x$. 它连续, 且对任意 $x\in\left[0,\frac35\right]$, $f\left(x+\frac25\right)-f\left(x\right)=\frac25\neq0$, 故 $f\left(x\right)\neq f\left(x+\frac25\right)$. 此例即满足要求. $\blacksquare$
+
+> 这说明, 当步长为 $1/n$ 时能取等, 不是 $1/n$ 则不一定.<br>$1/n$ 特殊的原因在于其经过有限次求和后为 $1$, 因此可以利用望远镜级数, 最终求和得到 $f(0)-f(1)=0$, 即第 2 问的证明过程.
