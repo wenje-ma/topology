@@ -140,7 +140,7 @@ $$
 
 ### 解答 习题五
 
-由习题三, $d_H$ 是伪距离, 已满足非负性、对称性与三角不等式. 剩证分离性. 设 $A,B\in\mathcal K\left(X\right)$ 紧致且 $d_H\left(A,B\right)=0$. 度量空间是豪斯多夫的, 由**定理 5.5** (豪斯多夫中紧集闭), 紧集 $A,B$ 在 $X$ 中闭. 由习题四的结论, $d_H\left(A,B\right)=0$ 且 $A,B$ 闭蕴含 $A=B$. 故分离性成立. $\blacksquare$
+由习题三, $d_H$ 是伪距离, 已满足非负性、对称性与三角不等式. 剩证分离性. 设 $A,B\in\mathcal K\left(X\right)$ 紧致且 $d_H\left(A,B\right)=0$. 度量空间是**定义 3.10** (豪斯多夫空间), 由**定理 5.5** (豪斯多夫中紧集闭), 紧集 $A,B$ 在 $X$ 中闭. 由习题四的结论, $d_H\left(A,B\right)=0$ 且 $A,B$ 闭蕴含 $A=B$. 故分离性成立. $\blacksquare$
 
 ### 习题六
 
@@ -162,7 +162,7 @@ $$
 
 (3) 取 $x_n=n$. 则 $\delta\left(x_n,x_m\right)=\left|1/n-1/m\right|\to0$, 是**定义 6.37** (柯西列); 但若收敛于 $x\in\left(0,\infty\right)$, 则 $\delta\left(x_n,x\right)\to\left|0-1/x\right|=1/x>0$, 矛盾. 故它不收敛, $\left(\left(0,\infty\right),\delta\right)$ 不是**定义 6.38** (完备度量空间).
 
-(4) 设 $x_n\in\left(0,1\right]$ 是 $\delta$-柯西列. 则 $1/x_n\in\left[1,\infty\right)$ 通常柯西, 由 $\mathbb R$ 完备, $1/x_n\to L\ge1$. 令 $x=1/L\in\left(0,1\right]$, 则 $\delta\left(x_n,x\right)\to0$. 故 $\left(\left(0,1\right],\delta\right)$ 完备. $\blacksquare$
+(4) 设 $x_n\in\left(0,1\right]$ 是 $\delta$-柯西列. 则 $1/x_n\in\left[1,\infty\right)$ 通常柯西, 由**定义 6.39** (完备化) (即 $\mathbb R$ 完备), $1/x_n\to L\ge1$. 令 $x=1/L\in\left(0,1\right]$, 则 $\delta\left(x_n,x\right)\to0$. 故 $\left(\left(0,1\right],\delta\right)$ 完备. $\blacksquare$
 
 ### 习题七
 
@@ -216,7 +216,7 @@ $$
 \left|g_n\left(x\right)-g_m\left(x\right)\right|\le\left|g_n\left(x\right)-g_n\left(r\right)\right|+\left|g_n\left(r\right)-g_m\left(r\right)\right|+\left|g_m\left(r\right)-g_m\left(x\right)\right|.
 $$
 
-由有理点处收敛, $\left(g_n\left(r\right)\right)$ 是**定义 6.37** (柯西列), 对充分大的 $n,m$ 中间项 $<\epsilon/3$; 两端各 $<\epsilon/3$. 故 $\left|g_n\left(x\right)-g_m\left(x\right)\right|<\epsilon$, 即 $\left(g_n\left(x\right)\right)$ 是柯西列. 实数完备, 故逐点极限 $g\left(x\right)$ 存在.
+由有理点处收敛, $\left(g_n\left(r\right)\right)$ 是**定义 6.37** (柯西列), 对充分大的 $n,m$ 中间项 $<\epsilon/3$; 两端各 $<\epsilon/3$. 故 $\left|g_n\left(x\right)-g_m\left(x\right)\right|<\epsilon$, 即 $\left(g_n\left(x\right)\right)$ 是柯西列. 由**定义 6.39** (完备化) (即 $\mathbb R$ 完备), 逐点极限 $g\left(x\right)$ 存在.
 
 (3) 由**定理 5.2** (区间紧) 与**定理 6.1** (紧 $=$ 序列紧), $\left[0,1\right]$ 可被有限个有理点 $r^{\left(1\right)},\dots,r^{\left(L\right)}$ 的邻域覆盖, 使每个 $x$ 到某 $r^{\left(j\right)}$ 的距离 $<\epsilon/\left(3M\right)$. 对这有限个有理点, 由收敛性可取公共的 $N$, 使 $n\ge N$ 时 $\left|g_n\left(r^{\left(j\right)}\right)-g\left(r^{\left(j\right)}\right)\right|<\epsilon/3$ 对一切 $j$ 成立. 又由 $\left|g_n'\right|\le M$ 取极限得 $\left|g\left(x\right)-g\left(r^{\left(j\right)}\right)\right|\le M\left|x-r^{\left(j\right)}\right|<\epsilon/3$. 于是对任意 $x$,
 
@@ -240,7 +240,7 @@ $$
 
 ### 解答 习题十
 
-归纳构造. $k=1$ 时由习题一已得子列 $\left(f_{n_i^{\left(1\right)}}\right)$, 使 $\left(f_{n_i^{\left(1\right)}}\left(1\right)\right)$ 收敛. 设已构造第 $k$ 个子列 $\left(f_{n_i^{\left(k\right)}}\right)$. 数列 $\left(f_{n_i^{\left(k\right)}}\left(k+1\right)\right)_{i\ge0}$ 仍含于 $\left[-C,C\right]$, 由**定理 5.2** (区间紧) 与**定理 6.1** (紧 $=$ 序列紧), 有收敛子列, 记为 $\left(f_{n_i^{\left(k+1\right)}}\left(k+1\right)\right)_{i\ge0}$, 其中 $\left(n_i^{\left(k+1\right)}\right)$ 是 $\left(n_i^{\left(k\right)}\right)$ 的子列. 于是 $\left(f_{n_i^{\left(k+1\right)}}\right)$ 是 $\left(f_{n_i^{\left(k\right)}}\right)$ 的子列, 且由构造 $\left(f_{n_i^{\left(k\right)}}\left(k\right)\right)_{i\ge0}$ 收敛. 归纳完成. $\blacksquare$
+归纳构造. $k=1$ 时由习题九已得子列 $\left(f_{n_i^{\left(1\right)}}\right)$, 使 $\left(f_{n_i^{\left(1\right)}}\left(1\right)\right)$ 收敛. 设已构造第 $k$ 个子列 $\left(f_{n_i^{\left(k\right)}}\right)$. 数列 $\left(f_{n_i^{\left(k\right)}}\left(k+1\right)\right)_{i\ge0}$ 仍含于 $\left[-C,C\right]$, 由**定理 5.2** (区间紧) 与**定理 6.1** (紧 $=$ 序列紧), 有收敛子列, 记为 $\left(f_{n_i^{\left(k+1\right)}}\left(k+1\right)\right)_{i\ge0}$, 其中 $\left(n_i^{\left(k+1\right)}\right)$ 是 $\left(n_i^{\left(k\right)}\right)$ 的子列. 于是 $\left(f_{n_i^{\left(k+1\right)}}\right)$ 是 $\left(f_{n_i^{\left(k\right)}}\right)$ 的子列, 且由构造 $\left(f_{n_i^{\left(k\right)}}\left(k\right)\right)_{i\ge0}$ 收敛. 归纳完成. $\blacksquare$
 
 ### 习题十一
 
@@ -270,9 +270,15 @@ $$
 
 ### 解答 习题十三
 
-第一步, 由习题六的结论 $\left(f_n\right)$ 依**定义 6.41** (一致收敛与一致度量) 一致收敛到 $f$, 故存在 $n$ 使 $\left\|f_n-f\right\|_\infty<\epsilon/3$.
+由习题十二, $\left(f_n\right)$ 逐点收敛到 $f$. 又 $\left(f_n\right)$ 是**定义 6.37** (柯西列), 对任意 $\epsilon>0$ 存在 $N$, 使 $n,m\ge N$ 时 $\sup_x\left|f_n\left(x\right)-f_m\left(x\right)\right|<\epsilon/3$. 固定 $n\ge N$, 令 $m\to\infty$, 由习题十二 $f_m\left(x\right)\to f\left(x\right)$, 故
 
-第二步, 固定该 $n$, 由 $f_n$ 连续, 存在 $\delta>0$, 使 $y\in\left[a,b\right]$ 且 $\left|x-y\right|<\delta$ 时 $\left|f_n\left(x\right)-f_n\left(y\right)\right|<\epsilon/3$.
+$$
+\left|f_n\left(x\right)-f\left(x\right)\right|=\lim_{m\to\infty}\left|f_n\left(x\right)-f_m\left(x\right)\right|\le\epsilon/3.
+$$
+
+对 $x$ 取上确界得 $\left\|f_n-f\right\|_\infty\le\epsilon/3<\epsilon/3$ (取严格不等号即可). 故存在 $n$ 使 $\left\|f_n-f\right\|_\infty<\epsilon/3$.
+
+固定该 $n$, 由 $f_n$ 连续, 存在 $\delta>0$, 使 $y\in\left[a,b\right]$ 且 $\left|x-y\right|<\delta$ 时 $\left|f_n\left(x\right)-f_n\left(y\right)\right|<\epsilon/3$.
 
 第三步, 对满足 $\left|x-y\right|<\delta$ 的 $y$,
 
@@ -288,7 +294,7 @@ $$
 
 ### 解答 习题十四
 
-由习题四, $\left(f_n\right)$ 逐点收敛到 $f$. 由 $\left(f_n\right)$ 是**定义 6.37** (柯西列), 对任意 $\epsilon>0$ 存在 $N$, 使 $n,m\ge N$ 时 $\sup_x\left|f_n\left(x\right)-f_m\left(x\right)\right|<\epsilon$. 固定 $n\ge N$ 与任意 $x$, 令 $m\to\infty$, 由习题四 $f_m\left(x\right)\to f\left(x\right)$, 故
+由习题十二, $\left(f_n\right)$ 逐点收敛到 $f$. 由 $\left(f_n\right)$ 是**定义 6.37** (柯西列), 对任意 $\epsilon>0$ 存在 $N$, 使 $n,m\ge N$ 时 $\sup_x\left|f_n\left(x\right)-f_m\left(x\right)\right|<\epsilon$. 固定 $n\ge N$ 与任意 $x$, 令 $m\to\infty$, 由习题十二 $f_m\left(x\right)\to f\left(x\right)$, 故
 
 $$
 \left|f_n\left(x\right)-f\left(x\right)\right|=\lim_{m\to\infty}\left|f_n\left(x\right)-f_m\left(x\right)\right|\le\epsilon.
@@ -296,7 +302,7 @@ $$
 
 对 $x$ 取上确界, 得 $\left\|f_n-f\right\|_\infty\le\epsilon$ 对一切 $n\ge N$ 成立. 由**定义 6.41** (一致收敛与一致度量) 与**定义 6.43** (上确界度量), $f_n\to f$ 一致收敛, 即在 $C\left[a,b\right]$ 中收敛.
 
-由习题五, $f$ 连续, 故 $f\in C\left[a,b\right]$. 于是 $C\left[a,b\right]$ 中每个**定义 6.37** (柯西列) 都收敛到 $C\left[a,b\right]$ 中的元素, 由**定义 6.38** (完备度量空间), $C\left[a,b\right]$ 完备, 即**定理 6.8** ($C\left(X,Y\right)$ 完备) 的特例. $\blacksquare$
+由习题十三, $f$ 连续, 故 $f\in C\left[a,b\right]$. 于是 $C\left[a,b\right]$ 中每个**定义 6.37** (柯西列) 都收敛到 $C\left[a,b\right]$ 中的元素, 由**定义 6.38** (完备度量空间), $C\left[a,b\right]$ 完备, 即**定理 6.8** ($C\left(X,Y\right)$ 完备) 的特例. $\blacksquare$
 
 ### 习题十五
 

@@ -1,6 +1,10 @@
 # 作业 7
 
+> **定理 3.1** (复合连续)<br>两个连续映射的复合连续. (教材 $\S3$)
+
 > **定义 3.10** (豪斯多夫空间)<br>称 $X$ 是豪斯多夫的, 若任意一对不同点都有不相交的邻域. 此时极限是唯一的. (教材 $\S3$)
+
+> **定义 3.11** (乘积拓扑)<br>设 $X,Y$ 为拓扑空间. $X\times Y$ 上的乘积拓扑以形如 $U\times V$ 的集合为基, 其中 $U,V$ 分别是 $X,Y$ 中的开集; 任意乘积 $\prod_{v\in V}X_v$ 同理. 坐标投影是连续的. (教材 $\S3$)
 
 > **定义 3.21** (闭集)<br>集合 $F$ 称为闭的, 若其补集 $X\setminus F$ 是开的. (教材 $\S3$)
 
@@ -30,6 +34,8 @@
 
 > **定理 6.1** (紧 $=$ 序列紧)<br>度量空间中紧致与序列紧致等价, 即每个序列都有收敛子列. (教材 $\S6$)
 
+> **教材 §6** (度量空间是豪斯多夫的)<br>度量空间 $X$ 是豪斯多夫的, 故极限唯一. (教材 $\S6$, p33)
+
 > **定理 6.17** (里茨定理)<br>无穷维赋范线性空间的闭单位球非紧 (不能被有限个半径 $1$ 的开球覆盖). (题集 $\S7.1$)
 
 > **定理 6.18** (蒂茨-乌雷松扩张定理)<br>度量空间闭子集 $A$ 上的连续有界函数可保持上确界与下确界地扩张到全空间. (题集 $\S7.1$)
@@ -58,7 +64,7 @@ $$
 X_F=\bigcup_{i\neq j}\left\{f:f\left(x\right)=i,\ f\left(y\right)=j\right\}.
 $$
 
-每个柱集 $C_{ij}=\left\{f:f\left(x\right)=i,\ f\left(y\right)=j\right\}$ 在乘积拓扑下是闭的. 而 $X_F$ 是有限个 $C_{ij}$ ($i\neq j$) 之并, 闭集的有限并仍闭. 故 $X_F$ 闭. $\blacksquare$
+每个柱集 $C_{ij}=\left\{f:f\left(x\right)=i,\ f\left(y\right)=j\right\}$ 是坐标投影 $\pi_x:X\to\left\{1,\dots,k\right\}$ 与 $\pi_y$ 的纤维之交. 由**定义 3.11** (乘积拓扑), 坐标投影连续; 离散空间 $\left\{1,\dots,k\right\}$ 中单点 $\left\{i\right\}$ 闭, 由**定义 3.22** (连续映射) 其原像 $\pi_x^{-1}\left(\left\{i\right\}\right)$ 闭. 故 $C_{ij}$ 闭. 而 $X_F$ 是有限个 $C_{ij}$ ($i\neq j$) 之并, 闭集的有限并仍闭. 故 $X_F$ 闭. $\blacksquare$
 
 ### 习题二
 
@@ -72,7 +78,7 @@ $$
 X_F=\bigcap_{e\in F}X_{\left\{e\right\}}.
 $$
 
-由习题三, 每个 $X_{\left\{e\right\}}$ 闭; 由**定义 3.21** (闭集), 闭集的任意交仍闭. 故 $X_F$ 闭. $\blacksquare$
+由习题一, 每个 $X_{\left\{e\right\}}$ 闭; 由**定义 3.21** (闭集), 闭集的任意交仍闭 (补集为开集的任意并). 故 $X_F$ 闭. $\blacksquare$
 
 ### 习题三
 
@@ -94,7 +100,7 @@ $$
 
 ### 解答 习题四
 
-由习题二, $X$ 紧致; 由习题四, 每个 $X_F$ 闭; 由习题五, $\mathcal F=\left\{X_F:F\subset E\text{ 有限}\right\}$ 是具有限交性质的非空闭集族. 由**定理 5.10** (有限交判据),
+由文首记号, $X=\prod_{v\in V}\left\{1,\dots,k\right\}$; 每个因子 $\left\{1,\dots,k\right\}$ 为有限离散空间故紧 (任意开覆盖每点选一覆盖元即有限子覆盖, 由**定义 5.16** (紧致空间)), 由**定理 5.9** (吉洪诺夫定理), $X$ 在乘积拓扑下紧. 由习题二, 每个 $X_F$ 是紧空间 $X$ 中的闭集. 由习题三, $\mathcal F=\left\{X_F:F\subset E\text{ 有限}\right\}$ 具有限交性质 (由**定义 5.17** (有限交性质)). 由**定理 5.10** (有限交判据),
 
 $$
 \bigcap_{F\subset E\text{ 有限}}X_F\neq\emptyset.
@@ -108,7 +114,7 @@ $\blacksquare$
 
 ### 解答 习题五
 
-由习题六, 可取
+由习题四, 可取
 
 $$
 f\in\bigcap_{F\subset E\text{ 有限}}X_F.
@@ -130,7 +136,7 @@ $$
 
 $L$ 正是序列 $\left\{u_n\right\}$ 的聚点集. 每个闭包是闭集, 故 $L$ 是紧空间 $X$ 的闭子集, 由**定理 5.4** (闭子集紧), $L$ 紧致.
 
-下证 $L$ 连通. 反证, 设 $L=C\cup D$, $C,D$ 为 $L$ 中非空不相交闭集. 因 $L$ 紧, $C,D$ 紧, 设 $\delta=d\left(C,D\right)>0$ (不相交紧集在度量空间中有正距离). 由 $d\left(u_n,u_{n+1}\right)\to0$, 存在 $N$ 使 $n\ge N$ 时 $d\left(u_n,u_{n+1}\right)<\delta/3$. 因 $C,D\subset L$, 存在任意大的 $n,m\ge N$ 使 $d\left(u_n,C\right)<\delta/6$, $d\left(u_m,D\right)<\delta/6$. 沿链 $u_n,u_{n+1},\dots,u_m$, 函数 $h\left(t\right)=d\left(u_t,C\right)$ 从 $<\delta/6$ 变到 $\ge\delta-\delta/6=5\delta/6$, 且每步变化 $<\delta/3$, 故存在 $p$ 使
+下证 $L$ 连通. 反证, 设 $L=C\cup D$, $C,D$ 为 $L$ 中非空不相交闭集. 因 $L$ 紧, $C,D$ 紧; 函数 $C\times D\to\mathbb R$, $\left(c,d\right)\mapsto d\left(c,d\right)$ 连续且 $C\times D$ 紧, 由**定理 5.11** (紧空间上连续函数取最大值) (及最小值情形) 其最小值 $\delta=d\left(C,D\right)$ 可达; 又 $C\cap D=\emptyset$, 故 $\delta>0$. 由 $d\left(u_n,u_{n+1}\right)\to0$, 存在 $N$ 使 $n\ge N$ 时 $d\left(u_n,u_{n+1}\right)<\delta/3$. 因 $C,D\subset L$, 对任意 $c\in C$ 与 $d\in D$, 由 $L=\cap_N\overline{\left\{u_n:n\ge N\right\}}$ 的定义, $c$ 的每个邻域与 $\left\{u_n:n\ge N\right\}$ 相交, 故存在任意大的 $n,m\ge N$ 使 $d\left(u_n,C\right)<\delta/6$, $d\left(u_m,D\right)<\delta/6$. 沿链 $u_n,u_{n+1},\dots,u_m$, 函数 $h\left(t\right)=d\left(u_t,C\right)$ 从 $<\delta/6$ 变到 $\ge\delta-\delta/6=5\delta/6$ (后一步用三角不等式: $d\left(u_m,C\right)\ge d\left(C,D\right)-d\left(u_m,D\right)>\delta-\delta/6$), 且每步变化 $<\delta/3$, 故存在 $p$ 使
 
 $$
 \delta/6\le h\left(p\right)\le\delta/2.
@@ -146,7 +152,7 @@ $$
 
 $f$ 单: 由**定义 6.49** (等距映射), $f\left(x\right)=f\left(y\right)$ 蕴含 $d\left(x,y\right)=d\left(f\left(x\right),f\left(y\right)\right)=0$, 故 $x=y$.
 
-证 $f$ 满. 反证, 取 $a\notin f\left(X\right)$. $f\left(X\right)$ 是紧空间 $X$ 的连续像, 由**定理 5.1** (紧空间连续像紧), $f\left(X\right)$ 紧致; 度量空间是豪斯多夫的, 由**定理 5.5** (豪斯多夫中紧集闭), $f\left(X\right)$ 闭. 故 $\epsilon=d\left(a,f\left(X\right)\right)>0$. 对 $n\neq m$, 由**定义 6.49** (等距映射) 及 $f$ 的迭代仍是等距,
+证 $f$ 满. 反证, 取 $a\notin f\left(X\right)$. $f$ 连续 (等距蕴含利普希茨连续), $f\left(X\right)$ 是紧空间 $X$ 的连续像, 由**定理 5.1** (紧空间连续像紧), $f\left(X\right)$ 紧致. 度量空间是**教材 §6** (度量空间是豪斯多夫的), 由**定理 5.5** (豪斯多夫中紧集闭), $f\left(X\right)$ 闭. 故 $\epsilon=d\left(a,f\left(X\right)\right)>0$. 对 $n\neq m$, 由**定义 6.49** (等距映射) 及 $f$ 的迭代仍是等距,
 
 $$
 d\left(f^n\left(a\right),f^m\left(a\right)\right)=d\left(a,f^{\left|n-m\right|}\left(a\right)\right)\ge\epsilon.
@@ -162,15 +168,17 @@ $f$ 连续 (等距蕴含利普希茨连续), $X$ 紧致故为紧豪斯多夫空�
 
 ### 解答 习题八
 
-由**定理 6.1** (紧 $=$ 序列紧), 对任意 $a\in X$, 序列 $f^n\left(a\right)$ 有收敛子列. 记步长 $d_n=\left|f^n\left(a\right)-f^{n-1}\left(a\right)\right|$. 由膨胀条件,
+固定 $a,b\in X$, 记 $c_n=\left|f^n\left(a\right)-f^n\left(b\right)\right|$. 由膨胀条件应用于 $\left(f^{n-1}\left(a\right),f^{n-1}\left(b\right)\right)$, $c_{n+1}\ge c_n$, 又 $c_n\le\operatorname{diam}\left(X\right)$, 故 $c_n\uparrow L$. 由**定理 6.1** (紧 $=$ 序列紧), $X\times X$ 紧, $\left(f^n\left(a\right),f^n\left(b\right)\right)$ 有子列 $\left(f^{n_j}\left(a\right),f^{n_j}\left(b\right)\right)\to\left(u,v\right)$, 于是 $\left|u-v\right|=L$. 因 $c_{n_j}\to L$ 且 $c_{n_j+1}\to L$, 由三角不等式,
 
 $$
-d_{n+1}=\left|f^n\left(a\right)-f^{n-1}\left(a\right)\right|\ge d_n,
+\left|c_{n_j+1}-c_{n_j}\right|\le\left|f^{n_j+1}\left(a\right)-f^{n_j}\left(a\right)\right|+\left|f^{n_j+1}\left(b\right)-f^{n_j}\left(b\right)\right|.
 $$
 
-即步长非降; 而收敛子列是柯西列, 迫使 $d_n\to0$, 从而由紧性与膨胀不等式可推出等号处处成立, 即 $\left|f\left(y\right)-f\left(x\right)\right|=\left|y-x\right|$, $f$ 是等距. 再由**定理 5.1** (紧空间连续像紧) 与习题三的论证, $f$ 双射.
+左端趋于 $0$, 故两项都趋于 $0$. 由 $f$ 连续 (膨胀条件蕴含利普希茨), $f\left(f^{n_j}\left(a\right)\right)=f^{n_j+1}\left(a\right)\to f\left(u\right)$; 而它也 $\to u$, 故 $f\left(u\right)=u$. 同理 $f\left(v\right)=v$. 由膨胀条件应用于 $\left(a,u\right)$: $\left|f^{n_j}\left(a\right)-f^{n_j}\left(u\right)\right|\ge\left|a-u\right|$, 即 $\left|f^{n_j}\left(a\right)-u\right|\ge\left|a-u\right|$. 令 $j\to\infty$ 得 $0\ge\left|a-u\right|$, 故 $u=a$. 同理 $v=b$. 于是 $L=\left|u-v\right|=\left|a-b\right|=c_0$, 而 $c_n$ 从 $c_0$ 起不减且收敛到 $c_0$, 故 $c_1=c_0$, 即 $\left|f\left(a\right)-f\left(b\right)\right|=\left|a-b\right|$. 由**定义 6.49** (等距映射), $f$ 是等距.
 
-现设 $g:X\to X$ 满且 $\left|g\left(y\right)-g\left(x\right)\right|\le\left|y-x\right|$. 对任意 $u,v\in X$, 取原像 $x,y$ 使 $g\left(x\right)=u$, $g\left(y\right)=v$, 则 $\left|u-v\right|\le\left|x-y\right|$. 结合紧性上一步的论证, 反向不等式亦成立, 故 $g$ 是等距. $\blacksquare$
+再由**定理 5.1** (紧空间连续像紧) 及习题七的论证, $f$ 双射.
+
+现设 $g:X\to X$ 满且 $\left|g\left(y\right)-g\left(x\right)\right|\le\left|y-x\right|$. 对任意 $u,v\in X$, 取原像 $x,y$ 使 $g\left(x\right)=u$, $g\left(y\right)=v$, 则 $\left|u-v\right|\le\left|x-y\right|$, 即 $g^{-1}$ 满足膨胀条件. 由上一段, $g^{-1}$ 是等距, 故 $g$ 也是等距. $\blacksquare$
 
 ### 习题九
 
@@ -178,7 +186,7 @@ $$
 
 ### 解答 习题九
 
-令 $g\left(x\right)=\left|f\left(x\right)-x\right|\ge0$, 连续. 由**定理 5.11** (紧空间上连续函数取最大值) (及其最小值情形), $g$ 在紧集 $K$ 上取到最小值, 设为 $g\left(x_0\right)$. 若 $g\left(x_0\right)>0$, 则由严格压缩,
+严格压缩条件蕴含 $f$ 连续 ($\left|f\left(y\right)-f\left(x\right)\right|<\left|y-x\right|$ 即利普希茨常数 $<1$). 令 $g\left(x\right)=\left|f\left(x\right)-x\right|\ge0$; 由**定义 3.22** (连续映射) 与**定理 3.1** (复合连续), $g$ 连续. 由**定理 5.11** (紧空间上连续函数取最大值) (及其最小值情形), $g$ 在紧集 $K$ 上取到最小值, 设为 $g\left(x_0\right)$. 若 $g\left(x_0\right)>0$, 则由严格压缩,
 
 $$
 \left|f^2\left(x_0\right)-f\left(x_0\right)\right|<\left|f\left(x_0\right)-x_0\right|=g\left(x_0\right),
@@ -222,9 +230,9 @@ $$
 
 左端趋于 $0$, 故 $d\left(f^{n_j+1}\left(x\right),f^{n_j}\left(x\right)\right)\to0$ 且 $d\left(f^{n_j+1}\left(y\right),f^{n_j}\left(y\right)\right)\to0$. 由 $f$ 连续, $f\left(f^{n_j}\left(x\right)\right)=f^{n_j+1}\left(x\right)\to f\left(u\right)$; 而它也 $\to u$, 故 $f\left(u\right)=u$. 同理 $f\left(v\right)=v$.
 
-   由条件应用于 $\left(x,u\right)$: $d\left(f^{n_j}\left(x\right),f^{n_j}\left(u\right)\right)\ge d\left(x,u\right)$, 即 $d\left(f^{n_j}\left(x\right),u\right)\ge d\left(x,u\right)$. 令 $j\to\infty$ 得 $0\ge d\left(x,u\right)$, 故 $u=x$. 同理 $v=y$. 于是 $L=d\left(u,v\right)=d\left(x,y\right)=a_0$, 而 $a_n$ 从 $a_0$ 起不减且收敛到 $a_0$, 故 $a_1=a_0$, 即 $d\left(f\left(x\right),f\left(y\right)\right)=d\left(x,y\right)$. 由**定义 6.49** (等距映射), $f$ 是等距.
+由条件应用于 $\left(x,u\right)$: $d\left(f^{n_j}\left(x\right),f^{n_j}\left(u\right)\right)\ge d\left(x,u\right)$, 即 $d\left(f^{n_j}\left(x\right),u\right)\ge d\left(x,u\right)$. 令 $j\to\infty$ 得 $0\ge d\left(x,u\right)$, 故 $u=x$. 同理 $v=y$. 于是 $L=d\left(u,v\right)=d\left(x,y\right)=a_0$, 而 $a_n$ 从 $a_0$ 起不减且收敛到 $a_0$, 故 $a_1=a_0$, 即 $d\left(f\left(x\right),f\left(y\right)\right)=d\left(x,y\right)$. 由**定义 6.49** (等距映射), $f$ 是等距.
 
-(2) 反设 $f$ 不满, 取 $p\notin f\left(E\right)$. 由**定理 5.1** (紧空间连续像紧), $f\left(E\right)$ 紧; 度量空间是**定义 3.10** (豪斯多夫空间), 由**定理 5.5** (豪斯多夫中紧集闭), $f\left(E\right)$ 闭. 由**定义 6.46** (点到集合的距离), $\delta=d\left(p,f\left(E\right)\right)>0$. 轨道 $p,f\left(p\right),f^2\left(p\right),\dots$ 满足
+(2) 反设 $f$ 不满, 取 $p\notin f\left(E\right)$. 由**定理 5.1** (紧空间连续像紧), $f\left(E\right)$ 紧; 度量空间是**教材 §6** (度量空间是豪斯多夫的), 由**定理 5.5** (豪斯多夫中紧集闭), $f\left(E\right)$ 闭. 由**定义 6.46** (点到集合的距离), $\delta=d\left(p,f\left(E\right)\right)>0$. 轨道 $p,f\left(p\right),f^2\left(p\right),\dots$ 满足
 
 $$
 d\left(f^{n+1}\left(p\right),f^n\left(p\right)\right)\ge d\left(f^n\left(p\right),f^{n-1}\left(p\right)\right)\ge\cdots\ge d\left(f\left(p\right),p\right)\ge\delta,
@@ -232,7 +240,7 @@ $$
 
 其中最后一步用 $f\left(p\right)\in f\left(E\right)$ 而 $p\notin f\left(E\right)$. 但由**定理 6.1** (紧 $=$ 序列紧), 紧度量空间 $E$ 中序列 $\left(f^n\left(p\right)\right)$ 有收敛子列, 而收敛子列必是**定义 6.37** (柯西列), 与相邻项距离恒 $\ge\delta$ 矛盾. 故 $f$ 满. 结合第 1 小题的等距性, $d\left(f\left(x\right),f\left(y\right)\right)=0$ 推出 $d\left(x,y\right)=0$ 即 $x=y$, $f$ 单射. 故 $f$ 双射.
 
-(3) $E$ 紧且是**定义 3.10** (豪斯多夫空间), $g$ 是紧豪斯多夫空间之间的连续双射, 由**定理 5.6** (紧豪斯多夫间的连续双射), $g^{-1}$ 连续. 条件 $d\left(g\left(x\right),g\left(y\right)\right)\le d\left(x,y\right)$ 改写为: 对任意 $u,v\in E$, 令 $u=g\left(x\right)$, $v=g\left(y\right)$, 则 $d\left(g^{-1}\left(u\right),g^{-1}\left(v\right)\right)\ge d\left(u,v\right)$. 即 $g^{-1}$ 是紧度量空间上连续且距离不减的映射. 由第 1 小题, $g^{-1}$ 是**定义 6.49** (等距映射), 从而 $g$ 也是等距. $\blacksquare$
+(3) $E$ 紧且是**教材 §6** (度量空间是豪斯多夫的), $g$ 是紧豪斯多夫空间之间的连续双射, 由**定理 5.6** (紧豪斯多夫间的连续双射), $g^{-1}$ 连续. 条件 $d\left(g\left(x\right),g\left(y\right)\right)\le d\left(x,y\right)$ 改写为: 对任意 $u,v\in E$, 令 $u=g\left(x\right)$, $v=g\left(y\right)$, 则 $d\left(g^{-1}\left(u\right),g^{-1}\left(v\right)\right)\ge d\left(u,v\right)$. 即 $g^{-1}$ 是紧度量空间上连续且距离不减的映射. 由第 1 小题, $g^{-1}$ 是**定义 6.49** (等距映射), 从而 $g$ 也是等距. $\blacksquare$
 
 ### 习题十二
 

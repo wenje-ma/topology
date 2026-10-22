@@ -1,20 +1,20 @@
 # 作业 2
 
-> **定义 3.10** (豪斯多夫空间)<br>称 $X$ 是豪斯多夫的, 若任意一对不同点都有不相交的邻域. 此时极限是唯一的. (教材 $\S3$)
+> **定义 3.10** (豪斯多夫空间)<br>称 $X$ 是豪斯多夫的, 若任意一对不同点都有不相交的邻域. 此时极限是唯一的. (教材 $\S3$, p20)
 
 > **定义 3.14** (初始拓扑)<br>设 $f:X\to Y$ 是函数, 且 $Y$ 赋予拓扑 $\mathcal O$. 称 $\mathcal O_f=\left\{f^{-1}\left(O\right):O\in\mathcal O\right\}$ 为 $X$ 上由 $f$ 诱导的**初始拓扑**; 它是使 $f$ 连续的最粗拓扑. (题集 $\S1.1$)
 
-> **定义 3.15** (拓扑基)<br>设 $\mathcal B\subset\mathcal P\left(X\right)$. 若 $X=\bigcup_{B\in\mathcal B}B$, 且对任意 $B_1,B_2\in\mathcal B$ 与任意 $x\in B_1\cap B_2$ 存在 $B_3\in\mathcal B$ 使 $x\in B_3\subset B_1\cap B_2$, 则以 $\mathcal B$ 中元素的任意并为开集, 生成 $X$ 上最粗拓扑. (教材 $\S3$)
+> **定义 3.15** (拓扑基)<br>设 $\mathcal B\subset\mathcal P\left(X\right)$. 若 $X=\bigcup_{B\in\mathcal B}B$, 且对任意 $B_1,B_2\in\mathcal B$ 与任意 $x\in B_1\cap B_2$ 存在 $B_3\in\mathcal B$ 使 $x\in B_3\subset B_1\cap B_2$, 则以 $\mathcal B$ 中元素的任意并为开集, 生成 $X$ 上最粗拓扑. (教材 $\S3$, p13)
 
-> **定义 3.18** (拓扑空间)<br>拓扑空间是一个集合 $X$, 配有一族公认的开集 $T\subset\mathcal P\left(X\right)$. 即 $U\subset X$ 是开的当且仅当 $U\in T$. 我们要求:<br>(1) $\emptyset,X\in T$;<br>(2) 若 $U,V\in T$, 则 $U\cap V\in T$;<br>(3) 若 $A\subset T$, 则 $\bigcup A\in T$. (教材 $\S3$)
+> **定义 3.18** (拓扑空间)<br>拓扑空间是一个集合 $X$, 配有一族公认的开集 $T\subset\mathcal P\left(X\right)$. 即 $U\subset X$ 是开的当且仅当 $U\in T$. 我们要求:<br>(1) $\emptyset,X\in T$;<br>(2) 若 $U,V\in T$, 则 $U\cap V\in T$;<br>(3) 若 $A\subset T$, 则 $\bigcup A\in T$. (教材 $\S3$, p12)
 
-> **定义 3.19** (子空间拓扑)<br>设 $\left(X,\mathcal O_X\right)$ 为拓扑空间, $A\subset X$, $\iota:A\to X$ 为包含映射. 称 $U\subset A$ 是开的, 若存在 $X$ 中开集 $O$ 使 $U=O\cap A$; 这些集合构成 $A$ 上的子空间拓扑, 它是使 $\iota$ 连续的最粗拓扑. (教材 $\S3$)
+> **定义 3.19** (子空间拓扑)<br>设 $\left(X,\mathcal O_X\right)$ 为拓扑空间, $A\subset X$, $\iota:A\to X$ 为包含映射. 称 $U\subset A$ 是开的, 若存在 $X$ 中开集 $O$ 使 $U=O\cap A$; 这些集合构成 $A$ 上的子空间拓扑, 它是使 $\iota$ 连续的最粗拓扑. (教材 $\S3$, p17)
 
-> **定义 3.21** (闭集)<br>集合 $F$ 称为闭的, 若其补集 $X\setminus F$ 是开的. (教材 $\S3$)
+> **定义 3.21** (闭集)<br>集合 $F$ 称为闭的, 若其补集 $X\setminus F$ 是开的. (教材 $\S3$, p13)
 
-> **定义 3.22** (连续映射)<br>函数 $f:X\to Y$ 是连续的, 若对所有开集 $U\subset Y$, $f^{-1}\left(U\right)$ 是开的. (教材 $\S3$)
+> **定义 3.22** (连续映射)<br>函数 $f:X\to Y$ 是连续的, 若对所有开集 $U\subset Y$, $f^{-1}\left(U\right)$ 是开的. (教材 $\S3$, p14)
 
-> **定义 3.26** (闭包)<br>集合 $A\subset X$ 的闭包 $\overline A$ 就是包含 $A$ 的最小闭集; 它存在, 因为闭集的交集仍是闭的. (教材 $\S3$)
+> **定义 3.26** (闭包)<br>集合 $A\subset X$ 的闭包 $\overline A$ 就是包含 $A$ 的最小闭集; 它存在, 因为闭集的交集仍是闭的. (教材 $\S3$, p18)
 
 > **定义 3.32** (稠密)<br>我们称 $A\subset X$ 在 $X$ 中稠密, 若 $\overline A=X$. (教材 $\S3$)
 
@@ -22,11 +22,11 @@
 
 > **定义 6.34** (球面)<br>以 $x$ 为心、半径 $r$ 的球面为 $S\left(x,r\right)=\left\{y\in X:d\left(x,y\right)=r\right\}$. (题集 $\S1.3$)
 
-> **定义 6.35** (度量空间)<br>度量 $d:X\times X\to\mathbb R_{\ge0}$ 满足:<br>(1) $d\left(x,x\right)=0$;<br>(2) 若 $d\left(x,y\right)=0$ 则 $x=y$;<br>(3) $d\left(x,y\right)=d\left(y,x\right)$;<br>(4) $d\left(x,y\right)\le d\left(x,z\right)+d\left(z,y\right)$. 装备了度量 $d$ 的集合 $X$ 称为度量空间. (教材 $\S6$)
+> **定义 6.35** (度量空间)<br>度量 $d:X\times X\to\mathbb R_{\ge0}$ 满足:<br>(1) $d\left(x,x\right)=0$;<br>(2) 若 $d\left(x,y\right)=0$ 则 $x=y$;<br>(3) $d\left(x,y\right)=d\left(y,x\right)$;<br>(4) $d\left(x,y\right)\le d\left(x,z\right)+d\left(z,y\right)$. 装备了度量 $d$ 的集合 $X$ 称为度量空间. (题集 $\S1.3$ Q2; 教材 $\S6$ 由此给出度量拓扑)
 
 > **定义 6.36** (开球)<br>开球 $B\left(x,r\right)=\left\{y\in X:d\left(x,y\right)<r\right\}$. 全体开球构成度量拓扑的一个基. (教材 $\S6$)
 
-> **定义 6.45** (超度量)<br>满足度量空间四条公理且三角不等式加强为 $d\left(x,z\right)\le\max\left(d\left(x,y\right),d\left(y,z\right)\right)$ 的度量. (题集 $\S1.3$)
+> **定义 6.45** (超度量)<br>满足度量空间四条公理且三角不等式加强为 $d\left(x,z\right)\le\max\left(d\left(x,y\right),d\left(y,z\right)\right)$ 的度量. (题集 $\S1.3$ Q2)
 
 ### 习题一
 
@@ -102,7 +102,7 @@ $$
 
 记 $\overline A^{X}$ 为 $A$ 在 $X$ 中的闭包, $\overline A^{B}$ 为 $A$ 在 $B$ 中的闭包. 由**定义 3.26** (闭包), $\overline A^{B}$ 是 $B$ 中包含 $A$ 的最小闭集. 由**习题一**, $B$ 中闭集恰为形如 $F'\cap B$ 的集合, 其中 $F'$ 是 $X$ 中闭集. 故 $B$ 中包含 $A$ 的闭集族恰为 $\left\{F'\cap B:F'\text{ 是 }X\text{ 中闭集且 }A\subset F'\right\}$.
 
-先证 $\overline A^{X}\cap B\subset\overline A^{B}$. 由**定义 3.26** (闭包), $\overline A^{X}$ 是 $X$ 中包含 $A$ 的闭集, 故 $\overline A^{X}$ 是上式闭集族中一员, 其与 $B$ 的交 $\overline A^{X}\cap B$ 是 $B$ 中包含 $A$ 的闭集. 由**定义 3.26** (闭包), $\overline A^{B}$ 是其中最小者, 故 $\overline A^{X}\cap B\supset\overline A^{B}$.
+先证 $\overline A^{B}\subset\overline A^{X}\cap B$. 由**定义 3.26** (闭包), $\overline A^{X}$ 是 $X$ 中包含 $A$ 的闭集, 故 $\overline A^{X}$ 是上式闭集族中一员, 其与 $B$ 的交 $\overline A^{X}\cap B$ 是 $B$ 中包含 $A$ 的闭集. 由**定义 3.26** (闭包), $\overline A^{B}$ 是其中最小者, 故 $\overline A^{B}\subset\overline A^{X}\cap B$.
 
 再证反包含. 任取 $B$ 中包含 $A$ 的闭集 $F'\cap B$ (其中 $F'$ 是 $X$ 中闭集且 $A\subset F'$). 由**定义 3.26** (闭包), $\overline A^{X}\subset F'$, 故 $\overline A^{X}\cap B\subset F'\cap B$. 即 $\overline A^{X}\cap B$ 含于 $B$ 中每个包含 $A$ 的闭集, 特别地含于最小者 $\overline A^{B}$. 故
 

@@ -2,9 +2,9 @@
 
 > **定义 3.9** (可分)<br>称拓扑空间 $X$ 是可分的, 若它有可数稠密子集. (题集 $\S1.1$)
 
-> **定义 3.10** (豪斯多夫空间)<br>称 $X$ 是豪斯多夫的, 若任意一对不同点都有不相交的邻域. 此时极限是唯一的. (教材 $\S3$)
+> **定义 3.10** (豪斯多夫空间)<br>称 $X$ 是豪斯多夫的, 若任意一对不同点都有不相交的邻域. 此时极限是唯一的. (教材 $\S3$, p20)
 
-> **定义 3.11** (乘积拓扑)<br>设 $X,Y$ 为拓扑空间. $X\times Y$ 上的乘积拓扑以形如 $U\times V$ 的集合为基, 其中 $U,V$ 分别是 $X,Y$ 中的开集. (教材 $\S3$)
+> **定义 3.11** (乘积拓扑)<br>设 $X,Y$ 为拓扑空间. $X\times Y$ 上的乘积拓扑以形如 $U\times V$ 的集合为基, 其中 $U,V$ 分别是 $X,Y$ 中的开集. (教材 $\S3$, p17)
 
 > **定义 3.12** (对角线)<br>集合 $\Delta=\left\{\left(x,x\right):x\in X\right\}\subset X\times X$ 称为对角线. (题集 $\S1.1$)
 
@@ -12,19 +12,19 @@
 
 > **定义 3.14** (初始拓扑)<br>设 $f:X\to Y$ 是函数, 且 $Y$ 赋予拓扑 $\mathcal O$. 称 $\mathcal O_f=\left\{f^{-1}\left(O\right):O\in\mathcal O\right\}$ 为 $X$ 上由 $f$ 诱导的**初始拓扑**; 它是使 $f$ 连续的最粗拓扑. (题集 $\S1.1$)
 
-> **定义 3.18** (拓扑空间)<br>拓扑空间是一个集合 $X$, 配有一族公认的开集 $T\subset\mathcal P\left(X\right)$. 即 $U\subset X$ 是开的当且仅当 $U\in T$. 我们要求:<br>(1) $\emptyset,X\in T$;<br>(2) 若 $U,V\in T$, 则 $U\cap V\in T$;<br>(3) 若 $A\subset T$, 则 $\bigcup A\in T$. (教材 $\S3$)
+> **定义 3.18** (拓扑空间)<br>拓扑空间是一个集合 $X$, 配有一族公认的开集 $T\subset\mathcal P\left(X\right)$. 即 $U\subset X$ 是开的当且仅当 $U\in T$. 我们要求:<br>(1) $\emptyset,X\in T$;<br>(2) 若 $U,V\in T$, 则 $U\cap V\in T$;<br>(3) 若 $A\subset T$, 则 $\bigcup A\in T$. (教材 $\S3$, p12)
 
-> **定义 3.21** (闭集)<br>集合 $F$ 称为闭的, 若其补集 $X\setminus F$ 是开的. (教材 $\S3$)
+> **定义 3.21** (闭集)<br>集合 $F$ 称为闭的, 若其补集 $X\setminus F$ 是开的. (教材 $\S3$, p13)
 
-> **定义 3.22** (连续映射)<br>函数 $f:X\to Y$ 是连续的, 若对所有开集 $U\subset Y$, $f^{-1}\left(U\right)$ 是开的. (教材 $\S3$)
+> **定义 3.22** (连续映射)<br>函数 $f:X\to Y$ 是连续的, 若对所有开集 $U\subset Y$, $f^{-1}\left(U\right)$ 是开的. (教材 $\S3$, p14)
 
-> **定义 3.23** (同胚)<br>空间之间的双射 $f:X\to Y$ 称为同胚, 若 $f$ 与 $f^{-1}$ 都连续. 这等价于说: $U$ 是开的当且仅当 $f\left(U\right)$ 是开的. (教材 $\S3$)
+> **定义 3.23** (同胚)<br>空间之间的双射 $f:X\to Y$ 称为同胚, 若 $f$ 与 $f^{-1}$ 都连续. 这等价于说: $U$ 是开的当且仅当 $f\left(U\right)$ 是开的. (教材 $\S3$, p15)
 
-> **定义 3.25** (邻域与极限)<br>$b\in X$ 的邻域就是含 $b$ 的开集 $U$. 我们称 $a_n\to b$, 若对 $b$ 的任何邻域 $U$, 对所有充分大的 $n$ 都有 $a_n\in U$. (教材 $\S3$)
+> **定义 3.25** (邻域与极限)<br>$b\in X$ 的邻域就是含 $b$ 的开集 $U$. 我们称 $a_n\to b$, 若对 $b$ 的任何邻域 $U$, 对所有充分大的 $n$ 都有 $a_n\in U$. (教材 $\S3$, p16)
 
-> **定义 3.26** (闭包)<br>集合 $A\subset X$ 的闭包 $\overline A$ 就是包含 $A$ 的最小闭集; 它存在, 因为闭集的交集仍是闭的. (教材 $\S3$)
+> **定义 3.26** (闭包)<br>集合 $A\subset X$ 的闭包 $\overline A$ 就是包含 $A$ 的最小闭集; 它存在, 因为闭集的交集仍是闭的. (教材 $\S3$, p18)
 
-> **定义 3.31** (内部)<br>类似地, $A$ 的内部 $\operatorname{int}\left(A\right)$ 是含于 $A$ 的最大开集. (教材 $\S3$)
+> **定义 3.31** (内部)<br>类似地, $A$ 的内部 $\operatorname{int}\left(A\right)$ 是含于 $A$ 的最大开集. (教材 $\S3$, p18)
 
 > **定义 3.32** (稠密)<br>我们称 $A\subset X$ 在 $X$ 中稠密, 若 $\overline A=X$. (教材 $\S3$)
 
@@ -167,7 +167,7 @@ $$
 
 **第 1 小题**: 设 $x\neq y$. 因 $\mathcal O_2$ 是豪斯多夫的, 由**定义 3.10** (豪斯多夫空间) 存在 $\mathcal O_2$ 中不相交的开集 $U,V$ 使 $x\in U$, $y\in V$. 由**定义 3.13** (细) $\mathcal O_2\subset\mathcal O_1$, 故 $U,V\in\mathcal O_1$. 由**定义 3.10** (豪斯多夫空间), $\mathcal O_1$ 中也有不相交开集分离 $x,y$, $\mathcal O_1$ 是豪斯多夫的.
 
-**第 3 小题**: 固定 $A\subset X$. 由**定义 3.26** (闭包), $\overline A^{1}$ 是 $\mathcal O_1$ 中包含 $A$ 的最小闭集, $\overline A^{2}$ 是 $\mathcal O_2$ 中包含 $A$ 的最小闭集. 因 $\mathcal O_2\subset\mathcal O_1$, $\mathcal O_1$ 中闭集多于 $\mathcal O_2$ 中闭集, 故 $\overline A^{1}$ (它是 $\mathcal O_1$ 中闭集, 由**定义 3.21** (闭集) 也是 $\mathcal O_2$ 中闭集) 是 $\mathcal O_2$ 中包含 $A$ 的一个闭集, 不小于最小的 $\overline A^{2}$:
+**第 3 小题**: 固定 $A\subset X$. 由**定义 3.26** (闭包), $\overline A^{1}$ 是 $\mathcal O_1$ 中包含 $A$ 的最小闭集, $\overline A^{2}$ 是 $\mathcal O_2$ 中包含 $A$ 的最小闭集. 因 $\mathcal O_2\subset\mathcal O_1$, 任一 $\mathcal O_2$ 中闭集 $F$ (其补集 $\in\mathcal O_2\subset\mathcal O_1$) 也是 $\mathcal O_1$ 中闭集 (由**定义 3.21** (闭集)). 特别地, $\overline A^{2}$ 是 $\mathcal O_1$ 中包含 $A$ 的一个闭集; 而 $\overline A^{1}$ 是 $\mathcal O_1$ 中包含 $A$ 的最小闭集, 故
 
 $$
 \overline A^{1}\subset\overline A^{2}.

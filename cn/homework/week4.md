@@ -6,7 +6,7 @@
 
 > **定义 3.19** (子空间拓扑)<br>设 $\left(X,\mathcal O_X\right)$ 为拓扑空间, $A\subset X$, $\iota:A\to X$ 为包含映射. 称 $U\subset A$ 是开的, 若存在 $X$ 中开集 $O$ 使 $U=O\cap A$; 这些集合构成 $A$ 上的子空间拓扑, 它是使 $\iota$ 连续的最粗拓扑. (教材 $\S3$)
 
-> **定义 3.20** (边界)<br>$\partial A=\overline A\setminus\operatorname{int}\left(A\right)$. (教材 $\S3$)
+> **定义 3.20** (边界)<br>$\partial A=\overline A\setminus\operatorname{int}\left(A\right)$. 等价地, $\partial F=F\cap\overline{E\setminus F}$ 当 $F\subset E$ 闭. (教材 $\S3$)
 
 > **定义 3.21** (闭集)<br>集合 $F$ 称为闭的, 若其补集 $X\setminus F$ 是开的. (教材 $\S3$)
 
@@ -18,43 +18,47 @@
 
 > **定义 3.32** (稠密)<br>我们称 $A\subset X$ 在 $X$ 中稠密, 若 $\overline A=X$. (教材 $\S3$)
 
-> **定理 4.1** (区间连通)<br>$\left[0,1\right]$ 连通; 由此任意区间连通. (教材 $\S4$)
+> **定理 4.1** (区间连通)<br>$\left[0,1\right]$ 连通; 由此任意区间连通. (教材 $\S4$, p23; Munkres $\S24$ 推论 24.2)
 
-> **定理 4.2** (连续像连通)<br>$X$ 连通, $f:X\to Y$ 连续, 则 $f\left(X\right)$ 连通. (教材 $\S4$)
+> **定理 4.2** (连续像连通)<br>$X$ 连通, $f:X\to Y$ 连续, 则 $f\left(X\right)$ 连通. (教材 $\S4$, p23)
 
-> **定理 4.3** (路径连通蕴含连通)<br>路径连通空间是连通的. (教材 $\S4$)
+> **定理 4.3** (路径连通蕴含连通)<br>路径连通空间是连通的. (教材 $\S4$, p24)
 
-> **定理 4.5** (可数度量空间完全不连通)<br>每个可数度量空间都是完全不连通的. (教材 $\S4$)
+> **定理 4.5** (可数度量空间完全不连通)<br>每个可数度量空间都是完全不连通的. (教材 $\S4$, p25)
 
-> **定理 4.6** (扇形连通)<br>一族两两有公共点的连通集之并连通; 更一般地, 一个连通集与一族每个都和它相交的连通集之并连通. (教材 $\S4$)
+> **定理 4.6** (扇形连通)<br>一族两两有公共点的连通集之并连通; 更一般地, 一个连通集与一族每个都和它相交的连通集之并连通. (教材 $\S4$, p26)
 
-> **定理 4.7** (乘积连通)<br>连通集 $A,B$ 之积 $A\times B$ 连通; 有限个连通集的乘积连通. (教材 $\S4$)
+> **定理 4.7** (乘积连通)<br>连通集 $A,B$ 之积 $A\times B$ 连通; 有限个连通集的乘积连通. (教材 $\S4$, p26 推论 4.7)
 
-> **定义 4.8** (连通分支)<br>含点 $x$ 的唯一极大连通集 $A\left(x\right)$; 它是闭集; 分支数有限时分支开. (教材 $\S4$)
+> **定义 4.8** (连通分支)<br>含点 $x$ 的唯一极大连通集 $A\left(x\right)$; 它是闭集; 分支数有限时分支开. (教材 $\S4$, p27)
 
-> **定义 4.10** (局部路径连通)<br>每点有由路径连通邻域组成的邻域基; 局部路径连通且连通蕴含路径连通. (题集 $\S2.1$)
+> **定义 4.10** (局部路径连通)<br>每点有由路径连通邻域组成的邻域基. (题集 $\S2.1$ Q3)
 
-> **定义 4.14** ($\epsilon$-链空间)<br>$X$ 是 $\epsilon$-链的, 若任意 $a,b\in X$ 可由相邻距离 $<\epsilon$ 的有限点列连接; 对一切 $\epsilon>0$ 都成立称 $\epsilon$-链空间. (题集 $\S4.5$)
+> **定义 4.14** ($\epsilon$-链空间)<br>$X$ 是 $\epsilon$-链的, 若任意 $a,b\in X$ 可由相邻距离 $<\epsilon$ 的有限点列连接; 对一切 $\epsilon>0$ 都成立称全链. (题集 $\S4.5$ C5)
 
-> **定理 4.15** (闭包保持连通性)<br>连通集的闭包仍连通. (教材 $\S4$)
+> **定理 4.15** (闭包保持连通性)<br>连通集的闭包仍连通. (教材 $\S4$, p27)
 
-> **定义 4.18** (连通空间)<br>$X$ 不能写成两个非空不相交开集之并; 子集 $A$ 连通指其在子空间拓扑下连通. (教材 $\S4$)
+> **定义 4.18** (连通空间)<br>$X$ 不能写成两个非空不相交开集之并; 子集 $A$ 连通指其在子空间拓扑下连通. (教材 $\S4$, p23)
 
-> **定义 4.19** (既开又闭集)<br>既开又闭的集合称为既开又闭集; $X$ 连通当且仅当 $\emptyset$ 与 $X$ 是仅有的既开又闭集. (教材 $\S4$)
+> **定义 4.19** (既开又闭集)<br>既开又闭的集合称为既开又闭集; $X$ 连通当且仅当 $\emptyset$ 与 $X$ 是仅有的既开又闭集. (教材 $\S4$, p23)
 
-> **定义 4.20** (完全不连通)<br>空间的唯一连通子集是单点集. (教材 $\S4$)
+> **定义 4.20** (完全不连通)<br>空间的唯一连通子集是单点集. (教材 $\S4$, p23)
 
-> **定义 4.22** (路径连通)<br>任意 $x,y\in X$ 有连续路径 $\gamma:\left[0,1\right]\to X$ 以 $x,y$ 为端点. (教材 $\S4$)
+> **定义 4.22** (路径连通)<br>任意 $x,y\in X$ 有连续路径 $\gamma:\left[0,1\right]\to X$ 以 $x,y$ 为端点. (教材 $\S4$, p24)
 
-> **定义 4.23** (凸集)<br>$K$ 凸即 $x,y\in K$ 蕴含连线 $\left[0,1\right]\to K$, $t\mapsto\left(1-t\right)x+ty$ 全在 $K$ 中. (教材 $\S4$)
+> **定义 4.23** (凸集)<br>$K$ 凸即 $x,y\in K$ 蕴含连线 $\left[0,1\right]\to K$, $t\mapsto\left(1-t\right)x+ty$ 全在 $K$ 中; 故凸集必路径连通. (教材 $\S4$, p24)
 
-> **定义 4.24** (拓扑学家正弦曲线)<br>$y=\sin\left(1/x\right)$ 在 $\left(0,1\right]$ 上的图像与 $y$ 轴上 $\left[-1,1\right]$ 的并; 它连通但不路径连通. (教材 $\S4$)
+> **定义 4.24** (拓扑学家正弦曲线)<br>$y=\sin\left(1/x\right)$ 在 $\left(0,1\right]$ 上的图像与 $y$ 轴上 $\left[-1,1\right]$ 的并; 它连通但不路径连通. (教材 $\S4$, p24)
+
+> **定理 5.4** (闭子集紧)<br>若 $X$ 紧致, 则 $X$ 的任意闭子集 $A\subset X$ 也紧致. (教材 $\S5$)
 
 > **定理 6.1** (紧 $=$ 序列紧)<br>度量空间中紧致与序列紧致等价, 即每个序列都有收敛子列. (教材 $\S6$)
 
-> **定义 6.35** (度量空间)<br>度量 $d:X\times X\to\mathbb R_{\ge0}$ 满足:<br>(1) $d\left(x,x\right)=0$;<br>(2) 若 $d\left(x,y\right)=0$ 则 $x=y$;<br>(3) $d\left(x,y\right)=d\left(y,x\right)$;<br>(4) $d\left(x,y\right)\le d\left(x,z\right)+d\left(z,y\right)$. 装备了度量 $d$ 的集合 $X$ 称为度量空间. (教材 $\S6$)
+> **定义 6.35** (度量空间)<br>度量 $d:X\times X\to\mathbb R_{\ge0}$ 满足:<br>(1) $d\left(x,x\right)=0$;<br>(2) 若 $d\left(x,y\right)=0$ 则 $x=y$;<br>(3) $d\left(x,y\right)=d\left(y,x\right)$;<br>(4) $d\left(x,y\right)\le d\left(x,z\right)+d\left(z,y\right)$. 装备了度量 $d$ 的集合 $X$ 称为度量空间. (题集 $\S1.3$ Q2; 教材 $\S6$)
 
 > **定义 6.36** (开球)<br>开球 $B\left(x,r\right)=\left\{y\in X:d\left(x,y\right)<r\right\}$. 全体开球构成度量拓扑的一个基. (教材 $\S6$)
+
+> **定理 24.3** (介值定理)<br>设 $f:X\to Y$ 连续, $X$ 连通, $Y$ 为序拓扑全序集; 若 $r$ 介于 $f\left(a\right)$ 与 $f\left(b\right)$ 之间, 则存在 $c\in X$ 使 $f\left(c\right)=r$. 特别地, 连续函数在区间上取到中间值. (Munkres $\S24$ 定理 24.3)
 
 ### 习题一
 
@@ -200,7 +204,7 @@ $\left(\Leftarrow\right)$ 若 $X$ 不连通, 则 $X=U\cup V$, $U,V$ 非空不相
 
 ### 解答 习题九
 
-反设 $F$ 不连通. 则 $F$ 有非空分离 $F=A\cup B$, $A,B$ 非空不相交, 且在 $F$ 中既开又闭. 因 $F$ 在 $E$ 中闭, 由**定义 3.21** (闭集), $A,B$ 在 $E$ 中也闭. 边界 $\partial F=F\cap\overline{E\setminus F}$. 断言
+反设 $F$ 不连通. 则 $F$ 有非空分离 $F=A\cup B$, $A,B$ 非空不相交, 且在 $F$ 中既开又闭. 因 $F$ 在 $E$ 中闭, 由**定义 3.21** (闭集), $A,B$ 在 $E$ 中也闭. 由**定义 3.20** (边界), $\partial F=F\cap\overline{E\setminus F}$. 断言
 
 $$
 \partial F=\left(A\cap\overline{E\setminus F}\right)\cup\left(B\cap\overline{E\setminus F}\right),
@@ -218,7 +222,7 @@ $$
 
 连通 $\Rightarrow$ $\epsilon$-链: 固定 $\epsilon>0$, 定义 $a\sim b$ 为存在 $\epsilon$-链. 等价类在**定义 6.36** (开球) $B\left(x,\epsilon\right)$ 下封闭, 故每个等价类开; 其余等价类之并也开. 由**定义 4.19** (既开又闭集), 连通空间只有一个等价类, 即 $X$ 是**定义 4.14** ($\epsilon$-链空间).
 
-紧且 $\epsilon$-链 $\Rightarrow$ 连通: 反设 $X$ 不连通, 则 $X=A\cup B$ 为非空不交闭集分离. $A,B$ 是紧度量空间, 距离 $\delta=d\left(A,B\right)>0$: 取 $a_n\in A$, $b_n\in B$ 使 $d\left(a_n,b_n\right)\to\delta$, 由**定理 6.1** (紧 $=$ 序列紧) 抽子列 $a_{n_j}\to a\in A$, $b_{n_j}\to b\in B$, 得 $d\left(a,b\right)=\delta>0$. 取 $\epsilon<\delta$, 则 $\epsilon$-链不可能从 $A$ 跨到 $B$, 与 $\epsilon$-链矛盾.
+紧且 $\epsilon$-链 $\Rightarrow$ 连通: 反设 $X$ 不连通, 则 $X=A\cup B$ 为非空不交闭集分离. 因 $X$ 紧, $A,B$ 是闭子集, 由**定理 5.4** (闭子集紧) 它们紧. 距离 $\delta=d\left(A,B\right)>0$: 取 $a_n\in A$, $b_n\in B$ 使 $d\left(a_n,b_n\right)\to\delta$, 由**定理 6.1** (紧 $=$ 序列紧) 抽子列 $a_{n_j}\to a\in A$, $b_{n_j}\to b\in B$, 若 $\delta=0$ 则 $d\left(a,b\right)=0$, 即 $a=b$, 与 $A\cap B=\emptyset$ 矛盾, 故 $\delta>0$. 取 $\epsilon<\delta$, 则 $\epsilon$-链不可能从 $A$ 跨到 $B$, 与 $\epsilon$-链矛盾.
 
 $\epsilon$-链但不连通的例子: 有理数集 $\mathbb Q$ 装备通常度量. 对任意 $\epsilon>0$, 任意两个有理数之间可插入间距小于 $\epsilon$ 的有理点列, 故 $\mathbb Q$ 是 $\epsilon$-链的; 但 $\mathbb Q$ 完全不连通. $\blacksquare$
 
@@ -240,7 +244,7 @@ $\epsilon$-链但不连通的例子: 有理数集 $\mathbb Q$ 装备通常度量
 
 ### 解答 习题十二
 
-反设 $F$ 不连通. 则 $F$ 有非空分离 $F=A\cup B$, $A,B$ 非空不相交, 且在 $F$ 中既开又闭. 因 $F$ 在 $E$ 中闭, 由**定义 3.21** (闭集), $A,B$ 在 $E$ 中也闭. 边界 $\partial F=F\cap\overline{E\setminus F}$. 断言
+反设 $F$ 不连通. 则 $F$ 有非空分离 $F=A\cup B$, $A,B$ 非空不相交, 且在 $F$ 中既开又闭. 因 $F$ 在 $E$ 中闭, 由**定义 3.21** (闭集), $A,B$ 在 $E$ 中也闭. 由**定义 3.20** (边界), $\partial F=F\cap\overline{E\setminus F}$. 断言
 
 $$
 \partial F=\left(A\cap\overline{E\setminus F}\right)\cup\left(B\cap\overline{E\setminus F}\right),
@@ -266,7 +270,7 @@ $$
 g\left(\frac12\right)=f\left(\frac12\right)-f\left(1\right)=f\left(\frac12\right)-f\left(0\right)=-g\left(0\right),
 $$
 
-故 $g\left(0\right)$ 与 $g\left(\frac12\right)$ 异号. 由介值定理 (连续函数在区间上取得中间值), 存在 $x\in\left[0,\frac12\right]$ 使 $g\left(x\right)=0$, 即 $f\left(x\right)=f\left(x+\frac12\right)$.
+故 $g\left(0\right)$ 与 $g\left(\frac12\right)$ 异号. 由**定理 24.3** (介值定理), 存在 $x\in\left[0,\frac12\right]$ 使 $g\left(x\right)=0$, 即 $f\left(x\right)=f\left(x+\frac12\right)$.
 
 (2) 令 $g\left(x\right)=f\left(x\right)-f\left(x+\frac1n\right)$, 定义域 $\left[0,1-\frac1n\right]$. 累加得
 
@@ -274,7 +278,7 @@ $$
 \sum_{j=0}^{n-1}g\left(\frac{j}{n}\right)=\sum_{j=0}^{n-1}\left(f\left(\frac{j}{n}\right)-f\left(\frac{j+1}{n}\right)\right)=f\left(0\right)-f\left(1\right)=0.
 $$
 
-若 $g$ 在 $\left[0,1-\frac1n\right]$ 上恒不为 $0$, 因该区间连通 (由**定理 4.1** (区间连通)), 连续函数 $g$ 必恒正或恒负, 从而各 $g\left(\frac{j}{n}\right)$ 同号, 其和不为 $0$, 矛盾. 故存在 $x$ 使 $g\left(x\right)=0$, 即 $f\left(x\right)=f\left(x+\frac1n\right)$.
+若 $g$ 在 $\left[0,1-\frac1n\right]$ 上恒不为 $0$, 因该区间连通 (由**定理 4.1** (区间连通)), 连续函数 $g$ 的像由**定理 4.2** (连续像连通) 是 $\mathbb R$ 中不含 $0$ 的连通集, 故必恒正或恒负, 从而各 $g\left(\frac{j}{n}\right)$ 同号, 其和不为 $0$, 矛盾. 故存在 $x$ 使 $g\left(x\right)=0$, 即 $f\left(x\right)=f\left(x+\frac1n\right)$.
 
 (3) 取 $f\left(x\right)=x$. 它连续, 且对任意 $x\in\left[0,\frac35\right]$, $f\left(x+\frac25\right)-f\left(x\right)=\frac25\neq0$, 故 $f\left(x\right)\neq f\left(x+\frac25\right)$. 此例即满足要求. $\blacksquare$
 

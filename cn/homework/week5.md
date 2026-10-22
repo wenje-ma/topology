@@ -22,7 +22,7 @@
 
 > **定义 3.32** (稠密)<br>我们称 $A\subset X$ 在 $X$ 中稠密, 若 $\overline A=X$. (教材 $\S3$)
 
-> **定理 4.1** (区间连通)<br>$\left[0,1\right]$ 连通; 由此任意区间连通. (教材 $\S4$)
+> **定理 4.1** (区间连通)<br>$\left[0,1\right]$ 连通; 由此任意区间连通. (教材 $\S4$; Munkres $\S24$ 推论 24.2)
 
 > **定理 4.2** (连续像连通)<br>$X$ 连通, $f:X\to Y$ 连续, 则 $f\left(X\right)$ 连通. (教材 $\S4$)
 
@@ -30,7 +30,7 @@
 
 > **定义 4.9** (局部连通)<br>每点有由连通邻域组成的邻域基. (题集 $\S2.1$)
 
-> **定义 4.10** (局部路径连通)<br>每点有由路径连通邻域组成的邻域基; 局部路径连通且连通蕴含路径连通. (题集 $\S2.1$)
+> **定义 4.10** (局部路径连通)<br>每点有由路径连通邻域组成的邻域基. (题集 $\S2.1$ Q3)
 
 > **定义 4.11** (弗斯滕伯格拓扑)<br>$\mathbb Z$ 上以非平凡等差数列 $S\left(a,b\right)=a\mathbb Z+b=\left\{an+b:n\in\mathbb Z\right\}$ $\left(a\neq0\right)$ 为基的拓扑; $S\left(a,b\right)$ 既开又闭. (题集 $\S2.2$)
 
@@ -48,15 +48,17 @@
 
 > **定义 4.20** (完全不连通)<br>空间的唯一连通子集是单点集. (教材 $\S4$)
 
-> **定义 4.21** (局部常值函数)<br>$f$ 局部常值: 每点有邻域使 $f$ 在其上取常值; 连通空间上局部常值函数必常值. (教材 $\S4$)
+> **定义 4.21** (局部常值函数)<br>$f$ 局部常值: 每点有邻域使 $f$ 在其上取常值; 连通空间上局部常值的连续函数必常值. (教材 $\S4$, p24)
 
 > **定义 4.22** (路径连通)<br>任意 $x,y\in X$ 有连续路径 $\gamma:\left[0,1\right]\to X$ 以 $x,y$ 为端点. (教材 $\S4$)
 
-> **定义 4.23** (凸集)<br>$K$ 凸即 $x,y\in K$ 蕴含连线 $\left[0,1\right]\to K$, $t\mapsto\left(1-t\right)x+ty$ 全在 $K$ 中. (教材 $\S4$)
+> **定义 4.23** (凸集)<br>$K$ 凸即 $x,y\in K$ 蕴含连线 $\left[0,1\right]\to K$, $t\mapsto\left(1-t\right)x+ty$ 全在 $K$ 中; 故凸集必路径连通. (教材 $\S4$, p24)
 
 > **定理 5.1** (紧空间连续像紧)<br>紧空间在连续映射下的像是紧的. (教材 $\S5$)
 
 > **定理 5.3** ($\mathbb R^n$ 中的紧集)<br>$K\subset\mathbb R^n$ 紧当且仅当 $K$ 闭且有界. (教材 $\S5$)
+
+> **定理 5.4** (闭子集紧)<br>若 $X$ 紧致, 则 $X$ 的任意闭子集 $A\subset X$ 也紧致. (教材 $\S5$)
 
 > **定理 5.5** (豪斯多夫中紧集闭)<br>若 $X$ 是豪斯多夫空间, 则 $X$ 中任意紧子集 $K\subset X$ 是闭的. (教材 $\S5$)
 
@@ -70,7 +72,7 @@
 
 > **定义 6.46** (点到集合的距离)<br>$d\left(x,A\right)=\inf_{a\in A}d\left(x,a\right)$. (题集 $\S3.2$)
 
-> **定理 7.3** (乌雷松度量化定理)<br>有可数基的正则空间可度量化. (教材 $\S7$)
+> **定理 34.1** (乌雷松度量化定理)<br>每一个具有可数基的正则空间都是可度量化的. (Munkres $\S34$ 定理 34.1; McMullen $\S7$ 定理 7.3 表述为正规空间加可数基可度量化, 而 Munkres $\S32$ 定理 32.1 给出有可数基的正则空间是正规的)
 
 > **定义 7.7** (正则空间)<br>闭集 $A$ 与不在 $A$ 中的点有不相交开邻域. (教材 $\S7$)
 
@@ -178,7 +180,7 @@ $$
 
 **正则**: 设 $A$ 闭, $x\notin A$. 则 $\mathbb Z-A$ 是开集且含 $x$, 由习题一第 1 小题存在 $a\neq0$ 使 $S\left(a,x\right)\subset\mathbb Z-A$, 即 $S\left(a,x\right)\cap A=\emptyset$. 由习题一第 4 小题 $S\left(a,x\right)$ 既开又闭 (**定义 4.19** (既开又闭集)), 且 $A\subset\mathbb Z-S\left(a,x\right)$, 后者开. 故 $x$ 与 $A$ 有不相交开邻域, 由**定义 7.7** (正则空间) 弗斯滕伯格拓扑正则.
 
-**可度量化与同胚于 $\mathbb Q$**: $\mathbb Z$ 可数, 故该拓扑有可数基; 由**定理 7.3** (乌雷松度量化定理), 有可数基的正则空间可度量化. 又该拓扑无孤立点: 每点 $x$ 的邻域 $S\left(a,x\right)$ 无限. 由**定理 4.16** (谢尔宾斯基同胚定理), 任意两个无孤立点的可数可度量化空间互相同胚, 故它与带通常子空间拓扑的 $\mathbb Q$ 同胚.
+**可度量化与同胚于 $\mathbb Q$**: $\mathbb Z$ 可数, 故该拓扑有可数基; 由**定理 34.1** (乌雷松度量化定理), 有可数基的正则空间可度量化. 又该拓扑无孤立点: 每点 $x$ 的邻域 $S\left(a,x\right)$ 无限. 由**定理 4.16** (谢尔宾斯基同胚定理), 任意两个无孤立点的可数可度量化空间互相同胚, 故它与带通常子空间拓扑的 $\mathbb Q$ 同胚.
 
 **不可完备度量化**: 反证法. 若它可完备度量化, 则同胚于它的 $\mathbb Q$ 也可完备度量化. 则 $\mathbb Q=\left\{q_1,q_2,\dots\right\}$. 对每一个 $q_n\in\mathbb Q$, 定义 $U_n=\mathbb Q-\left\{q_n\right\}$. 由于 $\left\{q_n\right\}$ 闭, 故 $U_n$ 开, $\left\{U_n\right\}$ 是一族可数稠密开集. 而 $\bigcap_{n=1}^\infty U_n=\bigcap_{n=1}^\infty\left(\mathbb Q-\left\{q_n\right\}\right)=\mathbb Q-\bigcap_{n=1}^\infty\left\{q_n\right\}=\mathbb Q-\mathbb Q=\emptyset$ 是空集, 与**定理 6.13** (贝尔纲定理) 矛盾. 故它不可完备度量化.
 
@@ -208,7 +210,7 @@ $$
 
 ### 解答 习题四
 
-(1) $G$ 开, 故由**定义 3.21** (闭集), $\mathbb R^2\setminus G$ 闭. 连通分支是闭的 (连通分支含其闭包, 而闭包仍连通). 故 $F$ 闭.
+(1) $G$ 开, 故由**定义 3.21** (闭集), $\mathbb R^2\setminus G$ 闭. 连通分支是闭的 (由**定义 4.8** (连通分支), 分支含其闭包, 而由**定理 4.15** (闭包保持连通性) 闭包仍连通, 故分支闭). 故 $F$ 闭.
 
 (2) $U=\mathbb R^2\setminus F$ 开. 它路径连通: $G\subset U$ 由**定义 4.22** (路径连通) 路径连通; 其余余集分支中的点可经边界走入 $G$ (平面余集中恰有一个无界分支, 有界分支被 $G$ 环绕). 而 $U$ 的余集恰为 $F$, 由 (1) 它闭且连通, 由单连通定义即得 $U$ 单连通.
 
@@ -230,7 +232,7 @@ $$
 
 它是**定义 4.18** (连通空间) 的, 但不路径连通: 从 $\left(0,1\right)$ 出发的连续路径, 由连续性起步时必在高齿上; 小时间区间连通迫使横坐标取常值, 与离开 $\left(0,1\right)$ 矛盾. 它有两个路径连通分支: $\left\{\left(0,1\right)\right\}$ 与其余部分 (其余部分经底边连通, 由**定理 4.3** (路径连通蕴含连通) 为一个分支).
 
-改用 $\left[0,\infty\right)$ 参数化时, 上述连通性论证在首个逃逸时刻附近局部成立, 不依赖定义域紧致, 故仍无路径. 课上用紧致性的证明 (连续像 $\gamma\left(\left[0,1\right]\right)$ 紧致) 对 $\left[0,\infty\right)$ 失效, 但连通性证明已足够. $\blacksquare$
+改用 $\left[0,\infty\right)$ 参数化时, 上述连通性论证在首个逃逸时刻附近局部成立, 不依赖定义域紧致, 故仍无路径. 课上用紧致性的证明 (连续像 $\gamma\left(\left[0,1\right]\right)$ 紧致, 由**定理 5.1** (紧空间连续像紧)) 对 $\left[0,\infty\right)$ 失效, 但连通性证明已足够. $\blacksquare$
 
 ### 习题六
 
@@ -252,7 +254,7 @@ $$
 
 (3) 对 $\left(x,y\right)\in A$ ($x<y$), 中值定理给出 $c\in\left(x,y\right)\subset I$ 使 $F\left(x,y\right)=f'\left(c\right)$, 故 $\Gamma\subset f'\left(I\right)$. 反之, 对 $x\in I$, 取 $y_n\to x$, $y_n\neq x$, 则 $F\left(x,y_n\right)=\frac{f\left(x\right)-f\left(y_n\right)}{x-y_n}\to f'\left(x\right)$, 而 $F\left(x,y_n\right)\in\Gamma$, 故 $f'\left(x\right)\in\overline\Gamma$.
 
-(4) $\Gamma$ 连通故是区间; 闭包 $\overline\Gamma$ 也是区间 (闭包保持连通); $f'\left(I\right)$ 夹在二者之间, 故 $f'\left(I\right)$ 是区间. $\blacksquare$
+(4) $\Gamma$ 连通故是区间; 闭包 $\overline\Gamma$ 也是区间 (由**定理 4.15** (闭包保持连通性)); $f'\left(I\right)$ 夹在二者之间, 故 $f'\left(I\right)$ 是区间. $\blacksquare$
 
 ### 习题七
 
@@ -284,7 +286,7 @@ $$
 
 取 $L>0$ 充分大使 $z=x+Lv$ 满足 $\left\|z-y\right\|>d\left(y,K\right)$ 且 $z$ 不在 $K$ 中. 直线段 $\left[x,z\right]$ 避开 $K$. 同理从 $y$ 出发选一好方向 $w$ 使射线 $\left\{y+sw:s\ge 0\right\}$ 避开 $K$, 取 $z'=y+Mw$ 充分远. 最后在远离 $K$ 的地方用直线段 $\left[z,z'\right]$ 连接 (因 $K$ 紧有界, 取 $L,M$ 充分大时该线段也在 $K$ 之外). 所得折线 $x\to z\to z'\to y$ 由**定义 4.22** (路径连通) 是连续路径, 且全段避开 $K$. 故 $E\setminus K$ 道路连通.
 
-**有限维情形**: 结论不成立. 取 $E=\mathbb R^2$, $K=S^1=\left\{\left(u,v\right):u^2+v^2=1\right\}$. $S^1$ 紧 (闭有界). 但 $\mathbb R^2\setminus S^1=\left\{u^2+v^2<1\right\}\cup\left\{u^2+v^2>1\right\}$ 是两个非空不相交开集之并, 由**定义 4.18** (连通空间) 不连通, 因而不道路连通. $\blacksquare$
+**有限维情形**: 结论不成立. 取 $E=\mathbb R^2$, $K=S^1=\left\{\left(u,v\right):u^2+v^2=1\right\}$. $S^1$ 由**定理 5.3** ($\mathbb R^n$ 中的紧集) 是闭有界集, 故紧. 但 $\mathbb R^2\setminus S^1=\left\{u^2+v^2<1\right\}\cup\left\{u^2+v^2>1\right\}$ 是两个非空不相交开集之并, 由**定义 4.18** (连通空间) 不连通, 因而不道路连通. $\blacksquare$
 
 ### 习题九
 
@@ -292,7 +294,7 @@ $$
 
 ### 解答 习题九
 
-取定 $a$ 使 $f^{-1}\left(a\right)\neq\emptyset$ (若非空), 即存在 $x_0$ 使 $f\left(x_0\right)=a$. 由假设 $f^{-1}\left(a\right)$ 紧, 由**定理 5.5** (豪斯多夫中紧集闭) 它是闭有界集, 故存在 $R>0$ 使 $f^{-1}\left(a\right)\subset B\left(0,R\right)$.
+取定 $a$ 使 $f^{-1}\left(a\right)\neq\emptyset$ (若非空), 即存在 $x_0$ 使 $f\left(x_0\right)=a$. 由假设 $f^{-1}\left(a\right)$ 紧, 由**定理 5.3** ($\mathbb R^n$ 中的紧集) 它是闭有界集, 故存在 $R>0$ 使 $f^{-1}\left(a\right)\subset B\left(0,R\right)$.
 
 球面 $\partial B\left(0,R\right)$ 在 $n\ge 2$ 时连通 (它是 $\mathbb R^n$ 中连通紧集). 由**定义 3.22** (连续映射), $f\left(\partial B\left(0,R\right)\right)$ 是 $\mathbb R$ 中不含 $a$ 的连通集; 由**定理 4.2** (连续像连通) 它连通, 故必全在 $\left(a,\infty\right)$ 或全在 $\left(-\infty,a\right)$ 中. 不妨设 $f>a$ 在 $\partial B\left(0,R\right)$ 上.
 
@@ -340,7 +342,7 @@ $$
 
 **第 1 小题**: 反证. 若 $E$ 不连通, 由**定义 4.18** (连通空间), $E=U\sqcup V$, 其中 $U,V$ 是非空不相交开集. 取 $u\in U$, $v\in V$. 定义 $f:E\to E$ 为 $f\left(U\right)=\left\{v\right\}$, $f\left(V\right)=\left\{u\right\}$. 由**定义 3.22** (连续映射), $f$ 连续 (常值映射在开集上连续, 拼接不相交开集). 但 $f$ 无不动点: 对 $x\in U$, $f\left(x\right)=v\notin U$; 对 $x\in V$, $f\left(x\right)=u\notin V$. 矛盾. 故 $E$ 连通.
 
-**第 2 小题**: 证明任一连续 $h:K\to\left\{0,1\right\}$ 常值. 对固定 $x$, $K_x$ 是区间故连通 (由**定理 4.1** (区间连通) 与**定义 4.18** (连通空间)), $h|_{K_x}$ 连续像连通, 故常值, 记为 $g\left(x\right)$. 下证 $g$ 局部常值. 若不然, 存在 $x_n\to x$ 但 $g\left(x_n\right)\neq g\left(x\right)$. 取 $y_n\in K_{x_n}$. 由 $K$ 紧 ($\left[0,1\right]^2$ 的闭子集), 存在子列 $\left(x_{\varphi\left(n\right)},y_{\varphi\left(n\right)}\right)\to\left(x,y\right)\in K$. 由 $h$ 连续,
+**第 2 小题**: 证明任一连续 $h:K\to\left\{0,1\right\}$ 常值. 对固定 $x$, $K_x$ 是区间故连通 (由**定理 4.1** (区间连通) 与**定义 4.18** (连通空间)), $h|_{K_x}$ 连续像连通, 故常值, 记为 $g\left(x\right)$. 下证 $g$ 局部常值. 若不然, 存在 $x_n\to x$ 但 $g\left(x_n\right)\neq g\left(x\right)$. 取 $y_n\in K_{x_n}$. 由 $K$ 紧 ($\left[0,1\right]^2$ 由**定理 5.3** 紧, $K$ 是其闭子集, 由**定理 5.4** (闭子集紧) 紧), 存在子列 $\left(x_{\varphi\left(n\right)},y_{\varphi\left(n\right)}\right)\to\left(x,y\right)\in K$. 由 $h$ 连续,
 
 $$
 g\left(x\right)=h\left(x,y\right)=\lim_n h\left(x_{\varphi\left(n\right)},y_{\varphi\left(n\right)}\right)=\lim_n g\left(x_{\varphi\left(n\right)}\right),

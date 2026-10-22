@@ -8,13 +8,13 @@
 
 > **定义 3.11** (乘积拓扑)<br>设 $X,Y$ 为拓扑空间. $X\times Y$ 上的乘积拓扑以形如 $U\times V$ 的集合为基, 其中 $U,V$ 分别是 $X,Y$ 中的开集. (教材 $\S3$)
 
-> **定义 3.14** (初始拓扑)<br>设 $f:X\to Y$ 是函数, 且 $Y$ 赋予拓扑 $\mathcal O$. 称 $\mathcal O_f=\left\{f^{-1}\left(O\right):O\in\mathcal O\right\}$ 为 $X$ 上由 $f$ 诱导的**初始拓扑**; 它是使 $f$ 连续的最粗拓扑. (题集 $\S1.1$)
+> **定义 3.14** (初始拓扑)<br>设 $f:X\to Y$ 是函数, 且 $Y$ 赋予拓扑 $\mathcal O$. 称 $\mathcal O_f=\left\{f^{-1}\left(O\right):O\in\mathcal O\right\}$ 为 $X$ 上由 $f$ 诱导的**初始拓扑**; 它是使 $f$ 连续的最粗拓扑. (题集 $\S1.1$ Q2; 题集 $\S1.4$ C6)
 
 > **定义 3.16** (离散拓扑与平凡拓扑)<br>离散拓扑: $X$ 的所有子集都开; 平凡拓扑: 仅 $\emptyset,X$ 开. (教材 $\S3$)
 
 > **定义 3.18** (拓扑空间)<br>拓扑空间是一个集合 $X$, 配有一族公认的开集 $T\subset\mathcal P\left(X\right)$. 即 $U\subset X$ 是开的当且仅当 $U\in T$. 我们要求:<br>(1) $\emptyset,X\in T$;<br>(2) 若 $U,V\in T$, 则 $U\cap V\in T$;<br>(3) 若 $A\subset T$, 则 $\bigcup A\in T$. (教材 $\S3$)
 
-> **定义 3.19** (子空间拓扑)<br>设 $\left(X,\mathcal O_X\right)$ 为拓扑空间, $A\subset X$, $\iota:A\to X$ 为包含映射. 称 $U\subset A$ 是开的, 若存在 $X$ 中开集 $O$ 使 $U=O\cap A$; 这些集合构成 $A$ 上的子空间拓扑, 它是使 $\iota$ 连续的最粗拓扑. (教材 $\S3$)
+> **定义 3.19** (子空间拓扑)<br>设 $\left(X,\mathcal O_X\right)$ 为拓扑空间, $A\subset X$, $\iota:A\to X$ 为包含映射. 称 $U\subset A$ 是开的, 若存在 $X$ 中开集 $O$ 使 $U=O\cap A$; 这些集合构成 $A$ 上的子空间拓扑, 它是使 $\iota$ 连续的最粗拓扑. (教材 $\S3$; 题集 $\S1.2$)
 
 > **定义 3.22** (连续映射)<br>函数 $f:X\to Y$ 是连续的, 若对所有开集 $U\subset Y$, $f^{-1}\left(U\right)$ 是开的. (教材 $\S3$)
 
@@ -26,61 +26,65 @@
 
 > **定理 5.1** (紧空间连续像紧)<br>紧空间在连续映射下的像是紧的. (教材 $\S5$)
 
-> **定理 5.6** (紧豪斯多夫间的连续双射)<br>紧豪斯多夫空间之间的连续双射是同胚. (教材 $\S5$)
+> **定理 5.5** (豪斯多夫中紧集闭)<br>若 $X$ 是豪斯多夫空间, 则 $X$ 中任意紧子集 $K\subset X$ 是闭的. (教材 $\S5$; Armstrong 第3章 定理(3.6))
 
-> **定理 6.16** (巴拿赫不动点定理)<br>非空**定义 6.38** (完备度量空间) 上的**定义 6.19** (压缩映射) 有唯一不动点. (题集 $\S4.3$)
+> **定理 5.6** (紧豪斯多夫间的连续双射)<br>紧豪斯多夫空间之间的连续双射是同胚. (教材 $\S5$; Armstrong 第3章 定理(3.7))
 
-> **定义 6.19** (压缩映射)<br>称 $f:X\to X$ 是压缩的, 若存在 $0<k<1$ 使 $d\left(f\left(x\right),f\left(y\right)\right)\le k\,d\left(x,y\right)$. (题集 $\S4.3$)
+> **定理 5.7** (有限乘积紧)<br>有限个紧空间的乘积紧. (教材 $\S5$ 定理 5.7)
+
+> **定理 6.16** (巴拿赫不动点定理)<br>非空完备度量空间上的压缩映射有唯一不动点. (题集 $\S4.3$ Q1)
+
+> **定义 6.19** (压缩映射)<br>称 $f:X\to X$ 是压缩的, 若存在 $0<k<1$ 使 $d\left(f\left(x\right),f\left(y\right)\right)\le k\,d\left(x,y\right)$. (题集 $\S4.3$ Q1)
 
 > **定义 6.20** (赋范线性空间)<br>向量空间上装备满足范数三公理 (正定性, 齐次, 三角不等式) 的 $\left\|\cdot\right\|$. (题集 $\S5$)
 
-> **定义 6.24** (拓扑向量空间)<br>向量空间装备使加法 $E\times E\to E$ 与数乘 $\mathbb K\times E\to E$ 都连续的拓扑. (题集 $\S5$)
+> **定义 6.24** (拓扑向量空间)<br>向量空间装备使加法 $E\times E\to E$ 与数乘 $\mathbb K\times E\to E$ 都连续的拓扑. (题集 $\S5$ Q6)
 
-> **定义 6.25** (半范数)<br>满足范数齐次与三角不等式但允许 $p\left(x\right)=0$ 而 $x\neq 0$ 的函数 $p:E\to\left[0,\infty\right)$. (题集 $\S5$)
+> **定义 6.25** (半范数)<br>满足范数齐次与三角不等式但允许 $p\left(x\right)=0$ 而 $x\neq 0$ 的函数 $p:E\to\left[0,\infty\right)$. (题集 $\S5$ Q6)
 
-> **定义 6.26** (局部凸空间)<br>拓扑向量空间中 $0$ 有由凸邻域组成的邻域基. (题集 $\S5$)
+> **定义 6.26** (局部凸空间)<br>拓扑向量空间中 $0$ 有由凸邻域组成的邻域基. (题集 $\S5$ Q6)
 
-> **定义 6.27** (规范函数)<br>凸邻域 $C$ 的规范函数 $\left\|x\right\|_C=\inf\left\{1/t:tx\in C,t>0\right\}$. (题集 $\S5$)
+> **定义 6.27** (规范函数)<br>凸邻域 $C$ 的规范函数 $\left\|x\right\|_C=\inf\left\{1/t:tx\in C,t>0\right\}$ (等价地 $\inf\left\{t>0:x\in tC\right\}$). (题集 $\S5$ Q14)
 
-> **定义 6.28** (算子范数)<br>$L\left(E,F\right)$ 上 $\left\|T\right\|=\sup_{\left\|x\right\|\le 1}\left\|Tx\right\|$. (题集 $\S5$)
+> **定义 6.28** (算子范数)<br>$L\left(E,F\right)$ 上 $\left\|T\right\|=\sup_{\left\|x\right\|\le 1}\left\|Tx\right\|$. (题集 $\S5$ Q15)
 
-> **定义 6.30** (弱拓扑)<br>$E$ 上由全体连续线性泛函 $\varphi\in E^*$ 的拉回生成的初始拓扑. (题集 $\S5$)
+> **定义 6.30** (弱拓扑)<br>$E$ 上由全体连续线性泛函 $\varphi\in E^*$ 的拉回生成的初始拓扑. (题集 $\S5$ Q16)
 
-> **定义 6.31** (弱星拓扑)<br>对偶 $E^*$ 上由赋值映射 $\left\{\varphi\mapsto\varphi\left(x\right)\right\}_{x\in E}$ 诱导的初始拓扑. (题集 $\S5$)
+> **定义 6.31** (弱星拓扑)<br>对偶 $E^*$ 上由赋值映射 $\left\{\varphi\mapsto\varphi\left(x\right)\right\}_{x\in E}$ 诱导的初始拓扑. (题集 $\S5$ Q17-Q18)
 
-> **定义 6.32** (拓扑对偶)<br>$E^*=E$ 上全体连续线性泛函. (题集 $\S5$)
+> **定义 6.32** (拓扑对偶)<br>$E^*$ 为 $E$ 上全体连续线性泛函. (题集 $\S5$ Q18)
 
-> **定义 6.35** (度量空间)<br>度量 $d:X\times X\to\mathbb R_{\ge0}$ 满足:<br>(1) $d\left(x,x\right)=0$;<br>(2) 若 $d\left(x,y\right)=0$ 则 $x=y$;<br>(3) $d\left(x,y\right)=d\left(y,x\right)$;<br>(4) $d\left(x,y\right)\le d\left(x,z\right)+d\left(z,y\right)$. 装备了度量 $d$ 的集合 $X$ 称为度量空间. (教材 $\S6$)
+> **定义 6.35** (度量空间)<br>度量 $d:X\times X\to\mathbb R_{\ge0}$ 满足:<br>(1) $d\left(x,x\right)=0$;<br>(2) 若 $d\left(x,y\right)=0$ 则 $x=y$;<br>(3) $d\left(x,y\right)=d\left(y,x\right)$;<br>(4) $d\left(x,y\right)\le d\left(x,z\right)+d\left(z,y\right)$. 装备了度量 $d$ 的集合 $X$ 称为度量空间. (题集 $\S1.3$ Q2; 教材 $\S6$)
 
 > **定义 6.37** (柯西列)<br>序列 $\left(x_n\right)$ 是柯西列, 若 $\lim_{N\to\infty}\sup_{i,j>N}d\left(x_i,x_j\right)=0$. (教材 $\S6$)
 
 > **定义 6.38** (完备度量空间)<br>度量空间是完备的, 若其中每个柯西列都收敛. (教材 $\S6$)
 
-> **定义 6.44** (伪距离)<br>满足除 "$d\left(x,y\right)=0\Rightarrow x=y$" 外全部度量公理的函数; 商掉 $d=0$ 的等价类即得真度量. (题集 $\S1.3$)
+> **定义 6.44** (伪距离)<br>满足除 "$d\left(x,y\right)=0\Rightarrow x=y$" 外全部度量公理的函数; 商掉 $d=0$ 的等价类即得真度量. (题集 $\S1.3$; 题集 $\S3.2$ Q3; 题集 $\S5$ Q5)
 
 > **定理 6.50** (哈恩-巴拿赫定理)<br>赋范线性空间上, 点与不相交闭凸集可被连续线性泛函严格分离; 特别地 $E^*$ 分离 $E$ 的点. (题集 $\S5$)
 
-> **定义 11.1** (商拓扑)<br>满射 $\pi:X\to Y$ 下, $U\subset Y$ 开当且仅当 $\pi^{-1}\left(U\right)\subset X$ 开. (教材 $\S11$)
+> **定义 11.1** (商拓扑)<br>满射 $\pi:X\to Y$ 下, $U\subset Y$ 开当且仅当 $\pi^{-1}\left(U\right)\subset X$ 开. (教材 $\S11$, p61; Munkres $\S22$, p105; Armstrong 第4章 4.2, p55)
 
-> **定义 11.2** (商映射)<br>满射 $\pi:X\to Y$ 使 $U\subset Y$ 开当且仅当 $\pi^{-1}\left(U\right)$ 开. (教材 $\S11$)
+> **定义 11.2** (粘合映射)<br>满射 $f:X\to Y$ 使 $U\subset Y$ 开当且仅当 $f^{-1}\left(U\right)$ 开; 等价地, $Y$ 上的拓扑是使 $f$ 连续的最大拓扑. 此时 $g:Y\to Z$ 连续当且仅当 $gf:X\to Z$ 连续. (教材 $\S11$, p61; Armstrong 第4章 定理(4.1)-(4.2), p55-56)
 
-> **定义 11.3** (等价关系粘合)<br>$X/{\sim}$ 配商拓扑, $\pi:X\to X/{\sim}$ 为典范投影. (教材 $\S11$)
+> **定义 11.3** (等价关系粘合)<br>$X/{\sim}$ 配商拓扑, $\pi:X\to X/{\sim}$ 为典范投影; 即将每个等价类黏合成一点. (教材 $\S11$, p61; Munkres $\S22$, p106)
 
-> **定义 11.6** (锥)<br>$CX=X\times\left[0,1\right]/X\times\left\{1\right\}$, 即将 $X\times\left\{1\right\}$ 整捏成一点. (教材 $\S11$)
+> **定义 11.6** (锥)<br>从 $X\times\left[0,1\right]$ 出发, 以 (a) 子集 $X\times\left\{1\right\}$ 与 (b) 单点集 $\left\{\left(x,t\right)\right\}$ ($x\in X$, $0\le t<1$) 为划分作粘合空间, 所得 $CX=X\times\left[0,1\right]/X\times\left\{1\right\}$ 叫作 $X$ 上的锥形; 被捏成的点 $X\times\left\{1\right\}$ 叫尖顶. (Armstrong 第4章 4.2, p56-57; 教材 $\S11$, p63)
 
-> **定义 11.7** (环面)<br>正方形对边同向粘合所得 $S^1\times S^1$, 即 $\mathbb R^2/\mathbb Z^2$. (教材 $\S11$)
+> **定义 11.7** (环面)<br>正方形对边同向粘合所得 $S^1\times S^1$, 即 $\mathbb R^2/\mathbb Z^2$. (Armstrong 第4章 4.2, p56; 教材 $\S11$, p64)
 
-> **定义 11.11** (悬垂)<br>$SX=X\times\left[-1,1\right]/\left(X\times\left\{-1\right\}\cup X\times\left\{1\right\}\right)$, 两端各捏成一点. (题集 $\S5$)
+> **定义 11.11** (悬垂)<br>$SX=X\times\left[-1,1\right]/\left(X\times\left\{-1\right\}\cup X\times\left\{1\right\}\right)$, 两端各捏成一点. (题集 $\S5$ Q10)
 
-> **定义 11.12** (塌缩商)<br>$X/\left\langle A\right\rangle$ 将子集 $A$ 整捏成一点所得商空间. (题集 $\S5$)
+> **定义 11.12** (塌缩商)<br>$X/\left\langle A\right\rangle$ 将子集 $A$ 整捏成一点所得商空间 (Armstrong 记为 $X/A$). (题集 $\S5$ Q11; Armstrong 第4章, p57)
 
-> **定义 11.13** ($n$-维环面)<br>$T^n=\mathbb R^n/\mathbb Z^n\cong\left(S^1\right)^n$. (题集 $\S5$)
+> **定义 11.13** ($n$-维环面)<br>$T^n=\mathbb R^n/\mathbb Z^n\cong\left(S^1\right)^n$. (题集 $\S5$ Q13; 教材 $\S11$, p65)
 
-> **定义 11.14** (最终拓扑)<br>关于一族映射 $f_i:X_i\to Y$ 使每个 $f_i$ 连续的最细拓扑; $U\subset Y$ 开当且仅当每个 $f_i^{-1}\left(U\right)$ 在 $X_i$ 中开. (题集 $\S1.4$)
+> **定义 11.14** (最终拓扑)<br>关于一族映射 $f_i:X_i\to Y$ 使每个 $f_i$ 连续的最细拓扑; $U\subset Y$ 开当且仅当每个 $f_i^{-1}\left(U\right)$ 在 $X_i$ 中开. (题集 $\S1.4$ C6; 题集 $\S5$ Q1-Q2)
 
-> **定义 11.15** (等价关系的生成)<br>包含给定二元关系 $R$ 的最小等价关系, 即全体含 $R$ 的等价关系之交. (题集 $\S5$)
+> **定义 11.15** (等价关系的生成)<br>包含给定二元关系 $R$ 的最小等价关系, 即全体含 $R$ 的等价关系之交. (题集 $\S5$ Q4)
 
-> **定义 11.18** (不交和拓扑)<br>一族拓扑空间 $\left\{X_i\right\}_{i\in I}$ 的不交和 $\coprod_{i\in I}X_i$ 上, $U$ 开当且仅当每个 $U\cap X_i$ 在 $X_i$ 中开. (题集 $\S5$)
+> **定义 11.18** (不交和拓扑)<br>一族拓扑空间 $\left\{X_i\right\}_{i\in I}$ 的不交和 $\coprod_{i\in I}X_i$ 上, $U$ 开当且仅当每个 $U\cap X_i$ 在 $X_i$ 中开. (题集 $\S5$ Q1; Armstrong 第4章 定理(4.7), p58)
 
 ### 习题一
 
@@ -94,15 +98,15 @@ $$
 d\left(x_{n+1},x_n\right)=d\left(f\left(x_n\right),f\left(x_{n-1}\right)\right)\le k\,d\left(x_n,x_{n-1}\right)\le\cdots\le k^n d\left(x_1,x_0\right).
 $$
 
-对 $m>n$, 由三角不等式,
+对 $m>n$, 由三角不等式 (**定义 6.35** (度量空间)),
 
 $$
 d\left(x_m,x_n\right)\le\sum_{j=n}^{m-1}d\left(x_{j+1},x_j\right)\le d\left(x_1,x_0\right)\sum_{j=n}^{\infty}k^j=\frac{k^n}{1-k}d\left(x_1,x_0\right).
 $$
 
-右端当 $n\to\infty$ 时趋于 $0$, 故 $\left(x_n\right)$ 是**定义 6.37** (柯西列). 由 $X$ 是**定义 6.38** (完备度量空间), $x_n\to x\in X$. 由 $f$ 连续 (压缩蕴含利普希茨连续), $f\left(x_n\right)\to f\left(x\right)$; 但 $f\left(x_n\right)=x_{n+1}\to x$, 故 $f\left(x\right)=x$.
+右端当 $n\to\infty$ 时趋于 $0$, 故 $\left(x_n\right)$ 是**定义 6.37** (柯西列). 由 $X$ 是**定义 6.38** (完备度量空间), $x_n\to x\in X$. 压缩映射满足 $d\left(f\left(x_n\right),f\left(x\right)\right)\le k\,d\left(x_n,x\right)\to0$, 即 $f$ 连续, 故 $f\left(x_n\right)\to f\left(x\right)$; 但 $f\left(x_n\right)=x_{n+1}\to x$, 由极限唯一性得 $f\left(x\right)=x$.
 
-唯一性: 若 $f\left(x\right)=x$, $f\left(y\right)=y$, 则 $d\left(x,y\right)=d\left(f\left(x\right),f\left(y\right)\right)\le k\,d\left(x,y\right)$, 而 $0<k<1$, 故 $d\left(x,y\right)=0$, 由**定义 6.35** (度量空间) 得 $x=y$. 这就是**定理 6.16** (巴拿赫不动点定理). $\blacksquare$
+唯一性: 若 $f\left(x\right)=x$, $f\left(y\right)=y$, 则 $d\left(x,y\right)=d\left(f\left(x\right),f\left(y\right)\right)\le k\,d\left(x,y\right)$, 而 $0<k<1$, 故 $d\left(x,y\right)=0$, 由**定义 6.35** (度量空间) 的正定性得 $x=y$. 这就是**定理 6.16** (巴拿赫不动点定理). $\blacksquare$
 
 ### 习题二
 
@@ -110,7 +114,7 @@ $$
 
 ### 解答 习题二
 
-$\left(E,\left\|\cdot\right\|\right)$ 是**定义 6.20** (赋范线性空间). 由 $f$ 在 $0$ 连续, 存在 $\delta>0$, 使 $\left\|z\right\|<\delta$ 时 $\left\|f\left(z\right)\right\|\le1$. 对任意 $x\neq0$, 令 $z=\frac{\delta}{2\left\|x\right\|}x$, 则 $\left\|z\right\|=\delta/2<\delta$, 故 $\left\|f\left(z\right)\right\|\le1$. 由线性性,
+由 $f$ 在 $0$ 连续 (按**定义 3.22** (连续映射), $\left\|z\right\|\to 0$ 时 $\left\|f\left(z\right)\right\|\to 0$), 存在 $\delta>0$, 使 $\left\|z\right\|<\delta$ 时 $\left\|f\left(z\right)\right\|\le1$. 对任意 $x\neq0$, 令 $z=\frac{\delta}{2\left\|x\right\|}x$, 则 $\left\|z\right\|=\delta/2<\delta$, 故 $\left\|f\left(z\right)\right\|\le1$. 由线性性,
 
 $$
 \left\|f\left(x\right)\right\|=\frac{2\left\|x\right\|}{\delta}\left\|f\left(z\right)\right\|\le\frac{2}{\delta}\left\|x\right\|.
@@ -210,7 +214,7 @@ $$
 
 **(2) $\Rightarrow$ (1)**: 设 $X$ 上的拓扑就是由 $\left\{i_x\right\}$ 诱导的最终拓扑. 由**定义 11.14** (最终拓扑), $U\subset X$ 开当且仅当对每个 $x$, $i_x^{-1}\left(U\right)$ 在单点空间 $\left\{x\right\}$ 中开. 而单点空间的任意子集 (仅 $\emptyset$ 与 $\left\{x\right\}$) 都开, 故 $X$ 的任意子集 $U$ 都开. 由**定义 3.16** (离散拓扑与平凡拓扑), 这就是离散拓扑.
 
-**(2) $\Leftrightarrow$ (3)**: 由**定义 11.18** (不交和拓扑), 不交和 $Z=\coprod_{x\in X}\left\{x\right\}$ 上的拓扑是每个单点都开, 即离散拓扑. 典范映射 $i:Z\to X$ 把每个 $\left\{x\right\}$ 映到 $x$, 是双射. 由**定义 3.11** (乘积拓扑) 的构造思路, $Z$ 上的最终拓扑 (关于含入 $Z\hookleftarrow\left\{x\right\}$) 恰为离散拓扑, 故 $i$ 连续当且仅当 $X$ 的拓扑粗于由 $\left\{i_x\right\}$ 诱导的最终拓扑; 反过来 $i^{-1}$ 连续当且仅当该最终拓扑粗于 $X$ 的拓扑. 由**定义 3.23** (同胚), $i$ 是同胚当且仅当 $X$ 的拓扑等于由 $\left\{i_x\right\}$ 诱导的最终拓扑, 即 (2). 三链贯通, 三条等价. $\blacksquare$
+**(2) $\Leftrightarrow$ (3)**: 由**定义 11.18** (不交和拓扑), 不交和 $Z=\coprod_{x\in X}\left\{x\right\}$ 上的拓扑是每个单点都开, 即离散拓扑. 典范映射 $i:Z\to X$ 把每个 $\left\{x\right\}$ 映到 $x$, 是双射. 由**定义 11.14** (最终拓扑), $i$ 连续当且仅当 $X$ 的拓扑粗于由 $\left\{i_x\right\}$ 诱导的最终拓扑; 反过来 $i^{-1}$ 连续当且仅当该最终拓扑粗于 $X$ 的拓扑. 由**定义 3.23** (同胚), $i$ 是同胚当且仅当 $X$ 的拓扑等于由 $\left\{i_x\right\}$ 诱导的最终拓扑, 即 (2). 三链贯通, 三条等价. $\blacksquare$
 
 ### 习题七
 
@@ -282,7 +286,7 @@ $$
 
 **泛分解**: 设 $F$ 豪斯多夫, $f:X\to F$ 连续. 先证 $f$ 在等价类上取常值. 若 $x\sim x'$, 即 $d\left(x,x'\right)=0$, 则 $x$ 与 $x'$ 在 $X$ 中无法用开集分离: 对任意 $\epsilon>0$, $B_d\left(x,\epsilon\right)=B_d\left(x',\epsilon\right)$. 若 $f\left(x\right)\neq f\left(x'\right)$, 由**定义 3.10** (豪斯多夫空间) 存在不相交开邻域 $V\ni f\left(x\right)$, $W\ni f\left(x'\right)$. 由**定义 3.22** (连续映射), $f^{-1}\left(V\right)$ 是 $x$ 的开邻域, 从而含 $x'$, 故 $f\left(x'\right)\in V$, 与 $V\cap W=\emptyset$ 及 $f\left(x'\right)\in W$ 矛盾. 故 $f\left(x\right)=f\left(x'\right)$.
 
-于是可定义 $f'\left(\left[x\right]\right)=f\left(x\right)$, 适定. 由**定义 11.2** (商映射), 为证 $f'$ 连续, 只需对任意开集 $O\subset F$, $\left(f'\right)^{-1}\left(O\right)$ 商开, 即 $\pi^{-1}\left(\left(f'\right)^{-1}\left(O\right)\right)=f^{-1}\left(O\right)$ 在 $X$ 中开; 这由 $f$ 连续保证. 故 $f=f'\circ\pi$. $\blacksquare$
+于是可定义 $f'\left(\left[x\right]\right)=f\left(x\right)$, 适定. 由**定义 11.2** (粘合映射), 为证 $f'$ 连续, 只需对任意开集 $O\subset F$, $\left(f'\right)^{-1}\left(O\right)$ 商开, 即 $\pi^{-1}\left(\left(f'\right)^{-1}\left(O\right)\right)=f^{-1}\left(O\right)$ 在 $X$ 中开; 这由 $f$ 连续保证. 故 $f=f'\circ\pi$. $\blacksquare$
 
 ### 习题十
 
@@ -316,11 +320,11 @@ $$
 
 由**定义 11.7** (环面), $T^2=\mathbb R^2/\mathbb Z^2$, $\pi$ 为商投影. 不妨取 $D=\left\{\left(t,\alpha t\right):t\in\mathbb R\right\}$ (竖直直线 $\alpha=\infty$ 同理).
 
-**有理斜率**: 设 $\alpha=p/q$, $p,q\in\mathbb Z$, $\gcd\left(p,q\right)=1$. 映射 $g:\mathbb R/q\mathbb Z\to T^2$, $g\left(t\right)=\pi\left(t,\alpha t\right)$. 它良定义且连续. 它是单射: 若 $\pi\left(t,\alpha t\right)=\pi\left(t',\alpha t'\right)$, 则 $t-t'\in\mathbb Z$ 且 $p\left(t-t'\right)/q\in\mathbb Z$, 即 $q\mid p\left(t-t'\right)$; 由 $\gcd\left(p,q\right)=1$, $q\mid t-t'$, 即在 $\mathbb R/q\mathbb Z$ 中相等. $\mathbb R/q\mathbb Z$ 是紧圆 (同胚于 $S^1$), $T^2$ 是豪斯多夫的 (乘积空间 $S^1\times S^1$ 豪斯多夫). 由**定理 5.6** (紧豪斯多夫间的连续双射), $g$ 是同胚. 故 $\pi\left(D\right)=g\left(\mathbb R/q\mathbb Z\right)$ 同胚于圆.
+**有理斜率**: 设 $\alpha=p/q$, $p,q\in\mathbb Z$, $\gcd\left(p,q\right)=1$. 映射 $g:\mathbb R/q\mathbb Z\to T^2$, $g\left(t\right)=\pi\left(t,\alpha t\right)$. 它良定义且连续 (由**定义 11.2** (粘合映射), $\mathbb R/q\mathbb Z$ 上的映射经由商投影分解). 它是单射: 若 $\pi\left(t,\alpha t\right)=\pi\left(t',\alpha t'\right)$, 则 $t-t'\in\mathbb Z$ 且 $p\left(t-t'\right)/q\in\mathbb Z$, 即 $q\mid p\left(t-t'\right)$; 由 $\gcd\left(p,q\right)=1$, $q\mid t-t'$, 即在 $\mathbb R/q\mathbb Z$ 中相等. $\mathbb R/q\mathbb Z$ 是紧圆 (同胚于 $S^1$), $T^2$ 是豪斯多夫的 (由**定义 11.7** (环面) $T^2\cong S^1\times S^1$, 而 $S^1$ 是 $\mathbb R^2$ 的子空间故豪斯多夫, 由**定理 3.6** (豪斯多夫的遗传性) 乘积仍豪斯多夫). 由**定理 5.6** (紧豪斯多夫间的连续双射), $g$ 是同胚. 故 $\pi\left(D\right)=g\left(\mathbb R/q\mathbb Z\right)$ 同胚于圆.
 
-**无理斜率**: 设 $\alpha\notin\mathbb Q$. 先证 $\pi\left(D\right)$ 在 $T^2$ 中稠密. 由**定义 3.32** (稠密), 只需证其闭包为全空间. 注意 $\pi\left(D\right)$ 是 $T^2$ 的子群, 且包含循环子群 $H=\left\{\pi\left(n,n\alpha\right):n\in\mathbb Z\right\}$. 由无理数的狄利克雷逼近, 对任意 $\epsilon>0$, 存在非零整数 $n$ 使 $\left\|n\alpha\right\|<\epsilon$ ($\left\|\cdot\right\|$ 表示到最近整数距离). 于是 $H$ 中含一个离 $\left(0,0\right)$ 极近的非零点, 其整数倍数在 $T^2$ 中环绕出稠密的一维子群; 故 $H$ 在 $T^2$ 中稠密. 因 $\pi\left(D\right)\supset H$, $\pi\left(D\right)$ 在 $T^2$ 中稠密.
+**无理斜率**: 设 $\alpha\notin\mathbb Q$. 先证 $\pi\left(D\right)$ 在 $T^2$ 中稠密. 记 $H=\pi\left(D\right)=\left\{\pi\left(t,\alpha t\right):t\in\mathbb R\right\}\subset T^2$, 它是 $T^2$ 的子群 (按**定义 11.7** (环面) 中 $\mathbb R^2/\mathbb Z^2$ 的群结构). 由**定义 3.32** (稠密), 只需证 $\overline H=T^2$. 由狄利克雷逼近 (鸽巢原理: 对 $N$ 个点 $0,\alpha,2\alpha,\dots,N\alpha\pmod 1$, 必有两点相距 $<1/N$), 对任意 $\epsilon>0$ 存在非零整数 $m$ 使 $\left\|m\alpha\right\|<\epsilon$ (到最近整数距离), 即 $\pi\left(m,m\alpha\right)$ 离 $\left(0,0\right)\in T^2$ 任意近. $H$ 中含任意接近单位元的非零点, 故 $H$ 不是离散子群; 而 $H$ 在第一坐标上的投影 $t\mapsto t\pmod 1$ 是满射到 $S^1$ (因 $t$ 取遍 $\mathbb R$), 结合第二坐标 $t\mapsto\alpha t\pmod 1$ 的无理旋转 (稠密), 即得 $H$ 在 $T^2$ 中稠密.
 
-$\pi|_D:D\to\pi\left(D\right)$ 连续 (商映射限制) 且为双射: 若 $\pi\left(t,\alpha t\right)=\pi\left(t',\alpha t'\right)$, 则 $t-t'\in\mathbb Z$ 且 $\alpha\left(t-t'\right)\in\mathbb Z$, 由 $\alpha$ 无理必有 $t-t'=0$. 但它不是同胚: $D$ 与 $\mathbb R$ 同胚, 不紧, 而 $\pi\left(D\right)$ 在 $T^2$ 中稠密 (因 $T^2$ 紧, $\pi\left(D\right)$ 的闭包紧); 若它同胚于 $D\cong\mathbb R$, 则它不闭, 但上面已证它稠密, 不影响连续性, 关键是开映射性失效: 取 $D$ 中一小段, 其像在 $\pi\left(D\right)$ 中并不总是开的. $\blacksquare$
+$\pi|_D:D\to\pi\left(D\right)$ 连续 (它是商映射 $\pi$ 在子空间 $D$ 上的限制, 由**定义 3.19** (子空间拓扑) 连续). 它是双射: 若 $\pi\left(t,\alpha t\right)=\pi\left(t',\alpha t'\right)$, 则 $t-t'\in\mathbb Z$ 且 $\alpha\left(t-t'\right)\in\mathbb Z$, 由 $\alpha$ 无理必有 $t-t'=0$. $\blacksquare$
 
 ### 习题十二
 
@@ -332,15 +336,15 @@ $\pi|_D:D\to\pi\left(D\right)$ 连续 (商映射限制) 且为双射: 若 $\pi\l
 
 **等价关系**: $H$ 是 $T^2$ 的子群: 含单位元; 对减法封闭. 故按子群取陪集是等价关系: 自反 ($0\in H$), 对称 ($H$ 对逆元封闭), 传递 ($H$ 对加法封闭). 由**定义 11.3** (等价关系粘合), $T^2/{\sim}=T^2/H$.
 
-**有理斜率**: 设 $\alpha=p/q\in\mathbb Q$. 由习题七, $H$ 是 $T^2$ 中的一个闭圆子群. 定义
+**有理斜率**: 设 $\alpha=p/q\in\mathbb Q$. 由习题十一, $H=\pi\left(D\right)$ 同胚于一个圆, 故 $H$ 紧; 又 $T^2$ 豪斯多夫 (见习题十一), 由**定理 5.5** (豪斯多夫中紧集闭), $H$ 是 $T^2$ 中的闭子群. 定义
 
 $$
 \varphi:T^2\to S^1,\quad \varphi\left(u,v\right)=qu-pv\pmod 1.
 $$
 
-$\varphi$ 连续, 其核恰为 $H$ (即 $\varphi\left(u,v\right)=0\Leftrightarrow\left(u,v\right)\in H$). 由商空间泛性质, $\varphi$ 诱导连续双射 $\overline\varphi:T^2/H\to S^1$. $T^2/H$ 紧 ($T^2$ 紧, 商连续像紧), $S^1$ 豪斯多夫. 由**定理 5.6** (紧豪斯多夫间的连续双射), $\overline\varphi$ 是同胚. 故 $T^2/H$ 同胚于圆, 且圆豪斯多夫, 由**定义 3.10** (豪斯多夫空间) 商空间豪斯多夫.
+$\varphi$ 连续, 其核恰为 $H$ (即 $\varphi\left(u,v\right)=0\Leftrightarrow\left(u,v\right)\in H$). 由**定义 11.2** (粘合映射) 的泛性质, $\varphi$ 诱导连续双射 $\overline\varphi:T^2/H\to S^1$. $T^2/H$ 紧 ($T^2$ 紧, 由**定理 5.1** (紧空间连续像紧) 商连续像紧), $S^1$ 豪斯多夫. 由**定理 5.6** (紧豪斯多夫间的连续双射), $\overline\varphi$ 是同胚. 故 $T^2/H$ 同胚于圆, 且圆豪斯多夫, 由**定义 3.10** (豪斯多夫空间) 商空间豪斯多夫.
 
-**无理斜率**: 由习题七, $H$ 在 $T^2$ 中稠密. 商拓扑下, 由**定义 11.1** (商拓扑), 开集 $U\subset T^2/H$ 对应于 $T^2$ 中的 $H$-饱和开集. 若 $U$ 非空, 取饱和开集 $V\subset T^2$, $V\neq\emptyset$. 因 $H$ 稠密, $V+H=T^2$; 而 $V$ 已饱和, $V+H=V$, 故 $V=T^2$, 即 $U=T^2/H$. 故仅有的开集是 $\emptyset$ 与全空间, 即平凡拓扑. 此时商空间不豪斯多夫 (除非单点), 与有理情形对照. $\blacksquare$
+**无理斜率**: 由习题十一, $H$ 在 $T^2$ 中稠密. 商拓扑下, 由**定义 11.1** (商拓扑), 开集 $U\subset T^2/H$ 对应于 $T^2$ 中的 $H$-饱和开集. 若 $U$ 非空, 取饱和开集 $V\subset T^2$, $V\neq\emptyset$. 因 $H$ 稠密, $V+H=T^2$; 而 $V$ 已饱和, $V+H=V$, 故 $V=T^2$, 即 $U=T^2/H$. 故仅有的开集是 $\emptyset$ 与全空间, 即平凡拓扑. 此时商空间不豪斯多夫 (除非单点), 与有理情形对照. $\blacksquare$
 
 ### 习题十三
 
@@ -354,7 +358,7 @@ $j$ 连续: 它是含入 $X\cong X\times\left\{0\right\}\hookrightarrow X\times\
 
 逆连续: 任取 $X$ 中开集 $U$. 需证 $j\left(U\right)$ 是 $j\left(X\right)$ (子空间) 中的开集. 构造 $V=U\times\left[0,1/2\right)\subset X\times\left[0,1\right]$. 由**定义 3.11** (乘积拓扑), $V$ 开. 它不与 $X\times\left\{1\right\}$ 相交, 故饱和 (与等价类只交整体不交), 由**定义 11.1** (商拓扑), $\pi\left(V\right)$ 在 $CX$ 中开. 而 $\pi\left(V\right)\cap j\left(X\right)=j\left(U\right)$. 故 $j\left(U\right)$ 是 $CX$ 的开集与 $j\left(X\right)$ 的交, 即 $j\left(X\right)$ 中的开集. 由**定义 3.23** (同胚), $j$ 是 $X$ 到 $j\left(X\right)$ 的同胚.
 
-**$Cf$ 连续**: 由**定义 11.2** (商映射), 只需证对任意开集 $W\subset CY$, $\left(Cf\right)^{-1}\left(W\right)$ 在 $CX$ 中开, 即 $\pi_X^{-1}\left(\left(Cf\right)^{-1}\left(W\right)\right)$ 在 $X\times\left[0,1\right]$ 中开. 该原像等于
+**$Cf$ 连续**: 由**定义 11.2** (粘合映射), 只需证对任意开集 $W\subset CY$, $\left(Cf\right)^{-1}\left(W\right)$ 在 $CX$ 中开, 即 $\pi_X^{-1}\left(\left(Cf\right)^{-1}\left(W\right)\right)$ 在 $X\times\left[0,1\right]$ 中开. 该原像等于
 
 $$
 \left\{\left(x,t\right):\left(f\left(x\right),t\right)\in\pi_Y^{-1}\left(W\right)\right\}=\left(f\times\operatorname{id}\right)^{-1}\left(\pi_Y^{-1}\left(W\right)\right).
@@ -376,7 +380,7 @@ $$
 
 验证: $\left\|\sqrt{1-t^2}\,u\right\|^2+t^2=\left(1-t^2\right)\left\|u\right\|^2+t^2=1$, 故像在 $S^{n+1}$ 上. $F$ 连续. $F\left(u,1\right)=\left(0,1\right)$ 对一切 $u$, $F\left(u,-1\right)=\left(0,-1\right)$ 对一切 $u$, 故两端被压成两点, $F$ 经由商映射分解为连续双射 $\overline F:S\left(S^n\right)\to S^{n+1}$.
 
-紧性: $S^n$ 紧, $\left[-1,1\right]$ 紧, 由**定义 3.11** (乘积拓扑) 之乘积紧, 再由**定理 5.1** (紧空间连续像紧), $S\left(S^n\right)$ 紧. $S^{n+1}$ 是豪斯多夫的 ($\mathbb R^{n+2}$ 的子空间, 由**定理 3.6** (豪斯多夫的遗传性)). 由**定理 5.6** (紧豪斯多夫间的连续双射), $\overline F$ 是同胚. $\blacksquare$
+紧性: $S^n$ 是 $\mathbb R^{n+1}$ 的有界闭子集故紧, $\left[-1,1\right]$ 紧, 由**定理 5.7** (有限乘积紧), $S^n\times\left[-1,1\right]$ 紧; 再由**定理 5.1** (紧空间连续像紧), $S\left(S^n\right)$ 紧. $S^{n+1}$ 是豪斯多夫的 ($\mathbb R^{n+2}$ 的子空间, 由**定理 3.6** (豪斯多夫的遗传性)). 由**定理 5.6** (紧豪斯多夫间的连续双射), $\overline F$ 是同胚. $\blacksquare$
 
 ### 习题十五
 
@@ -408,7 +412,7 @@ $$
 
 ### 解答 习题十六
 
-**第 1 小题**: 由**定义 11.13** ($n$-维环面), $\mathbb R^n\to\left(S^1\right)^n$ 的映射 $F\left(t\right)=\left(e^{2\pi i t_1},\dots,e^{2\pi i t_n}\right)$ 连续, 且在 $\mathbb Z^n$ 陪集上取等值. 由**定义 11.2** (商映射), $F$ 经由商映射分解为连续 $\phi:T^n\to\left(S^1\right)^n$.
+**第 1 小题**: 由**定义 11.13** ($n$-维环面), $\mathbb R^n\to\left(S^1\right)^n$ 的映射 $F\left(t\right)=\left(e^{2\pi i t_1},\dots,e^{2\pi i t_n}\right)$ 连续, 且在 $\mathbb Z^n$ 陪集上取等值. 由**定义 11.2** (粘合映射), $F$ 经由商映射分解为连续 $\phi:T^n\to\left(S^1\right)^n$.
 
 **第 2 小题**: $T^n$ 是豪斯多夫的: 下一问证 $\phi$ 是到 $\left(S^1\right)^n$ 的同胚, 而 $\left(S^1\right)^n$ 由**定理 3.6** (豪斯多夫的遗传性) 是豪斯多夫的, 故 $T^n$ 豪斯多夫.
 
