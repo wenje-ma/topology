@@ -124,7 +124,7 @@ $\mathbb Q=\bigcup_{q\in\mathbb Q}\left\{q\right\}$, 每个单点集 $\left\{q\r
 
 ### 解答 习题六
 
-这是习题三第 1 小题中 $(\Rightarrow)$ 方向的重述. 设柯西列 $\left(x_n\right)$, 选子列 $\left(x_{n_k}\right)$ 使 $\left\|x_{n_{k+1}}-x_{n_k}\right\|<2^{-k}$. 则 $\sum_k\left(x_{n_{k+1}}-x_{n_k}\right)$ 绝对收敛, 由假设收敛, 部分和即 $x_{n_{k+1}}-x_{n_1}$, 故子列收敛. 柯西列含收敛子列则全列收敛 (证明同习题三), 故 $E$ 完备. $\blacksquare$
+这是习题三第 1 小题中 $\left(\Rightarrow\right)$ 方向的重述. 设柯西列 $\left(x_n\right)$, 选子列 $\left(x_{n_k}\right)$ 使 $\left\|x_{n_{k+1}}-x_{n_k}\right\|<2^{-k}$. 则 $\sum_k\left(x_{n_{k+1}}-x_{n_k}\right)$ 绝对收敛, 由假设收敛, 部分和即 $x_{n_{k+1}}-x_{n_1}$, 故子列收敛. 柯西列含收敛子列则全列收敛 (证明同习题三), 故 $E$ 完备. $\blacksquare$
 
 ### 习题七
 

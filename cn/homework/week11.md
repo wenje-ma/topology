@@ -50,7 +50,7 @@
 
 > **定义 6.28** (算子范数)<br>$L\left(E,F\right)$ 上 $\left\|T\right\|=\sup_{\left\|x\right\|\le 1}\left\|Tx\right\|$. (题集 $\S5$ Q15)
 
-> **定义 6.29** (商范数)<br>赋范空间 $E$ 模闭子空间 $F$, $\left\|[x]\right\|=\inf_{y\in F}\left\|x+y\right\|$. (题集 $\S5.1$ C17)
+> **定义 6.29** (商范数)<br>赋范空间 $E$ 模闭子空间 $F$, $\left\|\left[x\right]\right\|=\inf_{y\in F}\left\|x+y\right\|$. (题集 $\S5.1$ C17)
 
 > **定义 6.35** (度量空间)<br>度量 $d:X\times X\to\mathbb R_{\ge0}$ 满足:<br>(1) $d\left(x,x\right)=0$;<br>(2) 若 $d\left(x,y\right)=0$ 则 $x=y$;<br>(3) $d\left(x,y\right)=d\left(y,x\right)$;<br>(4) $d\left(x,y\right)\le d\left(x,z\right)+d\left(z,y\right)$. 装备了度量 $d$ 的集合 $X$ 称为度量空间. (题集 $\S1.3$ Q2; 教材 $\S6$)
 
@@ -62,7 +62,7 @@
 
 > **定义 6.56** (线性泛函)<br>从向量空间到数域的线性映射. (题集 $\S6$ C3)
 
-> **定理 6.57** (开映射定理)<br>巴拿赫空间之间的连续满线性映射是开映射, 并且存在 $c>0$ 使 $\left\|[x]\right\|\ge c\left\|Tx\right\|$. (题集 $\S6$ C5)
+> **定理 6.57** (开映射定理)<br>巴拿赫空间之间的连续满线性映射是开映射, 并且存在 $c>0$ 使 $\left\|\left[x\right]\right\|\ge c\left\|Tx\right\|$. (题集 $\S6$ C5)
 
 > **定理 6.58** (巴拿赫-施坦豪斯)<br>巴拿赫空间到赋范空间的逐点有界连续线性映射族必一致有界. (题集 $\S6$ C6)
 
@@ -150,7 +150,7 @@ $$
 
 由**定义 6.20** (赋范线性空间), $\left\|\cdot\right\|_\infty$ 满足三公理.
 
-完备性: 设 $\left(x^{(m)}\right)$ 是 $l^\infty$ 中柯西列, 即 $\sup_n\left|x_n^{(m)}-x_n^{(k)}\right|\to0$. 对每个固定的 $n$, $\left(x_n^{(m)}\right)_m$ 是 $\mathbb R$ 中柯西列, 故收敛到 $x_n$. 由**定义 6.38** (完备度量空间), 需证 $x\in l^\infty$ 且 $\left\|x^{(m)}-x\right\|_\infty\to0$. 由柯西性取 $M$ 使 $m,k\ge M$ 时 $\sup_n\left|x_n^{(m)}-x_n^{(k)}\right|<1$. 令 $k\to\infty$ 得 $\left|x_n^{(m)}-x_n\right|\le1$ 对一切 $n$, 故 $x_n^{(m)}-x\in l^\infty$, 从而 $x=\left(x^{(m)}-x\right)+x^{(m)}\in l^\infty$. 且 $\sup_n\left|x_n^{(m)}-x_n\right|\le\epsilon$ 对 $m\ge M$, 即 $\left\|x^{(m)}-x\right\|_\infty\to0$. 由**定义 6.21** (巴拿赫空间), $l^\infty$ 完备. $\blacksquare$
+完备性: 设 $\left(x^{\left(m\right)}\right)$ 是 $l^\infty$ 中柯西列, 即 $\sup_n\left|x_n^{\left(m\right)}-x_n^{\left(k\right)}\right|\to0$. 对每个固定的 $n$, $\left(x_n^{\left(m\right)}\right)_m$ 是 $\mathbb R$ 中柯西列, 故收敛到 $x_n$. 由**定义 6.38** (完备度量空间), 需证 $x\in l^\infty$ 且 $\left\|x^{\left(m\right)}-x\right\|_\infty\to0$. 由柯西性取 $M$ 使 $m,k\ge M$ 时 $\sup_n\left|x_n^{\left(m\right)}-x_n^{\left(k\right)}\right|<1$. 令 $k\to\infty$ 得 $\left|x_n^{\left(m\right)}-x_n\right|\le1$ 对一切 $n$, 故 $x_n^{\left(m\right)}-x\in l^\infty$, 从而 $x=\left(x^{\left(m\right)}-x\right)+x^{\left(m\right)}\in l^\infty$. 且 $\sup_n\left|x_n^{\left(m\right)}-x_n\right|\le\epsilon$ 对 $m\ge M$, 即 $\left\|x^{\left(m\right)}-x\right\|_\infty\to0$. 由**定义 6.21** (巴拿赫空间), $l^\infty$ 完备. $\blacksquare$
 
 ### 习题七
 
@@ -302,13 +302,13 @@ $$
 
 严格包含: $x_n=n^{-1/p}$ 时 $\sum n^{-1}$ 发散, 但 $\sum n^{-q/p}<\infty$ (因 $q/p>1$), 故 $x\in l^q$ 但 $x\notin l^p$.
 
-闭性: 设 $x^{(m)}\in l^p$ 按 $l^q$ 范数收敛到 $x$. 对任意有限 $N$,
+闭性: 设 $x^{\left(m\right)}\in l^p$ 按 $l^q$ 范数收敛到 $x$. 对任意有限 $N$,
 
 $$
-\sum_{n=1}^N\left|x_n\right|^p=\lim_{m\to\infty}\sum_{n=1}^N\left|x_n^{(m)}\right|^p\le\liminf_{m\to\infty}\sum_{n=1}^\infty\left|x_n^{(m)}\right|^p.
+\sum_{n=1}^N\left|x_n\right|^p=\lim_{m\to\infty}\sum_{n=1}^N\left|x_n^{\left(m\right)}\right|^p\le\liminf_{m\to\infty}\sum_{n=1}^\infty\left|x_n^{\left(m\right)}\right|^p.
 $$
 
-右端有界 ($\left\|x^{(m)}\right\|_p$ 由 $l^q$ 收敛控制, 因 $l^p\subset l^q$ 包含关系给出范数比较). 令 $N\to\infty$ 得 $\sum_n\left|x_n\right|^p<\infty$, 故 $x\in l^p$. 由**定义 3.21** (闭集), $l^p$ 闭.
+右端有界 ($\left\|x^{\left(m\right)}\right\|_p$ 由 $l^q$ 收敛控制, 因 $l^p\subset l^q$ 包含关系给出范数比较). 令 $N\to\infty$ 得 $\sum_n\left|x_n\right|^p<\infty$, 故 $x\in l^p$. 由**定义 3.21** (闭集), $l^p$ 闭.
 
 由**定义 6.60** ($l^p$ 空间) 与**定理 6.14** (递增闭集族) 的标准应用, 上述结论成立. $\blacksquare$
 

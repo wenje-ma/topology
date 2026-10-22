@@ -74,7 +74,7 @@
 
 > **定义 6.46** (点到集合的距离)<br>$d\left(x,A\right)=\inf_{a\in A}d\left(x,a\right)$. (题集 $\S3.2$)
 
-> **定义 7.4** (局部紧空间)<br>设 $X$ 为豪斯多夫空间. 若 $X$ 有由紧集组成的基 $\{B\}$, 则称 $X$ 局部紧. (教材 $\S7$, p44). 标准定义 (Munkres $\S29$): $X$ 在 $x$ 处局部紧, 若存在 $X$ 的紧子空间 $C$ 包含着 $x$ 的一个邻域; 每点如此则称 $X$ 局部紧.
+> **定义 7.4** (局部紧空间)<br>设 $X$ 为豪斯多夫空间. 若 $X$ 有由紧集组成的基 $\left\{B\right\}$, 则称 $X$ 局部紧. (教材 $\S7$, p44). 标准定义 (Munkres $\S29$): $X$ 在 $x$ 处局部紧, 若存在 $X$ 的紧子空间 $C$ 包含着 $x$ 的一个邻域; 每点如此则称 $X$ 局部紧.
 
 > **定义 7.5** (单点紧化)<br>亚历山德罗夫紧化 $\overline X=X\cup\left\{\infty\right\}$, 以 $\left(X-K\right)\cup\left\{\infty\right\}$ (其中 $K\subset X$ 紧致) 为 $\infty$ 的邻域. (教材 $\S7$)
 
@@ -230,7 +230,7 @@ $\left(\Leftarrow\right)$ 设对每个紧集 $K\subset E$, $f\left(K\right)$ 紧
 
 ### 解答 习题十二
 
-**第一问**: 由**定义 11.6** (锥, Armstrong 第4章), $CX=X\times\left[0,1\right]/X\times\left\{1\right\}$, 商映射 $\pi:X\times\left[0,1\right]\to CX$ 把 $X\times\left\{1\right\}$ 捏成一点, 在 $X\times\left[0,1\right)$ 上单射 (划分 (b) 为单点类). 令 $Y=X\times\left[0,1\right)$. $Y$ 豪斯多夫: 由**定理 3.6** (豪斯多夫的遗传性), $X$ 豪斯多夫 (题设), $\left[0,1\right)$ 是度量空间 $\mathbb R$ 的子空间故豪斯多夫 (由**教材 §6** (度量空间是豪斯多夫的) 与**定理 3.6**), 乘积仍豪斯多夫. $Y$ 局部紧 (按**定义 7.4** (局部紧空间) 中 Munkres §29 的表述): 对 $(x,t)\in Y$, 取 $t'$ 使 $t<t'<1$; $\left[0,t'\right]\subset\mathbb R$ 闭且有界, 由**定理 5.3** 紧, $X$ 紧 (题设), 由**定理 5.7** (有限乘积紧) $X\times\left[0,t'\right]$ 紧; 它含 $(x,t)$ 的开邻域 $X\times\left(0,t'\right)$, 故是 $(x,t)$ 的紧邻域. 由**定义 7.5** (单点紧化), $Y^*=Y\cup\left\{\infty\right\}$, $\infty$ 的邻域为 $\left(Y\setminus K\right)\cup\left\{\infty\right\}$, $K\subset Y$ 紧.
+**第一问**: 由**定义 11.6** (锥, Armstrong 第4章), $CX=X\times\left[0,1\right]/X\times\left\{1\right\}$, 商映射 $\pi:X\times\left[0,1\right]\to CX$ 把 $X\times\left\{1\right\}$ 捏成一点, 在 $X\times\left[0,1\right)$ 上单射 (划分 (b) 为单点类). 令 $Y=X\times\left[0,1\right)$. $Y$ 豪斯多夫: 由**定理 3.6** (豪斯多夫的遗传性), $X$ 豪斯多夫 (题设), $\left[0,1\right)$ 是度量空间 $\mathbb R$ 的子空间故豪斯多夫 (由**教材 §6** (度量空间是豪斯多夫的) 与**定理 3.6**), 乘积仍豪斯多夫. $Y$ 局部紧 (按**定义 7.4** (局部紧空间) 中 Munkres §29 的表述): 对 $\left(x,t\right)\in Y$, 取 $t'$ 使 $t<t'<1$; $\left[0,t'\right]\subset\mathbb R$ 闭且有界, 由**定理 5.3** 紧, $X$ 紧 (题设), 由**定理 5.7** (有限乘积紧) $X\times\left[0,t'\right]$ 紧; 它含 $\left(x,t\right)$ 的开邻域 $X\times\left(0,t'\right)$, 故是 $\left(x,t\right)$ 的紧邻域. 由**定义 7.5** (单点紧化), $Y^*=Y\cup\left\{\infty\right\}$, $\infty$ 的邻域为 $\left(Y\setminus K\right)\cup\left\{\infty\right\}$, $K\subset Y$ 紧.
 
 构造双射 $\psi:CX\to Y^*$: 令 $\psi\left(\left[\left(x,t\right)\right]\right)=\left(x,t\right)$ 对 $t<1$, $\psi\left(\left[\left(x,1\right)\right]\right)=\infty$. 由**定义 11.6** (锥) 的划分 (a)(b), 每个类恰为 $X\times\left\{1\right\}$ 或单点 $\left\{\left(x,t\right)\right\}$, 故 $\psi$ 是双射.
 
@@ -238,7 +238,7 @@ $\psi$ 连续: 由**定义 11.2** (商拓扑), 只需证对 $Y^*$ 的每个开�
 
 $CX$ 紧: $X\times\left[0,1\right]$ 是紧空间之积 ($X$ 紧, $\left[0,1\right]$ 闭有界由**定理 5.3** 紧), 由**定理 5.7** (有限乘积紧) 紧; 商映射 $\pi$ 连续 (由**定义 11.2**), 由**定理 5.1** (紧空间连续像紧) $CX$ 紧.
 
-$Y^*$ 豪斯多夫: 若 $(x,t)\neq(y,s)$ 皆非 $\infty$, 由 $Y$ 豪斯多夫取 $Y$ 中不相交开邻域 $U,V$; $U,V$ 不含 $\infty$, 由**定义 7.5** 它们在 $Y^*$ 中仍开. 对 $\infty$ 与 $(x,t)$: 取 $t'$ 使 $t<t'<1$, 令 $K=X\times\left[0,t'\right]$ (紧, 如上); 则 $U=X\times\left(0,t'\right)$ 是 $(x,t)$ 的开邻域, $\left(Y\setminus K\right)\cup\left\{\infty\right\}=X\times\left(t',1\right)\cup\left\{\infty\right\}$ 是 $\infty$ 的邻域 (由**定义 7.5**), 且 $U\cap\left(Y\setminus K\right)=\emptyset$. 故 $Y^*$ 豪斯多夫.
+$Y^*$ 豪斯多夫: 若 $\left(x,t\right)\neq\left(y,s\right)$ 皆非 $\infty$, 由 $Y$ 豪斯多夫取 $Y$ 中不相交开邻域 $U,V$; $U,V$ 不含 $\infty$, 由**定义 7.5** 它们在 $Y^*$ 中仍开. 对 $\infty$ 与 $\left(x,t\right)$: 取 $t'$ 使 $t<t'<1$, 令 $K=X\times\left[0,t'\right]$ (紧, 如上); 则 $U=X\times\left(0,t'\right)$ 是 $\left(x,t\right)$ 的开邻域, $\left(Y\setminus K\right)\cup\left\{\infty\right\}=X\times\left(t',1\right)\cup\left\{\infty\right\}$ 是 $\infty$ 的邻域 (由**定义 7.5**), 且 $U\cap\left(Y\setminus K\right)=\emptyset$. 故 $Y^*$ 豪斯多夫.
 
 由**定理 5.6** (紧豪斯多夫间的连续双射), $\psi$ 是同胚. 第一问得证.
 
