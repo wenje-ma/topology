@@ -194,7 +194,7 @@ $$
 
 由习题三, $g_a$ 是**定义 6.19** (压缩映射), 由**定理 6.16** (巴拿赫不动点定理), 该方程有唯一解 $J\left(a\right)$.
 
-由习题四, $\left\|J\left(a\right)-J\left(b\right)\right\|\le\frac{1}{\left|\lambda\right|-K}\left\|a-b\right\|$, 即 $J$ 是利普希茨映射. 利普希茨映射连续: 对任意开集 $U\subset E$ 与 $a\in J^{-1}\left(U\right)$, 取 $\epsilon>0$ 使 $B\left(J\left(a\right),\epsilon\right)\subset U$, 则 $\left\|b-a\right\|<\left(\left|\lambda\right|-K\right)\epsilon$ 蕴含 $\left\|J\left(b\right)-J\left(a\right)\right\|<\epsilon$, 即 $J^{-1}\left(U\right)$ 含 $a$ 的一个邻域. 由**定义 3.22** (连续映射), $J$ 连续. $\blacksquare$
+由习题四, $\left\|J\left(a\right)-J\left(b\right)\right\|\le\frac{1}{\left|\lambda\right|-K}\left\|a-b\right\|$, 即 $J$ 是利普希茨映射. 利普希茨映射连续: 对任意开集 $U\subset E$ 与 $a\in J^{-1}\left(U\right)$, 取 $\varepsilon>0$ 使 $B\left(J\left(a\right),\varepsilon\right)\subset U$, 则 $\left\|b-a\right\|<\left(\left|\lambda\right|-K\right)\varepsilon$ 蕴含 $\left\|J\left(b\right)-J\left(a\right)\right\|<\varepsilon$, 即 $J^{-1}\left(U\right)$ 含 $a$ 的一个邻域. 由**定义 3.22** (连续映射), $J$ 连续. $\blacksquare$
 
 ### 习题六
 
@@ -260,7 +260,7 @@ $$
 
 ### 习题九
 
-(伪距离的商距离) 回顾伪距离 $d$ 是除 $d\left(x,y\right)=0\Rightarrow x=y$ 外满足全部度量公理的函数, 见**定义 6.44** (伪距离). 伪距离空间 $\left(X,d\right)$ 以开球 $B\left(x,\epsilon\right)$ 为基有拓扑. 定义 $x\sim y$ 当且仅当 $d\left(x,y\right)=0$. 证明: $\sim$ 是等价关系; 商空间 $X/{\sim}$ 上可赋予距离 $d'$ 使 $d'\left(\left[x\right],\left[y\right]\right)=d\left(x,y\right)$; 验证 $d'$ 定义适定; 证明度量空间 $\left(X/{\sim},d'\right)$ 与商空间 $X/{\sim}$ 拓扑相同; 并证明若 $F$ 是豪斯多夫空间且 $f:X\to F$ 连续, 则 $f$ 可分解为 $f=f'\circ\pi$, 其中 $f':X/{\sim}\to F$.
+(伪距离的商距离) 回顾伪距离 $d$ 是除 $d\left(x,y\right)=0\Rightarrow x=y$ 外满足全部度量公理的函数, 见**定义 6.44** (伪距离). 伪距离空间 $\left(X,d\right)$ 以开球 $B\left(x,\varepsilon\right)$ 为基有拓扑. 定义 $x\sim y$ 当且仅当 $d\left(x,y\right)=0$. 证明: $\sim$ 是等价关系; 商空间 $X/{\sim}$ 上可赋予距离 $d'$ 使 $d'\left(\left[x\right],\left[y\right]\right)=d\left(x,y\right)$; 验证 $d'$ 定义适定; 证明度量空间 $\left(X/{\sim},d'\right)$ 与商空间 $X/{\sim}$ 拓扑相同; 并证明若 $F$ 是豪斯多夫空间且 $f:X\to F$ 连续, 则 $f$ 可分解为 $f=f'\circ\pi$, 其中 $f':X/{\sim}\to F$.
 
 ### 解答 习题九
 
@@ -276,15 +276,15 @@ $$
 
 **$d'$ 是度量**: 非负、对称、三角不等式都从 $d$ 继承; 而 $d'\left(\left[x\right],\left[y\right]\right)=0$ 即 $d\left(x,y\right)=0$, 即 $x\sim y$, 即 $\left[x\right]=\left[y\right]$. 正定性成立.
 
-**拓扑相同**: 记 $\pi:X\to X/{\sim}$ 为商投影. 对任意 $x,\epsilon$,
+**拓扑相同**: 记 $\pi:X\to X/{\sim}$ 为商投影. 对任意 $x,\varepsilon$,
 
 $$
-\pi^{-1}\left(B_{d'}\left(\left[x\right],\epsilon\right)\right)=B_d\left(x,\epsilon\right).
+\pi^{-1}\left(B_{d'}\left(\left[x\right],\varepsilon\right)\right)=B_d\left(x,\varepsilon\right).
 $$
 
-包含 $\subset$: 若 $z$ 使 $d'\left(\left[z\right],\left[x\right]\right)<\epsilon$, 即 $d\left(z,x\right)<\epsilon$, 则 $z\in B_d\left(x,\epsilon\right)$. 包含 $\supset$: 若 $z\in B_d\left(x,\epsilon\right)$, 则 $d'\left(\left[z\right],\left[x\right]\right)=d\left(z,x\right)<\epsilon$. 由**定义 11.1** (商拓扑), $B_{d'}\left(\left[x\right],\epsilon\right)$ 是商开集, 故度量拓扑粗于商拓扑. 反之, 若 $U$ 是商开集, 则 $\pi^{-1}\left(U\right)$ 是 $d$-开集, 从而是若干 $d$-球之并, 其像 $U=\pi\left(\pi^{-1}\left(U\right)\right)$ 是若干 $d'$-球之并, 故 $U$ 是度量开集. 二者一致.
+包含 $\subset$: 若 $z$ 使 $d'\left(\left[z\right],\left[x\right]\right)<\varepsilon$, 即 $d\left(z,x\right)<\varepsilon$, 则 $z\in B_d\left(x,\varepsilon\right)$. 包含 $\supset$: 若 $z\in B_d\left(x,\varepsilon\right)$, 则 $d'\left(\left[z\right],\left[x\right]\right)=d\left(z,x\right)<\varepsilon$. 由**定义 11.1** (商拓扑), $B_{d'}\left(\left[x\right],\varepsilon\right)$ 是商开集, 故度量拓扑粗于商拓扑. 反之, 若 $U$ 是商开集, 则 $\pi^{-1}\left(U\right)$ 是 $d$-开集, 从而是若干 $d$-球之并, 其像 $U=\pi\left(\pi^{-1}\left(U\right)\right)$ 是若干 $d'$-球之并, 故 $U$ 是度量开集. 二者一致.
 
-**泛分解**: 设 $F$ 豪斯多夫, $f:X\to F$ 连续. 先证 $f$ 在等价类上取常值. 若 $x\sim x'$, 即 $d\left(x,x'\right)=0$, 则 $x$ 与 $x'$ 在 $X$ 中无法用开集分离: 对任意 $\epsilon>0$, $B_d\left(x,\epsilon\right)=B_d\left(x',\epsilon\right)$. 若 $f\left(x\right)\neq f\left(x'\right)$, 由**定义 3.10** (豪斯多夫空间) 存在不相交开邻域 $V\ni f\left(x\right)$, $W\ni f\left(x'\right)$. 由**定义 3.22** (连续映射), $f^{-1}\left(V\right)$ 是 $x$ 的开邻域, 从而含 $x'$, 故 $f\left(x'\right)\in V$, 与 $V\cap W=\emptyset$ 及 $f\left(x'\right)\in W$ 矛盾. 故 $f\left(x\right)=f\left(x'\right)$.
+**泛分解**: 设 $F$ 豪斯多夫, $f:X\to F$ 连续. 先证 $f$ 在等价类上取常值. 若 $x\sim x'$, 即 $d\left(x,x'\right)=0$, 则 $x$ 与 $x'$ 在 $X$ 中无法用开集分离: 对任意 $\varepsilon>0$, $B_d\left(x,\varepsilon\right)=B_d\left(x',\varepsilon\right)$. 若 $f\left(x\right)\neq f\left(x'\right)$, 由**定义 3.10** (豪斯多夫空间) 存在不相交开邻域 $V\ni f\left(x\right)$, $W\ni f\left(x'\right)$. 由**定义 3.22** (连续映射), $f^{-1}\left(V\right)$ 是 $x$ 的开邻域, 从而含 $x'$, 故 $f\left(x'\right)\in V$, 与 $V\cap W=\emptyset$ 及 $f\left(x'\right)\in W$ 矛盾. 故 $f\left(x\right)=f\left(x'\right)$.
 
 于是可定义 $f'\left(\left[x\right]\right)=f\left(x\right)$, 适定. 由**定义 11.2** (粘合映射), 为证 $f'$ 连续, 只需对任意开集 $O\subset F$, $\left(f'\right)^{-1}\left(O\right)$ 商开, 即 $\pi^{-1}\left(\left(f'\right)^{-1}\left(O\right)\right)=f^{-1}\left(O\right)$ 在 $X$ 中开; 这由 $f$ 连续保证. 故 $f=f'\circ\pi$. $\blacksquare$
 
@@ -297,7 +297,7 @@ $$
 **($\Leftarrow$)**: 设拓扑由半范数族 $\left\{p_\alpha\right\}_{\alpha\in A}$ 定义. 由**定义 6.25** (半范数), 每个 $p_\alpha$ 是凸函数 (由三角不等式 $p_\alpha\left(\left(1-t\right)x+ty\right)\le\left(1-t\right)p_\alpha\left(x\right)+tp_\alpha\left(y\right)$). 形如
 
 $$
-U_{\alpha_1,\dots,\alpha_n;\epsilon}=\left\{x:p_{\alpha_i}\left(x\right)<\epsilon,\ i=1,\dots,n\right\}
+U_{\alpha_1,\dots,\alpha_n;\varepsilon}=\left\{x:p_{\alpha_i}\left(x\right)<\varepsilon,\ i=1,\dots,n\right\}
 $$
 
 的集合是有限个凸集的交, 由**定义 4.23** (凸集) 仍是凸集; 它们构成 $0$ 的邻域基. 故由**定义 6.26** (局部凸空间), 空间局部凸.
@@ -308,7 +308,7 @@ $$
 p_\alpha\left(x\right)=\inf\left\{t>0:x\in t\,C_\alpha\right\}.
 $$
 
-这正是**定义 6.27** (规范函数). 由 $C_\alpha$ 凸且平衡, $p_\alpha$ 满足**定义 6.25** (半范数) 的两条: 齐次 $p_\alpha\left(\lambda x\right)=\left|\lambda\right|p_\alpha\left(x\right)$; 三角不等式由 $C_\alpha$ 凸推出. 邻域 $\left\{p_\alpha<\epsilon\right\}$ 就是 $\epsilon C_\alpha$, 故半范数族 $\left\{p_\alpha\right\}$ 定义的拓扑与原拓扑相同.
+这正是**定义 6.27** (规范函数). 由 $C_\alpha$ 凸且平衡, $p_\alpha$ 满足**定义 6.25** (半范数) 的两条: 齐次 $p_\alpha\left(\lambda x\right)=\left|\lambda\right|p_\alpha\left(x\right)$; 三角不等式由 $C_\alpha$ 凸推出. 邻域 $\left\{p_\alpha<\varepsilon\right\}$ 就是 $\varepsilon C_\alpha$, 故半范数族 $\left\{p_\alpha\right\}$ 定义的拓扑与原拓扑相同.
 
 **可数情形**: 若 $0$ 有可数凸邻域基 $\left\{C_n\right\}_{n\ge 1}$, 上面的构造给出可数半范数族 $\left\{p_n\right\}$. 反之, 若拓扑由可数半范数族 $\left\{p_n\right\}$ 定义, 则 $\left\{x:p_i\left(x\right)<1/k,\ i=1,\dots,n\right\}$ ($n,k\ge 1$) 是可数凸邻域基. $\blacksquare$
 
@@ -322,7 +322,7 @@ $$
 
 **有理斜率**: 设 $\alpha=p/q$, $p,q\in\mathbb Z$, $\gcd\left(p,q\right)=1$. 映射 $g:\mathbb R/q\mathbb Z\to T^2$, $g\left(t\right)=\pi\left(t,\alpha t\right)$. 它良定义且连续 (由**定义 11.2** (粘合映射), $\mathbb R/q\mathbb Z$ 上的映射经由商投影分解). 它是单射: 若 $\pi\left(t,\alpha t\right)=\pi\left(t',\alpha t'\right)$, 则 $t-t'\in\mathbb Z$ 且 $p\left(t-t'\right)/q\in\mathbb Z$, 即 $q\mid p\left(t-t'\right)$; 由 $\gcd\left(p,q\right)=1$, $q\mid t-t'$, 即在 $\mathbb R/q\mathbb Z$ 中相等. $\mathbb R/q\mathbb Z$ 是紧圆 (同胚于 $S^1$), $T^2$ 是豪斯多夫的 (由**定义 11.7** (环面) $T^2\cong S^1\times S^1$, 而 $S^1$ 是 $\mathbb R^2$ 的子空间故豪斯多夫, 由**定理 3.6** (豪斯多夫的遗传性) 乘积仍豪斯多夫). 由**定理 5.6** (紧豪斯多夫间的连续双射), $g$ 是同胚. 故 $\pi\left(D\right)=g\left(\mathbb R/q\mathbb Z\right)$ 同胚于圆.
 
-**无理斜率**: 设 $\alpha\notin\mathbb Q$. 先证 $\pi\left(D\right)$ 在 $T^2$ 中稠密. 记 $H=\pi\left(D\right)=\left\{\pi\left(t,\alpha t\right):t\in\mathbb R\right\}\subset T^2$, 它是 $T^2$ 的子群 (按**定义 11.7** (环面) 中 $\mathbb R^2/\mathbb Z^2$ 的群结构). 由**定义 3.32** (稠密), 只需证 $\overline H=T^2$. 由狄利克雷逼近 (鸽巢原理: 对 $N$ 个点 $0,\alpha,2\alpha,\dots,N\alpha\pmod 1$, 必有两点相距 $<1/N$), 对任意 $\epsilon>0$ 存在非零整数 $m$ 使 $\left\|m\alpha\right\|<\epsilon$ (到最近整数距离), 即 $\pi\left(m,m\alpha\right)$ 离 $\left(0,0\right)\in T^2$ 任意近. $H$ 中含任意接近单位元的非零点, 故 $H$ 不是离散子群; 而 $H$ 在第一坐标上的投影 $t\mapsto t\pmod 1$ 是满射到 $S^1$ (因 $t$ 取遍 $\mathbb R$), 结合第二坐标 $t\mapsto\alpha t\pmod 1$ 的无理旋转 (稠密), 即得 $H$ 在 $T^2$ 中稠密.
+**无理斜率**: 设 $\alpha\notin\mathbb Q$. 先证 $\pi\left(D\right)$ 在 $T^2$ 中稠密. 记 $H=\pi\left(D\right)=\left\{\pi\left(t,\alpha t\right):t\in\mathbb R\right\}\subset T^2$, 它是 $T^2$ 的子群 (按**定义 11.7** (环面) 中 $\mathbb R^2/\mathbb Z^2$ 的群结构). 由**定义 3.32** (稠密), 只需证 $\overline H=T^2$. 由狄利克雷逼近 (鸽巢原理: 对 $N$ 个点 $0,\alpha,2\alpha,\dots,N\alpha\pmod 1$, 必有两点相距 $<1/N$), 对任意 $\varepsilon>0$ 存在非零整数 $m$ 使 $\left\|m\alpha\right\|<\varepsilon$ (到最近整数距离), 即 $\pi\left(m,m\alpha\right)$ 离 $\left(0,0\right)\in T^2$ 任意近. $H$ 中含任意接近单位元的非零点, 故 $H$ 不是离散子群; 而 $H$ 在第一坐标上的投影 $t\mapsto t\pmod 1$ 是满射到 $S^1$ (因 $t$ 取遍 $\mathbb R$), 结合第二坐标 $t\mapsto\alpha t\pmod 1$ 的无理旋转 (稠密), 即得 $H$ 在 $T^2$ 中稠密.
 
 $\pi|_D:D\to\pi\left(D\right)$ 连续 (它是商映射 $\pi$ 在子空间 $D$ 上的限制, 由**定义 3.19** (子空间拓扑) 连续). 它是双射: 若 $\pi\left(t,\alpha t\right)=\pi\left(t',\alpha t'\right)$, 则 $t-t'\in\mathbb Z$ 且 $\alpha\left(t-t'\right)\in\mathbb Z$, 由 $\alpha$ 无理必有 $t-t'=0$. $\blacksquare$
 
@@ -483,10 +483,10 @@ $$
 由**定义 6.30** (弱拓扑), 弱拓扑是由 $E^*$ 中全体连续线性泛函诱导的初始拓扑. 由**定理 6.50** (哈恩-巴拿赫定理), $E^*$ 分离 $E$ 的点. 弱拓扑的基本邻域形如
 
 $$
-U\left(x_0;\varphi_1,\dots,\varphi_n;\epsilon\right)=\left\{x:\left|\varphi_i\left(x-x_0\right)\right|<\epsilon,\ i=1,\dots,n\right\}.
+U\left(x_0;\varphi_1,\dots,\varphi_n;\varepsilon\right)=\left\{x:\left|\varphi_i\left(x-x_0\right)\right|<\varepsilon,\ i=1,\dots,n\right\}.
 $$
 
-它是 $x_0$ 加上有限个超平面交 (即无穷维仿射子空间) 的 $\epsilon$-管.
+它是 $x_0$ 加上有限个超平面交 (即无穷维仿射子空间) 的 $\varepsilon$-管.
 
 **强 $\neq$ 弱**: 在无穷维, 任意弱开邻域 $U$ 都含一个无穷维仿射子空间, 故不可能含于一个强有界集; 特别地强开单位球不是弱开的. 故弱拓扑严格粗于强拓扑.
 
@@ -510,7 +510,7 @@ $$
 
 **粗于弱星拓扑**: 由**定义 6.31** (弱星拓扑), 弱星拓扑由全部 $x\in E$ 的赋值诱导. 本题初始拓扑仅用 $x\in D\subset E$. 映射更少, 由**定义 3.14** (初始拓扑) 的"最粗性", 用较少映射得到的拓扑粗于用全部映射得到的弱星拓扑.
 
-**稠密 $D$ 时在有界集上相同**: 设 $B\subset E^*$ 有界, 即 $\sup_{\varphi\in B}\left\|\varphi\right\|<\infty$. 已知弱星 $\Rightarrow$ 初始方向 (上一问). 反之, 设网 $\left\{\varphi_\alpha\right\}\subset B$ 在初始拓扑下收敛到 $\varphi\in B$, 即对每个 $x\in D$, $\varphi_\alpha\left(x\right)\to\varphi\left(x\right)$. 任取 $y\in E$, 由 $D$ 稠密取 $x_n\in D\to y$. 对 $\epsilon>0$, 取 $x_n$ 使 $\left\|y-x_n\right\|<\epsilon/\left(\sup_B\left\|\varphi_\alpha\right\|+\sup_B\left\|\varphi\right\|+1\right)$. 则
+**稠密 $D$ 时在有界集上相同**: 设 $B\subset E^*$ 有界, 即 $\sup_{\varphi\in B}\left\|\varphi\right\|<\infty$. 已知弱星 $\Rightarrow$ 初始方向 (上一问). 反之, 设网 $\left\{\varphi_\alpha\right\}\subset B$ 在初始拓扑下收敛到 $\varphi\in B$, 即对每个 $x\in D$, $\varphi_\alpha\left(x\right)\to\varphi\left(x\right)$. 任取 $y\in E$, 由 $D$ 稠密取 $x_n\in D\to y$. 对 $\varepsilon>0$, 取 $x_n$ 使 $\left\|y-x_n\right\|<\varepsilon/\left(\sup_B\left\|\varphi_\alpha\right\|+\sup_B\left\|\varphi\right\|+1\right)$. 则
 
 $$
 \left|\varphi_\alpha\left(y\right)-\varphi\left(y\right)\right|\le\left|\varphi_\alpha\left(y-x_n\right)\right|+\left|\varphi_\alpha\left(x_n\right)-\varphi\left(x_n\right)\right|+\left|\varphi\left(x_n-y\right)\right|.

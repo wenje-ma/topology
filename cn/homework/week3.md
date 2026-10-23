@@ -42,7 +42,7 @@
 
 > **定义 6.46** (点到集合的距离)<br>$d\left(x,A\right)=\inf_{a\in A}d\left(x,a\right)$. (题集 $\S3.2$)
 
-> **定义 6.47** ($\epsilon$-邻域)<br>$U_\epsilon\left(A\right)=\left\{x\in X:d\left(x,A\right)<\epsilon\right\}$. (题集 $\S3.2$)
+> **定义 6.47** ($\varepsilon$-邻域)<br>$U_\varepsilon\left(A\right)=\left\{x\in X:d\left(x,A\right)<\varepsilon\right\}$. (题集 $\S3.2$)
 
 > **命题** (可分度量空间必有可数基)<br>若度量空间 $X$ 有可数稠密子集, 则 $X$ 有可数基. 事实上对可度量化空间, 可分与第二可数等价. (Munkres $\S30$, 习题 5(a))
 
@@ -116,7 +116,7 @@ $$
 
 **($\Rightarrow$)** 设 $F$ 闭. 由**定义 3.21** (闭集), $\mathbb R\setminus F$ 开. 设 $x_n\in F$ 且 $x_n\to L$. 若 $L\notin F$, 则 $L\in\mathbb R\setminus F$, 而 $\mathbb R\setminus F$ 是 $L$ 的邻域. 由**定义 3.25** (邻域与极限), 对所有充分大的 $n$ 有 $x_n\in\mathbb R\setminus F$, 与 $x_n\in F$ 矛盾. 故 $L\in F$.
 
-**($\Leftarrow$)** 反证. 设 $F$ 不闭. 由**定义 3.21** (闭集), $\mathbb R\setminus F$ 不开. 故存在 $L\notin F$ 使 $L$ 的任何邻域都不含于 $\mathbb R\setminus F$, 即 $L$ 的任何邻域都与 $F$ 相交. 由**定义 6.36** (开球), 球 $B\left(L,1/n\right)=\left(L-\frac1n,L+\frac1n\right)$ 与 $F$ 相交, 取 $x_n\in F\cap B\left(L,1/n\right)$, 则 $d\left(x_n,L\right)<1/n$. 任给 $L$ 的邻域, 由**定义 6.36** (开球) 它包含某 $B\left(L,\epsilon\right)$; 当 $n>1/\epsilon$ 时 $x_n\in B\left(L,\epsilon\right)$, 故由**定义 3.25** (邻域与极限) $x_n\to L$. 但 $L\notin F$, 与假设矛盾. 故 $F$ 闭. $\blacksquare$
+**($\Leftarrow$)** 反证. 设 $F$ 不闭. 由**定义 3.21** (闭集), $\mathbb R\setminus F$ 不开. 故存在 $L\notin F$ 使 $L$ 的任何邻域都不含于 $\mathbb R\setminus F$, 即 $L$ 的任何邻域都与 $F$ 相交. 由**定义 6.36** (开球), 球 $B\left(L,1/n\right)=\left(L-\frac1n,L+\frac1n\right)$ 与 $F$ 相交, 取 $x_n\in F\cap B\left(L,1/n\right)$, 则 $d\left(x_n,L\right)<1/n$. 任给 $L$ 的邻域, 由**定义 6.36** (开球) 它包含某 $B\left(L,\varepsilon\right)$; 当 $n>1/\varepsilon$ 时 $x_n\in B\left(L,\varepsilon\right)$, 故由**定义 3.25** (邻域与极限) $x_n\to L$. 但 $L\notin F$, 与假设矛盾. 故 $F$ 闭. $\blacksquare$
 
 ### 习题五
 
@@ -232,7 +232,7 @@ $W_{n\left(x\right)}$ 作为某 $\left(a,b\right]$ 之并, 其右端点不超过
 
 (1) 证明度量空间中, 任取 $r_n\to0$, $B\left(x,r_n\right)$ 是 $x$ 的基本邻域系;
 
-(2) 但当 $A$ 是子集时, $V_{\epsilon}\left(A\right)=\left\{x:d\left(x,A\right)<\epsilon\right\}$ 不一定是 $A$ 的基本邻域系. 例如取 $A=\left\{xy=1,x>0\right\}\subset\mathbb R^2$ 与 $U=\left\{x,y>0\right\}\subset\mathbb R^2$.
+(2) 但当 $A$ 是子集时, $V_{\varepsilon}\left(A\right)=\left\{x:d\left(x,A\right)<\varepsilon\right\}$ 不一定是 $A$ 的基本邻域系. 例如取 $A=\left\{xy=1,x>0\right\}\subset\mathbb R^2$ 与 $U=\left\{x,y>0\right\}\subset\mathbb R^2$.
 
 ### 解答 习题十一
 
@@ -244,15 +244,15 @@ $$
 
 由**定义 3.30** (基本邻域系), $\left\{B\left(x,r_n\right)\right\}$ 是 $x$ 的基本邻域系.
 
-(2) 取题中 $A=\left\{\left(x,1/x\right):x>0\right\}\subset\mathbb R^2$, $U=\left\{\left(x,y\right):x>0,y>0\right\}$. $U$ 开且 $A\subset U$, 故 $U$ 是 $A$ 的邻域. 对任意 $\epsilon>0$, 取点
+(2) 取题中 $A=\left\{\left(x,1/x\right):x>0\right\}\subset\mathbb R^2$, $U=\left\{\left(x,y\right):x>0,y>0\right\}$. $U$ 开且 $A\subset U$, 故 $U$ 是 $A$ 的邻域. 对任意 $\varepsilon>0$, 取点
 
 $$
-a=\left(\frac{\epsilon}{2},\frac{2}{\epsilon}\right)\in A,
+a=\left(\frac{\varepsilon}{2},\frac{2}{\varepsilon}\right)\in A,
 $$
 
-再取 $a'=\left(-\frac{\epsilon}{4},\frac{2}{\epsilon}\right)$. 由**定义 6.46** (点到集合的距离), $d\left(a',A\right)\le d\left(a',a\right)=\frac{3\epsilon}{4}<\epsilon$, 故 $a'\in V_{\epsilon}\left(A\right)$ (**定义 6.47** ($\epsilon$-邻域)). 但 $a'$ 的横坐标为负, $a'\notin U$. 于是对每个 $\epsilon>0$, $V_{\epsilon}\left(A\right)\not\subset U$. 故没有任何 $V_{\epsilon}\left(A\right)$ 含于 $U$, 由**定义 3.30** (基本邻域系), $\left\{V_{\epsilon}\left(A\right)\right\}$ 不是 $A$ 的基本邻域系. $\blacksquare$
+再取 $a'=\left(-\frac{\varepsilon}{4},\frac{2}{\varepsilon}\right)$. 由**定义 6.46** (点到集合的距离), $d\left(a',A\right)\le d\left(a',a\right)=\frac{3\varepsilon}{4}<\varepsilon$, 故 $a'\in V_{\varepsilon}\left(A\right)$ (**定义 6.47** ($\varepsilon$-邻域)). 但 $a'$ 的横坐标为负, $a'\notin U$. 于是对每个 $\varepsilon>0$, $V_{\varepsilon}\left(A\right)\not\subset U$. 故没有任何 $V_{\varepsilon}\left(A\right)$ 含于 $U$, 由**定义 3.30** (基本邻域系), $\left\{V_{\varepsilon}\left(A\right)\right\}$ 不是 $A$ 的基本邻域系. $\blacksquare$
 
-> 同样的构造基本邻域系的规则, 为什么全集就满足, 子集就不满足呢? 因为全集上定义的邻域必定全在全集内部; 而对于子集, 我们可以找到该子集的边界作为反例的邻域, 在其上的任何 $\epsilon$-邻域都会超出其范围, 导致了这种构造方法的失效.
+> 同样的构造基本邻域系的规则, 为什么全集就满足, 子集就不满足呢? 因为全集上定义的邻域必定全在全集内部; 而对于子集, 我们可以找到该子集的边界作为反例的邻域, 在其上的任何 $\varepsilon$-邻域都会超出其范围, 导致了这种构造方法的失效.
 
 ### 习题十二
 

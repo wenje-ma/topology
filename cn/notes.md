@@ -108,7 +108,7 @@
 
 **定义 4.13** (基尔希拓扑). $\mathbb Z_{> 0}$ 上以 $\left\{pn+b:n\in\mathbb N\right\}$ ($p$ 素数且 $p\nmid b$) 为基的拓扑. (题集 §2.2 B)
 
-**定义 4.14** ($\epsilon$-链空间). $X$ 是 $\epsilon$-链的: 任意 $a,b$ 可由相邻距离 $< \epsilon$ 的有限点列连接; 对一切 $\epsilon> 0$ 都成立称全链. (题集 §4.5 C5)
+**定义 4.14** ($\varepsilon$-链空间). $X$ 是 $\varepsilon$-链的: 任意 $a,b$ 可由相邻距离 $< \varepsilon$ 的有限点列连接; 对一切 $\varepsilon> 0$ 都成立称全链. (题集 §4.5 C5)
 
 **定理 4.15** (闭包保持连通性). 连通集的闭包仍连通. (教材 §4)
 
@@ -186,7 +186,7 @@
 
 **定义 6.15** (点到集合的距离). $d\left(x,A\right)=\inf_{a\in A}d\left(x,a\right)$. (题集 §3.2 Q2)
 
-**定义 6.16** ($\epsilon$-邻域). $U_{\epsilon}\left(A\right)=\left\{x:d\left(x,A\right)< \epsilon\right\}$. (题集 §3.2 Q2)
+**定义 6.16** ($\varepsilon$-邻域). $U_{\varepsilon}\left(A\right)=\left\{x:d\left(x,A\right)< \varepsilon\right\}$. (题集 §3.2 Q2)
 
 **定理 6.16** (巴拿赫不动点定理). 非空完备度量空间上压缩映射有唯一不动点. (题集 §4.3 Q1)
 

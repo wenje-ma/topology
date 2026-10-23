@@ -34,7 +34,7 @@
 
 > **定义 4.10** (局部路径连通)<br>每点有由路径连通邻域组成的邻域基. (题集 $\S2.1$ Q3)
 
-> **定义 4.14** ($\epsilon$-链空间)<br>$X$ 是 $\epsilon$-链的, 若任意 $a,b\in X$ 可由相邻距离 $<\epsilon$ 的有限点列连接; 对一切 $\epsilon>0$ 都成立称全链. (题集 $\S4.5$ C5)
+> **定义 4.14** ($\varepsilon$-链空间)<br>$X$ 是 $\varepsilon$-链的, 若任意 $a,b\in X$ 可由相邻距离 $<\varepsilon$ 的有限点列连接; 对一切 $\varepsilon>0$ 都成立称全链. (题集 $\S4.5$ C5)
 
 > **定理 4.15** (闭包保持连通性)<br>连通集的闭包仍连通. (教材 $\S4$, p27)
 
@@ -72,7 +72,7 @@
 
 可数性: 每个 $I_x$ 是非空开区间, 可取其中一个有理数 $q_x$. 因诸 $I_x$ 互不相交, 不同 $x$ 给出不同 $q_x$, 故 $\left\{I_x:x\in U\right\}$ 与 $\mathbb Q$ 的某子集一一对应, 因而是可数族. 又因每个 $x\in U$ 都含于 $I_x$, 故 $U=\bigcup_{x\in U}I_x$.
 
-端点: 写 $I_x=\left(a_x,b_x\right)$. 若 $a_x\in U$, 则 $a_x\in I_y$ 对某 $y\in U$. 因 $I_y$ 开, 存在 $\epsilon>0$ 使 $\left(a_x-\epsilon,a_x+\epsilon\right)\subset I_y\subset U$. 于是 $\left(a_x-\epsilon,b_x\right)$ 是含 $x$ 且含于 $U$ 的开区间, 它比 $I_x$ 向左更长, 与 $I_x$ 的极大性矛盾. 故 $a_x\notin U$. 同理 $b_x\notin U$.
+端点: 写 $I_x=\left(a_x,b_x\right)$. 若 $a_x\in U$, 则 $a_x\in I_y$ 对某 $y\in U$. 因 $I_y$ 开, 存在 $\varepsilon>0$ 使 $\left(a_x-\varepsilon,a_x+\varepsilon\right)\subset I_y\subset U$. 于是 $\left(a_x-\varepsilon,b_x\right)$ 是含 $x$ 且含于 $U$ 的开区间, 它比 $I_x$ 向左更长, 与 $I_x$ 的极大性矛盾. 故 $a_x\notin U$. 同理 $b_x\notin U$.
 
 唯一性: 若另有分解 $U=\bigcup_{j\in J}J_j$, 其中 $J_j$ 为互不相交开区间. 对每个 $x\in U$, $x$ 属于唯一的 $J_{j\left(x\right)}$. $J_{j\left(x\right)}$ 是含 $x$ 且含于 $U$ 的开区间, 由 $I_x$ 的极大性 $J_{j\left(x\right)}\subset I_x$; 反之, $I_x$ 是含 $x$ 且含于 $U$ 的开区间, 而 $J_{j\left(x\right)}$ 是含 $x$ 的极大连通开块, 故 $I_x\subset J_{j\left(x\right)}$. 因此 $J_{j\left(x\right)}=I_x$, 两分解一致. $\blacksquare$
 
@@ -216,15 +216,15 @@ $$
 
 ### 习题十
 
-链空间. 称度量空间 $X$ 是 $\epsilon$-链的, 若任意 $a,b\in X$ 可由有限点列 $x_0=a,\dots,x_n=b$ 连接使 $d\left(x_i,x_{i+1}\right)<\epsilon$; 对一切 $\epsilon>0$ 都成立称**定义 4.14** ($\epsilon$-链空间). 证明: $X$ 连通则 $X$ 是 $\epsilon$-链空间; $X$ 紧且 $\epsilon$-链则 $X$ 连通; 举例说明 $\epsilon$-链空间可以不连通.
+链空间. 称度量空间 $X$ 是 $\varepsilon$-链的, 若任意 $a,b\in X$ 可由有限点列 $x_0=a,\dots,x_n=b$ 连接使 $d\left(x_i,x_{i+1}\right)<\varepsilon$; 对一切 $\varepsilon>0$ 都成立称**定义 4.14** ($\varepsilon$-链空间). 证明: $X$ 连通则 $X$ 是 $\varepsilon$-链空间; $X$ 紧且 $\varepsilon$-链则 $X$ 连通; 举例说明 $\varepsilon$-链空间可以不连通.
 
 ### 解答 习题十
 
-连通 $\Rightarrow$ $\epsilon$-链: 固定 $\epsilon>0$, 定义 $a\sim b$ 为存在 $\epsilon$-链. 等价类在**定义 6.36** (开球) $B\left(x,\epsilon\right)$ 下封闭, 故每个等价类开; 其余等价类之并也开. 由**定义 4.19** (既开又闭集), 连通空间只有一个等价类, 即 $X$ 是**定义 4.14** ($\epsilon$-链空间).
+连通 $\Rightarrow$ $\varepsilon$-链: 固定 $\varepsilon>0$, 定义 $a\sim b$ 为存在 $\varepsilon$-链. 等价类在**定义 6.36** (开球) $B\left(x,\varepsilon\right)$ 下封闭, 故每个等价类开; 其余等价类之并也开. 由**定义 4.19** (既开又闭集), 连通空间只有一个等价类, 即 $X$ 是**定义 4.14** ($\varepsilon$-链空间).
 
-紧且 $\epsilon$-链 $\Rightarrow$ 连通: 反设 $X$ 不连通, 则 $X=A\cup B$ 为非空不交闭集分离. 因 $X$ 紧, $A,B$ 是闭子集, 由**定理 5.4** (闭子集紧) 它们紧. 距离 $\delta=d\left(A,B\right)>0$: 取 $a_n\in A$, $b_n\in B$ 使 $d\left(a_n,b_n\right)\to\delta$, 由**定理 6.1** (紧 $=$ 序列紧) 抽子列 $a_{n_j}\to a\in A$, $b_{n_j}\to b\in B$, 若 $\delta=0$ 则 $d\left(a,b\right)=0$, 即 $a=b$, 与 $A\cap B=\emptyset$ 矛盾, 故 $\delta>0$. 取 $\epsilon<\delta$, 则 $\epsilon$-链不可能从 $A$ 跨到 $B$, 与 $\epsilon$-链矛盾.
+紧且 $\varepsilon$-链 $\Rightarrow$ 连通: 反设 $X$ 不连通, 则 $X=A\cup B$ 为非空不交闭集分离. 因 $X$ 紧, $A,B$ 是闭子集, 由**定理 5.4** (闭子集紧) 它们紧. 距离 $\delta=d\left(A,B\right)>0$: 取 $a_n\in A$, $b_n\in B$ 使 $d\left(a_n,b_n\right)\to\delta$, 由**定理 6.1** (紧 $=$ 序列紧) 抽子列 $a_{n_j}\to a\in A$, $b_{n_j}\to b\in B$, 若 $\delta=0$ 则 $d\left(a,b\right)=0$, 即 $a=b$, 与 $A\cap B=\emptyset$ 矛盾, 故 $\delta>0$. 取 $\varepsilon<\delta$, 则 $\varepsilon$-链不可能从 $A$ 跨到 $B$, 与 $\varepsilon$-链矛盾.
 
-$\epsilon$-链但不连通的例子: 有理数集 $\mathbb Q$ 装备通常度量. 对任意 $\epsilon>0$, 任意两个有理数之间可插入间距小于 $\epsilon$ 的有理点列, 故 $\mathbb Q$ 是 $\epsilon$-链的; 但 $\mathbb Q$ 完全不连通. $\blacksquare$
+$\varepsilon$-链但不连通的例子: 有理数集 $\mathbb Q$ 装备通常度量. 对任意 $\varepsilon>0$, 任意两个有理数之间可插入间距小于 $\varepsilon$ 的有理点列, 故 $\mathbb Q$ 是 $\varepsilon$-链的; 但 $\mathbb Q$ 完全不连通. $\blacksquare$
 
 ### 习题十一
 

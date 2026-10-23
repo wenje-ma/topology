@@ -40,7 +40,7 @@
 
 > **定义 6.46** (点到集合的距离)<br>$d\left(x,A\right)=\inf_{a\in A}d\left(x,a\right)$. (题集 $\S3.2$)
 
-> **定义 6.47** ($\epsilon$-邻域)<br>$U_\epsilon\left(A\right)=\left\{x\in X:d\left(x,A\right)<\epsilon\right\}$. (题集 $\S3.2$)
+> **定义 6.47** ($\varepsilon$-邻域)<br>$U_\varepsilon\left(A\right)=\left\{x\in X:d\left(x,A\right)<\varepsilon\right\}$. (题集 $\S3.2$)
 
 > **定义 6.48** (豪斯多夫距离)<br>$d\left(A,B\right)=\inf\left\{r>0:A\subset U_r\left(B\right),\,B\subset U_r\left(A\right)\right\}$; 在紧子集族 $\mathcal K\left(X\right)$ 上是真度量. (题集 $\S3.2$)
 
@@ -68,7 +68,7 @@ $$
 
 ### 习题二
 
-定义集合 $A\subset X$ 的 $\epsilon$-邻域 $U_\epsilon\left(A\right)=\left\{x\in X:d\left(x,A\right)<\epsilon\right\}$, 其中 $d\left(x,A\right)=\inf_{a\in A}d\left(x,a\right)$. 证明: 对 $r_1,r_2>0$ 与任意 $A\subset X$,
+定义集合 $A\subset X$ 的 $\varepsilon$-邻域 $U_\varepsilon\left(A\right)=\left\{x\in X:d\left(x,A\right)<\varepsilon\right\}$, 其中 $d\left(x,A\right)=\inf_{a\in A}d\left(x,a\right)$. 证明: 对 $r_1,r_2>0$ 与任意 $A\subset X$,
 
 $$
 U_{r_1}\left(U_{r_2}\left(A\right)\right)\subset U_{r_1+r_2}\left(A\right),
@@ -78,7 +78,7 @@ $$
 
 ### 解答 习题二
 
-设 $x\in U_{r_1}\left(U_{r_2}\left(A\right)\right)$. 由**定义 6.47** ($\epsilon$-邻域), 存在 $y\in U_{r_2}\left(A\right)$ 使 $d\left(x,y\right)<r_1$; 再由**定义 6.46** (点到集合的距离), 存在 $a\in A$ 使 $d\left(y,a\right)<r_2$. 由**定义 6.35** (度量空间) 的三角不等式,
+设 $x\in U_{r_1}\left(U_{r_2}\left(A\right)\right)$. 由**定义 6.47** ($\varepsilon$-邻域), 存在 $y\in U_{r_2}\left(A\right)$ 使 $d\left(x,y\right)<r_1$; 再由**定义 6.46** (点到集合的距离), 存在 $a\in A$ 使 $d\left(y,a\right)<r_2$. 由**定义 6.35** (度量空间) 的三角不等式,
 
 $$
 d\left(x,a\right)\le d\left(x,y\right)+d\left(y,a\right)<r_1+r_2.
@@ -86,7 +86,7 @@ $$
 
 故 $x\in U_{r_1+r_2}\left(A\right)$, 包含关系成立.
 
-反之不真. 取 $X=\left\{0,1,3\right\}$ 赋通常距离, $A=\left\{0,3\right\}$, $r_1=r_2=1$. 由**定义 6.46** (点到集合的距离) 与**定义 6.47** ($\epsilon$-邻域), $d\left(1,A\right)=1$, 故
+反之不真. 取 $X=\left\{0,1,3\right\}$ 赋通常距离, $A=\left\{0,3\right\}$, $r_1=r_2=1$. 由**定义 6.46** (点到集合的距离) 与**定义 6.47** ($\varepsilon$-邻域), $d\left(1,A\right)=1$, 故
 
 $$
 U_1\left(A\right)=\left\{x:d\left(x,A\right)<1\right\}=\left\{0,3\right\},
@@ -110,7 +110,7 @@ $$
 
 由**定义 6.48** (豪斯多夫距离), 非负性与对称性是显然的 (定义关于 $A,B$ 对称). 又 $d_H\left(A,A\right)=0$, 因为对任意 $r>0$, $A\subset U_r\left(A\right)$ 恒成立.
 
-剩证三角不等式. 设 $A,B,C\subset X$. 由**定义 6.48** (豪斯多夫距离), $d_H\left(A,B\right)<r$ 意味着 $A\subset U_r\left(B\right)$ 且 $B\subset U_r\left(A\right)$. 若 $A\subset U_r\left(B\right)$ 且 $B\subset U_s\left(C\right)$, 由习题二的包含关系 (**定义 6.47** ($\epsilon$-邻域)),
+剩证三角不等式. 设 $A,B,C\subset X$. 由**定义 6.48** (豪斯多夫距离), $d_H\left(A,B\right)<r$ 意味着 $A\subset U_r\left(B\right)$ 且 $B\subset U_r\left(A\right)$. 若 $A\subset U_r\left(B\right)$ 且 $B\subset U_s\left(C\right)$, 由习题二的包含关系 (**定义 6.47** ($\varepsilon$-邻域)),
 
 $$
 A\subset U_r\left(B\right)\subset U_r\left(U_s\left(C\right)\right)\subset U_{r+s}\left(C\right).
@@ -202,26 +202,26 @@ $$
 
 (1) 用对角线论证证明 $\left(f_n\right)$ 有子列在 $\left[0,1\right]$ 的全体有理点处逐点收敛;
 
-(2) 记该子列为 $\left(g_n\right)$, 用 $\epsilon/3$ 论证证明 $\left(g_n\right)$ 在 $\left[0,1\right]$ 的每一点都逐点收敛;
+(2) 记该子列为 $\left(g_n\right)$, 用 $\varepsilon/3$ 论证证明 $\left(g_n\right)$ 在 $\left[0,1\right]$ 的每一点都逐点收敛;
 
-(3) 记上一问中的逐点极限为 $g$, 再用 $\epsilon/3$ 论证证明 $g$ 实际上是 $\left(g_n\right)$ 在 $\left[0,1\right]$ 上的一致极限.
+(3) 记上一问中的逐点极限为 $g$, 再用 $\varepsilon/3$ 论证证明 $g$ 实际上是 $\left(g_n\right)$ 在 $\left[0,1\right]$ 上的一致极限.
 
 ### 解答 习题八
 
 (1) 设 $\left\{r_1,r_2,\dots\right\}$ 是 $\left[0,1\right]$ 中全体有理数. 固定 $k$, 数列 $\left(f_n\left(r_k\right)\right)_{n\ge1}$ 有界: $\left|f_n\left(r_k\right)\right|\le M$. 由**定理 5.2** (区间紧), 有界闭区间 $\left[-M,M\right]$ 紧, 再由**定理 6.1** (紧 $=$ 序列紧), $\left(f_n\left(r_1\right)\right)$ 有收敛子列 $\left(f_{n_i^{\left(1\right)}}\left(r_1\right)\right)$. 接着在该子列内取子列使 $\left(f_n\left(r_2\right)\right)$ 收敛; 如此归纳, 得一串嵌套子列 $\left(f_{n_i^{\left(k\right)}}\right)$ 使第 $k$ 个子列在 $r_1,\dots,r_k$ 处都收敛. 对角线子列 $g_i=f_{n_i^{\left(i\right)}}$ 是每个嵌套子列的尾部, 故在每个有理点 $r_k$ 处收敛.
 
-(2) 固定 $x\in\left[0,1\right]$ 与 $\epsilon>0$. 由 $\left|g_n'\left(t\right)\right|\le M$ 与中值定理, $\left|g_n\left(x\right)-g_n\left(r\right)\right|\le M\left|x-r\right|$. 取有理点 $r$ 使 $\left|x-r\right|<\epsilon/\left(3M\right)$. 则
+(2) 固定 $x\in\left[0,1\right]$ 与 $\varepsilon>0$. 由 $\left|g_n'\left(t\right)\right|\le M$ 与中值定理, $\left|g_n\left(x\right)-g_n\left(r\right)\right|\le M\left|x-r\right|$. 取有理点 $r$ 使 $\left|x-r\right|<\varepsilon/\left(3M\right)$. 则
 
 $$
 \left|g_n\left(x\right)-g_m\left(x\right)\right|\le\left|g_n\left(x\right)-g_n\left(r\right)\right|+\left|g_n\left(r\right)-g_m\left(r\right)\right|+\left|g_m\left(r\right)-g_m\left(x\right)\right|.
 $$
 
-由有理点处收敛, $\left(g_n\left(r\right)\right)$ 是**定义 6.37** (柯西列), 对充分大的 $n,m$ 中间项 $<\epsilon/3$; 两端各 $<\epsilon/3$. 故 $\left|g_n\left(x\right)-g_m\left(x\right)\right|<\epsilon$, 即 $\left(g_n\left(x\right)\right)$ 是柯西列. 由**定义 6.39** (完备化) (即 $\mathbb R$ 完备), 逐点极限 $g\left(x\right)$ 存在.
+由有理点处收敛, $\left(g_n\left(r\right)\right)$ 是**定义 6.37** (柯西列), 对充分大的 $n,m$ 中间项 $<\varepsilon/3$; 两端各 $<\varepsilon/3$. 故 $\left|g_n\left(x\right)-g_m\left(x\right)\right|<\varepsilon$, 即 $\left(g_n\left(x\right)\right)$ 是柯西列. 由**定义 6.39** (完备化) (即 $\mathbb R$ 完备), 逐点极限 $g\left(x\right)$ 存在.
 
-(3) 由**定理 5.2** (区间紧) 与**定理 6.1** (紧 $=$ 序列紧), $\left[0,1\right]$ 可被有限个有理点 $r^{\left(1\right)},\dots,r^{\left(L\right)}$ 的邻域覆盖, 使每个 $x$ 到某 $r^{\left(j\right)}$ 的距离 $<\epsilon/\left(3M\right)$. 对这有限个有理点, 由收敛性可取公共的 $N$, 使 $n\ge N$ 时 $\left|g_n\left(r^{\left(j\right)}\right)-g\left(r^{\left(j\right)}\right)\right|<\epsilon/3$ 对一切 $j$ 成立. 又由 $\left|g_n'\right|\le M$ 取极限得 $\left|g\left(x\right)-g\left(r^{\left(j\right)}\right)\right|\le M\left|x-r^{\left(j\right)}\right|<\epsilon/3$. 于是对任意 $x$,
+(3) 由**定理 5.2** (区间紧) 与**定理 6.1** (紧 $=$ 序列紧), $\left[0,1\right]$ 可被有限个有理点 $r^{\left(1\right)},\dots,r^{\left(L\right)}$ 的邻域覆盖, 使每个 $x$ 到某 $r^{\left(j\right)}$ 的距离 $<\varepsilon/\left(3M\right)$. 对这有限个有理点, 由收敛性可取公共的 $N$, 使 $n\ge N$ 时 $\left|g_n\left(r^{\left(j\right)}\right)-g\left(r^{\left(j\right)}\right)\right|<\varepsilon/3$ 对一切 $j$ 成立. 又由 $\left|g_n'\right|\le M$ 取极限得 $\left|g\left(x\right)-g\left(r^{\left(j\right)}\right)\right|\le M\left|x-r^{\left(j\right)}\right|<\varepsilon/3$. 于是对任意 $x$,
 
 $$
-\left|g_n\left(x\right)-g\left(x\right)\right|\le\left|g_n\left(x\right)-g_n\left(r^{\left(j\right)}\right)\right|+\left|g_n\left(r^{\left(j\right)}\right)-g\left(r^{\left(j\right)}\right)\right|+\left|g\left(r^{\left(j\right)}\right)-g\left(x\right)\right|<\epsilon.
+\left|g_n\left(x\right)-g\left(x\right)\right|\le\left|g_n\left(x\right)-g_n\left(r^{\left(j\right)}\right)\right|+\left|g_n\left(r^{\left(j\right)}\right)-g\left(r^{\left(j\right)}\right)\right|+\left|g\left(r^{\left(j\right)}\right)-g\left(x\right)\right|<\varepsilon.
 $$
 
 由**定义 6.41** (一致收敛与一致度量), $g_n$ 一致收敛到 $g$. $\blacksquare$
@@ -252,41 +252,41 @@ $$
 
 ### 习题十二
 
-第二部分是 $\epsilon/3$ 论证. 设 $C\left[a,b\right]$ 是 $\left[a,b\right]$ 上连续实值函数空间, 装备**定义 6.43** (上确界度量) $d\left(f,g\right)=\sup_{x\in\left[a,b\right]}\left|f\left(x\right)-g\left(x\right)\right|$. 设 $\left(f_n\right)$ 是该度量下的**定义 6.37** (柯西列). 证明对每个 $x\in\left[a,b\right]$, $\left(f_n\left(x\right)\right)$ 收敛到某个 $f\left(x\right)\in\mathbb R$.
+第二部分是 $\varepsilon/3$ 论证. 设 $C\left[a,b\right]$ 是 $\left[a,b\right]$ 上连续实值函数空间, 装备**定义 6.43** (上确界度量) $d\left(f,g\right)=\sup_{x\in\left[a,b\right]}\left|f\left(x\right)-g\left(x\right)\right|$. 设 $\left(f_n\right)$ 是该度量下的**定义 6.37** (柯西列). 证明对每个 $x\in\left[a,b\right]$, $\left(f_n\left(x\right)\right)$ 收敛到某个 $f\left(x\right)\in\mathbb R$.
 
 ### 解答 习题十二
 
-由 $\left(f_n\right)$ 是**定义 6.37** (柯西列), 对任意 $\epsilon>0$ 存在 $N$, 使 $n,m\ge N$ 时
+由 $\left(f_n\right)$ 是**定义 6.37** (柯西列), 对任意 $\varepsilon>0$ 存在 $N$, 使 $n,m\ge N$ 时
 
 $$
-\sup_{x\in\left[a,b\right]}\left|f_n\left(x\right)-f_m\left(x\right)\right|<\epsilon.
+\sup_{x\in\left[a,b\right]}\left|f_n\left(x\right)-f_m\left(x\right)\right|<\varepsilon.
 $$
 
-固定 $x\in\left[a,b\right]$, 则 $\left|f_n\left(x\right)-f_m\left(x\right)\right|\le\sup<\epsilon$, 故 $\left(f_n\left(x\right)\right)$ 是 $\mathbb R$ 中的**定义 6.37** (柯西列). 由**定义 6.39** (完备化), $\mathbb R$ 是**定义 6.38** (完备度量空间), 故 $\left(f_n\left(x\right)\right)$ 收敛. 记其极限为 $f\left(x\right)$. 逐点极限 $f$ 由此定义. $\blacksquare$
+固定 $x\in\left[a,b\right]$, 则 $\left|f_n\left(x\right)-f_m\left(x\right)\right|\le\sup<\varepsilon$, 故 $\left(f_n\left(x\right)\right)$ 是 $\mathbb R$ 中的**定义 6.37** (柯西列). 由**定义 6.39** (完备化), $\mathbb R$ 是**定义 6.38** (完备度量空间), 故 $\left(f_n\left(x\right)\right)$ 收敛. 记其极限为 $f\left(x\right)$. 逐点极限 $f$ 由此定义. $\blacksquare$
 
 ### 习题十三
 
-设 $f$ 是连续函数列 $\left(f_n\right)$ 的极限. 固定 $x\in\left[a,b\right]$ 与 $\epsilon>0$. 证明可选取 $n$ 使 $\left\|f_n-f\right\|_\infty<\epsilon/3$; 证明可选取 $\delta>0$, 使 $\left|x-y\right|<\delta$ 蕴含 $\left|f_n\left(x\right)-f_n\left(y\right)\right|<\epsilon/3$; 由此证明 $f$ 连续.
+设 $f$ 是连续函数列 $\left(f_n\right)$ 的极限. 固定 $x\in\left[a,b\right]$ 与 $\varepsilon>0$. 证明可选取 $n$ 使 $\left\|f_n-f\right\|_\infty<\varepsilon/3$; 证明可选取 $\delta>0$, 使 $\left|x-y\right|<\delta$ 蕴含 $\left|f_n\left(x\right)-f_n\left(y\right)\right|<\varepsilon/3$; 由此证明 $f$ 连续.
 
 ### 解答 习题十三
 
-由习题十二, $\left(f_n\right)$ 逐点收敛到 $f$. 又 $\left(f_n\right)$ 是**定义 6.37** (柯西列), 对任意 $\epsilon>0$ 存在 $N$, 使 $n,m\ge N$ 时 $\sup_x\left|f_n\left(x\right)-f_m\left(x\right)\right|<\epsilon/3$. 固定 $n\ge N$, 令 $m\to\infty$, 由习题十二 $f_m\left(x\right)\to f\left(x\right)$, 故
+由习题十二, $\left(f_n\right)$ 逐点收敛到 $f$. 又 $\left(f_n\right)$ 是**定义 6.37** (柯西列), 对任意 $\varepsilon>0$ 存在 $N$, 使 $n,m\ge N$ 时 $\sup_x\left|f_n\left(x\right)-f_m\left(x\right)\right|<\varepsilon/3$. 固定 $n\ge N$, 令 $m\to\infty$, 由习题十二 $f_m\left(x\right)\to f\left(x\right)$, 故
 
 $$
-\left|f_n\left(x\right)-f\left(x\right)\right|=\lim_{m\to\infty}\left|f_n\left(x\right)-f_m\left(x\right)\right|\le\epsilon/3.
+\left|f_n\left(x\right)-f\left(x\right)\right|=\lim_{m\to\infty}\left|f_n\left(x\right)-f_m\left(x\right)\right|\le\varepsilon/3.
 $$
 
-对 $x$ 取上确界得 $\left\|f_n-f\right\|_\infty\le\epsilon/3<\epsilon/3$ (取严格不等号即可). 故存在 $n$ 使 $\left\|f_n-f\right\|_\infty<\epsilon/3$.
+对 $x$ 取上确界得 $\left\|f_n-f\right\|_\infty\le\varepsilon/3<\varepsilon/3$ (取严格不等号即可). 故存在 $n$ 使 $\left\|f_n-f\right\|_\infty<\varepsilon/3$.
 
-固定该 $n$, 由 $f_n$ 连续, 存在 $\delta>0$, 使 $y\in\left[a,b\right]$ 且 $\left|x-y\right|<\delta$ 时 $\left|f_n\left(x\right)-f_n\left(y\right)\right|<\epsilon/3$.
+固定该 $n$, 由 $f_n$ 连续, 存在 $\delta>0$, 使 $y\in\left[a,b\right]$ 且 $\left|x-y\right|<\delta$ 时 $\left|f_n\left(x\right)-f_n\left(y\right)\right|<\varepsilon/3$.
 
 第三步, 对满足 $\left|x-y\right|<\delta$ 的 $y$,
 
 $$
-\left|f\left(x\right)-f\left(y\right)\right|\le\left|f\left(x\right)-f_n\left(x\right)\right|+\left|f_n\left(x\right)-f_n\left(y\right)\right|+\left|f_n\left(y\right)-f\left(y\right)\right|<\frac{\epsilon}{3}+\frac{\epsilon}{3}+\frac{\epsilon}{3}=\epsilon.
+\left|f\left(x\right)-f\left(y\right)\right|\le\left|f\left(x\right)-f_n\left(x\right)\right|+\left|f_n\left(x\right)-f_n\left(y\right)\right|+\left|f_n\left(y\right)-f\left(y\right)\right|<\frac{\varepsilon}{3}+\frac{\varepsilon}{3}+\frac{\varepsilon}{3}=\varepsilon.
 $$
 
-这正是**定理 6.7** (连续函数的一致极限连续) 的 $\epsilon/3$ 论证, 故 $f$ 在 $x$ 连续. $x$ 任意, $f$ 在 $\left[a,b\right]$ 上连续. $\blacksquare$
+这正是**定理 6.7** (连续函数的一致极限连续) 的 $\varepsilon/3$ 论证, 故 $f$ 在 $x$ 连续. $x$ 任意, $f$ 在 $\left[a,b\right]$ 上连续. $\blacksquare$
 
 ### 习题十四
 
@@ -294,13 +294,13 @@ $$
 
 ### 解答 习题十四
 
-由习题十二, $\left(f_n\right)$ 逐点收敛到 $f$. 由 $\left(f_n\right)$ 是**定义 6.37** (柯西列), 对任意 $\epsilon>0$ 存在 $N$, 使 $n,m\ge N$ 时 $\sup_x\left|f_n\left(x\right)-f_m\left(x\right)\right|<\epsilon$. 固定 $n\ge N$ 与任意 $x$, 令 $m\to\infty$, 由习题十二 $f_m\left(x\right)\to f\left(x\right)$, 故
+由习题十二, $\left(f_n\right)$ 逐点收敛到 $f$. 由 $\left(f_n\right)$ 是**定义 6.37** (柯西列), 对任意 $\varepsilon>0$ 存在 $N$, 使 $n,m\ge N$ 时 $\sup_x\left|f_n\left(x\right)-f_m\left(x\right)\right|<\varepsilon$. 固定 $n\ge N$ 与任意 $x$, 令 $m\to\infty$, 由习题十二 $f_m\left(x\right)\to f\left(x\right)$, 故
 
 $$
-\left|f_n\left(x\right)-f\left(x\right)\right|=\lim_{m\to\infty}\left|f_n\left(x\right)-f_m\left(x\right)\right|\le\epsilon.
+\left|f_n\left(x\right)-f\left(x\right)\right|=\lim_{m\to\infty}\left|f_n\left(x\right)-f_m\left(x\right)\right|\le\varepsilon.
 $$
 
-对 $x$ 取上确界, 得 $\left\|f_n-f\right\|_\infty\le\epsilon$ 对一切 $n\ge N$ 成立. 由**定义 6.41** (一致收敛与一致度量) 与**定义 6.43** (上确界度量), $f_n\to f$ 一致收敛, 即在 $C\left[a,b\right]$ 中收敛.
+对 $x$ 取上确界, 得 $\left\|f_n-f\right\|_\infty\le\varepsilon$ 对一切 $n\ge N$ 成立. 由**定义 6.41** (一致收敛与一致度量) 与**定义 6.43** (上确界度量), $f_n\to f$ 一致收敛, 即在 $C\left[a,b\right]$ 中收敛.
 
 由习题十三, $f$ 连续, 故 $f\in C\left[a,b\right]$. 于是 $C\left[a,b\right]$ 中每个**定义 6.37** (柯西列) 都收敛到 $C\left[a,b\right]$ 中的元素, 由**定义 6.38** (完备度量空间), $C\left[a,b\right]$ 完备, 即**定理 6.8** ($C\left(X,Y\right)$ 完备) 的特例. $\blacksquare$
 
@@ -324,7 +324,7 @@ $$
 
 记 $x_n=f^n\left(x_0\right)$, 设唯一聚点为 $z$. 取子列 $x_{n_j}\to z$. 由 $f$ 连续, $x_{n_j+1}=f\left(x_{n_j}\right)\to f\left(z\right)$. 而 $\left(x_{n_j+1}\right)$ 是 $\left(x_n\right)$ 的子列, 其极限 $f\left(z\right)$ 必为聚点, 由唯一性 $f\left(z\right)=z$.
 
-反设 $\left(x_n\right)$ 不收敛到 $z$. 则存在 $\epsilon>0$ 与无穷多个 $n$ 使 $\left\|x_n-z\right\|\ge\epsilon$. 从每个 $n_j$ 出发, 若其后轨道始终在 $B\left(z,\epsilon\right)$ 内, 则尾部落在紧闭球中, 由**定理 5.8** ($\mathbb R^n$ 紧集判据) 与**定理 6.1** (紧 $=$ 序列紧), 该尾部的任何聚点都是 $z$, 矛盾于不收敛. 故从每个 $n_j$ 出发, 存在第一个 $m_j>n_j$ 使 $\left\|x_{m_j}-z\right\|=\epsilon$. 点 $x_{m_j}$ 都落在紧球面 $\partial B\left(z,\epsilon\right)$ 上, 抽子列 $x_{m_{j_k}}\to w$, $\left\|w-z\right\|=\epsilon$. 则 $w$ 是 $\left(x_n\right)$ 的聚点且 $w\neq z$, 矛盾. 故 $\left(x_n\right)\to z$. $\blacksquare$
+反设 $\left(x_n\right)$ 不收敛到 $z$. 则存在 $\varepsilon>0$ 与无穷多个 $n$ 使 $\left\|x_n-z\right\|\ge\varepsilon$. 从每个 $n_j$ 出发, 若其后轨道始终在 $B\left(z,\varepsilon\right)$ 内, 则尾部落在紧闭球中, 由**定理 5.8** ($\mathbb R^n$ 紧集判据) 与**定理 6.1** (紧 $=$ 序列紧), 该尾部的任何聚点都是 $z$, 矛盾于不收敛. 故从每个 $n_j$ 出发, 存在第一个 $m_j>n_j$ 使 $\left\|x_{m_j}-z\right\|=\varepsilon$. 点 $x_{m_j}$ 都落在紧球面 $\partial B\left(z,\varepsilon\right)$ 上, 抽子列 $x_{m_{j_k}}\to w$, $\left\|w-z\right\|=\varepsilon$. 则 $w$ 是 $\left(x_n\right)$ 的聚点且 $w\neq z$, 矛盾. 故 $\left(x_n\right)\to z$. $\blacksquare$
 
 ### 习题十七
 

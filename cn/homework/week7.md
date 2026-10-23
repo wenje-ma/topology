@@ -152,13 +152,13 @@ $$
 
 $f$ 单: 由**定义 6.49** (等距映射), $f\left(x\right)=f\left(y\right)$ 蕴含 $d\left(x,y\right)=d\left(f\left(x\right),f\left(y\right)\right)=0$, 故 $x=y$.
 
-证 $f$ 满. 反证, 取 $a\notin f\left(X\right)$. $f$ 连续 (等距蕴含利普希茨连续), $f\left(X\right)$ 是紧空间 $X$ 的连续像, 由**定理 5.1** (紧空间连续像紧), $f\left(X\right)$ 紧致. 度量空间是**教材 §6** (度量空间是豪斯多夫的), 由**定理 5.5** (豪斯多夫中紧集闭), $f\left(X\right)$ 闭. 故 $\epsilon=d\left(a,f\left(X\right)\right)>0$. 对 $n\neq m$, 由**定义 6.49** (等距映射) 及 $f$ 的迭代仍是等距,
+证 $f$ 满. 反证, 取 $a\notin f\left(X\right)$. $f$ 连续 (等距蕴含利普希茨连续), $f\left(X\right)$ 是紧空间 $X$ 的连续像, 由**定理 5.1** (紧空间连续像紧), $f\left(X\right)$ 紧致. 度量空间是**教材 §6** (度量空间是豪斯多夫的), 由**定理 5.5** (豪斯多夫中紧集闭), $f\left(X\right)$ 闭. 故 $\varepsilon=d\left(a,f\left(X\right)\right)>0$. 对 $n\neq m$, 由**定义 6.49** (等距映射) 及 $f$ 的迭代仍是等距,
 
 $$
-d\left(f^n\left(a\right),f^m\left(a\right)\right)=d\left(a,f^{\left|n-m\right|}\left(a\right)\right)\ge\epsilon.
+d\left(f^n\left(a\right),f^m\left(a\right)\right)=d\left(a,f^{\left|n-m\right|}\left(a\right)\right)\ge\varepsilon.
 $$
 
-但 $\left\{f^n\left(a\right)\right\}$ 是紧空间 $X$ 中的序列, 由**定理 6.1** (紧 $=$ 序列紧) 有收敛子列, 它必是**定义 6.37** (柯西列), 与两两距离 $\ge\epsilon$ 矛盾. 故 $f$ 满.
+但 $\left\{f^n\left(a\right)\right\}$ 是紧空间 $X$ 中的序列, 由**定理 6.1** (紧 $=$ 序列紧) 有收敛子列, 它必是**定义 6.37** (柯西列), 与两两距离 $\ge\varepsilon$ 矛盾. 故 $f$ 满.
 
 $f$ 连续 (等距蕴含利普希茨连续), $X$ 紧致故为紧豪斯多夫空间, 由**定理 5.6** (紧豪斯多夫间的连续双射), $f$ 是同胚. $\blacksquare$
 
@@ -204,7 +204,7 @@ $$
 
 ### 解答 习题十
 
-(1) ($\Rightarrow$) 显然. ($\Leftarrow$) 设唯一子列极限为 $L$. 若序列不收敛到 $L$, 则存在 $\epsilon>0$ 与子列恒在 $B\left(L,\epsilon\right)$ 外; 由**定理 6.1** (紧 $=$ 序列紧), 该子列有收敛子列, 其极限异于 $L$, 矛盾. 故序列收敛到 $L$.
+(1) ($\Rightarrow$) 显然. ($\Leftarrow$) 设唯一子列极限为 $L$. 若序列不收敛到 $L$, 则存在 $\varepsilon>0$ 与子列恒在 $B\left(L,\varepsilon\right)$ 外; 由**定理 6.1** (紧 $=$ 序列紧), 该子列有收敛子列, 其极限异于 $L$, 矛盾. 故序列收敛到 $L$.
 
 (2) 若序列不最终落入 $V_0\cup V_1$, 则有子列恒在 $V_0\cup V_1$ 外; 由紧性它有收敛子列, 其极限不在 $V_0\cup V_1$ 中, 即第三个子列极限, 矛盾.
 
@@ -244,11 +244,11 @@ $$
 
 ### 习题十二
 
-等距与紧性. 设 $K\subset\mathbb R^n$ 是非空紧集, $\epsilon>0$. 称 $A\subset K$ 是 $\epsilon$-分离的, 若 $x\neq y$ 蕴含 $\left|x-y\right|>\epsilon$. 证明存在有限数 $M\left(\epsilon\right)$, 使 $K$ 中任何 $\epsilon$-分离集的基数不超过 $M\left(\epsilon\right)$. 再证明: 若 $f:K\to K$ 是**定义 6.49** (等距映射), 则 $f$ 满.
+等距与紧性. 设 $K\subset\mathbb R^n$ 是非空紧集, $\varepsilon>0$. 称 $A\subset K$ 是 $\varepsilon$-分离的, 若 $x\neq y$ 蕴含 $\left|x-y\right|>\varepsilon$. 证明存在有限数 $M\left(\varepsilon\right)$, 使 $K$ 中任何 $\varepsilon$-分离集的基数不超过 $M\left(\varepsilon\right)$. 再证明: 若 $f:K\to K$ 是**定义 6.49** (等距映射), 则 $f$ 满.
 
 ### 解答 习题十二
 
-反设存在任意大的 $\epsilon$-分离集. 则可取两两不同的点列 $x_m\in K$ 使 $m\neq m'$ 时 $\left|x_m-x_{m'}\right|>\epsilon$. 由**定理 5.3** ($\mathbb R^n$ 中的紧集) 与**定理 6.1** (紧 $=$ 序列紧), $\left(x_m\right)$ 有收敛子列; 收敛子列是**定义 6.37** (柯西列), 充分靠后两项距离 $<\epsilon$, 与 $\epsilon$-分离矛盾. 故存在 $M\left(\epsilon\right)$.
+反设存在任意大的 $\varepsilon$-分离集. 则可取两两不同的点列 $x_m\in K$ 使 $m\neq m'$ 时 $\left|x_m-x_{m'}\right|>\varepsilon$. 由**定理 5.3** ($\mathbb R^n$ 中的紧集) 与**定理 6.1** (紧 $=$ 序列紧), $\left(x_m\right)$ 有收敛子列; 收敛子列是**定义 6.37** (柯西列), 充分靠后两项距离 $<\varepsilon$, 与 $\varepsilon$-分离矛盾. 故存在 $M\left(\varepsilon\right)$.
 
 满性: 反设 $f$ 不满, 取 $p\notin f\left(K\right)$. $f\left(K\right)$ 紧, 由**定理 5.3** ($\mathbb R^n$ 中的紧集) 闭, 故 $\delta=d\left(p,f\left(K\right)\right)>0$. 轨道 $p,f\left(p\right),f^2\left(p\right),\dots$ 满足
 
@@ -262,7 +262,7 @@ $$
 
 (7.1 紧性)
 
-(1) 设 $\left(E,d\right)$ 是度量空间, $f:E\to\mathbb R$ 连续, $K\subset E$ 紧. 假设 $f$ 在 $K$ 上单射, 且对每个 $x\in K$ 存在 $\epsilon>0$ 使 $f$ 在 $B\left(x,\epsilon\right)$ 上单射. 证明存在含 $K$ 的开集 $\Omega$ 使 $f$ 在 $\Omega$ 上单射.
+(1) 设 $\left(E,d\right)$ 是度量空间, $f:E\to\mathbb R$ 连续, $K\subset E$ 紧. 假设 $f$ 在 $K$ 上单射, 且对每个 $x\in K$ 存在 $\varepsilon>0$ 使 $f$ 在 $B\left(x,\varepsilon\right)$ 上单射. 证明存在含 $K$ 的开集 $\Omega$ 使 $f$ 在 $\Omega$ 上单射.
 
 (2) (里茨定理) 设 $E$ 是实无穷维赋范线性空间. 证明 $E$ 的闭单位球不能被有限个半径 $1$ 的开球覆盖.
 
@@ -275,7 +275,7 @@ $$
 
 ### 解答 习题十三
 
-**第 1 小题**: 对 $n\ge 1$, 定义 $K_n=\left\{x\in E:d\left(x,K\right)<1/n\right\}$. 每个 $K_n$ 是开集且含 $K$. 反证: 若对每个 $n$, $f$ 在 $K_n$ 上不单射, 则存在 $x_n,y_n\in K_n$, $x_n\neq y_n$, 使 $f\left(x_n\right)=f\left(y_n\right)$. 由 $x_n,y_n\in K_n$, 可取 $x'_n,y'_n\in K$ 使 $d\left(x_n,x'_n\right)<1/n$, $d\left(y_n,y'_n\right)<1/n$. 由**定义 5.16** (紧致空间), $K\times K$ 紧; 由**定理 6.1** (紧 $=$ 序列紧), 存在子列 $\left(x'_{\varphi\left(n\right)},y'_{\varphi\left(n\right)}\right)\to\left(x,y\right)\in K\times K$. 由三角不等式, $x_{\varphi\left(n\right)}\to x$, $y_{\varphi\left(n\right)}\to y$. 由 $f$ 连续, $f\left(x_{\varphi\left(n\right)}\right)=f\left(y_{\varphi\left(n\right)}\right)$ 取极限得 $f\left(x\right)=f\left(y\right)$. 因 $f$ 在 $K$ 上单射, $x=y$. 但由假设, $x$ 有邻域 $B\left(x,\epsilon\right)$ 使 $f$ 单射, 而 $x_{\varphi\left(n\right)}\neq y_{\varphi\left(n\right)}$ 且当 $n$ 充分大时二者都在 $B\left(x,\epsilon\right)$ 内, $f\left(x_{\varphi\left(n\right)}\right)=f\left(y_{\varphi\left(n\right)}\right)$, 矛盾. 故存在 $n$ 使 $f$ 在 $K_n$ 上单射, 取 $\Omega=K_n$ 即可.
+**第 1 小题**: 对 $n\ge 1$, 定义 $K_n=\left\{x\in E:d\left(x,K\right)<1/n\right\}$. 每个 $K_n$ 是开集且含 $K$. 反证: 若对每个 $n$, $f$ 在 $K_n$ 上不单射, 则存在 $x_n,y_n\in K_n$, $x_n\neq y_n$, 使 $f\left(x_n\right)=f\left(y_n\right)$. 由 $x_n,y_n\in K_n$, 可取 $x'_n,y'_n\in K$ 使 $d\left(x_n,x'_n\right)<1/n$, $d\left(y_n,y'_n\right)<1/n$. 由**定义 5.16** (紧致空间), $K\times K$ 紧; 由**定理 6.1** (紧 $=$ 序列紧), 存在子列 $\left(x'_{\varphi\left(n\right)},y'_{\varphi\left(n\right)}\right)\to\left(x,y\right)\in K\times K$. 由三角不等式, $x_{\varphi\left(n\right)}\to x$, $y_{\varphi\left(n\right)}\to y$. 由 $f$ 连续, $f\left(x_{\varphi\left(n\right)}\right)=f\left(y_{\varphi\left(n\right)}\right)$ 取极限得 $f\left(x\right)=f\left(y\right)$. 因 $f$ 在 $K$ 上单射, $x=y$. 但由假设, $x$ 有邻域 $B\left(x,\varepsilon\right)$ 使 $f$ 单射, 而 $x_{\varphi\left(n\right)}\neq y_{\varphi\left(n\right)}$ 且当 $n$ 充分大时二者都在 $B\left(x,\varepsilon\right)$ 内, $f\left(x_{\varphi\left(n\right)}\right)=f\left(y_{\varphi\left(n\right)}\right)$, 矛盾. 故存在 $n$ 使 $f$ 在 $K_n$ 上单射, 取 $\Omega=K_n$ 即可.
 
 **第 2 小题**: 反证. 设闭单位球 $\overline B\left(0,1\right)$ 被开单位球 $B\left(x_i,1\right)$ ($i=1,\dots,m$) 覆盖. 令 $F=\operatorname{span}\left(x_1,\dots,x_m\right)$, 它是有限维子空间. 因 $E$ 无穷维, 存在 $y\in E\setminus F$. 由有限维子空间闭, 取 $x\in F$ 使 $\left\|y-x\right\|=d\left(y,F\right)$ (有限维中距离可达). 令
 
@@ -297,7 +297,7 @@ $$
 g\left(x\right)=\frac{1}{d\left(x,A\right)}\inf_{y\in A}\left(f\left(y\right)d\left(x,y\right)\right),
 $$
 
-对 $x\in A$ 令 $g\left(x\right)=f\left(x\right)$. 由平移缩放 (不妨设 $\inf_A f=1$, $\sup_A f=2$), 可验证 $g$ 连续: $x\in\operatorname{int}A$ 时 $g=f$ 连续; $x\notin A$ 时由三角不等式 $d\left(x,A\right)$ 连续且正, $g$ 连续; $x\in\partial A$ 时由 $f$ 在 $A$ 上连续, 对 $\epsilon>0$ 取 $r>0$ 使 $y\in B\left(x,r\right)\cap A$ 时 $\left|f\left(y\right)-f\left(x\right)\right|<\epsilon$, 再对 $z\notin A$ 且 $\left\|z-x\right\|<r/4$ 用三角不等式估计得 $\left|g\left(z\right)-f\left(x\right)\right|<\epsilon$. 由**定义 3.22** (连续映射), $g$ 在全 $E$ 上连续. 由构造 $\inf_E g=\inf_A f$, $\sup_E g=\sup_A f$. 这就是**定理 6.18** (蒂茨-乌雷松扩张定理). $\blacksquare$
+对 $x\in A$ 令 $g\left(x\right)=f\left(x\right)$. 由平移缩放 (不妨设 $\inf_A f=1$, $\sup_A f=2$), 可验证 $g$ 连续: $x\in\operatorname{int}A$ 时 $g=f$ 连续; $x\notin A$ 时由三角不等式 $d\left(x,A\right)$ 连续且正, $g$ 连续; $x\in\partial A$ 时由 $f$ 在 $A$ 上连续, 对 $\varepsilon>0$ 取 $r>0$ 使 $y\in B\left(x,r\right)\cap A$ 时 $\left|f\left(y\right)-f\left(x\right)\right|<\varepsilon$, 再对 $z\notin A$ 且 $\left\|z-x\right\|<r/4$ 用三角不等式估计得 $\left|g\left(z\right)-f\left(x\right)\right|<\varepsilon$. 由**定义 3.22** (连续映射), $g$ 在全 $E$ 上连续. 由构造 $\inf_E g=\inf_A f$, $\sup_E g=\sup_A f$. 这就是**定理 6.18** (蒂茨-乌雷松扩张定理). $\blacksquare$
 
 ### 习题十四
 

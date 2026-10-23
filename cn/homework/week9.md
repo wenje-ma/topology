@@ -140,7 +140,7 @@ $$
 
 $A_n$ 闭: 若 $f_k\in A_n$ 且 $f_k\to f$ 一致, 则每个 $f_k$ 在某区间 $\left[a_k,b_k\right]$ (长度 $\ge1/n$) 上为常数. 区间端点抽子列收敛到 $\left[a,b\right]$, $b-a\ge1/n$, 由一致收敛 $f$ 在 $\left[a,b\right]$ 上为常数. 故 $A_n$ 闭.
 
-$A_n$ 无内部: 任给 $f$ 与 $\epsilon>0$, 用锯齿形连续函数 $g$, 在长度 $\ge1/n$ 的区间上振幅 $>\epsilon/2$, 且 $\left\|g-f\right\|_\infty<\epsilon$. 则 $g\notin A_n$, 而 $g\in B\left(f,\epsilon\right)$. 由**定义 3.21** (闭集), $A_n$ 的内部为空.
+$A_n$ 无内部: 任给 $f$ 与 $\varepsilon>0$, 用锯齿形连续函数 $g$, 在长度 $\ge1/n$ 的区间上振幅 $>\varepsilon/2$, 且 $\left\|g-f\right\|_\infty<\varepsilon$. 则 $g\notin A_n$, 而 $g\in B\left(f,\varepsilon\right)$. 由**定义 3.21** (闭集), $A_n$ 的内部为空.
 
 由**定理 6.13** (贝尔纲定理), $C\left(\left[0,1\right]\right)$ 完备 (即**定理 6.8** ($C\left(X,Y\right)$ 完备)) 不能写成可数个无处稠密集之并, 故 $\bigcup_nA_n\neq C\left(\left[0,1\right]\right)$. 取 $f\notin\bigcup_nA_n$, 则 $f$ 在任何长度 $\ge1/n$ 的区间上不常数对一切 $n$ 成立, 即在任何正测度区间 (长度 $>0$, 从而 $\ge1/n$ 对某个 $n$) 上不常数. 由**定义 3.32** (稠密) 的反面, 这样的 $f$ 存在. $\blacksquare$
 
@@ -182,7 +182,7 @@ $A_n$ 无内部: 任给 $f$ 与 $\epsilon>0$, 用锯齿形连续函数 $g$, 在�
 
 单: 由**定义 6.49** (等距映射), $f\left(x\right)=f\left(y\right)\Rightarrow d_Y\left(f\left(x\right),f\left(y\right)\right)=0=d_X\left(x,y\right)\Rightarrow x=y$.
 
-连续: 对任意 $\epsilon>0$, 取 $\delta=\epsilon$, 由**定义 6.35** (度量空间) 与**定义 6.49** (等距映射), $d_X\left(x,y\right)<\delta$ 蕴含 $d_Y\left(f\left(x\right),f\left(y\right)\right)=d_X\left(x,y\right)<\epsilon$. 由**定义 6.36** (开球) 与**定义 3.22** (连续映射), $f$ 连续.
+连续: 对任意 $\varepsilon>0$, 取 $\delta=\varepsilon$, 由**定义 6.35** (度量空间) 与**定义 6.49** (等距映射), $d_X\left(x,y\right)<\delta$ 蕴含 $d_Y\left(f\left(x\right),f\left(y\right)\right)=d_X\left(x,y\right)<\varepsilon$. 由**定义 6.36** (开球) 与**定义 3.22** (连续映射), $f$ 连续.
 
 $f^{-1}$ 是等距: 对 $u=f\left(x\right)$, $v=f\left(y\right)$, $d_X\left(f^{-1}\left(u\right),f^{-1}\left(v\right)\right)=d_X\left(x,y\right)=d_Y\left(u,v\right)$.
 

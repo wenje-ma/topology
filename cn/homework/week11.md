@@ -92,7 +92,7 @@ $$
 p_\alpha\left(tx+\left(1-t\right)y\right)\le t p_\alpha\left(x\right)+\left(1-t\right)p_\alpha\left(y\right)\le r.
 $$
 
-故次水平集 $\left\{x:p_\alpha\left(x\right)\le r\right\}$ 是**定义 4.23** (凸集). 半范数拓扑的基本邻域是有限交 $\bigcap_{i=1}^n\left\{x:p_{\alpha_i}\left(x\right)<\epsilon_i\right\}$, 凸集的有限交仍凸. 这些基本邻域构成 $0$ 的邻域基, 故由**定义 6.26** (局部凸空间), 空间局部凸. 又由**定义 6.24** (拓扑向量空间), 加法与数乘连续 (半范数拓扑即按**定义 3.18** (拓扑空间) 以这些凸开集为基). $\blacksquare$
+故次水平集 $\left\{x:p_\alpha\left(x\right)\le r\right\}$ 是**定义 4.23** (凸集). 半范数拓扑的基本邻域是有限交 $\bigcap_{i=1}^n\left\{x:p_{\alpha_i}\left(x\right)<\varepsilon_i\right\}$, 凸集的有限交仍凸. 这些基本邻域构成 $0$ 的邻域基, 故由**定义 6.26** (局部凸空间), 空间局部凸. 又由**定义 6.24** (拓扑向量空间), 加法与数乘连续 (半范数拓扑即按**定义 3.18** (拓扑空间) 以这些凸开集为基). $\blacksquare$
 
 ### 习题二
 
@@ -150,7 +150,7 @@ $$
 
 由**定义 6.20** (赋范线性空间), $\left\|\cdot\right\|_\infty$ 满足三公理.
 
-完备性: 设 $\left(x^{\left(m\right)}\right)$ 是 $l^\infty$ 中柯西列, 即 $\sup_n\left|x_n^{\left(m\right)}-x_n^{\left(k\right)}\right|\to0$. 对每个固定的 $n$, $\left(x_n^{\left(m\right)}\right)_m$ 是 $\mathbb R$ 中柯西列, 故收敛到 $x_n$. 由**定义 6.38** (完备度量空间), 需证 $x\in l^\infty$ 且 $\left\|x^{\left(m\right)}-x\right\|_\infty\to0$. 由柯西性取 $M$ 使 $m,k\ge M$ 时 $\sup_n\left|x_n^{\left(m\right)}-x_n^{\left(k\right)}\right|<1$. 令 $k\to\infty$ 得 $\left|x_n^{\left(m\right)}-x_n\right|\le1$ 对一切 $n$, 故 $x_n^{\left(m\right)}-x\in l^\infty$, 从而 $x=\left(x^{\left(m\right)}-x\right)+x^{\left(m\right)}\in l^\infty$. 且 $\sup_n\left|x_n^{\left(m\right)}-x_n\right|\le\epsilon$ 对 $m\ge M$, 即 $\left\|x^{\left(m\right)}-x\right\|_\infty\to0$. 由**定义 6.21** (巴拿赫空间), $l^\infty$ 完备. $\blacksquare$
+完备性: 设 $\left(x^{\left(m\right)}\right)$ 是 $l^\infty$ 中柯西列, 即 $\sup_n\left|x_n^{\left(m\right)}-x_n^{\left(k\right)}\right|\to0$. 对每个固定的 $n$, $\left(x_n^{\left(m\right)}\right)_m$ 是 $\mathbb R$ 中柯西列, 故收敛到 $x_n$. 由**定义 6.38** (完备度量空间), 需证 $x\in l^\infty$ 且 $\left\|x^{\left(m\right)}-x\right\|_\infty\to0$. 由柯西性取 $M$ 使 $m,k\ge M$ 时 $\sup_n\left|x_n^{\left(m\right)}-x_n^{\left(k\right)}\right|<1$. 令 $k\to\infty$ 得 $\left|x_n^{\left(m\right)}-x_n\right|\le1$ 对一切 $n$, 故 $x_n^{\left(m\right)}-x\in l^\infty$, 从而 $x=\left(x^{\left(m\right)}-x\right)+x^{\left(m\right)}\in l^\infty$. 且 $\sup_n\left|x_n^{\left(m\right)}-x_n\right|\le\varepsilon$ 对 $m\ge M$, 即 $\left\|x^{\left(m\right)}-x\right\|_\infty\to0$. 由**定义 6.21** (巴拿赫空间), $l^\infty$ 完备. $\blacksquare$
 
 ### 习题七
 
@@ -170,7 +170,7 @@ $$
 
 ($\Rightarrow$) 若 $T$ 连续, 则 $T$ 在 $0$ 连续, 故存在 $\delta>0$ 使 $\left\|x\right\|<\delta$ 时 $\left\|Tx\right\|\le1$. 对任意 $x\neq0$, 令 $y=\frac{\delta}{2\left\|x\right\|}x$, 则 $\left\|y\right\|<\delta$, $\left\|Ty\right\|\le1$, 由线性性 $\left\|Tx\right\|=\frac{2\left\|x\right\|}{\delta}\left\|Ty\right\|\le\frac{2}{\delta}\left\|x\right\|$. 故 $\sup_{\left\|x\right\|\le1}\left\|Tx\right\|\le2/\delta<\infty$, 即 $T$ 有界.
 
-($\Leftarrow$) 若 $T$ 有界, 即 $\left\|Tx\right\|\le M\left\|x\right\|$ 对一切 $x$. 则对任意 $\epsilon>0$, 取 $\delta=\epsilon/M$, 当 $\left\|x-y\right\|<\delta$ 时 $\left\|Tx-Ty\right\|=\left\|T\left(x-y\right)\right\|\le M\left\|x-y\right\|<\epsilon$. 由**定义 6.28** (算子范数) 的定义, $T$ 连续. $\blacksquare$
+($\Leftarrow$) 若 $T$ 有界, 即 $\left\|Tx\right\|\le M\left\|x\right\|$ 对一切 $x$. 则对任意 $\varepsilon>0$, 取 $\delta=\varepsilon/M$, 当 $\left\|x-y\right\|<\delta$ 时 $\left\|Tx-Ty\right\|=\left\|T\left(x-y\right)\right\|\le M\left\|x-y\right\|<\varepsilon$. 由**定义 6.28** (算子范数) 的定义, $T$ 连续. $\blacksquare$
 
 ### 习题九
 
@@ -192,7 +192,7 @@ $$
 
 ### 解答 习题十
 
-由**定理 6.5** (紧空间上连续函数一致连续), 对 $\left(S_0,T_0\right)$, 当 $\left\|S-S_0\right\|<\epsilon$, $\left\|T-T_0\right\|<\epsilon$ 时,
+由**定理 6.5** (紧空间上连续函数一致连续), 对 $\left(S_0,T_0\right)$, 当 $\left\|S-S_0\right\|<\varepsilon$, $\left\|T-T_0\right\|<\varepsilon$ 时,
 
 $$
 \left\|T\circ S-T_0\circ S_0\right\|\le\left\|T\circ S-T\circ S_0\right\|+\left\|T\circ S_0-T_0\circ S_0\right\|\le\left\|T\right\|\left\|S-S_0\right\|+\left\|T-T_0\right\|\left\|S_0\right\|.
@@ -332,17 +332,17 @@ $$
 
 ### 习题廿二
 
-证明 Urysohn 引理的度量版本: 若 $X$ 是度量空间, $F\subset X$ 闭集, 则存在连续函数 $f:X\to\left[0,1\right]$ 使 $f=0$ 在 $F$ 上, $f=1$ 在 $X\setminus B\left(F,\epsilon\right)$ 上.
+证明 Urysohn 引理的度量版本: 若 $X$ 是度量空间, $F\subset X$ 闭集, 则存在连续函数 $f:X\to\left[0,1\right]$ 使 $f=0$ 在 $F$ 上, $f=1$ 在 $X\setminus B\left(F,\varepsilon\right)$ 上.
 
 ### 解答 习题廿二
 
 由**定义 6.46** (点到集合的距离), $d\left(x,F\right)=\inf_{a\in F}d\left(x,a\right)$. 定义
 
 $$
-f\left(x\right)=\min\left(1,\frac{d\left(x,F\right)}{\epsilon}\right).
+f\left(x\right)=\min\left(1,\frac{d\left(x,F\right)}{\varepsilon}\right).
 $$
 
-由 $F$ 闭, $d\left(x,F\right)=0$ 当且仅当 $x\in F$, 故 $f=0$ 在 $F$ 上. 若 $x\notin B\left(F,\epsilon\right)$, 则 $d\left(x,F\right)\ge\epsilon$, 故 $f\left(x\right)=1$.
+由 $F$ 闭, $d\left(x,F\right)=0$ 当且仅当 $x\in F$, 故 $f=0$ 在 $F$ 上. 若 $x\notin B\left(F,\varepsilon\right)$, 则 $d\left(x,F\right)\ge\varepsilon$, 故 $f\left(x\right)=1$.
 
 连续性: $d\left(\cdot,F\right)$ 是利普希茨映射 (由三角不等式 $\left|d\left(x,F\right)-d\left(y,F\right)\right|\le d\left(x,y\right)$), 复合 $\min\left(1,\cdot\right)$ 连续. 由**定义 3.22** (连续映射), $f$ 连续. 由**定义 6.35** (度量空间) 的三角不等式, 上述推导成立. 这是**定理 7.2** (Urysohn 引理) 在度量空间中的直接形式. $\blacksquare$
 
