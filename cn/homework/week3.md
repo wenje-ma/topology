@@ -38,11 +38,11 @@
 
 > **定义 6.35** (度量空间)<br>度量 $d:X\times X\to\mathbb R_{\ge0}$ 满足:<br>(1) $d\left(x,x\right)=0$;<br>(2) 若 $d\left(x,y\right)=0$ 则 $x=y$;<br>(3) $d\left(x,y\right)=d\left(y,x\right)$;<br>(4) $d\left(x,y\right)\le d\left(x,z\right)+d\left(z,y\right)$. 装备了度量 $d$ 的集合 $X$ 称为度量空间. (题集 $\S1.3$ Q2; 教材 $\S6$ 由此给出度量拓扑)
 
-> **定义 6.36** (开球)<br>开球 $B\left(x,r\right)=\left\{y\in X:d\left(x,y\right)<r\right\}$. 全体开球构成度量拓扑的一个基. (教材 $\S6$)
+> **定义 6.36** (开球)<br>开球 $B\left(x,r\right)=\left\{y\in X:d\left(x,y\right)< r\right\}$. 全体开球构成度量拓扑的一个基. (教材 $\S6$)
 
 > **定义 6.46** (点到集合的距离)<br>$d\left(x,A\right)=\inf_{a\in A}d\left(x,a\right)$. (题集 $\S3.2$)
 
-> **定义 6.47** ($\varepsilon$-邻域)<br>$U_\varepsilon\left(A\right)=\left\{x\in X:d\left(x,A\right)<\varepsilon\right\}$. (题集 $\S3.2$)
+> **定义 6.47** ($\varepsilon$-邻域)<br>$U_\varepsilon\left(A\right)=\left\{x\in X:d\left(x,A\right)< \varepsilon\right\}$. (题集 $\S3.2$)
 
 > **命题** (可分度量空间必有可数基)<br>若度量空间 $X$ 有可数稠密子集, 则 $X$ 有可数基. 事实上对可度量化空间, 可分与第二可数等价. (Munkres $\S30$, 习题 5(a))
 
@@ -116,7 +116,7 @@ $$
 
 **($\Rightarrow$)** 设 $F$ 闭. 由**定义 3.21** (闭集), $\mathbb R\setminus F$ 开. 设 $x_n\in F$ 且 $x_n\to L$. 若 $L\notin F$, 则 $L\in\mathbb R\setminus F$, 而 $\mathbb R\setminus F$ 是 $L$ 的邻域. 由**定义 3.25** (邻域与极限), 对所有充分大的 $n$ 有 $x_n\in\mathbb R\setminus F$, 与 $x_n\in F$ 矛盾. 故 $L\in F$.
 
-**($\Leftarrow$)** 反证. 设 $F$ 不闭. 由**定义 3.21** (闭集), $\mathbb R\setminus F$ 不开. 故存在 $L\notin F$ 使 $L$ 的任何邻域都不含于 $\mathbb R\setminus F$, 即 $L$ 的任何邻域都与 $F$ 相交. 由**定义 6.36** (开球), 球 $B\left(L,1/n\right)=\left(L-\frac1n,L+\frac1n\right)$ 与 $F$ 相交, 取 $x_n\in F\cap B\left(L,1/n\right)$, 则 $d\left(x_n,L\right)<1/n$. 任给 $L$ 的邻域, 由**定义 6.36** (开球) 它包含某 $B\left(L,\varepsilon\right)$; 当 $n>1/\varepsilon$ 时 $x_n\in B\left(L,\varepsilon\right)$, 故由**定义 3.25** (邻域与极限) $x_n\to L$. 但 $L\notin F$, 与假设矛盾. 故 $F$ 闭. $\blacksquare$
+**($\Leftarrow$)** 反证. 设 $F$ 不闭. 由**定义 3.21** (闭集), $\mathbb R\setminus F$ 不开. 故存在 $L\notin F$ 使 $L$ 的任何邻域都不含于 $\mathbb R\setminus F$, 即 $L$ 的任何邻域都与 $F$ 相交. 由**定义 6.36** (开球), 球 $B\left(L,1/n\right)=\left(L-\frac1n,L+\frac1n\right)$ 与 $F$ 相交, 取 $x_n\in F\cap B\left(L,1/n\right)$, 则 $d\left(x_n,L\right)< 1/n$. 任给 $L$ 的邻域, 由**定义 6.36** (开球) 它包含某 $B\left(L,\varepsilon\right)$; 当 $n> 1/\varepsilon$ 时 $x_n\in B\left(L,\varepsilon\right)$, 故由**定义 3.25** (邻域与极限) $x_n\to L$. 但 $L\notin F$, 与假设矛盾. 故 $F$ 闭. $\blacksquare$
 
 ### 习题五
 
@@ -200,7 +200,7 @@ $$
 
 (1) 证明具有可数基的拓扑空间必可分;
 
-(2) 考虑 $\mathbb R$ 上以 $\mathcal B=\left\{\left(a,b\right]\subset\mathbb R:a<b\right\}$ 为基. 证明 $\mathcal B$ 确实是某拓扑 $\mathcal O$ 的基; 证明 $\mathcal O$ 可分但没有可数基; 证明 $\mathcal O$ 不来自度量拓扑 (即不可度量化).
+(2) 考虑 $\mathbb R$ 上以 $\mathcal B=\left\{\left(a,b\right]\subset\mathbb R:a< b\right\}$ 为基. 证明 $\mathcal B$ 确实是某拓扑 $\mathcal O$ 的基; 证明 $\mathcal O$ 可分但没有可数基; 证明 $\mathcal O$ 不来自度量拓扑 (即不可度量化).
 
 ### 解答 习题十
 
@@ -232,11 +232,11 @@ $W_{n\left(x\right)}$ 作为某 $\left(a,b\right]$ 之并, 其右端点不超过
 
 (1) 证明度量空间中, 任取 $r_n\to0$, $B\left(x,r_n\right)$ 是 $x$ 的基本邻域系;
 
-(2) 但当 $A$ 是子集时, $V_{\varepsilon}\left(A\right)=\left\{x:d\left(x,A\right)<\varepsilon\right\}$ 不一定是 $A$ 的基本邻域系. 例如取 $A=\left\{xy=1,x>0\right\}\subset\mathbb R^2$ 与 $U=\left\{x,y>0\right\}\subset\mathbb R^2$.
+(2) 但当 $A$ 是子集时, $V_{\varepsilon}\left(A\right)=\left\{x:d\left(x,A\right)< \varepsilon\right\}$ 不一定是 $A$ 的基本邻域系. 例如取 $A=\left\{xy=1,x> 0\right\}\subset\mathbb R^2$ 与 $U=\left\{x,y> 0\right\}\subset\mathbb R^2$.
 
 ### 解答 习题十一
 
-(1) 设 $U$ 是 $x$ 的任一邻域 (**定义 3.25** (邻域与极限)). 由**定义 6.36** (开球), 度量拓扑中存在 $r>0$ 使 $B\left(x,r\right)\subset U$. 由 $r_n\to0$, 存在 $n$ 使 $r_n<r$, 于是
+(1) 设 $U$ 是 $x$ 的任一邻域 (**定义 3.25** (邻域与极限)). 由**定义 6.36** (开球), 度量拓扑中存在 $r> 0$ 使 $B\left(x,r\right)\subset U$. 由 $r_n\to0$, 存在 $n$ 使 $r_n< r$, 于是
 
 $$
 B\left(x,r_n\right)\subset B\left(x,r\right)\subset U.
@@ -244,13 +244,13 @@ $$
 
 由**定义 3.30** (基本邻域系), $\left\{B\left(x,r_n\right)\right\}$ 是 $x$ 的基本邻域系.
 
-(2) 取题中 $A=\left\{\left(x,1/x\right):x>0\right\}\subset\mathbb R^2$, $U=\left\{\left(x,y\right):x>0,y>0\right\}$. $U$ 开且 $A\subset U$, 故 $U$ 是 $A$ 的邻域. 对任意 $\varepsilon>0$, 取点
+(2) 取题中 $A=\left\{\left(x,1/x\right):x> 0\right\}\subset\mathbb R^2$, $U=\left\{\left(x,y\right):x> 0,y> 0\right\}$. $U$ 开且 $A\subset U$, 故 $U$ 是 $A$ 的邻域. 对任意 $\varepsilon> 0$, 取点
 
 $$
 a=\left(\frac{\varepsilon}{2},\frac{2}{\varepsilon}\right)\in A,
 $$
 
-再取 $a'=\left(-\frac{\varepsilon}{4},\frac{2}{\varepsilon}\right)$. 由**定义 6.46** (点到集合的距离), $d\left(a',A\right)\le d\left(a',a\right)=\frac{3\varepsilon}{4}<\varepsilon$, 故 $a'\in V_{\varepsilon}\left(A\right)$ (**定义 6.47** ($\varepsilon$-邻域)). 但 $a'$ 的横坐标为负, $a'\notin U$. 于是对每个 $\varepsilon>0$, $V_{\varepsilon}\left(A\right)\not\subset U$. 故没有任何 $V_{\varepsilon}\left(A\right)$ 含于 $U$, 由**定义 3.30** (基本邻域系), $\left\{V_{\varepsilon}\left(A\right)\right\}$ 不是 $A$ 的基本邻域系. $\blacksquare$
+再取 $a'=\left(-\frac{\varepsilon}{4},\frac{2}{\varepsilon}\right)$. 由**定义 6.46** (点到集合的距离), $d\left(a',A\right)\le d\left(a',a\right)=\frac{3\varepsilon}{4}< \varepsilon$, 故 $a'\in V_{\varepsilon}\left(A\right)$ (**定义 6.47** ($\varepsilon$-邻域)). 但 $a'$ 的横坐标为负, $a'\notin U$. 于是对每个 $\varepsilon> 0$, $V_{\varepsilon}\left(A\right)\not\subset U$. 故没有任何 $V_{\varepsilon}\left(A\right)$ 含于 $U$, 由**定义 3.30** (基本邻域系), $\left\{V_{\varepsilon}\left(A\right)\right\}$ 不是 $A$ 的基本邻域系. $\blacksquare$
 
 > 同样的构造基本邻域系的规则, 为什么全集就满足, 子集就不满足呢? 因为全集上定义的邻域必定全在全集内部; 而对于子集, 我们可以找到该子集的边界作为反例的邻域, 在其上的任何 $\varepsilon$-邻域都会超出其范围, 导致了这种构造方法的失效.
 
@@ -260,14 +260,14 @@ $$
 
 (1) 证明度量空间总是豪斯多夫的;
 
-(2) 证明 $\mathbb A^n\left(\mathbb R\right)$ (或 $\mathbb R^n$) 的每个扎里斯基开集在通常拓扑下既开又稠密; 证明 $\mathbb A^n\left(\mathbb R\right)$ 的扎里斯基拓扑对任意 $n>0$ 都不是豪斯多夫的.
+(2) 证明 $\mathbb A^n\left(\mathbb R\right)$ (或 $\mathbb R^n$) 的每个扎里斯基开集在通常拓扑下既开又稠密; 证明 $\mathbb A^n\left(\mathbb R\right)$ 的扎里斯基拓扑对任意 $n> 0$ 都不是豪斯多夫的.
 
 ### 解答 习题十二
 
-(1) 设 $\left(X,d\right)$ 是**定义 6.35** (度量空间). 取 $x\neq y$, 令 $r=\frac13 d\left(x,y\right)>0$. 由**定义 6.36** (开球), $B\left(x,r\right)$ 与 $B\left(y,r\right)$ 是开集. 若二者相交, 由三角不等式
+(1) 设 $\left(X,d\right)$ 是**定义 6.35** (度量空间). 取 $x\neq y$, 令 $r=\frac13 d\left(x,y\right)> 0$. 由**定义 6.36** (开球), $B\left(x,r\right)$ 与 $B\left(y,r\right)$ 是开集. 若二者相交, 由三角不等式
 
 $$
-d\left(x,y\right)\le d\left(x,z\right)+d\left(z,y\right)<2r=\frac23 d\left(x,y\right),
+d\left(x,y\right)\le d\left(x,z\right)+d\left(z,y\right)< 2r=\frac23 d\left(x,y\right),
 $$
 
 矛盾. 故 $B\left(x,r\right)\cap B\left(y,r\right)=\emptyset$. 由**定义 3.10** (豪斯多夫空间), 度量空间是豪斯多夫的.
@@ -293,24 +293,24 @@ $$
 故 $x\mapsto d\left(x,F\right)$ 连续. 现取不相交闭集 $F,F'$. 令
 
 $$
-U=\left\{x:d\left(x,F\right)<d\left(x,F'\right)\right\},\quad
-V=\left\{x:d\left(x,F'\right)<d\left(x,F\right)\right\}.
+U=\left\{x:d\left(x,F\right)< d\left(x,F'\right)\right\},\quad
+V=\left\{x:d\left(x,F'\right)< d\left(x,F\right)\right\}.
 $$
 
-二者开 (连续函数的原像, 由**定义 3.22** (连续映射)), 不相交, 且 $F\subset U$ (因 $x\in F$ 时 $d\left(x,F\right)=0<d\left(x,F'\right)$), $F'\subset V$. 由**定义 7.6** (正规空间), 度量空间正规. $\blacksquare$
+二者开 (连续函数的原像, 由**定义 3.22** (连续映射)), 不相交, 且 $F\subset U$ (因 $x\in F$ 时 $d\left(x,F\right)=0< d\left(x,F'\right)$), $F'\subset V$. 由**定义 7.6** (正规空间), 度量空间正规. $\blacksquare$
 
 ### 习题十四
 
 混合烧烤. 考虑 $\left[0,1\right]\subset\mathbb R$ 与另外两个不属于它的元 $\left\{0^{-},0^{+}\right\}$, 令 $X=\left\{0^{-},0^{+}\right\}\cup\left(0,1\right]$. 定义
 
 $$
-\mathcal B\left(x\right)=\left\{\left(x-\frac1n,x+\frac1n\right)\cap\left(0,1\right]:n\in\mathbb Z_{>0}\right\}\quad\left(x\in\left(0,1\right]\right),
+\mathcal B\left(x\right)=\left\{\left(x-\frac1n,x+\frac1n\right)\cap\left(0,1\right]:n\in\mathbb Z_{> 0}\right\}\quad\left(x\in\left(0,1\right]\right),
 $$
 
 与
 
 $$
-\mathcal B\left(0^{\pm}\right)=\left\{\left\{0^{\pm}\right\}\cup\left(0,\frac1n\right):n\in\mathbb Z_{>0}\right\}.
+\mathcal B\left(0^{\pm}\right)=\left\{\left\{0^{\pm}\right\}\cup\left(0,\frac1n\right):n\in\mathbb Z_{> 0}\right\}.
 $$
 
 证明 $\mathcal B=\bigcup_{x\in X}\mathcal B\left(x\right)$ 是某拓扑的基; 证明该拓扑不是豪斯多夫的; 证明 $0^{+}$ 没有由闭邻域组成的基本邻域系.
@@ -385,7 +385,7 @@ $$
 
 $\left(\Rightarrow\right)$ 设 $f$ 连续, $x_n\to x$. 任取 $f\left(x\right)$ 的邻域 $V$, 由**定义 3.22** (连续映射), $f^{-1}\left(V\right)$ 是 $x$ 的邻域; 由**定义 3.25** (邻域与极限), 充分大的 $n$ 有 $x_n\in f^{-1}\left(V\right)$, 即 $f\left(x_n\right)\in V$. 故 $f\left(x_n\right)\to f\left(x\right)$.
 
-$\left(\Leftarrow\right)$ 设序列保持收敛. 反设 $f$ 在 $x$ 不连续, 则存在 $f\left(x\right)$ 的邻域 $V$ 使 $f^{-1}\left(V\right)$ 不是 $x$ 的邻域. 由**定义 6.36** (开球), $B\left(x,1/n\right)\not\subset f^{-1}\left(V\right)$, 取 $x_n\in B\left(x,1/n\right)\setminus f^{-1}\left(V\right)$. 则 $d\left(x_n,x\right)<1/n\to0$, 即 $x_n\to x$, 但 $f\left(x_n\right)\notin V$, 故 $\left(f\left(x_n\right)\right)$ 不收敛到 $f\left(x\right)$, 矛盾.
+$\left(\Leftarrow\right)$ 设序列保持收敛. 反设 $f$ 在 $x$ 不连续, 则存在 $f\left(x\right)$ 的邻域 $V$ 使 $f^{-1}\left(V\right)$ 不是 $x$ 的邻域. 由**定义 6.36** (开球), $B\left(x,1/n\right)\not\subset f^{-1}\left(V\right)$, 取 $x_n\in B\left(x,1/n\right)\setminus f^{-1}\left(V\right)$. 则 $d\left(x_n,x\right)< 1/n\to0$, 即 $x_n\to x$, 但 $f\left(x_n\right)\notin V$, 故 $\left(f\left(x_n\right)\right)$ 不收敛到 $f\left(x\right)$, 矛盾.
 
 用到度量结构之处在于: 用可数邻域基 $B\left(x,1/n\right)$ 把"$f^{-1}\left(V\right)$ 不是邻域"翻译成一列点 $\left(x_n\right)$, 即把否定连续性直接转化为序列. 在一般拓扑空间中, 这一翻译不成立, 但可放松为第一可数空间 (每点有可数邻域基). $\blacksquare$
 

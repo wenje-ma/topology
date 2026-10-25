@@ -34,9 +34,9 @@
 
 > **定义 4.11** (弗斯滕伯格拓扑)<br>$\mathbb Z$ 上以非平凡等差数列 $S\left(a,b\right)=a\mathbb Z+b=\left\{an+b:n\in\mathbb Z\right\}$ $\left(a\neq0\right)$ 为基的拓扑; $S\left(a,b\right)$ 既开又闭. (题集 $\S2.2$)
 
-> **定义 4.12** (戈洛姆拓扑)<br>$\mathbb Z_{>0}$ 上以 $\left\{an+b:n\in\mathbb N\right\}$ ($a,b$ 互素) 为基的拓扑. (题集 $\S2.2$)
+> **定义 4.12** (戈洛姆拓扑)<br>$\mathbb Z_{> 0}$ 上以 $\left\{an+b:n\in\mathbb N\right\}$ ($a,b$ 互素) 为基的拓扑. (题集 $\S2.2$)
 
-> **定义 4.13** (基尔希拓扑)<br>$\mathbb Z_{>0}$ 上以 $\left\{pn+b:n\in\mathbb N\right\}$ ($p$ 为素数且 $p\nmid b$) 为基的拓扑. (题集 $\S2.2$)
+> **定义 4.13** (基尔希拓扑)<br>$\mathbb Z_{> 0}$ 上以 $\left\{pn+b:n\in\mathbb N\right\}$ ($p$ 为素数且 $p\nmid b$) 为基的拓扑. (题集 $\S2.2$)
 
 > **定理 4.16** (谢尔宾斯基同胚定理)<br>任意两个无孤立点的可数可度量化空间互相同胚. (题集 $\S2.2$)
 
@@ -132,29 +132,29 @@ $$
 
 ### 习题二
 
-在 $\mathbb Z_{>0}$ 上分别用 (非平凡) 等差数列 $a\mathbb N+b=\left\{an+b:n\in\mathbb N\right\}$ ($a,b$ 互素) 与 $p\mathbb N+b=\left\{pn+b:n\in\mathbb N\right\}$ ($p$ 为素数且 $p\nmid b$) 为基 (前者) 与子基 (后者) 定义两个拓扑.
+在 $\mathbb Z_{> 0}$ 上分别用 (非平凡) 等差数列 $a\mathbb N+b=\left\{an+b:n\in\mathbb N\right\}$ ($a,b$ 互素) 与 $p\mathbb N+b=\left\{pn+b:n\in\mathbb N\right\}$ ($p$ 为素数且 $p\nmid b$) 为基 (前者) 与子基 (后者) 定义两个拓扑.
 
-(1) (戈洛姆) 证明基可限制到满足 $0\le b<a$ 且 $a,b$ 互素的偶对;
+(1) (戈洛姆) 证明基可限制到满足 $0\le b< a$ 且 $a,b$ 互素的偶对;
 
-(2) (戈洛姆) 验证这确实给出 $\mathbb Z_{>0}$ 上的拓扑;
+(2) (戈洛姆) 验证这确实给出 $\mathbb Z_{> 0}$ 上的拓扑;
 
-(3) (基尔希) 证明基可限制到满足 $0\le b<p$ 且 $p\nmid b$ 的偶对;
+(3) (基尔希) 证明基可限制到满足 $0\le b< p$ 且 $p\nmid b$ 的偶对;
 
-(4) (基尔希) 验证这确实给出 $\mathbb Z_{>0}$ 上的拓扑.
+(4) (基尔希) 验证这确实给出 $\mathbb Z_{> 0}$ 上的拓扑.
 
 ### 解答 习题二
 
-(1) 对基元素 $S\left(a,b\right)=\left\{an+b:n\in\mathbb N\right\}$, $\gcd\left(a,b\right)=1$. 作带余除法 $b=qa+r$, $0\le r<a$. 则 $\gcd\left(a,r\right)=\gcd\left(a,b\right)=1$, 且 $S\left(a,b\right)=\left\{a\left(n+q\right)+r:n\in\mathbb N\right\}\subset S\left(a,r\right)$. 反之, 对 $x=an_0+b\in S\left(a,b\right)$, $\gcd\left(a,x\right)=\gcd\left(a,an_0+b\right)=\gcd\left(a,b\right)=1$, 于是
+(1) 对基元素 $S\left(a,b\right)=\left\{an+b:n\in\mathbb N\right\}$, $\gcd\left(a,b\right)=1$. 作带余除法 $b=qa+r$, $0\le r< a$. 则 $\gcd\left(a,r\right)=\gcd\left(a,b\right)=1$, 且 $S\left(a,b\right)=\left\{a\left(n+q\right)+r:n\in\mathbb N\right\}\subset S\left(a,r\right)$. 反之, 对 $x=an_0+b\in S\left(a,b\right)$, $\gcd\left(a,x\right)=\gcd\left(a,an_0+b\right)=\gcd\left(a,b\right)=1$, 于是
 
 $$
 S\left(a,x\right)=\left\{an+x:n\in\mathbb N\right\}\subset\left\{b+am:m\ge n_0\right\}\subset S\left(a,b\right).
 $$
 
-故每点 $x$ 的邻域都可由满足 $0\le r<a$ 的基元素生成, 基可限制到 $0\le b<a$ 且互素的偶对.
+故每点 $x$ 的邻域都可由满足 $0\le r< a$ 的基元素生成, 基可限制到 $0\le b< a$ 且互素的偶对.
 
-(2) 验证基条件. $S\left(a,b\right)\cap S\left(c,d\right)$ 非空当且仅当 $\gcd\left(a,c\right)\mid\left(b-d\right)$; 此时交为 $S\left(\operatorname{lcm}\left(a,c\right),x_0\right)$, 且 $\gcd\left(\operatorname{lcm}\left(a,c\right),x_0\right)=1$. 它仍是**定义 4.12** (戈洛姆拓扑) 的基元素. 又 $S\left(1,1\right)=\mathbb Z_{>0}$ 覆盖全空间. 由**定义 3.15** (拓扑基) 与**定义 3.18** (拓扑空间), 这给出 $\mathbb Z_{>0}$ 上的拓扑.
+(2) 验证基条件. $S\left(a,b\right)\cap S\left(c,d\right)$ 非空当且仅当 $\gcd\left(a,c\right)\mid\left(b-d\right)$; 此时交为 $S\left(\operatorname{lcm}\left(a,c\right),x_0\right)$, 且 $\gcd\left(\operatorname{lcm}\left(a,c\right),x_0\right)=1$. 它仍是**定义 4.12** (戈洛姆拓扑) 的基元素. 又 $S\left(1,1\right)=\mathbb Z_{> 0}$ 覆盖全空间. 由**定义 3.15** (拓扑基) 与**定义 3.18** (拓扑空间), 这给出 $\mathbb Z_{> 0}$ 上的拓扑.
 
-(3) 对基尔希的 $S\left(p,b\right)=\left\{pn+b:n\in\mathbb N\right\}$, $p$ 素数, $p\nmid b$. 作带余除法 $b=qp+r$, $0\le r<p$, 则 $p\nmid r$ (否则 $p\mid b$), 且 $S\left(p,b\right)\subset S\left(p,r\right)$. 同第 1 小题, 对 $x=pn_0+b\in S\left(p,b\right)$ 有 $p\nmid x$, 故 $S\left(p,x\right)\subset S\left(p,b\right)$. 基可限制到 $0\le b<p$ 且 $p\nmid b$ 的偶对.
+(3) 对基尔希的 $S\left(p,b\right)=\left\{pn+b:n\in\mathbb N\right\}$, $p$ 素数, $p\nmid b$. 作带余除法 $b=qp+r$, $0\le r< p$, 则 $p\nmid r$ (否则 $p\mid b$), 且 $S\left(p,b\right)\subset S\left(p,r\right)$. 同第 1 小题, 对 $x=pn_0+b\in S\left(p,b\right)$ 有 $p\nmid x$, 故 $S\left(p,x\right)\subset S\left(p,b\right)$. 基可限制到 $0\le b< p$ 且 $p\nmid b$ 的偶对.
 
 (4) 以 $\left\{S\left(p,b\right)\right\}$ 为子基, 其有限交
 
@@ -162,7 +162,7 @@ $$
 S\left(p_1,b_1\right)\cap\cdots\cap S\left(p_k,b_k\right)
 $$
 
-由中国剩余定理为 $\left\{x\equiv b_i\pmod{p_i}\right\}=S\left(M,x_0\right)$, 其中 $M=p_1\cdots p_k$, $p_i\nmid x_0$. 两个这样的有限交之交仍是同形的有限交. 故有限交全体构成一个基, 由**定义 3.15** (拓扑基) 与**定义 3.18** (拓扑空间) 生成 $\mathbb Z_{>0}$ 上的**定义 4.13** (基尔希拓扑). $\blacksquare$
+由中国剩余定理为 $\left\{x\equiv b_i\pmod{p_i}\right\}=S\left(M,x_0\right)$, 其中 $M=p_1\cdots p_k$, $p_i\nmid x_0$. 两个这样的有限交之交仍是同形的有限交. 故有限交全体构成一个基, 由**定义 3.15** (拓扑基) 与**定义 3.18** (拓扑空间) 生成 $\mathbb Z_{> 0}$ 上的**定义 4.13** (基尔希拓扑). $\blacksquare$
 
 ### 习题三
 
@@ -176,7 +176,7 @@ $$
 
 ### 解答 习题三
 
-(1) **豪斯多夫**: 取 $x\neq y$. 选非零 $a$ 使 $a>\left|x-y\right|$. 若 $S\left(a,x\right)\cap S\left(a,y\right)\neq\emptyset$, 则 $x+an=y+am$, 即 $a\left(n-m\right)=y-x$, 与 $a>\left|x-y\right|$ 矛盾. 故 $S\left(a,x\right)$ 与 $S\left(a,y\right)$ 不相交. 由**定义 3.10** (豪斯多夫空间), 弗斯滕伯格拓扑是豪斯多夫的. 由**定义 3.24** ($T_1$ 空间), 单点集皆闭.
+(1) **豪斯多夫**: 取 $x\neq y$. 选非零 $a$ 使 $a> \left|x-y\right|$. 若 $S\left(a,x\right)\cap S\left(a,y\right)\neq\emptyset$, 则 $x+an=y+am$, 即 $a\left(n-m\right)=y-x$, 与 $a> \left|x-y\right|$ 矛盾. 故 $S\left(a,x\right)$ 与 $S\left(a,y\right)$ 不相交. 由**定义 3.10** (豪斯多夫空间), 弗斯滕伯格拓扑是豪斯多夫的. 由**定义 3.24** ($T_1$ 空间), 单点集皆闭.
 
 **正则**: 设 $A$ 闭, $x\notin A$. 则 $\mathbb Z-A$ 是开集且含 $x$, 由习题一第 1 小题存在 $a\neq0$ 使 $S\left(a,x\right)\subset\mathbb Z-A$, 即 $S\left(a,x\right)\cap A=\emptyset$. 由习题一第 4 小题 $S\left(a,x\right)$ 既开又闭 (**定义 4.19** (既开又闭集)), 且 $A\subset\mathbb Z-S\left(a,x\right)$, 后者开. 故 $x$ 与 $A$ 有不相交开邻域, 由**定义 7.7** (正则空间) 弗斯滕伯格拓扑正则.
 
@@ -184,17 +184,17 @@ $$
 
 **不可完备度量化**: 反证法. 若它可完备度量化, 则同胚于它的 $\mathbb Q$ 也可完备度量化. 则 $\mathbb Q=\left\{q_1,q_2,\dots\right\}$. 对每一个 $q_n\in\mathbb Q$, 定义 $U_n=\mathbb Q-\left\{q_n\right\}$. 由于 $\left\{q_n\right\}$ 闭, 故 $U_n$ 开, $\left\{U_n\right\}$ 是一族可数稠密开集. 而 $\bigcap_{n=1}^\infty U_n=\bigcap_{n=1}^\infty\left(\mathbb Q-\left\{q_n\right\}\right)=\mathbb Q-\bigcap_{n=1}^\infty\left\{q_n\right\}=\mathbb Q-\mathbb Q=\emptyset$ 是空集, 与**定理 6.13** (贝尔纲定理) 矛盾. 故它不可完备度量化.
 
-(2) **豪斯多夫**: 取 $x\neq y\in\mathbb Z_{>0}$. 选素数 $p$ 使 $p>\left|x-y\right|$ 且 $p\nmid x$, $p\nmid y$ (这样的素数存在, 因素数无穷). 则 $S\left(p,x\right)$ 与 $S\left(p,y\right)$ 分别是**定义 4.12** (戈洛姆拓扑) 与**定义 4.13** (基尔希拓扑) 的基元素; 若相交则 $p\mid\left(x-y\right)$, 与 $p>\left|x-y\right|$ 矛盾. 由**定义 3.10** (豪斯多夫空间), 两拓扑均豪斯多夫.
+(2) **豪斯多夫**: 取 $x\neq y\in\mathbb Z_{> 0}$. 选素数 $p$ 使 $p> \left|x-y\right|$ 且 $p\nmid x$, $p\nmid y$ (这样的素数存在, 因素数无穷). 则 $S\left(p,x\right)$ 与 $S\left(p,y\right)$ 分别是**定义 4.12** (戈洛姆拓扑) 与**定义 4.13** (基尔希拓扑) 的基元素; 若相交则 $p\mid\left(x-y\right)$, 与 $p> \left|x-y\right|$ 矛盾. 由**定义 3.10** (豪斯多夫空间), 两拓扑均豪斯多夫.
 
 **不正则**: 以戈洛姆拓扑为例. 取闭集 $E$ 为全体偶正整数 (奇数集开: 对奇 $x$, $S\left(2,x\right)=\left\{x+2n\right\}$ 全奇且 $\gcd\left(2,x\right)=1$), 再取点 $1$. 点 $1$ 的任一邻域形如 $S\left(a,1\right)=\left\{1+an:n\in\mathbb N\right\}$, 而含偶数 $2$ 的任一开集必含某 $S\left(b,2\right)=\left\{2+bn:n\in\mathbb N\right\}$ ($\gcd\left(b,2\right)=1$, 即 $b$ 奇). 由同余式相容, $S\left(a,1\right)\cap S\left(b,2\right)$ 非空, 故无法用不相交开集分离 $1$ 与闭集 $E$. 由**定义 7.7** (正则空间), 戈洛姆拓扑不正则. 基尔希拓扑同理不正则.
 
 (3) **弗斯滕伯格完全不连通**: 取 $x\neq y$. 选 $a$ 使 $y\notin S\left(a,x\right)$. 由习题一第 4 小题 $S\left(a,x\right)$ 既开又闭且含 $x$ 不含 $y$, 故任何同时含 $x,y$ 的子集都被这个非平凡既开又闭集切断, 不能连通. 由**定义 4.20** (完全不连通), 弗斯滕伯格拓扑完全不连通.
 
-**戈洛姆连通**: 设 $C$ 既开又闭且 $1\in C$. 由标准归纳 (取 $\mathbb Z_{>0}-C$ 中最小元 $n$, 由于开集 $C$ 必然含 $S\left(a,1\right)$, 可推出 $n\in C$), 得 $C=\mathbb Z_{>0}$. 故 $\mathbb Z_{>0}$ 仅有的既开又闭非空集是全空间, 由**定义 4.18** (连通空间) 戈洛姆拓扑连通. 它不**定义 4.9** (局部连通): 点 $1$ 的任一邻域 $S\left(a,1\right)$ 都含非平凡既开又闭子集, 故没有连通邻域基.
+**戈洛姆连通**: 设 $C$ 既开又闭且 $1\in C$. 由标准归纳 (取 $\mathbb Z_{> 0}-C$ 中最小元 $n$, 由于开集 $C$ 必然含 $S\left(a,1\right)$, 可推出 $n\in C$), 得 $C=\mathbb Z_{> 0}$. 故 $\mathbb Z_{> 0}$ 仅有的既开又闭非空集是全空间, 由**定义 4.18** (连通空间) 戈洛姆拓扑连通. 它不**定义 4.9** (局部连通): 点 $1$ 的任一邻域 $S\left(a,1\right)$ 都含非平凡既开又闭子集, 故没有连通邻域基.
 
 **基尔希连通且局部连通**: 基尔希的基元素 $S\left(p,b\right)$ 本身在该拓扑下连通 (同理由既开又闭集归纳), 故每点有连通邻域, 由**定义 4.9** (局部连通) 它局部连通; 又全空间仅有的既开又闭非空集是全空间, 由**定义 4.18** (连通空间) 它连通. $\blacksquare$
 
-> 三个拓扑的精细程度为: $\text{弗斯滕伯格}>\text{戈洛姆}>\text{基尔希}$, 因此 (3) 的结论从直觉上也是成立的. 具体说来, 基尔希连通且局部连通是最粗糙的例子, 因为 $S\left(A,B\right)$ 中的 $A$ 只能是不同素数的乘积, 这导致其局部无法再被分割, 因为找不到更细的 $S$ 了; 而戈洛姆不局部连通, 是因为 $S\left(A,B\right)$ 中的 $A$ 可以是素数的幂, 此时的选择更多, 可以找到更细的 $S$; 弗斯滕伯格不联通, 是因为 $S\left(A,B\right)$ 中的 $A$ 可以是任意数, 此时的选择最多, 以至于 $X$ 可以任意被分割.
+> 三个拓扑的精细程度为: $\text{弗斯滕伯格}> \text{戈洛姆}> \text{基尔希}$, 因此 (3) 的结论从直觉上也是成立的. 具体说来, 基尔希连通且局部连通是最粗糙的例子, 因为 $S\left(A,B\right)$ 中的 $A$ 只能是不同素数的乘积, 这导致其局部无法再被分割, 因为找不到更细的 $S$ 了; 而戈洛姆不局部连通, 是因为 $S\left(A,B\right)$ 中的 $A$ 可以是素数的幂, 此时的选择更多, 可以找到更细的 $S$; 弗斯滕伯格不联通, 是因为 $S\left(A,B\right)$ 中的 $A$ 可以是任意数, 此时的选择最多, 以至于 $X$ 可以任意被分割.
 
 ### 习题四
 
@@ -238,7 +238,7 @@ $$
 
 (2024年卷A 题目一) 设 $f:\mathbb R\to\mathbb R$ 可微但不假设 $f'$ 连续, $I\subset\mathbb R$ 为非平凡开区间.
 
-(1) 证明 $A=\left\{\left(x,y\right)\in I^2:x<y\right\}$ 连通;
+(1) 证明 $A=\left\{\left(x,y\right)\in I^2:x< y\right\}$ 连通;
 
 (2) 令 $F\left(x,y\right)=\frac{f\left(x\right)-f\left(y\right)}{x-y}$, 证明 $\Gamma=F\left(A\right)$ 在 $\mathbb R$ 中连通;
 
@@ -248,11 +248,11 @@ $$
 
 ### 解答 习题六
 
-(1) $A$ 由不等式 $x<y$ 定义, 是凸集; 由**定义 4.23** (凸集), 凸集路径连通, 再由**定理 4.3** (路径连通蕴含连通), $A$ 连通.
+(1) $A$ 由不等式 $x< y$ 定义, 是凸集; 由**定义 4.23** (凸集), 凸集路径连通, 再由**定理 4.3** (路径连通蕴含连通), $A$ 连通.
 
 (2) $f$ 可微故连续, 在 $A$ 上分母非零, $F$ 连续. 由**定理 4.2** (连续像连通), $\Gamma=F\left(A\right)$ 连通.
 
-(3) 对 $\left(x,y\right)\in A$ ($x<y$), 中值定理给出 $c\in\left(x,y\right)\subset I$ 使 $F\left(x,y\right)=f'\left(c\right)$, 故 $\Gamma\subset f'\left(I\right)$. 反之, 对 $x\in I$, 取 $y_n\to x$, $y_n\neq x$, 则 $F\left(x,y_n\right)=\frac{f\left(x\right)-f\left(y_n\right)}{x-y_n}\to f'\left(x\right)$, 而 $F\left(x,y_n\right)\in\Gamma$, 故 $f'\left(x\right)\in\overline\Gamma$.
+(3) 对 $\left(x,y\right)\in A$ ($x< y$), 中值定理给出 $c\in\left(x,y\right)\subset I$ 使 $F\left(x,y\right)=f'\left(c\right)$, 故 $\Gamma\subset f'\left(I\right)$. 反之, 对 $x\in I$, 取 $y_n\to x$, $y_n\neq x$, 则 $F\left(x,y_n\right)=\frac{f\left(x\right)-f\left(y_n\right)}{x-y_n}\to f'\left(x\right)$, 而 $F\left(x,y_n\right)\in\Gamma$, 故 $f'\left(x\right)\in\overline\Gamma$.
 
 (4) $\Gamma$ 连通故是区间; 闭包 $\overline\Gamma$ 也是区间 (由**定理 4.15** (闭包保持连通性)); $f'\left(I\right)$ 夹在二者之间, 故 $f'\left(I\right)$ 是区间. $\blacksquare$
 
@@ -282,11 +282,11 @@ $$
 
 **无穷维情形**: 由**定理 6.17** (里茨定理), 无穷维赋范线性空间的闭单位球非紧, 故任何紧集 $K$ 必无内部 (否则 $K$ 含某闭球的平移, 该闭球紧, 与里茨定理矛盾).
 
-任取 $x,y\in E\setminus K$. 由**定义 6.46** (点到集合的距离), $d\left(x,K\right)>0$. 考虑从 $x$ 出发的单位方向球面 $S\left(E\right)=\left\{v:\left\|v\right\|=1\right\}$. 连续映射 $r:K\to S\left(E\right)$ 定义为 $r\left(k\right)=\left(k-x\right)/\left\|k-x\right\|$ ($k\neq x$; 因 $x\notin K$ 良定义). 由**定理 5.1** (紧空间连续像紧), $r\left(K\right)\subset S\left(E\right)$ 紧. 由**定理 6.17** (里茨定理), $S\left(E\right)$ 中任一紧子集无内部, 故可取方向 $v\in S\left(E\right)\setminus r\left(K\right)$. 于是射线 $\left\{x+tv:t\ge 0\right\}$ 与 $K$ 不相交 (若某 $k=x+tv\in K$, 则 $v=r\left(k\right)\in r\left(K\right)$, 矛盾).
+任取 $x,y\in E\setminus K$. 由**定义 6.46** (点到集合的距离), $d\left(x,K\right)> 0$. 考虑从 $x$ 出发的单位方向球面 $S\left(E\right)=\left\{v:\left\|v\right\|=1\right\}$. 连续映射 $r:K\to S\left(E\right)$ 定义为 $r\left(k\right)=\left(k-x\right)/\left\|k-x\right\|$ ($k\neq x$; 因 $x\notin K$ 良定义). 由**定理 5.1** (紧空间连续像紧), $r\left(K\right)\subset S\left(E\right)$ 紧. 由**定理 6.17** (里茨定理), $S\left(E\right)$ 中任一紧子集无内部, 故可取方向 $v\in S\left(E\right)\setminus r\left(K\right)$. 于是射线 $\left\{x+tv:t\ge 0\right\}$ 与 $K$ 不相交 (若某 $k=x+tv\in K$, 则 $v=r\left(k\right)\in r\left(K\right)$, 矛盾).
 
-取 $L>0$ 充分大使 $z=x+Lv$ 满足 $\left\|z-y\right\|>d\left(y,K\right)$ 且 $z$ 不在 $K$ 中. 直线段 $\left[x,z\right]$ 避开 $K$. 同理从 $y$ 出发选一好方向 $w$ 使射线 $\left\{y+sw:s\ge 0\right\}$ 避开 $K$, 取 $z'=y+Mw$ 充分远. 最后在远离 $K$ 的地方用直线段 $\left[z,z'\right]$ 连接 (因 $K$ 紧有界, 取 $L,M$ 充分大时该线段也在 $K$ 之外). 所得折线 $x\to z\to z'\to y$ 由**定义 4.22** (路径连通) 是连续路径, 且全段避开 $K$. 故 $E\setminus K$ 道路连通.
+取 $L> 0$ 充分大使 $z=x+Lv$ 满足 $\left\|z-y\right\|> d\left(y,K\right)$ 且 $z$ 不在 $K$ 中. 直线段 $\left[x,z\right]$ 避开 $K$. 同理从 $y$ 出发选一好方向 $w$ 使射线 $\left\{y+sw:s\ge 0\right\}$ 避开 $K$, 取 $z'=y+Mw$ 充分远. 最后在远离 $K$ 的地方用直线段 $\left[z,z'\right]$ 连接 (因 $K$ 紧有界, 取 $L,M$ 充分大时该线段也在 $K$ 之外). 所得折线 $x\to z\to z'\to y$ 由**定义 4.22** (路径连通) 是连续路径, 且全段避开 $K$. 故 $E\setminus K$ 道路连通.
 
-**有限维情形**: 结论不成立. 取 $E=\mathbb R^2$, $K=S^1=\left\{\left(u,v\right):u^2+v^2=1\right\}$. $S^1$ 由**定理 5.3** ($\mathbb R^n$ 中的紧集) 是闭有界集, 故紧. 但 $\mathbb R^2\setminus S^1=\left\{u^2+v^2<1\right\}\cup\left\{u^2+v^2>1\right\}$ 是两个非空不相交开集之并, 由**定义 4.18** (连通空间) 不连通, 因而不道路连通. $\blacksquare$
+**有限维情形**: 结论不成立. 取 $E=\mathbb R^2$, $K=S^1=\left\{\left(u,v\right):u^2+v^2=1\right\}$. $S^1$ 由**定理 5.3** ($\mathbb R^n$ 中的紧集) 是闭有界集, 故紧. 但 $\mathbb R^2\setminus S^1=\left\{u^2+v^2< 1\right\}\cup\left\{u^2+v^2> 1\right\}$ 是两个非空不相交开集之并, 由**定义 4.18** (连通空间) 不连通, 因而不道路连通. $\blacksquare$
 
 ### 习题九
 
@@ -294,15 +294,15 @@ $$
 
 ### 解答 习题九
 
-取定 $a$ 使 $f^{-1}\left(a\right)\neq\emptyset$ (若非空), 即存在 $x_0$ 使 $f\left(x_0\right)=a$. 由假设 $f^{-1}\left(a\right)$ 紧, 由**定理 5.3** ($\mathbb R^n$ 中的紧集) 它是闭有界集, 故存在 $R>0$ 使 $f^{-1}\left(a\right)\subset B\left(0,R\right)$.
+取定 $a$ 使 $f^{-1}\left(a\right)\neq\emptyset$ (若非空), 即存在 $x_0$ 使 $f\left(x_0\right)=a$. 由假设 $f^{-1}\left(a\right)$ 紧, 由**定理 5.3** ($\mathbb R^n$ 中的紧集) 它是闭有界集, 故存在 $R> 0$ 使 $f^{-1}\left(a\right)\subset B\left(0,R\right)$.
 
-球面 $\partial B\left(0,R\right)$ 在 $n\ge 2$ 时连通 (它是 $\mathbb R^n$ 中连通紧集). 由**定义 3.22** (连续映射), $f\left(\partial B\left(0,R\right)\right)$ 是 $\mathbb R$ 中不含 $a$ 的连通集; 由**定理 4.2** (连续像连通) 它连通, 故必全在 $\left(a,\infty\right)$ 或全在 $\left(-\infty,a\right)$ 中. 不妨设 $f>a$ 在 $\partial B\left(0,R\right)$ 上.
+球面 $\partial B\left(0,R\right)$ 在 $n\ge 2$ 时连通 (它是 $\mathbb R^n$ 中连通紧集). 由**定义 3.22** (连续映射), $f\left(\partial B\left(0,R\right)\right)$ 是 $\mathbb R$ 中不含 $a$ 的连通集; 由**定理 4.2** (连续像连通) 它连通, 故必全在 $\left(a,\infty\right)$ 或全在 $\left(-\infty,a\right)$ 中. 不妨设 $f> a$ 在 $\partial B\left(0,R\right)$ 上.
 
-**反证**: 假设 $f$ 既无全局最大值也无全局最小值. 由 $f$ 无最小值, 存在 $x$ 使 $f\left(x\right)<a$. 若 $\left\|x\right\|>R$, 考虑从 $x$ 到球心 $0$ 的径向线段; 由**定理 4.1** (区间连通) 该线段连通, 其上 $f$ 连续, 在端点 $x$ 处 $f<a$, 在球面处 $f>a$, 由介值定理必有点 $p$ 在该线段上使 $f\left(p\right)=a$ 且 $\left\|p\right\|>R$, 这与 $f^{-1}\left(a\right)\subset B\left(0,R\right)$ 矛盾. 故 $f$ 无最小值只能在 $\left\|x\right\|<R$ 内发生.
+**反证**: 假设 $f$ 既无全局最大值也无全局最小值. 由 $f$ 无最小值, 存在 $x$ 使 $f\left(x\right)< a$. 若 $\left\|x\right\|> R$, 考虑从 $x$ 到球心 $0$ 的径向线段; 由**定理 4.1** (区间连通) 该线段连通, 其上 $f$ 连续, 在端点 $x$ 处 $f< a$, 在球面处 $f> a$, 由介值定理必有点 $p$ 在该线段上使 $f\left(p\right)=a$ 且 $\left\|p\right\|> R$, 这与 $f^{-1}\left(a\right)\subset B\left(0,R\right)$ 矛盾. 故 $f$ 无最小值只能在 $\left\|x\right\|< R$ 内发生.
 
-同理, 由 $f$ 无最大值, 存在 $y$ 使 $f\left(y\right)>a$. 若 $\left\|y\right\|>R$, 则因外部区域 $\mathbb R^n\setminus \overline B\left(0,R\right)$ 在 $n\ge 2$ 时连通且 $f>a$ 在其边界 $\partial B\left(0,R\right)$ 上, 由**定理 4.2** (连续像连通) 与介值定理推出外部某处 $f=a$, 矛盾. 故 $f$ 的上无界性也只能在 $\overline B\left(0,R\right)$ 内发生.
+同理, 由 $f$ 无最大值, 存在 $y$ 使 $f\left(y\right)> a$. 若 $\left\|y\right\|> R$, 则因外部区域 $\mathbb R^n\setminus \overline B\left(0,R\right)$ 在 $n\ge 2$ 时连通且 $f> a$ 在其边界 $\partial B\left(0,R\right)$ 上, 由**定理 4.2** (连续像连通) 与介值定理推出外部某处 $f=a$, 矛盾. 故 $f$ 的上无界性也只能在 $\overline B\left(0,R\right)$ 内发生.
 
-于是在紧集 $\overline B\left(0,R\right)$ 上由**定理 5.11** (紧空间上连续函数取最大值), $f$ 取得最大值与最小值; 而在 $\mathbb R^n\setminus \overline B\left(0,R\right)$ 上 $f>a$, 故 $f$ 在 $\overline B\left(0,R\right)$ 上取得的最小值就是全局最小值. 故 $f$ 取得全局极值.
+于是在紧集 $\overline B\left(0,R\right)$ 上由**定理 5.11** (紧空间上连续函数取最大值), $f$ 取得最大值与最小值; 而在 $\mathbb R^n\setminus \overline B\left(0,R\right)$ 上 $f> a$, 故 $f$ 在 $\overline B\left(0,R\right)$ 上取得的最小值就是全局最小值. 故 $f$ 取得全局极值.
 
 **$n=1$**: 结论不成立. 取 $f\left(x\right)=x$, 则 $f^{-1}\left(a\right)=\left\{a\right\}$ 是单点集紧, 但 $f:\mathbb R\to\mathbb R$ 既无最大值也无最小值. $\blacksquare$
 
@@ -326,7 +326,7 @@ $$
 
 **($H$ 不闭 $\Rightarrow$ $E\setminus H$ 道路连通)**: 由习题三, $H$ 不闭时 $\varphi$ 不连续, 此时 $\overline H=E$ (即 $H$ 在 $E$ 中稠密). 取 $e\in E$ 使 $\varphi\left(e\right)=1$. 则 $\varphi^{-1}\left(1\right)=e+H$ 在 $E$ 中稠密 (平移不改变稠密性). 任取 $-e\in H^{-}$ ($\varphi\left(-e\right)=-1$), 由**定义 3.32** (稠密) 可取序列 $x_n\in e+H$ 使 $x_n\to -e$, 且不妨设 $x_1=e$.
 
-定义路径 $\gamma:\left[0,1\right]\to E$: 在 $t\in\left[1/\left(k+1\right),1/k\right]$ 上, $\gamma$ 沿直线段从 $x_{k+1}$ 走到 $x_k$, 并令 $\gamma\left(0\right)=-e$. 因 $x_n\to -e$, 该折线在 $0$ 处连续. 对 $t>0$, $\gamma\left(t\right)\in e+H$, 故 $\varphi\left(\gamma\left(t\right)\right)=1$; 而 $\varphi\left(\gamma\left(0\right)\right)=\varphi\left(-e\right)=-1$. 故 $\gamma$ 全段在 $E\setminus H$ 中, 从 $-e$ 连到 $e$. 由**定义 4.22** (路径连通), $H^{-}$ 与 $H^{+}$ 各自道路连通, 任意两点可经 $-e\to e$ 折线互相连通. 故 $E\setminus H$ 道路连通. $\blacksquare$
+定义路径 $\gamma:\left[0,1\right]\to E$: 在 $t\in\left[1/\left(k+1\right),1/k\right]$ 上, $\gamma$ 沿直线段从 $x_{k+1}$ 走到 $x_k$, 并令 $\gamma\left(0\right)=-e$. 因 $x_n\to -e$, 该折线在 $0$ 处连续. 对 $t> 0$, $\gamma\left(t\right)\in e+H$, 故 $\varphi\left(\gamma\left(t\right)\right)=1$; 而 $\varphi\left(\gamma\left(0\right)\right)=\varphi\left(-e\right)=-1$. 故 $\gamma$ 全段在 $E\setminus H$ 中, 从 $-e$ 连到 $e$. 由**定义 4.22** (路径连通), $H^{-}$ 与 $H^{+}$ 各自道路连通, 任意两点可经 $-e\to e$ 折线互相连通. 故 $E\setminus H$ 道路连通. $\blacksquare$
 
 ### 习题十一
 
@@ -364,7 +364,7 @@ $$
 
 考虑一个可微的函数 $f:\mathbb R\to\mathbb R$, 但不假设 $f'$ 是连续的. 取 $\mathbb R$ 上一个非平凡开区间 $I$.
 
-(1) (10 分) 考虑集合 $A=\left\{\left(x,y\right)\in I^2:x<y\right\}$. 证明 $A$ 在最自然的拓扑下是一个连通集合.
+(1) (10 分) 考虑集合 $A=\left\{\left(x,y\right)\in I^2:x< y\right\}$. 证明 $A$ 在最自然的拓扑下是一个连通集合.
 
 (2) (10 分) 考虑在 $A$ 上定义的实函数 $F\left(x,y\right)=\frac{f\left(x\right)-f\left(y\right)}{x-y}$. 证明 $\Gamma=F\left(A\right)$ 是 $\mathbb R$ 中的一个连通集.
 
@@ -374,21 +374,21 @@ $$
 
 ### 解答 习题十二
 
-(1) 任取两点 $P_1=\left(x_1,y_1\right),P_2=\left(x_2,y_2\right)\in A$, 则 $x_1<y_1$ 且 $x_2<y_2$. 对 $t\in\left[0,1\right]$, 线段上的点为 $x\left(t\right)=\left(1-t\right)x_1+tx_2$, $y\left(t\right)=\left(1-t\right)y_1+ty_2$. 于是
+(1) 任取两点 $P_1=\left(x_1,y_1\right),P_2=\left(x_2,y_2\right)\in A$, 则 $x_1< y_1$ 且 $x_2< y_2$. 对 $t\in\left[0,1\right]$, 线段上的点为 $x\left(t\right)=\left(1-t\right)x_1+tx_2$, $y\left(t\right)=\left(1-t\right)y_1+ty_2$. 于是
 
 $$
-y\left(t\right)-x\left(t\right)=\left(1-t\right)\left(y_1-x_1\right)+t\left(y_2-x_2\right)>0,
+y\left(t\right)-x\left(t\right)=\left(1-t\right)\left(y_1-x_1\right)+t\left(y_2-x_2\right)> 0,
 $$
 
 故整条线段含于 $A$. 由**定义 4.23** (凸集), $A$ 是凸集, 凸集必路径连通 (由**定义 4.22** (路径连通)), 再由**定理 4.3** (路径连通蕴含连通) $A$ 连通.
 
 (2) 因 $f$ 可微, $f$ 连续; 在 $A$ 上恒有 $x-y\neq0$, 故 $F\left(x,y\right)=\frac{f\left(x\right)-f\left(y\right)}{x-y}$ 是 $A$ 上的连续函数. 由第 1 小题 $A$ 连通, 由**定理 4.2** (连续像连通), $\Gamma=F\left(A\right)$ 连通.
 
-(3) 先证 $\Gamma\subset f'\left(I\right)$. 任取 $\left(x,y\right)\in A$, $x<y$. 因 $f$ 在 $\left[x,y\right]$ 上连续且在 $\left(x,y\right)$ 上可微, 由微分中值定理, 存在 $c\in\left(x,y\right)\subset I$ 使 $\frac{f\left(x\right)-f\left(y\right)}{x-y}=f'\left(c\right)$. 故 $F\left(x,y\right)\in f'\left(I\right)$, 即 $\Gamma\subset f'\left(I\right)$.
+(3) 先证 $\Gamma\subset f'\left(I\right)$. 任取 $\left(x,y\right)\in A$, $x< y$. 因 $f$ 在 $\left[x,y\right]$ 上连续且在 $\left(x,y\right)$ 上可微, 由微分中值定理, 存在 $c\in\left(x,y\right)\subset I$ 使 $\frac{f\left(x\right)-f\left(y\right)}{x-y}=f'\left(c\right)$. 故 $F\left(x,y\right)\in f'\left(I\right)$, 即 $\Gamma\subset f'\left(I\right)$.
 
 再证 $f'\left(I\right)\subset\overline{\Gamma}$. 任取 $t\in I$ (因 $I$ 为开区间, $t$ 非端点). 取充分小的 $h$ 使 $t+h\in I$, 则 $q_h=\frac{f\left(t+h\right)-f\left(t\right)}{h}\in\Gamma$. 由导数定义 $q_h\to f'\left(t\right)$ ($h\to0$). 故 $f'\left(t\right)$ 是 $\Gamma$ 的极限点, 由**定理 3.5** (闭包与极限点) 它含于 $\overline{\Gamma}$ (由**定义 3.26** (闭包), $\overline{\Gamma}$ 是含 $\Gamma$ 的最小闭集). 即 $f'\left(I\right)\subset\overline{\Gamma}$.
 
-(4) 由第 2 小题, $\Gamma$ 是 $\mathbb R$ 中的连通集, 而 $\mathbb R$ 中连通集必为区间 (若 $a<c<b$ 且 $a,b\in S$, $c\notin S$, 则 $S=\left(S\cap\left(-\infty,c\right)\right)\cup\left(S\cap\left(c,\infty\right)\right)$ 是一个分离, 矛盾). 故 $\Gamma$ 是区间. 由第 3 小题, $\Gamma\subset f'\left(I\right)\subset\overline{\Gamma}$. 一个区间与其闭包之间的差别至多是它的两个端点; 在区间上任意添去两端点的一个子集仍得区间. 因此夹在区间 $\Gamma$ 与 $\overline{\Gamma}$ 之间的 $f'\left(I\right)$ 仍是区间. $\blacksquare$
+(4) 由第 2 小题, $\Gamma$ 是 $\mathbb R$ 中的连通集, 而 $\mathbb R$ 中连通集必为区间 (若 $a< c< b$ 且 $a,b\in S$, $c\notin S$, 则 $S=\left(S\cap\left(-\infty,c\right)\right)\cup\left(S\cap\left(c,\infty\right)\right)$ 是一个分离, 矛盾). 故 $\Gamma$ 是区间. 由第 3 小题, $\Gamma\subset f'\left(I\right)\subset\overline{\Gamma}$. 一个区间与其闭包之间的差别至多是它的两个端点; 在区间上任意添去两端点的一个子集仍得区间. 因此夹在区间 $\Gamma$ 与 $\overline{\Gamma}$ 之间的 $f'\left(I\right)$ 仍是区间. $\blacksquare$
 
 ### 习题十三
 
@@ -434,6 +434,6 @@ $$
 
 (3) 设 $F$ 非空有限, 取 $x\in F$. 任何 $S\left(a,x\right)$ ($a\neq0$) 都是无穷集, 不可能含于 $F$. 由第 1 小题, $F$ 不满足开集条件, 故不是开集.
 
-(4) 若 $x\in\mathbb Z\setminus\left\{-1,1\right\}$, 则 $\left|x\right|>1$, $x$ 有质因子 $p$, 即 $x=pn\in S\left(p,0\right)$. 反之 $S\left(p,0\right)=\left\{pn\right\}$ 对 $p\ge2$ 不含 $\pm1$, 故 $S\left(p,0\right)\subset\mathbb Z\setminus\left\{-1,1\right\}$. 两边相等.
+(4) 若 $x\in\mathbb Z\setminus\left\{-1,1\right\}$, 则 $\left|x\right|> 1$, $x$ 有质因子 $p$, 即 $x=pn\in S\left(p,0\right)$. 反之 $S\left(p,0\right)=\left\{pn\right\}$ 对 $p\ge2$ 不含 $\pm1$, 故 $S\left(p,0\right)\subset\mathbb Z\setminus\left\{-1,1\right\}$. 两边相等.
 
 (5) 反设质数有限: $P=\left\{p_1,\dots,p_r\right\}$. 由第 4 小题, $\mathbb Z\setminus\left\{-1,1\right\}=\bigcup_{i=1}^r S\left(p_i,0\right)$. 由第 2 小题每个 $S\left(p_i,0\right)$ 既开又闭, 有限个既开又闭集之并既开又闭. 故补集 $\left\{-1,1\right\}$ 既开又闭, 特别它是开集, 与第 3 小题 (非空有限集不能开) 矛盾. 故质数无穷多. $\blacksquare$

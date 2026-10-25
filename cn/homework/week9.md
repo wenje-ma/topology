@@ -36,15 +36,15 @@
 
 > **定义 6.21** (巴拿赫空间)<br>完备赋范线性空间. (2025 卷 B)
 
-> **定义 6.22** (绝对收敛级数)<br>级数 $\sum x_n$ 绝对收敛, 若 $\sum\left\|x_n\right\|<\infty$. (题集 $\S4.4$)
+> **定义 6.22** (绝对收敛级数)<br>级数 $\sum x_n$ 绝对收敛, 若 $\sum\left\|x_n\right\|< \infty$. (题集 $\S4.4$)
 
 > **定义 6.23** (幂零映射)<br>线性算子 $T$ 满足 $T^n=0$ 对某个 $n$. (2025 卷 B)
 
 > **定义 6.35** (度量空间)<br>度量 $d:X\times X\to\mathbb R_{\ge0}$ 满足:<br>(1) $d\left(x,x\right)=0$;<br>(2) 若 $d\left(x,y\right)=0$ 则 $x=y$;<br>(3) $d\left(x,y\right)=d\left(y,x\right)$;<br>(4) $d\left(x,y\right)\le d\left(x,z\right)+d\left(z,y\right)$. 装备了度量 $d$ 的集合 $X$ 称为度量空间. (教材 $\S6$)
 
-> **定义 6.36** (开球)<br>开球 $B\left(x,r\right)=\left\{y\in X:d\left(x,y\right)<r\right\}$. 全体开球构成度量拓扑的一个基. (教材 $\S6$)
+> **定义 6.36** (开球)<br>开球 $B\left(x,r\right)=\left\{y\in X:d\left(x,y\right)< r\right\}$. 全体开球构成度量拓扑的一个基. (教材 $\S6$)
 
-> **定义 6.37** (柯西列)<br>序列 $\left(x_n\right)$ 是柯西列, 若 $\lim_{N\to\infty}\sup_{i,j>N}d\left(x_i,x_j\right)=0$. (教材 $\S6$)
+> **定义 6.37** (柯西列)<br>序列 $\left(x_n\right)$ 是柯西列, 若 $\lim_{N\to\infty}\sup_{i,j> N}d\left(x_i,x_j\right)=0$. (教材 $\S6$)
 
 > **定义 6.38** (完备度量空间)<br>度量空间是完备的, 若其中每个柯西列都收敛. (教材 $\S6$)
 
@@ -82,15 +82,15 @@
 
 ### 解答 习题三
 
-**第 1 小题**: ($\Rightarrow$) 设 $E$ 中每个绝对收敛级数都收敛. 取**定义 6.37** (柯西列) $\left(x_n\right)$. 由柯西性, 可选子列 $x_{n_k}$ 使 $\left\|x_{n_{k+1}}-x_{n_k}\right\|<2^{-k}$. 则
+**第 1 小题**: ($\Rightarrow$) 设 $E$ 中每个绝对收敛级数都收敛. 取**定义 6.37** (柯西列) $\left(x_n\right)$. 由柯西性, 可选子列 $x_{n_k}$ 使 $\left\|x_{n_{k+1}}-x_{n_k}\right\|< 2^{-k}$. 则
 
 $$
-\sum_{k=1}^\infty\left\|x_{n_{k+1}}-x_{n_k}\right\|<\sum_{k=1}^\infty2^{-k}<\infty,
+\sum_{k=1}^\infty\left\|x_{n_{k+1}}-x_{n_k}\right\|< \sum_{k=1}^\infty2^{-k}< \infty,
 $$
 
 即 $\sum_k\left(x_{n_{k+1}}-x_{n_k}\right)$ 绝对收敛, 由假设收敛. 其部分和即 $x_{n_{k+1}}-x_{n_1}$, 故子列 $x_{n_k}$ 收敛. 柯西列若有收敛子列则全列收敛 (若 $x_{n_k}\to L$, 由柯西性 $\left\|x_n-L\right\|\le\left\|x_n-x_{n_k}\right\|+\left\|x_{n_k}-L\right\|\to0$). 故 $E$ 完备.
 
-($\Leftarrow$) 设 $E$ 完备, $\sum\left\|x_n\right\|<\infty$. 部分和 $S_N=\sum_{n=1}^Nx_n$ 满足对 $M>N$,
+($\Leftarrow$) 设 $E$ 完备, $\sum\left\|x_n\right\|< \infty$. 部分和 $S_N=\sum_{n=1}^Nx_n$ 满足对 $M> N$,
 
 $$
 \left\|S_M-S_N\right\|\le\sum_{n=N+1}^M\left\|x_n\right\|\to0,
@@ -98,7 +98,7 @@ $$
 
 故 $\left(S_N\right)$ 是**定义 6.37** (柯西列). 由**定义 6.38** (完备度量空间), $S_N$ 收敛, 即级数收敛.
 
-**第 2 小题**: 取 $E=C\left(\left[0,1\right]\right)$ 装备 $L^1$ 范数 $\left\|f\right\|_1=\int_0^1\left|f\right|$, 它不完备. 构造折线函数列 $f_n$, 使 $f_n$ 从 $0$ 线性升到 $1$ 的区间长度为 $1/n$. 则 $\sum\left\|f_n\right\|_1<\infty$ (每段面积 $\le1/n$), 但 $\sum f_n$ 在 $\left(0,1\right)$ 上无界, 不作为连续函数存在. 故绝对收敛但不收敛于 $E$ 中. $\blacksquare$
+**第 2 小题**: 取 $E=C\left(\left[0,1\right]\right)$ 装备 $L^1$ 范数 $\left\|f\right\|_1=\int_0^1\left|f\right|$, 它不完备. 构造折线函数列 $f_n$, 使 $f_n$ 从 $0$ 线性升到 $1$ 的区间长度为 $1/n$. 则 $\sum\left\|f_n\right\|_1< \infty$ (每段面积 $\le1/n$), 但 $\sum f_n$ 在 $\left(0,1\right)$ 上无界, 不作为连续函数存在. 故绝对收敛但不收敛于 $E$ 中. $\blacksquare$
 
 ### 习题四
 
@@ -124,14 +124,14 @@ $\mathbb Q=\bigcup_{q\in\mathbb Q}\left\{q\right\}$, 每个单点集 $\left\{q\r
 
 ### 解答 习题六
 
-这是习题三第 1 小题中 $\left(\Rightarrow\right)$ 方向的重述. 设柯西列 $\left(x_n\right)$, 选子列 $\left(x_{n_k}\right)$ 使 $\left\|x_{n_{k+1}}-x_{n_k}\right\|<2^{-k}$. 则 $\sum_k\left(x_{n_{k+1}}-x_{n_k}\right)$ 绝对收敛, 由假设收敛, 部分和即 $x_{n_{k+1}}-x_{n_1}$, 故子列收敛. 柯西列含收敛子列则全列收敛 (证明同习题三), 故 $E$ 完备. $\blacksquare$
+这是习题三第 1 小题中 $\left(\Rightarrow\right)$ 方向的重述. 设柯西列 $\left(x_n\right)$, 选子列 $\left(x_{n_k}\right)$ 使 $\left\|x_{n_{k+1}}-x_{n_k}\right\|< 2^{-k}$. 则 $\sum_k\left(x_{n_{k+1}}-x_{n_k}\right)$ 绝对收敛, 由假设收敛, 部分和即 $x_{n_{k+1}}-x_{n_1}$, 故子列收敛. 柯西列含收敛子列则全列收敛 (证明同习题三), 故 $E$ 完备. $\blacksquare$
 
 ### 习题七
 
 (勒贝格非常数连续函数) 设 $\lambda$ 是 $\left[0,1\right]$ 上勒贝格测度, $C\left(\left[0,1\right]\right)$ 装备上确界范数. 设
 
 $$
-A_n=\left\{f\in C\left(\left[0,1\right]\right):\exists\ a<b\text{ 使 }\lambda\left(\left[a,b\right]\right)\ge\frac1n\text{ 且 }f\text{ 在 }\left[a,b\right]\text{ 上为常数}\right\}.
+A_n=\left\{f\in C\left(\left[0,1\right]\right):\exists\ a< b\text{ 使 }\lambda\left(\left[a,b\right]\right)\ge\frac1n\text{ 且 }f\text{ 在 }\left[a,b\right]\text{ 上为常数}\right\}.
 $$
 
 证明 $A_n$ 无处稠密, 由此得出存在连续函数在任何正测度区间上都不常数.
@@ -140,9 +140,9 @@ $$
 
 $A_n$ 闭: 若 $f_k\in A_n$ 且 $f_k\to f$ 一致, 则每个 $f_k$ 在某区间 $\left[a_k,b_k\right]$ (长度 $\ge1/n$) 上为常数. 区间端点抽子列收敛到 $\left[a,b\right]$, $b-a\ge1/n$, 由一致收敛 $f$ 在 $\left[a,b\right]$ 上为常数. 故 $A_n$ 闭.
 
-$A_n$ 无内部: 任给 $f$ 与 $\varepsilon>0$, 用锯齿形连续函数 $g$, 在长度 $\ge1/n$ 的区间上振幅 $>\varepsilon/2$, 且 $\left\|g-f\right\|_\infty<\varepsilon$. 则 $g\notin A_n$, 而 $g\in B\left(f,\varepsilon\right)$. 由**定义 3.21** (闭集), $A_n$ 的内部为空.
+$A_n$ 无内部: 任给 $f$ 与 $\varepsilon> 0$, 用锯齿形连续函数 $g$, 在长度 $\ge1/n$ 的区间上振幅 $> \varepsilon/2$, 且 $\left\|g-f\right\|_\infty< \varepsilon$. 则 $g\notin A_n$, 而 $g\in B\left(f,\varepsilon\right)$. 由**定义 3.21** (闭集), $A_n$ 的内部为空.
 
-由**定理 6.13** (贝尔纲定理), $C\left(\left[0,1\right]\right)$ 完备 (即**定理 6.8** ($C\left(X,Y\right)$ 完备)) 不能写成可数个无处稠密集之并, 故 $\bigcup_nA_n\neq C\left(\left[0,1\right]\right)$. 取 $f\notin\bigcup_nA_n$, 则 $f$ 在任何长度 $\ge1/n$ 的区间上不常数对一切 $n$ 成立, 即在任何正测度区间 (长度 $>0$, 从而 $\ge1/n$ 对某个 $n$) 上不常数. 由**定义 3.32** (稠密) 的反面, 这样的 $f$ 存在. $\blacksquare$
+由**定理 6.13** (贝尔纲定理), $C\left(\left[0,1\right]\right)$ 完备 (即**定理 6.8** ($C\left(X,Y\right)$ 完备)) 不能写成可数个无处稠密集之并, 故 $\bigcup_nA_n\neq C\left(\left[0,1\right]\right)$. 取 $f\notin\bigcup_nA_n$, 则 $f$ 在任何长度 $\ge1/n$ 的区间上不常数对一切 $n$ 成立, 即在任何正测度区间 (长度 $> 0$, 从而 $\ge1/n$ 对某个 $n$) 上不常数. 由**定义 3.32** (稠密) 的反面, 这样的 $f$ 存在. $\blacksquare$
 
 ### 习题八
 
@@ -150,9 +150,9 @@ $A_n$ 无内部: 任给 $f$ 与 $\varepsilon>0$, 用锯齿形连续函数 $g$, �
 
 ### 解答 习题八
 
-($\Rightarrow$) 设 $E$ 完备, $\sum\left\|x_n\right\|<\infty$. 部分和 $S_N=\sum_{n=1}^Nx_n$ 对 $M>N$ 满足 $\left\|S_M-S_N\right\|\le\sum_{n=N+1}^M\left\|x_n\right\|\to0$, 故 $\left(S_N\right)$ 是**定义 6.37** (柯西列); 由**定义 6.38** (完备度量空间) $S_N$ 收敛.
+($\Rightarrow$) 设 $E$ 完备, $\sum\left\|x_n\right\|< \infty$. 部分和 $S_N=\sum_{n=1}^Nx_n$ 对 $M> N$ 满足 $\left\|S_M-S_N\right\|\le\sum_{n=N+1}^M\left\|x_n\right\|\to0$, 故 $\left(S_N\right)$ 是**定义 6.37** (柯西列); 由**定义 6.38** (完备度量空间) $S_N$ 收敛.
 
-($\Leftarrow$) 若每个绝对收敛级数收敛, 取**定义 6.37** (柯西列) $\left(x_n\right)$, 选子列使 $\left\|x_{n_{k+1}}-x_{n_k}\right\|<2^{-k}$, 则 $\sum_k\left(x_{n_{k+1}}-x_{n_k}\right)$ 绝对收敛, 由假设收敛, 子列收敛, 柯西列含收敛子列则全列收敛. 故 $E$ 完备.
+($\Leftarrow$) 若每个绝对收敛级数收敛, 取**定义 6.37** (柯西列) $\left(x_n\right)$, 选子列使 $\left\|x_{n_{k+1}}-x_{n_k}\right\|< 2^{-k}$, 则 $\sum_k\left(x_{n_{k+1}}-x_{n_k}\right)$ 绝对收敛, 由假设收敛, 子列收敛, 柯西列含收敛子列则全列收敛. 故 $E$ 完备.
 
 即**定义 6.22** (绝对收敛级数) 收敛性等价于**定义 6.38** (完备度量空间). $\blacksquare$
 
@@ -172,7 +172,7 @@ $A_n$ 无内部: 任给 $f$ 与 $\varepsilon>0$, 用锯齿形连续函数 $g$, �
 
 (2) 若 $f$ 单调, $f$ 的纤维至多单点. $f\left(\left[0,1\right]\right)$ 是区间 $\left[a,b\right]$. 任给 $h\in C\left(\left[0,1\right]\right)$, 定义 $g$ 在 $\left[a,b\right]$ 上为 $g\left(t\right)=h\left(f^{-1}\left(t\right)\right)$; 由单调双射 $f:\left[0,1\right]\to\left[a,b\right]$ (或到其子区间) 连续, $g$ 连续. 由**定义 3.23** (同胚) 单调性即同胚嵌入, $h=g\circ f$, 故 $h\in V\left(f\right)$.
 
-(3) 若 $f$ 不单调, 则存在 $a<b<c$ 使 $f\left(a\right)=f\left(c\right)\neq f\left(b\right)$. 于是 $V\left(f\right)$ 中函数在 $a,c$ 处必取同值. 而函数 $h$ 满足 $h\left(a\right)\neq h\left(c\right)$ 的连续函数不在 $V\left(f\right)$ 中, 且与 $V\left(f\right)$ 保持正距离. 由**定理 6.13** (贝尔纲定理) 与**定理 6.14** (递增闭集族), 完备空间中闭而无内部的子空间不稠密. $\blacksquare$
+(3) 若 $f$ 不单调, 则存在 $a< b< c$ 使 $f\left(a\right)=f\left(c\right)\neq f\left(b\right)$. 于是 $V\left(f\right)$ 中函数在 $a,c$ 处必取同值. 而函数 $h$ 满足 $h\left(a\right)\neq h\left(c\right)$ 的连续函数不在 $V\left(f\right)$ 中, 且与 $V\left(f\right)$ 保持正距离. 由**定理 6.13** (贝尔纲定理) 与**定理 6.14** (递增闭集族), 完备空间中闭而无内部的子空间不稠密. $\blacksquare$
 
 ### 习题十
 
@@ -182,7 +182,7 @@ $A_n$ 无内部: 任给 $f$ 与 $\varepsilon>0$, 用锯齿形连续函数 $g$, �
 
 单: 由**定义 6.49** (等距映射), $f\left(x\right)=f\left(y\right)\Rightarrow d_Y\left(f\left(x\right),f\left(y\right)\right)=0=d_X\left(x,y\right)\Rightarrow x=y$.
 
-连续: 对任意 $\varepsilon>0$, 取 $\delta=\varepsilon$, 由**定义 6.35** (度量空间) 与**定义 6.49** (等距映射), $d_X\left(x,y\right)<\delta$ 蕴含 $d_Y\left(f\left(x\right),f\left(y\right)\right)=d_X\left(x,y\right)<\varepsilon$. 由**定义 6.36** (开球) 与**定义 3.22** (连续映射), $f$ 连续.
+连续: 对任意 $\varepsilon> 0$, 取 $\delta=\varepsilon$, 由**定义 6.35** (度量空间) 与**定义 6.49** (等距映射), $d_X\left(x,y\right)< \delta$ 蕴含 $d_Y\left(f\left(x\right),f\left(y\right)\right)=d_X\left(x,y\right)< \varepsilon$. 由**定义 6.36** (开球) 与**定义 3.22** (连续映射), $f$ 连续.
 
 $f^{-1}$ 是等距: 对 $u=f\left(x\right)$, $v=f\left(y\right)$, $d_X\left(f^{-1}\left(u\right),f^{-1}\left(v\right)\right)=d_X\left(x,y\right)=d_Y\left(u,v\right)$.
 
@@ -231,7 +231,7 @@ $D^+\cap D^-=\left\{\left(x,y,0\right):x^2+y^2=1\right\}\neq\emptyset$. 由**定
 
 (2025 年卷 B 题目五, 20 分). 记 $X$ 为巴拿赫空间, $T:X\to X$ 为连续线性映射, 记 $\left\|T\right\|=\sup_{\left\|x\right\|=1}\left\|T\left(x\right)\right\|$.
 
-(1) 证明若 $\left\|T\right\|<1$, 则映射 $f:X\to X$, $f\left(x\right)=x-T\left(x\right)$ 为单射.
+(1) 证明若 $\left\|T\right\|< 1$, 则映射 $f:X\to X$, $f\left(x\right)=x-T\left(x\right)$ 为单射.
 
 (2) 进一步证明 $f$ 为满射.
 
@@ -247,7 +247,7 @@ $$
 \left\|x-y\right\|=\left\|T\left(x-y\right)\right\|\le\left\|T\right\|\left\|x-y\right\|.
 $$
 
-若 $x\neq y$, 则 $\left\|x-y\right\|>0$, 两边除以 $\left\|x-y\right\|$ 得 $1\le\left\|T\right\|$, 与 $\left\|T\right\|<1$ 矛盾. 故 $x=y$, $f$ 单射.
+若 $x\neq y$, 则 $\left\|x-y\right\|> 0$, 两边除以 $\left\|x-y\right\|$ 得 $1\le\left\|T\right\|$, 与 $\left\|T\right\|< 1$ 矛盾. 故 $x=y$, $f$ 单射.
 
 (2) 对任意 $y\in X$, 考虑迭代 $x_{n+1}=y+T\left(x_n\right)$. 则
 
@@ -255,7 +255,7 @@ $$
 \left\|x_{n+1}-x_n\right\|=\left\|T\left(x_n-x_{n-1}\right)\right\|\le\left\|T\right\|\left\|x_n-x_{n-1}\right\|\le\left\|T\right\|^n\left\|x_1-x_0\right\|.
 $$
 
-由**定义 6.22** (绝对收敛级数), $\sum_n\left\|x_{n+1}-x_n\right\|<\sum_n\left\|T\right\|^n\left\|x_1-x_0\right\|<\infty$. 由**定义 6.21** (巴拿赫空间) 即 $X$ 完备, 由习题三结论 (绝对收敛级数收敛), $x_n$ 收敛到某 $x$. 取极限 $x=y+T\left(x\right)$, 即 $f\left(x\right)=y$. 故 $f$ 满射.
+由**定义 6.22** (绝对收敛级数), $\sum_n\left\|x_{n+1}-x_n\right\|< \sum_n\left\|T\right\|^n\left\|x_1-x_0\right\|< \infty$. 由**定义 6.21** (巴拿赫空间) 即 $X$ 完备, 由习题三结论 (绝对收敛级数收敛), $x_n$ 收敛到某 $x$. 取极限 $x=y+T\left(x\right)$, 即 $f\left(x\right)=y$. 故 $f$ 满射.
 
 (3) $f=I-T$ 连续 ( $T$ 连续, $I$ 连续). 由第 1、2 步, $f$ 双射. 逆映射由级数给出: $f^{-1}=I+T+T^2+\cdots$, 且 $\left\|f^{-1}\right\|\le1/\left(1-\left\|T\right\|\right)$, 故 $f^{-1}$ 连续. 由**定义 3.23** (同胚), $f$ 是同胚.
 

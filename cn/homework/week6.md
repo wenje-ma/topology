@@ -66,11 +66,11 @@
 
 > **定义 6.35** (度量空间)<br>度量 $d:X\times X\to\mathbb R_{\ge0}$ 满足:<br>(1) $d\left(x,x\right)=0$;<br>(2) 若 $d\left(x,y\right)=0$ 则 $x=y$;<br>(3) $d\left(x,y\right)=d\left(y,x\right)$;<br>(4) $d\left(x,y\right)\le d\left(x,z\right)+d\left(z,y\right)$. 装备了度量 $d$ 的集合 $X$ 称为度量空间. (题集 $\S1.3$ Q2; 教材 $\S6$ 由此给出度量拓扑)
 
-> **定义 6.36** (开球与度量拓扑)<br>开球 $B\left(x,r\right)=\left\{y\in X:d\left(x,y\right)<r\right\}$. 全体开球构成度量拓扑的一个基; 度量拓扑定义为: $U$ 开当且仅当对每个 $x\in U$ 存在 $r>0$ 使 $B\left(x,r\right)\subset U$. (教材 $\S6$)
+> **定义 6.36** (开球与度量拓扑)<br>开球 $B\left(x,r\right)=\left\{y\in X:d\left(x,y\right)< r\right\}$. 全体开球构成度量拓扑的一个基; 度量拓扑定义为: $U$ 开当且仅当对每个 $x\in U$ 存在 $r> 0$ 使 $B\left(x,r\right)\subset U$. (教材 $\S6$)
 
 > **定义 6.40** (序列紧致)<br>称 $X$ 是序列紧致的, 若 $X$ 中每个序列都有收敛子列. (教材 $\S6$)
 
-> **定义 6.42** (完全有界)<br>对每个 $r>0$, $X$ 可被有限个半径 $r$ 的球覆盖. (教材 $\S6$)
+> **定义 6.42** (完全有界)<br>对每个 $r> 0$, $X$ 可被有限个半径 $r$ 的球覆盖. (教材 $\S6$)
 
 > **定义 6.46** (点到集合的距离)<br>$d\left(x,A\right)=\inf_{a\in A}d\left(x,a\right)$. (题集 $\S3.2$)
 
@@ -80,7 +80,7 @@
 
 > **定义 11.2** (商拓扑)<br>设 $f:X\to A$ 为满射. $A$ 上的商拓扑定义为: $U\subset A$ 开当且仅当 $f^{-1}U\subset X$ 开. (教材 $\S11$, p61; Armstrong 第4章 4.2)
 
-> **定义 11.6** (锥)<br>从 $X\times\left[0,1\right]$ 出发, 以 (a) 子集 $X\times\left\{1\right\}$ 与 (b) 单点集 $\left\{\left(x,t\right)\right\}$ ($x\in X$, $0\le t<1$) 为划分作粘合空间, 所得 $CX=X\times\left[0,1\right]/X\times\left\{1\right\}$ 叫作 $X$ 上的锥形; 被捏成的点 $X\times\left\{1\right\}$ 叫尖顶. (Armstrong 第4章 粘合空间 4.2; 教材 $\S11$, p63)
+> **定义 11.6** (锥)<br>从 $X\times\left[0,1\right]$ 出发, 以 (a) 子集 $X\times\left\{1\right\}$ 与 (b) 单点集 $\left\{\left(x,t\right)\right\}$ ($x\in X$, $0\le t< 1$) 为划分作粘合空间, 所得 $CX=X\times\left[0,1\right]/X\times\left\{1\right\}$ 叫作 $X$ 上的锥形; 被捏成的点 $X\times\left\{1\right\}$ 叫尖顶. (Armstrong 第4章 粘合空间 4.2; 教材 $\S11$, p63)
 
 > **定义 11.12** (塌缩商)<br>$X/\left\langle A\right\rangle$ 将子集 $A$ 整捏成一点所得商空间. (题集 $\S5$ Q11)
 
@@ -92,7 +92,7 @@
 
 把 $\left\{0,1\right\}^{\left[0,1\right]}$ 中的点视为函数 $f:\left[0,1\right]\to\left\{0,1\right\}$. 由**定义 3.11** (乘积拓扑) 与**教材 §3** (点态收敛判据), 在乘积拓扑下 $f_n\to f$ 当且仅当每个坐标 $t\in\left[0,1\right]$ 都有 $f_n\left(t\right)\to f\left(t\right)$ (该判据对任意因子空间 $A^S$ 成立, 因为乘积拓扑的基与因子空间无关, 见**定义 3.11**).
 
-对每个 $n\ge1$, 定义 $f_n\left(t\right)$ 为 $t$ 的二进制展开中小数点后第 $n$ 位数字 (二进有理点固定取其一展开). 任取严格递增的正整数列 $n_1<n_2<\dots$, 我们证明 $\left\{f_{n_k}\right\}$ 不收敛. 取 $t^{*}\in\left[0,1\right]$, 使其二进制展开在第 $n_{2k-1}$ 位为 $0$, 在第 $n_{2k}$ 位为 $1$, 其余位任意 (例如取 $0$). 则坐标 $t^{*}$ 处 $f_{n_k}\left(t^{*}\right)$ 依次为 $0,1,0,1,\dots$, 在离散空间 $\left\{0,1\right\}$ 中不收敛 (由**定义 3.25** (邻域与极限), $\left\{0\right\}$ 是 $0$ 的邻域而不含无穷多个 $f_{n_k}\left(t^{*}\right)$). 由点态收敛判据, $\left\{f_{n_k}\right\}$ 在乘积拓扑下不收敛. 因每个子列都有同样形式, 由**定义 6.40** (序列紧致), $\left\{0,1\right\}^{\left[0,1\right]}$ 不是序列紧致的. $\blacksquare$
+对每个 $n\ge1$, 定义 $f_n\left(t\right)$ 为 $t$ 的二进制展开中小数点后第 $n$ 位数字 (二进有理点固定取其一展开). 任取严格递增的正整数列 $n_1< n_2< \dots$, 我们证明 $\left\{f_{n_k}\right\}$ 不收敛. 取 $t^{*}\in\left[0,1\right]$, 使其二进制展开在第 $n_{2k-1}$ 位为 $0$, 在第 $n_{2k}$ 位为 $1$, 其余位任意 (例如取 $0$). 则坐标 $t^{*}$ 处 $f_{n_k}\left(t^{*}\right)$ 依次为 $0,1,0,1,\dots$, 在离散空间 $\left\{0,1\right\}$ 中不收敛 (由**定义 3.25** (邻域与极限), $\left\{0\right\}$ 是 $0$ 的邻域而不含无穷多个 $f_{n_k}\left(t^{*}\right)$). 由点态收敛判据, $\left\{f_{n_k}\right\}$ 在乘积拓扑下不收敛. 因每个子列都有同样形式, 由**定义 6.40** (序列紧致), $\left\{0,1\right\}^{\left[0,1\right]}$ 不是序列紧致的. $\blacksquare$
 
 ### 习题二
 
@@ -114,7 +114,7 @@ $$
 
 ### 习题三
 
-设 $A,B$ 是度量空间 $\left(X,d\right)$ 中不相交的闭集, 且 $A$ 紧致. 证明 $d\left(A,B\right)>0$.
+设 $A,B$ 是度量空间 $\left(X,d\right)$ 中不相交的闭集, 且 $A$ 紧致. 证明 $d\left(A,B\right)> 0$.
 
 ### 解答 习题三
 
@@ -124,23 +124,23 @@ $$
 m=\min_{a\in A}g\left(a\right)=\inf_{a\in A,\,b\in B}d\left(a,b\right)=d\left(A,B\right).
 $$
 
-若 $m=0$, 则存在 $a_0\in A$ 使 $d\left(a_0,B\right)=0$, 即对每个 $r>0$ 开球 $B\left(a_0,r\right)$ 都与 $B$ 相交 (由**定义 6.36** (开球)); 因 $a_0\notin B$ (由 $A\cap B=\emptyset$), 由**定义 3.24** (极限点) $a_0$ 是 $B$ 的极限点. 由**定理 3.5** (闭包与极限点) $a_0\in\overline B$, 而 $B$ 闭, 由**定义 3.26** (闭包) $\overline B=B$, 故 $a_0\in B$, 与 $A\cap B=\emptyset$ 矛盾. 故 $m>0$, 即 $d\left(A,B\right)>0$. $\blacksquare$
+若 $m=0$, 则存在 $a_0\in A$ 使 $d\left(a_0,B\right)=0$, 即对每个 $r> 0$ 开球 $B\left(a_0,r\right)$ 都与 $B$ 相交 (由**定义 6.36** (开球)); 因 $a_0\notin B$ (由 $A\cap B=\emptyset$), 由**定义 3.24** (极限点) $a_0$ 是 $B$ 的极限点. 由**定理 3.5** (闭包与极限点) $a_0\in\overline B$, 而 $B$ 闭, 由**定义 3.26** (闭包) $\overline B=B$, 故 $a_0\in B$, 与 $A\cap B=\emptyset$ 矛盾. 故 $m> 0$, 即 $d\left(A,B\right)> 0$. $\blacksquare$
 
 ### 习题四
 
-设 $\left(X,d\right)$ 是无孤立点的度量空间. 证明: $X$ 紧致当且仅当对任意一对不相交闭集 $A,B$, 都有 $d\left(A,B\right)>0$.
+设 $\left(X,d\right)$ 是无孤立点的度量空间. 证明: $X$ 紧致当且仅当对任意一对不相交闭集 $A,B$, 都有 $d\left(A,B\right)> 0$.
 
 ### 解答 习题四
 
-($\Rightarrow$) 设 $X$ 紧致, $A,B$ 为不相交闭集. 由**定理 5.4** (闭子集紧), $A$ 紧致. 由习题三的论证 (连续函数 $d\left(\cdot,B\right)$ 在 $A$ 上取到正最小值) 即得 $d\left(A,B\right)>0$.
+($\Rightarrow$) 设 $X$ 紧致, $A,B$ 为不相交闭集. 由**定理 5.4** (闭子集紧), $A$ 紧致. 由习题三的论证 (连续函数 $d\left(\cdot,B\right)$ 在 $A$ 上取到正最小值) 即得 $d\left(A,B\right)> 0$.
 
-($\Leftarrow$) 反证, 设 $X$ 不紧致. 由**定理 6.1** (紧 $=$ 序列紧), $X$ 不是序列紧致的, 故存在序列 $\left\{x_n\right\}$ 无收敛子列. 必要时取子列使 $x_n$ 两两不同. 于是 $S=\left\{x_n:n\ge1\right\}$ 无极限点: 若 $x$ 是 $S$ 的极限点, 由**定义 3.24** (极限点) 每个开球 $B\left(x,1/k\right)$ 都含 $S\setminus\left\{x\right\}$ 的点, 且事实上含无穷多个 (若某球只含有限个, 取半径小于这些点到 $x$ 的距离, 得与极限点定义矛盾的球), 故可归纳选取两两不同的 $x_{n_k}\in B\left(x,1/k\right)$, 得收敛于 $x$ 的子列, 矛盾. 故 $S'=\emptyset$, 由**定理 3.5** (闭包与极限点) $\overline S=S$, 由**定义 3.26** (闭包) $S$ 闭. 因 $X$ 无孤立点, 每个 $x_n$ 的任意邻域都含异于 $x_n$ 的点; 归纳地选取 $y_n$, 使 $0<d\left(y_n,x_n\right)<1/n$, 且 $y_n\notin S\cup\left\{y_1,\dots,y_{n-1}\right\}$. 则 $\left\{y_n\right\}$ 也无收敛子列: 若 $y_{n_k}\to y$, 则由**定义 6.35** (度量空间) 的三角不等式,
+($\Leftarrow$) 反证, 设 $X$ 不紧致. 由**定理 6.1** (紧 $=$ 序列紧), $X$ 不是序列紧致的, 故存在序列 $\left\{x_n\right\}$ 无收敛子列. 必要时取子列使 $x_n$ 两两不同. 于是 $S=\left\{x_n:n\ge1\right\}$ 无极限点: 若 $x$ 是 $S$ 的极限点, 由**定义 3.24** (极限点) 每个开球 $B\left(x,1/k\right)$ 都含 $S\setminus\left\{x\right\}$ 的点, 且事实上含无穷多个 (若某球只含有限个, 取半径小于这些点到 $x$ 的距离, 得与极限点定义矛盾的球), 故可归纳选取两两不同的 $x_{n_k}\in B\left(x,1/k\right)$, 得收敛于 $x$ 的子列, 矛盾. 故 $S'=\emptyset$, 由**定理 3.5** (闭包与极限点) $\overline S=S$, 由**定义 3.26** (闭包) $S$ 闭. 因 $X$ 无孤立点, 每个 $x_n$ 的任意邻域都含异于 $x_n$ 的点; 归纳地选取 $y_n$, 使 $0< d\left(y_n,x_n\right)< 1/n$, 且 $y_n\notin S\cup\left\{y_1,\dots,y_{n-1}\right\}$. 则 $\left\{y_n\right\}$ 也无收敛子列: 若 $y_{n_k}\to y$, 则由**定义 6.35** (度量空间) 的三角不等式,
 
 $$
 d\left(x_{n_k},y\right)\le d\left(x_{n_k},y_{n_k}\right)+d\left(y_{n_k},y\right)\to0,
 $$
 
-与 $\left\{x_n\right\}$ 无收敛子列矛盾. 故 $T=\left\{y_n:n\ge1\right\}$ 也闭 (同上). 令 $A=S$, $B=T$, 则二者不相交闭, 但对一切 $n$ 有 $d\left(A,B\right)\le d\left(x_n,y_n\right)<1/n$, 故 $d\left(A,B\right)=0$, 与假设矛盾. 因此 $X$ 紧致. $\blacksquare$
+与 $\left\{x_n\right\}$ 无收敛子列矛盾. 故 $T=\left\{y_n:n\ge1\right\}$ 也闭 (同上). 令 $A=S$, $B=T$, 则二者不相交闭, 但对一切 $n$ 有 $d\left(A,B\right)\le d\left(x_n,y_n\right)< 1/n$, 故 $d\left(A,B\right)=0$, 与假设矛盾. 因此 $X$ 紧致. $\blacksquare$
 
 ### 习题五
 
@@ -182,7 +182,7 @@ $$
 
 ($\Rightarrow$) 设 $f$ 连续, $K\subset X$ 紧. 由**定义 3.22** (连续映射) 与**定义 3.19** (子空间拓扑), $f|_K$ 连续: 对 $Y$ 中开集 $U$, $\left(f|_K\right)^{-1}\left(U\right)=f^{-1}\left(U\right)\cap K$ 是 $K$ 中开集.
 
-($\Leftarrow$) 反设 $f$ 在某点 $x$ 不连续. 由**教材 §6** (度量连续与序列) 的逆否与**定义 3.25** (邻域与极限), 存在 $\varepsilon>0$ 与序列 $x_n\to x$ 使 $d_Y\left(f\left(x_n\right),f\left(x\right)\right)\ge\varepsilon$. 集合 $K=\left\{x\right\}\cup\left\{x_n\right\}$ 紧致: 任取开覆盖, 含 $x$ 的开集 $U$ 是 $x$ 的邻域 (由**定义 3.25**), 由 $x_n\to x$ 它含除有限个外的所有 $x_n$; 其余有限个点再各取一个覆盖元, 得有限子覆盖. 由假设 $f|_K$ 连续, 故 $x_n\to x$ 时由**教材 §6** (度量连续与序列) 应有 $f\left(x_n\right)\to f\left(x\right)$, 矛盾. 因此 $f$ 处处连续. $\blacksquare$
+($\Leftarrow$) 反设 $f$ 在某点 $x$ 不连续. 由**教材 §6** (度量连续与序列) 的逆否与**定义 3.25** (邻域与极限), 存在 $\varepsilon> 0$ 与序列 $x_n\to x$ 使 $d_Y\left(f\left(x_n\right),f\left(x\right)\right)\ge\varepsilon$. 集合 $K=\left\{x\right\}\cup\left\{x_n\right\}$ 紧致: 任取开覆盖, 含 $x$ 的开集 $U$ 是 $x$ 的邻域 (由**定义 3.25**), 由 $x_n\to x$ 它含除有限个外的所有 $x_n$; 其余有限个点再各取一个覆盖元, 得有限子覆盖. 由假设 $f|_K$ 连续, 故 $x_n\to x$ 时由**教材 §6** (度量连续与序列) 应有 $f\left(x_n\right)\to f\left(x\right)$, 矛盾. 因此 $f$ 处处连续. $\blacksquare$
 
 ### 习题九
 
@@ -202,7 +202,7 @@ $$
 
 设 $E$ 是**定义 6.20** (赋范线性空间) 中的空间.
 
-($\Leftarrow$) 设 $\dim E=n<\infty$. 由线性代数, $E$ 线性同构于 $\mathbb R^n$, 且有限维赋范空间上的线性映射连续, 故该同构是 $\mathbb R^n$ 与 $E$ 之间的同胚 (有限维赋范空间上的线性映射连续是线性代数标准事实, 题集 $\S7$ 亦默认之). 单位球是有界闭集: 有界由范数定义, 闭由 $\left\|\cdot\right\|$ 连续 (三角不等式 (定义 6.20) 给出 $\left|\left\|x\right\|-\left\|y\right\|\right|\le\left\|x-y\right\|$) 得出. 故其在 $\mathbb R^n$ 中的像闭且有界, 由**定理 5.3** ($\mathbb R^n$ 中的紧集) 紧; 紧性在同胚下保持 (由**定理 5.1** 或同胚定义), 故单位球紧.
+($\Leftarrow$) 设 $\dim E=n< \infty$. 由线性代数, $E$ 线性同构于 $\mathbb R^n$, 且有限维赋范空间上的线性映射连续, 故该同构是 $\mathbb R^n$ 与 $E$ 之间的同胚 (有限维赋范空间上的线性映射连续是线性代数标准事实, 题集 $\S7$ 亦默认之). 单位球是有界闭集: 有界由范数定义, 闭由 $\left\|\cdot\right\|$ 连续 (三角不等式 (定义 6.20) 给出 $\left|\left\|x\right\|-\left\|y\right\|\right|\le\left\|x-y\right\|$) 得出. 故其在 $\mathbb R^n$ 中的像闭且有界, 由**定理 5.3** ($\mathbb R^n$ 中的紧集) 紧; 紧性在同胚下保持 (由**定理 5.1** 或同胚定义), 故单位球紧.
 
 ($\Rightarrow$) 反之, 若 $E$ 无穷维, 由**定理 6.17** (里茨定理), 其闭单位球非紧. 故单位球紧致蕴含维数有限. $\blacksquare$
 
@@ -218,9 +218,9 @@ $$
 
 (1) $\left(\Rightarrow\right)$ 设 $f$ 连续, $K\subset E$ 紧. $f|_K$ 连续 (由**定义 3.22** (连续映射) 与**定义 3.19** (子空间拓扑), 同习题八 ($\Rightarrow$)), 由**定理 5.1** (紧空间连续像紧), $f\left(K\right)$ 紧.
 
-$\left(\Leftarrow\right)$ 设对每个紧集 $K\subset E$, $f\left(K\right)$ 紧. 反设 $f$ 在某点 $x$ 不连续. 由**教材 §6** (度量连续与序列) 的逆否与**定义 3.25** (邻域与极限), 存在 $\varepsilon>0$ 与序列 $x_n\to x$ 使 $d_F\left(f\left(x_n\right),f\left(x\right)\right)\ge\varepsilon$. 由 $f$ 单射及 $d_F\left(f\left(x_n\right),f\left(x\right)\right)\ge\varepsilon>0$ 知 $x_n\neq x$. 令 $K=\left\{x\right\}\cup\left\{x_n:n\ge1\right\}$, 它紧 (同习题八的论证: 收敛序列加极限). 由假设 $f\left(K\right)$ 紧; $F$ 是度量空间, 由**教材 §6** (度量空间是豪斯多夫的) 豪斯多夫, 由**定理 5.5** (豪斯多夫中紧集闭), $f\left(K\right)$ 在 $F$ 中闭.
+$\left(\Leftarrow\right)$ 设对每个紧集 $K\subset E$, $f\left(K\right)$ 紧. 反设 $f$ 在某点 $x$ 不连续. 由**教材 §6** (度量连续与序列) 的逆否与**定义 3.25** (邻域与极限), 存在 $\varepsilon> 0$ 与序列 $x_n\to x$ 使 $d_F\left(f\left(x_n\right),f\left(x\right)\right)\ge\varepsilon$. 由 $f$ 单射及 $d_F\left(f\left(x_n\right),f\left(x\right)\right)\ge\varepsilon> 0$ 知 $x_n\neq x$. 令 $K=\left\{x\right\}\cup\left\{x_n:n\ge1\right\}$, 它紧 (同习题八的论证: 收敛序列加极限). 由假设 $f\left(K\right)$ 紧; $F$ 是度量空间, 由**教材 §6** (度量空间是豪斯多夫的) 豪斯多夫, 由**定理 5.5** (豪斯多夫中紧集闭), $f\left(K\right)$ 在 $F$ 中闭.
 
-由**定理 6.1** (紧 $=$ 序列紧), $f\left(x_n\right)$ 在紧集 $f\left(K\right)$ 中有收敛子列 $f\left(x_{n_j}\right)\to y\in f\left(K\right)$. 设 $y=f\left(z\right)$, $z\in K$. 若 $z=x$, 则 $f\left(x_{n_j}\right)\to f\left(x\right)$, 与 $d_F\left(f\left(x_{n_j}\right),f\left(x\right)\right)\ge\varepsilon$ 矛盾. 故 $z=x_m$ 是某固定项. 取尾部紧集 $K'=\left\{x\right\}\cup\left\{x_{n_j}:j>m\right\}$. 由假设 $f\left(K'\right)$ 紧, 再由**定理 5.5** (豪斯多夫中紧集闭) $f\left(K'\right)$ 闭. 但 $f\left(x_{n_j}\right)\to f\left(x_m\right)$ 且 $x_m\notin K'$, 由 $f$ 单射 $f\left(x_m\right)\notin f\left(K'\right)$; 而 $f\left(x_m\right)$ 是 $f\left(K'\right)$ 的极限点 (每个邻域含充分大的 $f\left(x_{n_j}\right)$, 由**定义 3.25**), 由**定理 3.5** (闭包与极限点) 与**定义 3.26** (闭包) 应有 $f\left(x_m\right)\in\overline{f\left(K'\right)}=f\left(K'\right)$, 矛盾. 故 $f$ 连续.
+由**定理 6.1** (紧 $=$ 序列紧), $f\left(x_n\right)$ 在紧集 $f\left(K\right)$ 中有收敛子列 $f\left(x_{n_j}\right)\to y\in f\left(K\right)$. 设 $y=f\left(z\right)$, $z\in K$. 若 $z=x$, 则 $f\left(x_{n_j}\right)\to f\left(x\right)$, 与 $d_F\left(f\left(x_{n_j}\right),f\left(x\right)\right)\ge\varepsilon$ 矛盾. 故 $z=x_m$ 是某固定项. 取尾部紧集 $K'=\left\{x\right\}\cup\left\{x_{n_j}:j> m\right\}$. 由假设 $f\left(K'\right)$ 紧, 再由**定理 5.5** (豪斯多夫中紧集闭) $f\left(K'\right)$ 闭. 但 $f\left(x_{n_j}\right)\to f\left(x_m\right)$ 且 $x_m\notin K'$, 由 $f$ 单射 $f\left(x_m\right)\notin f\left(K'\right)$; 而 $f\left(x_m\right)$ 是 $f\left(K'\right)$ 的极限点 (每个邻域含充分大的 $f\left(x_{n_j}\right)$, 由**定义 3.25**), 由**定理 3.5** (闭包与极限点) 与**定义 3.26** (闭包) 应有 $f\left(x_m\right)\in\overline{f\left(K'\right)}=f\left(K'\right)$, 矛盾. 故 $f$ 连续.
 
 (2) 取 $E=\left\{0\right\}\cup\left\{1/n:n\ge1\right\}$, $F=\left\{0,1\right\}$ 装备离散度量, $f\left(0\right)=0$, $f\left(1/n\right)=1$ 对一切 $n$. $f$ 不单射. 对 $E$ 中任何紧集 $K$, 像 $f\left(K\right)\subset\left\{0,1\right\}$; 离散空间中任何有限子集都紧 (习题六), 故 $f$ 保持紧集; 但 $x_n=1/n\to0$ 时 $f\left(x_n\right)=1$ 不趋于 $f\left(0\right)=0$, 由**定义 3.25** (邻域与极限) $f$ 不连续. 可见单射不可少. $\blacksquare$
 
@@ -230,15 +230,15 @@ $\left(\Leftarrow\right)$ 设对每个紧集 $K\subset E$, $f\left(K\right)$ 紧
 
 ### 解答 习题十二
 
-**第一问**: 由**定义 11.6** (锥, Armstrong 第4章), $CX=X\times\left[0,1\right]/X\times\left\{1\right\}$, 商映射 $\pi:X\times\left[0,1\right]\to CX$ 把 $X\times\left\{1\right\}$ 捏成一点, 在 $X\times\left[0,1\right)$ 上单射 (划分 (b) 为单点类). 令 $Y=X\times\left[0,1\right)$. $Y$ 豪斯多夫: 由**定理 3.6** (豪斯多夫的遗传性), $X$ 豪斯多夫 (题设), $\left[0,1\right)$ 是度量空间 $\mathbb R$ 的子空间故豪斯多夫 (由**教材 §6** (度量空间是豪斯多夫的) 与**定理 3.6**), 乘积仍豪斯多夫. $Y$ 局部紧 (按**定义 7.4** (局部紧空间) 中 Munkres §29 的表述): 对 $\left(x,t\right)\in Y$, 取 $t'$ 使 $t<t'<1$; $\left[0,t'\right]\subset\mathbb R$ 闭且有界, 由**定理 5.3** 紧, $X$ 紧 (题设), 由**定理 5.7** (有限乘积紧) $X\times\left[0,t'\right]$ 紧; 它含 $\left(x,t\right)$ 的开邻域 $X\times\left(0,t'\right)$, 故是 $\left(x,t\right)$ 的紧邻域. 由**定义 7.5** (单点紧化), $Y^*=Y\cup\left\{\infty\right\}$, $\infty$ 的邻域为 $\left(Y\setminus K\right)\cup\left\{\infty\right\}$, $K\subset Y$ 紧.
+**第一问**: 由**定义 11.6** (锥, Armstrong 第4章), $CX=X\times\left[0,1\right]/X\times\left\{1\right\}$, 商映射 $\pi:X\times\left[0,1\right]\to CX$ 把 $X\times\left\{1\right\}$ 捏成一点, 在 $X\times\left[0,1\right)$ 上单射 (划分 (b) 为单点类). 令 $Y=X\times\left[0,1\right)$. $Y$ 豪斯多夫: 由**定理 3.6** (豪斯多夫的遗传性), $X$ 豪斯多夫 (题设), $\left[0,1\right)$ 是度量空间 $\mathbb R$ 的子空间故豪斯多夫 (由**教材 §6** (度量空间是豪斯多夫的) 与**定理 3.6**), 乘积仍豪斯多夫. $Y$ 局部紧 (按**定义 7.4** (局部紧空间) 中 Munkres §29 的表述): 对 $\left(x,t\right)\in Y$, 取 $t'$ 使 $t< t'< 1$; $\left[0,t'\right]\subset\mathbb R$ 闭且有界, 由**定理 5.3** 紧, $X$ 紧 (题设), 由**定理 5.7** (有限乘积紧) $X\times\left[0,t'\right]$ 紧; 它含 $\left(x,t\right)$ 的开邻域 $X\times\left(0,t'\right)$, 故是 $\left(x,t\right)$ 的紧邻域. 由**定义 7.5** (单点紧化), $Y^*=Y\cup\left\{\infty\right\}$, $\infty$ 的邻域为 $\left(Y\setminus K\right)\cup\left\{\infty\right\}$, $K\subset Y$ 紧.
 
-构造双射 $\psi:CX\to Y^*$: 令 $\psi\left(\left[\left(x,t\right)\right]\right)=\left(x,t\right)$ 对 $t<1$, $\psi\left(\left[\left(x,1\right)\right]\right)=\infty$. 由**定义 11.6** (锥) 的划分 (a)(b), 每个类恰为 $X\times\left\{1\right\}$ 或单点 $\left\{\left(x,t\right)\right\}$, 故 $\psi$ 是双射.
+构造双射 $\psi:CX\to Y^*$: 令 $\psi\left(\left[\left(x,t\right)\right]\right)=\left(x,t\right)$ 对 $t< 1$, $\psi\left(\left[\left(x,1\right)\right]\right)=\infty$. 由**定义 11.6** (锥) 的划分 (a)(b), 每个类恰为 $X\times\left\{1\right\}$ 或单点 $\left\{\left(x,t\right)\right\}$, 故 $\psi$ 是双射.
 
 $\psi$ 连续: 由**定义 11.2** (商拓扑), 只需证对 $Y^*$ 的每个开集 $W$, $\pi^{-1}\left(\psi^{-1}\left(W\right)\right)$ 在 $X\times\left[0,1\right]$ 中开. 若 $\infty\notin W$, 则 $W$ 是 $Y$ 中开集; $Y$ 是 $X\times\left[0,1\right]$ 的开子集 (其补 $X\times\left\{1\right\}$ 闭), 故 $W$ 在 $X\times\left[0,1\right]$ 中开, 且 $\pi^{-1}\left(\psi^{-1}\left(W\right)\right)=W$. 若 $\infty\in W$, 则 $W=\left(Y\setminus K\right)\cup\left\{\infty\right\}$ 其中 $K\subset Y$ 紧 (由**定义 7.5**); $X\times\left[0,1\right]$ 豪斯多夫 (由**定理 3.6**), 由**定理 5.5** (豪斯多夫中紧集闭) $K$ 闭, 故 $\pi^{-1}\left(\psi^{-1}\left(W\right)\right)=\left(X\times\left[0,1\right]\right)\setminus K$ 开. 故 $\psi$ 连续.
 
 $CX$ 紧: $X\times\left[0,1\right]$ 是紧空间之积 ($X$ 紧, $\left[0,1\right]$ 闭有界由**定理 5.3** 紧), 由**定理 5.7** (有限乘积紧) 紧; 商映射 $\pi$ 连续 (由**定义 11.2**), 由**定理 5.1** (紧空间连续像紧) $CX$ 紧.
 
-$Y^*$ 豪斯多夫: 若 $\left(x,t\right)\neq\left(y,s\right)$ 皆非 $\infty$, 由 $Y$ 豪斯多夫取 $Y$ 中不相交开邻域 $U,V$; $U,V$ 不含 $\infty$, 由**定义 7.5** 它们在 $Y^*$ 中仍开. 对 $\infty$ 与 $\left(x,t\right)$: 取 $t'$ 使 $t<t'<1$, 令 $K=X\times\left[0,t'\right]$ (紧, 如上); 则 $U=X\times\left(0,t'\right)$ 是 $\left(x,t\right)$ 的开邻域, $\left(Y\setminus K\right)\cup\left\{\infty\right\}=X\times\left(t',1\right)\cup\left\{\infty\right\}$ 是 $\infty$ 的邻域 (由**定义 7.5**), 且 $U\cap\left(Y\setminus K\right)=\emptyset$. 故 $Y^*$ 豪斯多夫.
+$Y^*$ 豪斯多夫: 若 $\left(x,t\right)\neq\left(y,s\right)$ 皆非 $\infty$, 由 $Y$ 豪斯多夫取 $Y$ 中不相交开邻域 $U,V$; $U,V$ 不含 $\infty$, 由**定义 7.5** 它们在 $Y^*$ 中仍开. 对 $\infty$ 与 $\left(x,t\right)$: 取 $t'$ 使 $t< t'< 1$, 令 $K=X\times\left[0,t'\right]$ (紧, 如上); 则 $U=X\times\left(0,t'\right)$ 是 $\left(x,t\right)$ 的开邻域, $\left(Y\setminus K\right)\cup\left\{\infty\right\}=X\times\left(t',1\right)\cup\left\{\infty\right\}$ 是 $\infty$ 的邻域 (由**定义 7.5**), 且 $U\cap\left(Y\setminus K\right)=\emptyset$. 故 $Y^*$ 豪斯多夫.
 
 由**定理 5.6** (紧豪斯多夫间的连续双射), $\psi$ 是同胚. 第一问得证.
 
@@ -284,7 +284,7 @@ $S^1$ 是 $\mathbb R^2$ 的闭有界子集, 由**定理 5.3** 紧; $\mathbb R^2$
 
 (2024 年卷 C 题目二, 40 分). 考虑一个度量空间 $X$, 使得其中任意无穷子集都有一个极限点.
 
-(1) (10 分) 证明对于任意的 $\delta>0$, $X$ 能被有限个半径为 $\delta$ 的小球覆盖.
+(1) (10 分) 证明对于任意的 $\delta> 0$, $X$ 能被有限个半径为 $\delta$ 的小球覆盖.
 
 (2) (10 分) 证明 $X$ 是可分度量空间, 即 $X$ 中有一个可数稠密子集.
 
@@ -296,12 +296,12 @@ $S^1$ 是 $\mathbb R^2$ 的闭有界子集, 由**定理 5.3** 紧; $\mathbb R^2$
 
 ### 解答 习题十五
 
-(1) 固定 $\delta>0$. 依次选 $x_1,x_2,\dots$ 使 $d\left(x_i,x_j\right)\ge\delta$ ($i\neq j$). 若此过程无穷, $\left\{x_i\right\}$ 是无穷集, 由题设有极限点 $x$. 由**定义 3.24** (极限点), 开球 $B\left(x,\frac\delta2\right)$ 含 $S\setminus\left\{x\right\}$ 的无穷多点: 若仅含有限个, 取 $r$ 小于这些点到 $x$ 的距离, 则 $B\left(x,r\right)$ 与 $S\setminus\left\{x\right\}$ 无交, 与极限点定义矛盾. 取其中两个不同点 $x_i,x_j$, 由三角不等式 (由**定义 6.35**) $d\left(x_i,x_j\right)\le d\left(x_i,x\right)+d\left(x,x_j\right)<\delta$, 与 $d\left(x_i,x_j\right)\ge\delta$ 矛盾. 故过程有限停止, 得 $x_1,\dots,x_m$, 且 $\bigcup_{i=1}^m B\left(x_i,\delta\right)=X$ (否则可再选一点), 即有限 $\delta$-覆盖. 由**定义 6.42** (完全有界), $X$ 完全有界.
+(1) 固定 $\delta> 0$. 依次选 $x_1,x_2,\dots$ 使 $d\left(x_i,x_j\right)\ge\delta$ ($i\neq j$). 若此过程无穷, $\left\{x_i\right\}$ 是无穷集, 由题设有极限点 $x$. 由**定义 3.24** (极限点), 开球 $B\left(x,\frac\delta2\right)$ 含 $S\setminus\left\{x\right\}$ 的无穷多点: 若仅含有限个, 取 $r$ 小于这些点到 $x$ 的距离, 则 $B\left(x,r\right)$ 与 $S\setminus\left\{x\right\}$ 无交, 与极限点定义矛盾. 取其中两个不同点 $x_i,x_j$, 由三角不等式 (由**定义 6.35**) $d\left(x_i,x_j\right)\le d\left(x_i,x\right)+d\left(x,x_j\right)< \delta$, 与 $d\left(x_i,x_j\right)\ge\delta$ 矛盾. 故过程有限停止, 得 $x_1,\dots,x_m$, 且 $\bigcup_{i=1}^m B\left(x_i,\delta\right)=X$ (否则可再选一点), 即有限 $\delta$-覆盖. 由**定义 6.42** (完全有界), $X$ 完全有界.
 
-(2) 对每个 $n$, 由第 1 小题取半径 $1/n$ 的有限覆盖球心集 $C_n$. 令 $C=\bigcup_{n\ge1}C_n$, 它可数 (可数个有限集之并). 任取 $x$ 与 $r>0$, 取 $n$ 使 $1/n<r$, 存在 $c\in C_n$ 使 $d\left(x,c\right)<1/n<r$, 即 $c\in B\left(x,r\right)$. 故 $x$ 的每个开球邻域都与 $C$ 相交; 开球构成度量拓扑的基 (由**定义 6.36**), 故 $x$ 的每个邻域都与 $C$ 相交, 由**定义 3.24** (极限点) 与**定理 3.5** (闭包与极限点) $x\in\overline C$. 因 $x$ 任意, $\overline C=X$, 由**定义 3.32** (稠密) $C$ 稠密. 由**定义 3.9** (可分) $X$ 可分.
+(2) 对每个 $n$, 由第 1 小题取半径 $1/n$ 的有限覆盖球心集 $C_n$. 令 $C=\bigcup_{n\ge1}C_n$, 它可数 (可数个有限集之并). 任取 $x$ 与 $r> 0$, 取 $n$ 使 $1/n< r$, 存在 $c\in C_n$ 使 $d\left(x,c\right)< 1/n< r$, 即 $c\in B\left(x,r\right)$. 故 $x$ 的每个开球邻域都与 $C$ 相交; 开球构成度量拓扑的基 (由**定义 6.36**), 故 $x$ 的每个邻域都与 $C$ 相交, 由**定义 3.24** (极限点) 与**定理 3.5** (闭包与极限点) $x\in\overline C$. 因 $x$ 任意, $\overline C=X$, 由**定义 3.32** (稠密) $C$ 稠密. 由**定义 3.9** (可分) $X$ 可分.
 
-(3) 令 $\mathcal B=\left\{B\left(c,q\right):c\in C,\ q\in\mathbb Q_{>0}\right\}$. 它可数 ($C$ 可数, $\mathbb Q_{>0}$ 可数). 验证它是基: 任取开集 $U$ 与 $x\in U$, 由**定义 6.36** (度量拓扑) 存在 $r>0$ 使 $B\left(x,r\right)\subset U$. 由 $C$ 稠密取 $c\in C$ 使 $d\left(x,c\right)<r/3$ (由**定义 3.32** 与**定义 3.26**), 再取有理数 $q$ 使 $d\left(x,c\right)<q<r/3$. 则 $x\in B\left(c,q\right)$ (因 $d\left(x,c\right)<q$), 且 $B\left(c,q\right)\subset B\left(x,r\right)\subset U$ (对 $z\in B\left(c,q\right)$, 由三角不等式 (定义 6.35) $d\left(x,z\right)\le d\left(x,c\right)+d\left(c,z\right)<r/3+q<r$). 故 $U$ 是 $\mathcal B$ 中元素之并; 由**定义 3.15** (拓扑基), $\mathcal B$ 是可数基.
+(3) 令 $\mathcal B=\left\{B\left(c,q\right):c\in C,\ q\in\mathbb Q_{> 0}\right\}$. 它可数 ($C$ 可数, $\mathbb Q_{> 0}$ 可数). 验证它是基: 任取开集 $U$ 与 $x\in U$, 由**定义 6.36** (度量拓扑) 存在 $r> 0$ 使 $B\left(x,r\right)\subset U$. 由 $C$ 稠密取 $c\in C$ 使 $d\left(x,c\right)< r/3$ (由**定义 3.32** 与**定义 3.26**), 再取有理数 $q$ 使 $d\left(x,c\right)< q< r/3$. 则 $x\in B\left(c,q\right)$ (因 $d\left(x,c\right)< q$), 且 $B\left(c,q\right)\subset B\left(x,r\right)\subset U$ (对 $z\in B\left(c,q\right)$, 由三角不等式 (定义 6.35) $d\left(x,z\right)\le d\left(x,c\right)+d\left(c,z\right)< r/3+q< r$). 故 $U$ 是 $\mathcal B$ 中元素之并; 由**定义 3.15** (拓扑基), $\mathcal B$ 是可数基.
 
 (4) 设 $\left\{U_\alpha\right\}$ 是任意开覆盖. 由第 3 小题的可数基 $\mathcal B=\left\{V_\beta\right\}$, 每个开集是基元素之并 (定义 3.15); 对每个基元素 $V_\beta$, 若存在覆盖元 $U\supset V_\beta$ 则取定其一记为 $G_\beta$, 则 $\left\{G_\beta\right\}$ 可数且仍覆盖 $X$ (每个 $x\in X$ 在某 $U$ 中, $x$ 又在其某基元素 $V_\beta\subset U$ 中, 该 $V_\beta$ 被 $G_\beta$ 覆盖). 将 $\left\{G_\beta\right\}$ 编号为 $G_1,G_2,\dots$. 反证无有限子覆盖: 取 $x_n\notin G_1\cup\dots\cup G_n$. 集合 $\left\{x_n\right\}$ 无穷 (各 $x_n$ 互异), 由题设有极限点 $x$. 因 $\left\{G_n\right\}$ 覆盖 $X$, 存在 $N$ 使 $x\in G_N$. 由**定义 6.36**, $G_N$ 含开球 $B\left(x,r\right)$, 由第 1 小题的论证 $B\left(x,r\right)$ 含 $S\setminus\left\{x\right\}$ 的无穷多点, 故 $G_N$ 含无穷多个 $x_n$. 但对 $n\ge N$, $x_n\notin G_1\cup\dots\cup G_n\supset G_N$, 故 $G_N$ 至多含 $x_1,\dots,x_{N-1}$ 有限个, 矛盾. 故存在有限子覆盖, 由**定义 5.16** (紧致空间) $X$ 紧.
 
-(5) 设 $K$ 紧. 对每个 $n$, 由**定义 5.16** (紧致空间), 开覆盖 $\left\{B\left(x,1/n\right):x\in K\right\}$ 有有限子覆盖, 取其球心集 $C_n$. 令 $C=\bigcup_n C_n$, 可数. 任取 $x\in K$ 与 $r>0$, 取 $n$ 使 $1/n<r$, 有限覆盖给出 $c\in C_n$ 使 $d\left(x,c\right)<1/n<r$, 故 $x$ 的每个开球邻域都与 $C$ 相交; 由**定义 3.32** (稠密) 与**定理 3.5** $C$ 在 $K$ 中稠密. 由**定义 3.9** (可分), $K$ 可分. $\blacksquare$
+(5) 设 $K$ 紧. 对每个 $n$, 由**定义 5.16** (紧致空间), 开覆盖 $\left\{B\left(x,1/n\right):x\in K\right\}$ 有有限子覆盖, 取其球心集 $C_n$. 令 $C=\bigcup_n C_n$, 可数. 任取 $x\in K$ 与 $r> 0$, 取 $n$ 使 $1/n< r$, 有限覆盖给出 $c\in C_n$ 使 $d\left(x,c\right)< 1/n< r$, 故 $x$ 的每个开球邻域都与 $C$ 相交; 由**定义 3.32** (稠密) 与**定理 3.5** $C$ 在 $K$ 中稠密. 由**定义 3.9** (可分), $K$ 可分. $\blacksquare$

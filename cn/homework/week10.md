@@ -34,7 +34,7 @@
 
 > **定理 6.16** (巴拿赫不动点定理)<br>非空完备度量空间上的压缩映射有唯一不动点. (题集 $\S4.3$ Q1)
 
-> **定义 6.19** (压缩映射)<br>称 $f:X\to X$ 是压缩的, 若存在 $0<k<1$ 使 $d\left(f\left(x\right),f\left(y\right)\right)\le k\,d\left(x,y\right)$. (题集 $\S4.3$ Q1)
+> **定义 6.19** (压缩映射)<br>称 $f:X\to X$ 是压缩的, 若存在 $0< k< 1$ 使 $d\left(f\left(x\right),f\left(y\right)\right)\le k\,d\left(x,y\right)$. (题集 $\S4.3$ Q1)
 
 > **定义 6.20** (赋范线性空间)<br>向量空间上装备满足范数三公理 (正定性, 齐次, 三角不等式) 的 $\left\|\cdot\right\|$. (题集 $\S5$)
 
@@ -44,7 +44,7 @@
 
 > **定义 6.26** (局部凸空间)<br>拓扑向量空间中 $0$ 有由凸邻域组成的邻域基. (题集 $\S5$ Q6)
 
-> **定义 6.27** (规范函数)<br>凸邻域 $C$ 的规范函数 $\left\|x\right\|_C=\inf\left\{1/t:tx\in C,t>0\right\}$ (等价地 $\inf\left\{t>0:x\in tC\right\}$). (题集 $\S5$ Q14)
+> **定义 6.27** (规范函数)<br>凸邻域 $C$ 的规范函数 $\left\|x\right\|_C=\inf\left\{1/t:tx\in C,t> 0\right\}$ (等价地 $\inf\left\{t> 0:x\in tC\right\}$). (题集 $\S5$ Q14)
 
 > **定义 6.28** (算子范数)<br>$L\left(E,F\right)$ 上 $\left\|T\right\|=\sup_{\left\|x\right\|\le 1}\left\|Tx\right\|$. (题集 $\S5$ Q15)
 
@@ -56,7 +56,7 @@
 
 > **定义 6.35** (度量空间)<br>度量 $d:X\times X\to\mathbb R_{\ge0}$ 满足:<br>(1) $d\left(x,x\right)=0$;<br>(2) 若 $d\left(x,y\right)=0$ 则 $x=y$;<br>(3) $d\left(x,y\right)=d\left(y,x\right)$;<br>(4) $d\left(x,y\right)\le d\left(x,z\right)+d\left(z,y\right)$. 装备了度量 $d$ 的集合 $X$ 称为度量空间. (题集 $\S1.3$ Q2; 教材 $\S6$)
 
-> **定义 6.37** (柯西列)<br>序列 $\left(x_n\right)$ 是柯西列, 若 $\lim_{N\to\infty}\sup_{i,j>N}d\left(x_i,x_j\right)=0$. (教材 $\S6$)
+> **定义 6.37** (柯西列)<br>序列 $\left(x_n\right)$ 是柯西列, 若 $\lim_{N\to\infty}\sup_{i,j> N}d\left(x_i,x_j\right)=0$. (教材 $\S6$)
 
 > **定义 6.38** (完备度量空间)<br>度量空间是完备的, 若其中每个柯西列都收敛. (教材 $\S6$)
 
@@ -70,7 +70,7 @@
 
 > **定义 11.3** (等价关系粘合)<br>$X/{\sim}$ 配商拓扑, $\pi:X\to X/{\sim}$ 为典范投影; 即将每个等价类黏合成一点. (教材 $\S11$, p61; Munkres $\S22$, p106)
 
-> **定义 11.6** (锥)<br>从 $X\times\left[0,1\right]$ 出发, 以 (a) 子集 $X\times\left\{1\right\}$ 与 (b) 单点集 $\left\{\left(x,t\right)\right\}$ ($x\in X$, $0\le t<1$) 为划分作粘合空间, 所得 $CX=X\times\left[0,1\right]/X\times\left\{1\right\}$ 叫作 $X$ 上的锥形; 被捏成的点 $X\times\left\{1\right\}$ 叫尖顶. (Armstrong 第4章 4.2, p56-57; 教材 $\S11$, p63)
+> **定义 11.6** (锥)<br>从 $X\times\left[0,1\right]$ 出发, 以 (a) 子集 $X\times\left\{1\right\}$ 与 (b) 单点集 $\left\{\left(x,t\right)\right\}$ ($x\in X$, $0\le t< 1$) 为划分作粘合空间, 所得 $CX=X\times\left[0,1\right]/X\times\left\{1\right\}$ 叫作 $X$ 上的锥形; 被捏成的点 $X\times\left\{1\right\}$ 叫尖顶. (Armstrong 第4章 4.2, p56-57; 教材 $\S11$, p63)
 
 > **定义 11.7** (环面)<br>正方形对边同向粘合所得 $S^1\times S^1$, 即 $\mathbb R^2/\mathbb Z^2$. (Armstrong 第4章 4.2, p56; 教材 $\S11$, p64)
 
@@ -88,7 +88,7 @@
 
 ### 习题一
 
-设 $\left(X,d\right)$ 是非空**定义 6.38** (完备度量空间), $f:X\to X$ 是严格压缩的, 即存在 $0<k<1$ 使对一切 $x,y\in X$ 有 $d\left(f\left(x\right),f\left(y\right)\right)\le k\,d\left(x,y\right)$. 证明 $f$ 在 $X$ 中有唯一不动点, 即存在唯一的 $x\in X$ 使 $f\left(x\right)=x$.
+设 $\left(X,d\right)$ 是非空**定义 6.38** (完备度量空间), $f:X\to X$ 是严格压缩的, 即存在 $0< k< 1$ 使对一切 $x,y\in X$ 有 $d\left(f\left(x\right),f\left(y\right)\right)\le k\,d\left(x,y\right)$. 证明 $f$ 在 $X$ 中有唯一不动点, 即存在唯一的 $x\in X$ 使 $f\left(x\right)=x$.
 
 ### 解答 习题一
 
@@ -98,7 +98,7 @@ $$
 d\left(x_{n+1},x_n\right)=d\left(f\left(x_n\right),f\left(x_{n-1}\right)\right)\le k\,d\left(x_n,x_{n-1}\right)\le\cdots\le k^n d\left(x_1,x_0\right).
 $$
 
-对 $m>n$, 由三角不等式 (**定义 6.35** (度量空间)),
+对 $m> n$, 由三角不等式 (**定义 6.35** (度量空间)),
 
 $$
 d\left(x_m,x_n\right)\le\sum_{j=n}^{m-1}d\left(x_{j+1},x_j\right)\le d\left(x_1,x_0\right)\sum_{j=n}^{\infty}k^j=\frac{k^n}{1-k}d\left(x_1,x_0\right).
@@ -106,15 +106,15 @@ $$
 
 右端当 $n\to\infty$ 时趋于 $0$, 故 $\left(x_n\right)$ 是**定义 6.37** (柯西列). 由 $X$ 是**定义 6.38** (完备度量空间), $x_n\to x\in X$. 压缩映射满足 $d\left(f\left(x_n\right),f\left(x\right)\right)\le k\,d\left(x_n,x\right)\to0$, 即 $f$ 连续, 故 $f\left(x_n\right)\to f\left(x\right)$; 但 $f\left(x_n\right)=x_{n+1}\to x$, 由极限唯一性得 $f\left(x\right)=x$.
 
-唯一性: 若 $f\left(x\right)=x$, $f\left(y\right)=y$, 则 $d\left(x,y\right)=d\left(f\left(x\right),f\left(y\right)\right)\le k\,d\left(x,y\right)$, 而 $0<k<1$, 故 $d\left(x,y\right)=0$, 由**定义 6.35** (度量空间) 的正定性得 $x=y$. 这就是**定理 6.16** (巴拿赫不动点定理). $\blacksquare$
+唯一性: 若 $f\left(x\right)=x$, $f\left(y\right)=y$, 则 $d\left(x,y\right)=d\left(f\left(x\right),f\left(y\right)\right)\le k\,d\left(x,y\right)$, 而 $0< k< 1$, 故 $d\left(x,y\right)=0$, 由**定义 6.35** (度量空间) 的正定性得 $x=y$. 这就是**定理 6.16** (巴拿赫不动点定理). $\blacksquare$
 
 ### 习题二
 
-设 $\left(E,\left\|\cdot\right\|\right)$ 是域 $\mathbb K$ 上的**定义 6.20** (赋范线性空间), $f:E\to E$ 是连续线性映射. 证明存在常数 $K>0$, 使对一切 $x,y\in E$ 有 $\left\|f\left(x\right)-f\left(y\right)\right\|\le K\left\|x-y\right\|$.
+设 $\left(E,\left\|\cdot\right\|\right)$ 是域 $\mathbb K$ 上的**定义 6.20** (赋范线性空间), $f:E\to E$ 是连续线性映射. 证明存在常数 $K> 0$, 使对一切 $x,y\in E$ 有 $\left\|f\left(x\right)-f\left(y\right)\right\|\le K\left\|x-y\right\|$.
 
 ### 解答 习题二
 
-由 $f$ 在 $0$ 连续 (按**定义 3.22** (连续映射), $\left\|z\right\|\to 0$ 时 $\left\|f\left(z\right)\right\|\to 0$), 存在 $\delta>0$, 使 $\left\|z\right\|<\delta$ 时 $\left\|f\left(z\right)\right\|\le1$. 对任意 $x\neq0$, 令 $z=\frac{\delta}{2\left\|x\right\|}x$, 则 $\left\|z\right\|=\delta/2<\delta$, 故 $\left\|f\left(z\right)\right\|\le1$. 由线性性,
+由 $f$ 在 $0$ 连续 (按**定义 3.22** (连续映射), $\left\|z\right\|\to 0$ 时 $\left\|f\left(z\right)\right\|\to 0$), 存在 $\delta> 0$, 使 $\left\|z\right\|< \delta$ 时 $\left\|f\left(z\right)\right\|\le1$. 对任意 $x\neq0$, 令 $z=\frac{\delta}{2\left\|x\right\|}x$, 则 $\left\|z\right\|=\delta/2< \delta$, 故 $\left\|f\left(z\right)\right\|\le1$. 由线性性,
 
 $$
 \left\|f\left(x\right)\right\|=\frac{2\left\|x\right\|}{\delta}\left\|f\left(z\right)\right\|\le\frac{2}{\delta}\left\|x\right\|.
@@ -130,7 +130,7 @@ $\blacksquare$
 
 ### 习题三
 
-沿用习题二的设定, $E$ 完备. 证明: 对给定的 $\lambda\in\mathbb K$ 满足 $\left|\lambda\right|>K$, 固定 $a\in E$, 映射
+沿用习题二的设定, $E$ 完备. 证明: 对给定的 $\lambda\in\mathbb K$ 满足 $\left|\lambda\right|> K$, 固定 $a\in E$, 映射
 
 $$
 g_a\left(x\right)=\frac{a-f\left(x\right)}{\lambda}
@@ -146,7 +146,7 @@ $$
 \left\|g_a\left(x\right)-g_a\left(y\right)\right\|=\frac{\left\|f\left(x\right)-f\left(y\right)\right\|}{\left|\lambda\right|}\le\frac{K}{\left|\lambda\right|}\left\|x-y\right\|.
 $$
 
-由假设 $\left|\lambda\right|>K$, 故 $k=K/\left|\lambda\right|<1$. 由**定义 6.19** (压缩映射), $g_a$ 是压缩映射. $E$ 非空且是**定义 6.38** (完备度量空间), 由**定理 6.16** (巴拿赫不动点定理), $g_a$ 有唯一不动点, 记为 $J\left(a\right)$. $\blacksquare$
+由假设 $\left|\lambda\right|> K$, 故 $k=K/\left|\lambda\right|< 1$. 由**定义 6.19** (压缩映射), $g_a$ 是压缩映射. $E$ 非空且是**定义 6.38** (完备度量空间), 由**定理 6.16** (巴拿赫不动点定理), $g_a$ 有唯一不动点, 记为 $J\left(a\right)$. $\blacksquare$
 
 ### 习题四
 
@@ -182,11 +182,11 @@ $\blacksquare$
 
 ### 习题五
 
-总结如下结论: 对任意连续线性映射 $f:E\to E$, 存在 $K>0$, 使对一切满足 $\left|\lambda\right|>K$ 的 $\lambda$ 与一切 $a\in E$, 方程 $f\left(x\right)-\lambda x=a$ (未知量 $x\in E$) 有唯一解 $J\left(a\right)$, 且映射 $a\mapsto J\left(a\right)$ 连续.
+总结如下结论: 对任意连续线性映射 $f:E\to E$, 存在 $K> 0$, 使对一切满足 $\left|\lambda\right|> K$ 的 $\lambda$ 与一切 $a\in E$, 方程 $f\left(x\right)-\lambda x=a$ (未知量 $x\in E$) 有唯一解 $J\left(a\right)$, 且映射 $a\mapsto J\left(a\right)$ 连续.
 
 ### 解答 习题五
 
-由习题二, 存在 $K>0$ 使 $\left\|f\left(x\right)-f\left(y\right)\right\|\le K\left\|x-y\right\|$. 设 $\left|\lambda\right|>K$. 方程 $f\left(x\right)-\lambda x=a$ 等价于
+由习题二, 存在 $K> 0$ 使 $\left\|f\left(x\right)-f\left(y\right)\right\|\le K\left\|x-y\right\|$. 设 $\left|\lambda\right|> K$. 方程 $f\left(x\right)-\lambda x=a$ 等价于
 
 $$
 x=\frac{a-f\left(x\right)}{\lambda}=g_a\left(x\right).
@@ -194,7 +194,7 @@ $$
 
 由习题三, $g_a$ 是**定义 6.19** (压缩映射), 由**定理 6.16** (巴拿赫不动点定理), 该方程有唯一解 $J\left(a\right)$.
 
-由习题四, $\left\|J\left(a\right)-J\left(b\right)\right\|\le\frac{1}{\left|\lambda\right|-K}\left\|a-b\right\|$, 即 $J$ 是利普希茨映射. 利普希茨映射连续: 对任意开集 $U\subset E$ 与 $a\in J^{-1}\left(U\right)$, 取 $\varepsilon>0$ 使 $B\left(J\left(a\right),\varepsilon\right)\subset U$, 则 $\left\|b-a\right\|<\left(\left|\lambda\right|-K\right)\varepsilon$ 蕴含 $\left\|J\left(b\right)-J\left(a\right)\right\|<\varepsilon$, 即 $J^{-1}\left(U\right)$ 含 $a$ 的一个邻域. 由**定义 3.22** (连续映射), $J$ 连续. $\blacksquare$
+由习题四, $\left\|J\left(a\right)-J\left(b\right)\right\|\le\frac{1}{\left|\lambda\right|-K}\left\|a-b\right\|$, 即 $J$ 是利普希茨映射. 利普希茨映射连续: 对任意开集 $U\subset E$ 与 $a\in J^{-1}\left(U\right)$, 取 $\varepsilon> 0$ 使 $B\left(J\left(a\right),\varepsilon\right)\subset U$, 则 $\left\|b-a\right\|< \left(\left|\lambda\right|-K\right)\varepsilon$ 蕴含 $\left\|J\left(b\right)-J\left(a\right)\right\|< \varepsilon$, 即 $J^{-1}\left(U\right)$ 含 $a$ 的一个邻域. 由**定义 3.22** (连续映射), $J$ 连续. $\blacksquare$
 
 ### 习题六
 
@@ -234,11 +234,11 @@ $$
 U=V\cup\left(X\setminus X_i\right).
 $$
 
-则 $U\cap X_i=V$. 验证 $U\in\tau$: 对 $k=i$, $U\cap X_i=V$ 开; 对 $k<i$, $X_k\subset X_i$, 故 $U\cap X_k=V\cap X_k$, 由 $X_k$ 的子空间性质它在 $X_k$ 中开; 对 $k>i$, $X_i$ 在 $X_k$ 中闭, 故 $X_k\setminus X_i$ 在 $X_k$ 中开, 而 $V$ 在 $X_i$ 中开, 由 $X_i$ 是 $X_k$ 的子空间可写 $V=X_i\cap W$, $W$ 在 $X_k$ 中开, 于是 $U\cap X_k=\left(X_i\cap W\right)\cup\left(X_k\setminus X_i\right)=W\cup\left(X_k\setminus X_i\right)$ 在 $X_k$ 中开. 故 $U\in\tau$, 且 $V=U\cap X_i$ 是继承开集.
+则 $U\cap X_i=V$. 验证 $U\in\tau$: 对 $k=i$, $U\cap X_i=V$ 开; 对 $k< i$, $X_k\subset X_i$, 故 $U\cap X_k=V\cap X_k$, 由 $X_k$ 的子空间性质它在 $X_k$ 中开; 对 $k> i$, $X_i$ 在 $X_k$ 中闭, 故 $X_k\setminus X_i$ 在 $X_k$ 中开, 而 $V$ 在 $X_i$ 中开, 由 $X_i$ 是 $X_k$ 的子空间可写 $V=X_i\cap W$, $W$ 在 $X_k$ 中开, 于是 $U\cap X_k=\left(X_i\cap W\right)\cup\left(X_k\setminus X_i\right)=W\cup\left(X_k\setminus X_i\right)$ 在 $X_k$ 中开. 故 $U\in\tau$, 且 $V=U\cap X_i$ 是继承开集.
 
 故 $X_i$ 的原拓扑等于继承拓扑.
 
-再证 $X_i$ 在 $X$ 中闭. 由**定义 3.19** (子空间拓扑) 的逆运算思路, 只需证 $X\setminus X_i$ 在 $\tau$ 中开. 对 $k\le i$, $\left(X\setminus X_i\right)\cap X_k=\emptyset$ 开; 对 $k>i$, $X_i$ 在 $X_k$ 中闭, 故 $\left(X\setminus X_i\right)\cap X_k=X_k\setminus X_i$ 在 $X_k$ 中开. 由**定义 11.14** (最终拓扑), $X\setminus X_i\in\tau$, 故 $X_i$ 闭. $\blacksquare$
+再证 $X_i$ 在 $X$ 中闭. 由**定义 3.19** (子空间拓扑) 的逆运算思路, 只需证 $X\setminus X_i$ 在 $\tau$ 中开. 对 $k\le i$, $\left(X\setminus X_i\right)\cap X_k=\emptyset$ 开; 对 $k> i$, $X_i$ 在 $X_k$ 中闭, 故 $\left(X\setminus X_i\right)\cap X_k=X_k\setminus X_i$ 在 $X_k$ 中开. 由**定义 11.14** (最终拓扑), $X\setminus X_i\in\tau$, 故 $X_i$ 闭. $\blacksquare$
 
 ### 习题八
 
@@ -282,9 +282,9 @@ $$
 \pi^{-1}\left(B_{d'}\left(\left[x\right],\varepsilon\right)\right)=B_d\left(x,\varepsilon\right).
 $$
 
-包含 $\subset$: 若 $z$ 使 $d'\left(\left[z\right],\left[x\right]\right)<\varepsilon$, 即 $d\left(z,x\right)<\varepsilon$, 则 $z\in B_d\left(x,\varepsilon\right)$. 包含 $\supset$: 若 $z\in B_d\left(x,\varepsilon\right)$, 则 $d'\left(\left[z\right],\left[x\right]\right)=d\left(z,x\right)<\varepsilon$. 由**定义 11.1** (商拓扑), $B_{d'}\left(\left[x\right],\varepsilon\right)$ 是商开集, 故度量拓扑粗于商拓扑. 反之, 若 $U$ 是商开集, 则 $\pi^{-1}\left(U\right)$ 是 $d$-开集, 从而是若干 $d$-球之并, 其像 $U=\pi\left(\pi^{-1}\left(U\right)\right)$ 是若干 $d'$-球之并, 故 $U$ 是度量开集. 二者一致.
+包含 $\subset$: 若 $z$ 使 $d'\left(\left[z\right],\left[x\right]\right)< \varepsilon$, 即 $d\left(z,x\right)< \varepsilon$, 则 $z\in B_d\left(x,\varepsilon\right)$. 包含 $\supset$: 若 $z\in B_d\left(x,\varepsilon\right)$, 则 $d'\left(\left[z\right],\left[x\right]\right)=d\left(z,x\right)< \varepsilon$. 由**定义 11.1** (商拓扑), $B_{d'}\left(\left[x\right],\varepsilon\right)$ 是商开集, 故度量拓扑粗于商拓扑. 反之, 若 $U$ 是商开集, 则 $\pi^{-1}\left(U\right)$ 是 $d$-开集, 从而是若干 $d$-球之并, 其像 $U=\pi\left(\pi^{-1}\left(U\right)\right)$ 是若干 $d'$-球之并, 故 $U$ 是度量开集. 二者一致.
 
-**泛分解**: 设 $F$ 豪斯多夫, $f:X\to F$ 连续. 先证 $f$ 在等价类上取常值. 若 $x\sim x'$, 即 $d\left(x,x'\right)=0$, 则 $x$ 与 $x'$ 在 $X$ 中无法用开集分离: 对任意 $\varepsilon>0$, $B_d\left(x,\varepsilon\right)=B_d\left(x',\varepsilon\right)$. 若 $f\left(x\right)\neq f\left(x'\right)$, 由**定义 3.10** (豪斯多夫空间) 存在不相交开邻域 $V\ni f\left(x\right)$, $W\ni f\left(x'\right)$. 由**定义 3.22** (连续映射), $f^{-1}\left(V\right)$ 是 $x$ 的开邻域, 从而含 $x'$, 故 $f\left(x'\right)\in V$, 与 $V\cap W=\emptyset$ 及 $f\left(x'\right)\in W$ 矛盾. 故 $f\left(x\right)=f\left(x'\right)$.
+**泛分解**: 设 $F$ 豪斯多夫, $f:X\to F$ 连续. 先证 $f$ 在等价类上取常值. 若 $x\sim x'$, 即 $d\left(x,x'\right)=0$, 则 $x$ 与 $x'$ 在 $X$ 中无法用开集分离: 对任意 $\varepsilon> 0$, $B_d\left(x,\varepsilon\right)=B_d\left(x',\varepsilon\right)$. 若 $f\left(x\right)\neq f\left(x'\right)$, 由**定义 3.10** (豪斯多夫空间) 存在不相交开邻域 $V\ni f\left(x\right)$, $W\ni f\left(x'\right)$. 由**定义 3.22** (连续映射), $f^{-1}\left(V\right)$ 是 $x$ 的开邻域, 从而含 $x'$, 故 $f\left(x'\right)\in V$, 与 $V\cap W=\emptyset$ 及 $f\left(x'\right)\in W$ 矛盾. 故 $f\left(x\right)=f\left(x'\right)$.
 
 于是可定义 $f'\left(\left[x\right]\right)=f\left(x\right)$, 适定. 由**定义 11.2** (粘合映射), 为证 $f'$ 连续, 只需对任意开集 $O\subset F$, $\left(f'\right)^{-1}\left(O\right)$ 商开, 即 $\pi^{-1}\left(\left(f'\right)^{-1}\left(O\right)\right)=f^{-1}\left(O\right)$ 在 $X$ 中开; 这由 $f$ 连续保证. 故 $f=f'\circ\pi$. $\blacksquare$
 
@@ -297,7 +297,7 @@ $$
 **($\Leftarrow$)**: 设拓扑由半范数族 $\left\{p_\alpha\right\}_{\alpha\in A}$ 定义. 由**定义 6.25** (半范数), 每个 $p_\alpha$ 是凸函数 (由三角不等式 $p_\alpha\left(\left(1-t\right)x+ty\right)\le\left(1-t\right)p_\alpha\left(x\right)+tp_\alpha\left(y\right)$). 形如
 
 $$
-U_{\alpha_1,\dots,\alpha_n;\varepsilon}=\left\{x:p_{\alpha_i}\left(x\right)<\varepsilon,\ i=1,\dots,n\right\}
+U_{\alpha_1,\dots,\alpha_n;\varepsilon}=\left\{x:p_{\alpha_i}\left(x\right)< \varepsilon,\ i=1,\dots,n\right\}
 $$
 
 的集合是有限个凸集的交, 由**定义 4.23** (凸集) 仍是凸集; 它们构成 $0$ 的邻域基. 故由**定义 6.26** (局部凸空间), 空间局部凸.
@@ -305,12 +305,12 @@ $$
 **($\Rightarrow$)**: 设空间局部凸. 由**定义 6.26** (局部凸空间), $0$ 有凸邻域基 $\left\{C_\alpha\right\}_{\alpha\in A}$. 由**定义 6.24** (拓扑向量空间), 加法与数乘连续, 故可在不损失凸性的前提下取每个 $C_\alpha$ 为平衡凸邻域 (即 $x\in C_\alpha$ 蕴含 $\lambda x\in C_\alpha$ 对一切 $\left|\lambda\right|\le 1$). 定义
 
 $$
-p_\alpha\left(x\right)=\inf\left\{t>0:x\in t\,C_\alpha\right\}.
+p_\alpha\left(x\right)=\inf\left\{t> 0:x\in t\,C_\alpha\right\}.
 $$
 
-这正是**定义 6.27** (规范函数). 由 $C_\alpha$ 凸且平衡, $p_\alpha$ 满足**定义 6.25** (半范数) 的两条: 齐次 $p_\alpha\left(\lambda x\right)=\left|\lambda\right|p_\alpha\left(x\right)$; 三角不等式由 $C_\alpha$ 凸推出. 邻域 $\left\{p_\alpha<\varepsilon\right\}$ 就是 $\varepsilon C_\alpha$, 故半范数族 $\left\{p_\alpha\right\}$ 定义的拓扑与原拓扑相同.
+这正是**定义 6.27** (规范函数). 由 $C_\alpha$ 凸且平衡, $p_\alpha$ 满足**定义 6.25** (半范数) 的两条: 齐次 $p_\alpha\left(\lambda x\right)=\left|\lambda\right|p_\alpha\left(x\right)$; 三角不等式由 $C_\alpha$ 凸推出. 邻域 $\left\{p_\alpha< \varepsilon\right\}$ 就是 $\varepsilon C_\alpha$, 故半范数族 $\left\{p_\alpha\right\}$ 定义的拓扑与原拓扑相同.
 
-**可数情形**: 若 $0$ 有可数凸邻域基 $\left\{C_n\right\}_{n\ge 1}$, 上面的构造给出可数半范数族 $\left\{p_n\right\}$. 反之, 若拓扑由可数半范数族 $\left\{p_n\right\}$ 定义, 则 $\left\{x:p_i\left(x\right)<1/k,\ i=1,\dots,n\right\}$ ($n,k\ge 1$) 是可数凸邻域基. $\blacksquare$
+**可数情形**: 若 $0$ 有可数凸邻域基 $\left\{C_n\right\}_{n\ge 1}$, 上面的构造给出可数半范数族 $\left\{p_n\right\}$. 反之, 若拓扑由可数半范数族 $\left\{p_n\right\}$ 定义, 则 $\left\{x:p_i\left(x\right)< 1/k,\ i=1,\dots,n\right\}$ ($n,k\ge 1$) 是可数凸邻域基. $\blacksquare$
 
 ### 习题十一
 
@@ -322,7 +322,7 @@ $$
 
 **有理斜率**: 设 $\alpha=p/q$, $p,q\in\mathbb Z$, $\gcd\left(p,q\right)=1$. 映射 $g:\mathbb R/q\mathbb Z\to T^2$, $g\left(t\right)=\pi\left(t,\alpha t\right)$. 它良定义且连续 (由**定义 11.2** (粘合映射), $\mathbb R/q\mathbb Z$ 上的映射经由商投影分解). 它是单射: 若 $\pi\left(t,\alpha t\right)=\pi\left(t',\alpha t'\right)$, 则 $t-t'\in\mathbb Z$ 且 $p\left(t-t'\right)/q\in\mathbb Z$, 即 $q\mid p\left(t-t'\right)$; 由 $\gcd\left(p,q\right)=1$, $q\mid t-t'$, 即在 $\mathbb R/q\mathbb Z$ 中相等. $\mathbb R/q\mathbb Z$ 是紧圆 (同胚于 $S^1$), $T^2$ 是豪斯多夫的 (由**定义 11.7** (环面) $T^2\cong S^1\times S^1$, 而 $S^1$ 是 $\mathbb R^2$ 的子空间故豪斯多夫, 由**定理 3.6** (豪斯多夫的遗传性) 乘积仍豪斯多夫). 由**定理 5.6** (紧豪斯多夫间的连续双射), $g$ 是同胚. 故 $\pi\left(D\right)=g\left(\mathbb R/q\mathbb Z\right)$ 同胚于圆.
 
-**无理斜率**: 设 $\alpha\notin\mathbb Q$. 先证 $\pi\left(D\right)$ 在 $T^2$ 中稠密. 记 $H=\pi\left(D\right)=\left\{\pi\left(t,\alpha t\right):t\in\mathbb R\right\}\subset T^2$, 它是 $T^2$ 的子群 (按**定义 11.7** (环面) 中 $\mathbb R^2/\mathbb Z^2$ 的群结构). 由**定义 3.32** (稠密), 只需证 $\overline H=T^2$. 由狄利克雷逼近 (鸽巢原理: 对 $N$ 个点 $0,\alpha,2\alpha,\dots,N\alpha\pmod 1$, 必有两点相距 $<1/N$), 对任意 $\varepsilon>0$ 存在非零整数 $m$ 使 $\left\|m\alpha\right\|<\varepsilon$ (到最近整数距离), 即 $\pi\left(m,m\alpha\right)$ 离 $\left(0,0\right)\in T^2$ 任意近. $H$ 中含任意接近单位元的非零点, 故 $H$ 不是离散子群; 而 $H$ 在第一坐标上的投影 $t\mapsto t\pmod 1$ 是满射到 $S^1$ (因 $t$ 取遍 $\mathbb R$), 结合第二坐标 $t\mapsto\alpha t\pmod 1$ 的无理旋转 (稠密), 即得 $H$ 在 $T^2$ 中稠密.
+**无理斜率**: 设 $\alpha\notin\mathbb Q$. 先证 $\pi\left(D\right)$ 在 $T^2$ 中稠密. 记 $H=\pi\left(D\right)=\left\{\pi\left(t,\alpha t\right):t\in\mathbb R\right\}\subset T^2$, 它是 $T^2$ 的子群 (按**定义 11.7** (环面) 中 $\mathbb R^2/\mathbb Z^2$ 的群结构). 由**定义 3.32** (稠密), 只需证 $\overline H=T^2$. 由狄利克雷逼近 (鸽巢原理: 对 $N$ 个点 $0,\alpha,2\alpha,\dots,N\alpha\pmod 1$, 必有两点相距 $< 1/N$), 对任意 $\varepsilon> 0$ 存在非零整数 $m$ 使 $\left\|m\alpha\right\|< \varepsilon$ (到最近整数距离), 即 $\pi\left(m,m\alpha\right)$ 离 $\left(0,0\right)\in T^2$ 任意近. $H$ 中含任意接近单位元的非零点, 故 $H$ 不是离散子群; 而 $H$ 在第一坐标上的投影 $t\mapsto t\pmod 1$ 是满射到 $S^1$ (因 $t$ 取遍 $\mathbb R$), 结合第二坐标 $t\mapsto\alpha t\pmod 1$ 的无理旋转 (稠密), 即得 $H$ 在 $T^2$ 中稠密.
 
 $\pi|_D:D\to\pi\left(D\right)$ 连续 (它是商映射 $\pi$ 在子空间 $D$ 上的限制, 由**定义 3.19** (子空间拓扑) 连续). 它是双射: 若 $\pi\left(t,\alpha t\right)=\pi\left(t',\alpha t'\right)$, 则 $t-t'\in\mathbb Z$ 且 $\alpha\left(t-t'\right)\in\mathbb Z$, 由 $\alpha$ 无理必有 $t-t'=0$. $\blacksquare$
 
@@ -431,7 +431,7 @@ $$
 记 $C=\bigcap_{\alpha\in A}C_\alpha$. 由**定义 6.27** (规范函数),
 
 $$
-\left\|x\right\|_C=\inf\left\{t>0:x\in tC\right\}=\inf\left\{t>0:\text{对一切 $\alpha$, }x\in tC_\alpha\right\}.
+\left\|x\right\|_C=\inf\left\{t> 0:x\in tC\right\}=\inf\left\{t> 0:\text{对一切 $\alpha$, }x\in tC_\alpha\right\}.
 $$
 
 而 $x\in tC_\alpha$ 当且仅当 $t\ge\left\|x\right\|_{C_\alpha}$ (规范函数的次水平集刻画). 故同时对一切 $\alpha$ 成立当且仅当
@@ -483,7 +483,7 @@ $$
 由**定义 6.30** (弱拓扑), 弱拓扑是由 $E^*$ 中全体连续线性泛函诱导的初始拓扑. 由**定理 6.50** (哈恩-巴拿赫定理), $E^*$ 分离 $E$ 的点. 弱拓扑的基本邻域形如
 
 $$
-U\left(x_0;\varphi_1,\dots,\varphi_n;\varepsilon\right)=\left\{x:\left|\varphi_i\left(x-x_0\right)\right|<\varepsilon,\ i=1,\dots,n\right\}.
+U\left(x_0;\varphi_1,\dots,\varphi_n;\varepsilon\right)=\left\{x:\left|\varphi_i\left(x-x_0\right)\right|< \varepsilon,\ i=1,\dots,n\right\}.
 $$
 
 它是 $x_0$ 加上有限个超平面交 (即无穷维仿射子空间) 的 $\varepsilon$-管.
@@ -492,7 +492,7 @@ $$
 
 **开单位球的弱内部**: 弱开邻域含无穷维仿射子空间, 因而其中有无界点, 不可能含于有界开单位球. 故弱拓扑下开单位球的内部为 $\emptyset$.
 
-**单位球面的弱闭包**: 由**定理 6.50** (哈恩-巴拿赫定理), 任意 $x_0$ 满足 $\left\|x_0\right\|\le 1$ 都可被球面中点弱逼近: 若 $\left\|x_0\right\|<1$, 沿任意方向取小步长即可进入球面; 若 $\left\|x_0\right\|=1$, $x_0$ 本身在球面上. 反之弱闭包不能超出闭单位球 (范数是弱下半连续的). 故弱闭包等于闭单位球 $\left\{x:\left\|x\right\|\le 1\right\}$. $\blacksquare$
+**单位球面的弱闭包**: 由**定理 6.50** (哈恩-巴拿赫定理), 任意 $x_0$ 满足 $\left\|x_0\right\|\le 1$ 都可被球面中点弱逼近: 若 $\left\|x_0\right\|< 1$, 沿任意方向取小步长即可进入球面; 若 $\left\|x_0\right\|=1$, $x_0$ 本身在球面上. 反之弱闭包不能超出闭单位球 (范数是弱下半连续的). 故弱闭包等于闭单位球 $\left\{x:\left\|x\right\|\le 1\right\}$. $\blacksquare$
 
 ### 习题二十
 
@@ -510,7 +510,7 @@ $$
 
 **粗于弱星拓扑**: 由**定义 6.31** (弱星拓扑), 弱星拓扑由全部 $x\in E$ 的赋值诱导. 本题初始拓扑仅用 $x\in D\subset E$. 映射更少, 由**定义 3.14** (初始拓扑) 的"最粗性", 用较少映射得到的拓扑粗于用全部映射得到的弱星拓扑.
 
-**稠密 $D$ 时在有界集上相同**: 设 $B\subset E^*$ 有界, 即 $\sup_{\varphi\in B}\left\|\varphi\right\|<\infty$. 已知弱星 $\Rightarrow$ 初始方向 (上一问). 反之, 设网 $\left\{\varphi_\alpha\right\}\subset B$ 在初始拓扑下收敛到 $\varphi\in B$, 即对每个 $x\in D$, $\varphi_\alpha\left(x\right)\to\varphi\left(x\right)$. 任取 $y\in E$, 由 $D$ 稠密取 $x_n\in D\to y$. 对 $\varepsilon>0$, 取 $x_n$ 使 $\left\|y-x_n\right\|<\varepsilon/\left(\sup_B\left\|\varphi_\alpha\right\|+\sup_B\left\|\varphi\right\|+1\right)$. 则
+**稠密 $D$ 时在有界集上相同**: 设 $B\subset E^*$ 有界, 即 $\sup_{\varphi\in B}\left\|\varphi\right\|< \infty$. 已知弱星 $\Rightarrow$ 初始方向 (上一问). 反之, 设网 $\left\{\varphi_\alpha\right\}\subset B$ 在初始拓扑下收敛到 $\varphi\in B$, 即对每个 $x\in D$, $\varphi_\alpha\left(x\right)\to\varphi\left(x\right)$. 任取 $y\in E$, 由 $D$ 稠密取 $x_n\in D\to y$. 对 $\varepsilon> 0$, 取 $x_n$ 使 $\left\|y-x_n\right\|< \varepsilon/\left(\sup_B\left\|\varphi_\alpha\right\|+\sup_B\left\|\varphi\right\|+1\right)$. 则
 
 $$
 \left|\varphi_\alpha\left(y\right)-\varphi\left(y\right)\right|\le\left|\varphi_\alpha\left(y-x_n\right)\right|+\left|\varphi_\alpha\left(x_n\right)-\varphi\left(x_n\right)\right|+\left|\varphi\left(x_n-y\right)\right|.
