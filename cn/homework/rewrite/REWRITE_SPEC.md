@@ -20,7 +20,7 @@
 2. **《拓扑学》(原书第2版)**：`textbooks\topology-James_ocr.pdf`。文内出处写「《拓扑学》(原书第2版) §X」。
 3. **《基础拓扑学》(修订版)**：`textbooks\basic-topology-Mark_ocr.pdf`。文内出处写「《基础拓扑学》(修订版) 第X章」。（原文文件名含作者英文名，仅作文件标识，不属于正文文字。）
 
-另：题目出自题集 BIT《Introduction to Topology: Exercises》（`textbooks\Topology2024_Anon_ocr.pdf`），文内出处写「题集 §X」；凡该题集或既有作业/笔记把某概念出处标为（题集 §X）的，保留题集出处。**三本教材之外的标准事实**（如实数三角不等式、夹逼定理、中值定理、介值定理、一致连续、$\varepsilon_n/(1+\varepsilon_n)$ 恒等式等）作为「基础知识」列入引用区。
+另：题目出自题集 BIT《Introduction to Topology: Exercises》（`textbooks\Topology2024_Anon_ocr.pdf`），文内出处写「题集 §X」；凡该题集或既有作业/笔记把某概念出处标为（题集 §X）的，保留题集出处。**三本教材之外的标准事实**（如实数三角不等式、夹逼定理、中值定理、介值定理、一致连续、$\varepsilon_n/\left(1+\varepsilon_n\right)$ 恒等式等）作为「基础知识」列入引用区。
 
 **人名中文对照表（正文与人名均用中文，禁止英文人名）**：乌雷松、巴拿赫、豪斯多夫、谢尔宾斯基、弗斯滕伯格、戈洛姆、基尔希、吉洪诺夫、贝尔、里茨、柯西、施瓦茨、哈恩、施坦豪斯、绍德、利普希茨、芒克里斯（Munkres）、阿姆斯特朗（Armstrong）、麦克马伦（McMullen）。
 
