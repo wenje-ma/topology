@@ -225,7 +225,7 @@ $f$ 连续, 把子列极限映为序列 $f^{n+1}\left(x\right)$ 的子列极限,
 (1) 固定 $x,y\in E$, 记 $a_n=d\left(f^n\left(x\right),f^n\left(y\right)\right)$. 由条件应用于 $\left(f^{n-1}\left(x\right),f^{n-1}\left(y\right)\right)$, $a_{n+1}\ge a_n$, 又 $a_n\le\operatorname{diam}\left(E\right)$, 故 $a_n\uparrow L$. 由**定理 6.1** (紧 $=$ 序列紧), $E\times E$ 紧, $\left(f^n\left(x\right),f^n\left(y\right)\right)$ 有子列 $\left(f^{n_j}\left(x\right),f^{n_j}\left(y\right)\right)\to\left(u,v\right)$, 于是 $d\left(u,v\right)=L$. 因 $a_{n_j}\to L$ 且 $a_{n_j+1}\to L$, 由三角不等式
 
 $$
-\left|a_{n_j+1}-a_{n_j}\right|\le d\bigl(f^{n_j+1}\left(x\right),f^{n_j}\left(x\right)\bigr)+d\bigl(f^{n_j+1}\left(y\right),f^{n_j}\left(y\right)\bigr).
+\left|a_{n_j+1}-a_{n_j}\right|\le d\left(f^{n_j+1}\left(x\right),f^{n_j}\left(x\right)\right)+d\left(f^{n_j+1}\left(y\right),f^{n_j}\left(y\right)\right).
 $$
 
 左端趋于 $0$, 故 $d\left(f^{n_j+1}\left(x\right),f^{n_j}\left(x\right)\right)\to0$ 且 $d\left(f^{n_j+1}\left(y\right),f^{n_j}\left(y\right)\right)\to0$. 由 $f$ 连续, $f\left(f^{n_j}\left(x\right)\right)=f^{n_j+1}\left(x\right)\to f\left(u\right)$; 而它也 $\to u$, 故 $f\left(u\right)=u$. 同理 $f\left(v\right)=v$.
