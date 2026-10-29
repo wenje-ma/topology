@@ -48,7 +48,7 @@
 
 ### 解答 习题一
 
-**($\Leftarrow$)** 设存在 $X$ 中闭集 $F'$ 使 $F=F'\cap A$. 由**定义 3.21 (闭集)**, $X\setminus F'$ 是 $X$ 中开集. 由**定义 3.19 (子空间拓扑)**, $A\cap\left(X\setminus F'\right)$ 是 $A$ 中开集. 由**基础知识: 集合运算恒等式**, $A\setminus\left(F'\cap A\right)=A\cap\left(X\setminus F'\right)$; 故 $A\setminus F$ 是 $A$ 中开集. 再由**定义 3.21 (闭集)**, $F$ 在 $A$ 中闭.
+**($\Leftarrow$)** 设存在 $X$ 中闭集 $F'$ 使 $F=F'\cap A$. 由**定义 3.21 (闭集)**, $X\setminus F'$ 是 $X$ 中开集. 由**定义 3.19 (子空间拓扑)**, $A\cap\left(X\setminus F'\right)$ 是 $A$ 中开集. 由**基础知识: 集合运算恒等式**, $A\setminus F=A\setminus\left(F'\cap A\right)=A\cap\left(X\setminus F'\right)$; 故 $A\setminus F$ 是 $A$ 中开集. 再由**定义 3.21 (闭集)**, $F$ 在 $A$ 中闭.
 
 **($\Rightarrow$)** 设 $F$ 在 $A$ 中闭. 由**定义 3.21 (闭集)**, $A\setminus F$ 是 $A$ 中开集. 由**定义 3.19 (子空间拓扑)**, 存在 $X$ 中开集 $O$ 使 $A\setminus F=O\cap A$. 令 $F'=X\setminus O$, 则由**定义 3.21 (闭集)** $F'$ 是 $X$ 中闭集; 由**基础知识: 集合运算恒等式**, $F=A\setminus\left(O\cap A\right)=A\cap\left(X\setminus O\right)=F'\cap A$. 故存在 $X$ 中闭集 $F'$ 使 $F=F'\cap A$. $\blacksquare$
 
@@ -60,7 +60,7 @@
 
 ### 解答 习题二
 
-记 $\mathcal B_A=\left\{O\cap A:O\in\mathcal B\right\}$. 由**定义 3.15 (拓扑基)**, 需验证 $\mathcal B_A$ 满足两条:
+记 $\mathcal B_A=\left\{U:=O\cap A:O\in\mathcal B\right\}$. 由**定义 3.15 (拓扑基)**, 需验证 $\mathcal B_A$ 满足两条:
 
 (1) $A=\bigcup_{U\in\mathcal B_A}U$. 由**定义 3.15 (拓扑基)**, $X=\bigcup_{O\in\mathcal B}O$; 由**基础知识: 交与并的分配律**,
 
@@ -80,7 +80,7 @@ $$
 
 ## 习题三
 
-证明: $A$ 在 $X$ 中开 (闭), 当且仅当 $A$ 的每个开集 (闭集) $U$ 在 $X$ 中开 (相应地, 闭).
+证明: $A$ 在 $X$ 中开 (闭), 当且仅当 $A$ 的每个开集 $U$ (闭集 $F$) 在 $X$ 中开 (闭).
 
 ### 解答 习题三
 
@@ -104,9 +104,9 @@ $$
 
 ### 解答 习题四
 
-对任意 $X$ 中开集 $O$, 由**基础知识: 原像的定义**, $\iota^{-1}\left(O\right)=\left\{a\in A:\iota\left(a\right)\in O\right\}$; 因 $\iota$ 是包含映射, $\iota\left(a\right)=a$, 故 $\left\{a\in A:a\in O\right\}=A\cap O=O\cap A$. 由**定义 3.19 (子空间拓扑)**, $\iota^{-1}\left(O\right)=O\cap A$ 恰为 $A$ 中的开集. 由**定义 3.22 (连续映射)**, 对每个 $X$ 中开集 $O$, $\iota^{-1}\left(O\right)$ 在 $A$ 中开, 故 $\iota$ 连续.
+对任意 $X$ 中开集 $O$, 由**基础知识: 原像的定义**, $\iota^{-1}\left(O\right)=\left\{a\in A:\iota\left(a\right)\in O\right\}$; 因 $\iota$ 是包含映射, $\iota\left(a\right)=a$, 故 $\left\{a\in A:a\in O\right\}=A\cap O$. 由**定义 3.19 (子空间拓扑)**, $\iota^{-1}\left(O\right)=O\cap A$ 恰为 $A$ 中的开集. 由**定义 3.22 (连续映射)**, 对每个 $X$ 中开集 $O$, $\iota^{-1}\left(O\right)$ 在 $A$ 中开, 故 $\iota$ 连续.
 
-由**定义 3.14 (初始拓扑)**, $\iota$ 在 $A$ 上诱导的初始拓扑为 $\left\{\iota^{-1}\left(O\right):O\;\text{是}\;X\;\text{中开集}\right\}=\left\{O\cap A:O\;\text{是}\;X\;\text{中开集}\right\}$, 这恰是**定义 3.19 (子空间拓扑)** 给出的开集族. 又由**定义 3.14 (初始拓扑)**, 该拓扑是使 $\iota$ 连续的最粗拓扑; 而**定义 3.19 (子空间拓扑)** 亦给出使 $\iota$ 连续的最粗拓扑, 故两者相同. $\blacksquare$
+由**定义 3.14 (初始拓扑)**, $\iota$ 在 $A$ 上诱导的初始拓扑为 $\left\{\iota^{-1}\left(O\right):O\;\text{是}\;X\;\text{中开集}\right\}=\left\{O\cap A:O\;\text{是}\;X\;\text{中开集}\right\}$, 且该拓扑是使 $\iota$ 连续的最粗拓扑; 而**定义 3.19 (子空间拓扑)** 亦给出使 $\iota$ 连续的最粗拓扑, 故两者相同. $\blacksquare$
 
 ---
 
