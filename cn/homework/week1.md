@@ -58,11 +58,7 @@
 
 ### 解答 习题一
 
-(1) 由**定义 3.18 (拓扑空间)**, $\mathcal O$ 的开集为 $\emptyset,\left\{0\right\},\left\{0,1\right\}$. 由**定义 3.21 (闭集)**, 闭集是开集的补集, 故 $\mathcal O$ 的闭集为 $X,\left\{1\right\},\emptyset$. 因 $\left\{1\right\}$ 是闭集, 由**定义 3.26 (闭包)** 其为包含 $\left\{1\right\}$ 的最小闭集, 故
-
-$$
-\overline{\left\{1\right\}}=\left\{1\right\}.
-$$
+(1) 由**定义 3.18 (拓扑空间)**, $\mathcal O$ 的开集为 $\emptyset,\left\{0\right\},\left\{0,1\right\}$. 由**定义 3.21 (闭集)**, 闭集是开集的补集, 故 $\mathcal O$ 的闭集为 $X,\left\{1\right\},\emptyset$. 因 $\left\{1\right\}$ 是闭集, 由**定义 3.26 (闭包)** 其为包含 $\left\{1\right\}$ 的最小闭集, 故 $\overline{\left\{1\right\}}=\left\{1\right\}$.
 
 (2) 由**定义 3.10 (豪斯多夫空间)**, 需看点 $0$ 与 $1$ 能否被不相交的邻域分离. 由**定义 3.25 (邻域与极限)**, $1$ 的邻域是含 $1$ 的开集, 而含 $1$ 的开集只有 $\left\{0,1\right\}$ (因 $\left\{1\right\}\notin\mathcal O$), 它同时含 $0$. 故不存在不相交的开集分别含 $0$ 与 $1$, $\left(X,\mathcal O\right)$ **不是**豪斯多夫空间.
 
@@ -122,13 +118,13 @@ $$
 
 (2) 设 $\left\{U_i\right\}_{i\in I}\subset\mathcal O$. 则对每个 $\alpha$ 与每个 $i$, $U_i\in\mathcal O_\alpha$. 因 $\mathcal O_\alpha$ 是拓扑, 由**定义 3.18 (拓扑空间)** (开集的任意并仍开) 故 $\bigcup_i U_i\in\mathcal O_\alpha$. 由 $\alpha$ 任意, $\bigcup_{i\in I}U_i\in\bigcap_{\alpha\in A}\mathcal O_\alpha=\mathcal O$.
 
-(3) 设 $U,V\in\mathcal O$. 则对每个 $\alpha$, $U,V\in\mathcal O_\alpha$. 因 $\mathcal O_\alpha$ 是拓扑, 由**定义 3.18 (拓扑空间)** (开集的有限交仍开) 故 $U\cap V\in\mathcal O_\alpha$, 从而 $U\cap V\in\bigcap_{\alpha\in A}\mathcal O_\alpha=\mathcal O$.
+(3) 设 $U,V\in\mathcal O$. 则对每个 $\alpha$, $U,V\in\mathcal O_\alpha$. 因 $\mathcal O_\alpha$ 是拓扑, 由**定义 3.18 (拓扑空间)** (开集的有限交仍开) 故 $U\cap V\in\mathcal O_\alpha$. 由 $\alpha$ 任意, 从而 $U\cap V\in\bigcap_{\alpha\in A}\mathcal O_\alpha=\mathcal O$.
 
 故 $\mathcal O$ 是拓扑.
 
-将交集换成并集不成立. 考虑 $X=\left\{0,1,2\right\}$, 取 $\mathcal O_1=\left\{\emptyset,X,\left\{0,1\right\}\right\}$, $\mathcal O_2=\left\{\emptyset,X,\left\{1,2\right\}\right\}$. 由**定义 3.18 (拓扑空间)** 直接验证, 两者都是拓扑 (都含 $\emptyset,X$, 且含于其中的有限交与任意并仍是空集, $X$ 或自身). 但 $\left\{0,1\right\}\in\mathcal O_1$, $\left\{1,2\right\}\in\mathcal O_2$, 其交 $\left\{1\right\}\notin\mathcal O_1\cup\mathcal O_2$; 由**定义 3.18 (拓扑空间)** 并集对有限交不封闭, 故不是拓扑. $\blacksquare$
+将交集换成并集不成立. 考虑 $X=\left\{0,1,2\right\}$, 取 $\mathcal O_1=\left\{\emptyset,\left\{0,1\right\},X\right\}$, $\mathcal O_2=\left\{\emptyset,\left\{1,2\right\},X\right\}$. 由**定义 3.18 (拓扑空间)** 直接验证, 两者都是拓扑 (都含 $\emptyset,X$, 且含于其中的有限交与任意并仍是空集, $X$ 或自身). 但 $\left\{0,1\right\}\in\mathcal O_1$, $\left\{1,2\right\}\in\mathcal O_2$, 其交 $\left\{1\right\}\notin\mathcal O_1\cup\mathcal O_2$; 由**定义 3.18 (拓扑空间)** 并集对有限交不封闭, 故不是拓扑. $\blacksquare$
 
-> 在拓扑的 3 条公理中, 对有限交封闭这一性质最难保持, 因此反例的寻找策略就是找两个拓扑 $\mathcal O_1$, $\mathcal O_2$, 使得存在 $U\in\mathcal O_1$, $V\in\mathcal O_2$, 但是 $U\cap V\not\in\mathcal O_1\cup\mathcal O_2$.
+> 在拓扑的 3 条公理中, 对有限交封闭这一性质最难保持.
 
 ---
 
@@ -150,9 +146,9 @@ $$
 
 **(1) $\Rightarrow$ (2)**: 对任意 $V\in\mathcal O_2$, 由**定义 3.21 (闭集)** 其补集 $V^{c}$ 在 $\mathcal O_2$ 中闭; 由假设 $V^{c}$ 在 $\mathcal O_1$ 中闭; 由**定义 3.21 (闭集)** 故 $V$ 在 $\mathcal O_1$ 中开. 恒等映射 $\operatorname{id}$ 的逆像 $\operatorname{id}^{-1}\left(V\right)=V$, 故 $V$ 在 $\mathcal O_1$ 中开. 由**定义 3.22 (连续映射)**, $\operatorname{id}$ 连续.
 
-**(2) $\Rightarrow$ (3)**: 设 $N$ 是 $x$ 在 $\mathcal O_2$ 中的邻域. 由**定义 3.25 (邻域与极限)**, 存在 $V\in\mathcal O_2$ 使 $x\in V\subset N$. 因 $\operatorname{id}$ 连续, 由**定义 3.22 (连续映射)** $V=\operatorname{id}^{-1}\left(V\right)\in\mathcal O_1$; 故 $N$ 含 $\mathcal O_1$ 中的开集 $V$, 由**定义 3.25 (邻域与极限)** $N$ 是 $x$ 在 $\mathcal O_1$ 中的邻域.
+**(2) $\Rightarrow$ (3)**: 由**定义 3.25 (邻域与极限)**, 设 $V$ 是 $x$ 在 $\mathcal O_2$ 中的邻域. 因 $\operatorname{id}$ 连续, 由**定义 3.22 (连续映射)** $V=\operatorname{id}^{-1}\left(V\right)\in\mathcal O_1$; 故由**定义 3.25 (邻域与极限)** $V$ 是 $x$ 在 $\mathcal O_1$ 中的邻域.
 
-**(3) $\Rightarrow\mathcal O_2\subset\mathcal O_1$**: 设 $V\in\mathcal O_2$. 任取 $x\in V$, 由**定义 3.25 (邻域与极限)** $V$ 是 $x$ 在 $\mathcal O_2$ 中的邻域; 由假设 $V$ 也是 $x$ 在 $\mathcal O_1$ 中的邻域, 故存在 $U_x\in\mathcal O_1$ 使 $x\in U_x\subset V$. 于是 $V=\bigcup_{x\in V}U_x$; 由**定义 3.18 (拓扑空间)** (开集并仍开) $V\in\mathcal O_1$. 故 $\mathcal O_2\subset\mathcal O_1$. $\blacksquare$
+**(3) $\Rightarrow\mathcal O_2\subset\mathcal O_1$**: 由**定义 3.25 (邻域与极限)**, 设 $V$ 是 $x$ 在 $\mathcal O_2$ 中的邻域, 即 $V\in\mathcal O_2$; 由假设 $V$ 也是 $x$ 在 $\mathcal O_1$ 中的邻域, 即 $V\in\mathcal O_1$. 故 $\mathcal O_2\subset\mathcal O_1$. $\blacksquare$
 
 ---
 
@@ -162,29 +158,19 @@ $$
 
 (1) 若 $\mathcal O_2$ 是豪斯多夫的, 则 $\mathcal O_1$ 也是豪斯多夫的;
 
-(2) 若 $\mathcal O_1$ 是可分的 (即含可数稠密子集), 则 $\mathcal O_2$ 也是可分的;
+(2) 对一切 $A\subset X$, 其在 $\mathcal O_1$ 中的闭包含于其在 $\mathcal O_2$ 中的闭包, 其在 $\mathcal O_2$ 中的内部含于其在 $\mathcal O_1$ 中的内部.
 
-(3) 对一切 $A\subset X$, 其在 $\mathcal O_1$ 中的闭包含于其在 $\mathcal O_2$ 中的闭包, 其在 $\mathcal O_2$ 中的内部含于其在 $\mathcal O_1$ 中的内部.
+(3) 若 $\mathcal O_1$ 是可分的 (即含可数稠密子集), 则 $\mathcal O_2$ 也是可分的;
 
 ### 解答 习题五
 
-因第 (2) 小题要用到第 (3) 小题的闭包包含关系, 故先证第 (1), (3) 小题, 再证第 (2) 小题.
+(1) 设 $x\neq y$. 因 $\mathcal O_2$ 是豪斯多夫的, 由**定义 3.10 (豪斯多夫空间)** 存在 $\mathcal O_2$ 中不相交的开集 $U,V$ 使 $x\in U$, $y\in V$. 由**定义 3.13 (细)** $\mathcal O_2\subset\mathcal O_1$, 故 $U,V\in\mathcal O_1$. 由**定义 3.10 (豪斯多夫空间)**, $\mathcal O_1$ 中也有不相交开集分离 $x,y$, 故 $\mathcal O_1$ 是豪斯多夫的.
 
-**第 (1) 小题**: 设 $x\neq y$. 因 $\mathcal O_2$ 是豪斯多夫的, 由**定义 3.10 (豪斯多夫空间)** 存在 $\mathcal O_2$ 中不相交的开集 $U,V$ 使 $x\in U$, $y\in V$. 由**定义 3.13 (细)** $\mathcal O_2\subset\mathcal O_1$, 故 $U,V\in\mathcal O_1$. 由**定义 3.10 (豪斯多夫空间)**, $\mathcal O_1$ 中也有不相交开集分离 $x,y$, 故 $\mathcal O_1$ 是豪斯多夫的.
+(2) 固定 $A\subset X$. 由**定义 3.26 (闭包)**, $\overline A^{1}$ 是 $\mathcal O_1$ 中包含 $A$ 的最小闭集, $\overline A^{2}$ 是 $\mathcal O_2$ 中包含 $A$ 的最小闭集. 因 $\mathcal O_2\subset\mathcal O_1$, 任一 $\mathcal O_2$ 中闭集 $F$ (其补集 $\in\mathcal O_2\subset\mathcal O_1$) 也是 $\mathcal O_1$ 中闭集 (由**定义 3.21 (闭集)**). 特别地, $\overline A^{2}$ 是 $\mathcal O_1$ 中包含 $A$ 的一个闭集; 而 $\overline A^{1}$ 是 $\mathcal O_1$ 中包含 $A$ 的最小闭集, 故 $\overline A^{1}\subset\overline A^{2}$.
 
-**第 (3) 小题**: 固定 $A\subset X$. 由**定义 3.26 (闭包)**, $\overline A^{1}$ 是 $\mathcal O_1$ 中包含 $A$ 的最小闭集, $\overline A^{2}$ 是 $\mathcal O_2$ 中包含 $A$ 的最小闭集. 因 $\mathcal O_2\subset\mathcal O_1$, 任一 $\mathcal O_2$ 中闭集 $F$ (其补集 $\in\mathcal O_2\subset\mathcal O_1$) 也是 $\mathcal O_1$ 中闭集 (由**定义 3.21 (闭集)**). 特别地, $\overline A^{2}$ 是 $\mathcal O_1$ 中包含 $A$ 的一个闭集; 而 $\overline A^{1}$ 是 $\mathcal O_1$ 中包含 $A$ 的最小闭集, 故
+同理, 由**定义 3.31 (内部)**, $\operatorname{int}^{2}\left(A\right)$ 是 $\mathcal O_2$ 中含于 $A$ 的最大开集; 因 $\mathcal O_2\subset\mathcal O_1$, $\operatorname{int}^{2}\left(A\right)$ 在 $\mathcal O_1$ 中也开, 故 $\operatorname{int}^{2}\left(A\right)\subset\operatorname{int}^{1}\left(A\right)$.
 
-$$
-\overline A^{1}\subset\overline A^{2}.
-$$
-
-同理, 由**定义 3.31 (内部)**, $\operatorname{int}^{2}\left(A\right)$ 是 $\mathcal O_2$ 中含于 $A$ 的最大开集; 因 $\mathcal O_2\subset\mathcal O_1$, $\operatorname{int}^{2}\left(A\right)$ 在 $\mathcal O_1$ 中也开, 故
-
-$$
-\operatorname{int}^{2}\left(A\right)\subset\operatorname{int}^{1}\left(A\right).
-$$
-
-**第 (2) 小题**: 由**定义 3.9 (可分)**, $\mathcal O_1$ 有可数稠密子集 $D$, 即由**定义 3.32 (稠密)** $\overline D^{1}=X$. 由第 (3) 小题, $\overline D^{1}\subset\overline D^{2}$, 故 $X\subset\overline D^{2}$, 即 $\overline D^{2}=X$. 由**定义 3.32 (稠密)**, $D$ 在 $\mathcal O_2$ 中稠密; 再由**定义 3.9 (可分)**, $\mathcal O_2$ 可分. $\blacksquare$
+(3) 由**定义 3.9 (可分)**, $\mathcal O_1$ 有可数稠密子集 $D$, 即由**定义 3.32 (稠密)** $\overline D^{1}=X$. 由第 (2) 小题, $\overline D^{1}\subset\overline D^{2}$, 故 $X\subset\overline D^{2}$, 即 $\overline D^{2}=X$. 由**定义 3.32 (稠密)**, $D$ 在 $\mathcal O_2$ 中稠密; 再由**定义 3.9 (可分)**, $\mathcal O_2$ 可分. $\blacksquare$
 
 ---
 
@@ -202,4 +188,4 @@ $$
 
 故 $\left(X\times X\right)\setminus\Delta$ 每点都有开邻域含于其中, 由**定义 3.18 (拓扑空间)** 它是开集; 由**定义 3.21 (闭集)**, $\Delta$ 闭.
 
-**$\left(\Leftarrow\right)$** 已知 $\Delta$ 闭. 取 $x\neq y$, 由**定义 3.12 (对角线)** 则 $\left(x,y\right)\notin\Delta$, 故存在乘积拓扑开集 $W$ 使 $\left(x,y\right)\in W\subset\left(X\times X\right)\setminus\Delta$. 由**定义 3.11 (乘积拓扑)**, $W$ 是若干基本开集之并, 故存在基本开集 $U\times V$ 使 $\left(x,y\right)\in U\times V\subset W\subset\left(X\times X\right)\setminus\Delta$, 其中 $U,V$ 为开集. 则 $x\in U$, $y\in V$, 且 $U\cap V=\emptyset$ (否则 $U\times V\cap\Delta\neq\emptyset$, 与含于 $\left(X\times X\right)\setminus\Delta$ 矛盾). 由**定义 3.10 (豪斯多夫空间)**, $X$ 是豪斯多夫的. $\blacksquare$
+**$\left(\Leftarrow\right)$** 已知 $\Delta$ 闭. 取 $x\neq y$, 由**定义 3.12 (对角线)** 则 $\left(x,y\right)\notin\Delta$. 由**定义 3.11 (乘积拓扑)**, 存在基本开集 $U\times V$ 使 $\left(x,y\right)\in U\times V\subset\left(X\times X\right)\setminus\Delta$, 其中 $U,V$ 为开集. 则 $x\in U$, $y\in V$, 且 $U\cap V=\emptyset$ (否则 $U\times V\cap\Delta\neq\emptyset$, 与含于 $\left(X\times X\right)\setminus\Delta$ 矛盾). 由**定义 3.10 (豪斯多夫空间)**, $X$ 是豪斯多夫的. $\blacksquare$
