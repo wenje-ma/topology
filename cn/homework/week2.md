@@ -120,13 +120,7 @@ $$
 
 先证 $\overline A^{B}\subset\overline A^{X}\cap B$. 由**定义 3.26 (闭包)**, $\overline A^{X}$ 是 $X$ 中包含 $A$ 的闭集, 故 $\overline A^{X}$ 是上式闭集族中一员, 其与 $B$ 的交 $\overline A^{X}\cap B$ 是 $B$ 中包含 $A$ 的闭集. 由**定义 3.26 (闭包)**, $\overline A^{B}$ 是其中最小者, 故 $\overline A^{B}\subset\overline A^{X}\cap B$.
 
-再证反包含. 任取 $B$ 中包含 $A$ 的闭集 $F'\cap B$ (其中 $F'$ 是 $X$ 中闭集且 $A\subset F'$). 由**定义 3.26 (闭包)**, $\overline A^{X}\subset F'$, 故 $\overline A^{X}\cap B\subset F'\cap B$. 即 $\overline A^{X}\cap B$ 含于 $B$ 中每个包含 $A$ 的闭集, 特别地含于最小者 $\overline A^{B}$. 故
-
-$$
-\overline A^{B}=\overline A^{X}\cap B.
-$$
-
-$\blacksquare$
+再证反包含. 任取 $B$ 中包含 $A$ 的闭集 $F'\cap B$ (其中 $F'$ 是 $X$ 中闭集且 $A\subset F'$). 由**定义 3.26 (闭包)**, $\overline A^{X}\subset F'$, 故 $\overline A^{X}\cap B\subset F'\cap B$. 即 $\overline A^{X}\cap B$ 含于 $B$ 中每个包含 $A$ 的闭集, 特别地含于最小者 $\overline A^{B}$. 故 $\overline A^{B}=\overline A^{X}\cap B$. $\blacksquare$
 
 ---
 
@@ -152,7 +146,7 @@ $$
 
 ### 解答 习题七
 
-记 $d_A=d|_{A\times A}$. 由**定义 6.35 (度量空间)**, $d:X\times X\to\mathbb R_{\ge0}$ 满足四条度量公理; 限制 $d_A$ 在 $A\times A$ 上逐点取值不变, 故同样满足这四条公理. 由**定义 6.35 (度量空间)**, $\left(A,d_A\right)$ 是度量空间.
+记 $d_A=d|_{A}$. 由**定义 6.35 (度量空间)**, $d:X\to\mathbb R_{\ge0}$ 满足四条度量公理; 限制 $d_A$ 在 $A$ 上逐点取值不变, 故同样满足这四条公理. 由**定义 6.35 (度量空间)**, $\left(A,d_A\right)$ 是度量空间.
 
 由**定义 6.36 (开球)**, $A$ 中以 $a\in A$ 为心, 半径 $r>0$ 的开球为
 
@@ -176,7 +170,7 @@ $$
 
 ## 习题九
 
-构造例子: 子空间 $A\subset Y$ 是豪斯多夫的, 但 $A$ 中两点在 $Y$ 中没有不相交的邻域. 可考虑 $Y=X\cup\left\{\omega\right\}$, 其中 $\omega$ 是额外一点, $Y$ 的任一非空开集形如 $O\cup\left\{\omega\right\}$, 其中 $O$ 是 $X$ 中的开集.
+构造例子: 子空间 $X\subset Y$ 是豪斯多夫的, 但 $X$ 中两点在 $Y$ 中没有不相交的邻域. 可考虑 $Y=X\cup\left\{\omega\right\}$, 其中 $\omega$ 是额外一点, $Y$ 的任一非空开集形如 $O\cup\left\{\omega\right\}$, 其中 $O$ 是 $X$ 中的开集.
 
 ### 解答 习题九
 
@@ -194,15 +188,13 @@ $$
 
 同理由**定义 3.18 (拓扑空间)** 是 $Y$ 中开集. 故这确为 $Y$ 上的拓扑.
 
-取 $A=X$ 作为 $Y$ 的子空间. 由**定义 3.19 (子空间拓扑)**, $A$ 中开集为 $\left(O\cup\left\{\omega\right\}\right)\cap A=O$, 即 $X$ 的通常开集, 故 $A$ 上的拓扑就是原来的通常拓扑, 由**定义 3.10 (豪斯多夫空间)** $A$ 是豪斯多夫的.
-
-另一方面, 任取 $x,y\in A$ 且 $x\neq y$. $Y$ 中含 $x$ 的开集必非空, 故形如 $O\cup\left\{\omega\right\}$ 且 $x\in O$, 因而含 $\omega$; $Y$ 中含 $y$ 的开集同理形如 $O'\cup\left\{\omega\right\}$ 且 $y\in O'$, 亦含 $\omega$. 任何 $x$ 的邻域含某含 $x$ 的开集, 任何 $y$ 的邻域含某含 $y$ 的开集, 因而两邻域都含 $\omega$, 必相交. 故 $A$ 中任两点在 $Y$ 中没有不相交的邻域. $\blacksquare$
+任取 $x,y\in X$ 且 $x\neq y$. $Y$ 中含 $x$ 的开集形如 $O\cup\left\{\omega\right\}$ 且 $x\in O$; $Y$ 中含 $y$ 的开集同理形如 $O'\cup\left\{\omega\right\}$ 且 $y\in O'$. 而两邻域含 $\omega$ 必相交. 故 $X$ 中任两点在 $Y$ 中没有不相交的邻域. $\blacksquare$
 
 ---
 
 ## 习题十
 
-回忆距离 $d:X\times X\to\mathbb R_{\ge0}$ 满足四条公理: (1) $d\left(x,x\right)=0$; (2) 若 $d\left(x,y\right)=0$ 则 $x=y$; (3) $d\left(x,y\right)=d\left(y,x\right)$; (4) 三角不等式 $d\left(x,y\right)\le d\left(x,z\right)+d\left(z,y\right)$. $\left(X,d\right)$ 称为度量空间. 超度量是将第 (4) 条加强为 $d\left(x,z\right)\le\max\left(d\left(x,y\right),d\left(y,z\right)\right)$ 的距离 (例如通常的 $p$-进度量). 设 $d$ 是超度量, 证明:
+回忆距离 $d:X\times X\to\mathbb R_{\ge0}$ 满足四条公理. 超度量是将三角不等式加强为 $d\left(x,z\right)\le\max\left(d\left(x,y\right),d\left(y,z\right)\right)$ 的距离 (例如通常的 $p$-进度量). 设 $d$ 是超度量, 证明:
 
 (1) 若 $d\left(x,y\right)\neq d\left(x,z\right)$, 则 $d\left(y,z\right)=\max\left(d\left(x,y\right),d\left(x,z\right)\right)$;
 
@@ -214,48 +206,44 @@ $$
 
 ### 解答 习题十
 
-由**定义 6.45 (超度量)**, 对任意 $x,y,z\in X$ 有
+(1) 不妨设 $d\left(x,y\right)<d\left(x,z\right)$, 则欲证 $d(y,z)=\max\{d(x,y),d(x,z)\}$, 只需证 $d(x,z)=d(y,z)$.
+
+由加强的三角不等式,
 
 $$
-d\left(x,z\right)\le\max\left(d\left(x,y\right),d\left(y,z\right)\right).
+d(x,z)\le\max\{d(x,y),d(y,z)\},
 $$
 
-(1) 设 $d\left(x,y\right)\neq d\left(x,z\right)$. 不妨设 $d\left(x,y\right)<d\left(x,z\right)$ (反号同理). 由上式, $d\left(x,z\right)\le\max\left(d\left(x,y\right),d\left(y,z\right)\right)$. 因右端 $\ge d\left(x,z\right)$ 而 $d\left(x,y\right)<d\left(x,z\right)$, 故 $\max\left(d\left(x,y\right),d\left(y,z\right)\right)=d\left(y,z\right)$, 且 $d\left(y,z\right)\ge d\left(x,z\right)$. 另一方面, 由**定义 6.45 (超度量)** 在基点 $y$ 处, $d\left(y,z\right)\le\max\left(d\left(y,x\right),d\left(x,z\right)\right)$; 因 $d\left(y,x\right)=d\left(x,y\right)<d\left(x,z\right)$, 故 $\max\left(d\left(y,x\right),d\left(x,z\right)\right)=d\left(x,z\right)$, 从而 $d\left(y,z\right)\le d\left(x,z\right)$. 合并得 $d\left(y,z\right)=d\left(x,z\right)=\max\left(d\left(x,y\right),d\left(x,z\right)\right)$.
+由于 $d\left(x,y\right)<d\left(x,z\right)$, 则 $\max\{d(x,y),d(y,z)\}=d(y,z)$, 即 $d(x,z)\le d(y,z)$.
 
-(2) 设 $z\in B\left(x,r\right)$, 即由**定义 6.36 (开球)** $d\left(x,z\right)<r$. 任取 $w\in B\left(x,r\right)$, 即 $d\left(x,w\right)<r$. 由**定义 6.45 (超度量)**, $d\left(z,w\right)\le\max\left(d\left(z,x\right),d\left(x,w\right)\right)$; 因两项都 $<r$, 故 $d\left(z,w\right)<r$, 即 $w\in B\left(z,r\right)$. 于是 $B\left(x,r\right)\subset B\left(z,r\right)$. 反之, 任取 $w\in B\left(z,r\right)$, 即 $d\left(z,w\right)<r$. 由**定义 6.45 (超度量)**, $d\left(x,w\right)\le\max\left(d\left(x,z\right),d\left(z,w\right)\right)<r$, 故 $w\in B\left(x,r\right)$. 于是 $B\left(z,r\right)\subset B\left(x,r\right)$. 因此 $B\left(x,r\right)=B\left(z,r\right)$, 即 $z$ 也是该开球的中心.
+同理,
 
-(3) 由**定义 6.34 (球面)**, $S\left(x,r\right)=\left\{y:d\left(x,y\right)=r\right\}$. 设 $z\in B\left(x,r\right)$, 即 $d\left(x,z\right)<r$. 任取 $w\in S\left(x,r\right)$, 即 $d\left(x,w\right)=r$. 因 $d\left(x,z\right)<r=d\left(x,w\right)$, 故 $d\left(x,z\right)\neq d\left(x,w\right)$; 由第 (1) 小题, $d\left(z,w\right)=\max\left(d\left(x,z\right),d\left(x,w\right)\right)=r$, 故 $w\in S\left(z,r\right)$, 即 $S\left(x,r\right)\subset S\left(z,r\right)$. 反之, 任取 $w\in S\left(z,r\right)$, 即 $d\left(z,w\right)=r$. 因 $d\left(z,x\right)=d\left(x,z\right)<r=d\left(z,w\right)$, 对以 $z$ 为基点的三元组 $\left(z,x,w\right)$ 用第 (1) 小题, 得 $d\left(x,w\right)=\max\left(d\left(z,x\right),d\left(z,w\right)\right)=r$, 故 $w\in S\left(x,r\right)$, 即 $S\left(z,r\right)\subset S\left(x,r\right)$. 故 $S\left(x,r\right)=S\left(z,r\right)$, 即 $z$ 也是该球面的中心.
+$$
+d(y,z)\le\max\{d(x,y),d(x,z)\},
+$$
 
-(4) 设 $B\left(x,r\right)$ 与 $B\left(y,s\right)$ 为两个开球. 若不相交则结论已成立. 若相交, 取 $z\in B\left(x,r\right)\cap B\left(y,s\right)$. 由第 (2) 小题, $B\left(x,r\right)=B\left(z,r\right)$ 且 $B\left(y,s\right)=B\left(z,s\right)$. 不妨设 $r\le s$. 若 $w\in B\left(z,r\right)$, 则由**定义 6.36 (开球)** $d\left(z,w\right)<r\le s$, 故 $w\in B\left(z,s\right)$. 因此 $B\left(z,r\right)\subset B\left(z,s\right)$, 即 $B\left(x,r\right)\subset B\left(y,s\right)$. $\blacksquare$
+由于 $d\left(x,y\right)<d\left(x,z\right)$, 则 $\max\{d(x,y),d(x,z)\}=d(x,z)$, 即 $d(y,z)\le d(x,z)$. 合并得 $d\left(y,z\right)=d\left(x,z\right)=\max\left(d\left(x,y\right),d\left(x,z\right)\right)$.
+
+(2) 设 $z\in B\left(x,r\right)$, 即由**定义 6.36 (开球)** $d\left(x,z\right)<r$. 任取 $w\in B\left(x,r\right)$, 即 $d\left(x,w\right)<r$. 由**定义 6.45 (超度量)**, $d\left(z,w\right)\le\max\left(d\left(z,x\right),d\left(x,w\right)\right)$; 因两项都 $<r$, 故 $d\left(z,w\right)<r$, 即 $w\in B\left(z,r\right)$. 于是 $B\left(x,r\right)\subset B\left(z,r\right)$. 同理 $B\left(z,r\right)\subset B\left(x,r\right)$. 因此 $B\left(x,r\right)=B\left(z,r\right)$, 即 $z$ 也是该开球的中心.
+
+(3) 由**定义 6.34 (球面)**, $S\left(x,r\right)=\left\{y:d\left(x,y\right)=r\right\}$. 设 $z\in B\left(x,r\right)$, 即 $d\left(x,z\right)<r$. 任取 $w\in S\left(x,r\right)$, 即 $d\left(x,w\right)=r$. 因 $d\left(x,z\right)<r=d\left(x,w\right)$, 故 $d\left(x,z\right)\neq d\left(x,w\right)$; 由第 (1) 小题, $d\left(z,w\right)=\max\left(d\left(x,z\right),d\left(x,w\right)\right)=r$, 故 $w\in S\left(z,r\right)$, 即 $S\left(x,r\right)\subset S\left(z,r\right)$, 同理, $S\left(z,r\right)\subset S\left(x,r\right)$. 故 $S\left(x,r\right)=S\left(z,r\right)$, 即 $z$ 也是该球面的中心.
+
+(4) 设 $B\left(x,r\right)$ 与 $B\left(y,s\right)$ 为两个开球. 若不相交则结论已成立. 若相交, 取 $z\in B\left(x,r\right)\cap B\left(y,s\right)$. 由第 (2) 小题, $B\left(x,r\right)=B\left(z,r\right)$ 且 $B\left(y,s\right)=B\left(z,s\right)$. 不妨设 $r\le s$, 则 $B\left(z,r\right)\subset B\left(z,s\right)$, 即 $B\left(x,r\right)\subset B\left(y,s\right)$. $\blacksquare$
 
 ---
 
 ## 习题十一
 
-设 $\left(X,d\right)$ 是度量空间. 证明 $d^{*}\left(x,y\right)=\min\left(d\left(x,y\right),1\right)$ 与 $d^{**}\left(x,y\right)=\frac{d\left(x,y\right)}{1+d\left(x,y\right)}$ 都是度量, 且与 $d$ 诱导同一拓扑. 注意有界性依赖于度量的选取, 而不依赖于拓扑.
+设 $\left(X,d\right)$ 是度量空间, 再定义度量 $d^{*}\left(x,y\right)=\min\left(d\left(x,y\right),1\right)$ 与 $d^{**}\left(x,y\right)=\frac{d\left(x,y\right)}{1+d\left(x,y\right)}$. 证明他们与 $d$ 诱导同一拓扑. 注意有界性依赖于度量的选取, 而不依赖于拓扑.
 
 ### 解答 习题十一
 
-先验证 $d^{*}$ 是度量, 由**定义 6.35 (度量空间)** 逐条:
+对 $r\in\left(0,1\right)$, $d^{*}\left(x,y\right)=\min\left(d\left(x,y\right),1\right)=d\left(x,y\right)$, 故 $d^{*}$ 与 $d$ 的半径小于 $1$ 的球族完全相同;
 
-(1) $d^{*}\left(x,x\right)=\min\left(0,1\right)=0$.
+而对 $d^{**}$, 半径 $r\in\left(0,1\right)$ 的球为 $B_{d^{**}}\left(x,r\right)=\left\{y:\frac{d\left(x,y\right)}{1+d\left(x,y\right)}<r\right\}$; 由**基础知识: 分式恒等式**, $\frac{d\left(x,y\right)}{1+d\left(x,y\right)}<r$ 当且仅当 $d\left(x,y\right)<\frac{r}{1-r}$, 故 $B_{d^{**}}\left(x,r\right)=\left\{y:d\left(x,y\right)<\frac{r}{1-r}\right\}=B_{d}\left(x,\frac{r}{1-r}\right)$, 即 $d^{**}$ 的球与 $d$ 的球一一对应.
 
-(2) 若 $d^{*}\left(x,y\right)=0$, 则 $\min\left(d\left(x,y\right),1\right)=0$, 故 $d\left(x,y\right)=0$; 由**定义 6.35 (度量空间)**, $x=y$.
+由**定义 6.36 (开球)**, 全体开球族是度量拓扑的基, 故三者生成同一拓扑. 由**定义 6.33 (等价度量)**, $d^{*}$ 与 $d^{**}$ 都与 $d$ 等价. $\blacksquare$
 
-(3) 由 $d\left(x,y\right)=d\left(y,x\right)$, $d^{*}\left(x,y\right)=\min\left(d\left(x,y\right),1\right)=\min\left(d\left(y,x\right),1\right)=d^{*}\left(y,x\right)$.
-
-(4) 由**基础知识: $\min$ 与加法**, 对 $a,b\ge0$ 有 $\min\left(a+b,1\right)\le\min\left(a,1\right)+\min\left(b,1\right)$. 取 $a=d\left(x,y\right)$, $b=d\left(y,z\right)$, 由**定义 6.35 (度量空间)** 的三角不等式 $d\left(x,z\right)\le d\left(x,y\right)+d\left(y,z\right)$, 得 $d^{*}\left(x,z\right)\le d^{*}\left(x,y\right)+d^{*}\left(y,z\right)$. 故 $d^{*}$ 是度量.
-
-再验证 $d^{**}$ 是度量. 记 $\varphi\left(t\right)=\frac{t}{1+t}$. 由**基础知识: 函数 $\varphi$ 的性质**, $\varphi$ 在 $\left[0,\infty\right)$ 上严格递增, $\varphi\left(0\right)=0$, 且对 $a,b\ge0$ 有 $\varphi\left(a+b\right)\le\varphi\left(a\right)+\varphi\left(b\right)$.
-
-(1) $d^{**}\left(x,x\right)=\varphi\left(0\right)=0$.
-
-(2) 若 $d^{**}\left(x,y\right)=0$, 则 $\varphi\left(d\left(x,y\right)\right)=0$; 由 $\varphi$ 严格递增与 $\varphi\left(0\right)=0$, $d\left(x,y\right)=0$; 由**定义 6.35 (度量空间)**, $x=y$.
-
-(3) 由 $d\left(x,y\right)=d\left(y,x\right)$, $d^{**}\left(x,y\right)=\varphi\left(d\left(x,y\right)\right)=\varphi\left(d\left(y,x\right)\right)=d^{**}\left(y,x\right)$.
-
-(4) 由**定义 6.35 (度量空间)** 的三角不等式与 $\varphi$ 递增, $d^{**}\left(x,z\right)=\varphi\left(d\left(x,z\right)\right)\le\varphi\left(d\left(x,y\right)+d\left(y,z\right)\right)$; 由**基础知识: 函数 $\varphi$ 的性质** $\varphi\left(a+b\right)\le\varphi\left(a\right)+\varphi\left(b\right)$, 得 $d^{**}\left(x,z\right)\le\varphi\left(d\left(x,y\right)\right)+\varphi\left(d\left(y,z\right)\right)=d^{**}\left(x,y\right)+d^{**}\left(y,z\right)$. 故 $d^{**}$ 是度量.
-
-同一拓扑: 对 $0<r<1$, 由**定义 6.36 (开球)**, $B_{d^{*}}\left(x,r\right)=\left\{y:\min\left(d\left(x,y\right),1\right)<r\right\}$; 因 $r<1$, $\min\left(d\left(x,y\right),1\right)<r$ 当且仅当 $d\left(x,y\right)<r$, 故 $B_{d^{*}}\left(x,r\right)=\left\{y:d\left(x,y\right)<r\right\}=B_{d}\left(x,r\right)$. 而对 $d^{**}$, 半径 $r\in\left(0,1\right)$ 的球为 $B_{d^{**}}\left(x,r\right)=\left\{y:\frac{d\left(x,y\right)}{1+d\left(x,y\right)}<r\right\}$; 由**基础知识: 分式恒等式**, $\frac{d\left(x,y\right)}{1+d\left(x,y\right)}<r$ 当且仅当 $d\left(x,y\right)<\frac{r}{1-r}$, 故 $B_{d^{**}}\left(x,r\right)=\left\{y:d\left(x,y\right)<\frac{r}{1-r}\right\}=B_{d}\left(x,\frac{r}{1-r}\right)$.
-
-故 $d^{*}$ 与 $d$ 的半径小于 $1$ 的球族完全相同, $d^{**}$ 的球与 $d$ 的球一一对应. 由**定义 6.36 (开球)**, 全体开球族是度量拓扑的基, 故三者生成同一拓扑. 由**定义 6.33 (等价度量)**, $d^{*}$ 与 $d^{**}$ 都与 $d$ 等价. $\blacksquare$
+> 详细说来, $d$ 与 $d'$ 比较, 虽然 $d'$ 的拓扑基并不和 $d$ 完全相同, 但 $d$ 中很容易就能找到一组基, 满足其半径均 $r\in(0,1)$, 此时就与 $d'$ 的拓扑基一致, 因此二者生成同一拓扑;
+>
+> 而 $d'$ 与 $d''$ 比较, 则只是换了一个参数: 对于 $r\in(0,1)$, $r\mapsto\frac{r}{1-r}=:\rho$. 因此二者自然生成同一拓扑.
