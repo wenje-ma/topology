@@ -1,64 +1,138 @@
 # week3
 
-> **基础知识: 原像与并运算交换**<br>对函数 $f:X\to Y$ 与 $Y$ 的子集族 $\left\{O_\alpha\right\}_{\alpha\in A}$, 有 $f^{-1}\left(\bigcup_{\alpha\in A}O_\alpha\right)=\bigcup_{\alpha\in A}f^{-1}\left(O_\alpha\right)$.
+> **基础知识: 原像与并运算交换**
+>
+> 对函数 $f:X\to Y$ 与 $Y$ 的子集族 $\left\{O_\alpha\right\}_{\alpha\in A}$, 有 $f^{-1}\left(\bigcup_{\alpha\in A}O_\alpha\right)=\bigcup_{\alpha\in A}f^{-1}\left(O_\alpha\right)$.
 
-> **基础知识: 原像与交运算交换**<br>对 $O_1,O_2\subset Y$, 有 $f^{-1}\left(O_1\cap O_2\right)=f^{-1}\left(O_1\right)\cap f^{-1}\left(O_2\right)$; 一般地 $f^{-1}\left(\bigcap_jO_j\right)=\bigcap_jf^{-1}\left(O_j\right)$.
+> **基础知识: 原像与交运算交换**
+>
+> 对 $O_1,O_2\subset Y$, 有 $f^{-1}\left(O_1\cap O_2\right)=f^{-1}\left(O_1\right)\cap f^{-1}\left(O_2\right)$; 一般地 $f^{-1}\left(\bigcap_jO_j\right)=\bigcap_jf^{-1}\left(O_j\right)$.
 
-> **基础知识: 原像保空集与全集**<br>对函数 $f:X\to Y$, 有 $f^{-1}\left(\emptyset\right)=\emptyset$, $f^{-1}\left(Y\right)=X$.
+> **基础知识: 原像保空集与全集**
+>
+> 对函数 $f:X\to Y$, 有 $f^{-1}\left(\emptyset\right)=\emptyset$, $f^{-1}\left(Y\right)=X$.
 
-> **基础知识: 有理数在实直线上稠密**<br>有理数集 $\mathbb Q$ 在 $\mathbb R$ 的通常拓扑中稠密, 即 $\overline{\mathbb Q}=\mathbb R$; 任意非空开区间都含有理数.
+> **基础知识: 有理数在实直线上稠密**
+>
+> 有理数集 $\mathbb Q$ 在 $\mathbb R$ 的通常拓扑中稠密, 即 $\overline{\mathbb Q}=\mathbb R$; 任意非空开区间都含有理数.
 
-> **基础知识: 一元多项式恒零判据**<br>域上一元多项式若在无限多个点处取零值, 则它是零多项式; 特别地, 非零多项式不能在任一通常开集上恒为零.
+> **基础知识: 一元多项式恒零判据**
+>
+> 域上一元多项式若在无限多个点处取零值, 则它是零多项式; 特别地, 非零多项式不能在任一通常开集上恒为零.
 
-> **定理 3.1 (复合连续)**<br>两个连续映射的复合连续. (教材 §3)
+> **定理 3.1 (复合连续)**
+>
+> 两个连续映射的复合连续. (教材 §3)
 
-> **定义 3.9 (可分)**<br>称拓扑空间 $X$ 是可分的, 若它有可数稠密子集. (题集 §1.1)
+> **定义 3.9 (可分)**
+>
+> 称拓扑空间 $X$ 是可分的, 若它有可数稠密子集. (题集 §1.1)
 
-> **定义 3.10 (豪斯多夫空间)**<br>称 $X$ 是豪斯多夫的, 若任意一对不同点都有不相交的邻域. 此时极限是唯一的. (教材 §3, p20)
+> **定义 3.10 (豪斯多夫空间)**
+>
+> 称 $X$ 是豪斯多夫的, 若任意一对不同点都有不相交的邻域. 此时极限是唯一的. (教材 §3, p20)
 
-> **定义 3.11 (乘积拓扑)**<br>设 $X,Y$ 为拓扑空间. $X\times Y$ 上的乘积拓扑以形如 $U\times V$ 的集合为基, 其中 $U,V$ 分别是 $X,Y$ 中的开集. (教材 §3, p17)
+> **定义 3.11 (乘积拓扑)**
+>
+> 设 $X,Y$ 为拓扑空间. $X\times Y$ 上的乘积拓扑以形如 $U\times V$ 的集合为基, 其中 $U,V$ 分别是 $X,Y$ 中的开集. (教材 §3, p17)
 
-> **定义 3.14 (初始拓扑)**<br>设 $f:X\to Y$ 是函数, 且 $Y$ 赋予拓扑 $\mathcal O$. 称 $\mathcal O_f=\left\{f^{-1}\left(O\right):O\in\mathcal O\right\}$ 为 $X$ 上由 $f$ 诱导的**初始拓扑**; 它是使 $f$ 连续的最粗拓扑. (题集 §1.1)
+> **定义 3.14 (初始拓扑)**
+>
+> 设 $f:X\to Y$ 是函数, 且 $Y$ 赋予拓扑 $\mathcal O$. 称 $\mathcal O_f=\left\{f^{-1}\left(O\right):O\in\mathcal O\right\}$ 为 $X$ 上由 $f$ 诱导的**初始拓扑**; 它是使 $f$ 连续的最粗拓扑. (题集 §1.1)
 
-> **定义 3.15 (拓扑基)**<br>设 $\mathcal B\subset\mathcal P\left(X\right)$. 若 $X=\bigcup_{B\in\mathcal B}B$, 且对任意 $B_1,B_2\in\mathcal B$ 与任意 $x\in B_1\cap B_2$ 存在 $B_3\in\mathcal B$ 使 $x\in B_3\subset B_1\cap B_2$, 则以 $\mathcal B$ 中元素的任意并为开集, 生成 $X$ 上最粗拓扑. (教材 §3, p13)
+> **定义 3.15 (拓扑基)**
+>
+> 设 $\mathcal B\subset\mathcal P\left(X\right)$. 若 $X=\bigcup_{B\in\mathcal B}B$, 且对任意 $B_1,B_2\in\mathcal B$ 与任意 $x\in B_1\cap B_2$ 存在 $B_3\in\mathcal B$ 使 $x\in B_3\subset B_1\cap B_2$, 则以 $\mathcal B$ 中元素的任意并为开集, 生成 $X$ 上最粗拓扑. (教材 §3, p13)
 
-> **定义 3.17 (余有限拓扑)**<br>称 $X$ 上的余有限拓扑为: 闭集恰为有限集与 $X$ 自身, 即非空开集的补集是有限集. (教材 §3, p16)
+> **定义 3.17 (余有限拓扑)**
+>
+> 称 $X$ 上的余有限拓扑为: 闭集恰为有限集与 $X$ 自身, 即非空开集的补集是有限集. (教材 §3, p16)
 
-> **定义 3.18 (拓扑空间)**<br>拓扑空间是一个集合 $X$, 配有一族公认的开集 $T\subset\mathcal P\left(X\right)$. 即 $U\subset X$ 是开的当且仅当 $U\in T$. 我们要求:<br>(1) $\emptyset,X\in T$;<br>(2) 若 $U,V\in T$, 则 $U\cap V\in T$;<br>(3) 若 $A\subset T$, 则 $\bigcup A\in T$. (教材 §3, p12)
+> **定义 3.18 (拓扑空间)**
+>
+> 拓扑空间是一个集合 $X$, 配有一族公认的开集 $T\subset\mathcal P\left(X\right)$. 即 $U\subset X$ 是开的当且仅当 $U\in T$. 我们要求:
+>
+> (1) $\emptyset,X\in T$;
+>
+> (2) 若 $U,V\in T$, 则 $U\cap V\in T$;
+>
+> (3) 若 $A\subset T$, 则 $\bigcup A\in T$. (教材 §3, p12)
 
-> **定义 3.19 (子空间拓扑)**<br>设 $\left(X,\mathcal O_X\right)$ 为拓扑空间, $A\subset X$, $\iota:A\to X$ 为包含映射. 称 $U\subset A$ 是开的, 若存在 $X$ 中开集 $O$ 使 $U=O\cap A$; 这些集合构成 $A$ 上的子空间拓扑, 它是使 $\iota$ 连续的最粗拓扑. (教材 §3, p17)
+> **定义 3.19 (子空间拓扑)**
+>
+> 设 $\left(X,\mathcal O_X\right)$ 为拓扑空间, $A\subset X$, $\iota:A\to X$ 为包含映射. 称 $U\subset A$ 是开的, 若存在 $X$ 中开集 $O$ 使 $U=O\cap A$; 这些集合构成 $A$ 上的子空间拓扑, 它是使 $\iota$ 连续的最粗拓扑. (教材 §3, p17)
 
-> **定义 3.21 (闭集)**<br>集合 $F$ 称为闭的, 若其补集 $X\setminus F$ 是开的. (教材 §3, p13)
+> **定义 3.21 (闭集)**
+>
+> 集合 $F$ 称为闭的, 若其补集 $X\setminus F$ 是开的. (教材 §3, p13)
 
-> **定义 3.22 (连续映射)**<br>函数 $f:X\to Y$ 是连续的, 若对所有开集 $U\subset Y$, $f^{-1}\left(U\right)$ 是开的. (教材 §3, p14)
+> **定义 3.22 (连续映射)**
+>
+> 函数 $f:X\to Y$ 是连续的, 若对所有开集 $U\subset Y$, $f^{-1}\left(U\right)$ 是开的. (教材 §3, p14)
 
-> **定义 3.25 (邻域与极限)**<br>$b\in X$ 的邻域就是含 $b$ 的开集 $U$. 我们称 $a_n\to b$, 若对 $b$ 的任何邻域 $U$, 对所有充分大的 $n$ 都有 $a_n\in U$. (教材 §3, p16)
+> **定义 3.25 (邻域与极限)**
+>
+> $b\in X$ 的邻域就是含 $b$ 的开集 $U$. 我们称 $a_n\to b$, 若对 $b$ 的任何邻域 $U$, 对所有充分大的 $n$ 都有 $a_n\in U$. (教材 §3, p16)
 
-> **定义 3.26 (闭包)**<br>集合 $A\subset X$ 的闭包 $\overline A$ 就是包含 $A$ 的最小闭集; 它存在, 因为闭集的交集仍是闭的. (教材 §3, p18)
+> **定义 3.26 (闭包)**
+>
+> 集合 $A\subset X$ 的闭包 $\overline A$ 就是包含 $A$ 的最小闭集; 它存在, 因为闭集的交集仍是闭的. (教材 §3, p18)
 
-> **定义 3.27 (余可数拓扑)**<br>称 $X$ 上的余可数拓扑为: 非空开集恰为可数集的补集. (题集 §1.4)
+> **定义 3.27 (余可数拓扑)**
+>
+> 称 $X$ 上的余可数拓扑为: 非空开集恰为可数集的补集. (题集 §1.4)
 
-> **定义 3.28 (扎里斯基拓扑)**<br>设 $K$ 为域, $\mathbb A^n\left(K\right)=K^n$. 扎里斯基闭集是一族多项式 $\left(P_i\right)_{i\in I}$ 的公共零点集 $\left\{x\in\mathbb A^n\left(K\right):\forall i\in I,P_i\left(x\right)=0\right\}$. (题集 §1.4)
+> **定义 3.28 (扎里斯基拓扑)**
+>
+> 设 $K$ 为域, $\mathbb A^n\left(K\right)=K^n$. 扎里斯基闭集是一族多项式 $\left(P_i\right)_{i\in I}$ 的公共零点集 $\left\{x\in\mathbb A^n\left(K\right):\forall i\in I,P_i\left(x\right)=0\right\}$. (题集 §1.4)
 
-> **定义 3.29 (由子集族生成的拓扑)**<br>包含某子集族 $\mathcal S$ 的最粗拓扑; 其元素恰为 $\mathcal S$ 中元素之有限交的任意并. (题集 §1.4)
+> **定义 3.29 (由子集族生成的拓扑)**
+>
+> 包含某子集族 $\mathcal S$ 的最粗拓扑; 其元素恰为 $\mathcal S$ 中元素之有限交的任意并. (题集 §1.4)
 
-> **定义 3.30 (基本邻域系)**<br>$x$ 的邻域族 $\mathcal P$, 使 $x$ 的每个邻域都含某个 $\mathcal P$ 中元素. (题集 §2.4)
+> **定义 3.30 (基本邻域系)**
+>
+> $x$ 的邻域族 $\mathcal P$, 使 $x$ 的每个邻域都含某个 $\mathcal P$ 中元素. (题集 §2.4)
 
-> **定义 3.32 (稠密)**<br>我们称 $A\subset X$ 在 $X$ 中稠密, 若 $\overline A=X$. (教材 §3, p18)
+> **定义 3.32 (稠密)**
+>
+> 我们称 $A\subset X$ 在 $X$ 中稠密, 若 $\overline A=X$. (教材 §3, p18)
 
-> **定义 6.35 (度量空间)**<br>度量 $d:X\times X\to\mathbb R_{\ge0}$ 满足:<br>(1) $d\left(x,x\right)=0$;<br>(2) 若 $d\left(x,y\right)=0$ 则 $x=y$;<br>(3) $d\left(x,y\right)=d\left(y,x\right)$;<br>(4) $d\left(x,y\right)\le d\left(x,z\right)+d\left(z,y\right)$. 装备了度量 $d$ 的集合 $X$ 称为度量空间. (题集 §1.3 Q2; 教材 §6 由此给出度量拓扑)
+> **定义 6.35 (度量空间)**
+>
+> 度量 $d:X\times X\to\mathbb R_{\ge0}$ 满足:
+>
+> (1) $d\left(x,x\right)=0$;
+>
+> (2) 若 $d\left(x,y\right)=0$ 则 $x=y$;
+>
+> (3) $d\left(x,y\right)=d\left(y,x\right)$;
+>
+> (4) $d\left(x,y\right)\le d\left(x,z\right)+d\left(z,y\right)$. 装备了度量 $d$ 的集合 $X$ 称为度量空间. (题集 §1.3 Q2; 教材 §6 由此给出度量拓扑)
 
-> **定义 6.36 (开球)**<br>开球 $B\left(x,r\right)=\left\{y\in X:d\left(x,y\right)< r\right\}$. 全体开球构成度量拓扑的一个基. (教材 §6)
+> **定义 6.36 (开球)**
+>
+> 开球 $B\left(x,r\right)=\left\{y\in X:d\left(x,y\right)< r\right\}$. 全体开球构成度量拓扑的一个基. (教材 §6)
 
-> **定义 6.46 (点到集合的距离)**<br>$d\left(x,A\right)=\inf_{a\in A}d\left(x,a\right)$. (题集 §3.2)
+> **定义 6.46 (点到集合的距离)**
+>
+> $d\left(x,A\right)=\inf_{a\in A}d\left(x,a\right)$. (题集 §3.2)
 
-> **定义 6.47 ($\varepsilon$-邻域)**<br>$U_\varepsilon\left(A\right)=\left\{x\in X:d\left(x,A\right)< \varepsilon\right\}$. (题集 §3.2)
+> **定义 6.47 ($\varepsilon$-邻域)**
+>
+> $U_\varepsilon\left(A\right)=\left\{x\in X:d\left(x,A\right)< \varepsilon\right\}$. (题集 §3.2)
 
-> **定义 7.6 (正规空间)**<br>单点闭且任意两不相交闭集可被不相交开集分离, 即 $T_4$. (教材 §7, p42)
+> **定义 7.6 (正规空间)**
+>
+> 单点闭且任意两不相交闭集可被不相交开集分离, 即 $T_4$. (教材 §7, p42)
 
-> **定义 11.14 (最终拓扑)**<br>关于一族映射 $f_i:X_i\to Y$ 使每个 $f_i$ 连续的最细拓扑; $U\subset Y$ 开当且仅当每个 $f_i^{-1}\left(U\right)$ 在 $X_i$ 中开. (题集 §1.4)
+> **定义 11.14 (最终拓扑)**
+>
+> 关于一族映射 $f_i:X_i\to Y$ 使每个 $f_i$ 连续的最细拓扑; $U\subset Y$ 开当且仅当每个 $f_i^{-1}\left(U\right)$ 在 $X_i$ 中开. (题集 §1.4)
 
-> **命题 M30.1 (可分度量空间必有可数基)**<br>若度量空间 $X$ 有可数稠密子集, 则 $X$ 有可数基; 事实上对可度量化空间, 可分与第二可数等价. (《拓扑学》(原书第2版) §30 习题 5(a))
+> **命题 M30.1 (可分度量空间必有可数基)**
+>
+> 若度量空间 $X$ 有可数稠密子集, 则 $X$ 有可数基; 事实上对可度量化空间, 可分与第二可数等价. (《拓扑学》(原书第2版) §30 习题 5(a))
 
 ---
 
@@ -68,9 +142,7 @@
 
 ### 解答 习题一
 
-由**定义 6.36 (开球)**, $\mathbb R^n$ 的通常度量拓扑以欧氏开球 $B\left(x,r\right)$ 为基, 故每个开集是若干开球之并. 设 $\left\{U_i\right\}_{i\in I}$ 是一族开集, $U=\bigcup_{i\in I}U_i$. 任取 $x\in U$, 则 $x\in U_{i_0}$ 对某 $i_0$; 因 $U_{i_0}$ 开, 由**定义 6.36 (开球)** 存在开球 $B$ 使 $x\in B\subset U_{i_0}\subset U$. 故 $U$ 的每一点都有开球邻域含于 $U$, 由**定义 3.18 (拓扑空间)** (开集的任意并仍开) $U$ 是开集.
-
-但任意交未必开. 取 $\mathbb R$ 中一列开区间 $\left(-\frac1n,\frac1n\right)$ ($n\ge1$), 其交为
+由**定义 3.18 (拓扑空间)**, 开集的任意并仍开; 但任意交未必开. 取 $\mathbb R$ 中一列开区间 $\left(-\frac1n,\frac1n\right)$ ($n\ge1$), 其交为
 
 $$
 \bigcap_{n=1}^{\infty}\left(-\frac1n,\frac1n\right)=\left\{0\right\}.
@@ -86,13 +158,11 @@ $$
 
 ### 解答 习题二
 
-设 $f:X\to Y$, 对 $B\subset Y$ 原像为 $f^{-1}\left(B\right)=\left\{x\in X:f\left(x\right)\in B\right\}$. 对任意一族 $\left\{B_j\right\}_{j\in J}$, 由**基础知识: 原像与并运算交换** 与**基础知识: 原像与交运算交换**,
+对于原像, 由**基础知识: 原像与并运算交换**与**基础知识: 原像与交运算交换**易证:
 
 $$
-f^{-1}\left(\bigcup_jB_j\right)=\bigcup_jf^{-1}\left(B_j\right),\quad f^{-1}\left(\bigcap_jB_j\right)=\bigcap_jf^{-1}\left(B_j\right).
+f^{-1}\left(\bigcup_jA_j\right)=\bigcup_jf^{-1}\left(A_j\right),\quad f^{-1}\left(\bigcap_jA_j\right)=\bigcap_jf^{-1}\left(A_j\right).
 $$
-
-事实上, $x$ 属于左端当且仅当 $f\left(x\right)$ 属于相应的并或交, 直接由定义展开即得. 故原像与并, 交均可交换.
 
 直接像 $f\left(A\right)=\left\{f\left(x\right):x\in A\right\}$ 则不然: 并运算可交换, $f\left(\bigcup_jA_j\right)=\bigcup_jf\left(A_j\right)$; 但交运算只含一边,
 
@@ -100,9 +170,13 @@ $$
 f\left(\bigcap_jA_j\right)\subset\bigcap_jf\left(A_j\right),
 $$
 
-等号一般不成立. 反例: 取 $f\left(t\right)=t^2$, $A_1=\left[-1,0\right]$, $A_2=\left[0,1\right]$. 则 $A_1\cap A_2=\left\{0\right\}$, 故 $f\left(A_1\cap A_2\right)=\left\{0\right\}$; 但 $f\left(A_1\right)=f\left(A_2\right)=\left[0,1\right]$, 故 $\bigcap_jf\left(A_j\right)=\left[0,1\right]$. 包含而不相等. $\blacksquare$
+等号一般不成立.
 
-> (1) 原像的交可交换, 但直接像的交不可交换: 因为考虑原像时是看着 $x$ 找 $y$, 都是一一对应的; 考虑直接像时是看着 $y$ 找 $x$, 而一个 $y$ 可能对应多个 $x$, 因此不可逆, 自然也不可交换.<br>(2) 直接像的并可交换, 但直接像的交不可交换: 考虑并时, 虽然是看着 $y$ 找 $x$, 但并集的含义是 "存在一个" 即可, 因此虽然可能有多个 $x$, 找到一个就行; 考虑交时, 交集的含义是 "任意一个" 均需要满足, 这就要求了 $x$ 需唯一才行, 因此不可逆, 自然也不可交换.
+反例: 取 $f\left(t\right)=t^2$, $A_1=\left[-1,0\right]$, $A_2=\left[0,1\right]$. 则 $A_1\cap A_2=\left\{0\right\}$, 故 $f\left(A_1\cap A_2\right)=\left\{0\right\}$; 但 $f\left(A_1\right)=f\left(A_2\right)=\left[0,1\right]$, 故 $\bigcap_jf\left(A_j\right)=\left[0,1\right]$. 包含而不相等. $\blacksquare$
+
+> (1) 考虑原像时, 是看着 $x$ 找 $y$, 都是一一对应的; 考虑直接像时是看着 $y$ 找 $x$, 而一个 $y$ 可能对应多个 $x$, 因此不可逆, 自然也不可交换.
+>
+> (2) 直接像的并可交换, 但直接像的交不可交换: 考虑并时, 虽然是看着 $y$ 找 $x$, 但并集的含义是 "存在一个" 即可, 因此虽然可能有多个 $x$, 找到一个就行; 考虑交时, 交集的含义是 "任意一个" 均需要满足, 这就要求了 $x$ 需唯一才行, 因此不可逆, 自然也不可交换.
 
 ---
 
@@ -132,9 +206,9 @@ $$
 
 ### 解答 习题四
 
-**($\Rightarrow$)** 设 $F$ 闭. 由**定义 3.21 (闭集)**, $\mathbb R\setminus F$ 开. 设 $x_n\in F$ 且 $x_n\to L$. 若 $L\notin F$, 则 $L\in\mathbb R\setminus F$, 而 $\mathbb R\setminus F$ 是 $L$ 的邻域. 由**定义 3.25 (邻域与极限)**, 对所有充分大的 $n$ 有 $x_n\in\mathbb R\setminus F$, 与 $x_n\in F$ 矛盾. 故 $L\in F$.
+**($\Rightarrow$)** 设 $F$ 闭. 由**定义 3.21 (闭集)**, $\mathbb R\setminus F$ 开. 设 $x_n\in F$ 且 $x_n\to x$. 若 $x\notin F$, 则 $x\in\mathbb R\setminus F$, 而 $\mathbb R\setminus F$ 是 $x$ 的邻域. 由**定义 3.25 (邻域与极限)**, 对所有充分大的 $n$ 有 $x_n\in\mathbb R\setminus F$, 与 $x_n\in F$ 矛盾. 故 $x\in F$.
 
-**($\Leftarrow$)** 反证. 设 $F$ 不闭. 由**定义 3.21 (闭集)**, $\mathbb R\setminus F$ 不开. 故存在 $L\notin F$ 使 $L$ 的任何邻域都不含于 $\mathbb R\setminus F$, 即 $L$ 的任何邻域都与 $F$ 相交. 由**定义 6.36 (开球)**, 球 $B\left(L,1/n\right)=\left(L-\frac1n,L+\frac1n\right)$ 与 $F$ 相交, 取 $x_n\in F\cap B\left(L,1/n\right)$, 则 $d\left(x_n,L\right)< 1/n$. 任给 $L$ 的邻域, 由**定义 6.36 (开球)** 它包含某 $B\left(L,\varepsilon\right)$; 当 $n> 1/\varepsilon$ 时 $x_n\in B\left(L,\varepsilon\right)$, 故由**定义 3.25 (邻域与极限)** $x_n\to L$. 但 $L\notin F$, 与假设矛盾. 故 $F$ 闭. $\blacksquare$
+**($\Leftarrow$)** 反证. 设 $F$ 不闭. 由**定义 3.21 (闭集)**, $\mathbb R\setminus F$ 不开. 故存在 $x\notin F$ 使 $x$ 的任何邻域都不含于 $\mathbb R\setminus F$, 即 $x$ 的任何邻域都与 $F$ 相交. 由**定义 6.36 (开球)**, 球 $B\left(x,1/n\right)=\left(x-\frac1n,x+\frac1n\right)$ 与 $F$ 相交, 取 $x_n\in F\cap B\left(x,1/n\right)$, 则 $d\left(x_n,x\right)< 1/n$. 任给 $x$ 的邻域, 由**定义 6.36 (开球)** 它包含某 $B\left(x,\varepsilon\right)$; 当 $n> 1/\varepsilon$ 时 $x_n\in B\left(x,\varepsilon\right)$, 故由**定义 3.25 (邻域与极限)** $x_n\to x$. 但 $x\notin F$, 与假设矛盾. 故 $F$ 闭. $\blacksquare$
 
 ---
 
