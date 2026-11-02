@@ -1,97 +1,97 @@
 # week2
 
 > **基础知识: 原像的定义**
->
+> 
 > 对函数 $f:X\to Y$ 与 $O\subset Y$, 原像为 $f^{-1}\left(O\right)=\left\{x\in X:f\left(x\right)\in O\right\}$.
 
 > **基础知识: 集合运算恒等式**
->
+> 
 > 对 $A,F'\subset X$, 有 $A\setminus F'=A\cap\left(X\setminus F'\right)$, $A\setminus\left(F'\cap A\right)=A\setminus F'$, 且 $X\setminus\left(F'\cap A\right)=\left(X\setminus F'\right)\cup\left(X\setminus A\right)$.
 
 > **基础知识: 交与并的分配律**
->
+> 
 > 对集合 $A$ 与集族 $\left\{B_\alpha\right\}_{\alpha\in A}$, 有 $A\cap\left(\bigcup_{\alpha\in A}B_\alpha\right)=\bigcup_{\alpha\in A}\left(A\cap B_\alpha\right)$.
 
 > **基础知识: $\min$ 与加法**
->
+> 
 > 对任意 $a,b\ge0$, 有 $\min\left(a+b,1\right)\le\min\left(a,1\right)+\min\left(b,1\right)$.
 
 > **基础知识: 函数 $\varphi$ 的性质**
->
+> 
 > 记 $\varphi\left(t\right)=\frac{t}{1+t}$, $t\ge0$. 则 $\varphi$ 在 $\left[0,\infty\right)$ 上严格递增, $\varphi\left(0\right)=0$, 且对任意 $a,b\ge0$ 有 $\varphi\left(a+b\right)\le\varphi\left(a\right)+\varphi\left(b\right)$.
 
 > **基础知识: 分式恒等式**
->
-> 对 $0<r<1$ 与 $d\ge0$, 有 $\frac{d}{1+d}<r$ 当且仅当 $d<\frac{r}{1-r}$.
+> 
+> 对 $0< r< 1$ 与 $d\ge0$, 有 $\frac{d}{1+d}< r$ 当且仅当 $d< \frac{r}{1-r}$.
 
 > **定义 3.10 (豪斯多夫空间)**
->
+> 
 > 称 $X$ 是豪斯多夫的, 若任意一对不同点都有不相交的邻域. 此时极限是唯一的. (教材 §3, p20)
 
 > **定义 3.14 (初始拓扑)**
->
+> 
 > 设 $f:X\to Y$ 是函数, 且 $Y$ 赋予拓扑 $\mathcal O$. 称 $\mathcal O_f=\left\{f^{-1}\left(O\right):O\in\mathcal O\right\}$ 为 $X$ 上由 $f$ 诱导的**初始拓扑**; 它是使 $f$ 连续的最粗拓扑. (题集 §1.1)
 
 > **定义 3.15 (拓扑基)**
->
+> 
 > 设 $\mathcal B\subset\mathcal P\left(X\right)$. 若 $X=\bigcup_{B\in\mathcal B}B$, 且对任意 $B_1,B_2\in\mathcal B$ 与任意 $x\in B_1\cap B_2$ 存在 $B_3\in\mathcal B$ 使 $x\in B_3\subset B_1\cap B_2$, 则以 $\mathcal B$ 中元素的任意并为开集, 生成 $X$ 上最粗拓扑. (教材 §3, p13)
 
 > **定义 3.18 (拓扑空间)**
->
+> 
 > 拓扑空间是一个集合 $X$, 配有一族公认的开集 $T\subset\mathcal P\left(X\right)$. 即 $U\subset X$ 是开的当且仅当 $U\in T$. 我们要求:
->
+> 
 > (1) $\emptyset,X\in T$;
->
+> 
 > (2) 若 $U,V\in T$, 则 $U\cap V\in T$;
->
+> 
 > (3) 若 $A\subset T$, 则 $\bigcup A\in T$. (教材 §3, p12)
 
 > **定义 3.19 (子空间拓扑)**
->
+> 
 > 设 $\left(X,\mathcal O_X\right)$ 为拓扑空间, $A\subset X$, $\iota:A\to X$ 为包含映射. 称 $U\subset A$ 是开的, 若存在 $X$ 中开集 $O$ 使 $U=O\cap A$; 这些集合构成 $A$ 上的子空间拓扑, 它是使 $\iota$ 连续的最粗拓扑. (教材 §3, p17)
 
 > **定义 3.21 (闭集)**
->
+> 
 > 集合 $F$ 称为闭的, 若其补集 $X\setminus F$ 是开的. (教材 §3, p13)
 
 > **定义 3.22 (连续映射)**
->
+> 
 > 函数 $f:X\to Y$ 是连续的, 若对所有开集 $U\subset Y$, $f^{-1}\left(U\right)$ 是开的. (教材 §3, p14)
 
 > **定义 3.26 (闭包)**
->
+> 
 > 集合 $A\subset X$ 的闭包 $\overline A$ 就是包含 $A$ 的最小闭集; 它存在, 因为闭集的交集仍是闭的. (教材 §3, p18)
 
 > **定义 3.32 (稠密)**
->
+> 
 > 我们称 $A\subset X$ 在 $X$ 中稠密, 若 $\overline A=X$. (教材 §3)
 
 > **定义 6.33 (等价度量)**
->
+> 
 > 两度量若诱导同一拓扑则称等价, 例如 $\min\left(d,1\right)$ 与 $d$. (题集 §1.3)
 
 > **定义 6.34 (球面)**
->
+> 
 > 以 $x$ 为心, 半径 $r$ 的球面为 $S\left(x,r\right)=\left\{y\in X:d\left(x,y\right)=r\right\}$. (题集 §1.3)
 
 > **定义 6.35 (度量空间)**
->
+> 
 > 度量 $d:X\times X\to\mathbb R_{\ge0}$ 满足:
->
+> 
 > (1) $d\left(x,x\right)=0$;
->
+> 
 > (2) 若 $d\left(x,y\right)=0$ 则 $x=y$;
->
+> 
 > (3) $d\left(x,y\right)=d\left(y,x\right)$;
->
+> 
 > (4) $d\left(x,y\right)\le d\left(x,z\right)+d\left(z,y\right)$. 装备了度量 $d$ 的集合 $X$ 称为度量空间. (题集 §1.3 Q2; 教材 §6 由此给出度量拓扑)
 
 > **定义 6.36 (开球)**
->
-> 开球 $B\left(x,r\right)=\left\{y\in X:d\left(x,y\right)<r\right\}$. 全体开球构成度量拓扑的一个基. (教材 §6)
+> 
+> 开球 $B\left(x,r\right)=\left\{y\in X:d\left(x,y\right)< r\right\}$. 全体开球构成度量拓扑的一个基. (教材 §6)
 
 > **定义 6.45 (超度量)**
->
+> 
 > 满足度量空间四条公理且三角不等式加强为 $d\left(x,z\right)\le\max\left(d\left(x,y\right),d\left(y,z\right)\right)$ 的度量. (题集 §1.3 Q2)
 
 ---
@@ -202,10 +202,10 @@ $$
 
 记 $d_A=d|_{A}$. 由**定义 6.35 (度量空间)**, $d:X\to\mathbb R_{\ge0}$ 满足四条度量公理; 限制 $d_A$ 在 $A$ 上逐点取值不变, 故同样满足这四条公理. 由**定义 6.35 (度量空间)**, $\left(A,d_A\right)$ 是度量空间.
 
-由**定义 6.36 (开球)**, $A$ 中以 $a\in A$ 为心, 半径 $r>0$ 的开球为
+由**定义 6.36 (开球)**, $A$ 中以 $a\in A$ 为心, 半径 $r> 0$ 的开球为
 
 $$
-B_A\left(a,r\right)=\left\{y\in A:d_A\left(a,y\right)<r\right\}=A\cap\left\{y\in X:d\left(a,y\right)<r\right\}=A\cap B_X\left(a,r\right).
+B_A\left(a,r\right)=\left\{y\in A:d_A\left(a,y\right)< r\right\}=A\cap\left\{y\in X:d\left(a,y\right)< r\right\}=A\cap B_X\left(a,r\right).
 $$
 
 由**定义 6.36 (开球)**, 开球族 $\left\{B_X\left(a,r\right)\right\}$ 是 $X$ 的一个拓扑基; 由**习题二**, 它们与 $A$ 的交 $\left\{A\cap B_X\left(a,r\right)\right\}$ 是 $A$ 的拓扑基. 上式表明这恰是 $\left(A,d_A\right)$ 的开球族. 故 $A$ 上的子空间拓扑与 $d_A$ 诱导的度量拓扑一致. $\blacksquare$
@@ -260,27 +260,27 @@ $$
 
 ### 解答 习题十
 
-(1) 不妨设 $d\left(x,y\right)<d\left(x,z\right)$, 则欲证 $d(y,z)=\max\{d(x,y),d(x,z)\}$, 只需证 $d(x,z)=d(y,z)$.
+(1) 不妨设 $d\left(x,y\right)< d\left(x,z\right)$, 则欲证 $d\left(y,z\right)=\max\left\{d\left(x,y\right),d\left(x,z\right)\right\}$, 只需证 $d\left(x,z\right)=d\left(y,z\right)$.
 
 由加强的三角不等式,
 
 $$
-d(x,z)\le\max\{d(x,y),d(y,z)\},
+d\left(x,z\right)\le\max\left\{d\left(x,y\right),d\left(y,z\right)\right\},
 $$
 
-由于 $d\left(x,y\right)<d\left(x,z\right)$, 则 $\max\{d(x,y),d(y,z)\}=d(y,z)$, 即 $d(x,z)\le d(y,z)$.
+由于 $d\left(x,y\right)< d\left(x,z\right)$, 则 $\max\left\{d\left(x,y\right),d\left(y,z\right)\right\}=d\left(y,z\right)$, 即 $d\left(x,z\right)\le d\left(y,z\right)$.
 
 同理,
 
 $$
-d(y,z)\le\max\{d(x,y),d(x,z)\},
+d\left(y,z\right)\le\max\left\{d\left(x,y\right),d\left(x,z\right)\right\},
 $$
 
-由于 $d\left(x,y\right)<d\left(x,z\right)$, 则 $\max\{d(x,y),d(x,z)\}=d(x,z)$, 即 $d(y,z)\le d(x,z)$. 合并得 $d\left(y,z\right)=d\left(x,z\right)=\max\left(d\left(x,y\right),d\left(x,z\right)\right)$.
+由于 $d\left(x,y\right)< d\left(x,z\right)$, 则 $\max\left\{d\left(x,y\right),d\left(x,z\right)\right\}=d\left(x,z\right)$, 即 $d\left(y,z\right)\le d\left(x,z\right)$. 合并得 $d\left(y,z\right)=d\left(x,z\right)=\max\left(d\left(x,y\right),d\left(x,z\right)\right)$.
 
-(2) 设 $z\in B\left(x,r\right)$, 即由**定义 6.36 (开球)** $d\left(x,z\right)<r$. 任取 $w\in B\left(x,r\right)$, 即 $d\left(x,w\right)<r$. 由**定义 6.45 (超度量)**, $d\left(z,w\right)\le\max\left(d\left(z,x\right),d\left(x,w\right)\right)$; 因两项都 $<r$, 故 $d\left(z,w\right)<r$, 即 $w\in B\left(z,r\right)$. 于是 $B\left(x,r\right)\subset B\left(z,r\right)$. 同理 $B\left(z,r\right)\subset B\left(x,r\right)$. 因此 $B\left(x,r\right)=B\left(z,r\right)$, 即 $z$ 也是该开球的中心.
+(2) 设 $z\in B\left(x,r\right)$, 即由**定义 6.36 (开球)** $d\left(x,z\right)< r$. 任取 $w\in B\left(x,r\right)$, 即 $d\left(x,w\right)< r$. 由**定义 6.45 (超度量)**, $d\left(z,w\right)\le\max\left(d\left(z,x\right),d\left(x,w\right)\right)$; 因两项都 $< r$, 故 $d\left(z,w\right)< r$, 即 $w\in B\left(z,r\right)$. 于是 $B\left(x,r\right)\subset B\left(z,r\right)$. 同理 $B\left(z,r\right)\subset B\left(x,r\right)$. 因此 $B\left(x,r\right)=B\left(z,r\right)$, 即 $z$ 也是该开球的中心.
 
-(3) 由**定义 6.34 (球面)**, $S\left(x,r\right)=\left\{y:d\left(x,y\right)=r\right\}$. 设 $z\in B\left(x,r\right)$, 即 $d\left(x,z\right)<r$. 任取 $w\in S\left(x,r\right)$, 即 $d\left(x,w\right)=r$. 因 $d\left(x,z\right)<r=d\left(x,w\right)$, 故 $d\left(x,z\right)\neq d\left(x,w\right)$; 由第 (1) 小题, $d\left(z,w\right)=\max\left(d\left(x,z\right),d\left(x,w\right)\right)=r$, 故 $w\in S\left(z,r\right)$, 即 $S\left(x,r\right)\subset S\left(z,r\right)$, 同理, $S\left(z,r\right)\subset S\left(x,r\right)$. 故 $S\left(x,r\right)=S\left(z,r\right)$, 即 $z$ 也是该球面的中心.
+(3) 由**定义 6.34 (球面)**, $S\left(x,r\right)=\left\{y:d\left(x,y\right)=r\right\}$. 设 $z\in B\left(x,r\right)$, 即 $d\left(x,z\right)< r$. 任取 $w\in S\left(x,r\right)$, 即 $d\left(x,w\right)=r$. 因 $d\left(x,z\right)< r=d\left(x,w\right)$, 故 $d\left(x,z\right)\neq d\left(x,w\right)$; 由第 (1) 小题, $d\left(z,w\right)=\max\left(d\left(x,z\right),d\left(x,w\right)\right)=r$, 故 $w\in S\left(z,r\right)$, 即 $S\left(x,r\right)\subset S\left(z,r\right)$, 同理, $S\left(z,r\right)\subset S\left(x,r\right)$. 故 $S\left(x,r\right)=S\left(z,r\right)$, 即 $z$ 也是该球面的中心.
 
 (4) 设 $B\left(x,r\right)$ 与 $B\left(y,s\right)$ 为两个开球. 若不相交则结论已成立. 若相交, 取 $z\in B\left(x,r\right)\cap B\left(y,s\right)$. 由第 (2) 小题, $B\left(x,r\right)=B\left(z,r\right)$ 且 $B\left(y,s\right)=B\left(z,s\right)$. 不妨设 $r\le s$, 则 $B\left(z,r\right)\subset B\left(z,s\right)$, 即 $B\left(x,r\right)\subset B\left(y,s\right)$. $\blacksquare$
 
@@ -294,10 +294,10 @@ $$
 
 对 $r\in\left(0,1\right)$, $d^{*}\left(x,y\right)=\min\left(d\left(x,y\right),1\right)=d\left(x,y\right)$, 故 $d^{*}$ 与 $d$ 的半径小于 $1$ 的球族完全相同;
 
-而对 $d^{**}$, 半径 $r\in\left(0,1\right)$ 的球为 $B_{d^{**}}\left(x,r\right)=\left\{y:\frac{d\left(x,y\right)}{1+d\left(x,y\right)}<r\right\}$; 由**基础知识: 分式恒等式**, $\frac{d\left(x,y\right)}{1+d\left(x,y\right)}<r$ 当且仅当 $d\left(x,y\right)<\frac{r}{1-r}$, 故 $B_{d^{**}}\left(x,r\right)=\left\{y:d\left(x,y\right)<\frac{r}{1-r}\right\}=B_{d}\left(x,\frac{r}{1-r}\right)$, 即 $d^{**}$ 的球与 $d$ 的球一一对应.
+而对 $d^{**}$, 半径 $r\in\left(0,1\right)$ 的球为 $B_{d^{**}}\left(x,r\right)=\left\{y:\frac{d\left(x,y\right)}{1+d\left(x,y\right)}< r\right\}$; 由**基础知识: 分式恒等式**, $\frac{d\left(x,y\right)}{1+d\left(x,y\right)}< r$ 当且仅当 $d\left(x,y\right)< \frac{r}{1-r}$, 故 $B_{d^{**}}\left(x,r\right)=\left\{y:d\left(x,y\right)< \frac{r}{1-r}\right\}=B_{d}\left(x,\frac{r}{1-r}\right)$, 即 $d^{**}$ 的球与 $d$ 的球一一对应.
 
 由**定义 6.36 (开球)**, 全体开球族是度量拓扑的基, 故三者生成同一拓扑. 由**定义 6.33 (等价度量)**, $d^{*}$ 与 $d^{**}$ 都与 $d$ 等价. $\blacksquare$
 
-> 详细说来, $d$ 与 $d'$ 比较, 虽然 $d'$ 的拓扑基并不和 $d$ 完全相同, 但 $d$ 中很容易就能找到一组基, 满足其半径均 $r\in(0,1)$, 此时就与 $d'$ 的拓扑基一致, 因此二者生成同一拓扑;
->
-> 而 $d'$ 与 $d''$ 比较, 则只是换了一个参数: 对于 $r\in(0,1)$, $r\mapsto\frac{r}{1-r}=:\rho$. 因此二者自然生成同一拓扑.
+> 详细说来, $d$ 与 $d'$ 比较, 虽然 $d'$ 的拓扑基并不和 $d$ 完全相同, 但 $d$ 中很容易就能找到一组基, 满足其半径均 $r\in\left(0,1\right)$, 此时就与 $d'$ 的拓扑基一致, 因此二者生成同一拓扑;
+> 
+> 而 $d'$ 与 $d''$ 比较, 则只是换了一个参数: 对于 $r\in\left(0,1\right)$, $r\mapsto\frac{r}{1-r}=:\rho$. 因此二者自然生成同一拓扑.

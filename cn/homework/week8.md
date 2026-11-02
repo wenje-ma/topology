@@ -1,103 +1,103 @@
 # week8
 
 > **基础知识: 拉格朗日中值定理**
->
+> 
 > 若 $f$ 在 $\left[a,b\right]$ 上连续且在 $\left(a,b\right)$ 上可微, 则存在 $\xi\in\left(a,b\right)$ 使 $f\left(b\right)-f\left(a\right)=f'\left(\xi\right)\left(b-a\right)$; 特别地, 若 $\left|f'\right|\le M$, 则 $\left|f\left(x\right)-f\left(r\right)\right|\le M\left|x-r\right|$.
 
 > **定义 3.10 (豪斯多夫空间)**
->
+> 
 > 称 $X$ 是豪斯多夫的, 若任意一对不同点都有不相交的邻域. 此时极限是唯一的. (教材 $\S3$, p20)
 
 > **定义 3.21 (闭集)**
->
+> 
 > 集合 $F$ 称为闭的, 若其补集 $X\setminus F$ 是开的. (教材 $\S3$, p13)
 
 > **定义 3.25 (邻域与极限)**
->
+> 
 > $b\in X$ 的邻域就是含 $b$ 的开集 $U$. 我们称 $a_n\to b$, 若对 $b$ 的任何邻域 $U$, 对所有充分大的 $n$ 都有 $a_n\in U$. (教材 $\S3$, p16)
 
 > **定义 3.32 (稠密)**
->
+> 
 > 我们称 $A\subset X$ 在 $X$ 中稠密, 若 $\overline A=X$. (教材 $\S3$)
 
 > **定理 5.2 (区间紧)**
->
+> 
 > 区间 $\left[0,1\right]$ 是紧的. (教材 $\S5$)
 
 > **定理 5.5 (豪斯多夫中紧集闭)**
->
+> 
 > 若 $X$ 是豪斯多夫空间, 则 $X$ 中任意紧子集 $K\subset X$ 是闭的. (教材 $\S5$)
 
 > **定理 5.8 ($\mathbb R^n$ 紧集判据)**
->
+> 
 > $F\subset\mathbb R^n$ 紧当且仅当 $F$ 闭且有界. (教材 $\S5$)
 
 > **定理 6.1 (紧 $=$ 序列紧)**
->
+> 
 > 度量空间中紧致与序列紧致等价, 即每个序列都有收敛子列. (教材 $\S6$)
 
 > **定理 6.7 (连续函数的一致极限连续)**
->
+> 
 > 连续函数列的一致极限连续, 即连续函数空间在有界函数空间中闭. (教材 $\S6$)
 
 > **定理 6.8 ($C\left(X,Y\right)$ 完备)**
->
+> 
 > $Y$ 完备时 $C\left(X,Y\right)$ 装备一致度量后完备. (教材 $\S6$)
 
 > **定理 6.12 (阿尔泽拉-阿斯科利定理)**
->
+> 
 > 设 $K$ 为紧度量空间, $F\subset C\left(K\right)$ 为等度连续且一致有界的函数族, 则 $F$ 是紧的. (教材 $\S6$)
 
 > **定义 6.35 (度量空间)**
->
+> 
 > 度量 $d:X\times X\to\mathbb R_{\ge0}$ 满足:
->
+> 
 > (1) $d\left(x,x\right)=0$;
->
+> 
 > (2) 若 $d\left(x,y\right)=0$ 则 $x=y$;
->
+> 
 > (3) $d\left(x,y\right)=d\left(y,x\right)$;
->
+> 
 > (4) $d\left(x,y\right)\le d\left(x,z\right)+d\left(z,y\right)$. 装备了度量 $d$ 的集合 $X$ 称为度量空间. (教材 $\S6$)
 
 > **定义 6.36 (开球)**
->
+> 
 > 开球 $B\left(x,r\right)=\left\{y\in X:d\left(x,y\right)< r\right\}$. 全体开球构成度量拓扑的一个基. (教材 $\S6$)
 
 > **定义 6.37 (柯西列)**
->
+> 
 > 序列 $\left(x_n\right)$ 是柯西列, 若 $\lim_{N\to\infty}\sup_{i,j> N}d\left(x_i,x_j\right)=0$. (教材 $\S6$)
 
 > **定义 6.38 (完备度量空间)**
->
+> 
 > 度量空间是完备的, 若其中每个柯西列都收敛. (教材 $\S6$)
 
 > **定义 6.39 (完备化)**
->
+> 
 > 任意度量空间可自然嵌入一个完备度量空间; 实数轴 $\mathbb R$ 是有理数集的完备化, 故 $\mathbb R$ 完备. (教材 $\S6$)
 
 > **定义 6.41 (一致收敛与一致度量)**
->
+> 
 > $d\left(f,g\right)=\sup_X\left|f\left(x\right)-g\left(x\right)\right|$; $f_n$ 一致收敛当且仅当 $d\left(f_n,g\right)\to0$. (教材 $\S6$)
 
 > **定义 6.43 (上确界度量)**
->
+> 
 > 紧集 $K$ 上连续函数空间 $C\left(K\right)$ 装备 $d\left(f,g\right)=\sup_{x\in K}\left|f\left(x\right)-g\left(x\right)\right|$, 即上确界范数诱导的度量. (教材 $\S6$)
 
 > **定义 6.44 (伪距离)**
->
+> 
 > 满足除 "$d\left(x,y\right)=0\Rightarrow x=y$" 外全部度量公理的函数; 商掉 $d=0$ 的等价类即得真度量. (题集 $\S1.3$)
 
 > **定义 6.46 (点到集合的距离)**
->
+> 
 > $d\left(x,A\right)=\inf_{a\in A}d\left(x,a\right)$. (题集 $\S3.2$)
 
 > **定义 6.47 ($\varepsilon$-邻域)**
->
+> 
 > $U_\varepsilon\left(A\right)=\left\{x\in X:d\left(x,A\right)< \varepsilon\right\}$. (题集 $\S3.2$)
 
 > **定义 6.48 (豪斯多夫距离)**
->
+> 
 > $d\left(A,B\right)=\inf\left\{r> 0:A\subset U_r\left(B\right),\,B\subset U_r\left(A\right)\right\}$; 在紧子集族 $\mathcal K\left(X\right)$ 上是真度量. (题集 $\S3.2$)
 
 ---
