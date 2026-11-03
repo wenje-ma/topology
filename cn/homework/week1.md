@@ -500,7 +500,7 @@ $$
 
 **($\Rightarrow$)** 设 $F$ 闭. 由**定义 3.21 (闭集)**, $\mathbb R\setminus F$ 开. 设 $x_n\in F$ 且 $x_n\to x$. 若 $x\notin F$, 则 $x\in\mathbb R\setminus F$, 而 $\mathbb R\setminus F$ 是 $x$ 的邻域. 由**定义 3.25 (邻域与极限)**, 对所有充分大的 $n$ 有 $x_n\in\mathbb R\setminus F$, 与 $x_n\in F$ 矛盾. 故 $x\in F$.
 
-**($\Leftarrow$)** 反证. 设 $F$ 不闭. 由**定义 3.21 (闭集)**, $\mathbb R\setminus F$ 不开. 故存在 $x\notin F$ 使 $x$ 的任何邻域都不含于 $\mathbb R\setminus F$, 即 $x$ 的任何邻域都与 $F$ 相交. 由**定义 6.36 (开球)**, 球 $B\left(x,1/n\right)=\left(x-\frac1n,x+\frac1n\right)$ 与 $F$ 相交, 取 $x_n\in F\cap B\left(x,1/n\right)$, 则 $d\left(x_n,x\right)< 1/n$. 任给 $x$ 的邻域, 由**定义 6.36 (开球)** 它包含某 $B\left(x,\varepsilon\right)$; 当 $n> 1/\varepsilon$ 时 $x_n\in B\left(x,\varepsilon\right)$, 故由**定义 3.25 (邻域与极限)** $x_n\to x$. 但 $x\notin F$, 与假设矛盾. 故 $F$ 闭. $\blacksquare$
+**($\Leftarrow$)** 反证. 设 $F$ 不闭. 由**定义 3.21 (闭集)**, $\mathbb R\setminus F$ 不开. 故存在 $x\notin F$ 使 $x$ 的任何邻域都不含于 $\mathbb R\setminus F$, 即 $x$ 的任何邻域都与 $F$ 相交, 说明 $x$ 在 $F$ 的边界上. 由**定义 6.36 (开球)**, 球 $B\left(x,1/n\right)=\left(x-\frac1n,x+\frac1n\right)$ 与 $F$ 相交, 取 $x_n\in F\cap B\left(x,1/n\right)$, 则 $d\left(x_n,x\right)< 1/n$. 任给 $x$ 的邻域, 由**定义 6.36 (开球)** 它包含某 $B\left(x,\varepsilon\right)$; 当 $n> 1/\varepsilon$ 时 $x_n\in B\left(x,\varepsilon\right)$, 故由**定义 3.25 (邻域与极限)** $x_n\to x$. 但 $x\notin F$, 与假设矛盾. 故 $F$ 闭. $\blacksquare$
 
 ## 1.22 (由子集族生成的拓扑及其有限交构造)
 
@@ -508,7 +508,7 @@ $$
 
 ### 解答 1.22
 
-同一空间 $X$ 上一族拓扑 $\left\{\mathcal O_\alpha\right\}_{\alpha\in A}$ 的交集 $\mathcal O=\bigcap_{\alpha\in A}\mathcal O_\alpha$ 仍是拓扑: 由原像保空集与全集 类的平凡性, $\emptyset$ 与 $X$ 属于每个 $\mathcal O_\alpha$, 故属于 $\mathcal O$; 若 $\left\{U_i\right\}\subset\mathcal O$, 则对每个 $\alpha$ 有 $\left\{U_i\right\}\subset\mathcal O_\alpha$, 由**定义 3.18 (拓扑空间)** (开集的任意并仍开) $\bigcup_iU_i\in\mathcal O_\alpha$, 故 $\bigcup_iU_i\in\mathcal O$; 有限交同理 (**定义 3.18 (拓扑空间)** (2)).
+同一空间 $X$ 上一族拓扑 $\left\{\mathcal O_\alpha\right\}_{\alpha\in A}$ 的交集 $\mathcal O=\bigcap_{\alpha\in A}\mathcal O_\alpha$ 仍是拓扑: 由原像保空集与全集类的平凡性, $\emptyset$ 与 $X$ 属于每个 $\mathcal O_\alpha$, 故属于 $\mathcal O$; 若 $\left\{U_i\right\}\subset\mathcal O$, 则对每个 $\alpha$ 有 $\left\{U_i\right\}\subset\mathcal O_\alpha$, 由**定义 3.18 (拓扑空间)** (开集的任意并仍开) $\bigcup_iU_i\in\mathcal O_\alpha$, 故 $\bigcup_iU_i\in\mathcal O$; 有限交同理 (**定义 3.18 (拓扑空间)** (2)).
 
 由**定义 3.29 (由子集族生成的拓扑)**, 给定子集族 $\mathcal S\subset\mathcal P\left(X\right)$, 它生成的拓扑即包含 $\mathcal S$ 的最粗拓扑, 存在且等于一切包含 $\mathcal S$ 的拓扑之交. 其具体构造为: 先取 $\mathcal S$ 中元素的有限交 (约定空交为 $X$), 再取这些有限交的任意并 (约定空并为 $\emptyset$). 所得族 $\tau$ 确实是拓扑: $\emptyset,X\in\tau$; 任意并仍是任意并; 两个有限交的有限交仍是有限交, 故有限交封闭; 由**定义 3.18 (拓扑空间)** $\tau$ 是拓扑. 它包含 $\mathcal S$ (每个 $S\in\mathcal S$ 是单元素族的有限交). 反之, 任何包含 $\mathcal S$ 的拓扑由**定义 3.18 (拓扑空间)** 对有限交与任意并封闭, 必包含 $\tau$ 的全部元素, 故 $\tau$ 是最粗的. $\blacksquare$
 
@@ -522,6 +522,6 @@ $$
 
 对任意 $O\in\mathcal O$, $f^{-1}\left(O\right)\in\mathcal O_f$ 是开集, 由**定义 3.22 (连续映射)** $f$ 连续. 反之, 若 $\tau$ 是 $X$ 上任一使 $f$ 连续的拓扑, 则对每个 $O\in\mathcal O$, 由**定义 3.22 (连续映射)** $f^{-1}\left(O\right)\in\tau$, 故 $\mathcal O_f\subset\tau$. 由**定义 3.14 (初始拓扑)**, $\mathcal O_f$ 正是 $f$ 诱导的初始拓扑.
 
-**包含映射的情形:** 取 $f:\mathbb R\to\mathbb R^2$, $f\left(t\right)=\left(t,0\right)$, $\mathbb R^2$ 装备欧氏拓扑. 则 $f^{-1}\left(U\right)=U\cap\left(\mathbb R\times\left\{0\right\}\right)$, 它在 $x$ 轴上的截口恰为 $\mathbb R$ 的通常开集, 故 $\mathcal O_f$ 就是 $\mathbb R$ 的通常拓扑.
+**包含映射的情形:** 取 $f:\mathbb R\to\mathbb R^2$, $f\left(t\right)=\left(t,0\right)$, $\mathbb R^2$ 装备欧氏拓扑. 则 $f^{-1}\left(U\right)=U\cap\left(\mathbb R\times\left\{0\right\}\right)$, 它在 $x$ 轴上的投影恰为 $\mathbb R$ 的通常开集, 故 $\mathcal O_f$ 就是 $\mathbb R$ 的通常拓扑.
 
 **反过来的构造:** 由**定义 11.14 (最终拓扑)**, 对映射 $f:X\to Y$, 在 $Y$ 上规定 $U\subset Y$ 开当且仅当 $f^{-1}\left(U\right)$ 在 $X$ 中开. 这是使 $f$ 连续的最细拓扑, 即最终拓扑. $\blacksquare$
