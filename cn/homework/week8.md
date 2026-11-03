@@ -154,11 +154,11 @@
 > 
 > $l^p=\left\{x:\sum_n\left|x_n\right|^p< \infty\right\}$ 装备 $\left\|x\right\|_p=\left(\sum_n\left|x_n\right|^p\right)^{1/p}$. (题集 §6 C11)
 
-## 习题一
+## 8.1 (完备度量空间上严格压缩映射的不动点)
 
 设 $\left(X,d\right)$ 是非空完备度量空间, $f:X\to X$ 是严格压缩的, 即存在 $0< k< 1$ 使对一切 $x,y\in X$ 有 $d\left(f\left(x\right),f\left(y\right)\right)\le k\,d\left(x,y\right)$. 证明 $f$ 在 $X$ 中有唯一不动点, 即存在唯一的 $x\in X$ 使 $f\left(x\right)=x$.
 
-### 解答 习题一
+### 解答 8.1
 
 任取初值 $x_0\in X$, 迭代 $x_{n+1}=f\left(x_n\right)$. 由压缩条件,
 
@@ -176,11 +176,11 @@ $$
 
 唯一性: 若 $f\left(x\right)=x$, $f\left(y\right)=y$, 则 $d\left(x,y\right)=d\left(f\left(x\right),f\left(y\right)\right)\le k\,d\left(x,y\right)$, 而 $0< k< 1$, 故 $d\left(x,y\right)=0$, 由**定义 6.35 (度量空间)** 的正定性得 $x=y$. 这就是**定理 6.16 (巴拿赫不动点定理)**. $\blacksquare$
 
-## 习题二
+## 8.2 (连续线性映射的利普希茨估计)
 
 设 $\left(E,\left\|\cdot\right\|\right)$ 是域 $\mathbb K$ 上的赋范线性空间, $f:E\to E$ 是连续线性映射. 证明存在常数 $K> 0$, 使对一切 $x,y\in E$ 有 $\left\|f\left(x\right)-f\left(y\right)\right\|\le K\left\|x-y\right\|$.
 
-### 解答 习题二
+### 解答 8.2
 
 由 $f$ 在 $0$ 连续 (按**定义 3.22 (连续映射)**, $\left\|z\right\|\to0$ 时 $\left\|f\left(z\right)\right\|\to0$), 存在 $\delta> 0$, 使 $\left\|z\right\|< \delta$ 时 $\left\|f\left(z\right)\right\|\le1$. 对任意 $x\neq0$, 令 $z=\frac{\delta}{2\left\|x\right\|}x$, 则 $\left\|z\right\|=\delta/2< \delta$, 故 $\left\|f\left(z\right)\right\|\le1$. 由线性性,
 
@@ -196,9 +196,9 @@ $$
 
 $\blacksquare$
 
-## 习题三
+## 8.3 (压缩映射 $g_a$ 与解算子 $J$)
 
-沿用习题二的设定, $E$ 完备. 证明: 对给定的 $\lambda\in\mathbb K$ 满足 $\left|\lambda\right|> K$, 固定 $a\in E$, 映射
+沿用习题 8.2 的设定, $E$ 完备. 证明: 对给定的 $\lambda\in\mathbb K$ 满足 $\left|\lambda\right|> K$, 固定 $a\in E$, 映射
 
 $$
 g_a\left(x\right)=\frac{a-f\left(x\right)}{\lambda}
@@ -206,9 +206,9 @@ $$
 
 是压缩映射; 用巴拿赫不动点定理推出 $g_a$ 有唯一不动点 $J\left(a\right)\in E$.
 
-### 解答 习题三
+### 解答 8.3
 
-对 $x,y\in E$, 由习题二,
+对 $x,y\in E$, 由习题 8.2,
 
 $$
 \left\|g_a\left(x\right)-g_a\left(y\right)\right\|=\frac{\left\|f\left(x\right)-f\left(y\right)\right\|}{\left|\lambda\right|}\le\frac{K}{\left|\lambda\right|}\left\|x-y\right\|.
@@ -216,11 +216,11 @@ $$
 
 由假设 $\left|\lambda\right|> K$, 故 $k=K/\left|\lambda\right|< 1$. 由**定义 6.19 (压缩映射)**, $g_a$ 是压缩映射. $E$ 非空且是**定义 6.38 (完备度量空间)**, 由**定理 6.16 (巴拿赫不动点定理)**, $g_a$ 有唯一不动点, 记为 $J\left(a\right)$. $\blacksquare$
 
-## 习题四
+## 8.4 (解算子 $J$ 的利普希茨估计)
 
 证明 $\left\|J\left(a\right)-J\left(b\right)\right\|\le\frac{1}{\left|\lambda\right|-K}\left\|a-b\right\|$.
 
-### 解答 习题四
+### 解答 8.4
 
 由 $J\left(a\right)$ 与 $J\left(b\right)$ 分别是 $g_a$ 与 $g_b$ 的不动点,
 
@@ -234,7 +234,7 @@ $$
 J\left(a\right)-J\left(b\right)=\frac{a-b-f\left(J\left(a\right)\right)+f\left(J\left(b\right)\right)}{\lambda}.
 $$
 
-取范数并用三角不等式与习题二的估计,
+取范数并用三角不等式与习题 8.2 的估计,
 
 $$
 \left\|J\left(a\right)-J\left(b\right)\right\|\le\frac{\left\|a-b\right\|+\left\|f\left(J\left(a\right)\right)-f\left(J\left(b\right)\right)\right\|}{\left|\lambda\right|}\le\frac{\left\|a-b\right\|+K\left\|J\left(a\right)-J\left(b\right)\right\|}{\left|\lambda\right|}.
@@ -248,27 +248,27 @@ $$
 
 $\blacksquare$
 
-## 习题五
+## 8.5 (方程 $f\left(x\right)-\lambda x=a$ 的唯一可解性与解的连续性)
 
 总结如下结论: 对任意连续线性映射 $f:E\to E$, 存在 $K> 0$, 使对一切满足 $\left|\lambda\right|> K$ 的 $\lambda$ 与一切 $a\in E$, 方程 $f\left(x\right)-\lambda x=a$ (未知量 $x\in E$) 有唯一解 $J\left(a\right)$, 且映射 $a\mapsto J\left(a\right)$ 连续.
 
-### 解答 习题五
+### 解答 8.5
 
-由习题二, 存在 $K> 0$ 使 $\left\|f\left(x\right)-f\left(y\right)\right\|\le K\left\|x-y\right\|$. 设 $\left|\lambda\right|> K$. 方程 $f\left(x\right)-\lambda x=a$ 等价于
+由习题 8.2, 存在 $K> 0$ 使 $\left\|f\left(x\right)-f\left(y\right)\right\|\le K\left\|x-y\right\|$. 设 $\left|\lambda\right|> K$. 方程 $f\left(x\right)-\lambda x=a$ 等价于
 
 $$
 x=\frac{a-f\left(x\right)}{\lambda}=g_a\left(x\right).
 $$
 
-由习题三, $g_a$ 是**定义 6.19 (压缩映射)**, 由**定理 6.16 (巴拿赫不动点定理)**, 该方程有唯一解 $J\left(a\right)$.
+由习题 8.3, $g_a$ 是**定义 6.19 (压缩映射)**, 由**定理 6.16 (巴拿赫不动点定理)**, 该方程有唯一解 $J\left(a\right)$.
 
-由习题四, $\left\|J\left(a\right)-J\left(b\right)\right\|\le\frac{1}{\left|\lambda\right|-K}\left\|a-b\right\|$, 即 $J$ 是利普希茨映射. 由利普希茨映射连续, $J$ 连续. $\blacksquare$
+由习题 8.4, $\left\|J\left(a\right)-J\left(b\right)\right\|\le\frac{1}{\left|\lambda\right|-K}\left\|a-b\right\|$, 即 $J$ 是利普希茨映射. 由利普希茨映射连续, $J$ 连续. $\blacksquare$
 
-## 习题六
+## 8.6 (局部凸等价于由半范数族定义，以及可数凸邻域基)
 
 证明: 实或复拓扑向量空间是局部凸的, 当且仅当其拓扑由一族半范数定义. 进一步证明: 在实或复拓扑向量空间中, $0$ 有可数凸邻域基, 当且仅当拓扑由可数族半范数定义.
 
-### 解答 习题六
+### 解答 8.6
 
 **($\Leftarrow$)**: 设拓扑由半范数族 $\left\{p_\alpha\right\}_{\alpha\in A}$ 定义. 由**定义 6.25 (半范数)**, 每个 $p_\alpha$ 是凸函数 (由三角不等式 $p_\alpha\left(\left(1-t\right)x+ty\right)\le\left(1-t\right)p_\alpha\left(x\right)+tp_\alpha\left(y\right)$). 形如
 
@@ -288,7 +288,7 @@ $$
 
 **可数情形**: 若 $0$ 有可数凸邻域基 $\left\{C_n\right\}_{n\ge1}$, 上面的构造给出可数半范数族 $\left\{p_n\right\}$. 反之, 若拓扑由可数半范数族 $\left\{p_n\right\}$ 定义, 则 $\left\{x:p_i\left(x\right)< 1/k,\ i=1,\dots,n\right\}$ ($n,k\ge1$) 是可数凸邻域基. $\blacksquare$
 
-## 习题七
+## 8.7 (交集的规范函数是各规范函数的上确界)
 
 设 $E$ 是 $\mathbb K$ 上拓扑向量空间, $C$ 是 $0$ 的凸邻域, 规范函数 $\left\|\cdot\right\|_C:E\to\left[0,\infty\right)$ 由规范函数给出. 若 $\left\{C_\alpha\right\}_{\alpha\in A}$ 是 $E$ 中一族凸集且其交是 $0$ 的凸邻域, 证明
 
@@ -296,7 +296,7 @@ $$
 \left\|\cdot\right\|_{\bigcap_{\alpha\in A}C_\alpha}=\sup_{\alpha\in A}\left\|\cdot\right\|_{C_\alpha}.
 $$
 
-### 解答 习题七
+### 解答 8.7
 
 记 $C=\bigcap_{\alpha\in A}C_\alpha$. 由**定义 6.27 (规范函数)**,
 
@@ -318,11 +318,11 @@ $$
 
 两边对一切 $x\in E$ 成立, 故函数相等. $\blacksquare$
 
-## 习题八
+## 8.8 (复合映射的算子范数与 $E\cong L\left(\mathbb K,E\right)$)
 
 设 $E,F,G$ 是赋范域 $\mathbb K$ 上的拓扑向量空间. 对 $f\in L\left(E,F\right)$, 右复合映射 $R_f:L\left(F,G\right)\to L\left(E,G\right)$, $g\mapsto g\circ f$. 证明 $R_f$ 的算子范数不超过 $f$ 的算子范数; 左复合同理. 证明映射 $E\to L\left(\mathbb K,E\right)$, $x\mapsto\left(\varphi_x:t\mapsto tx\right)$ 是等距线性同构.
 
-### 解答 习题八
+### 解答 8.8
 
 由**定义 6.24 (拓扑向量空间)**, $E,F,G$ 的加法与数乘连续; 由**定义 6.20 (赋范线性空间)**, 其上装备范数, $L\left(E,F\right)$ 为连续线性映射全体.
 
@@ -344,11 +344,11 @@ $$
 
 故等距. 它线性且保范数, 故单射; 满射: 任意 $\psi\in L\left(\mathbb K,E\right)$ 由 $\psi\left(1\right)\in E$ 决定, 即 $\psi=\varphi_{\psi\left(1\right)}$. 故为线性同构. $\blacksquare$
 
-## 习题九
+## 8.9 (无穷维空间中强拓扑与弱拓扑不同)
 
 证明: 若 $E$ 是无穷维拓扑向量空间, 则 $E$ 上强拓扑与弱拓扑不同. 计算弱拓扑下 $E$ 的开单位球的内部; 计算弱拓扑下 $E$ 的单位球面的闭包.
 
-### 解答 习题九
+### 解答 8.9
 
 由**定义 6.30 (弱拓扑)**, 弱拓扑是由 $E^*$ 中全体连续线性泛函诱导的初始拓扑. 由**定理 6.50 (哈恩-巴拿赫定理)**, $E^*$ 分离 $E$ 的点. 弱拓扑的基本邻域形如
 
@@ -364,19 +364,19 @@ $$
 
 **单位球面的弱闭包**: 由**定理 6.50 (哈恩-巴拿赫定理)**, 任意 $x_0$ 满足 $\left\|x_0\right\|\le1$ 都可被球面中点弱逼近: 若 $\left\|x_0\right\|< 1$, 沿任意方向取小步长即可进入球面; 若 $\left\|x_0\right\|=1$, $x_0$ 本身在球面上. 反之弱闭包不能超出闭单位球 (范数是弱下半连续的). 故弱闭包等于闭单位球 $\left\{x:\left\|x\right\|\le1\right\}$. $\blacksquare$
 
-## 习题十
+## 8.10 (弱星拓扑总是豪斯多夫)
 
 证明弱星拓扑总是豪斯多夫的.
 
-### 解答 习题十
+### 解答 8.10
 
 由**定义 6.31 (弱星拓扑)**, $E^*$ 上的弱星拓扑是由赋值映射 $\operatorname{ev}_x:E^*\to\mathbb R$, $\operatorname{ev}_x\left(\varphi\right)=\varphi\left(x\right)$, $x\in E$, 诱导的初始拓扑. 由**定义 3.22 (连续映射)**, $\operatorname{ev}_x$ 连续. 任取 $\varphi,\psi\in E^*$, $\varphi\neq\psi$. 由**定义 6.32 (拓扑对偶)** 二者为连续线性泛函, 存在 $x\in E$ 使 $\varphi\left(x\right)\neq\psi\left(x\right)$. 取不相交开区间 $I\ni\varphi\left(x\right)$, $J\ni\psi\left(x\right)$. 由**定义 3.14 (初始拓扑)**, $\operatorname{ev}_x^{-1}\left(I\right)$ 与 $\operatorname{ev}_x^{-1}\left(J\right)$ 是 $E^*$ 中不相交开集, 分别含 $\varphi,\psi$. 由**定义 3.10 (豪斯多夫空间)**, 弱星拓扑豪斯多夫. $\blacksquare$
 
-## 习题十一
+## 8.11 (由稠密子集诱导的初始拓扑与弱星拓扑在有界集上一致)
 
 设 $E$ 是 $\mathbb R$ 上赋范拓扑向量空间, $D\subset E$. 设 $E^*$ 装备由线性形式族 $\left\{\varphi_x:E^*\to\mathbb R\right\}_{x\in D}$ 诱导的初始拓扑. 证明该拓扑粗于 $E^*$ 上的弱星拓扑. 证明若 $D$ 在 $E$ 中稠密, 则在 $E^*$ 的所有 (对偶范数下) 有界集上, 该初始拓扑与弱星拓扑的限制相同.
 
-### 解答 习题十一
+### 解答 8.11
 
 **粗于弱星拓扑**: 由**定义 6.31 (弱星拓扑)**, 弱星拓扑由全部 $x\in E$ 的赋值诱导. 本题初始拓扑仅用 $x\in D\subset E$. 映射更少, 由**定义 3.14 (初始拓扑)** 的"最粗性", 用较少映射得到的拓扑粗于用全部映射得到的弱星拓扑.
 
@@ -388,11 +388,11 @@ $$
 
 首末两项由有界性与 $\left\|y-x_n\right\|$ 控制, 中间项由 $\varphi_\alpha\left(x_n\right)\to\varphi\left(x_n\right)$ 控制. 故 $\varphi_\alpha\left(y\right)\to\varphi\left(y\right)$ 对一切 $y\in E$, 即在弱星拓扑下收敛. 故两拓扑在有界集上一致. $\blacksquare$
 
-## 习题十二
+## 8.12 (半范数族定义的拓扑向量空间局部凸)
 
 证明: 由半范数族 $\left\{p_\alpha\right\}$ 定义的拓扑向量空间是局部凸的.
 
-### 解答 习题十二
+### 解答 8.12
 
 由**定义 6.25 (半范数)**, 每个 $p_\alpha:E\to\left[0,\infty\right)$ 满足齐次 $p_\alpha\left(\lambda x\right)=\left|\lambda\right|p_\alpha\left(x\right)$ 与三角不等式 $p_\alpha\left(x+y\right)\le p_\alpha\left(x\right)+p_\alpha\left(y\right)$.
 
@@ -404,11 +404,11 @@ $$
 
 故次水平集 $\left\{x:p_\alpha\left(x\right)\le r\right\}$ 是**定义 4.23 (凸集)**. 半范数拓扑的基本邻域是有限交 $\bigcap_{i=1}^n\left\{x:p_{\alpha_i}\left(x\right)< \varepsilon_i\right\}$, 凸集的有限交仍凸. 这些基本邻域构成 $0$ 的邻域基, 故由**定义 6.26 (局部凸空间)**, 空间局部凸. 又由**定义 6.24 (拓扑向量空间)**, 加法与数乘连续 (半范数拓扑即按**定义 3.18 (拓扑空间)** 以这些凸开集为基). $\blacksquare$
 
-## 习题十三
+## 8.13 (凸邻域的规范函数是半范数)
 
 证明: 若 $C$ 是 $0$ 的凸邻域, 则其规范函数是半范数.
 
-### 解答 习题十三
+### 解答 8.13
 
 由**定义 6.27 (规范函数)**, $\left\|x\right\|_C=\inf\left\{t> 0:x\in tC\right\}$. 由假设 $C$ 吸收 (凸邻域在拓扑向量空间中吸收, 即对任意 $x$ 存在 $t> 0$ 使 $x\in tC$), 下确界有限.
 
@@ -424,57 +424,57 @@ $$
 
 由**定义 6.25 (半范数)**, $\left\|\cdot\right\|_C$ 是半范数. $\blacksquare$
 
-## 习题十四
+## 8.14 ($\mathbb R^n$ 中稠密的凸集必为全空间)
 
 证明: 若 $\Omega$ 是 $\mathbb R^n$ 中的凸集且在 $\mathbb R^n$ 中稠密, 则 $\Omega=\mathbb R^n$.
 
-### 解答 习题十四
+### 解答 8.14
 
 由**定义 3.32 (稠密)**, $\overline\Omega=\mathbb R^n$. 由 $\Omega$ 是**定义 4.23 (凸集)**, 若它含一段开线段, 则沿该线段作小邻域可撑开一个开球. 具体地, 任取 $x\in\Omega$. 若 $\Omega\neq\mathbb R^n$, 取 $y\notin\Omega$. 沿连线 $\left[x,y\right]$, 由凸性整段在 $\Omega$ 中直到边界点. 由稠密性, $\Omega$ 含某个内点 $x_0$, 即存在开球 $B\left(x_0,r\right)\subset\Omega$. 对任意 $z\in\mathbb R^n$, 由稠密性可取 $w\in\Omega$ 充分接近 $z$. 由凸性, 以 $w$ 为顶点, 以 $B\left(x_0,r\right)$ 为底的锥形中所有点都在 $\Omega$ 中, 该锥形含一个以 $z$ 为中心的小球. 故 $\Omega$ 含非空开集且沿任意方向可撑开, 即 $\Omega$ 含一个非空开集. 但凸闭集 $\overline\Omega=\mathbb R^n$, 而凸集若含内点则其在边界上的延拓受凸性约束: 由分离定理, 若 $\Omega\neq\mathbb R^n$, 存在非零线性泛函在 $\Omega$ 上方有界, 这与 $\Omega$ 稠密矛盾. 故 $\Omega=\mathbb R^n$. $\blacksquare$
 
-## 习题十五
+## 8.15 (凸开集若任意两点共处一个内含开球则为开球)
 
 设 $\Omega$ 是赋范空间 $E$ 中的有界凸开集, 且满足: 任意两点 $x,y\in\Omega$ 都存在一个开球 $B\subset\Omega$ 使 $x,y\in B$. 证明 $\Omega$ 是一个开球.
 
-### 解答 习题十五
+### 解答 8.15
 
 设 $\Omega$ 有界且凸. 取 $x,y\in\Omega$. 由题设, 存在开球 $B\subset\Omega$ 含 $x,y$. 由 $\Omega$ 凸, 连线 $\left[x,y\right]\subset\Omega$.
 
 固定 $x\in\Omega$, 考虑所有含 $x$ 的开球 $B\subset\Omega$ 的半径的上确界, 由有界性它有限. 设 $B\left(c_x,r_x\right)$ 是含 $x$ 且半径最大的开球. 若 $\Omega$ 边界上存在两点使最大球不能同时覆盖, 则凸性迫使这些点位于与 $x$ 等距的超平面上, 这与"任意两点都可被某开球覆盖"矛盾: 取边界上关于 $c_x$ 对称的两点 $y_1,y_2$, 若它们不等距于某中心, 则不存在开球同时含二者且含于 $\Omega$. 这迫使 $\Omega$ 的边界处处曲率一致, 即 $\Omega$ 是一个开球. 具体地, 取 $\Omega$ 的外接圆, 其中心 $c$ 与半径 $r$ 由有界性存在; 由题设任意两点可被某开球覆盖, 故外接圆本身就是唯一的最大球, $\Omega=B\left(c,r\right)$. $\blacksquare$
 
-## 习题十六
+## 8.16 ($C\left(\left[0,1\right]\right)$ 在最大模范数下是巴拿赫空间)
 
 证明 $C\left(\left[0,1\right]\right)$ 在最大模范数 $\left\|f\right\|_\infty=\max_{x\in\left[0,1\right]}\left|f\left(x\right)\right|$ 下是巴拿赫空间.
 
-### 解答 习题十六
+### 解答 8.16
 
 最大范数满足**定义 6.20 (赋范线性空间)** 的三公理: 正定性 ($\left\|f\right\|_\infty=0$ 蕴含 $f=0$), 齐次, 三角不等式 (由 $\left|f+g\right|\le\left|f\right|+\left|g\right|$ 取 max).
 
 完备性: 设 $\left(f_n\right)$ 是 $C\left(\left[0,1\right]\right)$ 中的柯西列 (按 $\left\|\cdot\right\|_\infty$). 由**定理 6.6 (函数空间完备)**, $\left(Y^X,\text{一致度量}\right)$ 完备当 $Y$ 完备; $\mathbb R$ 完备, 故任意柯西列一致收敛到某函数 $f:\left[0,1\right]\to\mathbb R$. 一致收敛极限连续 (经典结论), 故 $f\in C\left(\left[0,1\right]\right)$. 由**定义 6.21 (巴拿赫空间)**, $C\left(\left[0,1\right]\right)$ 是巴拿赫空间. $\blacksquare$
 
-## 习题十七
+## 8.17 ($l^\infty$ 是巴拿赫空间)
 
 证明有界序列空间 $l^\infty$ 装备范数 $\left\|x\right\|_\infty=\sup_n\left|x_n\right|$ 是巴拿赫空间.
 
-### 解答 习题十七
+### 解答 8.17
 
 由**定义 6.20 (赋范线性空间)**, $\left\|\cdot\right\|_\infty$ 满足三公理.
 
 完备性: 设 $\left(x^{\left(m\right)}\right)$ 是 $l^\infty$ 中柯西列, 即 $\sup_n\left|x_n^{\left(m\right)}-x_n^{\left(k\right)}\right|\to0$. 对每个固定的 $n$, $\left(x_n^{\left(m\right)}\right)_m$ 是 $\mathbb R$ 中柯西列, 故收敛到 $x_n$. 由**定义 6.38 (完备度量空间)**, 需证 $x\in l^\infty$ 且 $\left\|x^{\left(m\right)}-x\right\|_\infty\to0$. 由柯西性取 $M$ 使 $m,k\ge M$ 时 $\sup_n\left|x_n^{\left(m\right)}-x_n^{\left(k\right)}\right|< 1$. 令 $k\to\infty$ 得 $\left|x_n^{\left(m\right)}-x_n\right|\le1$ 对一切 $n$, 故 $x_n^{\left(m\right)}-x\in l^\infty$, 从而 $x=\left(x^{\left(m\right)}-x\right)+x^{\left(m\right)}\in l^\infty$. 且 $\sup_n\left|x_n^{\left(m\right)}-x_n\right|\le\varepsilon$ 对 $m\ge M$, 即 $\left\|x^{\left(m\right)}-x\right\|_\infty\to0$. 由**定义 6.21 (巴拿赫空间)**, $l^\infty$ 完备. $\blacksquare$
 
-## 习题十八
+## 8.18 ($C^1\left(\left[0,1\right]\right)$ 在 $C^1$ 范数下不完备)
 
 证明 $C^1\left(\left[0,1\right]\right)$ (一次连续可微函数) 装备范数 $\left\|f\right\|=\max\left(\left\|f\right\|_\infty,\left\|f'\right\|_\infty\right)$ 不是巴拿赫空间.
 
-### 解答 习题十八
+### 解答 8.18
 
 反例: 取 $f_n\left(x\right)=\sqrt{x^2+1/n^2}$. 则 $f_n$ 连续可微, 且 $\left\|f_n-f_m\right\|_\infty\to0$ (一致收敛到 $\left|x\right|$). 同时 $\left\|f_n'\right\|_\infty\le1$ 有界. 但 $f_n\to\left|x\right|$ 在 $C\left(\left[0,1\right]\right)$ 中, 而 $\left|x\right|$ 在 $x=0$ 处不可导. 故 $\left(f_n\right)$ 在 $C^1\left(\left[0,1\right]\right)$ 的范数下是柯西列 (其差 $\left|f_n-f_m\right|$ 与 $\left|f_n'-f_m'\right|$ 都趋于 $0$), 但极限不在 $C^1$ 中. 由**定义 6.38 (完备度量空间)**, $C^1$ 不完备, 故不是**定义 6.21 (巴拿赫空间)**. $\blacksquare$
 
-## 习题十九
+## 8.19 (线性映射连续当且仅当有界)
 
 证明: 在赋范空间上, 线性映射连续当且仅当它是有界的.
 
-### 解答 习题十九
+### 解答 8.19
 
 由**定义 6.20 (赋范线性空间)**, 设 $T:E\to F$ 线性.
 
@@ -482,11 +482,11 @@ $$
 
 **($\Leftarrow$)** 若 $T$ 有界, 即 $\left\|Tx\right\|\le M\left\|x\right\|$ 对一切 $x$. 则对任意 $\varepsilon> 0$, 取 $\delta=\varepsilon/M$, 当 $\left\|x-y\right\|< \delta$ 时 $\left\|Tx-Ty\right\|=\left\|T\left(x-y\right)\right\|\le M\left\|x-y\right\|< \varepsilon$. 由**定义 6.28 (算子范数)** 的定义, $T$ 连续. $\blacksquare$
 
-## 习题二十
+## 8.20 ($\mathbb R\left[X\right]$ 上使 $X^n\to0$ 的范数)
 
 证明存在 $\mathbb R\left[X\right]$ 上的范数, 使 $X^n$ 在该范数下收敛到 $Q=0$ (即 $\left\|X^n\right\|\to0$).
 
-### 解答 习题二十
+### 解答 8.20
 
 由**定义 6.20 (赋范线性空间)**, 构造如下: 对多项式 $p=\sum_{k=0}^N a_k X^k$, 定义
 
@@ -496,11 +496,11 @@ $$
 
 这是范数 (正定性由 $e^{-k}> 0$ 保证, 齐次与三角不等式显然). 此时 $\left\|X^n\right\|=e^{-n}\to0$. 故 $X^n\to0=Q$ 在该范数下. $\blacksquare$
 
-## 习题二十一
+## 8.21 (算子复合映射连续)
 
 证明算子复合映射 $L\left(E,F\right)\times L\left(F,G\right)\to L\left(E,G\right)$, $\left(S,T\right)\mapsto T\circ S$ 连续.
 
-### 解答 习题二十一
+### 解答 8.21
 
 对 $\left(S_0,T_0\right)$, 当 $\left\|S-S_0\right\|< \varepsilon$, $\left\|T-T_0\right\|< \varepsilon$ 时,
 
@@ -510,29 +510,29 @@ $$
 
 在 $\left(S_0,T_0\right)$ 附近 $\left\|T\right\|$ 有界, 故上式趋于 $0$. 由复合连续, 复合映射连续. $\blacksquare$
 
-## 习题二十二
+## 8.22 (非完备度量空间不是贝尔空间)
 
 举例说明一个非完备度量空间不是贝尔空间.
 
-### 解答 习题二十二
+### 解答 8.22
 
 取 $\mathbb Q\subset\mathbb R$ 装备通常度量. $\mathbb Q$ 不完备. 每个单点 $\left\{q\right\}$ 在 $\mathbb Q$ 中是闭集且无处稠密 (其内部在 $\mathbb Q$ 中为空). 而 $\mathbb Q=\bigcup_{q\in\mathbb Q}\left\{q\right\}$ 是可数并. 由**定理 6.13 (贝尔纲定理)** 的逆否形式, 完备度量空间不能写成可数个无处稠密闭集之并, 故 $\mathbb Q$ 不是贝尔空间. $\blacksquare$
 
-## 习题二十三
+## 8.23 (范数连续与赋范空间豪斯多夫)
 
 证明赋范空间上的范数是连续函数; 赋范空间是豪斯多夫的.
 
-### 解答 习题二十三
+### 解答 8.23
 
 由**定义 6.20 (赋范线性空间)**, 由范数的反三角不等式 $\bigl|\left\|x\right\|-\left\|y\right\|\bigr|\le\left\|x-y\right\|$, 范数是利普希茨映射, 故连续.
 
 豪斯多夫: 设 $x\neq y$, 取 $r=\left\|x-y\right\|/3> 0$, 则开球 $B\left(x,r\right)$ 与 $B\left(y,r\right)$ 不相交 (若 $z$ 同时在二者中, 则 $\left\|x-y\right\|\le\left\|x-z\right\|+\left\|z-y\right\|< 2r< \left\|x-y\right\|$, 矛盾). 由**定义 3.10 (豪斯多夫空间)**, 赋范空间豪斯多夫. $\blacksquare$
 
-## 习题二十四
+## 8.24 (商范数使商空间成为赋范空间)
 
 设 $E$ 是赋范空间, $F\subset E$ 是闭子空间. 证明商范数使 $E/F$ 成为赋范空间.
 
-### 解答 习题二十四
+### 解答 8.24
 
 由**定义 6.29 (商范数)**, $\left\|\left[x\right]\right\|=\inf_{y\in F}\left\|x+y\right\|$. 非负显然. 齐次: $\left\|\lambda\left[x\right]\right\|=\inf_{y\in F}\left\|\lambda x+y\right\|=\left|\lambda\right|\inf_{y\in F}\left\|x+y/\lambda\right\|=\left|\lambda\right|\left\|\left[x\right]\right\|$.
 
@@ -546,53 +546,53 @@ $$
 
 正定性: 若 $\left\|\left[x\right]\right\|=0$, 则存在 $y_n\in F$ 使 $\left\|x+y_n\right\|\to0$, 即 $-y_n\to x$. 由 $F$ 闭, $x\in F$, 即 $\left[x\right]=0$. 由**定义 6.20 (赋范线性空间)**, $E/F$ 是赋范空间. $\blacksquare$
 
-## 习题二十五
+## 8.25 (超平面是非零连续线性泛函的核)
 
 证明: 拓扑向量空间 $E$ 中的超平面 $H$ 是核, 即存在非零连续线性泛函 $\varphi:E\to\mathbb K$ 使 $H=\ker\varphi$.
 
-### 解答 习题二十五
+### 解答 8.25
 
 由**定义 6.55 (超平面)**, $H$ 余维数为 $1$. 任取 $x_0\notin H$, 则 $E=H\oplus\mathbb K x_0$. 定义 $\varphi\left(h+\lambda x_0\right)=\lambda$. 它是**定义 6.56 (线性泛函)** 且核为 $H$.
 
 连续性: 若 $H$ 闭, 则 $E/H$ 一维赋范空间 (由**定义 6.20 (赋范线性空间)** 的商), $\varphi$ 诱导一维映射, 连续. 反之, 若 $\varphi$ 连续, 则 $H=\varphi^{-1}\left(\left\{0\right\}\right)$ 是 $\left\{0\right\}$ (闭) 的原像, 由**定义 3.22 (连续映射)** 与**定义 3.21 (闭集)**, $H$ 闭. $\blacksquare$
 
-## 习题二十六
+## 8.26 (开映射定理的推论：巴拿赫空间间的连续线性双射是同胚)
 
 叙述并证明开映射定理的一个推论: 巴拿赫空间之间的连续线性双射是同胚.
 
-### 解答 习题二十六
+### 解答 8.26
 
 设 $T:E\to F$ 是巴拿赫空间之间的连续线性双射. 由**定理 6.57 (开映射定理)**, $T$ 是开映射, 即 $T$ 把开集映为开集. 对任意开集 $U\subset E$, $T\left(U\right)$ 开于 $F$. 由**定义 3.22 (连续映射)**, $T^{-1}:F\to E$ 连续. 又 $T$ 连续, 由**定义 3.23 (同胚)**, $T$ 是同胚. $\blacksquare$
 
-## 习题二十七
+## 8.27 (巴拿赫–施坦豪斯的推论：弱收敛序列有界)
 
 叙述并证明巴拿赫-施坦豪斯定理的一个推论: 弱收敛的序列在赋范空间中是有界的.
 
-### 解答 习题二十七
+### 解答 8.27
 
 设 $\left(x_n\right)\subset E$ 弱收敛, 即对一切 $\varphi\in E^*$, $\varphi\left(x_n\right)$ 收敛, 从而有界. 视 $x_n$ 为 $E^{**}$ 中元素 (即 $x_n\left(\varphi\right)=\varphi\left(x_n\right)$). 由**定理 6.58 (巴拿赫-施坦豪斯定理)**, 逐点有界族 $\left\{x_n\right\}\subset E^{**}$ 一致有界, 即 $\sup_n\left\|x_n\right\|< \infty$. 由**定义 3.22 (连续映射)** 的赋范版本, $\left(x_n\right)$ 有界. $\blacksquare$
 
-## 习题二十八
+## 8.28 (巴拿赫–绍德的推论：紧凸集上连续映射有不动点)
 
 叙述并证明巴拿赫-绍德不动点定理的一个推论: 紧凸集到自身的连续映射有不动点.
 
-### 解答 习题二十八
+### 解答 8.28
 
 由**定理 6.59 (巴拿赫-绍德不动点定理)**, 设 $K\subset E$ 紧凸, $f:K\to K$ 连续. 紧凸集可被有限维逼近 (绍德尔逼近), 在每片上用有限维不动点定理 (布劳威尔不动点定理), 再取极限即得不动点. 这正是该定理的标准推论. $\blacksquare$
 
-## 习题二十九
+## 8.29 (无穷维赋范空间不是可数个有限维子空间之并)
 
 证明: 无穷维赋范空间不能写成可数个有限维子空间之并.
 
-### 解答 习题二十九
+### 解答 8.29
 
 由**定义 6.21 (巴拿赫空间)**, 完备赋范空间不能写成可数个真闭子空间之并. 每个有限维子空间是闭的 (有限维子空间闭). 若 $E=\bigcup_{k=1}^{\infty}F_k$ 其中每个 $F_k$ 有限维, 则由**定理 6.14 (递增闭集族)**, 某 $F_k$ 有非空内部. 但有限维真子空间的内部为空 (否则它含一个开球, 由线性性撑开整个 $E$, 与真子空间矛盾). 故每个 $F_k$ 内部为空. 与**定理 6.13 (贝尔纲定理)** 矛盾. $\blacksquare$
 
-## 习题三十
+## 8.30 (逐点收敛的泛函列在完备空间上有界，且极限连续)
 
 设 $E$ 是赋范空间, $\left(f_n\right)\subset E^*$ 逐点收敛到 $f$. 证明: 若 $E$ 完备, 则 $f$ 连续且 $\left\|f_n\right\|$ 有界.
 
-### 解答 习题三十
+### 解答 8.30
 
 由逐点收敛, $\left(f_n\left(x\right)\right)$ 对每个 $x$ 有界. 由**定理 6.14 (递增闭集族)** (或等价地贝尔纲), 存在 $N$ 与非空开集 $U\subset E$ 使 $\sup_{x\in U}\left|f_n\left(x\right)\right|\le N$ 对一切 $n$. 由开集 $U$ 含一个小球 $B\left(x_0,r\right)$, 对任意 $\left\|h\right\|< r$, $x_0+h\in U$, 故
 
@@ -602,11 +602,11 @@ $$
 
 即 $\left\|f_n\right\|\le2N/r$. 故 $\left(f_n\right)$ 一致有界. 极限 $f$ 由逐点收敛定义, 且 $\left|f\left(h\right)\right|\le\liminf\left|f_n\left(h\right)\right|\le\left(2N/r\right)\left\|h\right\|$, 故 $f$ 连续. $\blacksquare$
 
-## 习题三十一
+## 8.31 ($l^p$ 严格包含于 $l^q$，且 $l^p$ 在 $l^q$ 中闭)
 
 证明: 对 $1\le p< q\le\infty$, $l^p\subsetneq l^q$. 进一步证明 $l^p$ 在 $l^q$ 中闭.
 
-### 解答 习题三十一
+### 解答 8.31
 
 包含 $\subset$: 若 $\sum_n\left|x_n\right|^p< \infty$, 则 $\left|x_n\right|\to0$, 故 $\left(x_n\right)$ 有界, 从而 $\sup_n\left|x_n\right|< \infty$, 即 $x\in l^\infty$. 对有限 $q> p$, 由 $\left|x_n\right|\to0$, 存在 $N$ 使 $n\ge N$ 时 $\left|x_n\right|\le1$, 于是 $\left|x_n\right|^q\le\left|x_n\right|^p$, 故 $\sum_n\left|x_n\right|^q< \infty$.
 

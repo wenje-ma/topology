@@ -158,7 +158,7 @@
 > 
 > 每一个具有可数基的正则空间都是可度量化的. (《拓扑学》(原书第2版) §34 定理 34.1, p165; 教材 §7 定理 7.3, p43 表述为正规空间加可数基可度量化, 而正则加可数基蕴含正规)
 
-## 习题一
+## 4.1 (弗斯滕伯格拓扑的开集刻画与素数无穷)
 
 在 $\mathbb Z$ 上以非平凡等差数列 $S\left(a,b\right)=a\mathbb Z+b=\left\{an+b:n\in\mathbb Z\right\}$ ($a\neq0$) 为基定义拓扑, 即**定义 4.11 (弗斯滕伯格拓扑)**.
 
@@ -174,7 +174,7 @@
 
 (6) 证明素数有无穷多个 (弗斯滕伯格的拓扑证明).
 
-### 解答 习题一
+### 解答 4.1
 
 **(1)** 由**定义 3.15 (拓扑基)**, 开集恰为若干 $S\left(a,b\right)$ 之并. 若 $U$ 开且 $x\in U$, 则 $x$ 含于某个并项 $S\left(a,b\right)\subset U$, 而 $x\in S\left(a,b\right)$ 等价于 $b\equiv x\pmod a$, 即 $S\left(a,b\right)=S\left(a,x\right)$. 故存在 $a\neq0$ 使 $S\left(a,x\right)\subset U$. 反过来, 若每点 $x\in U$ 都含某 $S\left(a,x\right)\subset U$, 则 $U=\bigcup_{x\in U}S\left(a_x,x\right)$ 是基元素之并, 故开.
 
@@ -210,7 +210,7 @@ $$
 
 由第 (4) 小题每个 $S\left(p_i,0\right)$ 既开又闭, 有限个既开又闭集之并仍既开又闭 (**定义 4.19 (既开又闭集)**). 故 $\mathbb Z-\left\{-1,1\right\}$ 既开又闭, 其补集 $\left\{-1,1\right\}$ 也既开又闭. 但由第 (3) 小题 $\left\{-1,1\right\}$ 非空有限, 不能开, 矛盾. 故素数有无穷多个. $\blacksquare$
 
-## 习题二
+## 4.2 (戈洛姆拓扑与基尔希拓扑的基约化)
 
 在 $\mathbb Z_{> 0}$ 上分别用 (非平凡) 等差数列 $a\mathbb N+b=\left\{an+b:n\in\mathbb N\right\}$ ($a,b$ 互素) 与 $p\mathbb N+b=\left\{pn+b:n\in\mathbb N\right\}$ ($p$ 为素数且 $p\nmid b$) 为基 (前者) 与子基 (后者) 定义两个拓扑.
 
@@ -222,7 +222,7 @@ $$
 
 (4) (基尔希) 验证这确实给出 $\mathbb Z_{> 0}$ 上的拓扑.
 
-### 解答 习题二
+### 解答 4.2
 
 **(1)** 对基元素 $S\left(a,b\right)=\left\{an+b:n\in\mathbb N\right\}$, $\gcd\left(a,b\right)=1$. 作带余除法 $b=qa+r$, $0\le r< a$. 则 $\gcd\left(a,r\right)=\gcd\left(a,b\right)=1$, 且 $S\left(a,b\right)=\left\{a\left(n+q\right)+r:n\in\mathbb N\right\}\subset S\left(a,r\right)$. 反之, 对 $x=an_0+b\in S\left(a,b\right)$, $\gcd\left(a,x\right)=\gcd\left(a,an_0+b\right)=\gcd\left(a,b\right)=1$, 于是
 
@@ -244,7 +244,7 @@ $$
 
 由中国剩余定理 为 $\left\{x\equiv b_i\pmod{p_i}\right\}=S\left(M,x_0\right)$, 其中 $M=p_1\cdots p_k$, $p_i\nmid x_0$. 两个这样的有限交之交仍是同形的有限交. 故有限交全体构成一个基, 由**定义 3.15 (拓扑基)** 与**定义 3.18 (拓扑空间)** 生成 $\mathbb Z_{> 0}$ 上的**定义 4.13 (基尔希拓扑)**. $\blacksquare$
 
-## 习题三
+## 4.3 (三种等差数列拓扑的豪斯多夫性、正则性与连通性)
 
 考察上述拓扑的拓扑性质.
 
@@ -254,11 +254,11 @@ $$
 
 (3) 证明弗斯滕伯格拓扑完全不连通, 戈洛姆拓扑连通但不局部连通, 基尔希拓扑既连通又局部连通.
 
-### 解答 习题三
+### 解答 4.3
 
 **(1) 豪斯多夫:** 取 $x\neq y$. 选非零 $a$ 使 $a> \left|x-y\right|$. 若 $S\left(a,x\right)\cap S\left(a,y\right)\neq\emptyset$, 则 $x+an=y+am$, 即 $a\left(n-m\right)=y-x$, 与 $a> \left|x-y\right|$ 矛盾. 故 $S\left(a,x\right)$ 与 $S\left(a,y\right)$ 不相交. 由**定义 3.10 (豪斯多夫空间)**, 弗斯滕伯格拓扑是豪斯多夫的. 由**定义 3.33 ($T_1$ 空间)**, 单点集皆闭.
 
-**正则:** 设 $A$ 闭, $x\notin A$. 则 $\mathbb Z-A$ 是开集且含 $x$, 由习题一第 (1) 小题存在 $a\neq0$ 使 $S\left(a,x\right)\subset\mathbb Z-A$, 即 $S\left(a,x\right)\cap A=\emptyset$. 由习题一第 (4) 小题 $S\left(a,x\right)$ 既开又闭 (**定义 4.19 (既开又闭集)**), 且 $A\subset\mathbb Z-S\left(a,x\right)$, 后者开. 故 $x$ 与 $A$ 有不相交开邻域, 由**定义 7.7 (正则空间)** 弗斯滕伯格拓扑正则.
+**正则:** 设 $A$ 闭, $x\notin A$. 则 $\mathbb Z-A$ 是开集且含 $x$, 由习题 4.1 第 (1) 小题存在 $a\neq0$ 使 $S\left(a,x\right)\subset\mathbb Z-A$, 即 $S\left(a,x\right)\cap A=\emptyset$. 由习题 4.1 第 (4) 小题 $S\left(a,x\right)$ 既开又闭 (**定义 4.19 (既开又闭集)**), 且 $A\subset\mathbb Z-S\left(a,x\right)$, 后者开. 故 $x$ 与 $A$ 有不相交开邻域, 由**定义 7.7 (正则空间)** 弗斯滕伯格拓扑正则.
 
 **可度量化与同胚于 $\mathbb Q$:** $\mathbb Z$ 可数, 故该拓扑有可数基; 由**定理 34.1 (乌雷松度量化定理)**, 有可数基的正则空间可度量化. 又该拓扑无孤立点: 每点 $x$ 的邻域 $S\left(a,x\right)$ 无限. 由**定理 4.16 (谢尔宾斯基同胚定理)**, 任意两个无孤立点的可数可度量化空间互相同胚, 故它与带通常子空间拓扑的 $\mathbb Q$ 同胚.
 
@@ -268,7 +268,7 @@ $$
 
 **不正则:** 以戈洛姆拓扑为例. 取闭集 $E$ 为全体偶正整数 (奇数集开: 对奇 $x$, $S\left(2,x\right)=\left\{x+2n\right\}$ 全奇且 $\gcd\left(2,x\right)=1$), 再取点 $1$. 点 $1$ 的任一邻域形如 $S\left(a,1\right)=\left\{1+an:n\in\mathbb N\right\}$, 而含偶数 $2$ 的任一开集必含某 $S\left(b,2\right)=\left\{2+bn:n\in\mathbb N\right\}$ ($\gcd\left(b,2\right)=1$, 即 $b$ 奇). 由同余式相容, $S\left(a,1\right)\cap S\left(b,2\right)$ 非空, 故无法用不相交开集分离 $1$ 与闭集 $E$. 由**定义 7.7 (正则空间)**, 戈洛姆拓扑不正则. 基尔希拓扑同理不正则.
 
-**(3) 弗斯滕伯格完全不连通:** 取 $x\neq y$. 选 $a$ 使 $y\notin S\left(a,x\right)$. 由习题一第 (4) 小题 $S\left(a,x\right)$ 既开又闭且含 $x$ 不含 $y$, 故任何同时含 $x,y$ 的子集都被这个非平凡既开又闭集切断, 不能连通. 由**定义 4.20 (完全不连通)**, 弗斯滕伯格拓扑完全不连通.
+**(3) 弗斯滕伯格完全不连通:** 取 $x\neq y$. 选 $a$ 使 $y\notin S\left(a,x\right)$. 由习题 4.1 第 (4) 小题 $S\left(a,x\right)$ 既开又闭且含 $x$ 不含 $y$, 故任何同时含 $x,y$ 的子集都被这个非平凡既开又闭集切断, 不能连通. 由**定义 4.20 (完全不连通)**, 弗斯滕伯格拓扑完全不连通.
 
 **戈洛姆连通:** 设 $C$ 既开又闭且 $1\in C$. 由标准归纳 (取 $\mathbb Z_{> 0}-C$ 中最小元 $n$, 由于开集 $C$ 必然含 $S\left(a,1\right)$, 可推出 $n\in C$), 得 $C=\mathbb Z_{> 0}$. 故 $\mathbb Z_{> 0}$ 仅有的既开又闭非空集是全空间, 由**定义 4.18 (连通空间)** 戈洛姆拓扑连通. 它不**定义 4.9 (局部连通)**: 点 $1$ 的任一邻域 $S\left(a,1\right)$ 都含非平凡既开又闭子集, 故没有连通邻域基.
 
@@ -276,7 +276,7 @@ $$
 
 > 三个拓扑的精细程度为: $\text{弗斯滕伯格}> \text{戈洛姆}> \text{基尔希}$, 因此 (3) 的结论从直觉上也是成立的. 具体说来, 基尔希连通且局部连通是最粗糙的例子, 因为 $S\left(A,B\right)$ 中的 $A$ 只能是不同素数的乘积, 这导致其局部无法再被分割, 因为找不到更细的 $S$ 了; 而戈洛姆不局部连通, 是因为 $S\left(A,B\right)$ 中的 $A$ 可以是素数的幂, 此时的选择更多, 可以找到更细的 $S$; 弗斯滕伯格不联通, 是因为 $S\left(A,B\right)$ 中的 $A$ 可以是任意数, 此时的选择最多, 以至于 $X$ 可以任意被分割.
 
-## 习题四
+## 4.4 (平面区域的单连通与 $n$ 重连通)
 
 (单连通性) 平面区域 $G\subset\mathbb R^2$ 指开且路径连通的子集. 若其余集连通, 称 $G$ 单连通; 若余集由 $n$ 个连通分支组成, 称 $G$ $n$ 重连通. 证明:
 
@@ -288,7 +288,7 @@ $$
 
 (4) $n$ 重连通区域只能连续映到另一个 $n$ 重连通区域; 反过来, 任意两个 $n$ 重连通区域之间是否必有同胚?
 
-### 解答 习题四
+### 解答 4.4
 
 **(1)** $G$ 开, 故由**定义 3.21 (闭集)**, $\mathbb R^2\setminus G$ 闭. 连通分支是闭的 (由**定义 4.18 (连通空间)** 配合分支含其闭包, 而闭包仍连通, 故分支闭). 故 $F$ 闭.
 
@@ -298,11 +298,11 @@ $$
 
 **(4)** 平面 $n$ 重连通区域彼此同胚 (同胚于带 $n-1$ 个洞的圆盘), 故连续双射 (进而同胚) 保持分支数. 反过来: 是, 任意两个 $n$ 重连通平面区域之间存在同胚. 由**定理 4.3 (路径连通蕴含连通)** 与**定义 4.18 (连通空间)** 可作拓扑分类. (阿尔福斯五岛定理是复分析值分布的著名结果, 可自行检索.) $\blacksquare$
 
-## 习题五
+## 4.5 (删齿梳空间的路径分支与证明回顾)
 
 (证明回顾) 回顾路径连通的定义. 回顾删齿梳空间的定义及其非路径连通性的证明. 问: 删齿梳空间有多少个路径连通分支? 若现在允许路径由 $f:\left[0,\infty\right)\to X$ 连续参数化, 同一证明还成立吗? 课上另一个用紧致性的证明呢?
 
-### 解答 习题五
+### 解答 4.5
 
 由**定义 4.22 (路径连通)**, $X$ 路径连通指任意两点间有连续路径. 删齿梳空间指
 
@@ -314,7 +314,7 @@ $$
 
 改用 $\left[0,\infty\right)$ 参数化时, 上述连通性论证在首个逃逸时刻附近局部成立, 不依赖定义域紧致, 故仍无路径. 课上用紧致性的证明 (连续像 $\gamma\left(\left[0,1\right]\right)$ 紧致, 由**定理 5.1 (紧空间连续像紧)**) 对 $\left[0,\infty\right)$ 失效, 但连通性证明已足够. $\blacksquare$
 
-## 习题六
+## 4.6 (差商的像与导函数的值域)
 
 (2024年卷A 题目一) 设 $f:\mathbb R\to\mathbb R$ 可微但不假设 $f'$ 连续, $I\subset\mathbb R$ 为非平凡开区间.
 
@@ -326,7 +326,7 @@ $$
 
 (4) 证明 $f'\left(I\right)$ 是区间.
 
-### 解答 习题六
+### 解答 4.6
 
 **(1)** $A$ 由不等式 $x< y$ 定义, 是凸集; 由**定义 4.23 (凸集)**, 凸集路径连通, 再由**定理 4.3 (路径连通蕴含连通)**, $A$ 连通.
 
@@ -336,7 +336,7 @@ $$
 
 **(4)** $\Gamma$ 连通故是区间; 闭包 $\overline\Gamma$ 也是区间 (连通集的闭包仍连通); $f'\left(I\right)$ 夹在二者之间, 故 $f'\left(I\right)$ 是区间. $\blacksquare$
 
-## 习题七
+## 4.7 (商映射保持连通性、路径连通性与局部连通性)
 
 设 $X$ 是拓扑空间, $\pi:X\to Y$ 是商映射, $Y$ 配以由 $\pi$ 诱导的商拓扑.
 
@@ -346,7 +346,7 @@ $$
 
 (3) 证明若 $\pi$ 是开映射且 $X$ 局部连通 (分别: 局部路径连通), 则 $Y$ 局部连通 (分别: 局部路径连通).
 
-### 解答 习题七
+### 解答 4.7
 
 **第 (1) 小题:** 反证. 若 $Y$ 不连通, 由**定义 4.18 (连通空间)** 存在不相交非空开集 $V,W\subset Y$ 使 $Y=V\sqcup W$. 由**定义 11.2 (粘合映射)**, $\pi^{-1}\left(V\right)$ 与 $\pi^{-1}\left(W\right)$ 是 $X$ 中不相交非空开集, 且 $X=\pi^{-1}\left(V\right)\cup\pi^{-1}\left(W\right)$. 由**定义 4.18 (连通空间)**, 这与 $X$ 连通矛盾. 故 $Y$ 连通.
 
@@ -354,11 +354,11 @@ $$
 
 **第 (3) 小题:** 只证局部连通情形, 局部路径连通完全平行. 任取 $y\in Y$ 与由**定义 3.25 (邻域与极限)** 给出的开邻域 $O\subset Y$. 取 $x\in\pi^{-1}\left(y\right)$. 由**定义 11.2 (粘合映射)**, $\pi^{-1}\left(O\right)$ 是 $x$ 的开邻域. 由 $X$ 局部连通与**定义 4.9 (局部连通)**, 存在连通开集 $U\subset X$ 使 $x\in U\subset\pi^{-1}\left(O\right)$. 因 $\pi$ 是开映射, $\pi\left(U\right)$ 是 $Y$ 中开集; 它含 $y$, 含于 $O$, 且由**定理 4.2 (连续像连通)** 它连通. 故 $y$ 有含于 $O$ 的连通开邻域, $Y$ 局部连通. 对局部路径连通, 把 "连通开集" 换成 "路径连通开集", 由**定义 4.10 (局部路径连通)** 同样在每点取得路径连通开邻域, 再由**定理 3.1 (复合连续)** 路径的连续像仍是路径, 故 $\pi\left(U\right)$ 路径连通, 即得 $Y$ 局部路径连通. $\blacksquare$
 
-## 习题八
+## 4.8 (无穷维赋范空间中紧集的余集道路连通)
 
 设 $E$ 是无穷维赋范线性空间, $K\subset E$ 是紧集. 证明 $E\setminus K$ 道路连通. 问有限维赋范线性空间中此结论是否成立?
 
-### 解答 习题八
+### 解答 4.8
 
 **无穷维情形:** 由**定理 6.17 (里茨定理)**, 无穷维赋范线性空间的闭单位球非紧, 故任何紧集 $K$ 必无内部 (否则 $K$ 含某闭球的平移, 该闭球紧, 与里茨定理矛盾).
 
@@ -368,11 +368,11 @@ $$
 
 **有限维情形:** 结论不成立. 取 $E=\mathbb R^2$, $K=S^1=\left\{\left(u,v\right):u^2+v^2=1\right\}$. $S^1$ 由**定理 5.3 ($\mathbb R^n$ 中的紧集)** 是闭有界集, 故紧. 但 $\mathbb R^2\setminus S^1=\left\{u^2+v^2< 1\right\}\cup\left\{u^2+v^2> 1\right\}$ 是两个非空不相交开集之并, 由**定义 4.18 (连通空间)** 不连通, 因而不道路连通. $\blacksquare$
 
-## 习题九
+## 4.9 (等值集皆紧的连续函数必取到极值)
 
 设 $f:\mathbb R^n\to\mathbb R$ 连续, $n\ge 2$, 且对每个 $a\in\mathbb R$, 等值集 $f^{-1}\left(a\right)$ 紧. 证明 $f$ 取得全局极值 (上确界或下确界之一达到). 问 $n=1$ 时结论如何?
 
-### 解答 习题九
+### 解答 4.9
 
 取定 $a$ 使 $f^{-1}\left(a\right)\neq\emptyset$ (若非空), 即存在 $x_0$ 使 $f\left(x_0\right)=a$. 由假设 $f^{-1}\left(a\right)$ 紧, 由**定理 5.3 ($\mathbb R^n$ 中的紧集)** 它是闭有界集, 故存在 $R> 0$ 使 $f^{-1}\left(a\right)\subset B\left(0,R\right)$.
 
@@ -386,15 +386,15 @@ $$
 
 **$n=1$:** 结论不成立. 取 $f\left(x\right)=x$, 则 $f^{-1}\left(a\right)=\left\{a\right\}$ 是单点集紧, 但 $f:\mathbb R\to\mathbb R$ 既无最大值也无最小值. $\blacksquare$
 
-## 习题十
+## 4.10 (超平面的余集道路连通当且仅当超平面不闭)
 
 设 $E$ 是赋范线性空间, $H$ 是超平面. 证明 $E\setminus H$ 道路连通当且仅当 $H$ 不是闭集.
 
 注: 题集原文误作 "当且仅当 $H$ 是闭集", 与其附证方向不符 (附证证的正是 $H$ 非闭时道路连通, $H$ 闭时 $E\setminus H$ 分裂为两个凸分支); 此处按数学本意改正.
 
-### 解答 习题十
+### 解答 4.10
 
-取线性泛函 $\varphi$ 使 $H=\ker\varphi$ (习题三). 记
+取线性泛函 $\varphi$ 使 $H=\ker\varphi$ (习题 8.25). 记
 
 $$
 H^{-}=\varphi^{-1}\left(\left(-\infty,0\right)\right),\quad H^{+}=\varphi^{-1}\left(\left(0,\infty\right)\right).
@@ -402,13 +402,13 @@ $$
 
 由 $\varphi$ 线性, $H^{-}$ 与 $H^{+}$ 都是凸集, 由**定义 4.23 (凸集)** 它们道路连通.
 
-**($H$ 闭 $\Rightarrow$ $E\setminus H$ 不道路连通):** 由习题三, $H$ 闭时 $\varphi$ 连续. 由**定义 3.22 (连续映射)**, $H^{-}$ 与 $H^{+}$ 都是开集, 且 $E\setminus H=H^{-}\sqcup H^{+}$ 是两个非空不相交开集之并. 由**定义 4.18 (连通空间)**, $E\setminus H$ 不连通, 故不道路连通. 直观地, 若有连续路径 $\gamma:\left[0,1\right]\to E\setminus H$ 从 $H^{-}$ 到 $H^{+}$, 则 $\varphi\circ\gamma$ 是**定理 4.1 (区间连通)** 上的连续实函数, 在两端异号, 由连续函数的介值定理 必取 $0$, 即某 $\gamma\left(t\right)\in H$, 矛盾.
+**($H$ 闭 $\Rightarrow$ $E\setminus H$ 不道路连通):** 由习题 8.25, $H$ 闭时 $\varphi$ 连续. 由**定义 3.22 (连续映射)**, $H^{-}$ 与 $H^{+}$ 都是开集, 且 $E\setminus H=H^{-}\sqcup H^{+}$ 是两个非空不相交开集之并. 由**定义 4.18 (连通空间)**, $E\setminus H$ 不连通, 故不道路连通. 直观地, 若有连续路径 $\gamma:\left[0,1\right]\to E\setminus H$ 从 $H^{-}$ 到 $H^{+}$, 则 $\varphi\circ\gamma$ 是**定理 4.1 (区间连通)** 上的连续实函数, 在两端异号, 由连续函数的介值定理 必取 $0$, 即某 $\gamma\left(t\right)\in H$, 矛盾.
 
-**($H$ 不闭 $\Rightarrow$ $E\setminus H$ 道路连通):** 由习题三, $H$ 不闭时 $\varphi$ 不连续, 此时 $\overline H=E$ (即 $H$ 在 $E$ 中稠密). 取 $e\in E$ 使 $\varphi\left(e\right)=1$. 则 $\varphi^{-1}\left(1\right)=e+H$ 在 $E$ 中稠密 (平移不改变稠密性). 任取 $-e\in H^{-}$ ($\varphi\left(-e\right)=-1$), 由**定义 3.32 (稠密)** 可取序列 $x_n\in e+H$ 使 $x_n\to -e$, 且不妨设 $x_1=e$.
+**($H$ 不闭 $\Rightarrow$ $E\setminus H$ 道路连通):** 由习题 8.25, $H$ 不闭时 $\varphi$ 不连续, 此时 $\overline H=E$ (即 $H$ 在 $E$ 中稠密). 取 $e\in E$ 使 $\varphi\left(e\right)=1$. 则 $\varphi^{-1}\left(1\right)=e+H$ 在 $E$ 中稠密 (平移不改变稠密性). 任取 $-e\in H^{-}$ ($\varphi\left(-e\right)=-1$), 由**定义 3.32 (稠密)** 可取序列 $x_n\in e+H$ 使 $x_n\to -e$, 且不妨设 $x_1=e$.
 
 定义路径 $\gamma:\left[0,1\right]\to E$: 在 $t\in\left[1/\left(k+1\right),1/k\right]$ 上, $\gamma$ 沿直线段从 $x_{k+1}$ 走到 $x_k$, 并令 $\gamma\left(0\right)=-e$. 因 $x_n\to -e$, 该折线在 $0$ 处连续. 对 $t> 0$, $\gamma\left(t\right)\in e+H$, 故 $\varphi\left(\gamma\left(t\right)\right)=1$; 而 $\varphi\left(\gamma\left(0\right)\right)=\varphi\left(-e\right)=-1$. 故 $\gamma$ 全段在 $E\setminus H$ 中, 从 $-e$ 连到 $e$. 由**定义 4.22 (路径连通)**, $H^{-}$ 与 $H^{+}$ 各自道路连通, 任意两点可经 $-e\to e$ 折线互相连通. 故 $E\setminus H$ 道路连通. $\blacksquare$
 
-## 习题十一
+## 4.11 (不动点性质、截面连通与 $\left[0,1\right]$ 上映射的不动点)
 
 (7.2 连通性)
 
@@ -418,7 +418,7 @@ $$
 
 (3) 设 $f:\left[0,1\right]\to\left[0,1\right]$. (a) 设 $f$ 非递减 (不必连续). 证明 $f$ 有不动点. (b) 设 $f$ 连续 (不必递增). 证明 $f$ 有不动点. (c) 设 $f,g:\left[0,1\right]\to\left[0,1\right]$ 连续且 $f\circ g=g\circ f$. 证明存在 $a\in\left[0,1\right]$ 使 $f\left(a\right)=g\left(a\right)$. (d) 设 $f:\mathbb R\to\mathbb R$ 连续, 且 $f\circ f$ 有不动点. 证明 $f$ 有不动点.
 
-### 解答 习题十一
+### 解答 4.11
 
 **第 (1) 小题:** 反证. 若 $E$ 不连通, 由**定义 4.18 (连通空间)**, $E=U\sqcup V$, 其中 $U,V$ 是非空不相交开集. 取 $u\in U$, $v\in V$. 定义 $f:E\to E$ 为 $f\left(U\right)=\left\{v\right\}$, $f\left(V\right)=\left\{u\right\}$. 由**定义 3.22 (连续映射)**, $f$ 连续 (常值映射在开集上连续, 拼接不相交开集). 但 $f$ 无不动点: 对 $x\in U$, $f\left(x\right)=v\notin U$; 对 $x\in V$, $f\left(x\right)=u\notin V$. 矛盾. 故 $E$ 连通.
 
@@ -440,7 +440,7 @@ $$
 
 **(d):** 设 $f\circ f$ 有不动点 $p$, 即 $f\left(f\left(p\right)\right)=p$. 若 $f\left(p\right)=p$, 则 $p$ 已是 $f$ 的不动点. 若 $f\left(p\right)\neq p$, 令 $h\left(x\right)=f\left(x\right)-x$. 则 $h\left(p\right)=f\left(p\right)-p$ 与 $h\left(f\left(p\right)\right)=f\left(f\left(p\right)\right)-f\left(p\right)=p-f\left(p\right)$ 异号. 由**定理 4.1 (区间连通)** 与连续函数的介值定理, $h$ 在 $p$ 与 $f\left(p\right)$ 之间有零点 $a$, 即 $f\left(a\right)=a$. $\blacksquare$
 
-## 习题十二
+## 4.12 (差商像的连通性与导函数的值域（2024 卷 A 题一重述）)
 
 考虑一个可微的函数 $f:\mathbb R\to\mathbb R$, 但不假设 $f'$ 是连续的. 取 $\mathbb R$ 上一个非平凡开区间 $I$.
 
@@ -452,7 +452,7 @@ $$
 
 (4) (5 分) 证明 $f'\left(I\right)$ 是 $\mathbb R$ 中的一个区间.
 
-### 解答 习题十二
+### 解答 4.12
 
 **(1)** 任取两点 $P_1=\left(x_1,y_1\right),P_2=\left(x_2,y_2\right)\in A$, 则 $x_1< y_1$ 且 $x_2< y_2$. 对 $t\in\left[0,1\right]$, 线段上的点为 $x\left(t\right)=\left(1-t\right)x_1+tx_2$, $y\left(t\right)=\left(1-t\right)y_1+ty_2$. 于是
 
@@ -470,7 +470,7 @@ $$
 
 **(4)** 由第 (2) 小题, $\Gamma$ 是 $\mathbb R$ 中的连通集, 而 $\mathbb R$ 中连通集必为区间 (若 $a< c< b$ 且 $a,b\in S$, $c\notin S$, 则 $S=\left(S\cap\left(-\infty,c\right)\right)\cup\left(S\cap\left(c,\infty\right)\right)$ 是一个分离, 矛盾). 故 $\Gamma$ 是区间. 由第 (3) 小题, $\Gamma\subset f'\left(I\right)\subset\overline{\Gamma}$. 一个区间与其闭包之间的差别至多是它的两个端点; 在区间上任意添去两端点的一个子集仍得区间. 因此夹在区间 $\Gamma$ 与 $\overline{\Gamma}$ 之间的 $f'\left(I\right)$ 仍是区间. $\blacksquare$
 
-## 习题十三
+## 4.13 (无界闭凸集含一条从原点出发的无穷射线)
 
 考虑一个 $\mathbb R^2$ 中的闭集 $A$. 还假设 $A$ 是一个凸集, 原点 $O\in A$, 并且 $A$ 不是有界的.
 
@@ -480,7 +480,7 @@ $$
 
 (3) (10 分) 证明 $A$ 包含一条从原点出发的长度无穷的半直线.
 
-### 解答 习题十三
+### 解答 4.13
 
 **(1)** 因 $A$ 无界, 对每个 $p$, 存在 $M_p\in A$ 使 $\left|M_p\right|\ge p$ (否则 $A$ 含于半径 $p$ 的球内, 有界). 由**定义 4.23 (凸集)**, $O\in A$ 与 $M_p\in A$ 的连线线段 $OM_p$ 含于 $A$, 且其长度 $\left|OM_p\right|=\left|M_p\right|\ge p$.
 
@@ -488,7 +488,7 @@ $$
 
 **(3)** 固定 $\lambda\ge0$. 对充分大的 $j$, $r_{p_j}\ge\lambda$ (因 $r_{p_j}\ge p_j\to\infty$). 由**定义 4.23 (凸集)**, $\lambda u_{p_j}=\frac{\lambda}{r_{p_j}}M_{p_j}+\left(1-\frac{\lambda}{r_{p_j}}\right)O$ 是 $M_{p_j}$ 与 $O$ 的凸组合, 故 $\lambda u_{p_j}\in A$. 当 $j\to\infty$, $u_{p_j}\to u$, 故 $\lambda u_{p_j}\to\lambda u$. 因 $A$ 闭 (由**定义 3.21 (闭集)**, 闭集含其序列极限), $\lambda u\in A$. 由 $\lambda\ge0$ 任意, 半直线 $\left\{\lambda u:\lambda\ge0\right\}\subset A$, 即 $A$ 含一条从原点出发的无穷长半直线. $\blacksquare$
 
-## 习题十四
+## 4.14 (2025 卷 A 题一：弗斯滕伯格拓扑的完整证明)
 
 (2025 年卷 A 题目一, 50 分). 考虑整数组成的空间 $\mathbb Z$. 我们在这个空间上定义一个拓扑, 称为弗斯滕伯格拓扑. 这个拓扑的一组基是所有非平凡的双边无穷长等差数列 $S\left(a,b\right)=a\mathbb Z+b=\left\{an+b:n\in\mathbb Z\right\}$, 其中要求 $a\neq0$.
 
@@ -504,7 +504,7 @@ $$
 
 (5) 证明 $\mathbb Z$ 中的质数有无穷多个.
 
-### 解答 习题十四
+### 解答 4.14
 
 **(0)** 由**定义 3.15 (拓扑基)** 验证: $\mathbb Z=\bigcup_a S\left(a,0\right)$ (例如 $S\left(1,0\right)=\mathbb Z$). 两等差数列之交 $S\left(a,b\right)\cap S\left(c,d\right)$ 或者为空, 或者仍是一个等差数列 (公差为 $a,c$ 的最小公倍数), 从而含某 $S\left(e,f\right)$. 故 $\left\{S\left(a,b\right)\right\}$ 满足基条件, 由**定义 4.11 (弗斯滕伯格拓扑)** 生成弗斯滕伯格拓扑, 开集恰为这些 $S\left(a,b\right)$ 之并.
 

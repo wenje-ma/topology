@@ -174,11 +174,11 @@
 > 
 > 一族拓扑空间 $\left\{X_i\right\}_{i\in I}$ 的不交和 $\coprod_{i\in I}X_i$ 上, $U$ 开当且仅当每个 $U\cap X_i$ 在 $X_i$ 中开. (题集 §5 Q1; 《基础拓扑学》(修订版) 第4章 定理(4.7), p58)
 
-## 习题一
+## 2.1 (余有限拓扑与余可数拓扑中的收敛和闭包)
 
 设 $X$ 为集合. 证明下列是拓扑: 所有非平凡开集都是 $X$ 的某有限子集的补集; 这称为 $X$ 上的余有限拓扑. 证明序列 $\left\{1,2,3,4,\dots\right\}$ 在 $\mathbb R$ 的余有限拓扑中收敛到 $\mathbb R$ 的每一点. 能否在 $X$ 上定义余可数拓扑? 现在取 $X=\mathbb R$ 装备余可数拓扑, 考虑 $\left(-1,1\right)\subset\mathbb R$. 证明 $\overline{\left(-1,1\right)}=\mathbb R$. 证明 $\left(-1,1\right)$ 中没有序列收敛到 $2\in\mathbb R$.
 
-### 解答 习题一
+### 解答 2.1
 
 $\emptyset$ 与 $X$ 开; 任意并 $\bigcup_i\left(X\setminus F_i\right)=X\setminus\bigcap_iF_i$, 而任意一族有限集之交仍有限, 故仍余有限; 有限交 $\bigcap_{k=1}^{m}\left(X\setminus F_k\right)=X\setminus\bigcup_{k=1}^{m}F_k$, 有限个有限集之并仍有限. 由**定义 3.18 (拓扑空间)** 这是拓扑.
 
@@ -188,11 +188,11 @@ $\emptyset$ 与 $X$ 开; 任意并 $\bigcup_i\left(X\setminus F_i\right)=X\setmi
 
 最后, 设 $x_n\in A$ 且 $x_n\to2$. 令 $C=\left\{x_n:n\ge1\right\}$, 它可数. 则 $U=\mathbb R\setminus C$ 是余可数开集, 含 $2$, 但不含任何 $x_n$. 由**定义 3.25 (邻域与极限)**, 这与 $x_n\to2$ 矛盾. 故 $A$ 中没有序列收敛到 $2$. $\blacksquare$
 
-## 习题二
+## 2.2 (扎里斯基拓扑、扎里斯基开集的稠密性与闭包)
 
 设 $K$ 为域, $n\in\mathbb N$ 为非负整数, $\mathbb A^n\left(K\right)=K^n$. $\mathbb A^n\left(K\right)$ 中扎里斯基闭集形如 $F=\left\{x\in\mathbb A^n\left(K\right):\forall i\in I,P_i\left(x\right)=0\right\}$, 其中 $\left(P_i\right)_{i\in I}$ 是一族多项式. 证明这确实定义了一个拓扑 (即扎里斯基拓扑). 证明 $\mathbb R^2$ 中扎里斯基开集在 $\mathbb R^2$ 中稠密. 求 $\left\{\left(0,\frac1{2^n}\right):n\ge0\right\}\subset\mathbb R^2$ 的扎里斯基闭包.
 
-### 解答 习题二
+### 解答 2.2
 
 由**定义 3.28 (扎里斯基拓扑)**, 记 $Z\left(P_i\right)_{i\in I}=\left\{x:\forall i\in I,P_i\left(x\right)=0\right\}$. 验证闭集族满足**定义 3.21 (闭集)**: 空集 $Z\left(1\right)$ (常数多项式 $1$ 无零点); 全空间 $Z\left(0\right)$ (零多项式处处为零); 任意交
 
@@ -212,11 +212,11 @@ $$
 
 **求闭包:** 令 $S=\left\{\left(0,2^{-n}\right):n\ge0\right\}$. 多项式 $P$ 在 $S$ 上恒零当且仅当一元多项式 $P\left(0,y\right)$ 在无限多点 $y=2^{-n}$ 为零, 由一元多项式恒零判据 当且仅当 $P\left(0,\cdot\right)\equiv0$, 即 $x\mid P\left(x,y\right)$. 全体这样的 $P$ 的公共零点集为 $\left\{\left(0,y\right):y\in\mathbb R\right\}$, 即 $y$ 轴. 由**定义 3.26 (闭包)**, 这就是 $S$ 的扎里斯基闭包. $\blacksquare$
 
-## 习题三
+## 2.3 (拓扑基的定义与等价刻画及其等价性)
 
 回忆拓扑基的定义. 回忆其等价刻画. 若去掉其中任一条件会怎样? 证明定义与刻画的等价性.
 
-### 解答 习题三
+### 解答 2.3
 
 由**定义 3.15 (拓扑基)**, 拓扑基的定义是: $\mathcal B\subset\mathcal P\left(X\right)$ 中元素的任意并构成 $X$ 上一个拓扑. 其等价刻画为: (1) $X=\bigcup_{B\in\mathcal B}B$; (2) 对任意 $B_1,B_2\in\mathcal B$ 与任意 $x\in B_1\cap B_2$, 存在 $B_3\in\mathcal B$ 使 $x\in B_3\subset B_1\cap B_2$.
 
@@ -226,7 +226,7 @@ $$
 
 **去掉条件:** 若去掉 (1), 例如 $\mathcal B=\left\{\emptyset\right\}$, 其任意并只能得 $\emptyset$, 盖不住 $X$; 若去掉 (2), 例如 $X=\mathbb R$, $\mathcal B=\left\{\left(-\infty,a\right):a\in\mathbb R\right\}\cup\left\{\left(b,+\infty\right):b\in\mathbb R\right\}$, 则 $\left(-\infty,1\right)\cap\left(0,+\infty\right)=\left(0,1\right)$ 不能表为 $\mathcal B$ 中元素之并, 故 $\mathcal B$ 的任意并不构成拓扑. $\blacksquare$
 
-## 习题四
+## 2.4 (可数基蕴含可分；半开区间基的反例)
 
 可分空间与具有可数基的空间.
 
@@ -234,7 +234,7 @@ $$
 
 (2) 考虑 $\mathbb R$ 上以 $\mathcal B=\left\{\left(a,b\right]\subset\mathbb R:a< b\right\}$ 为基. 证明 $\mathcal B$ 确实是某拓扑 $\mathcal O$ 的基; 证明 $\mathcal O$ 可分但没有可数基; 证明 $\mathcal O$ 不来自度量拓扑 (即不可度量化).
 
-### 解答 习题四
+### 解答 2.4
 
 **(1)** 设 $\left\{B_n\right\}_{n\ge1}$ 是 $X$ 的可数基. 每点取 $x_n\in B_n$, 令 $D=\left\{x_n:n\ge1\right\}$. 由于 $\overline D\subset X$ 显然, 只需证明 $X\subset\overline D$. 任取 $x\in X$ 与非空开集 $U\ni x$, 由**定义 3.15 (拓扑基)** 存在某 $B_n\subset U$, 故存在一个 $x_n$ 满足 $x_n\in D\cap U\neq\emptyset$, 这说明 $x$ 是 $D$ 的闭包点, 即 $x\in\overline D$. 由**定义 3.32 (稠密)**, $D$ 在 $X$ 中稠密; 由**定义 3.9 (可分)**, $X$ 可分.
 
@@ -258,7 +258,7 @@ $W_{n\left(x\right)}$ 作为某 $\left(a,b\right]$ 之并, 其右端点不超过
 
 **不可度量化:** 反设 $\mathcal O$ 来自某度量拓扑. 前面已证 $\mathcal O$ 可分 (有理数集 $\mathbb Q$ 稠密). 由**命题 M30.1 (可分度量空间必有可数基)**, $\mathcal O$ 作为可分度量空间必有可数基; 但前面刚证 $\mathcal O$ 没有可数基, 矛盾. 故 $\mathcal O$ 不可度量化. $\blacksquare$
 
-## 习题五
+## 2.5 (基本邻域系：点成立而子集未必)
 
 基本邻域系. 回忆点 $x$ (或子集 $A$) 的邻域; $x$ (或 $A$) 的基本邻域系是 $x$ (或 $A$) 的一族邻域 $\mathcal P$, 使 $x$ (或 $A$) 的每个邻域都含某个 $\mathcal P$ 中元素.
 
@@ -266,7 +266,7 @@ $W_{n\left(x\right)}$ 作为某 $\left(a,b\right]$ 之并, 其右端点不超过
 
 (2) 但当 $A$ 是子集时, $V_{\varepsilon}\left(A\right)=\left\{x:d\left(x,A\right)< \varepsilon\right\}$ 不一定是 $A$ 的基本邻域系. 例如取 $A=\left\{xy=1,x> 0\right\}\subset\mathbb R^2$ 与 $U=\left\{x,y> 0\right\}\subset\mathbb R^2$.
 
-### 解答 习题五
+### 解答 2.5
 
 **(1)** 设 $U$ 是 $x$ 的任一邻域 (**定义 3.25 (邻域与极限)**). 由**定义 6.36 (开球)**, 度量拓扑中存在 $r> 0$ 使 $B\left(x,r\right)\subset U$. 由 $r_n\to0$, 存在 $n$ 使 $r_n< r$, 于是
 
@@ -286,7 +286,7 @@ $$
 
 > 同样的构造基本邻域系的规则, 为什么全集就满足, 子集就不满足呢? 因为全集上定义的邻域必定全在全集内部; 而对于子集, 我们可以找到该子集的边界作为反例的邻域, 在其上的任何 $\varepsilon$-邻域都会超出其范围, 导致了这种构造方法的失效.
 
-## 习题六
+## 2.6 (度量空间豪斯多夫，扎里斯基拓扑不豪斯多夫)
 
 豪斯多夫条件.
 
@@ -294,7 +294,7 @@ $$
 
 (2) 证明 $\mathbb A^n\left(\mathbb R\right)$ (或 $\mathbb R^n$) 的每个扎里斯基开集在通常拓扑下既开又稠密; 证明 $\mathbb A^n\left(\mathbb R\right)$ 的扎里斯基拓扑对任意 $n> 0$ 都不是豪斯多夫的.
 
-### 解答 习题六
+### 解答 2.6
 
 **(1)** 设 $\left(X,d\right)$ 是**定义 6.35 (度量空间)**. 取 $x\neq y$, 令 $r=\frac13 d\left(x,y\right)> 0$. 由**定义 6.36 (开球)**, $B\left(x,r\right)$ 与 $B\left(y,r\right)$ 是开集. 若二者相交, 取交点 $z$, 由**定义 6.35 (度量空间)** (4) 的三角不等式
 
@@ -308,11 +308,11 @@ $$
 
 再证非豪斯多夫. 任取 $x\neq y$. 任一非空扎里斯基开集都稠密, 故任意两个非空扎里斯基开集相交. 因而不存在不相交的两个扎里斯基开集分别含 $x$ 与 $y$, 由**定义 3.10 (豪斯多夫空间)**, 扎里斯基拓扑不是豪斯多夫的. $\blacksquare$
 
-## 习题七
+## 2.7 (正规性的两种刻画与度量空间的正规性)
 
 正规空间. 称拓扑空间 $X$ 是正规的, 若对任意含于开集 $V$ 的闭集 $F$, 存在开集 $U$ 使 $F\subset U\subset\overline U\subset V$. 证明这等价于说 $X$ 是豪斯多夫的, 且任意两不相交闭集有不相交邻域 (即**定义 7.6 (正规空间)**). 证明度量空间正规 (可先证 $f:x\mapsto d\left(x,F\right)$ 当 $F$ 闭时连续).
 
-### 解答 习题七
+### 解答 2.7
 
 先证两种定义等价. 设 $F$ 闭, $V$ 开, $F\subset V$. 若 $X$ 满足**定义 7.6 (正规空间)**, 对不相交闭集 $F$ 与 $X\setminus V$ 取不相交开集 $U\supset F$ 与 $W\supset X\setminus V$. 则 $\overline U\subset X\setminus W\subset V$, 故 $F\subset U\subset\overline U\subset V$. 反过来, 设任意闭 $F\subset$ 开 $V$ 有 $U$ 使 $F\subset U\subset\overline U\subset V$. 对不相交闭集 $F,F'$, 取 $V=X\setminus F'$ (开). 由假设存在 $U\supset F$ 使 $\overline U\subset X\setminus F'$. 令 $W=X\setminus\overline U$ (开, 由**定义 3.26 (闭包)** 与**定义 3.21 (闭集)**), 则 $F'\subset W$ 且 $U\cap W=\emptyset$. 故 $F,F'$ 有不相交邻域. 特别地单点闭 (取 $F=\left\{x\right\}$, 若 $X$ 满足条件则单点为闭), 即 $T_1$, 故为豪斯多夫的.
 
@@ -331,7 +331,7 @@ $$
 
 二者开 (连续函数的原像, 由**定义 3.22 (连续映射)**), 不相交, 且 $F\subset U$ (因 $x\in F$ 时 $d\left(x,F\right)=0< d\left(x,F'\right)$), $F'\subset V$. 由**定义 7.6 (正规空间)**, 度量空间正规. $\blacksquare$
 
-## 习题八
+## 2.8 (混合烧烤拓扑：非豪斯多夫且无闭邻域基本系)
 
 混合烧烤. 考虑 $\left[0,1\right]\subset\mathbb R$ 与另外两个不属于它的元 $\left\{0^{-},0^{+}\right\}$, 令 $X=\left\{0^{-},0^{+}\right\}\cup\left(0,1\right]$. 定义
 
@@ -347,7 +347,7 @@ $$
 
 证明 $\mathcal B=\bigcup_{x\in X}\mathcal B\left(x\right)$ 是某拓扑的基; 证明该拓扑不是豪斯多夫的; 证明 $0^{+}$ 没有由闭邻域组成的基本邻域系.
 
-### 解答 习题八
+### 解答 2.8
 
 先验基条件. 对 $x\in\left(0,1\right]$, 两个形如 $\left(x-\frac1n,x+\frac1n\right)\cap\left(0,1\right]$ 的集之交仍含一个同形集; 对 $0^{\pm}$, $\left\{0^{\pm}\right\}\cup\left(0,\frac1n\right)$ 之交为 $\left\{0^{\pm}\right\}\cup\left(0,1/\max\left(n,m\right)\right)$. 全体覆盖 $X$. 由**定义 3.15 (拓扑基)**, $\mathcal B$ 是某拓扑的基.
 
@@ -355,11 +355,11 @@ $$
 
 **$0^{+}$ 无闭邻域基本系:** 设 $C$ 是 $0^{+}$ 的任一闭邻域. 它必含某基本开邻域 $\left\{0^{+}\right\}\cup\left(0,\frac1m\right)$, 特别含区间 $\left(0,\frac1m\right)$. 点 $0^{-}$ 的每个邻域含某 $\left\{0^{-}\right\}\cup\left(0,\frac1n\right)$, 与 $\left(0,\frac1m\right)$ 相交, 故 $0^{-}\in\overline{\left(0,\frac1m\right)}$ (**定义 3.26 (闭包)**). $C$ 闭且含 $\left(0,\frac1m\right)$, 故 $C$ 含其闭包, 从而 $0^{-}\in C$. 于是 $0^{+}$ 的任何闭邻域都含 $0^{-}$, 不可能含于开集 $U=\left\{0^{+}\right\}\cup\left(0,1\right)$ (它不含 $0^{-}$). 由**定义 3.30 (基本邻域系)**, $0^{+}$ 没有由闭邻域组成的基本邻域系. $\blacksquare$
 
-## 习题九
+## 2.9 (子空间拓扑的泛性质)
 
 泛性质. 设 $X$ 是拓扑空间, $Y\subset X$ 配自然含映射 $\iota:Y\to X$. 证明 $Y$ 上的子空间拓扑具有如下性质: 对任意拓扑空间 $Z$ 与映射 $f:Z\to Y$, $f$ 连续当且仅当 $\iota\circ f:Z\to X$ 连续.
 
-### 解答 习题九
+### 解答 2.9
 
 **($\Rightarrow$)** 若 $f:Z\to Y$ 连续, 由**定义 3.19 (子空间拓扑)**, 含映射 $\iota:Y\to X$ 连续. 由**定理 3.1 (复合连续)**, $\iota\circ f:Z\to X$ 连续.
 
@@ -373,7 +373,7 @@ $$
 
 > 证明中的核心步骤是 $f^{-1}\left(U\right)=\left(\iota\circ f\right)^{-1}\left(U\right)$, 这都归功于 $\iota$ 是含入映射, 即映射到 $Y$ 上的就相当于映射到 $X$ 上.
 
-## 习题十
+## 2.10 (投影是开映射，但不必是闭映射，且开性不可逆)
 
 设 $\prod_{i\in I}X_i$ 装备乘积拓扑, $p_k$ 是到第 $k$ 个因子的投影.
 
@@ -383,7 +383,7 @@ $$
 
 (3) 证明开性的逆命题不成立: 存在 $W\subset\prod_{i\in I}X_i$ 使所有 $p_i\left(W\right)$ 都是开集, 但 $W$ 本身不是开集. 可在 $\mathbb R^2$ 中去掉若干点构造反例.
 
-### 解答 习题十
+### 解答 2.10
 
 **(1)** 由**定义 3.11 (乘积拓扑)**, 乘积拓扑的基本开集形如 $\prod_{i\in I}U_i$, 其中 $U_i$ 在 $X_i$ 中开且除有限个外 $U_i=X_i$. 对固定的 $k$, 投影满足
 
@@ -409,11 +409,11 @@ $$
 
 **(3)** 取 $W=\mathbb R^2\setminus\left(\left\{0\right\}\times\left(0,1\right)\right)$. 先看两个投影: 对任意 $x\in\mathbb R$, 取 $y=2$ 则 $\left(x,2\right)\in W$, 故 $p_1\left(W\right)=\mathbb R$; 对任意 $y\in\mathbb R$, 取 $x=1$ 则 $\left(1,y\right)\in W$, 故 $p_2\left(W\right)=\mathbb R$. 两个投影都是开集. 但 $W$ 的补集为 $\left\{0\right\}\times\left(0,1\right)$, 它的闭包是 $\left\{0\right\}\times\left[0,1\right]$, 不等于自身, 由**定义 3.21 (闭集)** 补集不闭, 故 $W$ 不是开集. 这说明所有投影开不能推出原集合开. $\blacksquare$
 
-## 习题十一
+## 2.11 (度量空间中连续等价于序列保持收敛)
 
 序列, 度量空间与连续. 证明: 对**定义 6.35 (度量空间)** 之间的映射 $f:X\to Y$, $f$ 连续当且仅当 $X$ 中每个收敛序列的像列在 $Y$ 中收敛. 证明中哪些地方用到了度量结构? 能否放松假设?
 
-### 解答 习题十一
+### 解答 2.11
 
 **($\Rightarrow$)** 设 $f$ 连续, $x_n\to x$. 任取 $f\left(x\right)$ 的邻域 $V$, 由**定义 3.22 (连续映射)**, $f^{-1}\left(V\right)$ 是 $x$ 的邻域; 由**定义 3.25 (邻域与极限)**, 充分大的 $n$ 有 $x_n\in f^{-1}\left(V\right)$, 即 $f\left(x_n\right)\in V$. 故 $f\left(x_n\right)\to f\left(x\right)$.
 
@@ -421,17 +421,17 @@ $$
 
 用到度量结构之处在于: 用可数邻域基 $B\left(x,1/n\right)$ 把 "$f^{-1}\left(V\right)$ 不是邻域" 翻译成一列点 $\left(x_n\right)$, 即把否定连续性直接转化为序列. 在一般拓扑空间中, 这一翻译不成立, 但可放松为第一可数空间 (每点有可数邻域基). $\blacksquare$
 
-## 习题十二
+## 2.12 (稠密集的邻域未必覆盖全空间)
 
 稠密集的邻域. $X$ 中稠密集的任意邻域是否覆盖 $X$? 可考虑 $\bigcup_{p/q}B\left(p/q,1/q^k\right)$ ($p/q\in\mathbb Q$, $k$ 充分大) 的例子.
 
-### 解答 习题十二
+### 解答 2.12
 
 不覆盖. 设 $X=\mathbb R$, $D=\mathbb Q$ 是**定义 3.32 (稠密)** 的. 取 $U=\mathbb R\setminus\left\{\sqrt2\right\}$. $U$ 是开集, 由**定义 3.21 (闭集)** 单点 $\left\{\sqrt2\right\}$ 闭故其补集开; $U$ 含 $\mathbb Q$, 即 $U$ 是稠密集 $\mathbb Q$ 的一个邻域, 但 $U\neq\mathbb R$. $\blacksquare$
 
 > 一般地, 若 $D$ 稠密而 $U$ 是含 $D$ 的开集, 只能推出 $\overline U=X$: 由**定义 3.26 (闭包)**, $D\subset U$ 给出 $X=\overline D\subset\overline U$; 开集稠密不必等于全空间. 题中 $\bigcup_{p/q}B\left(p/q,1/q^k\right)$ 也是开稠密集, 取 $k$ 充分大时仍遗漏某些有理逼近系数很小的无理数, 故不等于 $\mathbb R$.
 
-## 习题十三
+## 2.13 (离散拓扑、单点族的最终拓扑与不交和的三者等价)
 
 设 $X$ 是拓扑空间. 证明下列三条等价:
 
@@ -441,7 +441,7 @@ $$
 
 (3) 从不交和 $\coprod_{x\in X}\left\{x\right\}$ 到 $X$ 的典范映射是同胚.
 
-### 解答 习题十三
+### 解答 2.13
 
 记 $i_x:\left\{x\right\}\to X$ 为把单点映到其唯一点的含入映射.
 
@@ -451,11 +451,11 @@ $$
 
 **(2) $\Leftrightarrow$ (3)**: 由**定义 11.18 (不交和拓扑)**, 不交和 $Z=\coprod_{x\in X}\left\{x\right\}$ 上的拓扑是每个单点都开, 即离散拓扑. 典范映射 $i:Z\to X$ 把每个 $\left\{x\right\}$ 映到 $x$, 是双射. 由**定义 11.14 (最终拓扑)**, $i$ 连续当且仅当 $X$ 的拓扑粗于由 $\left\{i_x\right\}$ 诱导的最终拓扑; 反过来 $i^{-1}$ 连续当且仅当该最终拓扑粗于 $X$ 的拓扑. 由**定义 3.23 (同胚)**, $i$ 是同胚当且仅当 $X$ 的拓扑等于由 $\left\{i_x\right\}$ 诱导的最终拓扑, 即 (2). 三链贯通, 三条等价. $\blacksquare$
 
-## 习题十四
+## 2.14 (递增闭子空间列的最终拓扑与闭性)
 
 设 $X_i$ 是拓扑空间, $X_i\subset X_{i+1}$, $X=\bigcup_{i=1}^{\infty}X_i$. 设每个 $X_i$ 在 $X_{i+1}$ 中闭, 且 $X_i$ 的拓扑就是 $X_{i+1}$ 的拓扑在 $X_i$ 上诱导的子空间拓扑. 证明: 对每个 $i$, $X_i$ 的拓扑等于 $X$ 上由族 $\left\{X_i\right\}$ 诱导的弱 (最终) 拓扑在 $X_i$ 上诱导的子空间拓扑; 进一步每个 $X_i$ 在 $X$ 中闭.
 
-### 解答 习题十四
+### 解答 2.14
 
 记 $\tau$ 为 $X$ 上由含入 $j_i:X_i\to X$ 诱导的最终拓扑. 由**定义 11.14 (最终拓扑)**, $U\subset X$ 在 $\tau$ 中开当且仅当对每个 $k$, $U\cap X_k$ 在 $X_k$ 中开. 由题设归纳可知: 对 $k\ge i$, $X_i$ 在 $X_k$ 中闭; 且 $X_i$ 的拓扑就是 $X_k$ 的拓扑在 $X_i$ 上的子空间拓扑.
 
@@ -475,11 +475,11 @@ $$
 
 再证 $X_i$ 在 $X$ 中闭. 只需证 $X\setminus X_i$ 在 $\tau$ 中开. 对 $k\le i$, $\left(X\setminus X_i\right)\cap X_k=\emptyset$ 开; 对 $k> i$, $X_i$ 在 $X_k$ 中闭, 故 $\left(X\setminus X_i\right)\cap X_k=X_k\setminus X_i$ 在 $X_k$ 中开. 由**定义 11.14 (最终拓扑)**, $X\setminus X_i\in\tau$, 故 $X_i$ 闭. $\blacksquare$
 
-## 习题十五
+## 2.15 (由二元关系生成的最小等价关系)
 
 (二元关系生成的等价关系) 设 $X$ 是集合, $R\subset X\times X$ 是二元关系 (未必是等价关系). 证明: 存在唯一的最小等价关系 $\sim$ 包含 $R$ (在 $X\times X$ 的子集意义下), 称为由 $R$ 生成的等价关系.
 
-### 解答 习题十五
+### 解答 2.15
 
 先证一族等价关系的交仍是等价关系. 设 $\left\{\sim_\alpha\right\}_{\alpha\in A}$ 是 $X$ 上的等价关系族, 定义 $x\sim y$ 当且仅当对一切 $\alpha$ 有 $x\sim_\alpha y$.
 
@@ -493,11 +493,11 @@ $$
 
 现令 $\mathcal E$ 为 $X$ 上全体包含 $R$ 的等价关系所成之族. 全体成员的交 $\bigcap\mathcal E$ 仍含 $R$ (每个成员含 $R$), 且由上面的交性质是等价关系. 它是含 $R$ 的最小等价关系: 任何含 $R$ 的等价关系都在 $\mathcal E$ 中, 从而包含这个交. 唯一性由"最小"即集包含意义下唯一决定. 由**定义 11.15 (等价关系的生成)**, 这个交就是由 $R$ 生成的等价关系. $\blacksquare$
 
-## 习题十六
+## 2.16 (伪距离的商距离与商拓扑一致)
 
 (伪距离的商距离) 回顾伪距离 $d$ 是除 $d\left(x,y\right)=0\Rightarrow x=y$ 外满足全部度量公理的函数. 伪距离空间 $\left(X,d\right)$ 以开球 $B\left(x,\varepsilon\right)$ 为基有拓扑. 定义 $x\sim y$ 当且仅当 $d\left(x,y\right)=0$. 证明: $\sim$ 是等价关系; 商空间 $X/{\sim}$ 上可赋予距离 $d'$ 使 $d'\left(\left[x\right],\left[y\right]\right)=d\left(x,y\right)$; 验证 $d'$ 定义适定; 证明度量空间 $\left(X/{\sim},d'\right)$ 与商空间 $X/{\sim}$ 拓扑相同; 并证明若 $F$ 是豪斯多夫空间且 $f:X\to F$ 连续, 则 $f$ 可分解为 $f=f'\circ\pi$, 其中 $f':X/{\sim}\to F$.
 
-### 解答 习题十六
+### 解答 2.16
 
 **$\sim$ 是等价关系**: 由**定义 6.44 (伪距离)**, $d\left(x,x\right)=0$ 给出自反; $d\left(x,y\right)=d\left(y,x\right)$ 给出对称; 三角不等式 $d\left(x,z\right)\le d\left(x,y\right)+d\left(y,z\right)$ 在 $d\left(x,y\right)=d\left(y,z\right)=0$ 时给出 $d\left(x,z\right)=0$, 即传递.
 
@@ -523,11 +523,11 @@ $$
 
 于是可定义 $f'\left(\left[x\right]\right)=f\left(x\right)$, 适定. 由**定义 11.2 (粘合映射)**, 为证 $f'$ 连续, 只需对任意开集 $O\subset F$, $\left(f'\right)^{-1}\left(O\right)$ 商开, 即 $\pi^{-1}\left(\left(f'\right)^{-1}\left(O\right)\right)=f^{-1}\left(O\right)$ 在 $X$ 中开; 这由 $f$ 连续保证. 故 $f=f'\circ\pi$. $\blacksquare$
 
-## 习题十七
+## 2.17 (环面上有理斜率与无理斜率直线的像)
 
 设 $\pi:\mathbb R^2\to T^2$ 是典范投影, $\alpha\in\mathbb R\cup\left\{\infty\right\}$, $D$ 是 $\mathbb R^2$ 中斜率为 $\alpha$ 的直线. 证明: 若 $\alpha\in\mathbb Q\cup\left\{\infty\right\}$, 则 $\pi\left(D\right)$ 同胚于一个圆; 若 $\alpha\notin\mathbb Q\cup\left\{\infty\right\}$, 则 $\pi\left(D\right)$ 在 $T^2$ 中稠密, 且 $\pi|_D$ 是 $D$ 到 $\pi\left(D\right)$ 的连续双射.
 
-### 解答 习题十七
+### 解答 2.17
 
 由**定义 11.7 (环面)**, $T^2=\mathbb R^2/\mathbb Z^2$, $\pi$ 为商投影. 不妨取 $D=\left\{\left(t,\alpha t\right):t\in\mathbb R\right\}$ (竖直直线 $\alpha=\infty$ 同理).
 
@@ -537,17 +537,17 @@ $$
 
 $\pi|_D:D\to\pi\left(D\right)$ 连续 (它是商映射 $\pi$ 在子空间 $D$ 上的限制, 由**定义 3.19 (子空间拓扑)** 连续). 它是双射: 若 $\pi\left(t,\alpha t\right)=\pi\left(t',\alpha t'\right)$, 则 $t-t'\in\mathbb Z$ 且 $\alpha\left(t-t'\right)\in\mathbb Z$, 由 $\alpha$ 无理必有 $t-t'=0$. $\blacksquare$
 
-## 习题十八
+## 2.18 (环面按稠密子群粘合：豪斯多夫当且仅当斜率为有理数)
 
 设 $\pi:\mathbb R^2\to T^2$ 是典范投影, $\alpha\in\mathbb R\cup\left\{\infty\right\}$. 在 $T^2$ 上定义关系: $x'\sim y'$ 当且仅当存在 $x,y\in\mathbb R^2$ 与斜率为 $\alpha$ 的直线使 $\pi\left(x\right)=x'$, $\pi\left(y\right)=y'$. 证明 $\sim$ 是等价关系; 证明商空间 $T^2/{\sim}$ 豪斯多夫当且仅当 $\alpha\in\mathbb Q$, 此时商空间同胚于一个圆; 若 $\alpha\notin\mathbb Q$, 证明商空间 $T^2/{\sim}$ 具有平凡拓扑.
 
-### 解答 习题十八
+### 解答 2.18
 
 把 $\pi\left(D\right)$ 记为 $H\subset T^2$, 其中 $D=\left\{\left(t,\alpha t\right)\right\}$. 关系 $x'\sim y'$ 即 $y'-x'\in H$ ($T^2$ 中的群运算).
 
 **等价关系**: $H$ 是 $T^2$ 的子群: 含单位元; 对减法封闭. 故按子群取陪集是等价关系: 自反 ($0\in H$), 对称 ($H$ 对逆元封闭), 传递 ($H$ 对加法封闭). 由**定义 11.3 (等价关系粘合)**, $T^2/{\sim}=T^2/H$.
 
-**有理斜率**: 设 $\alpha=p/q\in\mathbb Q$. 由习题十七, $H=\pi\left(D\right)$ 同胚于一个圆, 故 $H$ 紧; 又 $T^2$ 豪斯多夫 (见习题十七), 由**定理 5.5 (豪斯多夫中紧集闭)**, $H$ 是 $T^2$ 中的闭子群. 定义
+**有理斜率**: 设 $\alpha=p/q\in\mathbb Q$. 由习题 2.17, $H=\pi\left(D\right)$ 同胚于一个圆, 故 $H$ 紧; 又 $T^2$ 豪斯多夫 (见习题 2.17), 由**定理 5.5 (豪斯多夫中紧集闭)**, $H$ 是 $T^2$ 中的闭子群. 定义
 
 $$
 \varphi:T^2\to S^1,\quad \varphi\left(u,v\right)=qu-pv\pmod 1.
@@ -555,13 +555,13 @@ $$
 
 $\varphi$ 连续, 其核恰为 $H$ (即 $\varphi\left(u,v\right)=0\Leftrightarrow\left(u,v\right)\in H$). 由**定义 11.2 (粘合映射)** 的泛性质, $\varphi$ 诱导连续双射 $\overline\varphi:T^2/H\to S^1$. $T^2/H$ 紧 ($T^2$ 紧, 由**定理 5.1 (紧空间连续像紧)** 商连续像紧), $S^1$ 豪斯多夫. 由**定理 5.6 (紧豪斯多夫间的连续双射)**, $\overline\varphi$ 是同胚. 故 $T^2/H$ 同胚于圆, 且圆豪斯多夫, 由**定义 3.10 (豪斯多夫空间)** 商空间豪斯多夫.
 
-**无理斜率**: 由习题十七, $H$ 在 $T^2$ 中稠密. 商拓扑下, 由**定义 11.1 (商拓扑)**, 开集 $U\subset T^2/H$ 对应于 $T^2$ 中的 $H$-饱和开集. 若 $U$ 非空, 取饱和开集 $V\subset T^2$, $V\neq\emptyset$. 因 $H$ 稠密, $V+H=T^2$; 而 $V$ 已饱和, $V+H=V$, 故 $V=T^2$, 即 $U=T^2/H$. 故仅有的开集是 $\emptyset$ 与全空间, 即平凡拓扑. 此时商空间不豪斯多夫 (除非单点), 与有理情形对照. $\blacksquare$
+**无理斜率**: 由习题 2.17, $H$ 在 $T^2$ 中稠密. 商拓扑下, 由**定义 11.1 (商拓扑)**, 开集 $U\subset T^2/H$ 对应于 $T^2$ 中的 $H$-饱和开集. 若 $U$ 非空, 取饱和开集 $V\subset T^2$, $V\neq\emptyset$. 因 $H$ 稠密, $V+H=T^2$; 而 $V$ 已饱和, $V+H=V$, 故 $V=T^2$, 即 $U=T^2/H$. 故仅有的开集是 $\emptyset$ 与全空间, 即平凡拓扑. 此时商空间不豪斯多夫 (除非单点), 与有理情形对照. $\blacksquare$
 
-## 习题十九
+## 2.19 (锥空间的嵌入与函子性)
 
 (锥) 设 $CX$ 是 $X$ 上的锥空间, 为 $CX=X\times\left[0,1\right]/X\times\left\{1\right\}$. 证明: 映射 $X\to CX$, $x\mapsto\left[\left(x,0\right)\right]$ 是到其像的同胚, 从而 $X$ 可视为 $CX$ 的子集. 证明: 若 $f:X\to Y$ 连续, 则 $Cf:CX\to CY$, $\left[\left(x,t\right)\right]\mapsto\left[\left(f\left(x\right),t\right)\right]$ 连续.
 
-### 解答 习题十九
+### 解答 2.19
 
 **嵌入**: 由**定义 11.6 (锥)**, $CX=X\times\left[0,1\right]/X\times\left\{1\right\}$. 记 $\pi:X\times\left[0,1\right]\to CX$ 为商投影, $j:X\to CX$, $j\left(x\right)=\left[\left(x,0\right)\right]$. 因 $X\times\left\{0\right\}$ 与被捏合集 $X\times\left\{1\right\}$ 不相交, $\pi$ 在 $X\times\left\{0\right\}$ 上是单射, 故 $j$ 是双射到 $j\left(X\right)$.
 
@@ -577,11 +577,11 @@ $$
 
 $\pi_Y^{-1}\left(W\right)$ 在 $Y\times\left[0,1\right]$ 中开, $f\times\operatorname{id}$ 连续 (由 $f$ 连续与 $\operatorname{id}$ 连续, 乘积映射连续), 故由**定义 3.22 (连续映射)**, 上式在 $X\times\left[0,1\right]$ 中开. 故 $Cf$ 连续. $\blacksquare$
 
-## 习题二十
+## 2.20 (悬垂把 $S^n$ 抬高一维)
 
 (悬垂) 设 $S^n=\left\{x\in\mathbb R^{n+1}:x_1^2+\cdots+x_{n+1}^2=1\right\}$. 证明悬垂 $S\left(S^n\right)$ 同胚于 $S^{n+1}$.
 
-### 解答 习题二十
+### 解答 2.20
 
 由**定义 11.11 (悬垂)**, $S\left(S^n\right)=S^n\times\left[-1,1\right]/\left(S^n\times\left\{-1\right\}\cup S^n\times\left\{1\right\}\right)$, 这是**定义 11.3 (等价关系粘合)** 意义下的商空间. 定义
 
@@ -593,11 +593,11 @@ $$
 
 紧性: $S^n$ 是 $\mathbb R^{n+1}$ 的有界闭子集故紧, $\left[-1,1\right]$ 紧, 由**定理 5.7 (有限乘积紧)**, $S^n\times\left[-1,1\right]$ 紧; 再由**定理 5.1 (紧空间连续像紧)**, $S\left(S^n\right)$ 紧. $S^{n+1}$ 是豪斯多夫的 ($\mathbb R^{n+2}$ 的子空间, 由**定理 3.6 (豪斯多夫的遗传性)**). 由**定理 5.6 (紧豪斯多夫间的连续双射)**, $\overline F$ 是同胚. $\blacksquare$
 
-## 习题二十一
+## 2.21 (塌缩商限制在余集上是同胚，锥商同胚于悬垂)
 
 (塌缩) 证明: 若 $A\subset X$ 是开 (或闭) 集, 则投影 $X\to X/\left\langle A\right\rangle$ 限制在 $X\setminus A$ 上是同胚. 证明 $CX/\left\langle X\right\rangle$ 与 $SX$ 同胚 (这里把 $X$ 等同于 $\pi\left(X\times\left\{0\right\}\right)\subset CX$).
 
-### 解答 习题二十一
+### 解答 2.21
 
 记 $\pi:X\to X/\left\langle A\right\rangle$ 为商投影, 见**定义 11.12 (塌缩商)**. $\pi|_{X\setminus A}:X\setminus A\to\pi\left(X\setminus A\right)$ 连续且为双射 ($X\setminus A$ 内任意两点不被粘合).
 
@@ -607,7 +607,7 @@ $$
 
 **$CX/\left\langle X\right\rangle\cong SX$**: 由**定义 11.6 (锥)**, $CX=X\times\left[0,1\right]/X\times\left\{1\right\}$. 在 $CX$ 中再把 $\pi\left(X\times\left\{0\right\}\right)$ 捏成一点, 等价于在 $X\times\left[0,1\right]$ 上把 $X\times\left\{0\right\}$ 与 $X\times\left\{1\right\}$ 各捏成一点. 这正是**定义 11.11 (悬垂)** 中的 $SX$ (经 $t\mapsto 2t-1$ 把 $\left[0,1\right]$ 线性映到 $\left[-1,1\right]$). $\blacksquare$
 
-## 习题二十二
+## 2.22 ($n$ 维环面与环面乘积同胚)
 
 ($n$-维环面) 设 $T^n=\mathbb R^n/\mathbb Z^n$, 映射
 
@@ -621,7 +621,7 @@ $$
 
 (3) 证明 $\phi$ 是同胚.
 
-### 解答 习题二十二
+### 解答 2.22
 
 **第 (1) 小题**: 由**定义 11.13 ($n$-维环面)**, $\mathbb R^n\to\left(S^1\right)^n$ 的映射 $F\left(t\right)=\left(e^{2\pi i t_1},\dots,e^{2\pi i t_n}\right)$ 连续, 且在 $\mathbb Z^n$ 陪集上取等值. 由**定义 11.2 (粘合映射)**, $F$ 经由商映射分解为连续 $\phi:T^n\to\left(S^1\right)^n$.
 
@@ -629,7 +629,7 @@ $$
 
 **第 (3) 小题**: $\phi$ 是双射: $\left(e^{2\pi i t_1},\dots\right)$ 的原像陪集唯一. $T^n$ 紧: 它是 $n$ 方体 $\left[0,1\right]^n$ 的商, 由**定理 5.1 (紧空间连续像紧)** 紧. $\left(S^1\right)^n$ 豪斯多夫. 由**定理 5.6 (紧豪斯多夫间的连续双射)**, $\phi$ 是同胚. $\blacksquare$
 
-## 习题二十三
+## 2.23 (最终拓扑、商拓扑与粘合映射的三者等价)
 
 设 $X$ 是拓扑空间, $A$ 是集合, $\pi:X\to A$ 是满射. 证明下列三条等价:
 
@@ -639,7 +639,7 @@ $$
 
 (c) 映射 $\pi$ 是粘合映射.
 
-### 解答 习题二十三
+### 解答 2.23
 
 **(a) $\Rightarrow$ (b)**: 由**定义 11.14 (最终拓扑)**, 由 $\pi$ 诱导的最终拓扑是使 $\pi$ 连续的最细拓扑, 其特征为: $U\subset A$ 开当且仅当 $\pi^{-1}\left(U\right)$ 在 $X$ 中开. 这正是 (b).
 
@@ -647,11 +647,11 @@ $$
 
 **(c) $\Rightarrow$ (a)**: 由**定义 11.2 (粘合映射)**, $A$ 上的拓扑是使 $\pi$ 连续的最大拓扑, 即最终拓扑. 三链贯通, 等价. 由**定义 3.22 (连续映射)** 与**定义 3.21 (闭集)** 的对偶, 上述等价成立. $\blacksquare$
 
-## 习题二十四
+## 2.24 (乌雷松引理的度量版本)
 
 证明乌雷松引理的度量版本: 若 $X$ 是度量空间, $F\subset X$ 闭集, 则存在连续函数 $f:X\to\left[0,1\right]$ 使 $f=0$ 在 $F$ 上, $f=1$ 在 $X\setminus B\left(F,\varepsilon\right)$ 上.
 
-### 解答 习题二十四
+### 解答 2.24
 
 由**定义 6.46 (点到集合的距离)**, $d\left(x,F\right)=\inf_{a\in F}d\left(x,a\right)$. 定义
 

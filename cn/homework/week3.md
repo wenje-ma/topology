@@ -124,11 +124,11 @@
 > 
 > 设 $f:X\to Y$ 连续, $X$ 连通, $Y$ 为序拓扑全序集; 若 $r$ 介于 $f\left(a\right)$ 与 $f\left(b\right)$ 之间, 则存在 $c\in X$ 使 $f\left(c\right)=r$. 特别地, 连续函数在区间上取到中间值. (《拓扑学》(原书第2版) §24 定理 24.3, p118)
 
-## 习题一
+## 3.1 ($\mathbb R$ 的开子集分解为可数个互不相交的开区间)
 
 证明下列定理: $\mathbb R$ 的任一开子集 $U$ 可唯一地写成可数个互不相交的开区间之并, 且这些区间的端点不属于 $U$. 提示: 可考虑含 $x\in U$ 的极大开区间 $I_x\subset U$.
 
-### 解答 习题一
+### 解答 3.1
 
 由**定义 6.36 (开球)**, $\mathbb R$ 的通常拓扑以开区间为基. 对每个 $x\in U$, 令 $I_x$ 为一切含 $x$ 且含于 $U$ 的开区间之并. 因每个这样的开区间都含 $x$, 其并仍是含 $x$ 的开区间 (一族两两相交于同一点的开区间之并为开区间), 含于 $U$, 且在含 $x$ 且含于 $U$ 的开区间中极大.
 
@@ -140,11 +140,11 @@
 
 **唯一性:** 若另有分解 $U=\bigcup_{j\in J}J_j$, 其中 $J_j$ 为互不相交开区间. 对每个 $x\in U$, $x$ 属于唯一的 $J_{j\left(x\right)}$. $J_{j\left(x\right)}$ 是含 $x$ 且含于 $U$ 的开区间, 由 $I_x$ 的极大性 $J_{j\left(x\right)}\subset I_x$; 反之, $I_x$ 是含 $x$ 且含于 $U$ 的开区间, 而 $J_{j\left(x\right)}$ 是含 $x$ 的极大连通开块, 故 $I_x\subset J_{j\left(x\right)}$. 因此 $J_{j\left(x\right)}=I_x$, 两分解一致. $\blacksquare$
 
-## 习题二
+## 3.2 ($\mathbb R$ 与 $\mathbb R^2$ 等势但不同胚)
 
 证明 $\mathbb R$ 与 $\mathbb R^2$ 基数相同, 但不同胚. 提示: 可考察 $\mathbb R^2-\left\{0\right\}$ 的像.
 
-### 解答 习题二
+### 解答 3.2
 
 先证基数相同. 由**定理 2.13 (实数与自然数幂集等势)**, $\mathbb R$ 与 $\mathcal P\left(\mathbb N\right)$ 等势. 由**定理 2.13 (实数与自然数幂集等势)**, 把一对实数对应到一对子集 $\left(A,B\right)\subset\mathcal P\left(\mathbb N\right)^2$, 再作
 
@@ -168,11 +168,11 @@ $$
 
 同胚保持连通分支的个数 (连通集映为连通集, 极大性保持). 但上述同胚把有两个分支的 $\mathbb R-\left\{0\right\}$ 映到只有一个分支的 $\mathbb R^2-\left\{h\left(0\right)\right\}$, 矛盾. 故 $\mathbb R$ 与 $\mathbb R^2$ 不同胚. $\blacksquare$
 
-## 习题三
+## 3.3 (不存在以素数集与有理数集互换的连续函数)
 
 证明不存在连续函数 $f:\mathbb R\to\mathbb R$ 满足 $f\left(P\right)\subset\mathbb Q$ 且 $f\left(\mathbb Q\right)\subset P$, 其中 $P$ 为素数全体. 提示: 可考察 $f\left(\mathbb R\right)$.
 
-### 解答 习题三
+### 解答 3.3
 
 $\mathbb R$ 是**定义 4.23 (凸集)** 意义下的凸集, 故路径连通, 由**定理 4.3 (路径连通蕴含连通)** $\mathbb R$ 连通. 由**定理 4.2 (连续像连通)**, $f\left(\mathbb R\right)$ 是 $\mathbb R$ 中的连通子集.
 
@@ -186,11 +186,11 @@ $$
 
 于是连通集 $f\left(\mathbb R\right)$ 含于 $P$. 由素数集在实直线上闭且离散, $P$ 作为子空间是离散的, 而离散空间的任一子集既开又闭, 由**定义 4.18 (连通空间)** 离散空间的连通子集只能是单点集. 故 $f\left(\mathbb R\right)=\left\{p_0\right\}$, 即 $f$ 必为常值映射. 因此满足条件的连续函数只能是常值映射, 不存在非常值的这类连续函数. $\blacksquare$
 
-## 习题四
+## 3.4 (连通且局部路径连通蕴含路径连通)
 
 证明连通且局部路径连通的空间必路径连通. 提示: 可考察某点的 "路径连通" 分支.
 
-### 解答 习题四
+### 解答 3.4
 
 设 $X$ 连通且局部路径连通, 固定 $x\in X$, 令
 
@@ -204,21 +204,21 @@ $$
 
 故 $C$ 既开又闭 (**定义 4.19 (既开又闭集)**). $X$ 连通 (**定义 4.18 (连通空间)**), 且 $C\neq\emptyset$ ($x\in C$), 故由**定义 4.19 (既开又闭集)** 得 $C=X$. 由**定义 4.22 (路径连通)**, $X$ 路径连通. $\blacksquare$
 
-## 习题五
+## 3.5 (多于一点的连通度量空间不可数)
 
 证明多于一点的连通度量空间不可数.
 
-### 解答 习题五
+### 解答 3.5
 
 反设 $\left(X,d\right)$ 是**定义 6.35 (度量空间)** 意义下的连通度量空间, $\left|X\right|\ge2$, 且 $X$ 可数. 由**定理 4.5 (可数度量空间完全不连通)**, $X$ 是**定义 4.20 (完全不连通)** 意义下的完全不连通空间, 即其唯一连通子集是单点集.
 
 但 $X$ 本身作为子集由题设连通 (**定义 4.18 (连通空间)**), 且 $\left|X\right|\ge2$, 与完全不连通矛盾. 故 $X$ 不可数. $\blacksquare$
 
-## 习题六
+## 3.6 ($GL\left(n,\mathbb R\right)$ 与 $GL\left(n,\mathbb C\right)$ 的连通分支)
 
 证明一般线性群 $GL\left(n,\mathbb R\right)$ (即 $n\times n$ 实可逆矩阵之群) 由两个连通分支组成: 行列式为正者与行列式为负者; 特别地它不连通. 证明与之对照, $GL\left(n,\mathbb C\right)$ 连通.
 
-### 解答 习题六
+### 解答 3.6
 
 行列式映射 $\det:GL\left(n,\mathbb R\right)\to\mathbb R-\left\{0\right\}$ 是矩阵元素的多项式, 故由**定义 3.22 (连续映射)** 它连续. 由**定理 4.2 (连续像连通)**, $GL\left(n,\mathbb R\right)$ 中连通子集的行列式必落入 $\mathbb R-\left\{0\right\}=\left(-\infty,0\right)\cup\left(0,\infty\right)$ 的同一连通分支. 故
 
@@ -232,11 +232,11 @@ $$
 
 对复的情形, 任意 $A\in GL\left(n,\mathbb C\right)$, 格拉姆-施密特分解 $A=QU$, 其中 $U$ 为酉阵. 酉阵可对角化, 特征值均在单位圆上, 各辐角连续收缩到 $0$ 即与单位阵相连, 故 $U$ 与单位阵路径相连, 从而 $A$ 与单位阵路径相连. 故 $GL\left(n,\mathbb C\right)$ 路径连通, 由**定理 4.3 (路径连通蕴含连通)** 它连通. $\blacksquare$
 
-## 习题七
+## 3.7 (拓扑学家正弦曲线连通但不路径连通)
 
 证明拓扑学家正弦曲线连通但不路径连通.
 
-### 解答 习题七
+### 解答 3.7
 
 记
 
@@ -250,11 +250,11 @@ $$
 
 再证不路径连通. 反设存在路径 $\gamma:\left[0,1\right]\to S$ 以 $\left(0,0\right)\in L$ 为起点, 以 $\left(1,\sin1\right)\in G$ 为终点. 令 $t_0=\inf\left\{t:\gamma\left(t\right)\text{ 的横坐标}> 0\right\}$. 由连续性 $\gamma\left(t_0\right)\in L$. 取 $t_n\downarrow t_0$, 则 $\gamma\left(t_n\right)=\left(x_n,\sin\left(1/x_n\right)\right)$, $x_n\to0^{+}$. 序列 $\sin\left(1/x_n\right)$ 既有收敛到 $1$ 的子列, 又有收敛到 $-1$ 的子列, 不可能收敛到 $\gamma\left(t_0\right)$ 的纵坐标, 与 $\gamma$ 连续矛盾. 故不存在这样的路径, $S$ 不路径连通, 即它不是**定义 4.22 (路径连通)** 意义下的路径连通空间. $\blacksquare$
 
-## 习题八
+## 3.8 (连通等价于到两点空间的连续映射常值，以及乘积去方块后的连通性)
 
 连通性与连续函数. 证明: $X$ 是**定义 4.18 (连通空间)** 当且仅当一切连续映射 $f:X\to\left\{0,1\right\}$ (目标装备离散拓扑) 都是常值的. 再设 $A,B$ 是两个连通度量空间, $X,Y$ 分别是 $A,B$ 的真子集. 证明 $C=\left(A\times B\right)\setminus\left(X\times Y\right)$ 是 $A\times B$ 的连通子集.
 
-### 解答 习题八
+### 解答 3.8
 
 **($\Rightarrow$)** 设 $X$ 是**定义 4.18 (连通空间)**, $f:X\to\left\{0,1\right\}$ 连续. 由**定理 4.2 (连续像连通)**, $f\left(X\right)$ 连通; 离散两点集 $\left\{0,1\right\}$ 的连通子集只有单点, 故 $f\left(X\right)$ 是单点集, 即 $f$ 常值.
 
@@ -262,11 +262,11 @@ $$
 
 **第二问:** $C=\left(\left(A\setminus X\right)\times B\right)\cup\left(A\times\left(B\setminus Y\right)\right)$. 因 $X,Y$ 是真子集, 可取 $a_0\in A\setminus X$, $b_0\in B\setminus Y$. 固定 $b_0$, 集合 $A\times\left\{b_0\right\}$ 由**定理 4.7 (乘积连通)** 连通. 对每个 $a\in A\setminus X$, 集合 $\left\{a\right\}\times B$ 连通 (**定理 4.7 (乘积连通)**), 且与 $A\times\left\{b_0\right\}$ 交于 $\left(a,b_0\right)$. 由**定理 4.6 (扇形连通)**, $S=A\times\left\{b_0\right\}\cup\bigcup_{a\in A\setminus X}\left\{a\right\}\times B$ 连通. 再对每个 $b\in B\setminus Y$, 集合 $A\times\left\{b\right\}$ 连通, 且与 $S$ 交于 $\left(a_0,b\right)$. 再用**定理 4.6 (扇形连通)**, 加入所有 $A\times\left\{b\right\}$ 后仍连通, 所得正是 $C$. $\blacksquare$
 
-## 习题九
+## 3.9 (边界连通蕴含闭集连通（附闭性不可少的反例）)
 
 连通性与边界. 设 $E$ 是连通度量空间, $F$ 是 $E$ 的闭集. 证明: 若 $F$ 的边界 $\partial F$ 连通, 则 $F$ 连通. 再举例说明 $F$ 不假设闭时结论失效.
 
-### 解答 习题九
+### 解答 3.9
 
 反设 $F$ 不连通. 则 $F$ 有非空分离 $F=A\cup B$, $A,B$ 非空不相交, 且在 $F$ 中既开又闭. 因 $F$ 在 $E$ 中闭, 由**定义 3.21 (闭集)**, $A,B$ 在 $E$ 中也闭. 由**定义 3.20 (边界)**, $\partial F=F\cap\overline{E\setminus F}$. 断言
 
@@ -278,11 +278,11 @@ $$
 
 **反例:** 取 $E=\left[0,1\right]$, $F=\left[0,1/2\right)\cup\left(1/2,1\right]$. $F$ 不闭, 且不连通; 但 $\partial F=\left\{1/2\right\}$ 是单点, 连通. $\blacksquare$
 
-## 习题十
+## 3.10 ($\varepsilon$-链空间：连通蕴含链性，紧且链性蕴含连通)
 
 链空间. 称度量空间 $X$ 是 $\varepsilon$-链的, 若任意 $a,b\in X$ 可由有限点列 $x_0=a,\dots,x_n=b$ 连接使 $d\left(x_i,x_{i+1}\right)< \varepsilon$; 对一切 $\varepsilon> 0$ 都成立称**定义 4.14 ($\varepsilon$-链空间)**. 证明: $X$ 连通则 $X$ 是 $\varepsilon$-链空间; $X$ 紧且 $\varepsilon$-链则 $X$ 连通; 举例说明 $\varepsilon$-链空间可以不连通.
 
-### 解答 习题十
+### 解答 3.10
 
 **连通 $\Rightarrow$ $\varepsilon$-链:** 固定 $\varepsilon> 0$, 定义 $a\sim b$ 为存在 $\varepsilon$-链. 等价类在**定义 6.36 (开球)** $B\left(x,\varepsilon\right)$ 下封闭, 故每个等价类开; 其余等价类之并也开. 由**定义 4.19 (既开又闭集)**, 连通空间只有一个等价类, 即 $X$ 是**定义 4.14 ($\varepsilon$-链空间)**.
 
@@ -290,11 +290,11 @@ $$
 
 **$\varepsilon$-链但不连通的例子:** 有理数集 $\mathbb Q$ 装备通常度量. 对任意 $\varepsilon> 0$, 任意两个有理数之间可插入间距小于 $\varepsilon$ 的有理点列, 故 $\mathbb Q$ 是 $\varepsilon$-链的; 但 $\mathbb Q$ 完全不连通. $\blacksquare$
 
-## 习题十一
+## 3.11 (自映射皆有不动点蕴含连通，而紧连通不足)
 
 不动点与连通性. 设 $X$ 是度量空间, 假设一切连续映射 $f:X\to X$ 都有不动点. 证明 $X$ 连通. 再问: 若 $X$ 紧且连通, 是否一切连续映射 $f:X\to X$ 都有不动点?
 
-### 解答 习题十一
+### 解答 3.11
 
 反设 $X$ 不连通, 则 $X=A\cup B$, $A,B$ 非空不相交且由**定义 4.19 (既开又闭集)** 既开又闭. 取 $a\in A$, $b\in B$, 定义 $f$: 在 $A$ 上取常值 $b$, 在 $B$ 上取常值 $a$. 因 $A,B$ 既开又闭, 由**定义 3.22 (连续映射)** $f$ 连续; 但 $f\left(A\right)\subset B$, $f\left(B\right)\subset A$, 而 $A\cap B=\emptyset$, 故 $f$ 无不动点. 矛盾. 故 $X$ 连通.
 
@@ -302,11 +302,11 @@ $$
 
 > 紧与连通只能保证空间是连在一起的, 而不动点与空间的自同胚相关, 这是两件事.
 
-## 习题十二
+## 3.12 (连通边界蕴含闭集连通（重述）)
 
 (连通边界) 设 $\left(E,d\right)$ 是连通度量空间, $F\subset E$ 闭, 且 $\partial F$ 连通. 证明 $F$ 连通.
 
-### 解答 习题十二
+### 解答 3.12
 
 反设 $F$ 不连通. 则 $F$ 有非空分离 $F=A\cup B$, $A,B$ 非空不相交, 且在 $F$ 中既开又闭. 因 $F$ 在 $E$ 中闭, 由**定义 3.21 (闭集)**, $A,B$ 在 $E$ 中也闭. 由**定义 3.20 (边界)**, $\partial F=F\cap\overline{E\setminus F}$. 断言
 
@@ -316,7 +316,7 @@ $$
 
 两边都非空. 若 $A\cap\overline{E\setminus F}=\emptyset$, 则 $A\subset\operatorname{int}\left(F\right)$; 又 $A$ 在 $F$ 中开, 即 $A=F\cap O$ ($O$ 开于 $E$), 于是 $A=O\cap\operatorname{int}\left(F\right)$ 在 $E$ 中开. $A$ 在 $E$ 中既开又闭, 由**定义 4.19 (既开又闭集)**, $E$ 连通推出 $A=\emptyset$ 或 $E$, 与 $A$ 是 $F$ 的非空真子集矛盾. 故 $A\cap\overline{E\setminus F}\neq\emptyset$, 同理 $B\cap\overline{E\setminus F}\neq\emptyset$. 这两个非空不交闭集分离了 $\partial F$, 与 $\partial F$ 连通矛盾. 故 $F$ 连通. $\blacksquare$
 
-## 习题十三
+## 3.13 (周期连续函数的中点等值问题)
 
 设 $f:\left[0,1\right]\to\mathbb R$ 是一个连续函数并且 $f\left(0\right)=f\left(1\right)$.
 
@@ -326,7 +326,7 @@ $$
 
 (3) (5 分) 证明存在一个连续函数 $f:\left[0,1\right]\to\mathbb R$ 使得对于任意的 $x\in\left[0,\frac35\right]$ 都有 $f\left(x\right)\neq f\left(x+\frac25\right)$.
 
-### 解答 习题十三
+### 解答 3.13
 
 **(1)** 令 $g\left(x\right)=f\left(x\right)-f\left(x+\frac12\right)$, 定义域 $\left[0,\frac12\right]$. 若 $g\left(0\right)=0$, 则 $x=0$ 已满足. 否则
 
@@ -350,7 +350,7 @@ $$
 > 
 > $1/n$ 特殊的原因在于其经过有限次求和后为 $1$, 因此可以利用望远镜级数, 最终求和得到 $f\left(0\right)-f\left(1\right)=0$, 即第 2 问的证明过程.
 
-## 习题十四
+## 3.14 (球面的连通性、路径连通性、挖去一点后的同胚与紧性)
 
 (2024 年卷 A 题目二, 20 分). 我们记 $S^2=\left\{\left(x,y,z\right)\in\mathbb R^3:x^2+y^2+z^2=1\right\}$ 为 $\mathbb R^3$ 中的单位球面, $D=\left\{\left(x,y\right)\in\mathbb R^2:x^2+y^2\le1\right\}$ 为单位圆盘.
 
@@ -367,7 +367,7 @@ $$
 
 (4) 证明球面 $S^2$ 是紧的.
 
-### 解答 习题十四
+### 解答 3.14
 
 **(1)** 闭单位圆盘 $D\subset\mathbb R^2$ 由**定义 4.23 (凸集)** 是凸集, 凸集中任意两点可由线段连接故路径连通, 路径连通蕴含连通. 映射 $\phi^+:\left(u,v\right)\mapsto\left(u,v,\sqrt{1-u^2-v^2}\right)$ 连续, 其像为 $D^+$. 由**定理 4.2 (连续像连通)**, $D^+$ 连通. 同理 $D^-$ 连通.
 

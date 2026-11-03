@@ -106,7 +106,7 @@
 > 
 > 关于一族映射 $f_i:X_i\to Y$ 使每个 $f_i$ 连续的最细拓扑; $U\subset Y$ 开当且仅当每个 $f_i^{-1}\left(U\right)$ 在 $X_i$ 中开. (题集 §1.4 C6; 题集 §5 Q1-Q2)
 
-## 习题一
+## 1.1 (谢尔宾斯基空间：闭包、收敛与连续自映射)
 
 考虑谢尔宾斯基空间, 其中 $X=\left\{0,1\right\}$, $\mathcal O=\left\{\emptyset,\left\{0\right\},\left\{0,1\right\}\right\}$.
 
@@ -124,7 +124,7 @@
 
 (7) 证明从 $\left(X,\mathcal O\right)$ 到自身的连续映射恰有三个.
 
-### 解答 习题一
+### 解答 1.1
 
 (1) 由**定义 3.18 (拓扑空间)**, $\mathcal O$ 的开集为 $\emptyset,\left\{0\right\},\left\{0,1\right\}$. 由**定义 3.21 (闭集)**, 闭集是开集的补集, 故 $\mathcal O$ 的闭集为 $X,\left\{1\right\},\emptyset$. 因 $\left\{1\right\}$ 是闭集, 由**定义 3.26 (闭包)** 其为包含 $\left\{1\right\}$ 的最小闭集, 故 $\overline{\left\{1\right\}}=\left\{1\right\}$.
 
@@ -150,11 +150,11 @@
 
 > 看似未讨论 $f^{-1}\left(\emptyset\right)$ 与 $f^{-1}\left(\left\{0,1\right\}\right)$, 只讨论了 $f^{-1}\left(\left\{0\right\}\right)$; 实际上由原像保空集与全集, 恒有 $f^{-1}\left(\emptyset\right)=\emptyset$, $f^{-1}\left(\left\{0,1\right\}\right)=\left\{0,1\right\}$, 此为平凡情形故省略.
 
-## 习题二
+## 1.2 (由映射诱导的初始拓扑)
 
 设 $f:X\to Y$ 是函数, 且 $Y$ 赋予一个拓扑 $\mathcal O$. 证明: 若 $\mathcal O_f=\left\{f^{-1}\left(O\right)\subset X:O\in\mathcal O\right\}$, 则 $\mathcal O_f$ 是 $X$ 上的拓扑; 且它是使 $f$ 连续的最粗拓扑. 上述拓扑称为由 $f$ 诱导的初始拓扑.
 
-### 解答 习题二
+### 解答 1.2
 
 先证 $\mathcal O_f$ 是拓扑, 由**定义 3.18 (拓扑空间)** 逐条验证:
 
@@ -170,11 +170,11 @@
 
 > 证明拓扑最粗的思路是: 证明该拓扑最小.
 
-## 习题三
+## 1.3 (拓扑之交仍是拓扑，而并不必是拓扑)
 
 证明: 给定一族拓扑 $\left\{\left(X,\mathcal O_\alpha\right)\right\}_{\alpha\in A}$, 它们的交集 (即 $X$ 的子集 $U$ 使得 $U$ 在每个 $\mathcal O_\alpha$ 中都是开的) 仍是拓扑. 论证将交集换成并集则不成立.
 
-### 解答 习题三
+### 解答 1.3
 
 设 $\mathcal O=\bigcap_{\alpha\in A}\mathcal O_\alpha$. 由**定义 3.18 (拓扑空间)** 逐条验证:
 
@@ -190,7 +190,7 @@
 
 > 在拓扑的 3 条公理中, 对有限交封闭这一性质最难保持.
 
-## 习题四
+## 1.4 ($\mathcal O_1$ 比 $\mathcal O_2$ 细的等价刻画)
 
 证明下列是 "$\mathcal O_1$ 比 $\mathcal O_2$ 细" 的等价定义:
 
@@ -200,7 +200,7 @@
 
 (3) 对任意 $x\in X$, $\mathcal O_2$ 中 $x$ 的每个邻域都是 $\mathcal O_1$ 中 $x$ 的邻域.
 
-### 解答 习题四
+### 解答 1.4
 
 由**定义 3.13 (细)**, "$\mathcal O_1$ 比 $\mathcal O_2$ 细" 即 $\mathcal O_2\subset\mathcal O_1$.
 
@@ -212,7 +212,7 @@
 
 **(3) $\Rightarrow\mathcal O_2\subset\mathcal O_1$**: 由**定义 3.25 (邻域与极限)**, 设 $V$ 是 $x$ 在 $\mathcal O_2$ 中的邻域, 即 $V\in\mathcal O_2$; 由假设 $V$ 也是 $x$ 在 $\mathcal O_1$ 中的邻域, 即 $V\in\mathcal O_1$. 故 $\mathcal O_2\subset\mathcal O_1$. $\blacksquare$
 
-## 习题五
+## 1.5 (加细拓扑保持豪斯多夫性、闭包、内部与可分性)
 
 设 $\left(X,\mathcal O_1\right)$ 比 $\left(X,\mathcal O_2\right)$ 细. 证明:
 
@@ -222,7 +222,7 @@
 
 (3) 若 $\mathcal O_1$ 是可分的 (即含可数稠密子集), 则 $\mathcal O_2$ 也是可分的;
 
-### 解答 习题五
+### 解答 1.5
 
 (1) 设 $x\neq y$. 因 $\mathcal O_2$ 是豪斯多夫的, 由**定义 3.10 (豪斯多夫空间)** 存在 $\mathcal O_2$ 中不相交的开集 $U,V$ 使 $x\in U$, $y\in V$. 由**定义 3.13 (细)** $\mathcal O_2\subset\mathcal O_1$, 故 $U,V\in\mathcal O_1$. 由**定义 3.10 (豪斯多夫空间)**, $\mathcal O_1$ 中也有不相交开集分离 $x,y$, 故 $\mathcal O_1$ 是豪斯多夫的.
 
@@ -232,11 +232,11 @@
 
 (3) 由**定义 3.9 (可分)**, $\mathcal O_1$ 有可数稠密子集 $D$, 即由**定义 3.32 (稠密)** $\overline D^{1}=X$. 由第 (2) 小题, $\overline D^{1}\subset\overline D^{2}$, 故 $X\subset\overline D^{2}$, 即 $\overline D^{2}=X$. 由**定义 3.32 (稠密)**, $D$ 在 $\mathcal O_2$ 中稠密; 再由**定义 3.9 (可分)**, $\mathcal O_2$ 可分. $\blacksquare$
 
-## 习题六
+## 1.6 (对角线闭当且仅当空间豪斯多夫)
 
 证明: $X$ 是豪斯多夫空间, 当且仅当对角线 $\Delta=\left\{\left(x,x\right):x\in X\right\}\subset X\times X$ 在 $X\times X$ 的乘积拓扑下是闭的.
 
-### 解答 习题六
+### 解答 1.6
 
 **$\left(\Rightarrow\right)$** 已知 $X$ 是豪斯多夫的, 证 $\Delta$ 闭, 即由**定义 3.21 (闭集)** 证其补集 $\left(X\times X\right)\setminus\Delta$ 开. 取 $\left(x,y\right)\notin\Delta$, 由**定义 3.12 (对角线)** 则 $x\neq y$. 由**定义 3.10 (豪斯多夫空间)**, 存在不相交开集 $U,V$ 使 $x\in U$, $y\in V$. 由**定义 3.11 (乘积拓扑)**, $U\times V$ 是乘积拓扑的开集; 且因 $U\cap V=\emptyset$, $U\times V\cap\Delta=\emptyset$, 故
 
@@ -248,21 +248,21 @@ $$
 
 **$\left(\Leftarrow\right)$** 已知 $\Delta$ 闭. 取 $x\neq y$, 由**定义 3.12 (对角线)** 则 $\left(x,y\right)\notin\Delta$. 由**定义 3.11 (乘积拓扑)**, 存在基本开集 $U\times V$ 使 $\left(x,y\right)\in U\times V\subset\left(X\times X\right)\setminus\Delta$, 其中 $U,V$ 为开集. 则 $x\in U$, $y\in V$, 且 $U\cap V=\emptyset$ (否则 $U\times V\cap\Delta\neq\emptyset$, 与含于 $\left(X\times X\right)\setminus\Delta$ 矛盾). 由**定义 3.10 (豪斯多夫空间)**, $X$ 是豪斯多夫的. $\blacksquare$
 
-## 习题七
+## 1.7 (子空间中闭集的刻画)
 
 设 $\left(X,\mathcal O_X\right)$ 为拓扑空间, $A\subset X$, $\iota:A\to X$ 为包含映射; $A$ 的子空间拓扑规定 $U\subset A$ 开当且仅当存在 $X$ 中开集 $O$ 使 $U=O\cap A$. 证明: $F\subset A$ 在 $A$ 中闭, 当且仅当存在 $X$ 中闭集 $F'$ 使 $F=F'\cap A$.
 
-### 解答 习题七
+### 解答 1.7
 
 **($\Leftarrow$)** 设存在 $X$ 中闭集 $F'$ 使 $F=F'\cap A$. 由**定义 3.21 (闭集)**, $X\setminus F'$ 是 $X$ 中开集. 由**定义 3.19 (子空间拓扑)**, $A\cap\left(X\setminus F'\right)$ 是 $A$ 中开集. 由集合运算恒等式, $A\setminus F=A\setminus\left(F'\cap A\right)=A\cap\left(X\setminus F'\right)$; 故 $A\setminus F$ 是 $A$ 中开集. 再由**定义 3.21 (闭集)**, $F$ 在 $A$ 中闭.
 
 **($\Rightarrow$)** 设 $F$ 在 $A$ 中闭. 由**定义 3.21 (闭集)**, $A\setminus F$ 是 $A$ 中开集. 由**定义 3.19 (子空间拓扑)**, 存在 $X$ 中开集 $O$ 使 $A\setminus F=O\cap A$. 令 $F'=X\setminus O$, 则由**定义 3.21 (闭集)** $F'$ 是 $X$ 中闭集; 由集合运算恒等式, $F=A\setminus\left(O\cap A\right)=A\cap\left(X\setminus O\right)=F'\cap A$. 故存在 $X$ 中闭集 $F'$ 使 $F=F'\cap A$. $\blacksquare$
 
-## 习题八
+## 1.8 (拓扑基限制到子空间仍是基)
 
 证明: 若 $\mathcal B$ 是 $X$ 的拓扑基, 则 $\left\{O\cap A:O\in\mathcal B\right\}$ 是 $A$ 的拓扑基.
 
-### 解答 习题八
+### 解答 1.8
 
 记 $\mathcal B_A=\left\{U:=O\cap A:O\in\mathcal B\right\}$. 由**定义 3.15 (拓扑基)**, 需验证 $\mathcal B_A$ 满足两条:
 
@@ -280,11 +280,11 @@ $$
 
 由**定义 3.15 (拓扑基)**, $\mathcal B_A$ 满足基的两条刻画, 故 $\mathcal B_A$ 是 $A$ 的拓扑基. $\blacksquare$
 
-## 习题九
+## 1.9 (子空间的开集与闭集何时在原空间中开、闭)
 
 证明: $A$ 在 $X$ 中开 (闭), 当且仅当 $A$ 的每个开集 $U$ (闭集 $F$) 在 $X$ 中开 (闭).
 
-### 解答 习题九
+### 解答 1.9
 
 先证开的情形.
 
@@ -294,39 +294,39 @@ $$
 
 再证闭的情形.
 
-**($\Rightarrow$)** 设 $A$ 在 $X$ 中闭. 设 $F$ 是 $A$ 的闭集. 由**习题七**的结论, 存在 $X$ 中闭集 $F'$ 使 $F=F'\cap A$. 由**定义 3.21 (闭集)**, $X\setminus F'$ 与 $X\setminus A$ 都是 $X$ 中开集. 由**定义 3.18 (拓扑空间)**, 其并 $\left(X\setminus F'\right)\cup\left(X\setminus A\right)$ 是 $X$ 中开集. 由集合运算恒等式, $\left(X\setminus F'\right)\cup\left(X\setminus A\right)=X\setminus\left(F'\cap A\right)$; 故 $X\setminus F$ 是 $X$ 中开集. 由**定义 3.21 (闭集)**, $F$ 是 $X$ 中闭集.
+**($\Rightarrow$)** 设 $A$ 在 $X$ 中闭. 设 $F$ 是 $A$ 的闭集. 由**习题 1.7**的结论, 存在 $X$ 中闭集 $F'$ 使 $F=F'\cap A$. 由**定义 3.21 (闭集)**, $X\setminus F'$ 与 $X\setminus A$ 都是 $X$ 中开集. 由**定义 3.18 (拓扑空间)**, 其并 $\left(X\setminus F'\right)\cup\left(X\setminus A\right)$ 是 $X$ 中开集. 由集合运算恒等式, $\left(X\setminus F'\right)\cup\left(X\setminus A\right)=X\setminus\left(F'\cap A\right)$; 故 $X\setminus F$ 是 $X$ 中开集. 由**定义 3.21 (闭集)**, $F$ 是 $X$ 中闭集.
 
 **($\Leftarrow$)** 设 $A$ 的每个闭集都是 $X$ 中闭集. 由**定义 3.21 (闭集)**, 全空间 $A$ 自身是 $A$ 中闭集, 故由假设 $A$ 是 $X$ 中闭集. $\blacksquare$
 
-## 习题十
+## 1.10 (包含映射连续且诱导的初始拓扑恰为子空间拓扑)
 
 证明: 包含映射 $\iota:A\to X$ 连续, 且子空间拓扑与 $\iota$ 诱导的初始拓扑相同.
 
-### 解答 习题十
+### 解答 1.10
 
 对任意 $X$ 中开集 $O$, 由原像的定义, $\iota^{-1}\left(O\right)=\left\{a\in A:\iota\left(a\right)\in O\right\}$; 因 $\iota$ 是包含映射, $\iota\left(a\right)=a$, 故 $\left\{a\in A:a\in O\right\}=A\cap O$. 由**定义 3.19 (子空间拓扑)**, $\iota^{-1}\left(O\right)=O\cap A$ 恰为 $A$ 中的开集. 由**定义 3.22 (连续映射)**, 对每个 $X$ 中开集 $O$, $\iota^{-1}\left(O\right)$ 在 $A$ 中开, 故 $\iota$ 连续.
 
 由**定义 3.14 (初始拓扑)**, $\iota$ 在 $A$ 上诱导的初始拓扑为 $\left\{\iota^{-1}\left(O\right):O\;\text{是}\;X\;\text{中开集}\right\}=\left\{O\cap A:O\;\text{是}\;X\;\text{中开集}\right\}$, 且该拓扑是使 $\iota$ 连续的最粗拓扑; 而**定义 3.19 (子空间拓扑)** 亦给出使 $\iota$ 连续的最粗拓扑, 故两者相同. $\blacksquare$
 
-## 习题十一
+## 1.11 (子空间闭包的传递公式)
 
 设 $A\subset B\subset X$, $B$ 装备 $X$ 诱导的子空间拓扑. 证明: $A$ 在 $B$ 中的闭包等于 $A$ 在 $X$ 中的闭包与 $B$ 的交.
 
-### 解答 习题十一
+### 解答 1.11
 
-记 $\overline A^{X}$ 为 $A$ 在 $X$ 中的闭包, $\overline A^{B}$ 为 $A$ 在 $B$ 中的闭包. 由**定义 3.26 (闭包)**, $\overline A^{B}$ 是 $B$ 中包含 $A$ 的最小闭集. 由**习题七**, $B$ 中闭集恰为形如 $F'\cap B$ 的集合, 其中 $F'$ 是 $X$ 中闭集. 故 $B$ 中包含 $A$ 的闭集族恰为 $\left\{F'\cap B:F'\;\text{是}\;X\;\text{中闭集且}\;A\subset F'\right\}$.
+记 $\overline A^{X}$ 为 $A$ 在 $X$ 中的闭包, $\overline A^{B}$ 为 $A$ 在 $B$ 中的闭包. 由**定义 3.26 (闭包)**, $\overline A^{B}$ 是 $B$ 中包含 $A$ 的最小闭集. 由**习题 1.7**, $B$ 中闭集恰为形如 $F'\cap B$ 的集合, 其中 $F'$ 是 $X$ 中闭集. 故 $B$ 中包含 $A$ 的闭集族恰为 $\left\{F'\cap B:F'\;\text{是}\;X\;\text{中闭集且}\;A\subset F'\right\}$.
 
 先证 $\overline A^{B}\subset\overline A^{X}\cap B$. 由**定义 3.26 (闭包)**, $\overline A^{X}$ 是 $X$ 中包含 $A$ 的闭集, 故 $\overline A^{X}$ 是上式闭集族中一员, 其与 $B$ 的交 $\overline A^{X}\cap B$ 是 $B$ 中包含 $A$ 的闭集. 由**定义 3.26 (闭包)**, $\overline A^{B}$ 是其中最小者, 故 $\overline A^{B}\subset\overline A^{X}\cap B$.
 
-再证反包含. 任取 $B$ 中包含 $A$ 的闭集 $F'\cap B$ (其中 $F'$ 是 $X$ 中闭集且 $A\subset F'$). 由**定义 3.26 (闭包)**, $\overline A^{X}\subset F'$, 故 $\overline A^{X}\cap B\subset F'\cap B$. 即 $\overline A^{X}\cap B$ 含于 $B$ 中每个包含 $A$ 的闭集, 特别地含于最小者 $\overline A^{B}$. 故 $\overline A^{B}=\overline A^{X}\cap B$. $\blacksquare$
+再证反包含. 任取 $B$ 中包含 $A$ 的闭集 $F'\cap B$ (其中 $F'$ 是 $X$ 中闭集且 $A\subset F'$). 由**定义 3.26 (闭包)**, $\overline A^{X}\subset F'$, 故 $\overline A^{X}\cap B\subset F'\cap B$. 即 $\overline A^{X}\cap B$ 含于 $B$ 中每个包含 $A$ 的闭集, 特别地含于最小者 $\overline A^{B}$. 故 $\overline A^{B}\supset\overline A^{X}\cap B$. 综上 $\overline A^{B}=\overline A^{X}\cap B$. $\blacksquare$
 
-## 习题十二
+## 1.12 (闭集在自身中稠密)
 
 证明: 若 $A$ 等于 $A$ 在 $X$ 中的闭包, 则 $A$ 在 $A$ (装备 $A$ 上的诱导拓扑) 中稠密.
 
-### 解答 习题十二
+### 解答 1.12
 
-由题设 $A=\overline A^{X}$. 在**习题十一**的公式中取 $B=A$, 则 $A$ 在其自身子空间拓扑下的闭包为
+由题设 $A=\overline A^{X}$. 在**习题 1.11**的公式中取 $B=A$, 则 $A$ 在其自身子空间拓扑下的闭包为
 
 $$
 \overline A^{A}=\overline A^{X}\cap A=A\cap A=A.
@@ -334,11 +334,11 @@ $$
 
 由**定义 3.32 (稠密)**, $A$ 在 $A$ 中稠密当且仅当其在 $A$ 中的闭包等于 $A$ 自身. 上式恰给出此条件, 故 $A$ 在 $A$ 中稠密. $\blacksquare$
 
-## 习题十三
+## 1.13 (度量空间子空间的拓扑由限制度量给出)
 
 证明: 若 $X$ 是带距离 $d$ 的度量空间, 则 $A$ 上的子空间拓扑也是度量拓扑, 其度量为 $d$ 在 $A$ 上的限制.
 
-### 解答 习题十三
+### 解答 1.13
 
 记 $d_A=d|_{A}$. 由**定义 6.35 (度量空间)**, $d:X\to\mathbb R_{\ge0}$ 满足四条度量公理; 限制 $d_A$ 在 $A$ 上逐点取值不变, 故同样满足这四条公理. 由**定义 6.35 (度量空间)**, $\left(A,d_A\right)$ 是度量空间.
 
@@ -348,21 +348,21 @@ $$
 B_A\left(a,r\right)=\left\{y\in A:d_A\left(a,y\right)< r\right\}=A\cap\left\{y\in X:d\left(a,y\right)< r\right\}=A\cap B_X\left(a,r\right).
 $$
 
-由**定义 6.36 (开球)**, 开球族 $\left\{B_X\left(a,r\right)\right\}$ 是 $X$ 的一个拓扑基; 由**习题八**, 它们与 $A$ 的交 $\left\{A\cap B_X\left(a,r\right)\right\}$ 是 $A$ 的拓扑基. 上式表明这恰是 $\left(A,d_A\right)$ 的开球族. 故 $A$ 上的子空间拓扑与 $d_A$ 诱导的度量拓扑一致. $\blacksquare$
+由**定义 6.36 (开球)**, 开球族 $\left\{B_X\left(a,r\right)\right\}$ 是 $X$ 的一个拓扑基; 由**习题 1.8**, 它们与 $A$ 的交 $\left\{A\cap B_X\left(a,r\right)\right\}$ 是 $A$ 的拓扑基. 上式表明这恰是 $\left(A,d_A\right)$ 的开球族. 故 $A$ 上的子空间拓扑与 $d_A$ 诱导的度量拓扑一致. $\blacksquare$
 
-## 习题十四
+## 1.14 (豪斯多夫性对子空间遗传)
 
 证明: 若 $X$ 是豪斯多夫度量空间, 则装备诱导拓扑的 $A$ 也是豪斯多夫空间.
 
-### 解答 习题十四
+### 解答 1.14
 
 任取 $x,y\in A$ 且 $x\neq y$. 由**定义 3.10 (豪斯多夫空间)**, 因 $X$ 是豪斯多夫的, 存在 $X$ 中不相交的开集 $U,V$ 使 $x\in U$, $y\in V$. 由**定义 3.19 (子空间拓扑)**, $U\cap A$ 与 $V\cap A$ 都是 $A$ 中开集, 且 $x\in U\cap A$, $y\in V\cap A$. 又因 $U\cap V=\emptyset$, 故 $\left(U\cap A\right)\cap\left(V\cap A\right)=\emptyset$. 由**定义 3.10 (豪斯多夫空间)**, $A$ 中任意一对不同点都有不相交的邻域, 故 $A$ 是豪斯多夫空间. $\blacksquare$
 
-## 习题十五
+## 1.15 (子空间豪斯多夫而全空间不豪斯多夫的例子)
 
 构造例子: 子空间 $X\subset Y$ 是豪斯多夫的, 但 $X$ 中两点在 $Y$ 中没有不相交的邻域. 可考虑 $Y=X\cup\left\{\omega\right\}$, 其中 $\omega$ 是额外一点, $Y$ 的任一非空开集形如 $O\cup\left\{\omega\right\}$, 其中 $O$ 是 $X$ 中的开集.
 
-### 解答 习题十五
+### 解答 1.15
 
 取 $X=\mathbb R$ 装备通常拓扑, 由**定义 3.10 (豪斯多夫空间)** 它是豪斯多夫的. 令 $Y=X\cup\left\{\omega\right\}$, 规定 $Y$ 的开集为 $\emptyset$ 与一切形如 $O\cup\left\{\omega\right\}$ 的集合, 其中 $O$ 取遍 $X$ 中开集. 验证这是 $Y$ 上的拓扑, 由**定义 3.18 (拓扑空间)** 逐条验证: $\emptyset$ 开 (题设); 取 $O=X$ 得 $Y=X\cup\left\{\omega\right\}$ 开. 任意并
 
@@ -380,11 +380,11 @@ $$
 
 任取 $x,y\in X$ 且 $x\neq y$. $Y$ 中含 $x$ 的开集形如 $O\cup\left\{\omega\right\}$ 且 $x\in O$; $Y$ 中含 $y$ 的开集同理形如 $O'\cup\left\{\omega\right\}$ 且 $y\in O'$. 而两邻域含 $\omega$ 必相交. 故 $X$ 中任两点在 $Y$ 中没有不相交的邻域. $\blacksquare$
 
-## 习题十六
+## 1.16 (超度量的球、球面与球族结构)
 
 回忆距离 $d:X\times X\to\mathbb R_{\ge0}$ 满足四条公理. 超度量是将三角不等式加强为 $d\left(x,z\right)\le\max\left(d\left(x,y\right),d\left(y,z\right)\right)$ 的距离 (例如通常的 $p$-进度量). 设 $d$ 是超度量, 证明:
 
-(1) 若 $d\left(x,y\right)\neq d\left(x,z\right)$, 则 $d\left(y,z\right)=\max\left(d\left(x,y\right),d\left(x,z\right)\right)$;
+(1) 若 $d\left(x,y\right)\neq d\left(x,z\right)$, 则 $d\left(y,z\right)=\max\left\{d\left(x,y\right),d\left(x,z\right)\right\}$;
 
 (2) 开球中任一点都是该开球的中心;
 
@@ -392,7 +392,7 @@ $$
 
 (4) 任意两个开球或者不相交, 或者一个含于另一个.
 
-### 解答 习题十六
+### 解答 1.16
 
 (1) 不妨设 $d\left(x,y\right)< d\left(x,z\right)$, 则欲证 $d\left(y,z\right)=\max\left\{d\left(x,y\right),d\left(x,z\right)\right\}$, 只需证 $d\left(x,z\right)=d\left(y,z\right)$.
 
@@ -418,11 +418,11 @@ $$
 
 (4) 设 $B\left(x,r\right)$ 与 $B\left(y,s\right)$ 为两个开球. 若不相交则结论已成立. 若相交, 取 $z\in B\left(x,r\right)\cap B\left(y,s\right)$. 由第 (2) 小题, $B\left(x,r\right)=B\left(z,r\right)$ 且 $B\left(y,s\right)=B\left(z,s\right)$. 不妨设 $r\le s$, 则 $B\left(z,r\right)\subset B\left(z,s\right)$, 即 $B\left(x,r\right)\subset B\left(y,s\right)$. $\blacksquare$
 
-## 习题十七
+## 1.17 (两个有界化度量诱导同一拓扑)
 
 设 $\left(X,d\right)$ 是度量空间, 再定义度量 $d^{*}\left(x,y\right)=\min\left(d\left(x,y\right),1\right)$ 与 $d^{**}\left(x,y\right)=\frac{d\left(x,y\right)}{1+d\left(x,y\right)}$. 证明他们与 $d$ 诱导同一拓扑. 注意有界性依赖于度量的选取, 而不依赖于拓扑.
 
-### 解答 习题十七
+### 解答 1.17
 
 对 $r\in\left(0,1\right)$, $d^{*}\left(x,y\right)=\min\left(d\left(x,y\right),1\right)=d\left(x,y\right)$, 故 $d^{*}$ 与 $d$ 的半径小于 $1$ 的球族完全相同;
 
@@ -434,11 +434,11 @@ $$
 > 
 > 而 $d'$ 与 $d''$ 比较, 则只是换了一个参数: 对于 $r\in\left(0,1\right)$, $r\mapsto\frac{r}{1-r}=:\rho$. 因此二者自然生成同一拓扑.
 
-## 习题十八
+## 1.18 (开集的任意并开而任意交未必开)
 
 回忆 $\mathbb R^n$ 上的通常度量拓扑. 证明 $\mathbb R^n$ 中任意一族开集之并仍是开集. 证明开集的交未必是开集.
 
-### 解答 习题十八
+### 解答 1.18
 
 由**定义 3.18 (拓扑空间)**, 开集的任意并仍开; 但任意交未必开. 取 $\mathbb R$ 中一列开区间 $\left(-\frac1n,\frac1n\right)$ ($n\ge1$), 其交为
 
@@ -448,11 +448,11 @@ $$
 
 由**定义 6.36 (开球)**, 任何含 $0$ 的开球都含非零点, 故 $\left\{0\right\}$ 不含任何开球, 不是开集. $\blacksquare$
 
-## 习题十九
+## 1.19 (原像与并、交交换，而直接像不然)
 
 回忆函数的原像. 证明原像运算与并运算, 交运算可交换. 那直接像呢?
 
-### 解答 习题十九
+### 解答 1.19
 
 对于原像, 由原像与并运算交换与原像与交运算交换易证:
 
@@ -474,11 +474,11 @@ $$
 > 
 > (2) 直接像的并可交换, 但直接像的交不可交换: 考虑并时, 虽然是看着 $y$ 找 $x$, 但并集的含义是 "存在一个" 即可, 因此虽然可能有多个 $x$, 找到一个就行; 考虑交时, 交集的含义是 "任意一个" 均需要满足, 这就要求了 $x$ 需唯一才行, 因此不可逆, 自然也不可交换.
 
-## 习题二十
+## 1.20 (生成子空间的两种构造)
 
 回忆由一族向量生成的向量子空间. 给出一个利用向量空间对交集稳定性的抽象构造, 以及一个利用有限线性组合的具体构造.
 
-### 解答 习题二十
+### 解答 1.20
 
 设 $E$ 是域上向量空间, $\mathcal F=\left\{v_\alpha\right\}_{\alpha\in A}\subset E$.
 
@@ -492,31 +492,31 @@ $$
 
 即 $\mathcal F$ 中元素的有限线性组合全体. 它本身是包含 $\mathcal F$ 的向量子空间, 故含于抽象构造. 反之, 任何包含 $\mathcal F$ 的向量子空间对线性组合封闭, 故包含全部有限线性组合, 因而抽象构造 (一切子空间之交) 也含于该具体集合. 两者相等. $\blacksquare$
 
-## 习题二十一
+## 1.21 ($\mathbb R$ 中闭集与序列极限的刻画)
 
 证明: 集合 $F$ 在 $\mathbb R$ 的通常度量拓扑下闭, 当且仅当 $F$ 的每个收敛序列的极限都在 $F$ 中.
 
-### 解答 习题二十一
+### 解答 1.21
 
 **($\Rightarrow$)** 设 $F$ 闭. 由**定义 3.21 (闭集)**, $\mathbb R\setminus F$ 开. 设 $x_n\in F$ 且 $x_n\to x$. 若 $x\notin F$, 则 $x\in\mathbb R\setminus F$, 而 $\mathbb R\setminus F$ 是 $x$ 的邻域. 由**定义 3.25 (邻域与极限)**, 对所有充分大的 $n$ 有 $x_n\in\mathbb R\setminus F$, 与 $x_n\in F$ 矛盾. 故 $x\in F$.
 
 **($\Leftarrow$)** 反证. 设 $F$ 不闭. 由**定义 3.21 (闭集)**, $\mathbb R\setminus F$ 不开. 故存在 $x\notin F$ 使 $x$ 的任何邻域都不含于 $\mathbb R\setminus F$, 即 $x$ 的任何邻域都与 $F$ 相交. 由**定义 6.36 (开球)**, 球 $B\left(x,1/n\right)=\left(x-\frac1n,x+\frac1n\right)$ 与 $F$ 相交, 取 $x_n\in F\cap B\left(x,1/n\right)$, 则 $d\left(x_n,x\right)< 1/n$. 任给 $x$ 的邻域, 由**定义 6.36 (开球)** 它包含某 $B\left(x,\varepsilon\right)$; 当 $n> 1/\varepsilon$ 时 $x_n\in B\left(x,\varepsilon\right)$, 故由**定义 3.25 (邻域与极限)** $x_n\to x$. 但 $x\notin F$, 与假设矛盾. 故 $F$ 闭. $\blacksquare$
 
-## 习题二十二
+## 1.22 (由子集族生成的拓扑及其有限交构造)
 
 回忆同一空间 $X$ 上一族拓扑的交集仍是拓扑. 回忆由 $X$ 的一族子集生成的拓扑是什么. 是否有一个利用有限交的具体构造?
 
-### 解答 习题二十二
+### 解答 1.22
 
 同一空间 $X$ 上一族拓扑 $\left\{\mathcal O_\alpha\right\}_{\alpha\in A}$ 的交集 $\mathcal O=\bigcap_{\alpha\in A}\mathcal O_\alpha$ 仍是拓扑: 由原像保空集与全集 类的平凡性, $\emptyset$ 与 $X$ 属于每个 $\mathcal O_\alpha$, 故属于 $\mathcal O$; 若 $\left\{U_i\right\}\subset\mathcal O$, 则对每个 $\alpha$ 有 $\left\{U_i\right\}\subset\mathcal O_\alpha$, 由**定义 3.18 (拓扑空间)** (开集的任意并仍开) $\bigcup_iU_i\in\mathcal O_\alpha$, 故 $\bigcup_iU_i\in\mathcal O$; 有限交同理 (**定义 3.18 (拓扑空间)** (2)).
 
 由**定义 3.29 (由子集族生成的拓扑)**, 给定子集族 $\mathcal S\subset\mathcal P\left(X\right)$, 它生成的拓扑即包含 $\mathcal S$ 的最粗拓扑, 存在且等于一切包含 $\mathcal S$ 的拓扑之交. 其具体构造为: 先取 $\mathcal S$ 中元素的有限交 (约定空交为 $X$), 再取这些有限交的任意并 (约定空并为 $\emptyset$). 所得族 $\tau$ 确实是拓扑: $\emptyset,X\in\tau$; 任意并仍是任意并; 两个有限交的有限交仍是有限交, 故有限交封闭; 由**定义 3.18 (拓扑空间)** $\tau$ 是拓扑. 它包含 $\mathcal S$ (每个 $S\in\mathcal S$ 是单元素族的有限交). 反之, 任何包含 $\mathcal S$ 的拓扑由**定义 3.18 (拓扑空间)** 对有限交与任意并封闭, 必包含 $\tau$ 的全部元素, 故 $\tau$ 是最粗的. $\blacksquare$
 
-## 习题二十三
+## 1.23 (初始拓扑、最终拓扑与包含映射的例子)
 
 证明: 若 $f:X\to\left(Y,\mathcal O\right)$ 是到拓扑空间 $Y$ 的映射, 则集合族 $\left\{f^{-1}\left(O\right):O\in\mathcal O\right\}$ 在 $X$ 上定义一个拓扑. 证明它是使 $f$ 连续的最粗拓扑, 即初始拓扑. 研究 $f$ 为包含映射的情形, 例如 $f:\mathbb R\to\mathbb R^2$, 其中 $\mathbb R^2$ 装备欧氏拓扑. 反过来, 能否把 $X$ 上的拓扑前推, 在 $Y$ 上定义所谓最终拓扑?
 
-### 解答 习题二十三
+### 解答 1.23
 
 记 $\mathcal O_f=\left\{f^{-1}\left(O\right):O\in\mathcal O\right\}$. 由原像与并运算交换, 原像与交运算交换 与原像保空集与全集, $\mathcal O_f$ 满足**定义 3.18 (拓扑空间)** 的三条: $\emptyset=f^{-1}\left(\emptyset\right)$ 与 $X=f^{-1}\left(Y\right)$ 在 $\mathcal O_f$ 中; 任意并 $\bigcup_jf^{-1}\left(O_j\right)=f^{-1}\left(\bigcup_jO_j\right)$ 仍在 $\mathcal O_f$ 中; 有限交 $f^{-1}\left(O_1\right)\cap f^{-1}\left(O_2\right)=f^{-1}\left(O_1\cap O_2\right)$ 仍在其中. 故 $\mathcal O_f$ 是 $X$ 上的拓扑.
 

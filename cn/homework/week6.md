@@ -120,11 +120,11 @@
 > 
 > $f:V\to\left\{1,\dots,k\right\}$ 使相邻点异色; 存在则称 $k$-可染色. (题集 $\S3.3$)
 
-## 习题一
+## 6.1 (单边染色集的闭性)
 
 若 $F=\left\{\left(x,y\right)\right\}$ 只有一条边, 证明 $X_F$ 闭. ($X_F$ 见文首记号)
 
-### 解答 习题一
+### 解答 6.1
 
 一条边 $\left(x,y\right)$ 的染色条件即 $f\left(x\right)\neq f\left(y\right)$. 故
 
@@ -134,11 +134,11 @@ $$
 
 每个柱集 $C_{ij}=\left\{f:f\left(x\right)=i,\ f\left(y\right)=j\right\}$ 是坐标投影 $\pi_x:X\to\left\{1,\dots,k\right\}$ 与 $\pi_y$ 的纤维之交. 由**定义 3.11 (乘积拓扑)**, 坐标投影连续; 离散空间 $\left\{1,\dots,k\right\}$ 中单点 $\left\{i\right\}$ 闭, 由**定义 3.22 (连续映射)** 其原像 $\pi_x^{-1}\left(\left\{i\right\}\right)$ 闭. 故 $C_{ij}$ 闭. 而 $X_F$ 是有限个 $C_{ij}$ ($i\neq j$) 之并, 闭集的有限并仍闭. 故 $X_F$ 闭. $\blacksquare$
 
-## 习题二
+## 6.2 (任意边集的染色集闭)
 
 证明: 对任意 $F\subset E$, $X_F$ 闭.
 
-### 解答 习题二
+### 解答 6.2
 
 一个映射是 $\left(V,F\right)$ 的染色, 当且仅当它对每条边 $e\in F$ 都合法. 故
 
@@ -146,13 +146,13 @@ $$
 X_F=\bigcap_{e\in F}X_{\left\{e\right\}}.
 $$
 
-由**习题一**, 每个 $X_{\left\{e\right\}}$ 闭; 由**定义 3.21 (闭集)**, 闭集的任意交仍闭 (补集为开集的任意并). 故 $X_F$ 闭. $\blacksquare$
+由**习题 6.1**, 每个 $X_{\left\{e\right\}}$ 闭; 由**定义 3.21 (闭集)**, 闭集的任意交仍闭 (补集为开集的任意并). 故 $X_F$ 闭. $\blacksquare$
 
-## 习题三
+## 6.3 (有限子图可染蕴含染色集族的有限交非空)
 
 现设图 $G$ 的任意有限子图都可 $k$-染色. 证明 $\mathcal F$ 中任意有限个集合之交非空. ($\mathcal F$ 见文首记号)
 
-### 解答 习题三
+### 解答 6.3
 
 设 $F_1,\dots,F_n\subset E$ 有限. 由染色条件逐条叠加,
 
@@ -162,13 +162,13 @@ $$
 
 边集 $\bigcup_{i=1}^{n}F_i$ 有限, 由假设对应的子图可 $k$-染色, 即由**定义 11.17 ($k$-染色与 $k$-可染色)**, $X_{\bigcup_iF_i}\neq\emptyset$. 故有限交非空. $\blacksquare$
 
-## 习题四
+## 6.4 (用 $X$ 的紧致性得全族交非空)
 
 用 $X$ 的紧致性证明: $\mathcal F$ 中所有集合之交非空.
 
-### 解答 习题四
+### 解答 6.4
 
-由文首记号, $X=\prod_{v\in V}\left\{1,\dots,k\right\}$; 每个因子 $\left\{1,\dots,k\right\}$ 为有限离散空间故紧 (任意开覆盖每点选一覆盖元即有限子覆盖, 由**定义 5.16 (紧致空间)**), 由**定理 5.9 (吉洪诺夫定理)**, $X$ 在乘积拓扑下紧. 由**习题二**, 每个 $X_F$ 是紧空间 $X$ 中的闭集. 由**习题三**, $\mathcal F=\left\{X_F:F\subset E\text{ 有限}\right\}$ 具有限交性质 (由**定义 5.17 (有限交性质)**). 由**定理 5.10 (有限交判据)**,
+由文首记号, $X=\prod_{v\in V}\left\{1,\dots,k\right\}$; 每个因子 $\left\{1,\dots,k\right\}$ 为有限离散空间故紧 (任意开覆盖每点选一覆盖元即有限子覆盖, 由**定义 5.16 (紧致空间)**), 由**定理 5.9 (吉洪诺夫定理)**, $X$ 在乘积拓扑下紧. 由**习题 6.2**, 每个 $X_F$ 是紧空间 $X$ 中的闭集. 由**习题 6.3**, $\mathcal F=\left\{X_F:F\subset E\text{ 有限}\right\}$ 具有限交性质 (由**定义 5.17 (有限交性质)**). 由**定理 5.10 (有限交判据)**,
 
 $$
 \bigcap_{F\subset E\text{ 有限}}X_F\neq\emptyset.
@@ -176,13 +176,13 @@ $$
 
 $\blacksquare$
 
-## 习题五
+## 6.5 (德布鲁因–埃尔德什定理)
 
 证明德布鲁因-埃尔德什定理: 若图 $G$ 的任意有限子图都可 $k$-染色, 则 $G$ 可 $k$-染色. 即使 $G$ 有不可数个顶点也成立.
 
-### 解答 习题五
+### 解答 6.5
 
-由**习题四**, 可取
+由**习题 6.4**, 可取
 
 $$
 f\in\bigcap_{F\subset E\text{ 有限}}X_F.
@@ -190,11 +190,11 @@ $$
 
 对任意边 $e=\left(x,y\right)\in E$, 取 $F=\left\{e\right\}$; 因 $f\in X_{\left\{e\right\}}$, 由**定义 11.17 ($k$-染色与 $k$-可染色)**, $f\left(x\right)\neq f\left(y\right)$. 故 $f$ 是全图 $G=\left(V,E\right)$ 的合法 $k$-染色. $\blacksquare$
 
-## 习题六
+## 6.6 (紧度量空间中相邻距离趋于零的序列：聚点集紧且连通)
 
 设 $X$ 是紧度量空间, $\left\{u_n\right\}_{n\ge0}$ 是 $X$ 中序列且 $d\left(u_n,u_{n+1}\right)\to0$. 证明 $\left\{u_n\right\}$ 的聚点集紧致, 并且连通.
 
-### 解答 习题六
+### 解答 6.6
 
 令
 
@@ -212,11 +212,11 @@ $$
 
 对任意大的这样的 $n,m$ 重复选取 $p$, 并由 $X$ 紧致经**定理 6.1 (紧 $=$ 序列紧)** 提取收敛子列, 其极限 $z$ 满足 $d\left(z,C\right)\ge\delta/6$ 且 $d\left(z,D\right)\ge\delta/2$, 故 $z$ 是聚点但 $z\notin C\cup D=L$, 矛盾. 由**定义 4.18 (连通空间)**, $L$ 连通. $\blacksquare$
 
-## 习题七
+## 6.7 (紧度量空间上的等距自映射是满射同胚)
 
 设 $\left(X,d\right)$ 是度量空间, $f:X\to X$ 是**定义 6.49 (等距映射)**. 证明: 若 $X$ 紧致, 则 $f$ 双射且是同胚.
 
-### 解答 习题七
+### 解答 6.7
 
 $f$ 单: 由**定义 6.49 (等距映射)**, $f\left(x\right)=f\left(y\right)$ 蕴含 $d\left(x,y\right)=d\left(f\left(x\right),f\left(y\right)\right)=0$, 故 $x=y$.
 
@@ -230,11 +230,11 @@ $$
 
 $f$ 连续 (由等距映射蕴含利普希茨连续), $X$ 紧致故为紧豪斯多夫空间, 由**定理 5.6 (紧豪斯多夫间的连续双射)**, $f$ 是同胚. $\blacksquare$
 
-## 习题八
+## 6.8 (紧集上的膨胀映射是等距且双射，满 $1$-利普希茨映射是等距)
 
 (紧集的膨胀) 设 $X$ 是某赋范线性空间的紧子空间. 设 $f:X\to X$ 满足对一切 $x,y\in X$, $\left|f\left(y\right)-f\left(x\right)\right|\ge\left|y-x\right|$. 证明 $f$ 是**定义 6.49 (等距映射)** 且双射. 再证明满的 $1$-利普希茨函数 $g:X\to X$ 是等距.
 
-### 解答 习题八
+### 解答 6.8
 
 固定 $a,b\in X$, 记 $c_n=\left|f^n\left(a\right)-f^n\left(b\right)\right|$. 由膨胀条件应用于 $\left(f^{n-1}\left(a\right),f^{n-1}\left(b\right)\right)$, $c_{n+1}\ge c_n$, 又 $c_n\le\operatorname{diam}\left(X\right)$, 故 $c_n\uparrow L$. 由**定理 6.1 (紧 $=$ 序列紧)**, $X\times X$ 紧, $\left(f^n\left(a\right),f^n\left(b\right)\right)$ 有子列 $\left(f^{n_j}\left(a\right),f^{n_j}\left(b\right)\right)\to\left(u,v\right)$, 于是 $\left|u-v\right|=L$. 因 $c_{n_j}\to L$ 且 $c_{n_j+1}\to L$, 由三角不等式,
 
@@ -244,15 +244,15 @@ $$
 
 左端趋于 $0$, 故两项都趋于 $0$. 由 $f$ 连续 (膨胀条件蕴含利普希茨), $f\left(f^{n_j}\left(a\right)\right)=f^{n_j+1}\left(a\right)\to f\left(u\right)$; 而它也 $\to u$, 故 $f\left(u\right)=u$. 同理 $f\left(v\right)=v$. 由膨胀条件应用于 $\left(a,u\right)$: $\left|f^{n_j}\left(a\right)-f^{n_j}\left(u\right)\right|\ge\left|a-u\right|$, 即 $\left|f^{n_j}\left(a\right)-u\right|\ge\left|a-u\right|$. 令 $j\to\infty$ 得 $0\ge\left|a-u\right|$, 故 $u=a$. 同理 $v=b$. 于是 $L=\left|u-v\right|=\left|a-b\right|=c_0$, 而 $c_n$ 从 $c_0$ 起不减且收敛到 $c_0$, 故 $c_1=c_0$, 即 $\left|f\left(a\right)-f\left(b\right)\right|=\left|a-b\right|$. 由**定义 6.49 (等距映射)**, $f$ 是等距.
 
-再由**定理 5.1 (紧空间连续像紧)** 及**习题七**的论证, $f$ 双射.
+再由**定理 5.1 (紧空间连续像紧)** 及**习题 6.7**的论证, $f$ 双射.
 
 现设 $g:X\to X$ 满且 $\left|g\left(y\right)-g\left(x\right)\right|\le\left|y-x\right|$. 对任意 $u,v\in X$, 取原像 $x,y$ 使 $g\left(x\right)=u$, $g\left(y\right)=v$, 则 $\left|u-v\right|\le\left|x-y\right|$, 即 $g^{-1}$ 满足膨胀条件. 由上一段, $g^{-1}$ 是等距, 故 $g$ 也是等距. $\blacksquare$
 
-## 习题九
+## 6.9 (紧空间上的严格压缩映射有唯一不动点)
 
 (紧空间不动点定理) 设 $K$ 是某赋范线性空间的紧子空间. 设 $f:K\to K$ 严格压缩, 即 $x\neq y$ 时 $\left|f\left(y\right)-f\left(x\right)\right|< \left|y-x\right|$. 证明 $f$ 在 $K$ 中有唯一不动点, 且对一切 $a\in K$, $f^n\left(a\right)$ 收敛到该不动点.
 
-### 解答 习题九
+### 解答 6.9
 
 严格压缩条件蕴含 $f$ 连续 ($\left|f\left(y\right)-f\left(x\right)\right|< \left|y-x\right|$ 即利普希茨常数 $< 1$). 令 $g\left(x\right)=\left|f\left(x\right)-x\right|\ge0$; 由**定义 3.22 (连续映射)** 与**定理 3.1 (复合连续)**, $g$ 连续. 由**定理 5.11 (紧空间上连续函数取最大值)** (及其最小值情形), $g$ 在紧集 $K$ 上取到最小值, 设为 $g\left(x_0\right)$. 若 $g\left(x_0\right)> 0$, 则由严格压缩,
 
@@ -262,7 +262,7 @@ $$
 
 即 $g\left(f\left(x_0\right)\right)< g\left(x_0\right)$, 矛盾. 故 $g\left(x_0\right)=0$, $x_0$ 是不动点. 唯一性: 若另有不动点 $y$, 则 $0< \left|y-x_0\right|=\left|f\left(y\right)-f\left(x_0\right)\right|< \left|y-x_0\right|$, 矛盾. 对 $a\in K$, $\left|f^{n+1}\left(a\right)-x_0\right|< \left|f^n\left(a\right)-x_0\right|$ 单调下降, 由 $K$ 紧 (**定理 6.1 (紧 $=$ 序列紧)**) 收敛到 $x_0$. $\blacksquare$
 
-## 习题十
+## 6.10 (序列收敛等价于唯一子列极限（附两个子列极限的轨道）)
 
 (两个子列极限) 设 $K$ 是某**定义 6.20 (赋范线性空间)** 的紧子空间.
 
@@ -270,7 +270,7 @@ $$
 
 (2) 设 $f:K\to K$ 连续, $x\in K$, 序列 $f^n\left(x\right)$ 恰有两个子列极限 $z_0,z_1$. 证明: 对 $z_0,z_1$ 的任意邻域 $V_0,V_1$, 序列最终落入 $V_0\cup V_1$; 并证明 $f\left(z_0\right)=z_1$, $f\left(z_1\right)=z_0$, 且 $f^{2k}\left(x\right)$ 与 $f^{2k+1}\left(x\right)$ 分别收敛到 $z_0,z_1$.
 
-### 解答 习题十
+### 解答 6.10
 
 **(1) ($\Rightarrow$)** 显然. **($\Leftarrow$)** 设唯一子列极限为 $L$. 若序列不收敛到 $L$, 则存在 $\varepsilon> 0$ 与子列恒在 $B\left(L,\varepsilon\right)$ 外; 由**定理 6.1 (紧 $=$ 序列紧)**, 该子列有收敛子列, 其极限异于 $L$, 矛盾. 故序列收敛到 $L$.
 
@@ -278,7 +278,7 @@ $$
 
 $f$ 连续, 把子列极限映为序列 $f^{n+1}\left(x\right)$ 的子列极限, 而后者的子列极限集同为 $\left\{z_0,z_1\right\}$. 故 $f\left(z_0\right),f\left(z_1\right)\in\left\{z_0,z_1\right\}$. 若 $f\left(z_0\right)=z_0$, 则偶子列将只有一个子列极限, 与第 (1) 小题矛盾; 故 $f\left(z_0\right)=z_1$, 同理 $f\left(z_1\right)=z_0$. 于是 $f^{2k}\left(x\right)$ 恰在 $z_0$ 附近累积, $f^{2k+1}\left(x\right)$ 恰在 $z_1$ 附近累积, 由第 (1) 小题分别收敛到 $z_0,z_1$. $\blacksquare$
 
-## 习题十一
+## 6.11 (紧度量空间中不减距离的连续自映射是等距且双射)
 
 设 $E$ 是紧度量空间, $f:E\to E$ 连续, 且对一切 $x,y\in E$ 满足 $d\left(f\left(x\right),f\left(y\right)\right)\ge d\left(x,y\right)$.
 
@@ -288,7 +288,7 @@ $f$ 连续, 把子列极限映为序列 $f^{n+1}\left(x\right)$ 的子列极限,
 
 (3) 最后证明: 若 $g:E\to E$ 是连续双射且 $d\left(g\left(x\right),g\left(y\right)\right)\le d\left(x,y\right)$ 对一切 $x,y$ 成立, 则 $g$ 也是**定义 6.49 (等距映射)**.
 
-### 解答 习题十一
+### 解答 6.11
 
 **(1)** 固定 $x,y\in E$, 记 $a_n=d\left(f^n\left(x\right),f^n\left(y\right)\right)$. 由条件应用于 $\left(f^{n-1}\left(x\right),f^{n-1}\left(y\right)\right)$, $a_{n+1}\ge a_n$, 又 $a_n\le\operatorname{diam}\left(E\right)$, 故 $a_n\uparrow L$. 由**定理 6.1 (紧 $=$ 序列紧)**, $E\times E$ 紧, $\left(f^n\left(x\right),f^n\left(y\right)\right)$ 有子列 $\left(f^{n_j}\left(x\right),f^{n_j}\left(y\right)\right)\to\left(u,v\right)$, 于是 $d\left(u,v\right)=L$. 因 $a_{n_j}\to L$ 且 $a_{n_j+1}\to L$, 由三角不等式
 
@@ -310,11 +310,11 @@ $$
 
 **(3)** $E$ 紧且是**说明 6.50 (度量空间是豪斯多夫的)**, $g$ 是紧豪斯多夫空间之间的连续双射, 由**定理 5.6 (紧豪斯多夫间的连续双射)**, $g^{-1}$ 连续. 条件 $d\left(g\left(x\right),g\left(y\right)\right)\le d\left(x,y\right)$ 改写为: 对任意 $u,v\in E$, 令 $u=g\left(x\right)$, $v=g\left(y\right)$, 则 $d\left(g^{-1}\left(u\right),g^{-1}\left(v\right)\right)\ge d\left(u,v\right)$. 即 $g^{-1}$ 是紧度量空间上连续且距离不减的映射. 由第 (1) 小题, $g^{-1}$ 是**定义 6.49 (等距映射)**, 从而 $g$ 也是等距. $\blacksquare$
 
-## 习题十二
+## 6.12 (紧集的 $\varepsilon$-分离集基数有界)
 
 等距与紧性. 设 $K\subset\mathbb R^n$ 是非空紧集, $\varepsilon> 0$. 称 $A\subset K$ 是 $\varepsilon$-分离的, 若 $x\neq y$ 蕴含 $\left|x-y\right|> \varepsilon$. 证明存在有限数 $M\left(\varepsilon\right)$, 使 $K$ 中任何 $\varepsilon$-分离集的基数不超过 $M\left(\varepsilon\right)$. 再证明: 若 $f:K\to K$ 是**定义 6.49 (等距映射)**, 则 $f$ 满.
 
-### 解答 习题十二
+### 解答 6.12
 
 反设存在任意大的 $\varepsilon$-分离集. 则可取两两不同的点列 $x_m\in K$ 使 $m\neq m'$ 时 $\left|x_m-x_{m'}\right|> \varepsilon$. 由**定理 5.3 ($\mathbb R^n$ 中的紧集)** 与**定理 6.1 (紧 $=$ 序列紧)**, $\left(x_m\right)$ 有收敛子列; 收敛子列是**定义 6.37 (柯西列)**, 充分靠后两项距离 $< \varepsilon$, 与 $\varepsilon$-分离矛盾. 故存在 $M\left(\varepsilon\right)$.
 
@@ -326,7 +326,7 @@ $$
 
 其中等号用了**定义 6.49 (等距映射)**. 但由**定理 6.1 (紧 $=$ 序列紧)**, $K$ 中轨道有收敛子列, 必为**定义 6.37 (柯西列)**, 与相邻项距离恒 $\ge\delta$ 矛盾. 故 $f$ 满. $\blacksquare$
 
-## 习题十三
+## 6.13 (紧性三题：局部单射的扩张、里茨定理与蒂茨–乌雷松扩张)
 
 (7.1 紧性)
 
@@ -341,7 +341,7 @@ $$
 \inf_{x\in E}g\left(x\right)=\inf_{x\in A}f\left(x\right).
 $$
 
-### 解答 习题十三
+### 解答 6.13
 
 **第 (1) 小题**: 对 $n\ge 1$, 定义 $K_n=\left\{x\in E:d\left(x,K\right)< 1/n\right\}$. 每个 $K_n$ 是开集且含 $K$. 反证: 若对每个 $n$, $f$ 在 $K_n$ 上不单射, 则存在 $x_n,y_n\in K_n$, $x_n\neq y_n$, 使 $f\left(x_n\right)=f\left(y_n\right)$. 由 $x_n,y_n\in K_n$, 可取 $x'_n,y'_n\in K$ 使 $d\left(x_n,x'_n\right)< 1/n$, $d\left(y_n,y'_n\right)< 1/n$. 由**定义 5.16 (紧致空间)**, $K\times K$ 紧; 由**定理 6.1 (紧 $=$ 序列紧)**, 存在子列 $\left(x'_{\varphi\left(n\right)},y'_{\varphi\left(n\right)}\right)\to\left(x,y\right)\in K\times K$. 由三角不等式, $x_{\varphi\left(n\right)}\to x$, $y_{\varphi\left(n\right)}\to y$. 由 $f$ 连续, $f\left(x_{\varphi\left(n\right)}\right)=f\left(y_{\varphi\left(n\right)}\right)$ 取极限得 $f\left(x\right)=f\left(y\right)$. 因 $f$ 在 $K$ 上单射, $x=y$. 但由假设, $x$ 有邻域 $B\left(x,\varepsilon\right)$ 使 $f$ 单射, 而 $x_{\varphi\left(n\right)}\neq y_{\varphi\left(n\right)}$ 且当 $n$ 充分大时二者都在 $B\left(x,\varepsilon\right)$ 内, $f\left(x_{\varphi\left(n\right)}\right)=f\left(y_{\varphi\left(n\right)}\right)$, 矛盾. 故存在 $n$ 使 $f$ 在 $K_n$ 上单射, 取 $\Omega=K_n$ 即可.
 
@@ -367,7 +367,7 @@ $$
 
 对 $x\in A$ 令 $g\left(x\right)=f\left(x\right)$. 由平移缩放 (不妨设 $\inf_A f=1$, $\sup_A f=2$), 可验证 $g$ 连续: $x\in\operatorname{int}A$ 时 $g=f$ 连续; $x\notin A$ 时由三角不等式 $d\left(x,A\right)$ 连续且正, $g$ 连续; $x\in\partial A$ 时由 $f$ 在 $A$ 上连续, 对 $\varepsilon> 0$ 取 $r> 0$ 使 $y\in B\left(x,r\right)\cap A$ 时 $\left|f\left(y\right)-f\left(x\right)\right|< \varepsilon$, 再对 $z\notin A$ 且 $\left\|z-x\right\|< r/4$ 用三角不等式估计得 $\left|g\left(z\right)-f\left(x\right)\right|< \varepsilon$. 由**定义 3.22 (连续映射)**, $g$ 在全 $E$ 上连续. 由构造 $\inf_E g=\inf_A f$, $\sup_E g=\sup_A f$. 这就是**定理 6.18 (蒂茨-乌雷松扩张定理)**. $\blacksquare$
 
-## 习题十四
+## 6.14 (2025 卷 B 题一：图染色的紧致性证明)
 
 (2025 年卷 B 题目一, 50 分). 考虑一个无向图 $G$, 记 $V$ 为顶点集, $E$ 为边集. 称图 $G=\left(V,E\right)$ 的子图 $\widetilde G=\left(\widetilde V,\widetilde E\right)$ 满足 $\widetilde V=V$ 且 $\widetilde E\subset E$. 一个图 $G$ 的 $k$-染色 ($k\ge2$) 指函数 $f:V\to\left\{1,\dots,k\right\}$ 使对任意边 $\left(x,y\right)\in E$ 都有 $f\left(x\right)\neq f\left(y\right)$. 称图是 $k$-可染色的若这种函数存在.
 
@@ -383,7 +383,7 @@ $$
 
 (5) 证明德布鲁因-埃尔德什定理: 如果图 $G$ 的任意有限子图都是 $k$-可染色的, 那么 $G$ 也是 $k$-可染色的.
 
-### 解答 习题十四
+### 解答 6.14
 
 **(0)** $\left\{1,\dots,k\right\}$ 是有限集. 任意开覆盖中, 每个点选一个覆盖元, 仅需 $k$ 个即可覆盖, 故由**定义 5.16 (紧致空间)** 它紧.
 
@@ -403,7 +403,7 @@ $$
 
 **(5)** 取 $f\in\bigcap_{F\text{ 有限}}X_F$. 由**定义 11.17 ($k$-染色与 $k$-可染色)**, $f$ 是子图 $\left(V,F\right)$ 的 $k$-染色对每个有限 $F$ 成立. 特别对任意边 $e\in E$, 取有限集 $F=\left\{e\right\}$, 则 $f\left(x\right)\neq f\left(y\right)$ 对该边成立. 故 $f$ 是整图 $G$ 的 $k$-染色, $G$ 可 $k$-染色. $\blacksquare$
 
-## 习题十五
+## 6.15 (紧凸集上的严格压缩映射与紧度量空间上的不动点)
 
 证明:
 
@@ -411,16 +411,16 @@ $$
 
 (2) 在巴拿赫不动点定理的条件中, 把完备度量空间换为紧度量空间, 结论仍成立.
 
-### 解答 习题十五
+### 解答 6.15
 
 **第 (1) 小题**: 由**定义 4.23 (凸集)**, $K$ 凸. 由**定理 6.3 (紧度量空间完备)**, $K$ 完备. 在严格条件 $\left\|f\left(x\right)-f\left(y\right)\right\|< \left\|x-y\right\|$ ($x\neq y$) 下, 由 $K$ 紧 (由**定理 6.1 (紧 $=$ 序列紧)** 取最小距离对), 可推出 $f$ 实际上是**定义 6.19 (压缩映射)** 意义下的压缩映射 (存在统一的 $0< k< 1$). 故由**定理 6.16 (巴拿赫不动点定理)**, $f$ 有不动点.
 
 **第 (2) 小题**: 设 $X$ 紧度量, $f:X\to X$ 连续. 由紧性, $d\left(x,f\left(x\right)\right)$ 达到最小. 若最小值 $> 0$, 则 $d\left(f\left(x\right),f^2\left(x\right)\right)< d\left(x,f\left(x\right)\right)$ (严格压缩), 与最小性矛盾. 故最小值为 $0$, 即存在 $x$ 使 $f\left(x\right)=x$. 紧度量空间豪斯多夫 (由**定义 3.10 (豪斯多夫空间)**, 度量空间豪斯多夫). $\blacksquare$
 
-## 习题十六
+## 6.16 (紧凸集上连续仿射映射的不动点（角谷–马尔可夫定理）)
 
 证明: 紧凸集到自身的连续仿射映射有不动点 (角谷-马尔可夫定理).
 
-### 解答 习题十六
+### 解答 6.16
 
 设 $K\subset E$ 紧凸, $f:K\to K$ 连续仿射. 考虑 $K$ 的所有非空闭凸子集族, 它们在 $f$ 下不变. 由**定理 5.1 (紧空间连续像紧)** 与**定义 4.23 (凸集)**, $f$ 把闭凸集映为闭凸集. 由**定义 5.17 (有限交性质)** 与**定理 5.10 (有限交判据)**, 这些不变闭凸子集族具有有限交性质, 其交 $K_0$ 非空. 取 $K_0$ 为极小不变闭凸集. 由极小性, $f\left(K_0\right)=K_0$. 若 $K_0$ 多于一点, 由凸性与仿射性可进一步收缩, 矛盾. 故 $K_0$ 为单点 $\left\{x\right\}$, 即 $f\left(x\right)=x$. $\blacksquare$

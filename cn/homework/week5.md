@@ -182,21 +182,21 @@
 > 
 > $X/\left\langle A\right\rangle$ 将子集 $A$ 整捏成一点所得商空间. (题集 §5 Q11; 《基础拓扑学》(修订版) 第4章, p57)
 
-## 习题一
+## 5.1 ($\left\{0,1\right\}^{\left[0,1\right]}$ 在乘积拓扑下不序列紧)
 
 证明 $\left\{0,1\right\}^{\left[0,1\right]}$ 赋通常乘积拓扑不是序列紧致的.
 
-### 解答 习题一
+### 解答 5.1
 
 把 $\left\{0,1\right\}^{\left[0,1\right]}$ 中的点视为函数 $f:\left[0,1\right]\to\left\{0,1\right\}$. 由**定义 3.11 (乘积拓扑)** 与**命题 3.33 (点态收敛判据)**, 在乘积拓扑下 $f_n\to f$ 当且仅当每个坐标 $t\in\left[0,1\right]$ 都有 $f_n\left(t\right)\to f\left(t\right)$; 该判据对任意因子空间 $A^{S}$ 成立, 因为乘积拓扑的基与因子空间无关.
 
 对每个 $n\ge1$, 定义 $f_n\left(t\right)$ 为 $t$ 的二进制展开中小数点后第 $n$ 位数字 (二进有理点固定取其一展开). 任取严格递增的正整数列 $n_1< n_2< \dots$, 我们证明 $\left\{f_{n_k}\right\}$ 不收敛. 取 $t^{*}\in\left[0,1\right]$, 使其二进制展开在第 $n_{2k-1}$ 位为 $0$, 在第 $n_{2k}$ 位为 $1$, 其余位任意 (例如取 $0$). 则坐标 $t^{*}$ 处 $f_{n_k}\left(t^{*}\right)$ 依次为 $0,1,0,1,\dots$, 在离散空间 $\left\{0,1\right\}$ 中不收敛: 由**定义 3.25 (邻域与极限)**, $\left\{0\right\}$ 是 $0$ 的邻域而不含无穷多个 $f_{n_k}\left(t^{*}\right)$. 由**命题 3.33 (点态收敛判据)**, $\left\{f_{n_k}\right\}$ 在乘积拓扑下不收敛. 因每个子列都有同样形式, 由**定义 6.40 (序列紧致)**, $\left\{0,1\right\}^{\left[0,1\right]}$ 不是序列紧致的. $\blacksquare$
 
-## 习题二
+## 5.2 (紧致等价于具有限交性质的闭集族交非空)
 
 称集合族 $\mathcal F$ 具有有限交性质, 若其任意有限子族之交非空. 证明: 空间 $X$ 紧致等价于, $X$ 中任意具有限交性质的闭集族 $\mathcal F$ 都满足 $\bigcap_{F\in\mathcal F}F\neq\emptyset$.
 
-### 解答 习题二
+### 解答 5.2
 
 由**定义 5.15 (开覆盖与有限子覆盖)** 与**定义 5.16 (紧致空间)**, 分两个方向证明.
 
@@ -210,11 +210,11 @@ $$
 
 即 $\left\{F_i\right\}$ 具有限交性质. 由假设 $\bigcap_iF_i\neq\emptyset$, 即 $X\setminus\bigcup_iU_i\neq\emptyset$, 与 $\left\{U_i\right\}$ 覆盖 $X$ 矛盾. 故存在有限子覆盖, 由**定义 5.16 (紧致空间)**, $X$ 紧致. $\blacksquare$
 
-## 习题三
+## 5.3 (紧集与不相交闭集的距离为正)
 
 设 $A,B$ 是度量空间 $\left(X,d\right)$ 中不相交的闭集, 且 $A$ 紧致. 证明 $d\left(A,B\right)> 0$.
 
-### 解答 习题三
+### 解答 5.3
 
 令 $g\left(x\right)=d\left(x,B\right)$. 由**定义 6.46 (点到集合的距离)**, $g$ 有定义. 由**定义 6.35 (度量空间)** 的三角不等式与**定义 6.46 (点到集合的距离)**, 对任意 $x,y\in X$ 与 $b\in B$ 有 $d\left(x,b\right)\le d\left(x,y\right)+d\left(y,b\right)$, 对 $b$ 取下确界再对称化得 $\left|g\left(x\right)-g\left(y\right)\right|\le d\left(x,y\right)$; 于是 $x_n\to x$ 蕴含 $g\left(x_n\right)\to g\left(x\right)$, 由**说明 6.51 (度量连续与序列)**, $g$ 连续. 因 $A$ 紧致, 由**定理 5.11 (紧空间上连续函数取最大值)**, $g$ 在 $A$ 上取到最小值
 
@@ -224,13 +224,13 @@ $$
 
 若 $m=0$, 则存在 $a_0\in A$ 使 $d\left(a_0,B\right)=0$, 即对每个 $r> 0$ 开球 $B\left(a_0,r\right)$ 都与 $B$ 相交 (由**定义 6.36 (开球)**); 因 $a_0\notin B$ (由 $A\cap B=\emptyset$), 由**定义 3.24 (极限点)** $a_0$ 是 $B$ 的极限点. 由**定理 3.5 (闭包与极限点)** $a_0\in\overline B$, 而 $B$ 闭, 由**定义 3.26 (闭包)** $\overline B=B$, 故 $a_0\in B$, 与 $A\cap B=\emptyset$ 矛盾. 故 $m> 0$, 即 $d\left(A,B\right)> 0$. $\blacksquare$
 
-## 习题四
+## 5.4 (无孤立点度量空间中紧致等价于闭集间距离皆为正)
 
 设 $\left(X,d\right)$ 是无孤立点的度量空间. 证明: $X$ 紧致当且仅当对任意一对不相交闭集 $A,B$, 都有 $d\left(A,B\right)> 0$.
 
-### 解答 习题四
+### 解答 5.4
 
-**($\Rightarrow$)** 设 $X$ 紧致, $A,B$ 为不相交闭集. 由**定理 5.4 (闭子集紧)**, $A$ 紧致. 由**习题三**的论证 (连续函数 $d\left(\cdot,B\right)$ 在 $A$ 上取到正最小值) 即得 $d\left(A,B\right)> 0$.
+**($\Rightarrow$)** 设 $X$ 紧致, $A,B$ 为不相交闭集. 由**定理 5.4 (闭子集紧)**, $A$ 紧致. 由**习题 5.3**的论证 (连续函数 $d\left(\cdot,B\right)$ 在 $A$ 上取到正最小值) 即得 $d\left(A,B\right)> 0$.
 
 **($\Leftarrow$)** 反证, 设 $X$ 不紧致. 由**定理 6.1 (紧 $=$ 序列紧)**, $X$ 不是序列紧致的, 故存在序列 $\left\{x_n\right\}$ 无收敛子列. 必要时取子列使 $x_n$ 两两不同. 于是 $S=\left\{x_n:n\ge1\right\}$ 无极限点: 若 $x$ 是 $S$ 的极限点, 由**定义 3.24 (极限点)** 每个开球 $B\left(x,1/k\right)$ 都含 $S\setminus\left\{x\right\}$ 的点, 且事实上含无穷多个 (若某球只含有限个, 取半径小于这些点到 $x$ 的距离, 得与极限点定义矛盾的球), 故可归纳选取两两不同的 $x_{n_k}\in B\left(x,1/k\right)$, 得收敛于 $x$ 的子列, 矛盾. 故 $S'=\emptyset$, 由**定理 3.5 (闭包与极限点)** $\overline S=S$, 由**定义 3.26 (闭包)** $S$ 闭. 因 $X$ 无孤立点, 每个 $x_n$ 的任意邻域都含异于 $x_n$ 的点; 归纳地选取 $y_n$, 使 $0< d\left(y_n,x_n\right)< 1/n$, 且 $y_n\notin S\cup\left\{y_1,\dots,y_{n-1}\right\}$. 则 $\left\{y_n\right\}$ 也无收敛子列: 若 $y_{n_k}\to y$, 则由**定义 6.35 (度量空间)** 的三角不等式,
 
@@ -240,11 +240,11 @@ $$
 
 与 $\left\{x_n\right\}$ 无收敛子列矛盾. 故 $T=\left\{y_n:n\ge1\right\}$ 也闭 (同上). 令 $A=S$, $B=T$, 则二者不相交闭, 但对一切 $n$ 有 $d\left(A,B\right)\le d\left(x_n,y_n\right)< 1/n$, 故 $d\left(A,B\right)=0$, 与假设矛盾. 因此 $X$ 紧致. $\blacksquare$
 
-## 习题五
+## 5.5 (黎曼球面（单点紧化）紧致)
 
 考虑 $\mathbb C$ 与一个无穷远点 $\left\{\infty\right\}$. 记 $\overline{\mathbb C}=\mathbb C\cup\left\{\infty\right\}$, 规定 $U\subset \overline{\mathbb C}$ 的拓扑为: 若 $\infty\notin U$, 则 $U$ 开当且仅当它是 $\mathbb C$ 中通常开集; 若 $\infty\in U$, 则 $U$ 开当且仅当 $\mathbb C\setminus\left(U\cap\mathbb C\right)$ 在 $\mathbb C$ 中紧致. 证明 $\overline{\mathbb C}$ 紧致. 此即亚历山德罗夫单点紧化, $\overline{\mathbb C}$ 称为黎曼球面.
 
-### 解答 习题五
+### 解答 5.5
 
 由**定义 7.5 (单点紧化)**, $\overline{\mathbb C}$ 正是 $\mathbb C$ 的单点紧化. 任取 $\overline{\mathbb C}$ 的开覆盖 $\mathcal U$. 取 $U_\infty\in\mathcal U$ 使 $\infty\in U_\infty$. 由拓扑定义, $K=\mathbb C\setminus\left(U_\infty\cap\mathbb C\right)$ 在 $\mathbb C$ 中紧致. 族
 
@@ -254,49 +254,49 @@ $$
 
 中每个集合是 $\mathbb C$ 中开集 (不含 $\infty$ 的开集在 $\overline{\mathbb C}$ 与在 $\mathbb C$ 中同样开), 且它们覆盖 $K$ (因 $K$ 与 $U_\infty$ 无交). 由 $K$ 紧致, 即由**定义 5.16 (紧致空间)**, 有有限子族 $U_1,\dots,U_m$ 使 $K\subset\bigcup_{i=1}^{m}U_i$. 于是 $U_\infty,U_1,\dots,U_m$ 覆盖 $\overline{\mathbb C}$: $U_\infty$ 含 $\infty$ 与 $U_\infty\cap\mathbb C$, 其余集合覆盖 $K$. 故 $\overline{\mathbb C}$ 的任意开覆盖都有有限子覆盖, 由**定义 5.16 (紧致空间)**, $\overline{\mathbb C}$ 紧致. $\blacksquare$
 
-## 习题六
+## 5.6 (有限离散空间紧致)
 
 给 $\left\{1,\dots,k\right\}$ 赋离散拓扑. 证明 $\left\{1,\dots,k\right\}$ 在该拓扑下紧致.
 
-### 解答 习题六
+### 解答 5.6
 
 设 $\mathcal U$ 是 $\left\{1,\dots,k\right\}$ 的任意开覆盖. 由**定义 5.15 (开覆盖与有限子覆盖)**, 对每个点 $i\in\left\{1,\dots,k\right\}$ 选取 $U_i\in\mathcal U$ 使 $i\in U_i$. 则 $\left\{U_1,\dots,U_k\right\}$ 是有限子族且仍覆盖 $\left\{1,\dots,k\right\}$. 由**定义 5.16 (紧致空间)**, $\left\{1,\dots,k\right\}$ 紧致. $\blacksquare$
 
 > 离散拓扑: 每个点自己就是开集, 开集的并也是开集, 这么说每个点又都是闭集, 所以每个点都是开闭集.
 
-## 习题七
+## 5.7 (吉洪诺夫定理：映射空间 $\left\{1,\dots,k\right\}^{V}$ 紧致)
 
 用吉洪诺夫定理证明: 映射集合 $X=\left\{f:V\to\left\{1,\dots,k\right\}\right\}$ 紧致.
 
-### 解答 习题七
+### 解答 5.7
 
-集合 $X=\left\{1,\dots,k\right\}^{V}=\prod_{v\in V}\left\{1,\dots,k\right\}$ 是离散有限空间 $\left\{1,\dots,k\right\}$ 的乘积. 由**习题六**, 每个因子 $\left\{1,\dots,k\right\}$ 紧致. 由**定理 5.9 (吉洪诺夫定理)**, 乘积 $X$ 在乘积拓扑下紧致. $\blacksquare$
+集合 $X=\left\{1,\dots,k\right\}^{V}=\prod_{v\in V}\left\{1,\dots,k\right\}$ 是离散有限空间 $\left\{1,\dots,k\right\}$ 的乘积. 由**习题 5.6**, 每个因子 $\left\{1,\dots,k\right\}$ 紧致. 由**定理 5.9 (吉洪诺夫定理)**, 乘积 $X$ 在乘积拓扑下紧致. $\blacksquare$
 
-## 习题八
+## 5.8 (连续等价于在每个紧子集上连续)
 
 设 $X,Y$ 是度量空间, $f:X\to Y$. 证明: $f$ 连续当且仅当 $f$ 在任意紧子集 $K\subset X$ 上的限制都连续.
 
-### 解答 习题八
+### 解答 5.8
 
 **($\Rightarrow$)** 设 $f$ 连续, $K\subset X$ 紧. 由**定义 3.22 (连续映射)** 与**定义 3.19 (子空间拓扑)**, $f|_K$ 连续: 对 $Y$ 中开集 $U$, $\left(f|_K\right)^{-1}\left(U\right)=f^{-1}\left(U\right)\cap K$ 是 $K$ 中开集.
 
 **($\Leftarrow$)** 反设 $f$ 在某点 $x$ 不连续. 由**说明 6.51 (度量连续与序列)** 的逆否与**定义 3.25 (邻域与极限)**, 存在 $\varepsilon> 0$ 与序列 $x_n\to x$ 使 $d_Y\left(f\left(x_n\right),f\left(x\right)\right)\ge\varepsilon$. 集合 $K=\left\{x\right\}\cup\left\{x_n\right\}$ 紧致: 任取开覆盖, 含 $x$ 的开集 $U$ 是 $x$ 的邻域 (由**定义 3.25 (邻域与极限)**), 由 $x_n\to x$ 它含除有限个外的所有 $x_n$; 其余有限个点再各取一个覆盖元, 得有限子覆盖. 由假设 $f|_K$ 连续, 故 $x_n\to x$ 时由**说明 6.51 (度量连续与序列)** 应有 $f\left(x_n\right)\to f\left(x\right)$, 矛盾. 因此 $f$ 处处连续. $\blacksquare$
 
-## 习题九
+## 5.9 (豪斯多夫空间中局部紧的两种表述等价)
 
 设 $X$ 是豪斯多夫空间. 证明: $X$ 局部紧 (即每点有紧邻域基) 当且仅当每点有一个紧邻域.
 
-### 解答 习题九
+### 解答 5.9
 
 **($\Rightarrow$)** 设每点有紧邻域基 (即题目括号中的表述, 见**定义 7.4 (局部紧空间)**). 则对每个 $x$, 其紧邻域基的任一成员都是 $x$ 的一个紧邻域. 故每点有一个紧邻域.
 
 **($\Leftarrow$)** 设每点有一个紧邻域. 取 $x$ 的紧邻域 $K$; 由**定理 5.5 (豪斯多夫中紧集闭)**, $K$ 闭. 任取 $x$ 的邻域 $U$, 即含 $x$ 的开集 (由**定义 3.25 (邻域与极限)**). 令 $L=K\setminus U$, 它是紧集 $K$ 的闭子集, 由**定理 5.4 (闭子集紧)** 紧. 对每个 $y\in L$, 由**定义 3.10 (豪斯多夫空间)** 有不相交开集 $O_y\ni x$, $W_y\ni y$; 因 $L$ 紧, $L\subset\bigcup_{i=1}^{m}W_{y_i}$ 对某个有限子族成立. 令 $O=\bigcap_{i=1}^{m}O_{y_i}$, 由**定义 3.18 (拓扑空间)** (有限交仍开) $O$ 是含 $x$ 的开集, 且 $O\cap\bigcup_{i=1}^{m}W_{y_i}=\emptyset$, 故 $O\cap L=\emptyset$. 记 $W=\bigcup_{i=1}^{m}W_{y_i}$, 则 $O\subset X\setminus W$ 且 $X\setminus W$ 闭, 由**定义 3.26 (闭包)** $\overline O\subset X\setminus W$; 于是 $\overline O\cap K\subset\left(X\setminus W\right)\cap K\subset K\setminus L=K\cap U\subset U$. 又 $\overline O\cap K$ 是紧集 $K$ 的闭子集 ($\overline O$ 闭, 见**定义 3.26 (闭包)**), 由**定理 5.4 (闭子集紧)** 紧; 它含 $x$ 的开邻域 $O\cap\operatorname{int}\left(K\right)$. 故 $x$ 有含于 $U$ 的紧邻域; 因 $U$ 任意, $x$ 有紧邻域基. 由题目括号中的表述 (局部紧即每点有紧邻域基), $X$ 局部紧. $\blacksquare$
 
-## 习题十
+## 5.10 (单位球紧致当且仅当空间维数有限)
 
 (维数与紧性) 证明: 任意实赋范线性空间的单位球紧致, 当且仅当该空间维数有限.
 
-### 解答 习题十
+### 解答 5.10
 
 设 $E$ 是**定义 6.20 (赋范线性空间)** 中的空间.
 
@@ -304,7 +304,7 @@ $$
 
 **($\Rightarrow$)** 反之, 若 $E$ 无穷维, 由**定理 6.17 (里茨定理)**, 其闭单位球非紧. 故单位球紧致蕴含维数有限. $\blacksquare$
 
-## 习题十一
+## 5.11 (单射连续当且仅当紧集的像皆紧)
 
 设 $E,F$ 是两个度量空间, $f:E\to F$ 是单射.
 
@@ -312,21 +312,21 @@ $$
 
 (2) 举例说明若 $f$ 不单射, 上述等价可以失效.
 
-### 解答 习题十一
+### 解答 5.11
 
-**(1) ($\Rightarrow$)** 设 $f$ 连续, $K\subset E$ 紧. $f|_K$ 连续 (由**定义 3.22 (连续映射)** 与**定义 3.19 (子空间拓扑)**, 同**习题八** ($\Rightarrow$)), 由**定理 5.1 (紧空间连续像紧)**, $f\left(K\right)$ 紧.
+**(1) ($\Rightarrow$)** 设 $f$ 连续, $K\subset E$ 紧. $f|_K$ 连续 (由**定义 3.22 (连续映射)** 与**定义 3.19 (子空间拓扑)**, 同**习题 5.8** ($\Rightarrow$)), 由**定理 5.1 (紧空间连续像紧)**, $f\left(K\right)$ 紧.
 
-**($\Leftarrow$)** 设对每个紧集 $K\subset E$, $f\left(K\right)$ 紧. 反设 $f$ 在某点 $x$ 不连续. 由**说明 6.51 (度量连续与序列)** 的逆否与**定义 3.25 (邻域与极限)**, 存在 $\varepsilon> 0$ 与序列 $x_n\to x$ 使 $d_F\left(f\left(x_n\right),f\left(x\right)\right)\ge\varepsilon$. 由 $f$ 单射及 $d_F\left(f\left(x_n\right),f\left(x\right)\right)\ge\varepsilon> 0$ 知 $x_n\neq x$. 令 $K=\left\{x\right\}\cup\left\{x_n:n\ge1\right\}$, 它紧 (同**习题八**的论证: 收敛序列加极限). 由假设 $f\left(K\right)$ 紧; $F$ 是度量空间, 由**说明 6.50 (度量空间是豪斯多夫的)** 豪斯多夫, 由**定理 5.5 (豪斯多夫中紧集闭)**, $f\left(K\right)$ 在 $F$ 中闭.
+**($\Leftarrow$)** 设对每个紧集 $K\subset E$, $f\left(K\right)$ 紧. 反设 $f$ 在某点 $x$ 不连续. 由**说明 6.51 (度量连续与序列)** 的逆否与**定义 3.25 (邻域与极限)**, 存在 $\varepsilon> 0$ 与序列 $x_n\to x$ 使 $d_F\left(f\left(x_n\right),f\left(x\right)\right)\ge\varepsilon$. 由 $f$ 单射及 $d_F\left(f\left(x_n\right),f\left(x\right)\right)\ge\varepsilon> 0$ 知 $x_n\neq x$. 令 $K=\left\{x\right\}\cup\left\{x_n:n\ge1\right\}$, 它紧 (同**习题 5.8**的论证: 收敛序列加极限). 由假设 $f\left(K\right)$ 紧; $F$ 是度量空间, 由**说明 6.50 (度量空间是豪斯多夫的)** 豪斯多夫, 由**定理 5.5 (豪斯多夫中紧集闭)**, $f\left(K\right)$ 在 $F$ 中闭.
 
 由**定理 6.1 (紧 $=$ 序列紧)**, $f\left(x_n\right)$ 在紧集 $f\left(K\right)$ 中有收敛子列 $f\left(x_{n_j}\right)\to y\in f\left(K\right)$. 设 $y=f\left(z\right)$, $z\in K$. 若 $z=x$, 则 $f\left(x_{n_j}\right)\to f\left(x\right)$, 与 $d_F\left(f\left(x_{n_j}\right),f\left(x\right)\right)\ge\varepsilon$ 矛盾. 故 $z=x_m$ 是某固定项. 取尾部紧集 $K'=\left\{x\right\}\cup\left\{x_{n_j}:j> m\right\}$. 由假设 $f\left(K'\right)$ 紧, 再由**定理 5.5 (豪斯多夫中紧集闭)** $f\left(K'\right)$ 闭. 但 $f\left(x_{n_j}\right)\to f\left(x_m\right)$ 且 $x_m\notin K'$, 由 $f$ 单射 $f\left(x_m\right)\notin f\left(K'\right)$; 而 $f\left(x_m\right)$ 是 $f\left(K'\right)$ 的极限点 (每个邻域含充分大的 $f\left(x_{n_j}\right)$, 由**定义 3.25 (邻域与极限)**), 由**定理 3.5 (闭包与极限点)** 与**定义 3.26 (闭包)** 应有 $f\left(x_m\right)\in\overline{f\left(K'\right)}=f\left(K'\right)$, 矛盾. 故 $f$ 连续.
 
-**(2)** 取 $E=\left\{0\right\}\cup\left\{1/n:n\ge1\right\}$, $F=\left\{0,1\right\}$ 装备离散度量, $f\left(0\right)=0$, $f\left(1/n\right)=1$ 对一切 $n$. $f$ 不单射. 对 $E$ 中任何紧集 $K$, 像 $f\left(K\right)\subset\left\{0,1\right\}$; 离散空间中任何有限子集都紧 (**习题六**), 故 $f$ 保持紧集; 但 $x_n=1/n\to0$ 时 $f\left(x_n\right)=1$ 不趋于 $f\left(0\right)=0$, 由**定义 3.25 (邻域与极限)** $f$ 不连续. 可见单射不可少. $\blacksquare$
+**(2)** 取 $E=\left\{0\right\}\cup\left\{1/n:n\ge1\right\}$, $F=\left\{0,1\right\}$ 装备离散度量, $f\left(0\right)=0$, $f\left(1/n\right)=1$ 对一切 $n$. $f$ 不单射. 对 $E$ 中任何紧集 $K$, 像 $f\left(K\right)\subset\left\{0,1\right\}$; 离散空间中任何有限子集都紧 (**习题 5.6**), 故 $f$ 保持紧集; 但 $x_n=1/n\to0$ 时 $f\left(x_n\right)=1$ 不趋于 $f\left(0\right)=0$, 由**定义 3.25 (邻域与极限)** $f$ 不连续. 可见单射不可少. $\blacksquare$
 
-## 习题十二
+## 5.12 (紧豪斯多夫空间中锥与塌缩商的单点紧化描述)
 
 设 $X$ 是紧豪斯多夫空间. 证明锥空间 $CX$ 同胚于 $X\times\left[0,1\right)$ 的单点紧化. 若 $A\subset X$ 闭, 证明 $X/\left\langle A\right\rangle$ 同胚于 $X\setminus A$ 的单点紧化.
 
-### 解答 习题十二
+### 解答 5.12
 
 **第一问**: 由**定义 11.6 (锥)**, $CX=X\times\left[0,1\right]/X\times\left\{1\right\}$, 商映射 $\pi:X\times\left[0,1\right]\to CX$ 把 $X\times\left\{1\right\}$ 捏成一点, 在 $X\times\left[0,1\right)$ 上单射 (划分 (b) 为单点类). 令 $Y=X\times\left[0,1\right)$. $Y$ 豪斯多夫: 由**定理 3.6 (豪斯多夫的遗传性)**, $X$ 豪斯多夫 (题设), $\left[0,1\right)$ 是度量空间 $\mathbb R$ 的子空间故豪斯多夫 (由**说明 6.50 (度量空间是豪斯多夫的)** 与**定理 3.6 (豪斯多夫的遗传性)**), 乘积仍豪斯多夫. $Y$ 局部紧 (按**定义 7.4 (局部紧空间)** 的等价表述): 对 $\left(x,t\right)\in Y$, 取 $t'$ 使 $t< t'< 1$; $\left[0,t'\right]\subset\mathbb R$ 闭且有界, 由**定理 5.3 ($\mathbb R^n$ 中的紧集)** 紧, $X$ 紧 (题设), 由**定理 5.7 (有限乘积紧)** $X\times\left[0,t'\right]$ 紧; 它含 $\left(x,t\right)$ 的开邻域 $X\times\left(0,t'\right)$, 故是 $\left(x,t\right)$ 的紧邻域. 由**定义 7.5 (单点紧化)**, $Y^*=Y\cup\left\{\infty\right\}$, $\infty$ 的邻域为 $\left(Y\setminus K\right)\cup\left\{\infty\right\}$, $K\subset Y$ 紧.
 
@@ -348,11 +348,11 @@ $\phi$ 连续: 对 $Z^*$ 的开集 $W$, 若 $\infty\notin W$, 则 $W$ 在 $Z$ �
 
 $X/\left\langle A\right\rangle$ 紧: $\pi$ 连续, $X$ 紧, 由**定理 5.1 (紧空间连续像紧)**. $Z^*$ 豪斯多夫: 两点皆非 $\infty$ 时由 $Z$ 豪斯多夫及**定义 7.5 (单点紧化)** (不含 $\infty$ 的开集在 $Z^*$ 中开); 对 $\infty$ 与 $x\in Z$, 取上面的开集 $U$ 与紧集 $\overline U$, 则 $U$ 与 $\left(Z\setminus\overline U\right)\cup\left\{\infty\right\}$ 不相交 ($U\subset\overline U$), 后者是 $\infty$ 的邻域 (由**定义 7.5 (单点紧化)**). 由**定理 5.6 (紧豪斯多夫间的连续双射)**, $\phi$ 是同胚. $\blacksquare$
 
-## 习题十三
+## 5.13 (扎里斯基拓扑下 $\left(0,1\right)$ 紧但不闭)
 
 (扎里斯基紧不蕴含扎里斯基闭) 在 $\mathbb A^1\left(\mathbb R\right)=\mathbb R$ 上配**定义 3.28 (扎里斯基拓扑)**, 即余有限拓扑. 证明子集 $\left(0,1\right)$ 在扎里斯基拓扑下紧但不闭.
 
-### 解答 习题十三
+### 解答 5.13
 
 扎里斯基拓扑下, 由**定义 3.28 (扎里斯基拓扑)**, 闭集为有限集或全空间 ($n=1$ 时多项式零点集即有限集或全空间); 由**定义 3.21 (闭集)**, 开集为余有限集或空集.
 
@@ -360,15 +360,15 @@ $X/\left\langle A\right\rangle$ 紧: $\pi$ 连续, $X$ 紧, 由**定理 5.1 (紧
 
 **不闭**: $\mathbb R\setminus\left(0,1\right)=\left(-\infty,0\right]\cup\left[1,\infty\right)$ 是无限集, 不是有限集, 故不是扎里斯基闭集; 因而由**定义 3.21 (闭集)** 它的补集 $\left(0,1\right)$ 不是扎里斯基开集的补, 即 $\left(0,1\right)$ 不闭. 故紧不蕴含闭. $\blacksquare$
 
-## 习题十四
+## 5.14 ($\mathbb R$ 的单点紧化同胚于 $S^1$)
 
 (单点紧化) 回顾**定义 7.5 (单点紧化)**. 证明 $\mathbb R$ 的单点紧化同胚于单位圆 $S^1$.
 
-### 解答 习题十四
+### 解答 5.14
 
 由**定义 7.5 (单点紧化)**, $\mathbb R^*=\mathbb R\cup\left\{\infty\right\}$, $\infty$ 的邻域为 $\left(\mathbb R\setminus K\right)\cup\left\{\infty\right\}$, 其中 $K\subset\mathbb R$ 紧, 由**定理 5.3 ($\mathbb R^n$ 中的紧集)** 即闭有界集.
 
-先证 $\mathbb R^*$ 紧: 任取开覆盖 $\mathcal U$, 取 $U_\infty\in\mathcal U$ 含 $\infty$. 由**定义 7.5 (单点紧化)**, $U_\infty\supset\left(\mathbb R\setminus K'\right)\cup\left\{\infty\right\}$ 对某紧集 $K'$; 于是 $K=\mathbb R\setminus U_\infty\subset K'$ 且 $K$ 闭 ($U_\infty$ 开), 由**定理 5.4 (闭子集紧)** $K$ 紧. 同**习题五**的论证, $K$ 被 $\mathcal U\setminus\left\{U_\infty\right\}$ 中有限个集合覆盖, 故 $\mathcal U$ 有有限子覆盖; 由**定义 5.16 (紧致空间)**, $\mathbb R^*$ 紧.
+先证 $\mathbb R^*$ 紧: 任取开覆盖 $\mathcal U$, 取 $U_\infty\in\mathcal U$ 含 $\infty$. 由**定义 7.5 (单点紧化)**, $U_\infty\supset\left(\mathbb R\setminus K'\right)\cup\left\{\infty\right\}$ 对某紧集 $K'$; 于是 $K=\mathbb R\setminus U_\infty\subset K'$ 且 $K$ 闭 ($U_\infty$ 开), 由**定理 5.4 (闭子集紧)** $K$ 紧. 同**习题 5.5**的论证, $K$ 被 $\mathcal U\setminus\left\{U_\infty\right\}$ 中有限个集合覆盖, 故 $\mathcal U$ 有有限子覆盖; 由**定义 5.16 (紧致空间)**, $\mathbb R^*$ 紧.
 
 球极投影 $\sigma:\mathbb R\to S^1\setminus\left\{N\right\}$ ($N=\left(0,1\right)$ 为北极) 由公式 $\sigma\left(x\right)=\left(\frac{2x}{x^2+1},\frac{x^2-1}{x^2+1}\right)$ 给出, 是连续双射, 其逆 $\left(X,Y\right)\mapsto\frac{X}{1-Y}$ 也连续, 故 $\sigma$ 是同胚 (双向连续的双射即同胚).
 
@@ -378,7 +378,7 @@ $S^1$ 是 $\mathbb R^2$ 的闭有界子集, 由**定理 5.3 ($\mathbb R^n$ 中�
 
 由**定理 5.6 (紧豪斯多夫间的连续双射)**, $F$ 是同胚, 即 $\mathbb R$ 的单点紧化同胚于 $S^1$. $\blacksquare$
 
-## 习题十五
+## 5.15 (每无穷子集皆有极限点的度量空间必紧（2024 卷 C 题二）)
 
 (2024 年卷 C 题目二, 40 分). 考虑一个度量空间 $X$, 使得其中任意无穷子集都有一个极限点.
 
@@ -392,7 +392,7 @@ $S^1$ 是 $\mathbb R^2$ 的闭有界子集, 由**定理 5.3 ($\mathbb R^n$ 中�
 
 (5) (附加题, 10 分) 证明一个紧致度量空间 $K$ 一定是可分的.
 
-### 解答 习题十五
+### 解答 5.15
 
 **(1)** 固定 $\delta> 0$. 依次选 $x_1,x_2,\dots$ 使 $d\left(x_i,x_j\right)\ge\delta$ ($i\neq j$). 若此过程无穷, $\left\{x_i\right\}$ 是无穷集, 由题设有极限点 $x$. 由**定义 3.24 (极限点)**, 开球 $B\left(x,\frac\delta2\right)$ 含 $S\setminus\left\{x\right\}$ 的无穷多点: 若仅含有限个, 取 $r$ 小于这些点到 $x$ 的距离, 则 $B\left(x,r\right)$ 与 $S\setminus\left\{x\right\}$ 无交, 与极限点定义矛盾. 取其中两个不同点 $x_i,x_j$, 由三角不等式 (**定义 6.35 (度量空间)**) $d\left(x_i,x_j\right)\le d\left(x_i,x\right)+d\left(x,x_j\right)< \delta$, 与 $d\left(x_i,x_j\right)\ge\delta$ 矛盾. 故过程有限停止, 得 $x_1,\dots,x_m$, 且 $\bigcup_{i=1}^m B\left(x_i,\delta\right)=X$ (否则可再选一点), 即有限 $\delta$-覆盖. 由**定义 6.42 (完全有界)**, $X$ 完全有界.
 
