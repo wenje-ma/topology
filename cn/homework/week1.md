@@ -202,7 +202,7 @@
 
 ### 解答 习题四
 
-由**定义 3.13 (细)**, "$\mathcal O_1$ 比 $\mathcal O_2$ 细" 即 $\mathcal O_2\subset\mathcal O_1$. 我们证明链条 $\mathcal O_2\subset\mathcal O_1\Rightarrow$ (1) $\Rightarrow$ (2) $\Rightarrow$ (3) $\Rightarrow\mathcal O_2\subset\mathcal O_1$, 从而三者都与细等价.
+由**定义 3.13 (细)**, "$\mathcal O_1$ 比 $\mathcal O_2$ 细" 即 $\mathcal O_2\subset\mathcal O_1$.
 
 **$\mathcal O_2\subset\mathcal O_1\Rightarrow$ (1)**: 设 $F$ 在 $\mathcal O_2$ 中闭. 由**定义 3.21 (闭集)**, $F^{c}\in\mathcal O_2$; 由**定义 3.13 (细)**, $F^{c}\in\mathcal O_1$; 再由**定义 3.21 (闭集)**, $F$ 在 $\mathcal O_1$ 中闭.
 
