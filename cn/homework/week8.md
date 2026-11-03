@@ -1,52 +1,110 @@
-# week8
+# week8（完备空间：巴拿赫空间与贝尔纲）
 
-> **基础知识: 拉格朗日中值定理**
+> **定理 3.1 (复合连续)**
 > 
-> 若 $f$ 在 $\left[a,b\right]$ 上连续且在 $\left(a,b\right)$ 上可微, 则存在 $\xi\in\left(a,b\right)$ 使 $f\left(b\right)-f\left(a\right)=f'\left(\xi\right)\left(b-a\right)$; 特别地, 若 $\left|f'\right|\le M$, 则 $\left|f\left(x\right)-f\left(r\right)\right|\le M\left|x-r\right|$.
+> 两个连续映射的复合连续. (教材 $\S3$)
 
 > **定义 3.10 (豪斯多夫空间)**
 > 
 > 称 $X$ 是豪斯多夫的, 若任意一对不同点都有不相交的邻域. 此时极限是唯一的. (教材 $\S3$, p20)
 
+> **定义 3.14 (初始拓扑)**
+> 
+> 设 $f:X\to Y$ 是函数, 且 $Y$ 赋予拓扑 $\mathcal O$. 称 $\mathcal O_f=\left\{f^{-1}\left(O\right):O\in\mathcal O\right\}$ 为 $X$ 上由 $f$ 诱导的初始拓扑; 它是使 $f$ 连续的最粗拓扑. (题集 §1.1 Q2; 题集 §1.4 C6)
+
+> **定义 3.18 (拓扑空间)**
+> 
+> 拓扑空间是一个集合 $X$, 配有一族公认的开集 $T\subset\mathcal P\left(X\right)$. 即 $U\subset X$ 是开的当且仅当 $U\in T$. 我们要求:
+> 
+> (1) $\emptyset,X\in T$;
+> 
+> (2) 若 $U,V\in T$, 则 $U\cap V\in T$;
+> 
+> (3) 若 $A\subset T$, 则 $\bigcup A\in T$. (教材 $\S3$, p12)
+
 > **定义 3.21 (闭集)**
 > 
-> 集合 $F$ 称为闭的, 若其补集 $X\setminus F$ 是开的. (教材 $\S3$, p13)
+> 称 $F\subset X$ 是闭的, 若 $X\setminus F$ 是开的. (教材 §3, p13)
 
-> **定义 3.25 (邻域与极限)**
+> **定义 3.22 (连续映射)**
 > 
-> $b\in X$ 的邻域就是含 $b$ 的开集 $U$. 我们称 $a_n\to b$, 若对 $b$ 的任何邻域 $U$, 对所有充分大的 $n$ 都有 $a_n\in U$. (教材 $\S3$, p16)
+> 函数 $f:X\to Y$ 是连续的, 若对所有开集 $U\subset Y$, $f^{-1}\left(U\right)$ 是开的. (教材 $\S3$, p14)
+
+> **定义 3.23 (同胚)**
+> 
+> 空间之间的双射 $f:X\to Y$ 称为同胚, 若 $f$ 与 $f^{-1}$ 都连续. 这等价于说: $U$ 是开的当且仅当 $f\left(U\right)$ 是开的. (教材 §3, p15)
 
 > **定义 3.32 (稠密)**
 > 
-> 我们称 $A\subset X$ 在 $X$ 中稠密, 若 $\overline A=X$. (教材 $\S3$)
+> 我们称 $A\subset X$ 在 $X$ 中稠密, 若 $\overline A=X$. (教材 $\S3$; 题集 $\S1.1$)
 
-> **定理 5.2 (区间紧)**
+> **定义 4.23 (凸集)**
 > 
-> 区间 $\left[0,1\right]$ 是紧的. (教材 $\S5$)
+> $K\subset\mathbb R^n$ 凸即 $x,y\in K$ 蕴含线段 $\left(1-t\right)x+ty$ ($t\in\left[0,1\right]$) 全在 $K$ 中; 凸集必路径连通, 路径连通蕴含连通. (教材 §4, p24)
 
-> **定理 5.5 (豪斯多夫中紧集闭)**
+> **定理 6.6 (函数空间完备)**
 > 
-> 若 $X$ 是豪斯多夫空间, 则 $X$ 中任意紧子集 $K\subset X$ 是闭的. (教材 $\S5$)
+> $Y$ 完备则 $\left(Y^X,\text{一致度量}\right)$ 完备. (教材 §6)
 
-> **定理 5.8 ($\mathbb R^n$ 紧集判据)**
+> **定理 6.13 (贝尔纲定理)**
 > 
-> $F\subset\mathbb R^n$ 紧当且仅当 $F$ 闭且有界. (教材 $\S5$)
+> 完备度量空间 (或局部紧豪斯多夫空间) 中, 可数个稠密开集之交仍稠密; 等价地, 完备度量空间不能写成可数个无处稠密闭集之并. (教材 §6)
 
-> **定理 6.1 (紧 $=$ 序列紧)**
+> **定理 6.14 (递增闭集族)**
 > 
-> 度量空间中紧致与序列紧致等价, 即每个序列都有收敛子列. (教材 $\S6$)
+> 完备度量空间 (或局部紧豪斯多夫空间) 若为可数个闭集之并 $X=\bigcup_n F_n$, 则至少一个 $F_n$ 含非空开集. (教材 §6)
 
-> **定理 6.7 (连续函数的一致极限连续)**
+> **定理 6.16 (巴拿赫不动点定理)**
 > 
-> 连续函数列的一致极限连续, 即连续函数空间在有界函数空间中闭. (教材 $\S6$)
+> 非空完备度量空间上的压缩映射有唯一不动点. (题集 §4.3 Q1)
 
-> **定理 6.8 ($C\left(X,Y\right)$ 完备)**
+> **定义 6.19 (压缩映射)**
 > 
-> $Y$ 完备时 $C\left(X,Y\right)$ 装备一致度量后完备. (教材 $\S6$)
+> 称 $f:X\to X$ 是压缩的, 若存在 $0< k< 1$ 使 $d\left(f\left(x\right),f\left(y\right)\right)\le k\,d\left(x,y\right)$. (题集 §4.3 Q1)
 
-> **定理 6.12 (阿尔泽拉-阿斯科利定理)**
+> **定义 6.20 (赋范线性空间)**
 > 
-> 设 $K$ 为紧度量空间, $F\subset C\left(K\right)$ 为等度连续且一致有界的函数族, 则 $F$ 是紧的. (教材 $\S6$)
+> 向量空间上装备满足范数三公理 (正定性, 齐次, 三角不等式) 的 $\left\|\cdot\right\|$. (题集 $\S5$)
+
+> **定义 6.21 (巴拿赫空间)**
+> 
+> 完备的赋范线性空间. (题集 §5)
+
+> **定义 6.24 (拓扑向量空间)**
+> 
+> 向量空间装备使加法 $E\times E\to E$ 与数乘 $\mathbb K\times E\to E$ 都连续的拓扑. (题集 §5 Q6)
+
+> **定义 6.25 (半范数)**
+> 
+> 满足范数齐次与三角不等式但允许 $p\left(x\right)=0$ 而 $x\neq0$ 的函数 $p:E\to\left[0,\infty\right)$. (题集 §5 Q6)
+
+> **定义 6.26 (局部凸空间)**
+> 
+> 拓扑向量空间中 $0$ 有由凸邻域组成的邻域基. (题集 §5 Q6)
+
+> **定义 6.27 (规范函数)**
+> 
+> 凸邻域 $C$ 的规范函数 $\left\|x\right\|_C=\inf\left\{1/t:tx\in C,t> 0\right\}$ (等价地 $\inf\left\{t> 0:x\in tC\right\}$). (题集 §5 Q14)
+
+> **定义 6.28 (算子范数)**
+> 
+> $L\left(E,F\right)$ 上 $\left\|T\right\|=\sup_{\left\|x\right\|\le1}\left\|Tx\right\|$. (题集 §5 Q15)
+
+> **定义 6.29 (商范数)**
+> 
+> 赋范空间 $E$ 模闭子空间 $F$, $\left\|\left[x\right]\right\|=\inf_{y\in F}\left\|x+y\right\|$. (题集 §5.1 C17)
+
+> **定义 6.30 (弱拓扑)**
+> 
+> $E$ 上由全体连续线性泛函 $\varphi\in E^*$ 的拉回生成的初始拓扑. (题集 §5 Q16)
+
+> **定义 6.31 (弱星拓扑)**
+> 
+> 对偶 $E^*$ 上由赋值映射 $\left\{\varphi\mapsto\varphi\left(x\right)\right\}_{x\in E}$ 诱导的初始拓扑. (题集 §5 Q17-Q18)
+
+> **定义 6.32 (拓扑对偶)**
+> 
+> $E^*$ 为 $E$ 上全体连续线性泛函. (题集 §5 Q18)
 
 > **定义 6.35 (度量空间)**
 > 
@@ -58,11 +116,7 @@
 > 
 > (3) $d\left(x,y\right)=d\left(y,x\right)$;
 > 
-> (4) $d\left(x,y\right)\le d\left(x,z\right)+d\left(z,y\right)$. 装备了度量 $d$ 的集合 $X$ 称为度量空间. (教材 $\S6$)
-
-> **定义 6.36 (开球)**
-> 
-> 开球 $B\left(x,r\right)=\left\{y\in X:d\left(x,y\right)< r\right\}$. 全体开球构成度量拓扑的一个基. (教材 $\S6$)
+> (4) $d\left(x,y\right)\le d\left(x,z\right)+d\left(z,y\right)$. 装备了度量 $d$ 的集合 $X$ 称为度量空间. (题集 $\S1.3$ Q2; 教材 $\S6$ 由此给出度量拓扑)
 
 > **定义 6.37 (柯西列)**
 > 
@@ -72,380 +126,498 @@
 > 
 > 度量空间是完备的, 若其中每个柯西列都收敛. (教材 $\S6$)
 
-> **定义 6.39 (完备化)**
+> **定理 6.50 (哈恩-巴拿赫定理)**
 > 
-> 任意度量空间可自然嵌入一个完备度量空间; 实数轴 $\mathbb R$ 是有理数集的完备化, 故 $\mathbb R$ 完备. (教材 $\S6$)
+> 赋范线性空间上, 点与不相交闭凸集可被连续线性泛函严格分离; 特别地 $E^*$ 分离 $E$ 的点. (题集 §5)
 
-> **定义 6.41 (一致收敛与一致度量)**
+> **定义 6.55 (超平面)**
 > 
-> $d\left(f,g\right)=\sup_X\left|f\left(x\right)-g\left(x\right)\right|$; $f_n$ 一致收敛当且仅当 $d\left(f_n,g\right)\to0$. (教材 $\S6$)
+> 向量空间中余维数为 $1$ 的线性子空间 (即非零线性泛函的核). (题集 §6 C3)
 
-> **定义 6.43 (上确界度量)**
+> **定义 6.56 (线性泛函)**
 > 
-> 紧集 $K$ 上连续函数空间 $C\left(K\right)$ 装备 $d\left(f,g\right)=\sup_{x\in K}\left|f\left(x\right)-g\left(x\right)\right|$, 即上确界范数诱导的度量. (教材 $\S6$)
+> 从向量空间到数域的线性映射. (题集 §6 C3)
 
-> **定义 6.44 (伪距离)**
+> **定理 6.57 (开映射定理)**
 > 
-> 满足除 "$d\left(x,y\right)=0\Rightarrow x=y$" 外全部度量公理的函数; 商掉 $d=0$ 的等价类即得真度量. (题集 $\S1.3$)
+> 巴拿赫空间之间的连续满线性映射是开映射, 并且存在 $c> 0$ 使 $\left\|\left[x\right]\right\|\ge c\left\|Tx\right\|$. (题集 §6 C5)
 
-> **定义 6.46 (点到集合的距离)**
+> **定理 6.58 (巴拿赫-施坦豪斯定理)**
 > 
-> $d\left(x,A\right)=\inf_{a\in A}d\left(x,a\right)$. (题集 $\S3.2$)
+> 巴拿赫空间到赋范空间的逐点有界连续线性映射族必一致有界. (题集 §6 C6)
 
-> **定义 6.47 ($\varepsilon$-邻域)**
+> **定理 6.59 (巴拿赫-绍德不动点定理)**
 > 
-> $U_\varepsilon\left(A\right)=\left\{x\in X:d\left(x,A\right)< \varepsilon\right\}$. (题集 $\S3.2$)
+> 紧凸集到自身的连续映射有不动点. (题集 §6 C7)
 
-> **定义 6.48 (豪斯多夫距离)**
+> **定义 6.60 ($l^p$ 空间)**
 > 
-> $d\left(A,B\right)=\inf\left\{r> 0:A\subset U_r\left(B\right),\,B\subset U_r\left(A\right)\right\}$; 在紧子集族 $\mathcal K\left(X\right)$ 上是真度量. (题集 $\S3.2$)
-
----
+> $l^p=\left\{x:\sum_n\left|x_n\right|^p< \infty\right\}$ 装备 $\left\|x\right\|_p=\left(\sum_n\left|x_n\right|^p\right)^{1/p}$. (题集 §6 C11)
 
 ## 习题一
 
-设 $\left(X,d\right)$ 是度量空间. 证明朴素定义 $d\left(A,B\right)=\inf_{a\in A,\,b\in B}d\left(a,b\right)$ 一般不是度量.
+设 $\left(X,d\right)$ 是非空完备度量空间, $f:X\to X$ 是严格压缩的, 即存在 $0< k< 1$ 使对一切 $x,y\in X$ 有 $d\left(f\left(x\right),f\left(y\right)\right)\le k\,d\left(x,y\right)$. 证明 $f$ 在 $X$ 中有唯一不动点, 即存在唯一的 $x\in X$ 使 $f\left(x\right)=x$.
 
 ### 解答 习题一
 
-在 $\mathbb R^2$ (配通常欧氏距离) 中取
+任取初值 $x_0\in X$, 迭代 $x_{n+1}=f\left(x_n\right)$. 由压缩条件,
 
 $$
-A=\left\{\left(x,0\right):x\in\mathbb R\right\},\quad B=\left\{\left(n,1/n\right):n\in\mathbb Z_{> 0}\right\}.
+d\left(x_{n+1},x_n\right)=d\left(f\left(x_n\right),f\left(x_{n-1}\right)\right)\le k\,d\left(x_n,x_{n-1}\right)\le\cdots\le k^n d\left(x_1,x_0\right).
 $$
 
-由**定义 6.46 (点到集合的距离)**,
+对 $m> n$, 由**定义 6.35 (度量空间)** 的三角不等式,
 
 $$
-d\left(A,B\right)\le d\left(\left(n,0\right),\left(n,1/n\right)\right)=1/n\to0,
+d\left(x_m,x_n\right)\le\sum_{j=n}^{m-1}d\left(x_{j+1},x_j\right)\le d\left(x_1,x_0\right)\sum_{j=n}^{\infty}k^j=\frac{k^n}{1-k}d\left(x_1,x_0\right).
 $$
 
-故 $d\left(A,B\right)=0$, 但 $A\neq B$. 这不满足**定义 6.35 (度量空间)** 中"距离为零蕴含两点相等"的公理 (应用于集合时即两集合相等). 故该朴素定义一般不是度量. $\blacksquare$
+右端当 $n\to\infty$ 时趋于 $0$, 故 $\left(x_n\right)$ 是**定义 6.37 (柯西列)**. 由 $X$ 是**定义 6.38 (完备度量空间)**, $x_n\to x\in X$. 压缩映射满足 $d\left(f\left(x_n\right),f\left(x\right)\right)\le k\,d\left(x_n,x\right)\to0$, 即 $f$ 连续, 故 $f\left(x_n\right)\to f\left(x\right)$; 但 $f\left(x_n\right)=x_{n+1}\to x$, 由极限唯一性得 $f\left(x\right)=x$.
 
-> 这给出了我们需要定义豪斯多夫距离的一个原因.
-
----
+唯一性: 若 $f\left(x\right)=x$, $f\left(y\right)=y$, 则 $d\left(x,y\right)=d\left(f\left(x\right),f\left(y\right)\right)\le k\,d\left(x,y\right)$, 而 $0< k< 1$, 故 $d\left(x,y\right)=0$, 由**定义 6.35 (度量空间)** 的正定性得 $x=y$. 这就是**定理 6.16 (巴拿赫不动点定理)**. $\blacksquare$
 
 ## 习题二
 
-定义集合 $A\subset X$ 的 $\varepsilon$-邻域 $U_\varepsilon\left(A\right)=\left\{x\in X:d\left(x,A\right)< \varepsilon\right\}$, 其中 $d\left(x,A\right)=\inf_{a\in A}d\left(x,a\right)$. 证明: 对 $r_1,r_2> 0$ 与任意 $A\subset X$,
-
-$$
-U_{r_1}\left(U_{r_2}\left(A\right)\right)\subset U_{r_1+r_2}\left(A\right),
-$$
-
-但反过来一般不成立.
+设 $\left(E,\left\|\cdot\right\|\right)$ 是域 $\mathbb K$ 上的赋范线性空间, $f:E\to E$ 是连续线性映射. 证明存在常数 $K> 0$, 使对一切 $x,y\in E$ 有 $\left\|f\left(x\right)-f\left(y\right)\right\|\le K\left\|x-y\right\|$.
 
 ### 解答 习题二
 
-设 $x\in U_{r_1}\left(U_{r_2}\left(A\right)\right)$. 由**定义 6.47 ($\varepsilon$-邻域)**, 存在 $y\in U_{r_2}\left(A\right)$ 使 $d\left(x,y\right)< r_1$; 再由**定义 6.46 (点到集合的距离)**, 存在 $a\in A$ 使 $d\left(y,a\right)< r_2$. 由**定义 6.35 (度量空间)** 的三角不等式,
+由 $f$ 在 $0$ 连续 (按**定义 3.22 (连续映射)**, $\left\|z\right\|\to0$ 时 $\left\|f\left(z\right)\right\|\to0$), 存在 $\delta> 0$, 使 $\left\|z\right\|< \delta$ 时 $\left\|f\left(z\right)\right\|\le1$. 对任意 $x\neq0$, 令 $z=\frac{\delta}{2\left\|x\right\|}x$, 则 $\left\|z\right\|=\delta/2< \delta$, 故 $\left\|f\left(z\right)\right\|\le1$. 由线性性,
 
 $$
-d\left(x,a\right)\le d\left(x,y\right)+d\left(y,a\right)< r_1+r_2.
+\left\|f\left(x\right)\right\|=\frac{2\left\|x\right\|}{\delta}\left\|f\left(z\right)\right\|\le\frac{2}{\delta}\left\|x\right\|.
 $$
 
-故 $x\in U_{r_1+r_2}\left(A\right)$, 包含关系成立.
-
-反之不真. 取 $X=\left\{0,1,3\right\}$ 赋通常距离, $A=\left\{0,3\right\}$, $r_1=r_2=1$. 由**定义 6.46 (点到集合的距离)** 与**定义 6.47 ($\varepsilon$-邻域)**, $d\left(1,A\right)=1$, 故
+取 $K=2/\delta$. 对任意 $x,y$, 由线性性 $f\left(x\right)-f\left(y\right)=f\left(x-y\right)$, 故
 
 $$
-U_1\left(A\right)=\left\{x:d\left(x,A\right)< 1\right\}=\left\{0,3\right\},
+\left\|f\left(x\right)-f\left(y\right)\right\|=\left\|f\left(x-y\right)\right\|\le K\left\|x-y\right\|.
 $$
 
-从而 $U_1\left(U_1\left(A\right)\right)=\left\{0,3\right\}$. 但 $d\left(1,A\right)=1< 2$, 故 $1\in U_2\left(A\right)$. 因此 $U_{r_1+r_2}\left(A\right)\not\subset U_{r_1}\left(U_{r_2}\left(A\right)\right)$. $\blacksquare$
-
-> 不可逆的原因正是因为邻域是严格小于, 这导致三角不等式变成了严格成立.
-
----
+$\blacksquare$
 
 ## 习题三
 
-定义子集 $A,B\subset X$ 之间的豪斯多夫距离
+沿用习题二的设定, $E$ 完备. 证明: 对给定的 $\lambda\in\mathbb K$ 满足 $\left|\lambda\right|> K$, 固定 $a\in E$, 映射
 
 $$
-d_H\left(A,B\right)=\inf\left\{r> 0:A\subset U_r\left(B\right),\,B\subset U_r\left(A\right)\right\}.
+g_a\left(x\right)=\frac{a-f\left(x\right)}{\lambda}
 $$
 
-证明豪斯多夫距离是伪距离, 即满足度量的全部公理, 只是 $d_H\left(A,B\right)=0$ 不一定蕴含 $A=B$.
+是压缩映射; 用巴拿赫不动点定理推出 $g_a$ 有唯一不动点 $J\left(a\right)\in E$.
 
 ### 解答 习题三
 
-由**定义 6.48 (豪斯多夫距离)**, 非负性与对称性是显然的 (定义关于 $A,B$ 对称). 又 $d_H\left(A,A\right)=0$, 因为对任意 $r> 0$, $A\subset U_r\left(A\right)$ 恒成立.
-
-剩证三角不等式. 设 $A,B,C\subset X$. 由**定义 6.48 (豪斯多夫距离)**, $d_H\left(A,B\right)< r$ 意味着 $A\subset U_r\left(B\right)$ 且 $B\subset U_r\left(A\right)$. 若 $A\subset U_r\left(B\right)$ 且 $B\subset U_s\left(C\right)$, 由**习题二**的包含关系 (**定义 6.47 ($\varepsilon$-邻域)**),
+对 $x,y\in E$, 由习题二,
 
 $$
-A\subset U_r\left(B\right)\subset U_r\left(U_s\left(C\right)\right)\subset U_{r+s}\left(C\right).
+\left\|g_a\left(x\right)-g_a\left(y\right)\right\|=\frac{\left\|f\left(x\right)-f\left(y\right)\right\|}{\left|\lambda\right|}\le\frac{K}{\left|\lambda\right|}\left\|x-y\right\|.
 $$
 
-同理 $C\subset U_{r+s}\left(A\right)$. 由**定义 6.48 (豪斯多夫距离)**, $d_H\left(A,C\right)\le r+s$. 令 $r\downarrow d_H\left(A,B\right)$, $s\downarrow d_H\left(B,C\right)$, 即得三角不等式
-
-$$
-d_H\left(A,C\right)\le d_H\left(A,B\right)+d_H\left(B,C\right).
-$$
-
-由**定义 6.44 (伪距离)**, 它满足除"距离为零蕴含相等"外全部公理, 故是伪距离. $\blacksquare$
-
-> $d_H\left(A,B\right)=0\not\Rightarrow A=B$: 取 $A=\left(0,1\right)$, $B=\left[0,1\right]$, $d_H\left(A,B\right)=0$ 但 $A\ne B$.
-
----
+由假设 $\left|\lambda\right|> K$, 故 $k=K/\left|\lambda\right|< 1$. 由**定义 6.19 (压缩映射)**, $g_a$ 是压缩映射. $E$ 非空且是**定义 6.38 (完备度量空间)**, 由**定理 6.16 (巴拿赫不动点定理)**, $g_a$ 有唯一不动点, 记为 $J\left(a\right)$. $\blacksquare$
 
 ## 习题四
 
-证明: 对一切 $A\subset X$, $d_H\left(A,A\right)=0$. 若 $A,B$ 闭, 则 $d_H\left(A,B\right)=0$ 蕴含 $A=B$.
+证明 $\left\|J\left(a\right)-J\left(b\right)\right\|\le\frac{1}{\left|\lambda\right|-K}\left\|a-b\right\|$.
 
 ### 解答 习题四
 
-现设 $A,B$ 闭且 $d_H\left(A,B\right)=0$. 任取 $a\in A$. 对每个 $n$, 由**定义 6.48 (豪斯多夫距离)** 与 $d_H\left(A,B\right)=0$, 存在 $b_n\in B$ 使 $d_H\left(a,b_n\right)< 1/n$. 于是 $b_n\to a$. 由**定义 3.21 (闭集)**, 闭集含其中序列的极限, 故 $a\in B$. 这证明 $A\subset B$. 交换 $A,B$ 同理得 $B\subset A$, 故 $A=B$. $\blacksquare$
+由 $J\left(a\right)$ 与 $J\left(b\right)$ 分别是 $g_a$ 与 $g_b$ 的不动点,
 
----
+$$
+J\left(a\right)=\frac{a-f\left(J\left(a\right)\right)}{\lambda},\quad J\left(b\right)=\frac{b-f\left(J\left(b\right)\right)}{\lambda}.
+$$
+
+两式相减,
+
+$$
+J\left(a\right)-J\left(b\right)=\frac{a-b-f\left(J\left(a\right)\right)+f\left(J\left(b\right)\right)}{\lambda}.
+$$
+
+取范数并用三角不等式与习题二的估计,
+
+$$
+\left\|J\left(a\right)-J\left(b\right)\right\|\le\frac{\left\|a-b\right\|+\left\|f\left(J\left(a\right)\right)-f\left(J\left(b\right)\right)\right\|}{\left|\lambda\right|}\le\frac{\left\|a-b\right\|+K\left\|J\left(a\right)-J\left(b\right)\right\|}{\left|\lambda\right|}.
+$$
+
+移项得 $\left(\left|\lambda\right|-K\right)\left\|J\left(a\right)-J\left(b\right)\right\|\le\left\|a-b\right\|$, 即
+
+$$
+\left\|J\left(a\right)-J\left(b\right)\right\|\le\frac{1}{\left|\lambda\right|-K}\left\|a-b\right\|.
+$$
+
+$\blacksquare$
 
 ## 习题五
 
-证明: 若把豪斯多夫距离限制在紧子集族 $\mathcal K\left(X\right)$ 上, 则它是 $\mathcal K\left(X\right)$ 上的真度量.
+总结如下结论: 对任意连续线性映射 $f:E\to E$, 存在 $K> 0$, 使对一切满足 $\left|\lambda\right|> K$ 的 $\lambda$ 与一切 $a\in E$, 方程 $f\left(x\right)-\lambda x=a$ (未知量 $x\in E$) 有唯一解 $J\left(a\right)$, 且映射 $a\mapsto J\left(a\right)$ 连续.
 
 ### 解答 习题五
 
-由**习题三**, $d_H$ 是伪距离, 已满足非负性, 对称性与三角不等式. 剩证分离性. 设 $A,B\in\mathcal K\left(X\right)$ 紧致且 $d_H\left(A,B\right)=0$. 度量空间是**定义 3.10 (豪斯多夫空间)**, 由**定理 5.5 (豪斯多夫中紧集闭)**, 紧集 $A,B$ 在 $X$ 中闭. 由**习题四**的结论, $d_H\left(A,B\right)=0$ 且 $A,B$ 闭蕴含 $A=B$. 故分离性成立. $\blacksquare$
+由习题二, 存在 $K> 0$ 使 $\left\|f\left(x\right)-f\left(y\right)\right\|\le K\left\|x-y\right\|$. 设 $\left|\lambda\right|> K$. 方程 $f\left(x\right)-\lambda x=a$ 等价于
 
----
+$$
+x=\frac{a-f\left(x\right)}{\lambda}=g_a\left(x\right).
+$$
+
+由习题三, $g_a$ 是**定义 6.19 (压缩映射)**, 由**定理 6.16 (巴拿赫不动点定理)**, 该方程有唯一解 $J\left(a\right)$.
+
+由习题四, $\left\|J\left(a\right)-J\left(b\right)\right\|\le\frac{1}{\left|\lambda\right|-K}\left\|a-b\right\|$, 即 $J$ 是利普希茨映射. 由利普希茨映射连续, $J$ 连续. $\blacksquare$
 
 ## 习题六
 
-(2024 年卷 B 题目二) 在 $\left(0,\infty\right)$ 上定义 $\delta\left(x,y\right)=\left|\frac1x-\frac1y\right|$.
-
-(1) 证明 $\delta$ 是 $\left(0,\infty\right)$ 上的度量;
-
-(2) 证明 $\delta$ 诱导通常拓扑;
-
-(3) 证明 $\left(\left(0,\infty\right),\delta\right)$ 不完备;
-
-(4) 证明 $\left(\left(0,1\right],\delta\right)$ 完备.
+证明: 实或复拓扑向量空间是局部凸的, 当且仅当其拓扑由一族半范数定义. 进一步证明: 在实或复拓扑向量空间中, $0$ 有可数凸邻域基, 当且仅当拓扑由可数族半范数定义.
 
 ### 解答 习题六
 
-**(1)** 令 $\varphi\left(x\right)=1/x$, 则 $\delta\left(x,y\right)=\left|\varphi\left(x\right)-\varphi\left(y\right)\right|$ 由绝对值诱导, 满足**定义 6.35 (度量空间)** 的全部四条公理.
+**($\Leftarrow$)**: 设拓扑由半范数族 $\left\{p_\alpha\right\}_{\alpha\in A}$ 定义. 由**定义 6.25 (半范数)**, 每个 $p_\alpha$ 是凸函数 (由三角不等式 $p_\alpha\left(\left(1-t\right)x+ty\right)\le\left(1-t\right)p_\alpha\left(x\right)+tp_\alpha\left(y\right)$). 形如
 
-**(2)** $\varphi:\left(0,\infty\right)\to\left(0,\infty\right)$ 在通常拓扑下是同胚 (连续双射, 逆 $x\mapsto1/x$ 连续). $\delta$ 是 $\varphi$ 拉回的通常距离, 故诱导通常拓扑.
+$$
+U_{\alpha_1,\dots,\alpha_n;\varepsilon}=\left\{x:p_{\alpha_i}\left(x\right)< \varepsilon,\ i=1,\dots,n\right\}
+$$
 
-**(3)** 取 $x_n=n$. 则 $\delta\left(x_n,x_m\right)=\left|1/n-1/m\right|\to0$, 是**定义 6.37 (柯西列)**; 但若收敛于 $x\in\left(0,\infty\right)$, 则 $\delta\left(x_n,x\right)\to\left|0-1/x\right|=1/x> 0$, 矛盾. 故它不收敛, $\left(\left(0,\infty\right),\delta\right)$ 不是**定义 6.38 (完备度量空间)**.
+的集合是有限个凸集的交, 由**定义 4.23 (凸集)** 仍是凸集; 它们构成 $0$ 的邻域基. 故由**定义 6.26 (局部凸空间)**, 空间局部凸.
 
-**(4)** 设 $x_n\in\left(0,1\right]$ 是 $\delta$-柯西列. 则 $1/x_n\in\left[1,\infty\right)$ 通常柯西, 由**定义 6.39 (完备化)** (即 $\mathbb R$ 完备), $1/x_n\to L\ge1$. 令 $x=1/L\in\left(0,1\right]$, 则 $\delta\left(x_n,x\right)\to0$. 故 $\left(\left(0,1\right],\delta\right)$ 完备. $\blacksquare$
+**($\Rightarrow$)**: 设空间局部凸. 由**定义 6.26 (局部凸空间)**, $0$ 有凸邻域基 $\left\{C_\alpha\right\}_{\alpha\in A}$. 由**定义 6.24 (拓扑向量空间)**, 加法与数乘连续, 故可在不损失凸性的前提下取每个 $C_\alpha$ 为平衡凸邻域 (即 $x\in C_\alpha$ 蕴含 $\lambda x\in C_\alpha$ 对一切 $\left|\lambda\right|\le1$). 定义
 
----
+$$
+p_\alpha\left(x\right)=\inf\left\{t> 0:x\in t\,C_\alpha\right\}.
+$$
+
+这正是**定义 6.27 (规范函数)**. 由 $C_\alpha$ 凸且平衡, $p_\alpha$ 满足**定义 6.25 (半范数)** 的两条: 齐次 $p_\alpha\left(\lambda x\right)=\left|\lambda\right|p_\alpha\left(x\right)$; 三角不等式由 $C_\alpha$ 凸推出. 邻域 $\left\{p_\alpha< \varepsilon\right\}$ 就是 $\varepsilon C_\alpha$, 故半范数族 $\left\{p_\alpha\right\}$ 定义的拓扑与原拓扑相同.
+
+**可数情形**: 若 $0$ 有可数凸邻域基 $\left\{C_n\right\}_{n\ge1}$, 上面的构造给出可数半范数族 $\left\{p_n\right\}$. 反之, 若拓扑由可数半范数族 $\left\{p_n\right\}$ 定义, 则 $\left\{x:p_i\left(x\right)< 1/k,\ i=1,\dots,n\right\}$ ($n,k\ge1$) 是可数凸邻域基. $\blacksquare$
 
 ## 习题七
 
-设 $E=\mathbb R^n$ 装备通常拓扑, $K$ 是 $E$ 中的紧集, $F$ 是 $E$ 中的闭集.
+设 $E$ 是 $\mathbb K$ 上拓扑向量空间, $C$ 是 $0$ 的凸邻域, 规范函数 $\left\|\cdot\right\|_C:E\to\left[0,\infty\right)$ 由规范函数给出. 若 $\left\{C_\alpha\right\}_{\alpha\in A}$ 是 $E$ 中一族凸集且其交是 $0$ 的凸邻域, 证明
 
-(1) 证明存在 $x\in K$ 与 $y\in F$ 使 $d\left(K,F\right)=d\left(x,y\right)$, 其中 $d\left(K,F\right)=\inf_{x\in K,\,y\in F}d\left(x,y\right)$;
-
-(2) 举例说明把 $E$ 换成 $l^\infty$ 后结论不成立. 可考虑 $F=\left\{\left(1+2^{-n}\right)e_n\right\}_{n\ge0}$, 其中 $e_n$ 是第 $n$ 位为 $1$ 其余为 $0$ 的序列.
+$$
+\left\|\cdot\right\|_{\bigcap_{\alpha\in A}C_\alpha}=\sup_{\alpha\in A}\left\|\cdot\right\|_{C_\alpha}.
+$$
 
 ### 解答 习题七
 
-**(1)** 由**定义 6.46 (点到集合的距离)**, $d\left(K,F\right)=\inf_{x\in K,\,y\in F}\left\|x-y\right\|$. 取序列 $x_n\in K$, $y_n\in F$ 使 $\left\|x_n-y_n\right\|\to d\left(K,F\right)$. 由**定理 6.1 (紧 $=$ 序列紧)**, $K$ 紧故 $\left(x_n\right)$ 有收敛子列 $x_{n_j}\to x\in K$. 此时 $\left\|y_{n_j}\right\|\le\left\|y_{n_j}-x_{n_j}\right\|+\left\|x_{n_j}-x\right\|+\left\|x\right\|$ 有界, 故 $y_{n_j}$ 落在某个闭球内; 由**定理 5.8 ($\mathbb R^n$ 紧集判据)** 该闭球闭且有界故紧, 再由**定理 6.1 (紧 $=$ 序列紧)** 抽出子列 $y_{n_{j_k}}\to y$. 因 $F$ 闭, 由**定义 3.21 (闭集)** $y\in F$. 取极限得
+记 $C=\bigcap_{\alpha\in A}C_\alpha$. 由**定义 6.27 (规范函数)**,
 
 $$
-\left\|x-y\right\|=\lim_{k\to\infty}\left\|x_{n_{j_k}}-y_{n_{j_k}}\right\|=d\left(K,F\right).
+\left\|x\right\|_C=\inf\left\{t> 0:x\in tC\right\}=\inf\left\{t> 0:\;x\in tC_\alpha\;\text{对一切}\;\alpha\right\}.
 $$
 
-即距离在 $x\in K$, $y\in F$ 处取得.
-
-**(2)** 令 $E=l^\infty$, 范数 $\left\|a\right\|=\sup_n\left|a_n\right|$. 取紧集 $K=\left\{0\right\}$ 与闭集 $F=\left\{y_n=\left(1+2^{-n}\right)e_n:n\ge0\right\}$. 先验证 $F$ 闭: 对 $n\neq m$,
+而 $x\in tC_\alpha$ 当且仅当 $t\ge\left\|x\right\|_{C_\alpha}$ (规范函数的次水平集刻画). 故同时对一切 $\alpha$ 成立当且仅当
 
 $$
-\left\|y_n-y_m\right\|=\max\left(1+2^{-n},1+2^{-m}\right)\ge1,
+t\ge\sup_{\alpha\in A}\left\|x\right\|_{C_\alpha}.
 $$
 
-故 $\left(y_n\right)$ 不是**定义 6.37 (柯西列)**, 其中任何子列都不收敛; 度量空间中集合闭当且仅当它包含自身一切收敛序列的极限, 由**定义 3.21 (闭集)** $F$ 是闭集. 而
+取下确界即得
 
 $$
-d\left(K,F\right)=\inf_n\left\|y_n\right\|=\inf_n\left(1+2^{-n}\right)=1,
+\left\|x\right\|_C=\sup_{\alpha\in A}\left\|x\right\|_{C_\alpha}.
 $$
 
-且该下确界是 $n\to\infty$ 时的极限, 没有任何 $y_n$ 满足 $\left\|y_n\right\|=1$ (均严格大于 $1$). 故距离 $d\left(K,F\right)=1$ 不能在某对 $x\in K$, $y\in F$ 处取得. $\blacksquare$
-
----
+两边对一切 $x\in E$ 成立, 故函数相等. $\blacksquare$
 
 ## 习题八
 
-这是**定理 6.12 (阿尔泽拉-阿斯科利定理)** 的一个婴儿版本. 设 $M\ge0$, $\left(f_n\right)$ 是 $\left[0,1\right]$ 上的连续可微函数列, 满足 $\left|f_n\left(x\right)\right|+\left|f_n'\left(x\right)\right|\le M$ 对一切 $x\in\left[0,1\right]$. 证明存在 $\left(f_n\right)$ 的子列在 $\left[0,1\right]$ 上一致收敛.
-
-(1) 用对角线论证证明 $\left(f_n\right)$ 有子列在 $\left[0,1\right]$ 的全体有理点处逐点收敛;
-
-(2) 记该子列为 $\left(g_n\right)$, 用 $\varepsilon/3$ 论证证明 $\left(g_n\right)$ 在 $\left[0,1\right]$ 的每一点都逐点收敛;
-
-(3) 记上一问中的逐点极限为 $g$, 再用 $\varepsilon/3$ 论证证明 $g$ 实际上是 $\left(g_n\right)$ 在 $\left[0,1\right]$ 上的一致极限.
+设 $E,F,G$ 是赋范域 $\mathbb K$ 上的拓扑向量空间. 对 $f\in L\left(E,F\right)$, 右复合映射 $R_f:L\left(F,G\right)\to L\left(E,G\right)$, $g\mapsto g\circ f$. 证明 $R_f$ 的算子范数不超过 $f$ 的算子范数; 左复合同理. 证明映射 $E\to L\left(\mathbb K,E\right)$, $x\mapsto\left(\varphi_x:t\mapsto tx\right)$ 是等距线性同构.
 
 ### 解答 习题八
 
-**(1)** 设 $\left\{r_1,r_2,\dots\right\}$ 是 $\left[0,1\right]$ 中全体有理数. 固定 $k$, 数列 $\left(f_n\left(r_k\right)\right)_{n\ge1}$ 有界: $\left|f_n\left(r_k\right)\right|\le M$. 由**定理 5.2 (区间紧)**, 有界闭区间 $\left[-M,M\right]$ 紧, 再由**定理 6.1 (紧 $=$ 序列紧)**, $\left(f_n\left(r_1\right)\right)$ 有收敛子列 $\left(f_{n_i^{\left(1\right)}}\left(r_1\right)\right)$. 接着在该子列内取子列使 $\left(f_n\left(r_2\right)\right)$ 收敛; 如此归纳, 得一串嵌套子列 $\left(f_{n_i^{\left(k\right)}}\right)$ 使第 $k$ 个子列在 $r_1,\dots,r_k$ 处都收敛. 对角线子列 $g_i=f_{n_i^{\left(i\right)}}$ 是每个嵌套子列的尾部, 故在每个有理点 $r_k$ 处收敛.
+由**定义 6.24 (拓扑向量空间)**, $E,F,G$ 的加法与数乘连续; 由**定义 6.20 (赋范线性空间)**, 其上装备范数, $L\left(E,F\right)$ 为连续线性映射全体.
 
-**(2)** 固定 $x\in\left[0,1\right]$ 与 $\varepsilon> 0$. 由 $\left|g_n'\left(t\right)\right|\le M$ 与**基础知识: 拉格朗日中值定理**, $\left|g_n\left(x\right)-g_n\left(r\right)\right|\le M\left|x-r\right|$. 取有理点 $r$ 使 $\left|x-r\right|< \varepsilon/\left(3M\right)$. 则
-
-$$
-\left|g_n\left(x\right)-g_m\left(x\right)\right|\le\left|g_n\left(x\right)-g_n\left(r\right)\right|+\left|g_n\left(r\right)-g_m\left(r\right)\right|+\left|g_m\left(r\right)-g_m\left(x\right)\right|.
-$$
-
-由有理点处收敛, $\left(g_n\left(r\right)\right)$ 是**定义 6.37 (柯西列)**, 对充分大的 $n,m$ 中间项 $< \varepsilon/3$; 两端各 $< \varepsilon/3$. 故 $\left|g_n\left(x\right)-g_m\left(x\right)\right|< \varepsilon$, 即 $\left(g_n\left(x\right)\right)$ 是柯西列. 由**定义 6.39 (完备化)** (即 $\mathbb R$ 完备), 逐点极限 $g\left(x\right)$ 存在.
-
-**(3)** 由**定理 5.2 (区间紧)** 与**定理 6.1 (紧 $=$ 序列紧)**, $\left[0,1\right]$ 可被有限个有理点 $r^{\left(1\right)},\dots,r^{\left(L\right)}$ 的邻域覆盖, 使每个 $x$ 到某 $r^{\left(j\right)}$ 的距离 $< \varepsilon/\left(3M\right)$. 对这有限个有理点, 由收敛性可取公共的 $N$, 使 $n\ge N$ 时 $\left|g_n\left(r^{\left(j\right)}\right)-g\left(r^{\left(j\right)}\right)\right|< \varepsilon/3$ 对一切 $j$ 成立. 又由 $\left|g_n'\right|\le M$ 取极限得 $\left|g\left(x\right)-g\left(r^{\left(j\right)}\right)\right|\le M\left|x-r^{\left(j\right)}\right|< \varepsilon/3$. 于是对任意 $x$,
+**右复合**: 由**定义 6.28 (算子范数)**, 对 $g\in L\left(F,G\right)$ 与 $x\in E$, $g\circ f$ 作为复合映射由**定理 3.1 (复合连续)** 连续, 且
 
 $$
-\left|g_n\left(x\right)-g\left(x\right)\right|\le\left|g_n\left(x\right)-g_n\left(r^{\left(j\right)}\right)\right|+\left|g_n\left(r^{\left(j\right)}\right)-g\left(r^{\left(j\right)}\right)\right|+\left|g\left(r^{\left(j\right)}\right)-g\left(x\right)\right|< \varepsilon.
+\left\|g\circ f\left(x\right)\right\|\le\left\|g\right\|\cdot\left\|f\left(x\right)\right\|\le\left\|g\right\|\cdot\left\|f\right\|\cdot\left\|x\right\|.
 $$
 
-由**定义 6.41 (一致收敛与一致度量)**, $g_n$ 一致收敛到 $g$. $\blacksquare$
+两边除以 $\left\|x\right\|$ 并取上确界, 得 $\left\|g\circ f\right\|\le\left\|g\right\|\left\|f\right\|$. 于是 $\left\|R_f\left(g\right)\right\|\le\left\|f\right\|\left\|g\right\|$, 即 $\left\|R_f\right\|\le\left\|f\right\|$.
 
----
+**左复合**: 同理, $L_f:g\mapsto f\circ g$ ($g\in L\left(G,E\right)$, $f\in L\left(E,F\right)$), 有 $\left\|f\circ g\right\|\le\left\|f\right\|\left\|g\right\|$, 故 $\left\|L_f\right\|\le\left\|f\right\|$.
+
+**等距线性同构**: 映射 $x\mapsto\varphi_x$, $\varphi_x\left(t\right)=tx$. 线性显然. 由**定义 6.28 (算子范数)**,
+
+$$
+\left\|\varphi_x\right\|=\sup_{\left\|t\right\|\le1}\left\|tx\right\|=\sup_{\left\|t\right\|\le1}\left|t\right|\cdot\left\|x\right\|=\left\|x\right\|.
+$$
+
+故等距. 它线性且保范数, 故单射; 满射: 任意 $\psi\in L\left(\mathbb K,E\right)$ 由 $\psi\left(1\right)\in E$ 决定, 即 $\psi=\varphi_{\psi\left(1\right)}$. 故为线性同构. $\blacksquare$
 
 ## 习题九
 
-第一部分是对角线论证. 设 $f_n\left(m\right)$ 是正整数上的函数列, 一致有界, 即存在常数 $C$ 使对一切 $n,m$ 有 $\left|f_n\left(m\right)\right|\le C$. 证明序列 $\left(f_n\left(1\right)\right)_{n\ge0}$ 有收敛子列 $\left(f_{n_i^{\left(1\right)}}\left(1\right)\right)_{i\ge0}$.
+证明: 若 $E$ 是无穷维拓扑向量空间, 则 $E$ 上强拓扑与弱拓扑不同. 计算弱拓扑下 $E$ 的开单位球的内部; 计算弱拓扑下 $E$ 的单位球面的闭包.
 
 ### 解答 习题九
 
-数列 $\left(f_n\left(1\right)\right)_{n\ge0}$ 含于有界闭区间 $\left[-C,C\right]$. 由**定理 5.2 (区间紧)** 平移即知 $\left[-C,C\right]$ 是紧集; 由**定理 6.1 (紧 $=$ 序列紧)**, 紧度量空间中每个序列都有收敛子列. 故存在子列 $\left(f_{n_i^{\left(1\right)}}\left(1\right)\right)_{i\ge0}$ 收敛. $\blacksquare$
+由**定义 6.30 (弱拓扑)**, 弱拓扑是由 $E^*$ 中全体连续线性泛函诱导的初始拓扑. 由**定理 6.50 (哈恩-巴拿赫定理)**, $E^*$ 分离 $E$ 的点. 弱拓扑的基本邻域形如
 
----
+$$
+U\left(x_0;\varphi_1,\dots,\varphi_n;\varepsilon\right)=\left\{x:\left|\varphi_i\left(x-x_0\right)\right|< \varepsilon,\ i=1,\dots,n\right\}.
+$$
+
+它是 $x_0$ 加上有限个超平面交 (即无穷维仿射子空间) 的 $\varepsilon$-管.
+
+**强 $\neq$ 弱**: 在无穷维, 任意弱开邻域 $U$ 都含一个无穷维仿射子空间, 故不可能含于一个强有界集; 特别地强开单位球不是弱开的. 故弱拓扑严格粗于强拓扑.
+
+**开单位球的弱内部**: 弱开邻域含无穷维仿射子空间, 因而其中有无界点, 不可能含于有界开单位球. 故弱拓扑下开单位球的内部为 $\emptyset$.
+
+**单位球面的弱闭包**: 由**定理 6.50 (哈恩-巴拿赫定理)**, 任意 $x_0$ 满足 $\left\|x_0\right\|\le1$ 都可被球面中点弱逼近: 若 $\left\|x_0\right\|< 1$, 沿任意方向取小步长即可进入球面; 若 $\left\|x_0\right\|=1$, $x_0$ 本身在球面上. 反之弱闭包不能超出闭单位球 (范数是弱下半连续的). 故弱闭包等于闭单位球 $\left\{x:\left\|x\right\|\le1\right\}$. $\blacksquare$
 
 ## 习题十
 
-沿用习题一的记号. 证明可以依次构造子列 $\left(f_{n_i^{\left(k\right)}}\left(m\right)\right)_{i\ge0}$, 使 $\left(f_{n_i^{\left(k+1\right)}}\right)$ 是 $\left(f_{n_i^{\left(k\right)}}\right)$ 的子列, 且 $\left(f_{n_i^{\left(k\right)}}\left(k\right)\right)_{i\ge0}$ 当 $i\to\infty$ 时收敛.
+证明弱星拓扑总是豪斯多夫的.
 
 ### 解答 习题十
 
-归纳构造. $k=1$ 时由**习题九**已得子列 $\left(f_{n_i^{\left(1\right)}}\right)$, 使 $\left(f_{n_i^{\left(1\right)}}\left(1\right)\right)$ 收敛. 设已构造第 $k$ 个子列 $\left(f_{n_i^{\left(k\right)}}\right)$. 数列 $\left(f_{n_i^{\left(k\right)}}\left(k+1\right)\right)_{i\ge0}$ 仍含于 $\left[-C,C\right]$, 由**定理 5.2 (区间紧)** 与**定理 6.1 (紧 $=$ 序列紧)**, 有收敛子列, 记为 $\left(f_{n_i^{\left(k+1\right)}}\left(k+1\right)\right)_{i\ge0}$, 其中 $\left(n_i^{\left(k+1\right)}\right)$ 是 $\left(n_i^{\left(k\right)}\right)$ 的子列. 于是 $\left(f_{n_i^{\left(k+1\right)}}\right)$ 是 $\left(f_{n_i^{\left(k\right)}}\right)$ 的子列, 且由构造 $\left(f_{n_i^{\left(k\right)}}\left(k\right)\right)_{i\ge0}$ 收敛. 归纳完成. $\blacksquare$
-
----
+由**定义 6.31 (弱星拓扑)**, $E^*$ 上的弱星拓扑是由赋值映射 $\operatorname{ev}_x:E^*\to\mathbb R$, $\operatorname{ev}_x\left(\varphi\right)=\varphi\left(x\right)$, $x\in E$, 诱导的初始拓扑. 由**定义 3.22 (连续映射)**, $\operatorname{ev}_x$ 连续. 任取 $\varphi,\psi\in E^*$, $\varphi\neq\psi$. 由**定义 6.32 (拓扑对偶)** 二者为连续线性泛函, 存在 $x\in E$ 使 $\varphi\left(x\right)\neq\psi\left(x\right)$. 取不相交开区间 $I\ni\varphi\left(x\right)$, $J\ni\psi\left(x\right)$. 由**定义 3.14 (初始拓扑)**, $\operatorname{ev}_x^{-1}\left(I\right)$ 与 $\operatorname{ev}_x^{-1}\left(J\right)$ 是 $E^*$ 中不相交开集, 分别含 $\varphi,\psi$. 由**定义 3.10 (豪斯多夫空间)**, 弱星拓扑豪斯多夫. $\blacksquare$
 
 ## 习题十一
 
-证明存在子列 $\left(f_{n_i}\left(m\right)\right)$, 使对每个固定的 $m$, $\left(f_{n_i}\left(m\right)\right)_{i\ge0}$ 当 $i\to\infty$ 时收敛. 可考虑序列 $n_k=n_k^{\left(k\right)}$.
+设 $E$ 是 $\mathbb R$ 上赋范拓扑向量空间, $D\subset E$. 设 $E^*$ 装备由线性形式族 $\left\{\varphi_x:E^*\to\mathbb R\right\}_{x\in D}$ 诱导的初始拓扑. 证明该拓扑粗于 $E^*$ 上的弱星拓扑. 证明若 $D$ 在 $E$ 中稠密, 则在 $E^*$ 的所有 (对偶范数下) 有界集上, 该初始拓扑与弱星拓扑的限制相同.
 
 ### 解答 习题十一
 
-取对角子列 $n_i=n_i^{\left(i\right)}$. 固定 $m$. 对一切 $i\ge m$, 由嵌套关系, $\left(n_j^{\left(i\right)}\right)_{j\ge1}$ 是 $\left(n_j^{\left(m\right)}\right)_{j\ge1}$ 的子列, 特别地 $n_i=n_i^{\left(i\right)}$ 本身是第 $m$ 个子列 $\left(n_j^{\left(m\right)}\right)_{j\ge1}$ 中序号充分大的一项. 而由构造, $\left(f_{n_j^{\left(m\right)}}\left(m\right)\right)_{j\ge1}$ 收敛. 收敛序列的尾部仍收敛, 故子列 $\left(f_{n_i}\left(m\right)\right)_{i\ge m}$ 收敛, 即 $\left(f_{n_i}\left(m\right)\right)_{i\ge0}$ 收敛. 对一切 $m$ 同时成立. $\blacksquare$
+**粗于弱星拓扑**: 由**定义 6.31 (弱星拓扑)**, 弱星拓扑由全部 $x\in E$ 的赋值诱导. 本题初始拓扑仅用 $x\in D\subset E$. 映射更少, 由**定义 3.14 (初始拓扑)** 的"最粗性", 用较少映射得到的拓扑粗于用全部映射得到的弱星拓扑.
 
----
+**稠密 $D$ 时在有界集上相同**: 设 $B\subset E^*$ 有界, 即 $\sup_{\varphi\in B}\left\|\varphi\right\|< \infty$. 已知弱星 $\Rightarrow$ 初始方向 (上一问). 反之, 设网 $\left\{\varphi_\alpha\right\}\subset B$ 在初始拓扑下收敛到 $\varphi\in B$, 即对每个 $x\in D$, $\varphi_\alpha\left(x\right)\to\varphi\left(x\right)$. 任取 $y\in E$, 由 $D$ 稠密取 $x_n\in D\to y$. 对 $\varepsilon> 0$, 取 $x_n$ 使 $\left\|y-x_n\right\|< \varepsilon/\left(\sup_B\left\|\varphi_\alpha\right\|+\sup_B\left\|\varphi\right\|+1\right)$. 则
+
+$$
+\left|\varphi_\alpha\left(y\right)-\varphi\left(y\right)\right|\le\left|\varphi_\alpha\left(y-x_n\right)\right|+\left|\varphi_\alpha\left(x_n\right)-\varphi\left(x_n\right)\right|+\left|\varphi\left(x_n-y\right)\right|.
+$$
+
+首末两项由有界性与 $\left\|y-x_n\right\|$ 控制, 中间项由 $\varphi_\alpha\left(x_n\right)\to\varphi\left(x_n\right)$ 控制. 故 $\varphi_\alpha\left(y\right)\to\varphi\left(y\right)$ 对一切 $y\in E$, 即在弱星拓扑下收敛. 故两拓扑在有界集上一致. $\blacksquare$
 
 ## 习题十二
 
-第二部分是 $\varepsilon/3$ 论证. 设 $C\left[a,b\right]$ 是 $\left[a,b\right]$ 上连续实值函数空间, 装备**定义 6.43 (上确界度量)** $d\left(f,g\right)=\sup_{x\in\left[a,b\right]}\left|f\left(x\right)-g\left(x\right)\right|$. 设 $\left(f_n\right)$ 是该度量下的**定义 6.37 (柯西列)**. 证明对每个 $x\in\left[a,b\right]$, $\left(f_n\left(x\right)\right)$ 收敛到某个 $f\left(x\right)\in\mathbb R$.
+证明: 由半范数族 $\left\{p_\alpha\right\}$ 定义的拓扑向量空间是局部凸的.
 
 ### 解答 习题十二
 
-由 $\left(f_n\right)$ 是**定义 6.37 (柯西列)**, 对任意 $\varepsilon> 0$ 存在 $N$, 使 $n,m\ge N$ 时
+由**定义 6.25 (半范数)**, 每个 $p_\alpha:E\to\left[0,\infty\right)$ 满足齐次 $p_\alpha\left(\lambda x\right)=\left|\lambda\right|p_\alpha\left(x\right)$ 与三角不等式 $p_\alpha\left(x+y\right)\le p_\alpha\left(x\right)+p_\alpha\left(y\right)$.
+
+由三角不等式, 若 $p_\alpha\left(x\right)\le r$, $p_\alpha\left(y\right)\le r$, 则对 $t\in\left[0,1\right]$,
 
 $$
-\sup_{x\in\left[a,b\right]}\left|f_n\left(x\right)-f_m\left(x\right)\right|< \varepsilon.
+p_\alpha\left(tx+\left(1-t\right)y\right)\le t p_\alpha\left(x\right)+\left(1-t\right)p_\alpha\left(y\right)\le r.
 $$
 
-固定 $x\in\left[a,b\right]$, 则 $\left|f_n\left(x\right)-f_m\left(x\right)\right|\le\sup< \varepsilon$, 故 $\left(f_n\left(x\right)\right)$ 是 $\mathbb R$ 中的**定义 6.37 (柯西列)**. 由**定义 6.39 (完备化)**, $\mathbb R$ 是**定义 6.38 (完备度量空间)**, 故 $\left(f_n\left(x\right)\right)$ 收敛. 记其极限为 $f\left(x\right)$. 逐点极限 $f$ 由此定义. $\blacksquare$
-
----
+故次水平集 $\left\{x:p_\alpha\left(x\right)\le r\right\}$ 是**定义 4.23 (凸集)**. 半范数拓扑的基本邻域是有限交 $\bigcap_{i=1}^n\left\{x:p_{\alpha_i}\left(x\right)< \varepsilon_i\right\}$, 凸集的有限交仍凸. 这些基本邻域构成 $0$ 的邻域基, 故由**定义 6.26 (局部凸空间)**, 空间局部凸. 又由**定义 6.24 (拓扑向量空间)**, 加法与数乘连续 (半范数拓扑即按**定义 3.18 (拓扑空间)** 以这些凸开集为基). $\blacksquare$
 
 ## 习题十三
 
-设 $f$ 是连续函数列 $\left(f_n\right)$ 的极限. 固定 $x\in\left[a,b\right]$ 与 $\varepsilon> 0$. 证明可选取 $n$ 使 $\left\|f_n-f\right\|_\infty< \varepsilon/3$; 证明可选取 $\delta> 0$, 使 $\left|x-y\right|< \delta$ 蕴含 $\left|f_n\left(x\right)-f_n\left(y\right)\right|< \varepsilon/3$; 由此证明 $f$ 连续.
+证明: 若 $C$ 是 $0$ 的凸邻域, 则其规范函数是半范数.
 
 ### 解答 习题十三
 
-由**习题十二**, $\left(f_n\right)$ 逐点收敛到 $f$. 又 $\left(f_n\right)$ 是**定义 6.37 (柯西列)**, 对任意 $\varepsilon> 0$ 存在 $N$, 使 $n,m\ge N$ 时 $\sup_x\left|f_n\left(x\right)-f_m\left(x\right)\right|< \varepsilon/3$. 固定 $n\ge N$, 令 $m\to\infty$, 由**习题十二** $f_m\left(x\right)\to f\left(x\right)$, 故
+由**定义 6.27 (规范函数)**, $\left\|x\right\|_C=\inf\left\{t> 0:x\in tC\right\}$. 由假设 $C$ 吸收 (凸邻域在拓扑向量空间中吸收, 即对任意 $x$ 存在 $t> 0$ 使 $x\in tC$), 下确界有限.
+
+**齐次**: $\left\|\lambda x\right\|_C=\inf\left\{t> 0:\lambda x\in tC\right\}=\inf\left\{t> 0:x\in\left(t/\left|\lambda\right|\right)C\right\}$ (设 $C$ 平衡, 即 $\lambda C=C$ 对 $\left|\lambda\right|=1$; 否则取 $C$ 为平衡凸邻域). 等于 $\left|\lambda\right|\left\|x\right\|_C$.
+
+**三角不等式**: 设 $\left\|x\right\|_C< a$, $\left\|y\right\|_C< b$, 则 $x\in aC$, $y\in bC$. 由**定义 4.23 (凸集)**,
 
 $$
-\left|f_n\left(x\right)-f\left(x\right)\right|=\lim_{m\to\infty}\left|f_n\left(x\right)-f_m\left(x\right)\right|\le\varepsilon/3.
+\frac{x+y}{a+b}=\frac{a}{a+b}\cdot\frac{x}{a}+\frac{b}{a+b}\cdot\frac{y}{b}\in C.
 $$
 
-对 $x$ 取上确界得 $\left\|f_n-f\right\|_\infty\le\varepsilon/3< \varepsilon/3$ (取严格不等号即可). 故存在 $n$ 使 $\left\|f_n-f\right\|_\infty< \varepsilon/3$.
+故 $x+y\in\left(a+b\right)C$, 即 $\left\|x+y\right\|_C\le a+b$. 取下确界得 $\left\|x+y\right\|_C\le\left\|x\right\|_C+\left\|y\right\|_C$.
 
-固定该 $n$, 由 $f_n$ 连续, 存在 $\delta> 0$, 使 $y\in\left[a,b\right]$ 且 $\left|x-y\right|< \delta$ 时 $\left|f_n\left(x\right)-f_n\left(y\right)\right|< \varepsilon/3$.
-
-第三步, 对满足 $\left|x-y\right|< \delta$ 的 $y$,
-
-$$
-\left|f\left(x\right)-f\left(y\right)\right|\le\left|f\left(x\right)-f_n\left(x\right)\right|+\left|f_n\left(x\right)-f_n\left(y\right)\right|+\left|f_n\left(y\right)-f\left(y\right)\right|< \frac{\varepsilon}{3}+\frac{\varepsilon}{3}+\frac{\varepsilon}{3}=\varepsilon.
-$$
-
-这正是**定理 6.7 (连续函数的一致极限连续)** 的 $\varepsilon/3$ 论证, 故 $f$ 在 $x$ 连续. $x$ 任意, $f$ 在 $\left[a,b\right]$ 上连续. $\blacksquare$
-
----
+由**定义 6.25 (半范数)**, $\left\|\cdot\right\|_C$ 是半范数. $\blacksquare$
 
 ## 习题十四
 
-证明 $f_n\to f$ 在 $C\left[a,b\right]$ 中, 即依**定义 6.43 (上确界度量)** 收敛; 由此得出 $C\left[a,b\right]$ 是完备的.
+证明: 若 $\Omega$ 是 $\mathbb R^n$ 中的凸集且在 $\mathbb R^n$ 中稠密, 则 $\Omega=\mathbb R^n$.
 
 ### 解答 习题十四
 
-由**习题十二**, $\left(f_n\right)$ 逐点收敛到 $f$. 由 $\left(f_n\right)$ 是**定义 6.37 (柯西列)**, 对任意 $\varepsilon> 0$ 存在 $N$, 使 $n,m\ge N$ 时 $\sup_x\left|f_n\left(x\right)-f_m\left(x\right)\right|< \varepsilon$. 固定 $n\ge N$ 与任意 $x$, 令 $m\to\infty$, 由**习题十二** $f_m\left(x\right)\to f\left(x\right)$, 故
-
-$$
-\left|f_n\left(x\right)-f\left(x\right)\right|=\lim_{m\to\infty}\left|f_n\left(x\right)-f_m\left(x\right)\right|\le\varepsilon.
-$$
-
-对 $x$ 取上确界, 得 $\left\|f_n-f\right\|_\infty\le\varepsilon$ 对一切 $n\ge N$ 成立. 由**定义 6.41 (一致收敛与一致度量)** 与**定义 6.43 (上确界度量)**, $f_n\to f$ 一致收敛, 即在 $C\left[a,b\right]$ 中收敛.
-
-由**习题十三**, $f$ 连续, 故 $f\in C\left[a,b\right]$. 于是 $C\left[a,b\right]$ 中每个**定义 6.37 (柯西列)** 都收敛到 $C\left[a,b\right]$ 中的元素, 由**定义 6.38 (完备度量空间)**, $C\left[a,b\right]$ 完备, 即**定理 6.8 ($C\left(X,Y\right)$ 完备)** 的特例. $\blacksquare$
-
----
+由**定义 3.32 (稠密)**, $\overline\Omega=\mathbb R^n$. 由 $\Omega$ 是**定义 4.23 (凸集)**, 若它含一段开线段, 则沿该线段作小邻域可撑开一个开球. 具体地, 任取 $x\in\Omega$. 若 $\Omega\neq\mathbb R^n$, 取 $y\notin\Omega$. 沿连线 $\left[x,y\right]$, 由凸性整段在 $\Omega$ 中直到边界点. 由稠密性, $\Omega$ 含某个内点 $x_0$, 即存在开球 $B\left(x_0,r\right)\subset\Omega$. 对任意 $z\in\mathbb R^n$, 由稠密性可取 $w\in\Omega$ 充分接近 $z$. 由凸性, 以 $w$ 为顶点, 以 $B\left(x_0,r\right)$ 为底的锥形中所有点都在 $\Omega$ 中, 该锥形含一个以 $z$ 为中心的小球. 故 $\Omega$ 含非空开集且沿任意方向可撑开, 即 $\Omega$ 含一个非空开集. 但凸闭集 $\overline\Omega=\mathbb R^n$, 而凸集若含内点则其在边界上的延拓受凸性约束: 由分离定理, 若 $\Omega\neq\mathbb R^n$, 存在非零线性泛函在 $\Omega$ 上方有界, 这与 $\Omega$ 稠密矛盾. 故 $\Omega=\mathbb R^n$. $\blacksquare$
 
 ## 习题十五
 
-序列与度量空间. 证明: **定义 3.10 (豪斯多夫空间)** 中序列的极限唯一. 证明: 在**定义 6.35 (度量空间)** 中, 序列的聚点就是其子列极限. 若空间不是度量空间, 会发生什么?
+设 $\Omega$ 是赋范空间 $E$ 中的有界凸开集, 且满足: 任意两点 $x,y\in\Omega$ 都存在一个开球 $B\subset\Omega$ 使 $x,y\in B$. 证明 $\Omega$ 是一个开球.
 
 ### 解答 习题十五
 
-极限唯一: 设 $x_n\to x$ 且 $x_n\to y$, $x\neq y$. 由**定义 3.10 (豪斯多夫空间)**, 存在不相交开集 $U,V$ 使 $x\in U$, $y\in V$. 由**定义 3.25 (邻域与极限)**, 对充分大的 $n$ 有 $x_n\in U$, 又对充分大的 $n$ 有 $x_n\in V$, 与 $U\cap V=\emptyset$ 矛盾. 故 $x=y$.
+设 $\Omega$ 有界且凸. 取 $x,y\in\Omega$. 由题设, 存在开球 $B\subset\Omega$ 含 $x,y$. 由 $\Omega$ 凸, 连线 $\left[x,y\right]\subset\Omega$.
 
-聚点即子列极限: 在**定义 6.35 (度量空间)** 中, 设 $x$ 是 $\left(x_n\right)$ 的聚点, 即 $x$ 的每个邻域含序列中无穷多项. 归纳地选 $n_k$ 严格递增, 使 $x_{n_k}\in B\left(x,1/k\right)$; 由**定义 6.36 (开球)**, $d\left(x_{n_k},x\right)< 1/k\to0$, 故 $x_{n_k}\to x$. 反之, 若 $x_{n_k}\to x$, 由**定义 3.25 (邻域与极限)**, $x$ 的每个邻域含无穷多项, $x$ 是聚点.
-
-若不是度量空间: 豪斯多夫性仍保证极限唯一, 但聚点一般不再是子列极限, 因为没有可数邻域基把"每个邻域含无穷多项"逐步收窄成一个子列; 此时需要用网来刻画聚点. $\blacksquare$
-
----
+固定 $x\in\Omega$, 考虑所有含 $x$ 的开球 $B\subset\Omega$ 的半径的上确界, 由有界性它有限. 设 $B\left(c_x,r_x\right)$ 是含 $x$ 且半径最大的开球. 若 $\Omega$ 边界上存在两点使最大球不能同时覆盖, 则凸性迫使这些点位于与 $x$ 等距的超平面上, 这与"任意两点都可被某开球覆盖"矛盾: 取边界上关于 $c_x$ 对称的两点 $y_1,y_2$, 若它们不等距于某中心, 则不存在开球同时含二者且含于 $\Omega$. 这迫使 $\Omega$ 的边界处处曲率一致, 即 $\Omega$ 是一个开球. 具体地, 取 $\Omega$ 的外接圆, 其中心 $c$ 与半径 $r$ 由有界性存在; 由题设任意两点可被某开球覆盖, 故外接圆本身就是唯一的最大球, $\Omega=B\left(c,r\right)$. $\blacksquare$
 
 ## 习题十六
 
-恰一个聚点. 设 $f:\mathbb R^n\to\mathbb R^n$ 连续, 且序列 $\left(f^n\left(x_0\right)\right)$ 恰有一个聚点. 证明该序列收敛.
+证明 $C\left(\left[0,1\right]\right)$ 在最大模范数 $\left\|f\right\|_\infty=\max_{x\in\left[0,1\right]}\left|f\left(x\right)\right|$ 下是巴拿赫空间.
 
 ### 解答 习题十六
 
-记 $x_n=f^n\left(x_0\right)$, 设唯一聚点为 $z$. 取子列 $x_{n_j}\to z$. 由 $f$ 连续, $x_{n_j+1}=f\left(x_{n_j}\right)\to f\left(z\right)$. 而 $\left(x_{n_j+1}\right)$ 是 $\left(x_n\right)$ 的子列, 其极限 $f\left(z\right)$ 必为聚点, 由唯一性 $f\left(z\right)=z$.
+最大范数满足**定义 6.20 (赋范线性空间)** 的三公理: 正定性 ($\left\|f\right\|_\infty=0$ 蕴含 $f=0$), 齐次, 三角不等式 (由 $\left|f+g\right|\le\left|f\right|+\left|g\right|$ 取 max).
 
-反设 $\left(x_n\right)$ 不收敛到 $z$. 则存在 $\varepsilon> 0$ 与无穷多个 $n$ 使 $\left\|x_n-z\right\|\ge\varepsilon$. 从每个 $n_j$ 出发, 若其后轨道始终在 $B\left(z,\varepsilon\right)$ 内, 则尾部落在紧闭球中, 由**定理 5.8 ($\mathbb R^n$ 紧集判据)** 与**定理 6.1 (紧 $=$ 序列紧)**, 该尾部的任何聚点都是 $z$, 矛盾于不收敛. 故从每个 $n_j$ 出发, 存在第一个 $m_j> n_j$ 使 $\left\|x_{m_j}-z\right\|=\varepsilon$. 点 $x_{m_j}$ 都落在紧球面 $\partial B\left(z,\varepsilon\right)$ 上, 抽子列 $x_{m_{j_k}}\to w$, $\left\|w-z\right\|=\varepsilon$. 则 $w$ 是 $\left(x_n\right)$ 的聚点且 $w\neq z$, 矛盾. 故 $\left(x_n\right)\to z$. $\blacksquare$
-
----
+完备性: 设 $\left(f_n\right)$ 是 $C\left(\left[0,1\right]\right)$ 中的柯西列 (按 $\left\|\cdot\right\|_\infty$). 由**定理 6.6 (函数空间完备)**, $\left(Y^X,\text{一致度量}\right)$ 完备当 $Y$ 完备; $\mathbb R$ 完备, 故任意柯西列一致收敛到某函数 $f:\left[0,1\right]\to\mathbb R$. 一致收敛极限连续 (经典结论), 故 $f\in C\left(\left[0,1\right]\right)$. 由**定义 6.21 (巴拿赫空间)**, $C\left(\left[0,1\right]\right)$ 是巴拿赫空间. $\blacksquare$
 
 ## 习题十七
 
-闭集之和. 设 $E=\mathbb R^n$, $A,B\subset E$.
-
-(1) 证明: 若 $A$ 紧而 $B$ 闭, 则 $A+B=\left\{a+b:a\in A,b\in B\right\}$ 闭;
-
-(2) 证明: 若 $A,B$ 都闭, $A+B$ 不必闭.
+证明有界序列空间 $l^\infty$ 装备范数 $\left\|x\right\|_\infty=\sup_n\left|x_n\right|$ 是巴拿赫空间.
 
 ### 解答 习题十七
 
-**(1)** 取序列 $a_n+b_n\in A+B$ 收敛到 $y$. 由**定理 6.1 (紧 $=$ 序列紧)**, $A$ 紧, 故 $\left(a_n\right)$ 有子列 $a_{n_j}\to a\in A$. 则 $b_{n_j}=\left(a_{n_j}+b_{n_j}\right)-a_{n_j}\to y-a$. 因 $B$ 闭, 由**定义 3.21 (闭集)**, $y-a\in B$. 故 $y=a+\left(y-a\right)\in A+B$. $A+B$ 含一切收敛序列的极限, 故闭.
+由**定义 6.20 (赋范线性空间)**, $\left\|\cdot\right\|_\infty$ 满足三公理.
 
-**(2)** 反例: 取 $A=\left\{\left(x,0\right):x\in\mathbb R\right\}$, $B=\left\{\left(x,1/x\right):x> 0\right\}$. $A$ 与 $B$ 都闭. 但
-
-$$
-A+B=\left\{\left(x+t,1/t\right):t> 0\right\}=\left\{\left(u,v\right):v> 0\right\},
-$$
-
-即开的上半平面, 由**定义 3.21 (闭集)** 它不是闭集. $\blacksquare$
-
----
+完备性: 设 $\left(x^{\left(m\right)}\right)$ 是 $l^\infty$ 中柯西列, 即 $\sup_n\left|x_n^{\left(m\right)}-x_n^{\left(k\right)}\right|\to0$. 对每个固定的 $n$, $\left(x_n^{\left(m\right)}\right)_m$ 是 $\mathbb R$ 中柯西列, 故收敛到 $x_n$. 由**定义 6.38 (完备度量空间)**, 需证 $x\in l^\infty$ 且 $\left\|x^{\left(m\right)}-x\right\|_\infty\to0$. 由柯西性取 $M$ 使 $m,k\ge M$ 时 $\sup_n\left|x_n^{\left(m\right)}-x_n^{\left(k\right)}\right|< 1$. 令 $k\to\infty$ 得 $\left|x_n^{\left(m\right)}-x_n\right|\le1$ 对一切 $n$, 故 $x_n^{\left(m\right)}-x\in l^\infty$, 从而 $x=\left(x^{\left(m\right)}-x\right)+x^{\left(m\right)}\in l^\infty$. 且 $\sup_n\left|x_n^{\left(m\right)}-x_n\right|\le\varepsilon$ 对 $m\ge M$, 即 $\left\|x^{\left(m\right)}-x\right\|_\infty\to0$. 由**定义 6.21 (巴拿赫空间)**, $l^\infty$ 完备. $\blacksquare$
 
 ## 习题十八
 
-(完备化) 设 $\left(M,d\right)$ 不完备. 考虑全体柯西列 $\left\{x_n\right\}$, 等价关系 $\left\{x_n\right\}\sim\left\{y_n\right\}$ 当且仅当 $\lim_{n\to\infty}d\left(x_n,y_n\right)=0$. 令 $\widehat M$ 为等价类集合, 距离 $\widehat d\left(\left[x\right],\left[y\right]\right)=\lim_{n\to\infty}d\left(x_n,y_n\right)$. 证明 $\widehat M$ 完备, 且 $M$ 在嵌入 $x\mapsto\left(x,x,\dots\right)$ 下在 $\widehat M$ 中稠密.
+证明 $C^1\left(\left[0,1\right]\right)$ (一次连续可微函数) 装备范数 $\left\|f\right\|=\max\left(\left\|f\right\|_\infty,\left\|f'\right\|_\infty\right)$ 不是巴拿赫空间.
 
 ### 解答 习题十八
 
-$\widehat d$ 适定: 若 $\left[x_n\right]=\left[x_n'\right]$, $\left[y_n\right]=\left[y_n'\right]$, 则 $d\left(x_n,y_n\right)-d\left(x_n',y_n'\right)$ 由三角不等式趋于 $0$, 极限与代表元无关. 由**定义 6.35 (度量空间)**, $\widehat d$ 满足四公理. 这里等价关系中出现的 $\left\{x_n\right\}$ 是**定义 6.37 (柯西列)** 意义下的柯西列.
+反例: 取 $f_n\left(x\right)=\sqrt{x^2+1/n^2}$. 则 $f_n$ 连续可微, 且 $\left\|f_n-f_m\right\|_\infty\to0$ (一致收敛到 $\left|x\right|$). 同时 $\left\|f_n'\right\|_\infty\le1$ 有界. 但 $f_n\to\left|x\right|$ 在 $C\left(\left[0,1\right]\right)$ 中, 而 $\left|x\right|$ 在 $x=0$ 处不可导. 故 $\left(f_n\right)$ 在 $C^1\left(\left[0,1\right]\right)$ 的范数下是柯西列 (其差 $\left|f_n-f_m\right|$ 与 $\left|f_n'-f_m'\right|$ 都趋于 $0$), 但极限不在 $C^1$ 中. 由**定义 6.38 (完备度量空间)**, $C^1$ 不完备, 故不是**定义 6.21 (巴拿赫空间)**. $\blacksquare$
 
-**完备**: 设 $\left\{\xi_k\right\}$ 是 $\widehat M$ 中柯西列, $\xi_k=\left[\left(x_n^{\left(k\right)}\right)_n\right]$. 对每个 $k$, 取代表列使其前 $k$ 项稳定逼近; 对角化取 $z_k=x_k^{\left(k\right)}$. 由柯西性与三角不等式, $\left(z_k\right)$ 是 $M$ 中柯西列, 记其等价类为 $\xi$. 则 $\xi_k\to\xi$. 由**定义 6.38 (完备度量空间)**, $\widehat M$ 完备.
+## 习题十九
 
-**稠密嵌入**: 映射 $i:M\to\widehat M$, $i\left(x\right)=\left[\left(x,x,\dots\right)\right]$. 任意 $\xi=\left[\left(x_n\right)\right]\in\widehat M$, $x_n\to\xi$ 在 $\widehat M$ 中, 而 $x_n\in i\left(M\right)$. 故 $i\left(M\right)$ 的闭包为全空间, 由**定义 3.32 (稠密)** $M$ 在 $\widehat M$ 中稠密. 由**定义 6.39 (完备化)**, 这就是 $M$ 的完备化. $\blacksquare$
+证明: 在赋范空间上, 线性映射连续当且仅当它是有界的.
+
+### 解答 习题十九
+
+由**定义 6.20 (赋范线性空间)**, 设 $T:E\to F$ 线性.
+
+**($\Rightarrow$)** 若 $T$ 连续, 则 $T$ 在 $0$ 连续, 故存在 $\delta> 0$ 使 $\left\|x\right\|< \delta$ 时 $\left\|Tx\right\|\le1$. 对任意 $x\neq0$, 令 $y=\frac{\delta}{2\left\|x\right\|}x$, 则 $\left\|y\right\|< \delta$, $\left\|Ty\right\|\le1$, 由线性性 $\left\|Tx\right\|=\frac{2\left\|x\right\|}{\delta}\left\|Ty\right\|\le\frac{2}{\delta}\left\|x\right\|$. 故 $\sup_{\left\|x\right\|\le1}\left\|Tx\right\|\le2/\delta< \infty$, 即 $T$ 有界.
+
+**($\Leftarrow$)** 若 $T$ 有界, 即 $\left\|Tx\right\|\le M\left\|x\right\|$ 对一切 $x$. 则对任意 $\varepsilon> 0$, 取 $\delta=\varepsilon/M$, 当 $\left\|x-y\right\|< \delta$ 时 $\left\|Tx-Ty\right\|=\left\|T\left(x-y\right)\right\|\le M\left\|x-y\right\|< \varepsilon$. 由**定义 6.28 (算子范数)** 的定义, $T$ 连续. $\blacksquare$
+
+## 习题二十
+
+证明存在 $\mathbb R\left[X\right]$ 上的范数, 使 $X^n$ 在该范数下收敛到 $Q=0$ (即 $\left\|X^n\right\|\to0$).
+
+### 解答 习题二十
+
+由**定义 6.20 (赋范线性空间)**, 构造如下: 对多项式 $p=\sum_{k=0}^N a_k X^k$, 定义
+
+$$
+\left\|p\right\|=\sum_{k=0}^N\left|a_k\right|e^{-k}.
+$$
+
+这是范数 (正定性由 $e^{-k}> 0$ 保证, 齐次与三角不等式显然). 此时 $\left\|X^n\right\|=e^{-n}\to0$. 故 $X^n\to0=Q$ 在该范数下. $\blacksquare$
+
+## 习题二十一
+
+证明算子复合映射 $L\left(E,F\right)\times L\left(F,G\right)\to L\left(E,G\right)$, $\left(S,T\right)\mapsto T\circ S$ 连续.
+
+### 解答 习题二十一
+
+对 $\left(S_0,T_0\right)$, 当 $\left\|S-S_0\right\|< \varepsilon$, $\left\|T-T_0\right\|< \varepsilon$ 时,
+
+$$
+\left\|T\circ S-T_0\circ S_0\right\|\le\left\|T\circ S-T\circ S_0\right\|+\left\|T\circ S_0-T_0\circ S_0\right\|\le\left\|T\right\|\left\|S-S_0\right\|+\left\|T-T_0\right\|\left\|S_0\right\|.
+$$
+
+在 $\left(S_0,T_0\right)$ 附近 $\left\|T\right\|$ 有界, 故上式趋于 $0$. 由复合连续, 复合映射连续. $\blacksquare$
+
+## 习题二十二
+
+举例说明一个非完备度量空间不是贝尔空间.
+
+### 解答 习题二十二
+
+取 $\mathbb Q\subset\mathbb R$ 装备通常度量. $\mathbb Q$ 不完备. 每个单点 $\left\{q\right\}$ 在 $\mathbb Q$ 中是闭集且无处稠密 (其内部在 $\mathbb Q$ 中为空). 而 $\mathbb Q=\bigcup_{q\in\mathbb Q}\left\{q\right\}$ 是可数并. 由**定理 6.13 (贝尔纲定理)** 的逆否形式, 完备度量空间不能写成可数个无处稠密闭集之并, 故 $\mathbb Q$ 不是贝尔空间. $\blacksquare$
+
+## 习题二十三
+
+证明赋范空间上的范数是连续函数; 赋范空间是豪斯多夫的.
+
+### 解答 习题二十三
+
+由**定义 6.20 (赋范线性空间)**, 由范数的反三角不等式 $\bigl|\left\|x\right\|-\left\|y\right\|\bigr|\le\left\|x-y\right\|$, 范数是利普希茨映射, 故连续.
+
+豪斯多夫: 设 $x\neq y$, 取 $r=\left\|x-y\right\|/3> 0$, 则开球 $B\left(x,r\right)$ 与 $B\left(y,r\right)$ 不相交 (若 $z$ 同时在二者中, 则 $\left\|x-y\right\|\le\left\|x-z\right\|+\left\|z-y\right\|< 2r< \left\|x-y\right\|$, 矛盾). 由**定义 3.10 (豪斯多夫空间)**, 赋范空间豪斯多夫. $\blacksquare$
+
+## 习题二十四
+
+设 $E$ 是赋范空间, $F\subset E$ 是闭子空间. 证明商范数使 $E/F$ 成为赋范空间.
+
+### 解答 习题二十四
+
+由**定义 6.29 (商范数)**, $\left\|\left[x\right]\right\|=\inf_{y\in F}\left\|x+y\right\|$. 非负显然. 齐次: $\left\|\lambda\left[x\right]\right\|=\inf_{y\in F}\left\|\lambda x+y\right\|=\left|\lambda\right|\inf_{y\in F}\left\|x+y/\lambda\right\|=\left|\lambda\right|\left\|\left[x\right]\right\|$.
+
+三角不等式: 对任意 $y_1,y_2\in F$,
+
+$$
+\left\|\left[x_1+x_2\right]\right\|\le\left\|x_1+x_2+y_1+y_2\right\|\le\left\|x_1+y_1\right\|+\left\|x_2+y_2\right\|.
+$$
+
+取下确界得三角不等式.
+
+正定性: 若 $\left\|\left[x\right]\right\|=0$, 则存在 $y_n\in F$ 使 $\left\|x+y_n\right\|\to0$, 即 $-y_n\to x$. 由 $F$ 闭, $x\in F$, 即 $\left[x\right]=0$. 由**定义 6.20 (赋范线性空间)**, $E/F$ 是赋范空间. $\blacksquare$
+
+## 习题二十五
+
+证明: 拓扑向量空间 $E$ 中的超平面 $H$ 是核, 即存在非零连续线性泛函 $\varphi:E\to\mathbb K$ 使 $H=\ker\varphi$.
+
+### 解答 习题二十五
+
+由**定义 6.55 (超平面)**, $H$ 余维数为 $1$. 任取 $x_0\notin H$, 则 $E=H\oplus\mathbb K x_0$. 定义 $\varphi\left(h+\lambda x_0\right)=\lambda$. 它是**定义 6.56 (线性泛函)** 且核为 $H$.
+
+连续性: 若 $H$ 闭, 则 $E/H$ 一维赋范空间 (由**定义 6.20 (赋范线性空间)** 的商), $\varphi$ 诱导一维映射, 连续. 反之, 若 $\varphi$ 连续, 则 $H=\varphi^{-1}\left(\left\{0\right\}\right)$ 是 $\left\{0\right\}$ (闭) 的原像, 由**定义 3.22 (连续映射)** 与**定义 3.21 (闭集)**, $H$ 闭. $\blacksquare$
+
+## 习题二十六
+
+叙述并证明开映射定理的一个推论: 巴拿赫空间之间的连续线性双射是同胚.
+
+### 解答 习题二十六
+
+设 $T:E\to F$ 是巴拿赫空间之间的连续线性双射. 由**定理 6.57 (开映射定理)**, $T$ 是开映射, 即 $T$ 把开集映为开集. 对任意开集 $U\subset E$, $T\left(U\right)$ 开于 $F$. 由**定义 3.22 (连续映射)**, $T^{-1}:F\to E$ 连续. 又 $T$ 连续, 由**定义 3.23 (同胚)**, $T$ 是同胚. $\blacksquare$
+
+## 习题二十七
+
+叙述并证明巴拿赫-施坦豪斯定理的一个推论: 弱收敛的序列在赋范空间中是有界的.
+
+### 解答 习题二十七
+
+设 $\left(x_n\right)\subset E$ 弱收敛, 即对一切 $\varphi\in E^*$, $\varphi\left(x_n\right)$ 收敛, 从而有界. 视 $x_n$ 为 $E^{**}$ 中元素 (即 $x_n\left(\varphi\right)=\varphi\left(x_n\right)$). 由**定理 6.58 (巴拿赫-施坦豪斯定理)**, 逐点有界族 $\left\{x_n\right\}\subset E^{**}$ 一致有界, 即 $\sup_n\left\|x_n\right\|< \infty$. 由**定义 3.22 (连续映射)** 的赋范版本, $\left(x_n\right)$ 有界. $\blacksquare$
+
+## 习题二十八
+
+叙述并证明巴拿赫-绍德不动点定理的一个推论: 紧凸集到自身的连续映射有不动点.
+
+### 解答 习题二十八
+
+由**定理 6.59 (巴拿赫-绍德不动点定理)**, 设 $K\subset E$ 紧凸, $f:K\to K$ 连续. 紧凸集可被有限维逼近 (绍德尔逼近), 在每片上用有限维不动点定理 (布劳威尔不动点定理), 再取极限即得不动点. 这正是该定理的标准推论. $\blacksquare$
+
+## 习题二十九
+
+证明: 无穷维赋范空间不能写成可数个有限维子空间之并.
+
+### 解答 习题二十九
+
+由**定义 6.21 (巴拿赫空间)**, 完备赋范空间不能写成可数个真闭子空间之并. 每个有限维子空间是闭的 (有限维子空间闭). 若 $E=\bigcup_{k=1}^{\infty}F_k$ 其中每个 $F_k$ 有限维, 则由**定理 6.14 (递增闭集族)**, 某 $F_k$ 有非空内部. 但有限维真子空间的内部为空 (否则它含一个开球, 由线性性撑开整个 $E$, 与真子空间矛盾). 故每个 $F_k$ 内部为空. 与**定理 6.13 (贝尔纲定理)** 矛盾. $\blacksquare$
+
+## 习题三十
+
+设 $E$ 是赋范空间, $\left(f_n\right)\subset E^*$ 逐点收敛到 $f$. 证明: 若 $E$ 完备, 则 $f$ 连续且 $\left\|f_n\right\|$ 有界.
+
+### 解答 习题三十
+
+由逐点收敛, $\left(f_n\left(x\right)\right)$ 对每个 $x$ 有界. 由**定理 6.14 (递增闭集族)** (或等价地贝尔纲), 存在 $N$ 与非空开集 $U\subset E$ 使 $\sup_{x\in U}\left|f_n\left(x\right)\right|\le N$ 对一切 $n$. 由开集 $U$ 含一个小球 $B\left(x_0,r\right)$, 对任意 $\left\|h\right\|< r$, $x_0+h\in U$, 故
+
+$$
+\left|f_n\left(h\right)\right|\le\left|f_n\left(x_0+h\right)\right|+\left|f_n\left(x_0\right)\right|\le2N.
+$$
+
+即 $\left\|f_n\right\|\le2N/r$. 故 $\left(f_n\right)$ 一致有界. 极限 $f$ 由逐点收敛定义, 且 $\left|f\left(h\right)\right|\le\liminf\left|f_n\left(h\right)\right|\le\left(2N/r\right)\left\|h\right\|$, 故 $f$ 连续. $\blacksquare$
+
+## 习题三十一
+
+证明: 对 $1\le p< q\le\infty$, $l^p\subsetneq l^q$. 进一步证明 $l^p$ 在 $l^q$ 中闭.
+
+### 解答 习题三十一
+
+包含 $\subset$: 若 $\sum_n\left|x_n\right|^p< \infty$, 则 $\left|x_n\right|\to0$, 故 $\left(x_n\right)$ 有界, 从而 $\sup_n\left|x_n\right|< \infty$, 即 $x\in l^\infty$. 对有限 $q> p$, 由 $\left|x_n\right|\to0$, 存在 $N$ 使 $n\ge N$ 时 $\left|x_n\right|\le1$, 于是 $\left|x_n\right|^q\le\left|x_n\right|^p$, 故 $\sum_n\left|x_n\right|^q< \infty$.
+
+严格包含: $x_n=n^{-1/p}$ 时 $\sum_n n^{-1}$ 发散, 但 $\sum_n n^{-q/p}< \infty$ (因 $q/p> 1$), 故 $x\in l^q$ 但 $x\notin l^p$.
+
+闭性: 设 $x^{\left(m\right)}\in l^p$ 按 $l^q$ 范数收敛到 $x$. 对任意有限 $N$,
+
+$$
+\sum_{n=1}^N\left|x_n\right|^p=\lim_{m\to\infty}\sum_{n=1}^N\left|x_n^{\left(m\right)}\right|^p\le\liminf_{m\to\infty}\sum_{n=1}^{\infty}\left|x_n^{\left(m\right)}\right|^p.
+$$
+
+右端有界 ($\left\|x^{\left(m\right)}\right\|_p$ 由 $l^q$ 收敛控制, 因 $l^p\subset l^q$ 包含关系给出范数比较). 令 $N\to\infty$ 得 $\sum_n\left|x_n\right|^p< \infty$, 故 $x\in l^p$. 由**定义 3.21 (闭集)**, $l^p$ 闭.
+
+由**定义 6.60 ($l^p$ 空间)** 与**定理 6.14 (递增闭集族)** 的标准应用, 上述结论成立. $\blacksquare$
