@@ -1,20 +1,46 @@
-# week3（连通性）
+# week3（连续函数与商、积构造）
 
-> **定理 2.8 (施罗德-伯恩斯坦定理)**
+> **定理 3.1 (复合连续)**
 > 
-> 若同时存在 $X\to Y$ 与 $Y\to X$ 的单射, 则 $X$ 与 $Y$ 基数相等. (教材 §2)
+> 两个连续映射的复合连续. (教材 $\S3$)
 
-> **定理 2.13 (实数与自然数幂集等势)**
+> **定理 3.6 (豪斯多夫的遗传性)**
 > 
-> $\left|\mathbb R\right|=\left|\mathcal P\left(\mathbb N\right)\right|$. (教材 §2)
+> 两豪斯多夫空间之乘积仍豪斯多夫; 豪斯多夫空间的子空间仍豪斯多夫. (教材 $\S3$)
+
+> **定义 3.9 (可分)**
+> 
+> 称拓扑空间 $X$ 是可分的, 若它有可数稠密子集. (题集 $\S1.1$)
+
+> **定义 3.10 (豪斯多夫空间)**
+> 
+> 称 $X$ 是豪斯多夫的, 若任意一对不同点都有不相交的邻域. 此时极限是唯一的. (教材 $\S3$, p20)
+
+> **定义 3.11 (乘积拓扑)**
+> 
+> 设 $X,Y$ 为拓扑空间. $X\times Y$ 上的乘积拓扑以形如 $U\times V$ 的集合为基, 其中 $U,V$ 分别是 $X,Y$ 中的开集; 任意乘积 $\prod_{v\in V}X_v$ 同理. 坐标投影是连续的. (教材 $\S3$, p17)
+
+> **定义 3.15 (拓扑基)**
+> 
+> 设 $\mathcal B\subset\mathcal P\left(X\right)$. 若 $X=\bigcup_{B\in\mathcal B}B$, 且对任意 $B_1,B_2\in\mathcal B$ 与任意 $x\in B_1\cap B_2$ 存在 $B_3\in\mathcal B$ 使 $x\in B_3\subset B_1\cap B_2$, 则以 $\mathcal B$ 中元素的任意并为开集, 生成 $X$ 上最粗拓扑. (教材 $\S3$, p13)
+
+> **定义 3.16 (离散拓扑与平凡拓扑)**
+> 
+> 离散拓扑: $X$ 的所有子集都开; 平凡拓扑: 仅 $\emptyset,X$ 开. (教材 §3)
+
+> **定义 3.18 (拓扑空间)**
+> 
+> 拓扑空间是一个集合 $X$, 配有一族公认的开集 $T\subset\mathcal P\left(X\right)$. 即 $U\subset X$ 是开的当且仅当 $U\in T$. 我们要求:
+> 
+> (1) $\emptyset,X\in T$;
+> 
+> (2) 若 $U,V\in T$, 则 $U\cap V\in T$;
+> 
+> (3) 若 $A\subset T$, 则 $\bigcup A\in T$. (教材 $\S3$, p12)
 
 > **定义 3.19 (子空间拓扑)**
 > 
 > 设 $\left(X,\mathcal O_X\right)$ 为拓扑空间, $A\subset X$, $\iota:A\to X$ 为包含映射. 称 $U\subset A$ 是开的, 若存在 $X$ 中开集 $O$ 使 $U=O\cap A$; 这些集合构成 $A$ 上的子空间拓扑, 它是使 $\iota$ 连续的最粗拓扑. (教材 §3, p17; 题集 §1.2)
-
-> **定义 3.20 (边界)**
-> 
-> $\partial A=\overline A\setminus\operatorname{int}\left(A\right)$. 等价地, $\partial F=F\cap\overline{E\setminus F}$ 当 $F\subset E$ 闭. (教材 §3)
 
 > **定义 3.21 (闭集)**
 > 
@@ -28,81 +54,45 @@
 > 
 > 空间之间的双射 $f:X\to Y$ 称为同胚, 若 $f$ 与 $f^{-1}$ 都连续. 这等价于说: $U$ 是开的当且仅当 $f\left(U\right)$ 是开的. (教材 §3, p15)
 
+> **定义 3.25 (邻域与极限)**
+> 
+> $b\in X$ 的邻域就是含 $b$ 的开集 $U$. 我们称 $a_n\to b$, 若对 $b$ 的任何邻域 $U$, 对所有充分大的 $n$ 都有 $a_n\in U$. (教材 $\S3$, p16)
+
 > **定义 3.26 (闭包)**
 > 
 > 集合 $A\subset X$ 的闭包 $\overline A$ 就是包含 $A$ 的最小闭集; 它存在, 因为闭集的交集仍是闭的. (教材 $\S3$, p18)
 
-> **定理 4.1 (区间连通)**
+> **定义 3.27 (余可数拓扑)**
 > 
-> $\left[0,1\right]$ 连通; 由此任意区间连通. (教材 §4, p23; 《拓扑学》(原书第2版) §24 推论 24.2)
+> 称 $X$ 上的余可数拓扑为: 非空开集恰为可数集的补集. (题集 §1.4)
 
-> **定理 4.2 (连续像连通)**
+> **定义 3.28 (扎里斯基拓扑)**
 > 
-> $X$ 连通, $f:X\to Y$ 连续, 则 $f\left(X\right)$ 连通. (教材 §4, p23)
+> 设 $K$ 为域, $\mathbb A^n\left(K\right)=K^n$. 扎里斯基闭集是一族多项式 $\left(P_i\right)_{i\in I}$ 的公共零点集 $\left\{x\in\mathbb A^n\left(K\right):\forall i\in I,\,P_i\left(x\right)=0\right\}$. (题集 $\S1.4$)
 
-> **定理 4.3 (路径连通蕴含连通)**
+> **定义 3.30 (基本邻域系)**
 > 
-> 路径连通空间是连通的. (教材 §4, p24)
+> $x$ 的邻域族 $\mathcal P$, 使 $x$ 的每个邻域都含某个 $\mathcal P$ 中元素. (题集 §2.4)
 
-> **定理 4.5 (可数度量空间完全不连通)**
+> **定义 3.32 (稠密)**
 > 
-> 每个可数度量空间都是完全不连通的. (教材 §4, p25)
+> 我们称 $A\subset X$ 在 $X$ 中稠密, 若 $\overline A=X$. (教材 $\S3$; 题集 $\S1.1$)
 
-> **定理 4.6 (扇形连通)**
+> **定理 5.1 (紧空间连续像紧)**
 > 
-> 一族两两有公共点的连通集之并连通; 更一般地, 一个连通集与一族每个都和它相交的连通集之并连通. (教材 §4, p26)
+> 紧空间在连续映射下的像是紧的. (教材 $\S5$)
 
-> **定理 4.7 (乘积连通)**
+> **定理 5.5 (豪斯多夫中紧集闭)**
 > 
-> 连通集 $A,B$ 之积 $A\times B$ 连通; 有限个连通集的乘积连通. (教材 §4, p26 推论 4.7)
+> 若 $X$ 是豪斯多夫空间, 则 $X$ 中任意紧子集 $K\subset X$ 是闭的. (教材 §5; 《基础拓扑学》(修订版) 第3章 定理(3.6))
 
-> **定义 4.8 (连通分支)**
+> **定理 5.6 (紧豪斯多夫间的连续双射)**
 > 
-> 含点 $x$ 的唯一极大连通集 $A\left(x\right)$; 它是闭集; 分支数有限时分支开. (教材 §4, p27)
+> 紧豪斯多夫空间之间的连续双射是同胚. (教材 §5; 《基础拓扑学》(修订版) 第3章 定理(3.7))
 
-> **定义 4.10 (局部路径连通)**
+> **定理 5.7 (有限乘积紧)**
 > 
-> 每点有由路径连通邻域组成的邻域基. (题集 §2.1 Q3)
-
-> **定义 4.14 ($\varepsilon$-链空间)**
-> 
-> $X$ 是 $\varepsilon$-链的, 若任意 $a,b\in X$ 可由相邻距离 $< \varepsilon$ 的有限点列连接; 对一切 $\varepsilon> 0$ 都成立称全链. (题集 §4.5 C5)
-
-> **定理 4.15 (闭包保持连通性)**
-> 
-> 连通集的闭包仍连通. (教材 §4, p27)
-
-> **定义 4.18 (连通空间)**
-> 
-> $X$ 不能写成两个非空不相交开集之并; 子集 $A\subset X$ 连通指其在子空间拓扑下连通. (教材 §4, p23)
-
-> **定义 4.19 (既开又闭集)**
-> 
-> 既开又闭的集合称为既开又闭集; $X$ 连通当且仅当 $\emptyset$ 与 $X$ 是仅有的既开又闭集. (教材 §4, p23)
-
-> **定义 4.20 (完全不连通)**
-> 
-> 空间的唯一连通子集是单点集. (教材 §4, p23)
-
-> **定义 4.22 (路径连通)**
-> 
-> 任意 $x,y\in X$ 有连续路径 $\gamma:\left[0,1\right]\to X$ 以 $x,y$ 为端点. (教材 §4, p24)
-
-> **定义 4.23 (凸集)**
-> 
-> $K\subset\mathbb R^n$ 凸即 $x,y\in K$ 蕴含线段 $\left(1-t\right)x+ty$ ($t\in\left[0,1\right]$) 全在 $K$ 中; 凸集必路径连通, 路径连通蕴含连通. (教材 §4, p24)
-
-> **定义 4.24 (拓扑学家正弦曲线)**
-> 
-> $y=\sin\left(1/x\right)$ 在 $\left(0,1\right]$ 上的图像与 $y$ 轴上 $\left[-1,1\right]$ 的并; 它连通但不路径连通. (教材 §4, p24)
-
-> **定理 5.4 (闭子集紧)**
-> 
-> 若 $X$ 紧致, 则 $X$ 的任意闭子集 $A\subset X$ 也紧致. (教材 $\S5$)
-
-> **定理 6.1 (紧 $=$ 序列紧)**
-> 
-> 度量空间中紧致与序列紧致等价, 即每个序列都有收敛子列. (教材 $\S6$)
+> 有限个紧空间的乘积紧. (教材 $\S5$, 定理 5.7)
 
 > **定义 6.35 (度量空间)**
 > 
@@ -120,261 +110,331 @@
 > 
 > 开球 $B\left(x,r\right)=\left\{y\in X:d\left(x,y\right)< r\right\}$. 全体开球构成度量拓扑的一个基. (教材 $\S6$)
 
-> **定理 24.3 (介值定理)**
+> **定义 6.44 (伪距离)**
 > 
-> 设 $f:X\to Y$ 连续, $X$ 连通, $Y$ 为序拓扑全序集; 若 $r$ 介于 $f\left(a\right)$ 与 $f\left(b\right)$ 之间, 则存在 $c\in X$ 使 $f\left(c\right)=r$. 特别地, 连续函数在区间上取到中间值. (《拓扑学》(原书第2版) §24 定理 24.3, p118)
+> 满足除 "$d\left(x,y\right)=0\Rightarrow x=y$" 外全部度量公理的函数; 商掉 $d=0$ 的等价类即得真度量. (题集 §1.3; 题集 §3.2 Q3; 题集 §5 Q5)
 
-## 3.1 ($\mathbb R$ 的开子集分解为可数个互不相交的开区间)
-
-证明下列定理: $\mathbb R$ 的任一开子集 $U$ 可唯一地写成可数个互不相交的开区间之并, 且这些区间的端点不属于 $U$. 提示: 可考虑含 $x\in U$ 的极大开区间 $I_x\subset U$.
-
-### 解答 3.1
-
-由**定义 6.36 (开球)**, $\mathbb R$ 的通常拓扑以开区间为基. 对每个 $x\in U$, 令 $I_x$ 为一切含 $x$ 且含于 $U$ 的开区间之并. 因每个这样的开区间都含 $x$, 其并仍是含 $x$ 的开区间 (一族两两相交于同一点的开区间之并为开区间), 含于 $U$, 且在含 $x$ 且含于 $U$ 的开区间中极大.
-
-**断言:** 对 $x,y\in U$, 或者 $I_x=I_y$, 或者 $I_x\cap I_y=\emptyset$. 事实上, 若 $I_x\cap I_y\neq\emptyset$, 则 $I_x\cup I_y$ 是含 $x,y$ 且含于 $U$ 的开区间, 由 $I_x$ 与 $I_y$ 的极大性, $I_x\cup I_y\subset I_x$ 且 $I_x\cup I_y\subset I_y$, 故 $I_x=I_y=I_x\cup I_y$.
-
-**可数性:** 每个 $I_x$ 是非空开区间, 由有理数在实直线上稠密 可取其中一个有理数 $q_x$. 因诸 $I_x$ 互不相交, 不同 $x$ 给出不同 $q_x$, 故 $\left\{I_x:x\in U\right\}$ 与 $\mathbb Q$ 的某子集一一对应, 因而是可数族. 又因每个 $x\in U$ 都含于 $I_x$, 故 $U=\bigcup_{x\in U}I_x$.
-
-**端点:** 写 $I_x=\left(a_x,b_x\right)$. 若 $a_x\in U$, 则 $a_x\in I_y$ 对某 $y\in U$. 因 $I_y$ 开, 存在 $\varepsilon> 0$ 使 $\left(a_x-\varepsilon,a_x+\varepsilon\right)\subset I_y\subset U$. 于是 $\left(a_x-\varepsilon,b_x\right)$ 是含 $x$ 且含于 $U$ 的开区间, 它比 $I_x$ 向左更长, 与 $I_x$ 的极大性矛盾. 故 $a_x\notin U$. 同理 $b_x\notin U$.
-
-**唯一性:** 若另有分解 $U=\bigcup_{j\in J}J_j$, 其中 $J_j$ 为互不相交开区间. 对每个 $x\in U$, $x$ 属于唯一的 $J_{j\left(x\right)}$. $J_{j\left(x\right)}$ 是含 $x$ 且含于 $U$ 的开区间, 由 $I_x$ 的极大性 $J_{j\left(x\right)}\subset I_x$; 反之, $I_x$ 是含 $x$ 且含于 $U$ 的开区间, 而 $J_{j\left(x\right)}$ 是含 $x$ 的极大连通开块, 故 $I_x\subset J_{j\left(x\right)}$. 因此 $J_{j\left(x\right)}=I_x$, 两分解一致. $\blacksquare$
-
-## 3.2 ($\mathbb R$ 与 $\mathbb R^2$ 等势但不同胚)
-
-证明 $\mathbb R$ 与 $\mathbb R^2$ 基数相同, 但不同胚. 提示: 可考察 $\mathbb R^2-\left\{0\right\}$ 的像.
-
-### 解答 3.2
-
-先证基数相同. 由**定理 2.13 (实数与自然数幂集等势)**, $\mathbb R$ 与 $\mathcal P\left(\mathbb N\right)$ 等势. 由**定理 2.13 (实数与自然数幂集等势)**, 把一对实数对应到一对子集 $\left(A,B\right)\subset\mathcal P\left(\mathbb N\right)^2$, 再作
-
-$$
-\left(A,B\right)\longmapsto\left\{2n:n\in A\right\}\cup\left\{2n+1:n\in B\right\}\subset\mathbb N.
-$$
-
-该映射是单射 (偶数位编码 $A$, 奇数位编码 $B$), 故 $\mathbb R^2\to\mathcal P\left(\mathbb N\right)\cong\mathbb R$ 有单射. 反过来 $x\mapsto\left(x,0\right)$ 给出 $\mathbb R\to\mathbb R^2$ 的单射. 由**定理 2.8 (施罗德-伯恩斯坦定理)**, $\mathbb R$ 与 $\mathbb R^2$ 基数相等.
-
-再证不同胚. 反设存在同胚 $h:\mathbb R\to\mathbb R^2$. 由**定义 3.23 (同胚)**, $h$ 限制到 $\mathbb R-\left\{0\right\}$ 上, 配以**定义 3.19 (子空间拓扑)**, 仍给出到 $\mathbb R^2-\left\{h\left(0\right)\right\}$ 的同胚. 考察两边挖去一点后的连通分支数.
-
-在 $\mathbb R$ 一侧,
-
-$$
-\mathbb R-\left\{0\right\}=\left(-\infty,0\right)\cup\left(0,\infty\right).
-$$
-
-由**定理 4.1 (区间连通)**, 两区间各自连通; 它们是不相交非空开集, 故由**定义 4.18 (连通空间)** $\mathbb R-\left\{0\right\}$ 不连通, 由**定义 4.8 (连通分支)** 它恰有两个连通分支.
-
-在 $\mathbb R^2$ 一侧, $\mathbb R^2-\left\{0\right\}$ 路径连通: 任取两点 $u,v$, 选点 $w$ 使 $0,u,w$ 与 $0,w,v$ 均不共线, 折线 $u\to w\to v$ 避开原点. 由**定理 4.3 (路径连通蕴含连通)**, $\mathbb R^2-\left\{0\right\}$ 连通, 由**定义 4.8 (连通分支)** 它只有一个连通分支.
-
-同胚保持连通分支的个数 (连通集映为连通集, 极大性保持). 但上述同胚把有两个分支的 $\mathbb R-\left\{0\right\}$ 映到只有一个分支的 $\mathbb R^2-\left\{h\left(0\right)\right\}$, 矛盾. 故 $\mathbb R$ 与 $\mathbb R^2$ 不同胚. $\blacksquare$
-
-## 3.3 (不存在以素数集与有理数集互换的连续函数)
-
-证明不存在连续函数 $f:\mathbb R\to\mathbb R$ 满足 $f\left(P\right)\subset\mathbb Q$ 且 $f\left(\mathbb Q\right)\subset P$, 其中 $P$ 为素数全体. 提示: 可考察 $f\left(\mathbb R\right)$.
-
-### 解答 3.3
-
-$\mathbb R$ 是**定义 4.23 (凸集)** 意义下的凸集, 故路径连通, 由**定理 4.3 (路径连通蕴含连通)** $\mathbb R$ 连通. 由**定理 4.2 (连续像连通)**, $f\left(\mathbb R\right)$ 是 $\mathbb R$ 中的连通子集.
-
-$\mathbb Q$ 在 $\mathbb R$ 中稠密 (有理数在实直线上稠密). 由 $f$ 连续, $f\left(\mathbb Q\right)$ 在 $f\left(\mathbb R\right)$ 中稠密: 对任意 $y=f\left(x\right)\in f\left(\mathbb R\right)$, 取有理数列 $q_n\to x$, 则由**定义 3.22 (连续映射)** $f\left(q_n\right)\to f\left(x\right)=y$.
-
-由题设 $f\left(\mathbb Q\right)\subset P$. 由素数集在实直线上闭且离散, $P$ 是闭集, 故由**定义 3.26 (闭包)**,
-
-$$
-f\left(\mathbb R\right)\subset\overline{f\left(\mathbb Q\right)}\subset\overline{P}=P.
-$$
-
-于是连通集 $f\left(\mathbb R\right)$ 含于 $P$. 由素数集在实直线上闭且离散, $P$ 作为子空间是离散的, 而离散空间的任一子集既开又闭, 由**定义 4.18 (连通空间)** 离散空间的连通子集只能是单点集. 故 $f\left(\mathbb R\right)=\left\{p_0\right\}$, 即 $f$ 必为常值映射. 因此满足条件的连续函数只能是常值映射, 不存在非常值的这类连续函数. $\blacksquare$
-
-## 3.4 (连通且局部路径连通蕴含路径连通)
-
-证明连通且局部路径连通的空间必路径连通. 提示: 可考察某点的 "路径连通" 分支.
-
-### 解答 3.4
-
-设 $X$ 连通且局部路径连通, 固定 $x\in X$, 令
-
-$$
-C=\left\{y\in X:y\text{ 与 }x\text{ 之间有连续路径相连}\right\}.
-$$
-
-先证 $C$ 开. 任取 $y\in C$. 由**定义 4.10 (局部路径连通)**, $y$ 有路径连通邻域 $V$. 对任意 $z\in V$, $z$ 与 $y$ 在 $V$ 中有路径, $y$ 与 $x$ 有路径, 两段拼接即得 $z$ 与 $x$ 的路径, 故 $z\in C$, 从而 $V\subset C$. 由 $y$ 任意, $C$ 开.
-
-再证 $C$ 闭. 取 $y\in\overline C$ (**定义 3.26 (闭包)**). 由**定义 4.10 (局部路径连通)**, $y$ 有路径连通邻域 $V$. 由 $\overline C$ 的定义, $V\cap C\neq\emptyset$, 取 $z\in V\cap C$. $z$ 与 $x$ 有路径, $y$ 与 $z$ 在 $V$ 中有路径, 拼接得 $y$ 与 $x$ 的路径, 故 $y\in C$. 于是 $\overline C\subset C$, $C$ 闭.
-
-故 $C$ 既开又闭 (**定义 4.19 (既开又闭集)**). $X$ 连通 (**定义 4.18 (连通空间)**), 且 $C\neq\emptyset$ ($x\in C$), 故由**定义 4.19 (既开又闭集)** 得 $C=X$. 由**定义 4.22 (路径连通)**, $X$ 路径连通. $\blacksquare$
-
-## 3.5 (多于一点的连通度量空间不可数)
-
-证明多于一点的连通度量空间不可数.
-
-### 解答 3.5
-
-反设 $\left(X,d\right)$ 是**定义 6.35 (度量空间)** 意义下的连通度量空间, $\left|X\right|\ge2$, 且 $X$ 可数. 由**定理 4.5 (可数度量空间完全不连通)**, $X$ 是**定义 4.20 (完全不连通)** 意义下的完全不连通空间, 即其唯一连通子集是单点集.
-
-但 $X$ 本身作为子集由题设连通 (**定义 4.18 (连通空间)**), 且 $\left|X\right|\ge2$, 与完全不连通矛盾. 故 $X$ 不可数. $\blacksquare$
-
-## 3.6 ($GL\left(n,\mathbb R\right)$ 与 $GL\left(n,\mathbb C\right)$ 的连通分支)
-
-证明一般线性群 $GL\left(n,\mathbb R\right)$ (即 $n\times n$ 实可逆矩阵之群) 由两个连通分支组成: 行列式为正者与行列式为负者; 特别地它不连通. 证明与之对照, $GL\left(n,\mathbb C\right)$ 连通.
-
-### 解答 3.6
-
-行列式映射 $\det:GL\left(n,\mathbb R\right)\to\mathbb R-\left\{0\right\}$ 是矩阵元素的多项式, 故由**定义 3.22 (连续映射)** 它连续. 由**定理 4.2 (连续像连通)**, $GL\left(n,\mathbb R\right)$ 中连通子集的行列式必落入 $\mathbb R-\left\{0\right\}=\left(-\infty,0\right)\cup\left(0,\infty\right)$ 的同一连通分支. 故
-
-$$
-GL\left(n,\mathbb R\right)=GL^{+}\sqcup GL^{-}
-$$
-
-其中 $GL^{+}=\left\{A:\det A> 0\right\}$, $GL^{-}=\left\{A:\det A< 0\right\}$, 二者不相交且各自为开集.
-
-现证 $GL^{+}$ 路径连通. 对任意 $A\in GL^{+}$, 作格拉姆-施密特分解 $A=QR$, 其中 $Q\in SO\left(n\right)$, $R$ 为对角元全正的上三角阵. 全体这样的 $R$ 构成**定义 4.23 (凸集)** 意义下的凸集, 故路径连通; $SO\left(n\right)$ 中任一正交阵可分解为平面旋转之积, 各旋转角连续收缩到 $0$ 即与单位阵相连. 拼接两条路径, $A$ 与单位阵在 $GL^{+}$ 中路径相连. 同理, 若 $A\in GL^{-}$, 取 $D=\operatorname{diag}\left(-1,1,\dots,1\right)$, 则 $AD\in GL^{+}$, $AD$ 与单位阵路径相连, 从而 $A$ 与 $D$ 路径相连. 故 $GL^{+}$ 与 $GL^{-}$ 各自路径连通, 由**定义 4.8 (连通分支)** 它们正是 $GL\left(n,\mathbb R\right)$ 的两个连通分支; 由**定义 4.18 (连通空间)** $GL\left(n,\mathbb R\right)$ 不连通.
-
-对复的情形, 任意 $A\in GL\left(n,\mathbb C\right)$, 格拉姆-施密特分解 $A=QU$, 其中 $U$ 为酉阵. 酉阵可对角化, 特征值均在单位圆上, 各辐角连续收缩到 $0$ 即与单位阵相连, 故 $U$ 与单位阵路径相连, 从而 $A$ 与单位阵路径相连. 故 $GL\left(n,\mathbb C\right)$ 路径连通, 由**定理 4.3 (路径连通蕴含连通)** 它连通. $\blacksquare$
-
-## 3.7 (拓扑学家正弦曲线连通但不路径连通)
-
-证明拓扑学家正弦曲线连通但不路径连通.
-
-### 解答 3.7
-
-记
-
-$$
-G=\left\{\left(x,\sin\frac1x\right):0< x\le1\right\},\quad L=\left\{0\right\}\times\left[-1,1\right],\quad S=G\cup L.
-$$
-
-由**定义 4.24 (拓扑学家正弦曲线)**, $S$ 即拓扑学家正弦曲线.
-
-先证连通. $G$ 以 $x$ 为参数路径连通, 故由**定理 4.3 (路径连通蕴含连通)** $G$ 连通. 当 $x\to0^{+}$ 时 $\sin\left(1/x\right)$ 在 $\left[-1,1\right]$ 上稠密振荡, 故 $G$ 的闭包 $\overline G=G\cup L=S$ (**定义 3.26 (闭包)**). 由**定理 4.15 (闭包保持连通性)**, $\overline G$ 连通, 故 $S$ 连通 (**定义 4.18 (连通空间)**).
-
-再证不路径连通. 反设存在路径 $\gamma:\left[0,1\right]\to S$ 以 $\left(0,0\right)\in L$ 为起点, 以 $\left(1,\sin1\right)\in G$ 为终点. 令 $t_0=\inf\left\{t:\gamma\left(t\right)\text{ 的横坐标}> 0\right\}$. 由连续性 $\gamma\left(t_0\right)\in L$. 取 $t_n\downarrow t_0$, 则 $\gamma\left(t_n\right)=\left(x_n,\sin\left(1/x_n\right)\right)$, $x_n\to0^{+}$. 序列 $\sin\left(1/x_n\right)$ 既有收敛到 $1$ 的子列, 又有收敛到 $-1$ 的子列, 不可能收敛到 $\gamma\left(t_0\right)$ 的纵坐标, 与 $\gamma$ 连续矛盾. 故不存在这样的路径, $S$ 不路径连通, 即它不是**定义 4.22 (路径连通)** 意义下的路径连通空间. $\blacksquare$
-
-## 3.8 (连通等价于到两点空间的连续映射常值，以及乘积去方块后的连通性)
-
-连通性与连续函数. 证明: $X$ 是**定义 4.18 (连通空间)** 当且仅当一切连续映射 $f:X\to\left\{0,1\right\}$ (目标装备离散拓扑) 都是常值的. 再设 $A,B$ 是两个连通度量空间, $X,Y$ 分别是 $A,B$ 的真子集. 证明 $C=\left(A\times B\right)\setminus\left(X\times Y\right)$ 是 $A\times B$ 的连通子集.
-
-### 解答 3.8
-
-**($\Rightarrow$)** 设 $X$ 是**定义 4.18 (连通空间)**, $f:X\to\left\{0,1\right\}$ 连续. 由**定理 4.2 (连续像连通)**, $f\left(X\right)$ 连通; 离散两点集 $\left\{0,1\right\}$ 的连通子集只有单点, 故 $f\left(X\right)$ 是单点集, 即 $f$ 常值.
-
-**($\Leftarrow$)** 若 $X$ 不连通, 则 $X=U\cup V$, $U,V$ 非空不相交开集. 定义 $f$ 在 $U$ 上取 $0$, 在 $V$ 上取 $1$; 因 $U,V$ 既开又闭, 由**定义 3.22 (连续映射)** $f$ 连续, 但 $f$ 非常值. 矛盾.
-
-**第二问:** $C=\left(\left(A\setminus X\right)\times B\right)\cup\left(A\times\left(B\setminus Y\right)\right)$. 因 $X,Y$ 是真子集, 可取 $a_0\in A\setminus X$, $b_0\in B\setminus Y$. 固定 $b_0$, 集合 $A\times\left\{b_0\right\}$ 由**定理 4.7 (乘积连通)** 连通. 对每个 $a\in A\setminus X$, 集合 $\left\{a\right\}\times B$ 连通 (**定理 4.7 (乘积连通)**), 且与 $A\times\left\{b_0\right\}$ 交于 $\left(a,b_0\right)$. 由**定理 4.6 (扇形连通)**, $S=A\times\left\{b_0\right\}\cup\bigcup_{a\in A\setminus X}\left\{a\right\}\times B$ 连通. 再对每个 $b\in B\setminus Y$, 集合 $A\times\left\{b\right\}$ 连通, 且与 $S$ 交于 $\left(a_0,b\right)$. 再用**定理 4.6 (扇形连通)**, 加入所有 $A\times\left\{b\right\}$ 后仍连通, 所得正是 $C$. $\blacksquare$
-
-## 3.9 (边界连通蕴含闭集连通（附闭性不可少的反例）)
-
-连通性与边界. 设 $E$ 是连通度量空间, $F$ 是 $E$ 的闭集. 证明: 若 $F$ 的边界 $\partial F$ 连通, 则 $F$ 连通. 再举例说明 $F$ 不假设闭时结论失效.
-
-### 解答 3.9
-
-反设 $F$ 不连通. 则 $F$ 有非空分离 $F=A\cup B$, $A,B$ 非空不相交, 且在 $F$ 中既开又闭. 因 $F$ 在 $E$ 中闭, 由**定义 3.21 (闭集)**, $A,B$ 在 $E$ 中也闭. 由**定义 3.20 (边界)**, $\partial F=F\cap\overline{E\setminus F}$. 断言
-
-$$
-\partial F=\left(A\cap\overline{E\setminus F}\right)\cup\left(B\cap\overline{E\setminus F}\right),
-$$
-
-两边都非空. 若 $A\cap\overline{E\setminus F}=\emptyset$, 则 $A\subset\operatorname{int}\left(F\right)$; 又 $A$ 在 $F$ 中开, 即 $A=F\cap O$ ($O$ 开于 $E$), 于是 $A=O\cap\operatorname{int}\left(F\right)$ 在 $E$ 中开. $A$ 在 $E$ 中既开又闭, 由**定义 4.19 (既开又闭集)**, $E$ 连通推出 $A=\emptyset$ 或 $E$, 与 $A$ 是 $F$ 的非空真子集矛盾. 故 $A\cap\overline{E\setminus F}\neq\emptyset$, 同理 $B\cap\overline{E\setminus F}\neq\emptyset$. 这两个非空不交闭集分离了 $\partial F$, 与 $\partial F$ 连通矛盾. 故 $F$ 连通.
-
-**反例:** 取 $E=\left[0,1\right]$, $F=\left[0,1/2\right)\cup\left(1/2,1\right]$. $F$ 不闭, 且不连通; 但 $\partial F=\left\{1/2\right\}$ 是单点, 连通. $\blacksquare$
-
-## 3.10 ($\varepsilon$-链空间：连通蕴含链性，紧且链性蕴含连通)
-
-链空间. 称度量空间 $X$ 是 $\varepsilon$-链的, 若任意 $a,b\in X$ 可由有限点列 $x_0=a,\dots,x_n=b$ 连接使 $d\left(x_i,x_{i+1}\right)< \varepsilon$; 对一切 $\varepsilon> 0$ 都成立称**定义 4.14 ($\varepsilon$-链空间)**. 证明: $X$ 连通则 $X$ 是 $\varepsilon$-链空间; $X$ 紧且 $\varepsilon$-链则 $X$ 连通; 举例说明 $\varepsilon$-链空间可以不连通.
-
-### 解答 3.10
-
-**连通 $\Rightarrow$ $\varepsilon$-链:** 固定 $\varepsilon> 0$, 定义 $a\sim b$ 为存在 $\varepsilon$-链. 等价类在**定义 6.36 (开球)** $B\left(x,\varepsilon\right)$ 下封闭, 故每个等价类开; 其余等价类之并也开. 由**定义 4.19 (既开又闭集)**, 连通空间只有一个等价类, 即 $X$ 是**定义 4.14 ($\varepsilon$-链空间)**.
-
-**紧且 $\varepsilon$-链 $\Rightarrow$ 连通:** 反设 $X$ 不连通, 则 $X=A\cup B$ 为非空不交闭集分离. 因 $X$ 紧, $A,B$ 是闭子集, 由**定理 5.4 (闭子集紧)** 它们紧. 距离 $\delta=d\left(A,B\right)> 0$: 取 $a_n\in A$, $b_n\in B$ 使 $d\left(a_n,b_n\right)\to\delta$, 由**定理 6.1 (紧 $=$ 序列紧)** 抽子列 $a_{n_j}\to a\in A$, $b_{n_j}\to b\in B$, 若 $\delta=0$ 则 $d\left(a,b\right)=0$, 即 $a=b$, 与 $A\cap B=\emptyset$ 矛盾, 故 $\delta> 0$. 取 $\varepsilon< \delta$, 则 $\varepsilon$-链不可能从 $A$ 跨到 $B$, 与 $\varepsilon$-链矛盾.
-
-**$\varepsilon$-链但不连通的例子:** 有理数集 $\mathbb Q$ 装备通常度量. 对任意 $\varepsilon> 0$, 任意两个有理数之间可插入间距小于 $\varepsilon$ 的有理点列, 故 $\mathbb Q$ 是 $\varepsilon$-链的; 但 $\mathbb Q$ 完全不连通. $\blacksquare$
-
-## 3.11 (自映射皆有不动点蕴含连通，而紧连通不足)
-
-不动点与连通性. 设 $X$ 是度量空间, 假设一切连续映射 $f:X\to X$ 都有不动点. 证明 $X$ 连通. 再问: 若 $X$ 紧且连通, 是否一切连续映射 $f:X\to X$ 都有不动点?
-
-### 解答 3.11
-
-反设 $X$ 不连通, 则 $X=A\cup B$, $A,B$ 非空不相交且由**定义 4.19 (既开又闭集)** 既开又闭. 取 $a\in A$, $b\in B$, 定义 $f$: 在 $A$ 上取常值 $b$, 在 $B$ 上取常值 $a$. 因 $A,B$ 既开又闭, 由**定义 3.22 (连续映射)** $f$ 连续; 但 $f\left(A\right)\subset B$, $f\left(B\right)\subset A$, 而 $A\cap B=\emptyset$, 故 $f$ 无不动点. 矛盾. 故 $X$ 连通.
-
-不一定. 紧且连通不足以保证不动点: 取圆周 $X=S^1$, 旋转 $90^\circ$ 的映射 $f\left(e^{i\theta}\right)=e^{i\left(\theta+\pi/2\right)}$. $S^1$ 紧且连通, $f$ 连续, 但 $f$ 无不动点. $\blacksquare$
-
-> 紧与连通只能保证空间是连在一起的, 而不动点与空间的自同胚相关, 这是两件事.
-
-## 3.12 (连通边界蕴含闭集连通（重述）)
-
-(连通边界) 设 $\left(E,d\right)$ 是连通度量空间, $F\subset E$ 闭, 且 $\partial F$ 连通. 证明 $F$ 连通.
-
-### 解答 3.12
-
-反设 $F$ 不连通. 则 $F$ 有非空分离 $F=A\cup B$, $A,B$ 非空不相交, 且在 $F$ 中既开又闭. 因 $F$ 在 $E$ 中闭, 由**定义 3.21 (闭集)**, $A,B$ 在 $E$ 中也闭. 由**定义 3.20 (边界)**, $\partial F=F\cap\overline{E\setminus F}$. 断言
-
-$$
-\partial F=\left(A\cap\overline{E\setminus F}\right)\cup\left(B\cap\overline{E\setminus F}\right),
-$$
-
-两边都非空. 若 $A\cap\overline{E\setminus F}=\emptyset$, 则 $A\subset\operatorname{int}\left(F\right)$; 又 $A$ 在 $F$ 中开, 即 $A=F\cap O$ ($O$ 开于 $E$), 于是 $A=O\cap\operatorname{int}\left(F\right)$ 在 $E$ 中开. $A$ 在 $E$ 中既开又闭, 由**定义 4.19 (既开又闭集)**, $E$ 连通推出 $A=\emptyset$ 或 $E$, 与 $A$ 是 $F$ 的非空真子集矛盾. 故 $A\cap\overline{E\setminus F}\neq\emptyset$, 同理 $B\cap\overline{E\setminus F}\neq\emptyset$. 这两个非空不交闭集分离了 $\partial F$, 与 $\partial F$ 连通矛盾. 故 $F$ 连通. $\blacksquare$
-
-## 3.13 (周期连续函数的中点等值问题)
-
-设 $f:\left[0,1\right]\to\mathbb R$ 是一个连续函数并且 $f\left(0\right)=f\left(1\right)$.
-
-(1) (10 分) 证明存在 $x\in\left[0,\frac12\right]$ 使得 $f\left(x\right)=f\left(x+\frac12\right)$.
-
-(2) (10 分) 证明对于任意的整数 $n\ge2$, 存在 $x\in\left[0,1-\frac1n\right]$ 使得 $f\left(x\right)=f\left(x+\frac1n\right)$.
-
-(3) (5 分) 证明存在一个连续函数 $f:\left[0,1\right]\to\mathbb R$ 使得对于任意的 $x\in\left[0,\frac35\right]$ 都有 $f\left(x\right)\neq f\left(x+\frac25\right)$.
-
-### 解答 3.13
-
-**(1)** 令 $g\left(x\right)=f\left(x\right)-f\left(x+\frac12\right)$, 定义域 $\left[0,\frac12\right]$. 若 $g\left(0\right)=0$, 则 $x=0$ 已满足. 否则
-
-$$
-g\left(\frac12\right)=f\left(\frac12\right)-f\left(1\right)=f\left(\frac12\right)-f\left(0\right)=-g\left(0\right),
-$$
-
-故 $g\left(0\right)$ 与 $g\left(\frac12\right)$ 异号. 由**定理 24.3 (介值定理)**, 存在 $x\in\left[0,\frac12\right]$ 使 $g\left(x\right)=0$, 即 $f\left(x\right)=f\left(x+\frac12\right)$.
-
-**(2)** 令 $g\left(x\right)=f\left(x\right)-f\left(x+\frac1n\right)$, 定义域 $\left[0,1-\frac1n\right]$. 累加得
-
-$$
-\sum_{j=0}^{n-1}g\left(\frac{j}{n}\right)=\sum_{j=0}^{n-1}\left(f\left(\frac{j}{n}\right)-f\left(\frac{j+1}{n}\right)\right)=f\left(0\right)-f\left(1\right)=0.
-$$
-
-若 $g$ 在 $\left[0,1-\frac1n\right]$ 上恒不为 $0$, 因该区间连通 (由**定理 4.1 (区间连通)**), 连续函数 $g$ 的像由**定理 4.2 (连续像连通)** 是 $\mathbb R$ 中不含 $0$ 的连通集, 故必恒正或恒负, 从而各 $g\left(\frac{j}{n}\right)$ 同号, 其和不为 $0$, 矛盾. 故存在 $x$ 使 $g\left(x\right)=0$, 即 $f\left(x\right)=f\left(x+\frac1n\right)$.
-
-**(3)** 取 $f\left(x\right)=x$. 它连续, 且对任意 $x\in\left[0,\frac35\right]$, $f\left(x+\frac25\right)-f\left(x\right)=\frac25\neq0$, 故 $f\left(x\right)\neq f\left(x+\frac25\right)$. 此例即满足要求. $\blacksquare$
-
-> 这说明, 当步长为 $1/n$ 时能取等, 不是 $1/n$ 则不一定.
+> **定义 6.46 (点到集合的距离)**
 > 
-> $1/n$ 特殊的原因在于其经过有限次求和后为 $1$, 因此可以利用望远镜级数, 最终求和得到 $f\left(0\right)-f\left(1\right)=0$, 即第 2 问的证明过程.
+> $d\left(x,A\right)=\inf_{a\in A}d\left(x,a\right)$. (题集 $\S3.2$)
 
-## 3.14 (球面的连通性、路径连通性、挖去一点后的同胚与紧性)
+> **定义 6.47 ($\varepsilon$-邻域)**
+> 
+> $U_\varepsilon\left(A\right)=\left\{x\in X:d\left(x,A\right)< \varepsilon\right\}$. (题集 $\S3.2$)
 
-(2024 年卷 A 题目二, 20 分). 我们记 $S^2=\left\{\left(x,y,z\right)\in\mathbb R^3:x^2+y^2+z^2=1\right\}$ 为 $\mathbb R^3$ 中的单位球面, $D=\left\{\left(x,y\right)\in\mathbb R^2:x^2+y^2\le1\right\}$ 为单位圆盘.
+> **定理 7.2 (乌雷松引理)**
+> 
+> 正规空间中不相交闭集可被连续函数分离. (题集 §6 C13)
 
-(1) 证明集合 $D^+=\left\{\left(x,y,\sqrt{1-x^2-y^2}\right):\left(x,y\right)\in D\right\}$ 与 $D^-=\left\{\left(x,y,-\sqrt{1-x^2-y^2}\right):\left(x,y\right)\in D\right\}$ 都连通. 由此推导 $S^2$ 连通.
+> **定义 7.6 (正规空间)**
+> 
+> 单点闭且任意两不相交闭集可被不相交开集分离, 即 $T_4$. (教材 §7, p42)
 
-(2) 证明球面 $S^2$ 是路径连通的.
+> **定义 11.1 (商拓扑)**
+> 
+> 满射 $\pi:X\to Y$ 下, $U\subset Y$ 开当且仅当 $\pi^{-1}\left(U\right)\subset X$ 开. (教材 §11, p61; 《拓扑学》(原书第2版) §22, p105; 《基础拓扑学》(修订版) 第4章 4.2, p55)
 
-(3) 证明 $\mathbb R^3\setminus\left\{P\right\}$ 与 $S^2$ 同胚, 其中 $P=\left(0,0,2\right)$. 你可以使用球极投影
+> **定义 11.2 (粘合映射)**
+> 
+> 满射 $f:X\to Y$ 使 $U\subset Y$ 开当且仅当 $f^{-1}\left(U\right)$ 开; 等价地, $Y$ 上的拓扑是使 $f$ 连续的最大拓扑. 此时 $g:Y\to Z$ 连续当且仅当 $gf:X\to Z$ 连续. (教材 §11, p61; 《基础拓扑学》(修订版) 第4章 定理(4.1)-(4.2), p55-56)
+
+> **定义 11.3 (等价关系粘合)**
+> 
+> $X/{\sim}$ 配商拓扑, $\pi:X\to X/{\sim}$ 为典范投影; 即将每个等价类黏合成一点. (教材 §11, p61; 《拓扑学》(原书第2版) §22, p106)
+
+> **定义 11.6 (锥)**
+> 
+> 从 $X\times\left[0,1\right]$ 出发, 以 (a) 子集 $X\times\left\{1\right\}$ 与 (b) 单点集 $\left\{\left(x,t\right)\right\}$ ($x\in X$, $0\le t< 1$) 为划分作粘合空间, 所得 $CX=X\times\left[0,1\right]/X\times\left\{1\right\}$ 叫作 $X$ 上的锥形; 被捏成的点 $X\times\left\{1\right\}$ 叫尖顶. (教材 $\S11$, p63; 题集 $\S5$ Q9; 《基础拓扑学》(修订版) 第4章)
+
+> **定义 11.7 (环面)**
+> 
+> 正方形对边同向粘合所得 $S^1\times S^1$, 即 $\mathbb R^2/\mathbb Z^2$. (《基础拓扑学》(修订版) 第4章 4.2, p56; 教材 §11, p64)
+
+> **定义 11.11 (悬垂)**
+> 
+> $SX=X\times\left[-1,1\right]/\left(X\times\left\{-1\right\}\cup X\times\left\{1\right\}\right)$, 两端各捏成一点. (题集 §5 Q10)
+
+> **定义 11.12 (塌缩商)**
+> 
+> $X/\left\langle A\right\rangle$ 将子集 $A$ 整捏成一点所得商空间. (题集 §5 Q11; 《基础拓扑学》(修订版) 第4章, p57)
+
+> **定义 11.13 ($n$-维环面)**
+> 
+> $T^n=\mathbb R^n/\mathbb Z^n\cong\left(S^1\right)^n$. (题集 §5 Q13; 教材 §11, p65)
+
+> **定义 11.14 (最终拓扑)**
+> 
+> 关于一族映射 $f_i:X_i\to Y$ 使每个 $f_i$ 连续的最细拓扑; $U\subset Y$ 开当且仅当每个 $f_i^{-1}\left(U\right)$ 在 $X_i$ 中开. (题集 §1.4 C6; 题集 §5 Q1-Q2)
+
+> **定义 11.15 (等价关系的生成)**
+> 
+> 包含给定二元关系 $R$ 的最小等价关系, 即全体含 $R$ 的等价关系之交. (题集 §5 Q4)
+
+> **定义 11.18 (不交和拓扑)**
+> 
+> 一族拓扑空间 $\left\{X_i\right\}_{i\in I}$ 的不交和 $\coprod_{i\in I}X_i$ 上, $U$ 开当且仅当每个 $U\cap X_i$ 在 $X_i$ 中开. (题集 §5 Q1; 《基础拓扑学》(修订版) 第4章 定理(4.7), p58)
+
+## 3.1 (基本邻域系：点成立而子集未必)
+
+基本邻域系. 回忆点 $x$ (或子集 $A$) 的邻域; $x$ (或 $A$) 的基本邻域系是 $x$ (或 $A$) 的一族邻域 $\mathcal P$, 使 $x$ (或 $A$) 的每个邻域都含某个 $\mathcal P$ 中元素.
+
+(1) 证明度量空间中, 任取 $r_n\to0$, $B\left(x,r_n\right)$ 是 $x$ 的基本邻域系;
+
+(2) 但当 $A$ 是子集时, $V_{\varepsilon}\left(A\right)=\left\{x:d\left(x,A\right)< \varepsilon\right\}$ 不一定是 $A$ 的基本邻域系. 例如取 $A=\left\{xy=1,x> 0\right\}\subset\mathbb R^2$ 与 $U=\left\{x,y> 0\right\}\subset\mathbb R^2$.
+
+### 解答 2.5
+
+**(1)** 设 $U$ 是 $x$ 的任一邻域 (**定义 3.25 (邻域与极限)**). 由**定义 6.36 (开球)**, 度量拓扑中存在 $r> 0$ 使 $B\left(x,r\right)\subset U$. 由 $r_n\to0$, 存在 $n$ 使 $r_n< r$, 于是
 
 $$
-\pi:\mathbb R^2\to S^2\setminus\left\{\left(0,0,1\right)\right\},\quad
-\pi\left(u,v\right)=\frac{\left(2u,2v,u^2+v^2-1\right)}{u^2+v^2+1}.
+B\left(x,r_n\right)\subset B\left(x,r\right)\subset U.
 $$
 
-(4) 证明球面 $S^2$ 是紧的.
+由**定义 3.30 (基本邻域系)**, $\left\{B\left(x,r_n\right)\right\}$ 是 $x$ 的基本邻域系.
 
-### 解答 3.14
+**(2)** 取题中 $A=\left\{\left(x,1/x\right):x> 0\right\}\subset\mathbb R^2$, $U=\left\{\left(x,y\right):x> 0,y> 0\right\}$. $U$ 开且 $A\subset U$, 故 $U$ 是 $A$ 的邻域. 对任意 $\varepsilon> 0$, 取点
 
-**(1)** 闭单位圆盘 $D\subset\mathbb R^2$ 由**定义 4.23 (凸集)** 是凸集, 凸集中任意两点可由线段连接故路径连通, 路径连通蕴含连通. 映射 $\phi^+:\left(u,v\right)\mapsto\left(u,v,\sqrt{1-u^2-v^2}\right)$ 连续, 其像为 $D^+$. 由**定理 4.2 (连续像连通)**, $D^+$ 连通. 同理 $D^-$ 连通.
+$$
+a=\left(\frac{\varepsilon}{2},\frac{2}{\varepsilon}\right)\in A,
+$$
 
-$D^+\cap D^-=\left\{\left(x,y,0\right):x^2+y^2=1\right\}\neq\emptyset$. 由**定理 4.6 (扇形连通)**, 两个连通集有公共点其并连通, 故 $S^2=D^+\cup D^-$ 连通. 由**定义 4.18 (连通空间)**, $S^2$ 连通.
+再取 $a'=\left(-\frac{\varepsilon}{4},\frac{2}{\varepsilon}\right)$. 由**定义 6.46 (点到集合的距离)**, $d\left(a',A\right)\le d\left(a',a\right)=\frac{3\varepsilon}{4}< \varepsilon$, 故由**定义 6.47 ($\varepsilon$-邻域)** $a'\in V_{\varepsilon}\left(A\right)$. 但 $a'$ 的横坐标为负, $a'\notin U$. 于是对每个 $\varepsilon> 0$, $V_{\varepsilon}\left(A\right)\not\subset U$. 故没有任何 $V_{\varepsilon}\left(A\right)$ 含于 $U$, 由**定义 3.30 (基本邻域系)**, $\left\{V_{\varepsilon}\left(A\right)\right\}$ 不是 $A$ 的基本邻域系. $\blacksquare$
 
-**(2)** 已证 $D^+$ 是 $D$ 在连续映射下的像, $D$ 凸故路径连通, 连续像路径连通; 同理 $D^-$ 路径连通. $D^+\cap D^-\neq\emptyset$, 故 $S^2=D^+\cup D^-$ 路径连通.
+> 同样的构造基本邻域系的规则, 为什么全集就满足, 子集就不满足呢? 因为全集上定义的邻域必定全在全集内部; 而对于子集, 我们可以找到该子集的边界作为反例的邻域, 在其上的任何 $\varepsilon$-邻域都会超出其范围, 导致了这种构造方法的失效.
 
-**(3)** 球极投影 $\pi:\mathbb R^2\to S^2\setminus\left\{\left(0,0,1\right)\right\}$ 是双射且双向连续, 由**定义 3.23 (同胚)**, $\mathbb R^2\cong S^2\setminus\left\{\left(0,0,1\right)\right\}$. 要证 $\mathbb R^3\setminus\left\{P\right\}\cong S^2$, 从 $\mathbb R^3\setminus\left\{P\right\}$ 作以 $P$ 为中心的中心投影到平面 $z=0$, 再经 $\pi$ 映到 $S^2\setminus\left\{\left(0,0,1\right)\right\}$; 北极 $\left(0,0,1\right)$ 对应平面方向无穷远点. 该映射连续双射, 逆连续, 为同胚.
+## 3.2 (度量空间豪斯多夫，扎里斯基拓扑不豪斯多夫)
 
-**(4)** $S^2=\left\{\left(x,y,z\right)\in\mathbb R^3:x^2+y^2+z^2=1\right\}$ 是 $\mathbb R^3$ 中有界闭集, 由海涅-博雷尔定理 ($\mathbb R^n$ 中有界闭集紧), $S^2$ 紧. 也可由 $S^2$ 是紧集 $D$ 在连续映射下的像 ($D^+$), 与另一半球面拼接; $D$ 闭且有界故紧 (**定理 6.1 (紧 $=$ 序列紧)**), 连续像紧, 故 $S^2$ 紧. $\blacksquare$
+豪斯多夫条件.
+
+(1) 证明度量空间总是豪斯多夫的;
+
+(2) 证明 $\mathbb A^n\left(\mathbb R\right)$ (或 $\mathbb R^n$) 的每个扎里斯基开集在通常拓扑下既开又稠密; 证明 $\mathbb A^n\left(\mathbb R\right)$ 的扎里斯基拓扑对任意 $n> 0$ 都不是豪斯多夫的.
+
+### 解答 2.6
+
+**(1)** 设 $\left(X,d\right)$ 是**定义 6.35 (度量空间)**. 取 $x\neq y$, 令 $r=\frac13 d\left(x,y\right)> 0$. 由**定义 6.36 (开球)**, $B\left(x,r\right)$ 与 $B\left(y,r\right)$ 是开集. 若二者相交, 取交点 $z$, 由**定义 6.35 (度量空间)** (4) 的三角不等式
+
+$$
+d\left(x,y\right)\le d\left(x,z\right)+d\left(z,y\right)< 2r=\frac23 d\left(x,y\right),
+$$
+
+矛盾. 故 $B\left(x,r\right)\cap B\left(y,r\right)=\emptyset$. 由**定义 3.10 (豪斯多夫空间)**, 度量空间是豪斯多夫的.
+
+**(2)** 由**定义 3.28 (扎里斯基拓扑)**, 扎里斯基闭集是若干多项式公共零点集. 非零多项式不能在任一通常开集上恒为零 (一元多项式恒零判据), 故扎里斯基闭集在通常拓扑下内部为空. 于是其补集, 即扎里斯基开集, 在通常拓扑下稠密 (**定义 3.32 (稠密)**).
+
+再证非豪斯多夫. 任取 $x\neq y$. 任一非空扎里斯基开集都稠密, 故任意两个非空扎里斯基开集相交. 因而不存在不相交的两个扎里斯基开集分别含 $x$ 与 $y$, 由**定义 3.10 (豪斯多夫空间)**, 扎里斯基拓扑不是豪斯多夫的. $\blacksquare$
+
+## 3.3 (正规性的两种刻画与度量空间的正规性)
+
+正规空间. 称拓扑空间 $X$ 是正规的, 若对任意含于开集 $V$ 的闭集 $F$, 存在开集 $U$ 使 $F\subset U\subset\overline U\subset V$. 证明这等价于说 $X$ 是豪斯多夫的, 且任意两不相交闭集有不相交邻域 (即**定义 7.6 (正规空间)**). 证明度量空间正规 (可先证 $f:x\mapsto d\left(x,F\right)$ 当 $F$ 闭时连续).
+
+### 解答 2.7
+
+先证两种定义等价. 设 $F$ 闭, $V$ 开, $F\subset V$. 若 $X$ 满足**定义 7.6 (正规空间)**, 对不相交闭集 $F$ 与 $X\setminus V$ 取不相交开集 $U\supset F$ 与 $W\supset X\setminus V$. 则 $\overline U\subset X\setminus W\subset V$, 故 $F\subset U\subset\overline U\subset V$. 反过来, 设任意闭 $F\subset$ 开 $V$ 有 $U$ 使 $F\subset U\subset\overline U\subset V$. 对不相交闭集 $F,F'$, 取 $V=X\setminus F'$ (开). 由假设存在 $U\supset F$ 使 $\overline U\subset X\setminus F'$. 令 $W=X\setminus\overline U$ (开, 由**定义 3.26 (闭包)** 与**定义 3.21 (闭集)**), 则 $F'\subset W$ 且 $U\cap W=\emptyset$. 故 $F,F'$ 有不相交邻域. 特别地单点闭 (取 $F=\left\{x\right\}$, 若 $X$ 满足条件则单点为闭), 即 $T_1$, 故为豪斯多夫的.
+
+再证度量空间正规. 设 $F$ 闭. 由**定义 6.46 (点到集合的距离)**, $d\left(x,F\right)=\inf_{a\in F}d\left(x,a\right)$. 由**定义 6.35 (度量空间)** 的三角不等式,
+
+$$
+\left|d\left(x,F\right)-d\left(y,F\right)\right|\le d\left(x,y\right),
+$$
+
+故 $x\mapsto d\left(x,F\right)$ 连续. 现取不相交闭集 $F,F'$. 令
+
+$$
+U=\left\{x:d\left(x,F\right)< d\left(x,F'\right)\right\},\quad
+V=\left\{x:d\left(x,F'\right)< d\left(x,F\right)\right\}.
+$$
+
+二者开 (连续函数的原像, 由**定义 3.22 (连续映射)**), 不相交, 且 $F\subset U$ (因 $x\in F$ 时 $d\left(x,F\right)=0< d\left(x,F'\right)$), $F'\subset V$. 由**定义 7.6 (正规空间)**, 度量空间正规. $\blacksquare$
+
+## 3.4 (混合烧烤拓扑：非豪斯多夫且无闭邻域基本系)
+
+混合烧烤. 考虑 $\left[0,1\right]\subset\mathbb R$ 与另外两个不属于它的元 $\left\{0^{-},0^{+}\right\}$, 令 $X=\left\{0^{-},0^{+}\right\}\cup\left(0,1\right]$. 定义
+
+$$
+\mathcal B\left(x\right)=\left\{\left(x-\frac1n,x+\frac1n\right)\cap\left(0,1\right]:n\in\mathbb Z_{> 0}\right\}\quad\left(x\in\left(0,1\right]\right),
+$$
+
+与
+
+$$
+\mathcal B\left(0^{\pm}\right)=\left\{\left\{0^{\pm}\right\}\cup\left(0,\frac1n\right):n\in\mathbb Z_{> 0}\right\}.
+$$
+
+证明 $\mathcal B=\bigcup_{x\in X}\mathcal B\left(x\right)$ 是某拓扑的基; 证明该拓扑不是豪斯多夫的; 证明 $0^{+}$ 没有由闭邻域组成的基本邻域系.
+
+### 解答 2.8
+
+先验基条件. 对 $x\in\left(0,1\right]$, 两个形如 $\left(x-\frac1n,x+\frac1n\right)\cap\left(0,1\right]$ 的集之交仍含一个同形集; 对 $0^{\pm}$, $\left\{0^{\pm}\right\}\cup\left(0,\frac1n\right)$ 之交为 $\left\{0^{\pm}\right\}\cup\left(0,1/\max\left(n,m\right)\right)$. 全体覆盖 $X$. 由**定义 3.15 (拓扑基)**, $\mathcal B$ 是某拓扑的基.
+
+**非豪斯多夫:** 任取 $0^{-}$ 的邻域, 它含某 $\left\{0^{-}\right\}\cup\left(0,\frac1n\right)$; $0^{+}$ 的邻域含某 $\left\{0^{+}\right\}\cup\left(0,\frac1m\right)$. 二者都含 $\left(0,1/\max\left(n,m\right)\right)$, 故相交. 不存在不相交开集分别含 $0^{-}$ 与 $0^{+}$, 由**定义 3.10 (豪斯多夫空间)**, 该拓扑非豪斯多夫.
+
+**$0^{+}$ 无闭邻域基本系:** 设 $C$ 是 $0^{+}$ 的任一闭邻域. 它必含某基本开邻域 $\left\{0^{+}\right\}\cup\left(0,\frac1m\right)$, 特别含区间 $\left(0,\frac1m\right)$. 点 $0^{-}$ 的每个邻域含某 $\left\{0^{-}\right\}\cup\left(0,\frac1n\right)$, 与 $\left(0,\frac1m\right)$ 相交, 故 $0^{-}\in\overline{\left(0,\frac1m\right)}$ (**定义 3.26 (闭包)**). $C$ 闭且含 $\left(0,\frac1m\right)$, 故 $C$ 含其闭包, 从而 $0^{-}\in C$. 于是 $0^{+}$ 的任何闭邻域都含 $0^{-}$, 不可能含于开集 $U=\left\{0^{+}\right\}\cup\left(0,1\right)$ (它不含 $0^{-}$). 由**定义 3.30 (基本邻域系)**, $0^{+}$ 没有由闭邻域组成的基本邻域系. $\blacksquare$
+
+## 3.5 (子空间拓扑的泛性质)
+
+泛性质. 设 $X$ 是拓扑空间, $Y\subset X$ 配自然含映射 $\iota:Y\to X$. 证明 $Y$ 上的子空间拓扑具有如下性质: 对任意拓扑空间 $Z$ 与映射 $f:Z\to Y$, $f$ 连续当且仅当 $\iota\circ f:Z\to X$ 连续.
+
+### 解答 2.9
+
+**($\Rightarrow$)** 若 $f:Z\to Y$ 连续, 由**定义 3.19 (子空间拓扑)**, 含映射 $\iota:Y\to X$ 连续. 由**定理 3.1 (复合连续)**, $\iota\circ f:Z\to X$ 连续.
+
+**($\Leftarrow$)** 设 $\iota\circ f:Z\to X$ 连续. 任取 $Y$ 中开集 $O$. 由**定义 3.19 (子空间拓扑)**, $O=Y\cap U$, 其中 $U$ 是 $X$ 中开集. 于是
+
+$$
+f^{-1}\left(O\right)=f^{-1}\left(Y\cap U\right)=f^{-1}\left(U\right)=\left(\iota\circ f\right)^{-1}\left(U\right),
+$$
+
+最后一步用到 $f$ 映到 $Y$ 中. 由 $\iota\circ f$ 连续及**定义 3.22 (连续映射)**, 右端为 $Z$ 中开集. 故 $f^{-1}\left(O\right)$ 开, 由**定义 3.22 (连续映射)**, $f$ 连续. $\blacksquare$
+
+> 证明中的核心步骤是 $f^{-1}\left(U\right)=\left(\iota\circ f\right)^{-1}\left(U\right)$, 这都归功于 $\iota$ 是含入映射, 即映射到 $Y$ 上的就相当于映射到 $X$ 上.
+
+## 3.6 (投影是开映射，但不必是闭映射，且开性不可逆)
+
+设 $\prod_{i\in I}X_i$ 装备乘积拓扑, $p_k$ 是到第 $k$ 个因子的投影.
+
+(1) 证明每个投影 $p_k$ 都是开映射, 即把开集映成开集;
+
+(2) 举例说明投影一般不是闭映射, 即存在闭集其投影不闭;
+
+(3) 证明开性的逆命题不成立: 存在 $W\subset\prod_{i\in I}X_i$ 使所有 $p_i\left(W\right)$ 都是开集, 但 $W$ 本身不是开集. 可在 $\mathbb R^2$ 中去掉若干点构造反例.
+
+### 解答 2.10
+
+**(1)** 由**定义 3.11 (乘积拓扑)**, 乘积拓扑的基本开集形如 $\prod_{i\in I}U_i$, 其中 $U_i$ 在 $X_i$ 中开且除有限个外 $U_i=X_i$. 对固定的 $k$, 投影满足
+
+$$
+p_k\left(\prod_{i\in I}U_i\right)=U_k,
+$$
+
+而 $U_k$ 是 $X_k$ 中的开集. 任一开集 $W\subset\prod_{i\in I}X_i$ 都是基本开集之并 $W=\bigcup_{\alpha}V_\alpha$, 故
+
+$$
+p_k\left(W\right)=\bigcup_{\alpha}p_k\left(V_\alpha\right),
+$$
+
+由**定义 3.18 (拓扑空间)** (开集任意并仍开), $p_k\left(W\right)$ 是开集. 故每个 $p_k$ 都是开映射.
+
+**(2)** 取 $\mathbb R^2$, 令 $A=\left\{\left(x,y\right):xy=1\right\}$. $A$ 包含它所有的极限点, 故是闭集; 由**定义 3.21 (闭集)** 其补集 $\left\{xy\neq1\right\}$ 开. 但
+
+$$
+p_1\left(A\right)=\left\{x\in\mathbb R:\exists y,\,xy=1\right\}=\mathbb R\setminus\left\{0\right\},
+$$
+
+由**定义 3.21 (闭集)** $\mathbb R\setminus\left\{0\right\}$ 不是闭集 ($0$ 是其极限点). 故投影不是闭映射.
+
+**(3)** 取 $W=\mathbb R^2\setminus\left(\left\{0\right\}\times\left(0,1\right)\right)$. 先看两个投影: 对任意 $x\in\mathbb R$, 取 $y=2$ 则 $\left(x,2\right)\in W$, 故 $p_1\left(W\right)=\mathbb R$; 对任意 $y\in\mathbb R$, 取 $x=1$ 则 $\left(1,y\right)\in W$, 故 $p_2\left(W\right)=\mathbb R$. 两个投影都是开集. 但 $W$ 的补集为 $\left\{0\right\}\times\left(0,1\right)$, 它的闭包是 $\left\{0\right\}\times\left[0,1\right]$, 不等于自身, 由**定义 3.21 (闭集)** 补集不闭, 故 $W$ 不是开集. 这说明所有投影开不能推出原集合开. $\blacksquare$
+
+## 3.7 (度量空间中连续等价于序列保持收敛)
+
+序列, 度量空间与连续. 证明: 对**定义 6.35 (度量空间)** 之间的映射 $f:X\to Y$, $f$ 连续当且仅当 $X$ 中每个收敛序列的像列在 $Y$ 中收敛. 证明中哪些地方用到了度量结构? 能否放松假设?
+
+### 解答 2.11
+
+**($\Rightarrow$)** 设 $f$ 连续, $x_n\to x$. 任取 $f\left(x\right)$ 的邻域 $V$, 由**定义 3.22 (连续映射)**, $f^{-1}\left(V\right)$ 是 $x$ 的邻域; 由**定义 3.25 (邻域与极限)**, 充分大的 $n$ 有 $x_n\in f^{-1}\left(V\right)$, 即 $f\left(x_n\right)\in V$. 故 $f\left(x_n\right)\to f\left(x\right)$.
+
+**($\Leftarrow$)** 设序列保持收敛. 反设 $f$ 在 $x$ 不连续, 则存在 $f\left(x\right)$ 的邻域 $V$ 使 $f^{-1}\left(V\right)$ 不是 $x$ 的邻域. 由**定义 6.36 (开球)**, $B\left(x,1/n\right)\not\subset f^{-1}\left(V\right)$, 取 $x_n\in B\left(x,1/n\right)\setminus f^{-1}\left(V\right)$. 则 $d\left(x_n,x\right)< 1/n\to0$, 即 $x_n\to x$, 但 $f\left(x_n\right)\notin V$, 故 $\left(f\left(x_n\right)\right)$ 不收敛到 $f\left(x\right)$, 矛盾.
+
+用到度量结构之处在于: 用可数邻域基 $B\left(x,1/n\right)$ 把 "$f^{-1}\left(V\right)$ 不是邻域" 翻译成一列点 $\left(x_n\right)$, 即把否定连续性直接转化为序列. 在一般拓扑空间中, 这一翻译不成立, 但可放松为第一可数空间 (每点有可数邻域基). $\blacksquare$
+
+## 3.8 (稠密集的邻域未必覆盖全空间)
+
+稠密集的邻域. $X$ 中稠密集的任意邻域是否覆盖 $X$? 可考虑 $\bigcup_{p/q}B\left(p/q,1/q^k\right)$ ($p/q\in\mathbb Q$, $k$ 充分大) 的例子.
+
+### 解答 2.12
+
+不覆盖. 设 $X=\mathbb R$, $D=\mathbb Q$ 是**定义 3.32 (稠密)** 的. 取 $U=\mathbb R\setminus\left\{\sqrt2\right\}$. $U$ 是开集, 由**定义 3.21 (闭集)** 单点 $\left\{\sqrt2\right\}$ 闭故其补集开; $U$ 含 $\mathbb Q$, 即 $U$ 是稠密集 $\mathbb Q$ 的一个邻域, 但 $U\neq\mathbb R$. $\blacksquare$
+
+> 一般地, 若 $D$ 稠密而 $U$ 是含 $D$ 的开集, 只能推出 $\overline U=X$: 由**定义 3.26 (闭包)**, $D\subset U$ 给出 $X=\overline D\subset\overline U$; 开集稠密不必等于全空间. 题中 $\bigcup_{p/q}B\left(p/q,1/q^k\right)$ 也是开稠密集, 取 $k$ 充分大时仍遗漏某些有理逼近系数很小的无理数, 故不等于 $\mathbb R$.
+
+## 3.9 (离散拓扑、单点族的最终拓扑与不交和的三者等价)
+
+设 $X$ 是拓扑空间. 证明下列三条等价:
+
+(1) $X$ 具有离散拓扑;
+
+(2) $X$ 具有由单点族 $\left\{\left\{x\right\}\right\}_{x\in X}$ 诱导的弱 (最终) 拓扑;
+
+(3) 从不交和 $\coprod_{x\in X}\left\{x\right\}$ 到 $X$ 的典范映射是同胚.
+
+### 解答 2.13
+
+记 $i_x:\left\{x\right\}\to X$ 为把单点映到其唯一点的含入映射.
+
+**(1) $\Rightarrow$ (2)**: 设 $X$ 具离散拓扑, 由**定义 3.16 (离散拓扑与平凡拓扑)** 每个子集都开. 由**定义 3.18 (拓扑空间)** 这是一个合法拓扑. 由**定义 11.14 (最终拓扑)**, 由 $\left\{i_x\right\}$ 诱导的最终拓扑是使每个 $i_x$ 连续的最细拓扑; 离散拓扑本身使每个 $i_x$ 连续 (单点空间唯一可能), 且它已是最细拓扑, 故二者相同.
+
+**(2) $\Rightarrow$ (1)**: 设 $X$ 上的拓扑就是由 $\left\{i_x\right\}$ 诱导的最终拓扑. 由**定义 11.14 (最终拓扑)**, $U\subset X$ 开当且仅当对每个 $x$, $i_x^{-1}\left(U\right)$ 在单点空间 $\left\{x\right\}$ 中开. 而单点空间的任意子集 (仅 $\emptyset$ 与 $\left\{x\right\}$) 都开, 故 $X$ 的任意子集 $U$ 都开. 由**定义 3.16 (离散拓扑与平凡拓扑)**, 这就是离散拓扑.
+
+**(2) $\Leftrightarrow$ (3)**: 由**定义 11.18 (不交和拓扑)**, 不交和 $Z=\coprod_{x\in X}\left\{x\right\}$ 上的拓扑是每个单点都开, 即离散拓扑. 典范映射 $i:Z\to X$ 把每个 $\left\{x\right\}$ 映到 $x$, 是双射. 由**定义 11.14 (最终拓扑)**, $i$ 连续当且仅当 $X$ 的拓扑粗于由 $\left\{i_x\right\}$ 诱导的最终拓扑; 反过来 $i^{-1}$ 连续当且仅当该最终拓扑粗于 $X$ 的拓扑. 由**定义 3.23 (同胚)**, $i$ 是同胚当且仅当 $X$ 的拓扑等于由 $\left\{i_x\right\}$ 诱导的最终拓扑, 即 (2). 三链贯通, 三条等价. $\blacksquare$
+
+## 3.10 (递增闭子空间列的最终拓扑与闭性)
+
+设 $X_i$ 是拓扑空间, $X_i\subset X_{i+1}$, $X=\bigcup_{i=1}^{\infty}X_i$. 设每个 $X_i$ 在 $X_{i+1}$ 中闭, 且 $X_i$ 的拓扑就是 $X_{i+1}$ 的拓扑在 $X_i$ 上诱导的子空间拓扑. 证明: 对每个 $i$, $X_i$ 的拓扑等于 $X$ 上由族 $\left\{X_i\right\}$ 诱导的弱 (最终) 拓扑在 $X_i$ 上诱导的子空间拓扑; 进一步每个 $X_i$ 在 $X$ 中闭.
+
+### 解答 2.14
+
+记 $\tau$ 为 $X$ 上由含入 $j_i:X_i\to X$ 诱导的最终拓扑. 由**定义 11.14 (最终拓扑)**, $U\subset X$ 在 $\tau$ 中开当且仅当对每个 $k$, $U\cap X_k$ 在 $X_k$ 中开. 由题设归纳可知: 对 $k\ge i$, $X_i$ 在 $X_k$ 中闭; 且 $X_i$ 的拓扑就是 $X_k$ 的拓扑在 $X_i$ 上的子空间拓扑.
+
+先证子空间一致性. 由**定义 3.19 (子空间拓扑)**, $X_i$ 从 $\left(X,\tau\right)$ 继承的开集为 $\left\{U\cap X_i:U\in\tau\right\}$.
+
+(a) 包含 $\supset$: 若 $U\in\tau$, 由上面的刻画 $U\cap X_i$ 在 $X_i$ 中开, 故继承开集都是原拓扑开集.
+
+(b) 包含 $\subset$: 任取原开集 $V\subset X_i$. 构造
+
+$$
+U=V\cup\left(X\setminus X_i\right).
+$$
+
+则 $U\cap X_i=V$. 验证 $U\in\tau$: 对 $k=i$, $U\cap X_i=V$ 开; 对 $k< i$, $X_k\subset X_i$, 故 $U\cap X_k=V\cap X_k$, 由 $X_k$ 的子空间性质它在 $X_k$ 中开; 对 $k> i$, $X_i$ 在 $X_k$ 中闭, 故 $X_k\setminus X_i$ 在 $X_k$ 中开, 而 $V$ 在 $X_i$ 中开, 由 $X_i$ 是 $X_k$ 的子空间可写 $V=X_i\cap W$, $W$ 在 $X_k$ 中开, 于是 $U\cap X_k=\left(X_i\cap W\right)\cup\left(X_k\setminus X_i\right)=W\cup\left(X_k\setminus X_i\right)$ 在 $X_k$ 中开. 故 $U\in\tau$, 且 $V=U\cap X_i$ 是继承开集.
+
+故 $X_i$ 的原拓扑等于继承拓扑.
+
+再证 $X_i$ 在 $X$ 中闭. 只需证 $X\setminus X_i$ 在 $\tau$ 中开. 对 $k\le i$, $\left(X\setminus X_i\right)\cap X_k=\emptyset$ 开; 对 $k> i$, $X_i$ 在 $X_k$ 中闭, 故 $\left(X\setminus X_i\right)\cap X_k=X_k\setminus X_i$ 在 $X_k$ 中开. 由**定义 11.14 (最终拓扑)**, $X\setminus X_i\in\tau$, 故 $X_i$ 闭. $\blacksquare$
+
+## 3.11 (由二元关系生成的最小等价关系)
+
+(二元关系生成的等价关系) 设 $X$ 是集合, $R\subset X\times X$ 是二元关系 (未必是等价关系). 证明: 存在唯一的最小等价关系 $\sim$ 包含 $R$ (在 $X\times X$ 的子集意义下), 称为由 $R$ 生成的等价关系.
+
+### 解答 2.15
+
+先证一族等价关系的交仍是等价关系. 设 $\left\{\sim_\alpha\right\}_{\alpha\in A}$ 是 $X$ 上的等价关系族, 定义 $x\sim y$ 当且仅当对一切 $\alpha$ 有 $x\sim_\alpha y$.
+
+(a) 自反: 每个 $\sim_\alpha$ 自反, 故 $x\sim_\alpha x$ 对一切 $\alpha$, 即 $x\sim x$.
+
+(b) 对称: $x\sim y$ 蕴含 $x\sim_\alpha y$ 对一切 $\alpha$, 由每个 $\sim_\alpha$ 对称得 $y\sim_\alpha x$, 故 $y\sim x$.
+
+(c) 传递: $x\sim y$ 且 $y\sim z$, 则对一切 $\alpha$, $x\sim_\alpha y$ 且 $y\sim_\alpha z$, 由每个 $\sim_\alpha$ 传递得 $x\sim_\alpha z$, 故 $x\sim z$.
+
+故 $\sim$ 是等价关系.
+
+现令 $\mathcal E$ 为 $X$ 上全体包含 $R$ 的等价关系所成之族. 全体成员的交 $\bigcap\mathcal E$ 仍含 $R$ (每个成员含 $R$), 且由上面的交性质是等价关系. 它是含 $R$ 的最小等价关系: 任何含 $R$ 的等价关系都在 $\mathcal E$ 中, 从而包含这个交. 唯一性由"最小"即集包含意义下唯一决定. 由**定义 11.15 (等价关系的生成)**, 这个交就是由 $R$ 生成的等价关系. $\blacksquare$
+
+## 3.12 (伪距离的商距离与商拓扑一致)
+
+(伪距离的商距离) 回顾伪距离 $d$ 是除 $d\left(x,y\right)=0\Rightarrow x=y$ 外满足全部度量公理的函数. 伪距离空间 $\left(X,d\right)$ 以开球 $B\left(x,\varepsilon\right)$ 为基有拓扑. 定义 $x\sim y$ 当且仅当 $d\left(x,y\right)=0$. 证明: $\sim$ 是等价关系; 商空间 $X/{\sim}$ 上可赋予距离 $d'$ 使 $d'\left(\left[x\right],\left[y\right]\right)=d\left(x,y\right)$; 验证 $d'$ 定义适定; 证明度量空间 $\left(X/{\sim},d'\right)$ 与商空间 $X/{\sim}$ 拓扑相同; 并证明若 $F$ 是豪斯多夫空间且 $f:X\to F$ 连续, 则 $f$ 可分解为 $f=f'\circ\pi$, 其中 $f':X/{\sim}\to F$.
+
+### 解答 2.16
+
+**$\sim$ 是等价关系**: 由**定义 6.44 (伪距离)**, $d\left(x,x\right)=0$ 给出自反; $d\left(x,y\right)=d\left(y,x\right)$ 给出对称; 三角不等式 $d\left(x,z\right)\le d\left(x,y\right)+d\left(y,z\right)$ 在 $d\left(x,y\right)=d\left(y,z\right)=0$ 时给出 $d\left(x,z\right)=0$, 即传递.
+
+**$d'$ 适定**: 若 $x\sim x'$, $y\sim y'$, 则 $d\left(x,x'\right)=d\left(y,y'\right)=0$, 由三角不等式,
+
+$$
+d\left(x,y\right)\le d\left(x,x'\right)+d\left(x',y'\right)+d\left(y',y\right)=d\left(x',y'\right),
+$$
+
+同理 $d\left(x',y'\right)\le d\left(x,y\right)$. 故二者相等, $d'\left(\left[x\right],\left[y\right]\right):=d\left(x,y\right)$ 与代表元选取无关.
+
+**$d'$ 是度量**: 非负, 对称, 三角不等式都从 $d$ 继承; 而 $d'\left(\left[x\right],\left[y\right]\right)=0$ 即 $d\left(x,y\right)=0$, 即 $x\sim y$, 即 $\left[x\right]=\left[y\right]$. 正定性成立.
+
+**拓扑相同**: 记 $\pi:X\to X/{\sim}$ 为商投影. 对任意 $x,\varepsilon$,
+
+$$
+\pi^{-1}\left(B_{d'}\left(\left[x\right],\varepsilon\right)\right)=B_d\left(x,\varepsilon\right).
+$$
+
+包含 $\subset$: 若 $z$ 使 $d'\left(\left[z\right],\left[x\right]\right)< \varepsilon$, 即 $d\left(z,x\right)< \varepsilon$, 则 $z\in B_d\left(x,\varepsilon\right)$. 包含 $\supset$: 若 $z\in B_d\left(x,\varepsilon\right)$, 则 $d'\left(\left[z\right],\left[x\right]\right)=d\left(z,x\right)< \varepsilon$. 由**定义 11.1 (商拓扑)**, $B_{d'}\left(\left[x\right],\varepsilon\right)$ 是商开集, 故度量拓扑粗于商拓扑. 反之, 若 $U$ 是商开集, 则 $\pi^{-1}\left(U\right)$ 是 $d$-开集, 从而是若干 $d$-球之并, 其像 $U=\pi\left(\pi^{-1}\left(U\right)\right)$ 是若干 $d'$-球之并, 故 $U$ 是度量开集. 二者一致.
+
+**泛分解**: 设 $F$ 豪斯多夫, $f:X\to F$ 连续. 先证 $f$ 在等价类上取常值. 若 $x\sim x'$, 即 $d\left(x,x'\right)=0$, 则 $x$ 与 $x'$ 在 $X$ 中无法用开集分离: 对任意 $\varepsilon> 0$, $B_d\left(x,\varepsilon\right)=B_d\left(x',\varepsilon\right)$. 若 $f\left(x\right)\neq f\left(x'\right)$, 由**定义 3.10 (豪斯多夫空间)** 存在不相交开邻域 $V\ni f\left(x\right)$, $W\ni f\left(x'\right)$. 由**定义 3.22 (连续映射)**, $f^{-1}\left(V\right)$ 是 $x$ 的开邻域, 从而含 $x'$, 故 $f\left(x'\right)\in V$, 与 $V\cap W=\emptyset$ 及 $f\left(x'\right)\in W$ 矛盾. 故 $f\left(x\right)=f\left(x'\right)$.
+
+于是可定义 $f'\left(\left[x\right]\right)=f\left(x\right)$, 适定. 由**定义 11.2 (粘合映射)**, 为证 $f'$ 连续, 只需对任意开集 $O\subset F$, $\left(f'\right)^{-1}\left(O\right)$ 商开, 即 $\pi^{-1}\left(\left(f'\right)^{-1}\left(O\right)\right)=f^{-1}\left(O\right)$ 在 $X$ 中开; 这由 $f$ 连续保证. 故 $f=f'\circ\pi$. $\blacksquare$
