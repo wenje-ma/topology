@@ -338,9 +338,9 @@ $$
 
 设 $E$ 是域上向量空间, $\mathcal F=\left\{v_\alpha\right\}_{\alpha\in A}\subset E$.
 
-**抽象构造:** 令 $\mathcal S$ 为 $E$ 中一切包含 $\mathcal F$ 的向量子空间所成之族, 定义 $\operatorname{span}\left(\mathcal F\right)=\bigcap_{S\in\mathcal S}S$. 因任意一族向量子空间的交集仍是向量子空间 (对加法与数乘封闭, 且含零向量), 故 $\operatorname{span}\left(\mathcal F\right)$ 是包含 $\mathcal F$ 的子空间, 且是其中最小者.
+抽象构造: 令 $\mathcal S$ 为 $E$ 中一切包含 $\mathcal F$ 的向量子空间所成之族, 定义 $\operatorname{span}\left(\mathcal F\right)=\bigcap_{S\in\mathcal S}S$. 因任意一族向量子空间的交集仍是向量子空间 (对加法与数乘封闭, 且含零向量), 故 $\operatorname{span}\left(\mathcal F\right)$ 是包含 $\mathcal F$ 的子空间, 且是其中最小者.
 
-**具体构造:** 令
+具体构造: 令
 
 $$
 \operatorname{span}\left(\mathcal F\right)=\left\{\sum_{k=1}^{m}c_kv_{\alpha_k}:m\ge1,\ c_k\text{ 为域中元素},\ v_{\alpha_k}\in\mathcal F\right\},
@@ -354,9 +354,9 @@ $$
 
 ### 解答 1.21
 
-**($\Rightarrow$)** 设 $F$ 闭. 由**定义 3.21 (闭集)**, $\mathbb R\setminus F$ 开. 设 $x_n\in F$ 且 $x_n\to x$. 若 $x\notin F$, 则 $x\in\mathbb R\setminus F$, 而 $\mathbb R\setminus F$ 是 $x$ 的邻域. 由**定义 3.25 (邻域与极限)**, 对所有充分大的 $n$ 有 $x_n\in\mathbb R\setminus F$, 与 $x_n\in F$ 矛盾. 故 $x\in F$.
+($\Rightarrow$) 设 $F$ 闭. 由**定义 3.21 (闭集)**, $\mathbb R\setminus F$ 开. 设 $x_n\in F$ 且 $x_n\to x$. 若 $x\notin F$, 则 $x\in\mathbb R\setminus F$, 而 $\mathbb R\setminus F$ 是 $x$ 的邻域. 由**定义 3.25 (邻域与极限)**, 对所有充分大的 $n$ 有 $x_n\in\mathbb R\setminus F$, 与 $x_n\in F$ 矛盾. 故 $x\in F$.
 
-**($\Leftarrow$)** 反证. 设 $F$ 不闭. 由**定义 3.21 (闭集)**, $\mathbb R\setminus F$ 不开. 故存在 $x\notin F$ 使 $x$ 的任何邻域都不含于 $\mathbb R\setminus F$, 即 $x$ 的任何邻域都与 $F$ 相交, 说明 $x$ 在 $F$ 的边界上. 由**定义 6.36 (开球)**, 球 $B\left(x,1/n\right)=\left(x-\frac1n,x+\frac1n\right)$ 与 $F$ 相交, 取 $x_n\in F\cap B\left(x,1/n\right)$, 则 $d\left(x_n,x\right)< 1/n$. 任给 $x$ 的邻域, 由**定义 6.36 (开球)** 它包含某 $B\left(x,\varepsilon\right)$; 当 $n> 1/\varepsilon$ 时 $x_n\in B\left(x,\varepsilon\right)$, 故由**定义 3.25 (邻域与极限)** $x_n\to x$. 但 $x\notin F$, 与假设矛盾. 故 $F$ 闭. $\blacksquare$
+($\Leftarrow$) 反证. 设 $F$ 不闭. 由**定义 3.21 (闭集)**, $\mathbb R\setminus F$ 不开. 故存在 $x\notin F$ 使 $x$ 的任何邻域都不含于 $\mathbb R\setminus F$, 即 $x$ 的任何邻域都与 $F$ 相交, 说明 $x$ 在 $F$ 的边界上. 由**定义 6.36 (开球)**, 球 $B\left(x,1/n\right)=\left(x-\frac1n,x+\frac1n\right)$ 与 $F$ 相交, 取 $x_n\in F\cap B\left(x,1/n\right)$, 则 $d\left(x_n,x\right)< 1/n$. 任给 $x$ 的邻域, 由**定义 6.36 (开球)** 它包含某 $B\left(x,\varepsilon\right)$; 当 $n> 1/\varepsilon$ 时 $x_n\in B\left(x,\varepsilon\right)$, 故由**定义 3.25 (邻域与极限)** $x_n\to x$. 但 $x\notin F$, 与假设矛盾. 故 $F$ 闭. $\blacksquare$
 
 ## 2.9 (由子集族生成的拓扑及其有限交构造)
 
@@ -378,9 +378,9 @@ $$
 
 对任意 $O\in\mathcal O$, $f^{-1}\left(O\right)\in\mathcal O_f$ 是开集, 由**定义 3.22 (连续映射)** $f$ 连续. 反之, 若 $\tau$ 是 $X$ 上任一使 $f$ 连续的拓扑, 则对每个 $O\in\mathcal O$, 由**定义 3.22 (连续映射)** $f^{-1}\left(O\right)\in\tau$, 故 $\mathcal O_f\subset\tau$. 由**定义 3.14 (初始拓扑)**, $\mathcal O_f$ 正是 $f$ 诱导的初始拓扑.
 
-**包含映射的情形:** 取 $f:\mathbb R\to\mathbb R^2$, $f\left(t\right)=\left(t,0\right)$, $\mathbb R^2$ 装备欧氏拓扑. 则 $f^{-1}\left(U\right)=U\cap\left(\mathbb R\times\left\{0\right\}\right)$, 它在 $x$ 轴上的投影恰为 $\mathbb R$ 的通常开集, 故 $\mathcal O_f$ 就是 $\mathbb R$ 的通常拓扑.
+包含映射的情形: 取 $f:\mathbb R\to\mathbb R^2$, $f\left(t\right)=\left(t,0\right)$, $\mathbb R^2$ 装备欧氏拓扑. 则 $f^{-1}\left(U\right)=U\cap\left(\mathbb R\times\left\{0\right\}\right)$, 它在 $x$ 轴上的投影恰为 $\mathbb R$ 的通常开集, 故 $\mathcal O_f$ 就是 $\mathbb R$ 的通常拓扑.
 
-**反过来的构造:** 由**定义 11.14 (最终拓扑)**, 对映射 $f:X\to Y$, 在 $Y$ 上规定 $U\subset Y$ 开当且仅当 $f^{-1}\left(U\right)$ 在 $X$ 中开. 这是使 $f$ 连续的最细拓扑, 即最终拓扑. $\blacksquare$
+反过来的构造: 由**定义 11.14 (最终拓扑)**, 对映射 $f:X\to Y$, 在 $Y$ 上规定 $U\subset Y$ 开当且仅当 $f^{-1}\left(U\right)$ 在 $X$ 中开. 这是使 $f$ 连续的最细拓扑, 即最终拓扑. $\blacksquare$
 
 ## 2.11 (余有限拓扑与余可数拓扑中的收敛和闭包)
 
@@ -416,9 +416,9 @@ $$
 
 (因 $x$ 在左端当且仅当某 $P_i\left(x\right)=0$ 或某 $Q_j\left(x\right)=0$, 当且仅当对一切 $\left(i,j\right)$ 有 $P_i\left(x\right)Q_j\left(x\right)=0$). 故闭集族满足**定义 3.21 (闭集)**, 扎里斯基拓扑成立.
 
-**扎里斯基开集稠密:** 非空扎里斯基开集是某非零多项式 $P$ 的零点集的补集 $\mathbb R^2\setminus Z\left(P\right)$. 若 $Z\left(P\right)$ 含某开球, 则该开球内沿任一直线限制 $P$ 所得一元多项式在无限多点为零, 由一元多项式恒零判据 故恒为零; 从而 $P$ 在该开球上恒为零, 进而 $P\equiv0$, 矛盾. 故 $Z\left(P\right)$ 无内部. 由**定义 3.32 (稠密)**, 其补集 (扎里斯基开集) 稠密.
+扎里斯基开集稠密: 非空扎里斯基开集是某非零多项式 $P$ 的零点集的补集 $\mathbb R^2\setminus Z\left(P\right)$. 若 $Z\left(P\right)$ 含某开球, 则该开球内沿任一直线限制 $P$ 所得一元多项式在无限多点为零, 由一元多项式恒零判据 故恒为零; 从而 $P$ 在该开球上恒为零, 进而 $P\equiv0$, 矛盾. 故 $Z\left(P\right)$ 无内部. 由**定义 3.32 (稠密)**, 其补集 (扎里斯基开集) 稠密.
 
-**求闭包:** 令 $S=\left\{\left(0,2^{-n}\right):n\ge0\right\}$. 多项式 $P$ 在 $S$ 上恒零当且仅当一元多项式 $P\left(0,y\right)$ 在无限多点 $y=2^{-n}$ 为零, 由一元多项式恒零判据 当且仅当 $P\left(0,\cdot\right)\equiv0$, 即 $x\mid P\left(x,y\right)$. 全体这样的 $P$ 的公共零点集为 $\left\{\left(0,y\right):y\in\mathbb R\right\}$, 即 $y$ 轴. 由**定义 3.26 (闭包)**, 这就是 $S$ 的扎里斯基闭包. $\blacksquare$
+求闭包: 令 $S=\left\{\left(0,2^{-n}\right):n\ge0\right\}$. 多项式 $P$ 在 $S$ 上恒零当且仅当一元多项式 $P\left(0,y\right)$ 在无限多点 $y=2^{-n}$ 为零, 由一元多项式恒零判据 当且仅当 $P\left(0,\cdot\right)\equiv0$, 即 $x\mid P\left(x,y\right)$. 全体这样的 $P$ 的公共零点集为 $\left\{\left(0,y\right):y\in\mathbb R\right\}$, 即 $y$ 轴. 由**定义 3.26 (闭包)**, 这就是 $S$ 的扎里斯基闭包. $\blacksquare$
 
 ## 2.13 (拓扑基的定义与等价刻画及其等价性)
 
@@ -428,11 +428,11 @@ $$
 
 由**定义 3.15 (拓扑基)**, 拓扑基的定义是: $\mathcal B\subset\mathcal P\left(X\right)$ 中元素的任意并构成 $X$ 上一个拓扑. 其等价刻画为: (1) $X=\bigcup_{B\in\mathcal B}B$; (2) 对任意 $B_1,B_2\in\mathcal B$ 与任意 $x\in B_1\cap B_2$, 存在 $B_3\in\mathcal B$ 使 $x\in B_3\subset B_1\cap B_2$.
 
-**定义 $\Rightarrow$ 刻画:** 若 $\mathcal B$ 的任意并构成拓扑, 由**定义 3.18 (拓扑空间)**, 则 $X=\bigcup_{B\in\mathcal B}B$ 是开集, 即 (1). 又 $B_1\cap B_2$ 是两开集之交, 仍开, 故可表为 $\mathcal B$ 中元素之并; 任取 $x\in B_1\cap B_2$, 存在 $B_3\in\mathcal B$ 使 $x\in B_3\subset B_1\cap B_2$, 即 (2).
+定义 $\Rightarrow$ 刻画: 若 $\mathcal B$ 的任意并构成拓扑, 由**定义 3.18 (拓扑空间)**, 则 $X=\bigcup_{B\in\mathcal B}B$ 是开集, 即 (1). 又 $B_1\cap B_2$ 是两开集之交, 仍开, 故可表为 $\mathcal B$ 中元素之并; 任取 $x\in B_1\cap B_2$, 存在 $B_3\in\mathcal B$ 使 $x\in B_3\subset B_1\cap B_2$, 即 (2).
 
-**刻画 $\Rightarrow$ 定义:** 设 (1)(2) 成立. 令 $\tau=\left\{\bigcup_{B\in\mathcal C}B:\mathcal C\subset\mathcal B\right\}$. 由 (1) $X\in\tau$, 空并 $\emptyset\in\tau$. $\tau$ 中任意并显然仍在 $\tau$ 中. 设 $U=\bigcup_{\alpha}B_\alpha\in\tau$, $V=\bigcup_{\beta}B'_\beta\in\tau$, 则 $U\cap V=\bigcup_{\alpha,\beta}\left(B_\alpha\cap B'_\beta\right)$. 对每个 $x\in B_\alpha\cap B'_\beta$, 由 (2) 存在 $B_3\in\mathcal B$ 使 $x\in B_3\subset B_\alpha\cap B'_\beta$, 故 $B_\alpha\cap B'_\beta$ 是若干 $\mathcal B$ 中元素之并, 从而 $U\cap V\in\tau$. 由**定义 3.18 (拓扑空间)**, $\tau$ 是拓扑.
+刻画 $\Rightarrow$ 定义: 设 (1)(2) 成立. 令 $\tau=\left\{\bigcup_{B\in\mathcal C}B:\mathcal C\subset\mathcal B\right\}$. 由 (1) $X\in\tau$, 空并 $\emptyset\in\tau$. $\tau$ 中任意并显然仍在 $\tau$ 中. 设 $U=\bigcup_{\alpha}B_\alpha\in\tau$, $V=\bigcup_{\beta}B'_\beta\in\tau$, 则 $U\cap V=\bigcup_{\alpha,\beta}\left(B_\alpha\cap B'_\beta\right)$. 对每个 $x\in B_\alpha\cap B'_\beta$, 由 (2) 存在 $B_3\in\mathcal B$ 使 $x\in B_3\subset B_\alpha\cap B'_\beta$, 故 $B_\alpha\cap B'_\beta$ 是若干 $\mathcal B$ 中元素之并, 从而 $U\cap V\in\tau$. 由**定义 3.18 (拓扑空间)**, $\tau$ 是拓扑.
 
-**去掉条件:** 若去掉 (1), 例如 $\mathcal B=\left\{\emptyset\right\}$, 其任意并只能得 $\emptyset$, 盖不住 $X$; 若去掉 (2), 例如 $X=\mathbb R$, $\mathcal B=\left\{\left(-\infty,a\right):a\in\mathbb R\right\}\cup\left\{\left(b,+\infty\right):b\in\mathbb R\right\}$, 则 $\left(-\infty,1\right)\cap\left(0,+\infty\right)=\left(0,1\right)$ 不能表为 $\mathcal B$ 中元素之并, 故 $\mathcal B$ 的任意并不构成拓扑. $\blacksquare$
+去掉条件: 若去掉 (1), 例如 $\mathcal B=\left\{\emptyset\right\}$, 其任意并只能得 $\emptyset$, 盖不住 $X$; 若去掉 (2), 例如 $X=\mathbb R$, $\mathcal B=\left\{\left(-\infty,a\right):a\in\mathbb R\right\}\cup\left\{\left(b,+\infty\right):b\in\mathbb R\right\}$, 则 $\left(-\infty,1\right)\cap\left(0,+\infty\right)=\left(0,1\right)$ 不能表为 $\mathcal B$ 中元素之并, 故 $\mathcal B$ 的任意并不构成拓扑. $\blacksquare$
 
 ## 2.14 (可数基蕴含可分；半开区间基的反例)
 
@@ -444,9 +444,9 @@ $$
 
 ### 解答 2.4
 
-**(1)** 设 $\left\{B_n\right\}_{n\ge1}$ 是 $X$ 的可数基. 每点取 $x_n\in B_n$, 令 $D=\left\{x_n:n\ge1\right\}$. 由于 $\overline D\subset X$ 显然, 只需证明 $X\subset\overline D$. 任取 $x\in X$ 与非空开集 $U\ni x$, 由**定义 3.15 (拓扑基)** 存在某 $B_n\subset U$, 故存在一个 $x_n$ 满足 $x_n\in D\cap U\neq\emptyset$, 这说明 $x$ 是 $D$ 的闭包点, 即 $x\in\overline D$. 由**定义 3.32 (稠密)**, $D$ 在 $X$ 中稠密; 由**定义 3.9 (可分)**, $X$ 可分.
+(1) 设 $\left\{B_n\right\}_{n\ge1}$ 是 $X$ 的可数基. 每点取 $x_n\in B_n$, 令 $D=\left\{x_n:n\ge1\right\}$. 由于 $\overline D\subset X$ 显然, 只需证明 $X\subset\overline D$. 任取 $x\in X$ 与非空开集 $U\ni x$, 由**定义 3.15 (拓扑基)** 存在某 $B_n\subset U$, 故存在一个 $x_n$ 满足 $x_n\in D\cap U\neq\emptyset$, 这说明 $x$ 是 $D$ 的闭包点, 即 $x\in\overline D$. 由**定义 3.32 (稠密)**, $D$ 在 $X$ 中稠密; 由**定义 3.9 (可分)**, $X$ 可分.
 
-**(2)** 先验基条件:
+(2) 先验基条件:
 
 $$
 \left(a,b\right]\cap\left(c,d\right]=\left(\max\left(a,c\right),\min\left(b,d\right)\right]
@@ -454,9 +454,9 @@ $$
 
 当非空时仍是 $\mathcal B$ 中元素, 且 $\mathbb R=\bigcup_{a,b}\left(a,b\right]$ 覆盖全空间. 由**定义 3.15 (拓扑基)**, $\mathcal B$ 生成 $\mathbb R$ 上某拓扑 $\mathcal O$.
 
-**可分:** 有理数集 $\mathbb Q$ 在 $\mathcal O$ 中稠密, 因由有理数在实直线上稠密 每个 $\left(a,b\right]$ 都含有理数. 由**定义 3.9 (可分)**, $\mathcal O$ 可分.
+可分: 有理数集 $\mathbb Q$ 在 $\mathcal O$ 中稠密, 因由有理数在实直线上稠密 每个 $\left(a,b\right]$ 都含有理数. 由**定义 3.9 (可分)**, $\mathcal O$ 可分.
 
-**无可数基:** 反设 $\left\{W_n\right\}$ 是可数基. 对每个 $x\in\mathbb R$, 选基元素 $W_{n\left(x\right)}$ 使
+无可数基: 反设 $\left\{W_n\right\}$ 是可数基. 对每个 $x\in\mathbb R$, 选基元素 $W_{n\left(x\right)}$ 使
 
 $$
 x\in W_{n\left(x\right)}\subset\left(x-1,x\right].
@@ -464,4 +464,4 @@ $$
 
 $W_{n\left(x\right)}$ 作为某 $\left(a,b\right]$ 之并, 其右端点不超过 $x$ 且含 $x$, 故其右端点恰为 $x$. 于是 $x\neq y$ 时 $W_{n\left(x\right)}\neq W_{n\left(y\right)}$ (右端点不同). 这给出从不可数集 $\mathbb R$ 到可数集 $\left\{W_n\right\}$ 的单射, 矛盾. 故 $\mathcal O$ 无可数基.
 
-**不可度量化:** 反设 $\mathcal O$ 来自某度量拓扑. 前面已证 $\mathcal O$ 可分 (有理数集 $\mathbb Q$ 稠密). 由**命题 M30.1 (可分度量空间必有可数基)**, $\mathcal O$ 作为可分度量空间必有可数基; 但前面刚证 $\mathcal O$ 没有可数基, 矛盾. 故 $\mathcal O$ 不可度量化. $\blacksquare$
+不可度量化: 反设 $\mathcal O$ 来自某度量拓扑. 前面已证 $\mathcal O$ 可分 (有理数集 $\mathbb Q$ 稠密). 由**命题 M30.1 (可分度量空间必有可数基)**, $\mathcal O$ 作为可分度量空间必有可数基; 但前面刚证 $\mathcal O$ 没有可数基, 矛盾. 故 $\mathcal O$ 不可度量化. $\blacksquare$

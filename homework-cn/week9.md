@@ -232,9 +232,9 @@
 
 ### 解答 6.10
 
-**(1) ($\Rightarrow$)** 显然. **($\Leftarrow$)** 设唯一子列极限为 $L$. 若序列不收敛到 $L$, 则存在 $\varepsilon> 0$ 与子列恒在 $B\left(L,\varepsilon\right)$ 外; 由**定理 6.1 (紧 $=$ 序列紧)**, 该子列有收敛子列, 其极限异于 $L$, 矛盾. 故序列收敛到 $L$.
+(1) ($\Rightarrow$) 显然. ($\Leftarrow$) 设唯一子列极限为 $L$. 若序列不收敛到 $L$, 则存在 $\varepsilon> 0$ 与子列恒在 $B\left(L,\varepsilon\right)$ 外; 由**定理 6.1 (紧 $=$ 序列紧)**, 该子列有收敛子列, 其极限异于 $L$, 矛盾. 故序列收敛到 $L$.
 
-**(2)** 若序列不最终落入 $V_0\cup V_1$, 则有子列恒在 $V_0\cup V_1$ 外; 由紧性它有收敛子列, 其极限不在 $V_0\cup V_1$ 中, 即第三个子列极限, 矛盾.
+(2) 若序列不最终落入 $V_0\cup V_1$, 则有子列恒在 $V_0\cup V_1$ 外; 由紧性它有收敛子列, 其极限不在 $V_0\cup V_1$ 中, 即第三个子列极限, 矛盾.
 
 $f$ 连续, 把子列极限映为序列 $f^{n+1}\left(x\right)$ 的子列极限, 而后者的子列极限集同为 $\left\{z_0,z_1\right\}$. 故 $f\left(z_0\right),f\left(z_1\right)\in\left\{z_0,z_1\right\}$. 若 $f\left(z_0\right)=z_0$, 则偶子列将只有一个子列极限, 与第 (1) 小题矛盾; 故 $f\left(z_0\right)=z_1$, 同理 $f\left(z_1\right)=z_0$. 于是 $f^{2k}\left(x\right)$ 恰在 $z_0$ 附近累积, $f^{2k+1}\left(x\right)$ 恰在 $z_1$ 附近累积, 由第 (1) 小题分别收敛到 $z_0,z_1$. $\blacksquare$
 
@@ -250,7 +250,7 @@ $f$ 连续, 把子列极限映为序列 $f^{n+1}\left(x\right)$ 的子列极限,
 
 ### 解答 6.11
 
-**(1)** 固定 $x,y\in E$, 记 $a_n=d\left(f^n\left(x\right),f^n\left(y\right)\right)$. 由条件应用于 $\left(f^{n-1}\left(x\right),f^{n-1}\left(y\right)\right)$, $a_{n+1}\ge a_n$, 又 $a_n\le\operatorname{diam}\left(E\right)$, 故 $a_n\uparrow L$. 由**定理 6.1 (紧 $=$ 序列紧)**, $E\times E$ 紧, $\left(f^n\left(x\right),f^n\left(y\right)\right)$ 有子列 $\left(f^{n_j}\left(x\right),f^{n_j}\left(y\right)\right)\to\left(u,v\right)$, 于是 $d\left(u,v\right)=L$. 因 $a_{n_j}\to L$ 且 $a_{n_j+1}\to L$, 由三角不等式
+(1) 固定 $x,y\in E$, 记 $a_n=d\left(f^n\left(x\right),f^n\left(y\right)\right)$. 由条件应用于 $\left(f^{n-1}\left(x\right),f^{n-1}\left(y\right)\right)$, $a_{n+1}\ge a_n$, 又 $a_n\le\operatorname{diam}\left(E\right)$, 故 $a_n\uparrow L$. 由**定理 6.1 (紧 $=$ 序列紧)**, $E\times E$ 紧, $\left(f^n\left(x\right),f^n\left(y\right)\right)$ 有子列 $\left(f^{n_j}\left(x\right),f^{n_j}\left(y\right)\right)\to\left(u,v\right)$, 于是 $d\left(u,v\right)=L$. 因 $a_{n_j}\to L$ 且 $a_{n_j+1}\to L$, 由三角不等式
 
 $$
 \left|a_{n_j+1}-a_{n_j}\right|\le d\left(f^{n_j+1}\left(x\right),f^{n_j}\left(x\right)\right)+d\left(f^{n_j+1}\left(y\right),f^{n_j}\left(y\right)\right).
@@ -260,7 +260,7 @@ $$
 
 由条件应用于 $\left(x,u\right)$: $d\left(f^{n_j}\left(x\right),f^{n_j}\left(u\right)\right)\ge d\left(x,u\right)$, 即 $d\left(f^{n_j}\left(x\right),u\right)\ge d\left(x,u\right)$. 令 $j\to\infty$ 得 $0\ge d\left(x,u\right)$, 故 $u=x$. 同理 $v=y$. 于是 $L=d\left(u,v\right)=d\left(x,y\right)=a_0$, 而 $a_n$ 从 $a_0$ 起不减且收敛到 $a_0$, 故 $a_1=a_0$, 即 $d\left(f\left(x\right),f\left(y\right)\right)=d\left(x,y\right)$. 由**定义 6.49 (等距映射)**, $f$ 是等距.
 
-**(2)** 反设 $f$ 不满, 取 $p\notin f\left(E\right)$. 由**定理 5.1 (紧空间连续像紧)**, $f\left(E\right)$ 紧; 度量空间是**说明 6.50 (度量空间是豪斯多夫的)**, 由**定理 5.5 (豪斯多夫中紧集闭)**, $f\left(E\right)$ 闭. 由**定义 6.46 (点到集合的距离)**, $\delta=d\left(p,f\left(E\right)\right)> 0$. 轨道 $p,f\left(p\right),f^2\left(p\right),\dots$ 满足
+(2) 反设 $f$ 不满, 取 $p\notin f\left(E\right)$. 由**定理 5.1 (紧空间连续像紧)**, $f\left(E\right)$ 紧; 度量空间是**说明 6.50 (度量空间是豪斯多夫的)**, 由**定理 5.5 (豪斯多夫中紧集闭)**, $f\left(E\right)$ 闭. 由**定义 6.46 (点到集合的距离)**, $\delta=d\left(p,f\left(E\right)\right)> 0$. 轨道 $p,f\left(p\right),f^2\left(p\right),\dots$ 满足
 
 $$
 d\left(f^{n+1}\left(p\right),f^n\left(p\right)\right)\ge d\left(f^n\left(p\right),f^{n-1}\left(p\right)\right)\ge\cdots\ge d\left(f\left(p\right),p\right)\ge\delta,
@@ -268,7 +268,7 @@ $$
 
 其中最后一步用 $f\left(p\right)\in f\left(E\right)$ 而 $p\notin f\left(E\right)$. 但由**定理 6.1 (紧 $=$ 序列紧)**, 紧度量空间 $E$ 中序列 $\left(f^n\left(p\right)\right)$ 有收敛子列, 而收敛子列必是**定义 6.37 (柯西列)**, 与相邻项距离恒 $\ge\delta$ 矛盾. 故 $f$ 满. 结合第 (1) 小题的等距性, $d\left(f\left(x\right),f\left(y\right)\right)=0$ 推出 $d\left(x,y\right)=0$ 即 $x=y$, $f$ 单射. 故 $f$ 双射.
 
-**(3)** $E$ 紧且是**说明 6.50 (度量空间是豪斯多夫的)**, $g$ 是紧豪斯多夫空间之间的连续双射, 由**定理 5.6 (紧豪斯多夫间的连续双射)**, $g^{-1}$ 连续. 条件 $d\left(g\left(x\right),g\left(y\right)\right)\le d\left(x,y\right)$ 改写为: 对任意 $u,v\in E$, 令 $u=g\left(x\right)$, $v=g\left(y\right)$, 则 $d\left(g^{-1}\left(u\right),g^{-1}\left(v\right)\right)\ge d\left(u,v\right)$. 即 $g^{-1}$ 是紧度量空间上连续且距离不减的映射. 由第 (1) 小题, $g^{-1}$ 是**定义 6.49 (等距映射)**, 从而 $g$ 也是等距. $\blacksquare$
+(3) $E$ 紧且是**说明 6.50 (度量空间是豪斯多夫的)**, $g$ 是紧豪斯多夫空间之间的连续双射, 由**定理 5.6 (紧豪斯多夫间的连续双射)**, $g^{-1}$ 连续. 条件 $d\left(g\left(x\right),g\left(y\right)\right)\le d\left(x,y\right)$ 改写为: 对任意 $u,v\in E$, 令 $u=g\left(x\right)$, $v=g\left(y\right)$, 则 $d\left(g^{-1}\left(u\right),g^{-1}\left(v\right)\right)\ge d\left(u,v\right)$. 即 $g^{-1}$ 是紧度量空间上连续且距离不减的映射. 由第 (1) 小题, $g^{-1}$ 是**定义 6.49 (等距映射)**, 从而 $g$ 也是等距. $\blacksquare$
 
 ## 9.3 (紧集的 $\varepsilon$-分离集基数有界)
 
@@ -303,9 +303,9 @@ $$
 
 ### 解答 6.13
 
-**第 (1) 小题**: 对 $n\ge 1$, 定义 $K_n=\left\{x\in E:d\left(x,K\right)< 1/n\right\}$. 每个 $K_n$ 是开集且含 $K$. 反证: 若对每个 $n$, $f$ 在 $K_n$ 上不单射, 则存在 $x_n,y_n\in K_n$, $x_n\neq y_n$, 使 $f\left(x_n\right)=f\left(y_n\right)$. 由 $x_n,y_n\in K_n$, 可取 $x'_n,y'_n\in K$ 使 $d\left(x_n,x'_n\right)< 1/n$, $d\left(y_n,y'_n\right)< 1/n$. 由**定义 5.16 (紧致空间)**, $K\times K$ 紧; 由**定理 6.1 (紧 $=$ 序列紧)**, 存在子列 $\left(x'_{\varphi\left(n\right)},y'_{\varphi\left(n\right)}\right)\to\left(x,y\right)\in K\times K$. 由三角不等式, $x_{\varphi\left(n\right)}\to x$, $y_{\varphi\left(n\right)}\to y$. 由 $f$ 连续, $f\left(x_{\varphi\left(n\right)}\right)=f\left(y_{\varphi\left(n\right)}\right)$ 取极限得 $f\left(x\right)=f\left(y\right)$. 因 $f$ 在 $K$ 上单射, $x=y$. 但由假设, $x$ 有邻域 $B\left(x,\varepsilon\right)$ 使 $f$ 单射, 而 $x_{\varphi\left(n\right)}\neq y_{\varphi\left(n\right)}$ 且当 $n$ 充分大时二者都在 $B\left(x,\varepsilon\right)$ 内, $f\left(x_{\varphi\left(n\right)}\right)=f\left(y_{\varphi\left(n\right)}\right)$, 矛盾. 故存在 $n$ 使 $f$ 在 $K_n$ 上单射, 取 $\Omega=K_n$ 即可.
+第 (1) 小题: 对 $n\ge 1$, 定义 $K_n=\left\{x\in E:d\left(x,K\right)< 1/n\right\}$. 每个 $K_n$ 是开集且含 $K$. 反证: 若对每个 $n$, $f$ 在 $K_n$ 上不单射, 则存在 $x_n,y_n\in K_n$, $x_n\neq y_n$, 使 $f\left(x_n\right)=f\left(y_n\right)$. 由 $x_n,y_n\in K_n$, 可取 $x'_n,y'_n\in K$ 使 $d\left(x_n,x'_n\right)< 1/n$, $d\left(y_n,y'_n\right)< 1/n$. 由**定义 5.16 (紧致空间)**, $K\times K$ 紧; 由**定理 6.1 (紧 $=$ 序列紧)**, 存在子列 $\left(x'_{\varphi\left(n\right)},y'_{\varphi\left(n\right)}\right)\to\left(x,y\right)\in K\times K$. 由三角不等式, $x_{\varphi\left(n\right)}\to x$, $y_{\varphi\left(n\right)}\to y$. 由 $f$ 连续, $f\left(x_{\varphi\left(n\right)}\right)=f\left(y_{\varphi\left(n\right)}\right)$ 取极限得 $f\left(x\right)=f\left(y\right)$. 因 $f$ 在 $K$ 上单射, $x=y$. 但由假设, $x$ 有邻域 $B\left(x,\varepsilon\right)$ 使 $f$ 单射, 而 $x_{\varphi\left(n\right)}\neq y_{\varphi\left(n\right)}$ 且当 $n$ 充分大时二者都在 $B\left(x,\varepsilon\right)$ 内, $f\left(x_{\varphi\left(n\right)}\right)=f\left(y_{\varphi\left(n\right)}\right)$, 矛盾. 故存在 $n$ 使 $f$ 在 $K_n$ 上单射, 取 $\Omega=K_n$ 即可.
 
-**第 (2) 小题**: 反证. 设闭单位球 $\overline B\left(0,1\right)$ 被开单位球 $B\left(x_i,1\right)$ ($i=1,\dots,m$) 覆盖. 令 $F=\operatorname{span}\left(x_1,\dots,x_m\right)$, 它是有限维子空间. 因 $E$ 无穷维, 存在 $y\in E\setminus F$. 由有限维子空间闭与距离可达, $F$ 闭且可取 $x\in F$ 使 $\left\|y-x\right\|=d\left(y,F\right)$. 令
+第 (2) 小题: 反证. 设闭单位球 $\overline B\left(0,1\right)$ 被开单位球 $B\left(x_i,1\right)$ ($i=1,\dots,m$) 覆盖. 令 $F=\operatorname{span}\left(x_1,\dots,x_m\right)$, 它是有限维子空间. 因 $E$ 无穷维, 存在 $y\in E\setminus F$. 由有限维子空间闭与距离可达, $F$ 闭且可取 $x\in F$ 使 $\left\|y-x\right\|=d\left(y,F\right)$. 令
 
 $$
 x_0=\frac{y-x}{\left\|y-x\right\|}.
@@ -319,7 +319,7 @@ $$
 
 故 $d\left(x_0,F\right)\ge 1$. 但每个 $x_i\in F$, 故 $\left\|x_0-x_i\right\|\ge 1$, 即 $x_0\notin B\left(x_i,1\right)$ 对一切 $i$ 成立. 而 $x_0\in\overline B\left(0,1\right)$, 与覆盖矛盾. 这就是**定理 6.17 (里茨定理)**.
 
-**第 (3) 小题**: 由**定义 6.46 (点到集合的距离)**, 对 $x\notin A$ 定义
+第 (3) 小题: 由**定义 6.46 (点到集合的距离)**, 对 $x\notin A$ 定义
 
 $$
 g\left(x\right)=\frac{1}{d\left(x,A\right)}\inf_{y\in A}\left(f\left(y\right)d\left(x,y\right)\right),
@@ -345,11 +345,11 @@ $$
 
 ### 解答 6.14
 
-**(0)** $\left\{1,\dots,k\right\}$ 是有限集. 任意开覆盖中, 每个点选一个覆盖元, 仅需 $k$ 个即可覆盖, 故由**定义 5.16 (紧致空间)** 它紧.
+(0) $\left\{1,\dots,k\right\}$ 是有限集. 任意开覆盖中, 每个点选一个覆盖元, 仅需 $k$ 个即可覆盖, 故由**定义 5.16 (紧致空间)** 它紧.
 
-**(1)** $X=\prod_{v\in V}\left\{1,\dots,k\right\}=\left\{1,\dots,k\right\}^{\left|V\right|}$. 由第 (0) 小题每个因子 $\left\{1,\dots,k\right\}$ 紧, 由**定理 5.9 (吉洪诺夫定理)**, 乘积 $X$ 在乘积拓扑下紧.
+(1) $X=\prod_{v\in V}\left\{1,\dots,k\right\}=\left\{1,\dots,k\right\}^{\left|V\right|}$. 由第 (0) 小题每个因子 $\left\{1,\dots,k\right\}$ 紧, 由**定理 5.9 (吉洪诺夫定理)**, 乘积 $X$ 在乘积拓扑下紧.
 
-**(2)** 单条边时, $X_{\left\{\left(x,y\right)\right\}}=\left\{f:f\left(x\right)\neq f\left(y\right)\right\}$. 其补集为
+(2) 单条边时, $X_{\left\{\left(x,y\right)\right\}}=\left\{f:f\left(x\right)\neq f\left(y\right)\right\}$. 其补集为
 
 $$
 X\setminus X_F=\bigcup_{c=1}^k\left\{f:f\left(x\right)=c,\ f\left(y\right)=c\right\}.
@@ -357,11 +357,11 @@ $$
 
 每个集合是两个连续取值映射 ($f\mapsto f\left(x\right)$) 的纤维之交, 在离散拓扑下既开又闭, 故为闭集; 有限并闭. 因此补集闭, 由**定义 3.21 (闭集)**, $X_F$ 闭.
 
-**(3)** $X_F=\bigcap_{\left(x,y\right)\in F}X_{\left\{\left(x,y\right)\right\}}$. 由第 (2) 小题每个 $X_{\left\{\left(x,y\right)\right\}}$ 闭, 闭集任意交仍闭 (由**定义 3.21 (闭集)** 对应拓扑公理), 故 $X_F$ 闭.
+(3) $X_F=\bigcap_{\left(x,y\right)\in F}X_{\left\{\left(x,y\right)\right\}}$. 由第 (2) 小题每个 $X_{\left\{\left(x,y\right)\right\}}$ 闭, 闭集任意交仍闭 (由**定义 3.21 (闭集)** 对应拓扑公理), 故 $X_F$ 闭.
 
-**(4)** 任取有限个 $F_1,\dots,F_m$, 则 $\bigcap_{i=1}^m X_{F_i}=X_{F_1\cup\dots\cup F_m}$. 因 $\bigcup_i F_i$ 有限, 由**定义 11.16 (无向图与子图)** 子图 $\left(V,\bigcup_i F_i\right)$ 是有限子图, 由题设它 $k$-可染色, 故 $X_{\cup F_i}$ 非空. 故 $\mathcal F$ 具有限交性质 (由**定义 5.17 (有限交性质)**). 又 $\mathcal F$ 中元素都是紧空间 $X$ 中的闭集, 由**定理 5.10 (有限交判据)**, 全族交 $\bigcap_{F\text{ 有限}}X_F$ 非空.
+(4) 任取有限个 $F_1,\dots,F_m$, 则 $\bigcap_{i=1}^m X_{F_i}=X_{F_1\cup\dots\cup F_m}$. 因 $\bigcup_i F_i$ 有限, 由**定义 11.16 (无向图与子图)** 子图 $\left(V,\bigcup_i F_i\right)$ 是有限子图, 由题设它 $k$-可染色, 故 $X_{\cup F_i}$ 非空. 故 $\mathcal F$ 具有限交性质 (由**定义 5.17 (有限交性质)**). 又 $\mathcal F$ 中元素都是紧空间 $X$ 中的闭集, 由**定理 5.10 (有限交判据)**, 全族交 $\bigcap_{F\text{ 有限}}X_F$ 非空.
 
-**(5)** 取 $f\in\bigcap_{F\text{ 有限}}X_F$. 由**定义 11.17 ($k$-染色与 $k$-可染色)**, $f$ 是子图 $\left(V,F\right)$ 的 $k$-染色对每个有限 $F$ 成立. 特别对任意边 $e\in E$, 取有限集 $F=\left\{e\right\}$, 则 $f\left(x\right)\neq f\left(y\right)$ 对该边成立. 故 $f$ 是整图 $G$ 的 $k$-染色, $G$ 可 $k$-染色. $\blacksquare$
+(5) 取 $f\in\bigcap_{F\text{ 有限}}X_F$. 由**定义 11.17 ($k$-染色与 $k$-可染色)**, $f$ 是子图 $\left(V,F\right)$ 的 $k$-染色对每个有限 $F$ 成立. 特别对任意边 $e\in E$, 取有限集 $F=\left\{e\right\}$, 则 $f\left(x\right)\neq f\left(y\right)$ 对该边成立. 故 $f$ 是整图 $G$ 的 $k$-染色, $G$ 可 $k$-染色. $\blacksquare$
 
 ## 9.6 (紧凸集上的严格压缩映射与紧度量空间上的不动点)
 
@@ -373,9 +373,9 @@ $$
 
 ### 解答 6.15
 
-**第 (1) 小题**: 由**定义 4.23 (凸集)**, $K$ 凸. 由**定理 6.3 (紧度量空间完备)**, $K$ 完备. 在严格条件 $\left\|f\left(x\right)-f\left(y\right)\right\|< \left\|x-y\right\|$ ($x\neq y$) 下, 由 $K$ 紧 (由**定理 6.1 (紧 $=$ 序列紧)** 取最小距离对), 可推出 $f$ 实际上是**定义 6.19 (压缩映射)** 意义下的压缩映射 (存在统一的 $0< k< 1$). 故由**定理 6.16 (巴拿赫不动点定理)**, $f$ 有不动点.
+第 (1) 小题: 由**定义 4.23 (凸集)**, $K$ 凸. 由**定理 6.3 (紧度量空间完备)**, $K$ 完备. 在严格条件 $\left\|f\left(x\right)-f\left(y\right)\right\|< \left\|x-y\right\|$ ($x\neq y$) 下, 由 $K$ 紧 (由**定理 6.1 (紧 $=$ 序列紧)** 取最小距离对), 可推出 $f$ 实际上是**定义 6.19 (压缩映射)** 意义下的压缩映射 (存在统一的 $0< k< 1$). 故由**定理 6.16 (巴拿赫不动点定理)**, $f$ 有不动点.
 
-**第 (2) 小题**: 设 $X$ 紧度量, $f:X\to X$ 连续. 由紧性, $d\left(x,f\left(x\right)\right)$ 达到最小. 若最小值 $> 0$, 则 $d\left(f\left(x\right),f^2\left(x\right)\right)< d\left(x,f\left(x\right)\right)$ (严格压缩), 与最小性矛盾. 故最小值为 $0$, 即存在 $x$ 使 $f\left(x\right)=x$. 紧度量空间豪斯多夫 (由**定义 3.10 (豪斯多夫空间)**, 度量空间豪斯多夫). $\blacksquare$
+第 (2) 小题: 设 $X$ 紧度量, $f:X\to X$ 连续. 由紧性, $d\left(x,f\left(x\right)\right)$ 达到最小. 若最小值 $> 0$, 则 $d\left(f\left(x\right),f^2\left(x\right)\right)< d\left(x,f\left(x\right)\right)$ (严格压缩), 与最小性矛盾. 故最小值为 $0$, 即存在 $x$ 使 $f\left(x\right)=x$. 紧度量空间豪斯多夫 (由**定义 3.10 (豪斯多夫空间)**, 度量空间豪斯多夫). $\blacksquare$
 
 ## 9.7 (紧凸集上连续仿射映射的不动点（角谷–马尔可夫定理）)
 

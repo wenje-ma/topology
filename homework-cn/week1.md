@@ -128,13 +128,13 @@
 
 (1) 由**定义 3.18 (拓扑空间)**, $\mathcal O$ 的开集为 $\emptyset,\left\{0\right\},\left\{0,1\right\}$. 由**定义 3.21 (闭集)**, 闭集是开集的补集, 故 $\mathcal O$ 的闭集为 $X,\left\{1\right\},\emptyset$. 因 $\left\{1\right\}$ 是闭集, 由**定义 3.26 (闭包)** 其为包含 $\left\{1\right\}$ 的最小闭集, 故 $\overline{\left\{1\right\}}=\left\{1\right\}$.
 
-(2) 由**定义 3.10 (豪斯多夫空间)**, 需看点 $0$ 与 $1$ 能否被不相交的邻域分离. 由**定义 3.25 (邻域与极限)**, $1$ 的邻域是含 $1$ 的开集, 而含 $1$ 的开集只有 $\left\{0,1\right\}$ (因 $\left\{1\right\}\notin\mathcal O$), 它同时含 $0$. 故不存在不相交的开集分别含 $0$ 与 $1$, $\left(X,\mathcal O\right)$ **不是**豪斯多夫空间.
+(2) 由**定义 3.10 (豪斯多夫空间)**, 需看点 $0$ 与 $1$ 能否被不相交的邻域分离. 由**定义 3.25 (邻域与极限)**, $1$ 的邻域是含 $1$ 的开集, 而含 $1$ 的开集只有 $\left\{0,1\right\}$ (因 $\left\{1\right\}\notin\mathcal O$), 它同时含 $0$. 故不存在不相交的开集分别含 $0$ 与 $1$, $\left(X,\mathcal O\right)$ 不是豪斯多夫空间.
 
 (3) 定义 $f:\left(X,\mathcal O\right)\to\left(X,\mathcal O'\right)$ 为 $f\left(0\right)=1$, $f\left(1\right)=0$. 则 $f$ 是双射. 验证 $f$ 连续: 由**定义 3.22 (连续映射)**, 需 $\mathcal O'$ 中每个开集的逆像是 $\mathcal O$ 中的开集. $\mathcal O'$ 的开集为 $\emptyset,\left\{1\right\},\left\{0,1\right\}$, 其逆像分别为 $\emptyset,\left\{0\right\},\left\{0,1\right\}$, 由**定义 3.18 (拓扑空间)** 均在 $\mathcal O$ 中, 故 $f$ 连续. 同理, $\mathcal O$ 的开集 $\emptyset,\left\{0\right\},\left\{0,1\right\}$ 在 $f^{-1}$ 下的逆像分别为 $\emptyset,\left\{1\right\},\left\{0,1\right\}$, 由**定义 3.22 (连续映射)** 均在 $\mathcal O'$ 中, 故 $f^{-1}$ 连续. 由**定义 3.23 (同胚)**, $f$ 是同胚, $\mathcal O$ 与 $\mathcal O'$ 同胚.
 
-(4) 由**定义 3.25 (邻域与极限)**, 序列 $\left\{x_n\right\}$ 收敛到 $1$, 若含 $1$ 的每个邻域对所有充分大的 $n$ 都含 $x_n$. 由第 (2) 小题, 含 $1$ 的开集只有 $\left\{0,1\right\}=X$, 由**定义 3.25 (邻域与极限)** 它是 $1$ 的唯一邻域, 且 $X$ 含所有项. 故 $\left(X,\mathcal O\right)$ 中**每个**序列都收敛到 $1$.
+(4) 由**定义 3.25 (邻域与极限)**, 序列 $\left\{x_n\right\}$ 收敛到 $1$, 若含 $1$ 的每个邻域对所有充分大的 $n$ 都含 $x_n$. 由第 (2) 小题, 含 $1$ 的开集只有 $\left\{0,1\right\}=X$, 由**定义 3.25 (邻域与极限)** 它是 $1$ 的唯一邻域, 且 $X$ 含所有项. 故 $\left(X,\mathcal O\right)$ 中每个序列都收敛到 $1$.
 
-(5) 由**定义 3.18 (拓扑空间)**, 含 $0$ 的开集为 $\left\{0\right\}$ 与 $\left\{0,1\right\}$, 故由**定义 3.25 (邻域与极限)**, $0$ 的邻域恰为含 $0$ 的开集. 序列收敛到 $0$, 当且仅当邻域 $\left\{0\right\}$ 对所有充分大的 $n$ 含 $x_n$, 即存在 $N$ 使 $n\ge N$ 时 $x_n=0$. 故收敛到 $0$ 的序列恰为**从某项起恒为 $0$** 的序列.
+(5) 由**定义 3.18 (拓扑空间)**, 含 $0$ 的开集为 $\left\{0\right\}$ 与 $\left\{0,1\right\}$, 故由**定义 3.25 (邻域与极限)**, $0$ 的邻域恰为含 $0$ 的开集. 序列收敛到 $0$, 当且仅当邻域 $\left\{0\right\}$ 对所有充分大的 $n$ 含 $x_n$, 即存在 $N$ 使 $n\ge N$ 时 $x_n=0$. 故收敛到 $0$ 的序列恰为从某项起恒为 $0$ 的序列.
 
 (6) 取常值序列 $x_n=0$ (对所有 $n$). 由第 (4) 小题, 它收敛到 $1$; 由第 (5) 小题, 它从某项起恒为 $0$, 故也收敛到 $0$. 故 $x_n=0$ 既收敛到 $0$ 又收敛到 $1$.
 
@@ -204,13 +204,13 @@
 
 由**定义 3.13 (细)**, "$\mathcal O_1$ 比 $\mathcal O_2$ 细" 即 $\mathcal O_2\subset\mathcal O_1$.
 
-**$\mathcal O_2\subset\mathcal O_1\Rightarrow$ (1)**: 设 $F$ 在 $\mathcal O_2$ 中闭. 由**定义 3.21 (闭集)**, $F^{c}\in\mathcal O_2$; 由**定义 3.13 (细)**, $F^{c}\in\mathcal O_1$; 再由**定义 3.21 (闭集)**, $F$ 在 $\mathcal O_1$ 中闭.
+$\mathcal O_2\subset\mathcal O_1\Rightarrow$ (1): 设 $F$ 在 $\mathcal O_2$ 中闭. 由**定义 3.21 (闭集)**, $F^{c}\in\mathcal O_2$; 由**定义 3.13 (细)**, $F^{c}\in\mathcal O_1$; 再由**定义 3.21 (闭集)**, $F$ 在 $\mathcal O_1$ 中闭.
 
-**(1) $\Rightarrow$ (2)**: 对任意 $V\in\mathcal O_2$, 由**定义 3.21 (闭集)** 其补集 $V^{c}$ 在 $\mathcal O_2$ 中闭; 由假设 $V^{c}$ 在 $\mathcal O_1$ 中闭; 由**定义 3.21 (闭集)** 故 $V$ 在 $\mathcal O_1$ 中开. 恒等映射 $\operatorname{id}$ 的逆像 $\operatorname{id}^{-1}\left(V\right)=V$, 故 $V$ 在 $\mathcal O_1$ 中开. 由**定义 3.22 (连续映射)**, $\operatorname{id}$ 连续.
+(1) $\Rightarrow$ (2): 对任意 $V\in\mathcal O_2$, 由**定义 3.21 (闭集)** 其补集 $V^{c}$ 在 $\mathcal O_2$ 中闭; 由假设 $V^{c}$ 在 $\mathcal O_1$ 中闭; 由**定义 3.21 (闭集)** 故 $V$ 在 $\mathcal O_1$ 中开. 恒等映射 $\operatorname{id}$ 的逆像 $\operatorname{id}^{-1}\left(V\right)=V$, 故 $V$ 在 $\mathcal O_1$ 中开. 由**定义 3.22 (连续映射)**, $\operatorname{id}$ 连续.
 
-**(2) $\Rightarrow$ (3)**: 由**定义 3.25 (邻域与极限)**, 设 $V$ 是 $x$ 在 $\mathcal O_2$ 中的邻域. 因 $\operatorname{id}$ 连续, 由**定义 3.22 (连续映射)** $V=\operatorname{id}^{-1}\left(V\right)\in\mathcal O_1$; 故由**定义 3.25 (邻域与极限)** $V$ 是 $x$ 在 $\mathcal O_1$ 中的邻域.
+(2) $\Rightarrow$ (3): 由**定义 3.25 (邻域与极限)**, 设 $V$ 是 $x$ 在 $\mathcal O_2$ 中的邻域. 因 $\operatorname{id}$ 连续, 由**定义 3.22 (连续映射)** $V=\operatorname{id}^{-1}\left(V\right)\in\mathcal O_1$; 故由**定义 3.25 (邻域与极限)** $V$ 是 $x$ 在 $\mathcal O_1$ 中的邻域.
 
-**(3) $\Rightarrow\mathcal O_2\subset\mathcal O_1$**: 由**定义 3.25 (邻域与极限)**, 设 $V$ 是 $x$ 在 $\mathcal O_2$ 中的邻域, 即 $V\in\mathcal O_2$; 由假设 $V$ 也是 $x$ 在 $\mathcal O_1$ 中的邻域, 即 $V\in\mathcal O_1$. 故 $\mathcal O_2\subset\mathcal O_1$. $\blacksquare$
+(3) $\Rightarrow\mathcal O_2\subset\mathcal O_1$: 由**定义 3.25 (邻域与极限)**, 设 $V$ 是 $x$ 在 $\mathcal O_2$ 中的邻域, 即 $V\in\mathcal O_2$; 由假设 $V$ 也是 $x$ 在 $\mathcal O_1$ 中的邻域, 即 $V\in\mathcal O_1$. 故 $\mathcal O_2\subset\mathcal O_1$. $\blacksquare$
 
 ## 1.5 (加细拓扑保持豪斯多夫性、闭包、内部与可分性)
 
@@ -238,7 +238,7 @@
 
 ### 解答 1.6
 
-**$\left(\Rightarrow\right)$** 已知 $X$ 是豪斯多夫的, 证 $\Delta$ 闭, 即由**定义 3.21 (闭集)** 证其补集 $\left(X\times X\right)\setminus\Delta$ 开. 取 $\left(x,y\right)\notin\Delta$, 由**定义 3.12 (对角线)** 则 $x\neq y$. 由**定义 3.10 (豪斯多夫空间)**, 存在不相交开集 $U,V$ 使 $x\in U$, $y\in V$. 由**定义 3.11 (乘积拓扑)**, $U\times V$ 是乘积拓扑的开集; 且因 $U\cap V=\emptyset$, $U\times V\cap\Delta=\emptyset$, 故
+$\left(\Rightarrow\right)$ 已知 $X$ 是豪斯多夫的, 证 $\Delta$ 闭, 即由**定义 3.21 (闭集)** 证其补集 $\left(X\times X\right)\setminus\Delta$ 开. 取 $\left(x,y\right)\notin\Delta$, 由**定义 3.12 (对角线)** 则 $x\neq y$. 由**定义 3.10 (豪斯多夫空间)**, 存在不相交开集 $U,V$ 使 $x\in U$, $y\in V$. 由**定义 3.11 (乘积拓扑)**, $U\times V$ 是乘积拓扑的开集; 且因 $U\cap V=\emptyset$, $U\times V\cap\Delta=\emptyset$, 故
 
 $$
 \left(x,y\right)\in U\times V\subset\left(X\times X\right)\setminus\Delta.
@@ -246,7 +246,7 @@ $$
 
 故 $\left(X\times X\right)\setminus\Delta$ 每点都有开邻域含于其中, 由**定义 3.18 (拓扑空间)** 它是开集; 由**定义 3.21 (闭集)**, $\Delta$ 闭.
 
-**$\left(\Leftarrow\right)$** 已知 $\Delta$ 闭. 取 $x\neq y$, 由**定义 3.12 (对角线)** 则 $\left(x,y\right)\notin\Delta$. 由**定义 3.11 (乘积拓扑)**, 存在基本开集 $U\times V$ 使 $\left(x,y\right)\in U\times V\subset\left(X\times X\right)\setminus\Delta$, 其中 $U,V$ 为开集. 则 $x\in U$, $y\in V$, 且 $U\cap V=\emptyset$ (否则 $U\times V\cap\Delta\neq\emptyset$, 与含于 $\left(X\times X\right)\setminus\Delta$ 矛盾). 由**定义 3.10 (豪斯多夫空间)**, $X$ 是豪斯多夫的. $\blacksquare$
+$\left(\Leftarrow\right)$ 已知 $\Delta$ 闭. 取 $x\neq y$, 由**定义 3.12 (对角线)** 则 $\left(x,y\right)\notin\Delta$. 由**定义 3.11 (乘积拓扑)**, 存在基本开集 $U\times V$ 使 $\left(x,y\right)\in U\times V\subset\left(X\times X\right)\setminus\Delta$, 其中 $U,V$ 为开集. 则 $x\in U$, $y\in V$, 且 $U\cap V=\emptyset$ (否则 $U\times V\cap\Delta\neq\emptyset$, 与含于 $\left(X\times X\right)\setminus\Delta$ 矛盾). 由**定义 3.10 (豪斯多夫空间)**, $X$ 是豪斯多夫的. $\blacksquare$
 
 ## 1.7 (子空间中闭集的刻画)
 
@@ -254,9 +254,9 @@ $$
 
 ### 解答 1.7
 
-**($\Leftarrow$)** 设存在 $X$ 中闭集 $F'$ 使 $F=F'\cap A$. 由**定义 3.21 (闭集)**, $X\setminus F'$ 是 $X$ 中开集. 由**定义 3.19 (子空间拓扑)**, $A\cap\left(X\setminus F'\right)$ 是 $A$ 中开集. 由集合运算恒等式, $A\setminus F=A\setminus\left(F'\cap A\right)=A\cap\left(X\setminus F'\right)$; 故 $A\setminus F$ 是 $A$ 中开集. 再由**定义 3.21 (闭集)**, $F$ 在 $A$ 中闭.
+($\Leftarrow$) 设存在 $X$ 中闭集 $F'$ 使 $F=F'\cap A$. 由**定义 3.21 (闭集)**, $X\setminus F'$ 是 $X$ 中开集. 由**定义 3.19 (子空间拓扑)**, $A\cap\left(X\setminus F'\right)$ 是 $A$ 中开集. 由集合运算恒等式, $A\setminus F=A\setminus\left(F'\cap A\right)=A\cap\left(X\setminus F'\right)$; 故 $A\setminus F$ 是 $A$ 中开集. 再由**定义 3.21 (闭集)**, $F$ 在 $A$ 中闭.
 
-**($\Rightarrow$)** 设 $F$ 在 $A$ 中闭. 由**定义 3.21 (闭集)**, $A\setminus F$ 是 $A$ 中开集. 由**定义 3.19 (子空间拓扑)**, 存在 $X$ 中开集 $O$ 使 $A\setminus F=O\cap A$. 令 $F'=X\setminus O$, 则由**定义 3.21 (闭集)** $F'$ 是 $X$ 中闭集; 由集合运算恒等式, $F=A\setminus\left(O\cap A\right)=A\cap\left(X\setminus O\right)=F'\cap A$. 故存在 $X$ 中闭集 $F'$ 使 $F=F'\cap A$. $\blacksquare$
+($\Rightarrow$) 设 $F$ 在 $A$ 中闭. 由**定义 3.21 (闭集)**, $A\setminus F$ 是 $A$ 中开集. 由**定义 3.19 (子空间拓扑)**, 存在 $X$ 中开集 $O$ 使 $A\setminus F=O\cap A$. 令 $F'=X\setminus O$, 则由**定义 3.21 (闭集)** $F'$ 是 $X$ 中闭集; 由集合运算恒等式, $F=A\setminus\left(O\cap A\right)=A\cap\left(X\setminus O\right)=F'\cap A$. 故存在 $X$ 中闭集 $F'$ 使 $F=F'\cap A$. $\blacksquare$
 
 ## 1.8 (拓扑基限制到子空间仍是基)
 
@@ -288,15 +288,15 @@ $$
 
 先证开的情形.
 
-**($\Rightarrow$)** 设 $A$ 在 $X$ 中开. 设 $U$ 是 $A$ 的开集. 由**定义 3.19 (子空间拓扑)**, 存在 $X$ 中开集 $O$ 使 $U=O\cap A$. 由**定义 3.18 (拓扑空间)**, $O$ 与 $A$ 都是 $X$ 中开集, 其有限交 $O\cap A=U$ 也是 $X$ 中开集.
+($\Rightarrow$) 设 $A$ 在 $X$ 中开. 设 $U$ 是 $A$ 的开集. 由**定义 3.19 (子空间拓扑)**, 存在 $X$ 中开集 $O$ 使 $U=O\cap A$. 由**定义 3.18 (拓扑空间)**, $O$ 与 $A$ 都是 $X$ 中开集, 其有限交 $O\cap A=U$ 也是 $X$ 中开集.
 
-**($\Leftarrow$)** 设 $A$ 的每个开集都是 $X$ 中开集. 由**定义 3.18 (拓扑空间)**, 全空间 $A$ 自身是 $A$ 中开集, 故由假设 $A$ 是 $X$ 中开集.
+($\Leftarrow$) 设 $A$ 的每个开集都是 $X$ 中开集. 由**定义 3.18 (拓扑空间)**, 全空间 $A$ 自身是 $A$ 中开集, 故由假设 $A$ 是 $X$ 中开集.
 
 再证闭的情形.
 
-**($\Rightarrow$)** 设 $A$ 在 $X$ 中闭. 设 $F$ 是 $A$ 的闭集. 由**习题 1.7**的结论, 存在 $X$ 中闭集 $F'$ 使 $F=F'\cap A$. 由**定义 3.21 (闭集)**, $X\setminus F'$ 与 $X\setminus A$ 都是 $X$ 中开集. 由**定义 3.18 (拓扑空间)**, 其并 $\left(X\setminus F'\right)\cup\left(X\setminus A\right)$ 是 $X$ 中开集. 由集合运算恒等式, $\left(X\setminus F'\right)\cup\left(X\setminus A\right)=X\setminus\left(F'\cap A\right)$; 故 $X\setminus F$ 是 $X$ 中开集. 由**定义 3.21 (闭集)**, $F$ 是 $X$ 中闭集.
+($\Rightarrow$) 设 $A$ 在 $X$ 中闭. 设 $F$ 是 $A$ 的闭集. 由**习题 1.7**的结论, 存在 $X$ 中闭集 $F'$ 使 $F=F'\cap A$. 由**定义 3.21 (闭集)**, $X\setminus F'$ 与 $X\setminus A$ 都是 $X$ 中开集. 由**定义 3.18 (拓扑空间)**, 其并 $\left(X\setminus F'\right)\cup\left(X\setminus A\right)$ 是 $X$ 中开集. 由集合运算恒等式, $\left(X\setminus F'\right)\cup\left(X\setminus A\right)=X\setminus\left(F'\cap A\right)$; 故 $X\setminus F$ 是 $X$ 中开集. 由**定义 3.21 (闭集)**, $F$ 是 $X$ 中闭集.
 
-**($\Leftarrow$)** 设 $A$ 的每个闭集都是 $X$ 中闭集. 由**定义 3.21 (闭集)**, 全空间 $A$ 自身是 $A$ 中闭集, 故由假设 $A$ 是 $X$ 中闭集. $\blacksquare$
+($\Leftarrow$) 设 $A$ 的每个闭集都是 $X$ 中闭集. 由**定义 3.21 (闭集)**, 全空间 $A$ 自身是 $A$ 中闭集, 故由假设 $A$ 是 $X$ 中闭集. $\blacksquare$
 
 ## 1.10 (包含映射连续且诱导的初始拓扑恰为子空间拓扑)
 

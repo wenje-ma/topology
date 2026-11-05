@@ -270,9 +270,9 @@
 
 由**定义 11.7 (环面)**, $T^2=\mathbb R^2/\mathbb Z^2$, $\pi$ 为商投影. 不妨取 $D=\left\{\left(t,\alpha t\right):t\in\mathbb R\right\}$ (竖直直线 $\alpha=\infty$ 同理).
 
-**有理斜率**: 设 $\alpha=p/q$, $p,q\in\mathbb Z$, $\gcd\left(p,q\right)=1$. 映射 $g:\mathbb R/q\mathbb Z\to T^2$, $g\left(t\right)=\pi\left(t,\alpha t\right)$. 它良定义且连续 (由**定义 11.2 (粘合映射)**, $\mathbb R/q\mathbb Z$ 上的映射经由商投影分解). 它是单射: 若 $\pi\left(t,\alpha t\right)=\pi\left(t',\alpha t'\right)$, 则 $t-t'\in\mathbb Z$ 且 $p\left(t-t'\right)/q\in\mathbb Z$, 即 $q\mid p\left(t-t'\right)$; 由 $\gcd\left(p,q\right)=1$, $q\mid t-t'$, 即在 $\mathbb R/q\mathbb Z$ 中相等. $\mathbb R/q\mathbb Z$ 是紧圆 (同胚于 $S^1$), $T^2$ 是豪斯多夫的 (由**定义 11.7 (环面)** $T^2\cong S^1\times S^1$, 而 $S^1$ 是 $\mathbb R^2$ 的子空间故豪斯多夫, 由**定理 3.6 (豪斯多夫的遗传性)** 乘积仍豪斯多夫). 由**定理 5.6 (紧豪斯多夫间的连续双射)**, $g$ 是同胚. 故 $\pi\left(D\right)=g\left(\mathbb R/q\mathbb Z\right)$ 同胚于圆.
+有理斜率: 设 $\alpha=p/q$, $p,q\in\mathbb Z$, $\gcd\left(p,q\right)=1$. 映射 $g:\mathbb R/q\mathbb Z\to T^2$, $g\left(t\right)=\pi\left(t,\alpha t\right)$. 它良定义且连续 (由**定义 11.2 (粘合映射)**, $\mathbb R/q\mathbb Z$ 上的映射经由商投影分解). 它是单射: 若 $\pi\left(t,\alpha t\right)=\pi\left(t',\alpha t'\right)$, 则 $t-t'\in\mathbb Z$ 且 $p\left(t-t'\right)/q\in\mathbb Z$, 即 $q\mid p\left(t-t'\right)$; 由 $\gcd\left(p,q\right)=1$, $q\mid t-t'$, 即在 $\mathbb R/q\mathbb Z$ 中相等. $\mathbb R/q\mathbb Z$ 是紧圆 (同胚于 $S^1$), $T^2$ 是豪斯多夫的 (由**定义 11.7 (环面)** $T^2\cong S^1\times S^1$, 而 $S^1$ 是 $\mathbb R^2$ 的子空间故豪斯多夫, 由**定理 3.6 (豪斯多夫的遗传性)** 乘积仍豪斯多夫). 由**定理 5.6 (紧豪斯多夫间的连续双射)**, $g$ 是同胚. 故 $\pi\left(D\right)=g\left(\mathbb R/q\mathbb Z\right)$ 同胚于圆.
 
-**无理斜率**: 设 $\alpha\notin\mathbb Q$. 先证 $\pi\left(D\right)$ 在 $T^2$ 中稠密. 记 $H=\pi\left(D\right)=\left\{\pi\left(t,\alpha t\right):t\in\mathbb R\right\}\subset T^2$. 由狄利克雷逼近, 对任意 $\varepsilon> 0$ 存在非零整数 $m$ 使 $\left\|m\alpha\right\|< \varepsilon$ (到最近整数距离), 即 $\pi\left(m,m\alpha\right)$ 离 $\left(0,0\right)\in T^2$ 任意近. $H$ 中含任意接近单位元的非零点. 而 $H$ 在第一坐标上的投影 $t\mapsto t\pmod 1$ 是满射到 $S^1$ (因 $t$ 取遍 $\mathbb R$), 结合第二坐标 $t\mapsto\alpha t\pmod 1$ 的无理旋转 (稠密), 即得 $H$ 在 $T^2$ 中稠密.
+无理斜率: 设 $\alpha\notin\mathbb Q$. 先证 $\pi\left(D\right)$ 在 $T^2$ 中稠密. 记 $H=\pi\left(D\right)=\left\{\pi\left(t,\alpha t\right):t\in\mathbb R\right\}\subset T^2$. 由狄利克雷逼近, 对任意 $\varepsilon> 0$ 存在非零整数 $m$ 使 $\left\|m\alpha\right\|< \varepsilon$ (到最近整数距离), 即 $\pi\left(m,m\alpha\right)$ 离 $\left(0,0\right)\in T^2$ 任意近. $H$ 中含任意接近单位元的非零点. 而 $H$ 在第一坐标上的投影 $t\mapsto t\pmod 1$ 是满射到 $S^1$ (因 $t$ 取遍 $\mathbb R$), 结合第二坐标 $t\mapsto\alpha t\pmod 1$ 的无理旋转 (稠密), 即得 $H$ 在 $T^2$ 中稠密.
 
 $\pi|_D:D\to\pi\left(D\right)$ 连续 (它是商映射 $\pi$ 在子空间 $D$ 上的限制, 由**定义 3.19 (子空间拓扑)** 连续). 它是双射: 若 $\pi\left(t,\alpha t\right)=\pi\left(t',\alpha t'\right)$, 则 $t-t'\in\mathbb Z$ 且 $\alpha\left(t-t'\right)\in\mathbb Z$, 由 $\alpha$ 无理必有 $t-t'=0$. $\blacksquare$
 
@@ -284,9 +284,9 @@ $\pi|_D:D\to\pi\left(D\right)$ 连续 (它是商映射 $\pi$ 在子空间 $D$ �
 
 把 $\pi\left(D\right)$ 记为 $H\subset T^2$, 其中 $D=\left\{\left(t,\alpha t\right)\right\}$. 关系 $x'\sim y'$ 即 $y'-x'\in H$ ($T^2$ 中的群运算).
 
-**等价关系**: $H$ 是 $T^2$ 的子群: 含单位元; 对减法封闭. 故按子群取陪集是等价关系: 自反 ($0\in H$), 对称 ($H$ 对逆元封闭), 传递 ($H$ 对加法封闭). 由**定义 11.3 (等价关系粘合)**, $T^2/{\sim}=T^2/H$.
+等价关系: $H$ 是 $T^2$ 的子群: 含单位元; 对减法封闭. 故按子群取陪集是等价关系: 自反 ($0\in H$), 对称 ($H$ 对逆元封闭), 传递 ($H$ 对加法封闭). 由**定义 11.3 (等价关系粘合)**, $T^2/{\sim}=T^2/H$.
 
-**有理斜率**: 设 $\alpha=p/q\in\mathbb Q$. 由习题 2.17, $H=\pi\left(D\right)$ 同胚于一个圆, 故 $H$ 紧; 又 $T^2$ 豪斯多夫 (见习题 2.17), 由**定理 5.5 (豪斯多夫中紧集闭)**, $H$ 是 $T^2$ 中的闭子群. 定义
+有理斜率: 设 $\alpha=p/q\in\mathbb Q$. 由习题 2.17, $H=\pi\left(D\right)$ 同胚于一个圆, 故 $H$ 紧; 又 $T^2$ 豪斯多夫 (见习题 2.17), 由**定理 5.5 (豪斯多夫中紧集闭)**, $H$ 是 $T^2$ 中的闭子群. 定义
 
 $$
 \varphi:T^2\to S^1,\quad \varphi\left(u,v\right)=qu-pv\pmod 1.
@@ -294,7 +294,7 @@ $$
 
 $\varphi$ 连续, 其核恰为 $H$ (即 $\varphi\left(u,v\right)=0\Leftrightarrow\left(u,v\right)\in H$). 由**定义 11.2 (粘合映射)** 的泛性质, $\varphi$ 诱导连续双射 $\overline\varphi:T^2/H\to S^1$. $T^2/H$ 紧 ($T^2$ 紧, 由**定理 5.1 (紧空间连续像紧)** 商连续像紧), $S^1$ 豪斯多夫. 由**定理 5.6 (紧豪斯多夫间的连续双射)**, $\overline\varphi$ 是同胚. 故 $T^2/H$ 同胚于圆, 且圆豪斯多夫, 由**定义 3.10 (豪斯多夫空间)** 商空间豪斯多夫.
 
-**无理斜率**: 由习题 2.17, $H$ 在 $T^2$ 中稠密. 商拓扑下, 由**定义 11.1 (商拓扑)**, 开集 $U\subset T^2/H$ 对应于 $T^2$ 中的 $H$-饱和开集. 若 $U$ 非空, 取饱和开集 $V\subset T^2$, $V\neq\emptyset$. 因 $H$ 稠密, $V+H=T^2$; 而 $V$ 已饱和, $V+H=V$, 故 $V=T^2$, 即 $U=T^2/H$. 故仅有的开集是 $\emptyset$ 与全空间, 即平凡拓扑. 此时商空间不豪斯多夫 (除非单点), 与有理情形对照. $\blacksquare$
+无理斜率: 由习题 2.17, $H$ 在 $T^2$ 中稠密. 商拓扑下, 由**定义 11.1 (商拓扑)**, 开集 $U\subset T^2/H$ 对应于 $T^2$ 中的 $H$-饱和开集. 若 $U$ 非空, 取饱和开集 $V\subset T^2$, $V\neq\emptyset$. 因 $H$ 稠密, $V+H=T^2$; 而 $V$ 已饱和, $V+H=V$, 故 $V=T^2$, 即 $U=T^2/H$. 故仅有的开集是 $\emptyset$ 与全空间, 即平凡拓扑. 此时商空间不豪斯多夫 (除非单点), 与有理情形对照. $\blacksquare$
 
 ## 4.3 (锥空间的嵌入与函子性)
 
@@ -302,13 +302,13 @@ $\varphi$ 连续, 其核恰为 $H$ (即 $\varphi\left(u,v\right)=0\Leftrightarro
 
 ### 解答 2.19
 
-**嵌入**: 由**定义 11.6 (锥)**, $CX=X\times\left[0,1\right]/X\times\left\{1\right\}$. 记 $\pi:X\times\left[0,1\right]\to CX$ 为商投影, $j:X\to CX$, $j\left(x\right)=\left[\left(x,0\right)\right]$. 因 $X\times\left\{0\right\}$ 与被捏合集 $X\times\left\{1\right\}$ 不相交, $\pi$ 在 $X\times\left\{0\right\}$ 上是单射, 故 $j$ 是双射到 $j\left(X\right)$.
+嵌入: 由**定义 11.6 (锥)**, $CX=X\times\left[0,1\right]/X\times\left\{1\right\}$. 记 $\pi:X\times\left[0,1\right]\to CX$ 为商投影, $j:X\to CX$, $j\left(x\right)=\left[\left(x,0\right)\right]$. 因 $X\times\left\{0\right\}$ 与被捏合集 $X\times\left\{1\right\}$ 不相交, $\pi$ 在 $X\times\left\{0\right\}$ 上是单射, 故 $j$ 是双射到 $j\left(X\right)$.
 
 $j$ 连续: 它是含入 $X\cong X\times\left\{0\right\}\hookrightarrow X\times\left[0,1\right]$ 与 $\pi$ 的复合, 由**定理 3.1 (复合连续)** 连续.
 
 逆连续: 任取 $X$ 中开集 $U$. 需证 $j\left(U\right)$ 是 $j\left(X\right)$ (子空间) 中的开集. 构造 $V=U\times\left[0,1/2\right)\subset X\times\left[0,1\right]$. 由**定义 3.11 (乘积拓扑)**, $V$ 开. 它不与 $X\times\left\{1\right\}$ 相交, 故饱和 (与等价类只交整体不交), 由**定义 11.1 (商拓扑)**, $\pi\left(V\right)$ 在 $CX$ 中开. 而 $\pi\left(V\right)\cap j\left(X\right)=j\left(U\right)$. 故 $j\left(U\right)$ 是 $CX$ 的开集与 $j\left(X\right)$ 的交, 即 $j\left(X\right)$ 中的开集. 由**定义 3.23 (同胚)**, $j$ 是 $X$ 到 $j\left(X\right)$ 的同胚.
 
-**$Cf$ 连续**: 由**定义 11.2 (粘合映射)**, 只需证对任意开集 $W\subset CY$, $\left(Cf\right)^{-1}\left(W\right)$ 在 $CX$ 中开, 即 $\pi_X^{-1}\left(\left(Cf\right)^{-1}\left(W\right)\right)$ 在 $X\times\left[0,1\right]$ 中开. 该原像等于
+$Cf$ 连续: 由**定义 11.2 (粘合映射)**, 只需证对任意开集 $W\subset CY$, $\left(Cf\right)^{-1}\left(W\right)$ 在 $CX$ 中开, 即 $\pi_X^{-1}\left(\left(Cf\right)^{-1}\left(W\right)\right)$ 在 $X\times\left[0,1\right]$ 中开. 该原像等于
 
 $$
 \left\{\left(x,t\right):\left(f\left(x\right),t\right)\in\pi_Y^{-1}\left(W\right)\right\}=\left(f\times\operatorname{id}\right)^{-1}\left(\pi_Y^{-1}\left(W\right)\right).
@@ -340,11 +340,11 @@ $$
 
 记 $\pi:X\to X/\left\langle A\right\rangle$ 为商投影, 见**定义 11.12 (塌缩商)**. $\pi|_{X\setminus A}:X\setminus A\to\pi\left(X\setminus A\right)$ 连续且为双射 ($X\setminus A$ 内任意两点不被粘合).
 
-**$A$ 闭**: $X\setminus A$ 开. 任取 $U\subset X\setminus A$ 为子空间开集, 由**定义 3.19 (子空间拓扑)** $U=V\cap\left(X\setminus A\right)$, $V$ 开于 $X$; 因 $X\setminus A$ 开, $U$ 开于 $X$. 又 $U\cap A=\emptyset$, 故 $\pi^{-1}\left(\pi\left(U\right)\right)=U$ 开. 由**定义 11.1 (商拓扑)**, $\pi\left(U\right)$ 开, 故 $\left(\pi|_{X\setminus A}\right)^{-1}$ 连续.
+$A$ 闭: $X\setminus A$ 开. 任取 $U\subset X\setminus A$ 为子空间开集, 由**定义 3.19 (子空间拓扑)** $U=V\cap\left(X\setminus A\right)$, $V$ 开于 $X$; 因 $X\setminus A$ 开, $U$ 开于 $X$. 又 $U\cap A=\emptyset$, 故 $\pi^{-1}\left(\pi\left(U\right)\right)=U$ 开. 由**定义 11.1 (商拓扑)**, $\pi\left(U\right)$ 开, 故 $\left(\pi|_{X\setminus A}\right)^{-1}$ 连续.
 
-**$A$ 开**: 任取子空间开 $U=V\cap\left(X\setminus A\right)$, $V$ 开. 令 $W=V\cup A$. 由 $A$ 开, $W$ 开于 $X$. 而 $\pi^{-1}\left(\pi\left(W\right)\right)=W\cup A=W$ (因 $A$ 已被捏合), 故 $\pi\left(W\right)$ 商开. 且 $\pi\left(W\right)\cap\pi\left(X\setminus A\right)=\pi\left(V\cap\left(X\setminus A\right)\right)=\pi\left(U\right)$. 故 $\pi\left(U\right)$ 是商开集与 $\pi\left(X\setminus A\right)$ 的交, 即子空间开. 逆连续. 由**定义 3.23 (同胚)**, 限制为同胚.
+$A$ 开: 任取子空间开 $U=V\cap\left(X\setminus A\right)$, $V$ 开. 令 $W=V\cup A$. 由 $A$ 开, $W$ 开于 $X$. 而 $\pi^{-1}\left(\pi\left(W\right)\right)=W\cup A=W$ (因 $A$ 已被捏合), 故 $\pi\left(W\right)$ 商开. 且 $\pi\left(W\right)\cap\pi\left(X\setminus A\right)=\pi\left(V\cap\left(X\setminus A\right)\right)=\pi\left(U\right)$. 故 $\pi\left(U\right)$ 是商开集与 $\pi\left(X\setminus A\right)$ 的交, 即子空间开. 逆连续. 由**定义 3.23 (同胚)**, 限制为同胚.
 
-**$CX/\left\langle X\right\rangle\cong SX$**: 由**定义 11.6 (锥)**, $CX=X\times\left[0,1\right]/X\times\left\{1\right\}$. 在 $CX$ 中再把 $\pi\left(X\times\left\{0\right\}\right)$ 捏成一点, 等价于在 $X\times\left[0,1\right]$ 上把 $X\times\left\{0\right\}$ 与 $X\times\left\{1\right\}$ 各捏成一点. 这正是**定义 11.11 (悬垂)** 中的 $SX$ (经 $t\mapsto 2t-1$ 把 $\left[0,1\right]$ 线性映到 $\left[-1,1\right]$). $\blacksquare$
+$CX/\left\langle X\right\rangle\cong SX$: 由**定义 11.6 (锥)**, $CX=X\times\left[0,1\right]/X\times\left\{1\right\}$. 在 $CX$ 中再把 $\pi\left(X\times\left\{0\right\}\right)$ 捏成一点, 等价于在 $X\times\left[0,1\right]$ 上把 $X\times\left\{0\right\}$ 与 $X\times\left\{1\right\}$ 各捏成一点. 这正是**定义 11.11 (悬垂)** 中的 $SX$ (经 $t\mapsto 2t-1$ 把 $\left[0,1\right]$ 线性映到 $\left[-1,1\right]$). $\blacksquare$
 
 ## 4.6 ($n$ 维环面与环面乘积同胚)
 
@@ -362,11 +362,11 @@ $$
 
 ### 解答 2.22
 
-**第 (1) 小题**: 由**定义 11.13 ($n$-维环面)**, $\mathbb R^n\to\left(S^1\right)^n$ 的映射 $F\left(t\right)=\left(e^{2\pi i t_1},\dots,e^{2\pi i t_n}\right)$ 连续, 且在 $\mathbb Z^n$ 陪集上取等值. 由**定义 11.2 (粘合映射)**, $F$ 经由商映射分解为连续 $\phi:T^n\to\left(S^1\right)^n$.
+第 (1) 小题: 由**定义 11.13 ($n$-维环面)**, $\mathbb R^n\to\left(S^1\right)^n$ 的映射 $F\left(t\right)=\left(e^{2\pi i t_1},\dots,e^{2\pi i t_n}\right)$ 连续, 且在 $\mathbb Z^n$ 陪集上取等值. 由**定义 11.2 (粘合映射)**, $F$ 经由商映射分解为连续 $\phi:T^n\to\left(S^1\right)^n$.
 
-**第 (2) 小题**: $T^n$ 是豪斯多夫的: 下一问证 $\phi$ 是到 $\left(S^1\right)^n$ 的同胚, 而 $\left(S^1\right)^n$ 由**定理 3.6 (豪斯多夫的遗传性)** 是豪斯多夫的, 故 $T^n$ 豪斯多夫.
+第 (2) 小题: $T^n$ 是豪斯多夫的: 下一问证 $\phi$ 是到 $\left(S^1\right)^n$ 的同胚, 而 $\left(S^1\right)^n$ 由**定理 3.6 (豪斯多夫的遗传性)** 是豪斯多夫的, 故 $T^n$ 豪斯多夫.
 
-**第 (3) 小题**: $\phi$ 是双射: $\left(e^{2\pi i t_1},\dots\right)$ 的原像陪集唯一. $T^n$ 紧: 它是 $n$ 方体 $\left[0,1\right]^n$ 的商, 由**定理 5.1 (紧空间连续像紧)** 紧. $\left(S^1\right)^n$ 豪斯多夫. 由**定理 5.6 (紧豪斯多夫间的连续双射)**, $\phi$ 是同胚. $\blacksquare$
+第 (3) 小题: $\phi$ 是双射: $\left(e^{2\pi i t_1},\dots\right)$ 的原像陪集唯一. $T^n$ 紧: 它是 $n$ 方体 $\left[0,1\right]^n$ 的商, 由**定理 5.1 (紧空间连续像紧)** 紧. $\left(S^1\right)^n$ 豪斯多夫. 由**定理 5.6 (紧豪斯多夫间的连续双射)**, $\phi$ 是同胚. $\blacksquare$
 
 ## 4.7 (最终拓扑、商拓扑与粘合映射的三者等价)
 
@@ -380,11 +380,11 @@ $$
 
 ### 解答 2.23
 
-**(a) $\Rightarrow$ (b)**: 由**定义 11.14 (最终拓扑)**, 由 $\pi$ 诱导的最终拓扑是使 $\pi$ 连续的最细拓扑, 其特征为: $U\subset A$ 开当且仅当 $\pi^{-1}\left(U\right)$ 在 $X$ 中开. 这正是 (b).
+(a) $\Rightarrow$ (b): 由**定义 11.14 (最终拓扑)**, 由 $\pi$ 诱导的最终拓扑是使 $\pi$ 连续的最细拓扑, 其特征为: $U\subset A$ 开当且仅当 $\pi^{-1}\left(U\right)$ 在 $X$ 中开. 这正是 (b).
 
-**(b) $\Rightarrow$ (c)**: 由 (b), $U\subset A$ 开当且仅当 $\pi^{-1}\left(U\right)$ 开. 这与**定义 11.1 (商拓扑)** 一致, 也是**定义 11.2 (粘合映射)** 的定义. 故 $\pi$ 是粘合映射.
+(b) $\Rightarrow$ (c): 由 (b), $U\subset A$ 开当且仅当 $\pi^{-1}\left(U\right)$ 开. 这与**定义 11.1 (商拓扑)** 一致, 也是**定义 11.2 (粘合映射)** 的定义. 故 $\pi$ 是粘合映射.
 
-**(c) $\Rightarrow$ (a)**: 由**定义 11.2 (粘合映射)**, $A$ 上的拓扑是使 $\pi$ 连续的最大拓扑, 即最终拓扑. 三链贯通, 等价. 由**定义 3.22 (连续映射)** 与**定义 3.21 (闭集)** 的对偶, 上述等价成立. $\blacksquare$
+(c) $\Rightarrow$ (a): 由**定义 11.2 (粘合映射)**, $A$ 上的拓扑是使 $\pi$ 连续的最大拓扑, 即最终拓扑. 三链贯通, 等价. 由**定义 3.22 (连续映射)** 与**定义 3.21 (闭集)** 的对偶, 上述等价成立. $\blacksquare$
 
 ## 4.8 (乌雷松引理的度量版本)
 
@@ -410,13 +410,13 @@ $$
 
 由**定义 6.36 (开球)**, $\mathbb R$ 的通常拓扑以开区间为基. 对每个 $x\in U$, 令 $I_x$ 为一切含 $x$ 且含于 $U$ 的开区间之并. 因每个这样的开区间都含 $x$, 其并仍是含 $x$ 的开区间 (一族两两相交于同一点的开区间之并为开区间), 含于 $U$, 且在含 $x$ 且含于 $U$ 的开区间中极大.
 
-**断言:** 对 $x,y\in U$, 或者 $I_x=I_y$, 或者 $I_x\cap I_y=\emptyset$. 事实上, 若 $I_x\cap I_y\neq\emptyset$, 则 $I_x\cup I_y$ 是含 $x,y$ 且含于 $U$ 的开区间, 由 $I_x$ 与 $I_y$ 的极大性, $I_x\cup I_y\subset I_x$ 且 $I_x\cup I_y\subset I_y$, 故 $I_x=I_y=I_x\cup I_y$.
+断言: 对 $x,y\in U$, 或者 $I_x=I_y$, 或者 $I_x\cap I_y=\emptyset$. 事实上, 若 $I_x\cap I_y\neq\emptyset$, 则 $I_x\cup I_y$ 是含 $x,y$ 且含于 $U$ 的开区间, 由 $I_x$ 与 $I_y$ 的极大性, $I_x\cup I_y\subset I_x$ 且 $I_x\cup I_y\subset I_y$, 故 $I_x=I_y=I_x\cup I_y$.
 
-**可数性:** 每个 $I_x$ 是非空开区间, 由有理数在实直线上稠密 可取其中一个有理数 $q_x$. 因诸 $I_x$ 互不相交, 不同 $x$ 给出不同 $q_x$, 故 $\left\{I_x:x\in U\right\}$ 与 $\mathbb Q$ 的某子集一一对应, 因而是可数族. 又因每个 $x\in U$ 都含于 $I_x$, 故 $U=\bigcup_{x\in U}I_x$.
+可数性: 每个 $I_x$ 是非空开区间, 由有理数在实直线上稠密 可取其中一个有理数 $q_x$. 因诸 $I_x$ 互不相交, 不同 $x$ 给出不同 $q_x$, 故 $\left\{I_x:x\in U\right\}$ 与 $\mathbb Q$ 的某子集一一对应, 因而是可数族. 又因每个 $x\in U$ 都含于 $I_x$, 故 $U=\bigcup_{x\in U}I_x$.
 
-**端点:** 写 $I_x=\left(a_x,b_x\right)$. 若 $a_x\in U$, 则 $a_x\in I_y$ 对某 $y\in U$. 因 $I_y$ 开, 存在 $\varepsilon> 0$ 使 $\left(a_x-\varepsilon,a_x+\varepsilon\right)\subset I_y\subset U$. 于是 $\left(a_x-\varepsilon,b_x\right)$ 是含 $x$ 且含于 $U$ 的开区间, 它比 $I_x$ 向左更长, 与 $I_x$ 的极大性矛盾. 故 $a_x\notin U$. 同理 $b_x\notin U$.
+端点: 写 $I_x=\left(a_x,b_x\right)$. 若 $a_x\in U$, 则 $a_x\in I_y$ 对某 $y\in U$. 因 $I_y$ 开, 存在 $\varepsilon> 0$ 使 $\left(a_x-\varepsilon,a_x+\varepsilon\right)\subset I_y\subset U$. 于是 $\left(a_x-\varepsilon,b_x\right)$ 是含 $x$ 且含于 $U$ 的开区间, 它比 $I_x$ 向左更长, 与 $I_x$ 的极大性矛盾. 故 $a_x\notin U$. 同理 $b_x\notin U$.
 
-**唯一性:** 若另有分解 $U=\bigcup_{j\in J}J_j$, 其中 $J_j$ 为互不相交开区间. 对每个 $x\in U$, $x$ 属于唯一的 $J_{j\left(x\right)}$. $J_{j\left(x\right)}$ 是含 $x$ 且含于 $U$ 的开区间, 由 $I_x$ 的极大性 $J_{j\left(x\right)}\subset I_x$; 反之, $I_x$ 是含 $x$ 且含于 $U$ 的开区间, 而 $J_{j\left(x\right)}$ 是含 $x$ 的极大连通开块, 故 $I_x\subset J_{j\left(x\right)}$. 因此 $J_{j\left(x\right)}=I_x$, 两分解一致. $\blacksquare$
+唯一性: 若另有分解 $U=\bigcup_{j\in J}J_j$, 其中 $J_j$ 为互不相交开区间. 对每个 $x\in U$, $x$ 属于唯一的 $J_{j\left(x\right)}$. $J_{j\left(x\right)}$ 是含 $x$ 且含于 $U$ 的开区间, 由 $I_x$ 的极大性 $J_{j\left(x\right)}\subset I_x$; 反之, $I_x$ 是含 $x$ 且含于 $U$ 的开区间, 而 $J_{j\left(x\right)}$ 是含 $x$ 的极大连通开块, 故 $I_x\subset J_{j\left(x\right)}$. 因此 $J_{j\left(x\right)}=I_x$, 两分解一致. $\blacksquare$
 
 ## 4.10 ($\mathbb R$ 与 $\mathbb R^2$ 等势但不同胚)
 

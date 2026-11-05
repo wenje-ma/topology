@@ -156,13 +156,13 @@
 
 ### 解答 7.6
 
-**(1)** 令 $\varphi\left(x\right)=1/x$, 则 $\delta\left(x,y\right)=\left|\varphi\left(x\right)-\varphi\left(y\right)\right|$ 由绝对值诱导, 满足**定义 6.35 (度量空间)** 的全部四条公理.
+(1) 令 $\varphi\left(x\right)=1/x$, 则 $\delta\left(x,y\right)=\left|\varphi\left(x\right)-\varphi\left(y\right)\right|$ 由绝对值诱导, 满足**定义 6.35 (度量空间)** 的全部四条公理.
 
-**(2)** $\varphi:\left(0,\infty\right)\to\left(0,\infty\right)$ 在通常拓扑下是同胚 (连续双射, 逆 $x\mapsto1/x$ 连续). $\delta$ 是 $\varphi$ 拉回的通常距离, 故诱导通常拓扑.
+(2) $\varphi:\left(0,\infty\right)\to\left(0,\infty\right)$ 在通常拓扑下是同胚 (连续双射, 逆 $x\mapsto1/x$ 连续). $\delta$ 是 $\varphi$ 拉回的通常距离, 故诱导通常拓扑.
 
-**(3)** 取 $x_n=n$. 则 $\delta\left(x_n,x_m\right)=\left|1/n-1/m\right|\to0$, 是**定义 6.37 (柯西列)**; 但若收敛于 $x\in\left(0,\infty\right)$, 则 $\delta\left(x_n,x\right)\to\left|0-1/x\right|=1/x> 0$, 矛盾. 故它不收敛, $\left(\left(0,\infty\right),\delta\right)$ 不是**定义 6.38 (完备度量空间)**.
+(3) 取 $x_n=n$. 则 $\delta\left(x_n,x_m\right)=\left|1/n-1/m\right|\to0$, 是**定义 6.37 (柯西列)**; 但若收敛于 $x\in\left(0,\infty\right)$, 则 $\delta\left(x_n,x\right)\to\left|0-1/x\right|=1/x> 0$, 矛盾. 故它不收敛, $\left(\left(0,\infty\right),\delta\right)$ 不是**定义 6.38 (完备度量空间)**.
 
-**(4)** 设 $x_n\in\left(0,1\right]$ 是 $\delta$-柯西列. 则 $1/x_n\in\left[1,\infty\right)$ 通常柯西, 由**定义 6.39 (完备化)** (即 $\mathbb R$ 完备), $1/x_n\to L\ge1$. 令 $x=1/L\in\left(0,1\right]$, 则 $\delta\left(x_n,x\right)\to0$. 故 $\left(\left(0,1\right],\delta\right)$ 完备. $\blacksquare$
+(4) 设 $x_n\in\left(0,1\right]$ 是 $\delta$-柯西列. 则 $1/x_n\in\left[1,\infty\right)$ 通常柯西, 由**定义 6.39 (完备化)** (即 $\mathbb R$ 完备), $1/x_n\to L\ge1$. 令 $x=1/L\in\left(0,1\right]$, 则 $\delta\left(x_n,x\right)\to0$. 故 $\left(\left(0,1\right],\delta\right)$ 完备. $\blacksquare$
 
 ## 10.2 ($\mathbb R^n$ 中紧集与闭集的距离可达，$l^\infty$ 中不可达)
 
@@ -174,7 +174,7 @@
 
 ### 解答 7.7
 
-**(1)** 由**定义 6.46 (点到集合的距离)**, $d\left(K,F\right)=\inf_{x\in K,\,y\in F}\left\|x-y\right\|$. 取序列 $x_n\in K$, $y_n\in F$ 使 $\left\|x_n-y_n\right\|\to d\left(K,F\right)$. 由**定理 6.1 (紧 $=$ 序列紧)**, $K$ 紧故 $\left(x_n\right)$ 有收敛子列 $x_{n_j}\to x\in K$. 此时 $\left\|y_{n_j}\right\|\le\left\|y_{n_j}-x_{n_j}\right\|+\left\|x_{n_j}-x\right\|+\left\|x\right\|$ 有界, 故 $y_{n_j}$ 落在某个闭球内; 由**定理 5.3 ($\mathbb R^n$ 中的紧集)** 该闭球闭且有界故紧, 再由**定理 6.1 (紧 $=$ 序列紧)** 抽出子列 $y_{n_{j_k}}\to y$. 因 $F$ 闭, 由**定义 3.21 (闭集)** $y\in F$. 取极限得
+(1) 由**定义 6.46 (点到集合的距离)**, $d\left(K,F\right)=\inf_{x\in K,\,y\in F}\left\|x-y\right\|$. 取序列 $x_n\in K$, $y_n\in F$ 使 $\left\|x_n-y_n\right\|\to d\left(K,F\right)$. 由**定理 6.1 (紧 $=$ 序列紧)**, $K$ 紧故 $\left(x_n\right)$ 有收敛子列 $x_{n_j}\to x\in K$. 此时 $\left\|y_{n_j}\right\|\le\left\|y_{n_j}-x_{n_j}\right\|+\left\|x_{n_j}-x\right\|+\left\|x\right\|$ 有界, 故 $y_{n_j}$ 落在某个闭球内; 由**定理 5.3 ($\mathbb R^n$ 中的紧集)** 该闭球闭且有界故紧, 再由**定理 6.1 (紧 $=$ 序列紧)** 抽出子列 $y_{n_{j_k}}\to y$. 因 $F$ 闭, 由**定义 3.21 (闭集)** $y\in F$. 取极限得
 
 $$
 \left\|x-y\right\|=\lim_{k\to\infty}\left\|x_{n_{j_k}}-y_{n_{j_k}}\right\|=d\left(K,F\right).
@@ -182,7 +182,7 @@ $$
 
 即距离在 $x\in K$, $y\in F$ 处取得.
 
-**(2)** 令 $E=l^\infty$, 范数 $\left\|a\right\|=\sup_n\left|a_n\right|$. 取紧集 $K=\left\{0\right\}$ 与闭集 $F=\left\{y_n=\left(1+2^{-n}\right)e_n:n\ge0\right\}$. 先验证 $F$ 闭: 对 $n\neq m$,
+(2) 令 $E=l^\infty$, 范数 $\left\|a\right\|=\sup_n\left|a_n\right|$. 取紧集 $K=\left\{0\right\}$ 与闭集 $F=\left\{y_n=\left(1+2^{-n}\right)e_n:n\ge0\right\}$. 先验证 $F$ 闭: 对 $n\neq m$,
 
 $$
 \left\|y_n-y_m\right\|=\max\left(1+2^{-n},1+2^{-m}\right)\ge1,
@@ -208,9 +208,9 @@ $$
 
 ### 解答 7.8
 
-**(1)** 设 $\left\{r_1,r_2,\dots\right\}$ 是 $\left[0,1\right]$ 中全体有理数. 固定 $k$, 数列 $\left(f_n\left(r_k\right)\right)_{n\ge1}$ 有界: $\left|f_n\left(r_k\right)\right|\le M$. 由**定理 5.2 (区间紧)**, 有界闭区间 $\left[-M,M\right]$ 紧, 再由**定理 6.1 (紧 $=$ 序列紧)**, $\left(f_n\left(r_1\right)\right)$ 有收敛子列 $\left(f_{n_i^{\left(1\right)}}\left(r_1\right)\right)$. 接着在该子列内取子列使 $\left(f_n\left(r_2\right)\right)$ 收敛; 如此归纳, 得一串嵌套子列 $\left(f_{n_i^{\left(k\right)}}\right)$ 使第 $k$ 个子列在 $r_1,\dots,r_k$ 处都收敛. 对角线子列 $g_i=f_{n_i^{\left(i\right)}}$ 是每个嵌套子列的尾部, 故在每个有理点 $r_k$ 处收敛.
+(1) 设 $\left\{r_1,r_2,\dots\right\}$ 是 $\left[0,1\right]$ 中全体有理数. 固定 $k$, 数列 $\left(f_n\left(r_k\right)\right)_{n\ge1}$ 有界: $\left|f_n\left(r_k\right)\right|\le M$. 由**定理 5.2 (区间紧)**, 有界闭区间 $\left[-M,M\right]$ 紧, 再由**定理 6.1 (紧 $=$ 序列紧)**, $\left(f_n\left(r_1\right)\right)$ 有收敛子列 $\left(f_{n_i^{\left(1\right)}}\left(r_1\right)\right)$. 接着在该子列内取子列使 $\left(f_n\left(r_2\right)\right)$ 收敛; 如此归纳, 得一串嵌套子列 $\left(f_{n_i^{\left(k\right)}}\right)$ 使第 $k$ 个子列在 $r_1,\dots,r_k$ 处都收敛. 对角线子列 $g_i=f_{n_i^{\left(i\right)}}$ 是每个嵌套子列的尾部, 故在每个有理点 $r_k$ 处收敛.
 
-**(2)** 固定 $x\in\left[0,1\right]$ 与 $\varepsilon> 0$. 由 $\left|g_n'\left(t\right)\right|\le M$ 与拉格朗日中值定理, $\left|g_n\left(x\right)-g_n\left(r\right)\right|\le M\left|x-r\right|$. 取有理点 $r$ 使 $\left|x-r\right|< \varepsilon/\left(3M\right)$. 则
+(2) 固定 $x\in\left[0,1\right]$ 与 $\varepsilon> 0$. 由 $\left|g_n'\left(t\right)\right|\le M$ 与拉格朗日中值定理, $\left|g_n\left(x\right)-g_n\left(r\right)\right|\le M\left|x-r\right|$. 取有理点 $r$ 使 $\left|x-r\right|< \varepsilon/\left(3M\right)$. 则
 
 $$
 \left|g_n\left(x\right)-g_m\left(x\right)\right|\le\left|g_n\left(x\right)-g_n\left(r\right)\right|+\left|g_n\left(r\right)-g_m\left(r\right)\right|+\left|g_m\left(r\right)-g_m\left(x\right)\right|.
@@ -218,7 +218,7 @@ $$
 
 由有理点处收敛, $\left(g_n\left(r\right)\right)$ 是**定义 6.37 (柯西列)**, 对充分大的 $n,m$ 中间项 $< \varepsilon/3$; 两端各 $< \varepsilon/3$. 故 $\left|g_n\left(x\right)-g_m\left(x\right)\right|< \varepsilon$, 即 $\left(g_n\left(x\right)\right)$ 是柯西列. 由**定义 6.39 (完备化)** (即 $\mathbb R$ 完备), 逐点极限 $g\left(x\right)$ 存在.
 
-**(3)** 由**定理 5.2 (区间紧)** 与**定理 6.1 (紧 $=$ 序列紧)**, $\left[0,1\right]$ 可被有限个有理点 $r^{\left(1\right)},\dots,r^{\left(L\right)}$ 的邻域覆盖, 使每个 $x$ 到某 $r^{\left(j\right)}$ 的距离 $< \varepsilon/\left(3M\right)$. 对这有限个有理点, 由收敛性可取公共的 $N$, 使 $n\ge N$ 时 $\left|g_n\left(r^{\left(j\right)}\right)-g\left(r^{\left(j\right)}\right)\right|< \varepsilon/3$ 对一切 $j$ 成立. 又由 $\left|g_n'\right|\le M$ 取极限得 $\left|g\left(x\right)-g\left(r^{\left(j\right)}\right)\right|\le M\left|x-r^{\left(j\right)}\right|< \varepsilon/3$. 于是对任意 $x$,
+(3) 由**定理 5.2 (区间紧)** 与**定理 6.1 (紧 $=$ 序列紧)**, $\left[0,1\right]$ 可被有限个有理点 $r^{\left(1\right)},\dots,r^{\left(L\right)}$ 的邻域覆盖, 使每个 $x$ 到某 $r^{\left(j\right)}$ 的距离 $< \varepsilon/\left(3M\right)$. 对这有限个有理点, 由收敛性可取公共的 $N$, 使 $n\ge N$ 时 $\left|g_n\left(r^{\left(j\right)}\right)-g\left(r^{\left(j\right)}\right)\right|< \varepsilon/3$ 对一切 $j$ 成立. 又由 $\left|g_n'\right|\le M$ 取极限得 $\left|g\left(x\right)-g\left(r^{\left(j\right)}\right)\right|\le M\left|x-r^{\left(j\right)}\right|< \varepsilon/3$. 于是对任意 $x$,
 
 $$
 \left|g_n\left(x\right)-g\left(x\right)\right|\le\left|g_n\left(x\right)-g_n\left(r^{\left(j\right)}\right)\right|+\left|g_n\left(r^{\left(j\right)}\right)-g\left(r^{\left(j\right)}\right)\right|+\left|g\left(r^{\left(j\right)}\right)-g\left(x\right)\right|< \varepsilon.
@@ -336,9 +336,9 @@ $$
 
 ### 解答 7.17
 
-**(1)** 取序列 $a_n+b_n\in A+B$ 收敛到 $y$. 由**定理 6.1 (紧 $=$ 序列紧)**, $A$ 紧, 故 $\left(a_n\right)$ 有子列 $a_{n_j}\to a\in A$. 则 $b_{n_j}=\left(a_{n_j}+b_{n_j}\right)-a_{n_j}\to y-a$. 因 $B$ 闭, 由**定义 3.21 (闭集)**, $y-a\in B$. 故 $y=a+\left(y-a\right)\in A+B$. $A+B$ 含一切收敛序列的极限, 故闭.
+(1) 取序列 $a_n+b_n\in A+B$ 收敛到 $y$. 由**定理 6.1 (紧 $=$ 序列紧)**, $A$ 紧, 故 $\left(a_n\right)$ 有子列 $a_{n_j}\to a\in A$. 则 $b_{n_j}=\left(a_{n_j}+b_{n_j}\right)-a_{n_j}\to y-a$. 因 $B$ 闭, 由**定义 3.21 (闭集)**, $y-a\in B$. 故 $y=a+\left(y-a\right)\in A+B$. $A+B$ 含一切收敛序列的极限, 故闭.
 
-**(2)** 反例: 取 $A=\left\{\left(x,0\right):x\in\mathbb R\right\}$, $B=\left\{\left(x,1/x\right):x> 0\right\}$. $A$ 与 $B$ 都闭. 但
+(2) 反例: 取 $A=\left\{\left(x,0\right):x\in\mathbb R\right\}$, $B=\left\{\left(x,1/x\right):x> 0\right\}$. $A$ 与 $B$ 都闭. 但
 
 $$
 A+B=\left\{\left(x+t,1/t\right):t> 0\right\}=\left\{\left(u,v\right):v> 0\right\},
@@ -354,9 +354,9 @@ $$
 
 $\widehat d$ 适定: 若 $\left[x_n\right]=\left[x_n'\right]$, $\left[y_n\right]=\left[y_n'\right]$, 则 $d\left(x_n,y_n\right)-d\left(x_n',y_n'\right)$ 由三角不等式趋于 $0$, 极限与代表元无关. 由**定义 6.35 (度量空间)**, $\widehat d$ 满足四公理. 这里等价关系中出现的 $\left\{x_n\right\}$ 是**定义 6.37 (柯西列)** 意义下的柯西列.
 
-**完备**: 设 $\left\{\xi_k\right\}$ 是 $\widehat M$ 中柯西列, $\xi_k=\left[\left(x_n^{\left(k\right)}\right)_n\right]$. 对每个 $k$, 取代表列使其前 $k$ 项稳定逼近; 对角化取 $z_k=x_k^{\left(k\right)}$. 由柯西性与三角不等式, $\left(z_k\right)$ 是 $M$ 中柯西列, 记其等价类为 $\xi$. 则 $\xi_k\to\xi$. 由**定义 6.38 (完备度量空间)**, $\widehat M$ 完备.
+完备: 设 $\left\{\xi_k\right\}$ 是 $\widehat M$ 中柯西列, $\xi_k=\left[\left(x_n^{\left(k\right)}\right)_n\right]$. 对每个 $k$, 取代表列使其前 $k$ 项稳定逼近; 对角化取 $z_k=x_k^{\left(k\right)}$. 由柯西性与三角不等式, $\left(z_k\right)$ 是 $M$ 中柯西列, 记其等价类为 $\xi$. 则 $\xi_k\to\xi$. 由**定义 6.38 (完备度量空间)**, $\widehat M$ 完备.
 
-**稠密嵌入**: 映射 $i:M\to\widehat M$, $i\left(x\right)=\left[\left(x,x,\dots\right)\right]$. 任意 $\xi=\left[\left(x_n\right)\right]\in\widehat M$, $x_n\to\xi$ 在 $\widehat M$ 中, 而 $x_n\in i\left(M\right)$. 故 $i\left(M\right)$ 的闭包为全空间, 由**定义 3.32 (稠密)** $M$ 在 $\widehat M$ 中稠密. 由**定义 6.39 (完备化)**, 这就是 $M$ 的完备化. $\blacksquare$
+稠密嵌入: 映射 $i:M\to\widehat M$, $i\left(x\right)=\left[\left(x,x,\dots\right)\right]$. 任意 $\xi=\left[\left(x_n\right)\right]\in\widehat M$, $x_n\to\xi$ 在 $\widehat M$ 中, 而 $x_n\in i\left(M\right)$. 故 $i\left(M\right)$ 的闭包为全空间, 由**定义 3.32 (稠密)** $M$ 在 $\widehat M$ 中稠密. 由**定义 6.39 (完备化)**, 这就是 $M$ 的完备化. $\blacksquare$
 
 ## 10.14 (有界连续函数空间 $C_b\left(X,Y\right)$ 完备)
 
@@ -386,9 +386,9 @@ $\widehat d$ 适定: 若 $\left[x_n\right]=\left[x_n'\right]$, $\left[y_n\right]
 
 ### 解答 7.21
 
-**第 (1) 小题.**
+第 (1) 小题.
 
-**($\Rightarrow$)** 设 $E$ 中每个绝对收敛级数都收敛. 取**定义 6.37 (柯西列)** $\left(x_n\right)$. 由柯西性, 可选子列 $x_{n_k}$ 使 $\left\|x_{n_{k+1}}-x_{n_k}\right\|< 2^{-k}$. 则
+($\Rightarrow$) 设 $E$ 中每个绝对收敛级数都收敛. 取**定义 6.37 (柯西列)** $\left(x_n\right)$. 由柯西性, 可选子列 $x_{n_k}$ 使 $\left\|x_{n_{k+1}}-x_{n_k}\right\|< 2^{-k}$. 则
 
 $$
 \sum_{k=1}^{\infty}\left\|x_{n_{k+1}}-x_{n_k}\right\|< \sum_{k=1}^{\infty}2^{-k}< \infty,
@@ -396,7 +396,7 @@ $$
 
 即 $\sum_k\left(x_{n_{k+1}}-x_{n_k}\right)$ 绝对收敛, 由假设收敛. 其部分和即 $x_{n_{k+1}}-x_{n_1}$, 故子列 $x_{n_k}$ 收敛. 由柯西列含收敛子列则全列收敛, 全列 $x_n$ 收敛. 故 $E$ 完备.
 
-**($\Leftarrow$)** 设 $E$ 完备, $\sum_n\left\|x_n\right\|< \infty$. 部分和 $S_N=\sum_{n=1}^N x_n$ 满足对 $M> N$,
+($\Leftarrow$) 设 $E$ 完备, $\sum_n\left\|x_n\right\|< \infty$. 部分和 $S_N=\sum_{n=1}^N x_n$ 满足对 $M> N$,
 
 $$
 \left\|S_M-S_N\right\|=\left\|\sum_{n=N+1}^M x_n\right\|\le\sum_{n=N+1}^M\left\|x_n\right\|\to0,
@@ -404,4 +404,4 @@ $$
 
 故 $\left(S_N\right)$ 是**定义 6.37 (柯西列)**. 由**定义 6.38 (完备度量空间)**, $S_N$ 收敛, 即级数收敛.
 
-**第 (2) 小题.** 取 $E=C\left(\left[0,1\right]\right)$ 装备 $L^1$ 范数 $\left\|f\right\|_1=\int_0^1\left|f\left(t\right)\right|\,\mathrm dt$, 它不完备. 构造折线函数列 $f_n$, 使 $f_n$ 从 $0$ 线性升到 $1$ 的区间长度为 $1/n$. 则 $\sum_n\left\|f_n\right\|_1< \infty$ (每段面积 $\le1/n$), 但 $\sum_n f_n$ 在 $\left(0,1\right)$ 上无界, 不作为连续函数存在. 故绝对收敛但不收敛于 $E$ 中. $\blacksquare$
+第 (2) 小题. 取 $E=C\left(\left[0,1\right]\right)$ 装备 $L^1$ 范数 $\left\|f\right\|_1=\int_0^1\left|f\left(t\right)\right|\,\mathrm dt$, 它不完备. 构造折线函数列 $f_n$, 使 $f_n$ 从 $0$ 线性升到 $1$ 的区间长度为 $1/n$. 则 $\sum_n\left\|f_n\right\|_1< \infty$ (每段面积 $\le1/n$), 但 $\sum_n f_n$ 在 $\left(0,1\right)$ 上无界, 不作为连续函数存在. 故绝对收敛但不收敛于 $E$ 中. $\blacksquare$

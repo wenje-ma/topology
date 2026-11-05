@@ -162,7 +162,7 @@
 
 由**定义 6.24 (拓扑向量空间)**, $E,F,G$ 的加法与数乘连续; 由**定义 6.20 (赋范线性空间)**, 其上装备范数, $L\left(E,F\right)$ 为连续线性映射全体.
 
-**右复合**: 由**定义 6.28 (算子范数)**, 对 $g\in L\left(F,G\right)$ 与 $x\in E$, $g\circ f$ 作为复合映射由**定理 3.1 (复合连续)** 连续, 且
+右复合: 由**定义 6.28 (算子范数)**, 对 $g\in L\left(F,G\right)$ 与 $x\in E$, $g\circ f$ 作为复合映射由**定理 3.1 (复合连续)** 连续, 且
 
 $$
 \left\|g\circ f\left(x\right)\right\|\le\left\|g\right\|\cdot\left\|f\left(x\right)\right\|\le\left\|g\right\|\cdot\left\|f\right\|\cdot\left\|x\right\|.
@@ -170,9 +170,9 @@ $$
 
 两边除以 $\left\|x\right\|$ 并取上确界, 得 $\left\|g\circ f\right\|\le\left\|g\right\|\left\|f\right\|$. 于是 $\left\|R_f\left(g\right)\right\|\le\left\|f\right\|\left\|g\right\|$, 即 $\left\|R_f\right\|\le\left\|f\right\|$.
 
-**左复合**: 同理, $L_f:g\mapsto f\circ g$ ($g\in L\left(G,E\right)$, $f\in L\left(E,F\right)$), 有 $\left\|f\circ g\right\|\le\left\|f\right\|\left\|g\right\|$, 故 $\left\|L_f\right\|\le\left\|f\right\|$.
+左复合: 同理, $L_f:g\mapsto f\circ g$ ($g\in L\left(G,E\right)$, $f\in L\left(E,F\right)$), 有 $\left\|f\circ g\right\|\le\left\|f\right\|\left\|g\right\|$, 故 $\left\|L_f\right\|\le\left\|f\right\|$.
 
-**等距线性同构**: 映射 $x\mapsto\varphi_x$, $\varphi_x\left(t\right)=tx$. 线性显然. 由**定义 6.28 (算子范数)**,
+等距线性同构: 映射 $x\mapsto\varphi_x$, $\varphi_x\left(t\right)=tx$. 线性显然. 由**定义 6.28 (算子范数)**,
 
 $$
 \left\|\varphi_x\right\|=\sup_{\left\|t\right\|\le1}\left\|tx\right\|=\sup_{\left\|t\right\|\le1}\left|t\right|\cdot\left\|x\right\|=\left\|x\right\|.
@@ -194,11 +194,11 @@ $$
 
 它是 $x_0$ 加上有限个超平面交 (即无穷维仿射子空间) 的 $\varepsilon$-管.
 
-**强 $\neq$ 弱**: 在无穷维, 任意弱开邻域 $U$ 都含一个无穷维仿射子空间, 故不可能含于一个强有界集; 特别地强开单位球不是弱开的. 故弱拓扑严格粗于强拓扑.
+强 $\neq$ 弱: 在无穷维, 任意弱开邻域 $U$ 都含一个无穷维仿射子空间, 故不可能含于一个强有界集; 特别地强开单位球不是弱开的. 故弱拓扑严格粗于强拓扑.
 
-**开单位球的弱内部**: 弱开邻域含无穷维仿射子空间, 因而其中有无界点, 不可能含于有界开单位球. 故弱拓扑下开单位球的内部为 $\emptyset$.
+开单位球的弱内部: 弱开邻域含无穷维仿射子空间, 因而其中有无界点, 不可能含于有界开单位球. 故弱拓扑下开单位球的内部为 $\emptyset$.
 
-**单位球面的弱闭包**: 由**定理 6.50 (哈恩-巴拿赫定理)**, 任意 $x_0$ 满足 $\left\|x_0\right\|\le1$ 都可被球面中点弱逼近: 若 $\left\|x_0\right\|< 1$, 沿任意方向取小步长即可进入球面; 若 $\left\|x_0\right\|=1$, $x_0$ 本身在球面上. 反之弱闭包不能超出闭单位球 (范数是弱下半连续的). 故弱闭包等于闭单位球 $\left\{x:\left\|x\right\|\le1\right\}$. $\blacksquare$
+单位球面的弱闭包: 由**定理 6.50 (哈恩-巴拿赫定理)**, 任意 $x_0$ 满足 $\left\|x_0\right\|\le1$ 都可被球面中点弱逼近: 若 $\left\|x_0\right\|< 1$, 沿任意方向取小步长即可进入球面; 若 $\left\|x_0\right\|=1$, $x_0$ 本身在球面上. 反之弱闭包不能超出闭单位球 (范数是弱下半连续的). 故弱闭包等于闭单位球 $\left\{x:\left\|x\right\|\le1\right\}$. $\blacksquare$
 
 ## 12.3 (弱星拓扑总是豪斯多夫)
 
@@ -214,9 +214,9 @@ $$
 
 ### 解答 8.11
 
-**粗于弱星拓扑**: 由**定义 6.31 (弱星拓扑)**, 弱星拓扑由全部 $x\in E$ 的赋值诱导. 本题初始拓扑仅用 $x\in D\subset E$. 映射更少, 由**定义 3.14 (初始拓扑)** 的"最粗性", 用较少映射得到的拓扑粗于用全部映射得到的弱星拓扑.
+粗于弱星拓扑: 由**定义 6.31 (弱星拓扑)**, 弱星拓扑由全部 $x\in E$ 的赋值诱导. 本题初始拓扑仅用 $x\in D\subset E$. 映射更少, 由**定义 3.14 (初始拓扑)** 的"最粗性", 用较少映射得到的拓扑粗于用全部映射得到的弱星拓扑.
 
-**稠密 $D$ 时在有界集上相同**: 设 $B\subset E^*$ 有界, 即 $\sup_{\varphi\in B}\left\|\varphi\right\|< \infty$. 已知弱星 $\Rightarrow$ 初始方向 (上一问). 反之, 设网 $\left\{\varphi_\alpha\right\}\subset B$ 在初始拓扑下收敛到 $\varphi\in B$, 即对每个 $x\in D$, $\varphi_\alpha\left(x\right)\to\varphi\left(x\right)$. 任取 $y\in E$, 由 $D$ 稠密取 $x_n\in D\to y$. 对 $\varepsilon> 0$, 取 $x_n$ 使 $\left\|y-x_n\right\|< \varepsilon/\left(\sup_B\left\|\varphi_\alpha\right\|+\sup_B\left\|\varphi\right\|+1\right)$. 则
+稠密 $D$ 时在有界集上相同: 设 $B\subset E^*$ 有界, 即 $\sup_{\varphi\in B}\left\|\varphi\right\|< \infty$. 已知弱星 $\Rightarrow$ 初始方向 (上一问). 反之, 设网 $\left\{\varphi_\alpha\right\}\subset B$ 在初始拓扑下收敛到 $\varphi\in B$, 即对每个 $x\in D$, $\varphi_\alpha\left(x\right)\to\varphi\left(x\right)$. 任取 $y\in E$, 由 $D$ 稠密取 $x_n\in D\to y$. 对 $\varepsilon> 0$, 取 $x_n$ 使 $\left\|y-x_n\right\|< \varepsilon/\left(\sup_B\left\|\varphi_\alpha\right\|+\sup_B\left\|\varphi\right\|+1\right)$. 则
 
 $$
 \left|\varphi_\alpha\left(y\right)-\varphi\left(y\right)\right|\le\left|\varphi_\alpha\left(y-x_n\right)\right|+\left|\varphi_\alpha\left(x_n\right)-\varphi\left(x_n\right)\right|+\left|\varphi\left(x_n-y\right)\right|.
@@ -248,9 +248,9 @@ $$
 
 由**定义 6.27 (规范函数)**, $\left\|x\right\|_C=\inf\left\{t> 0:x\in tC\right\}$. 由假设 $C$ 吸收 (凸邻域在拓扑向量空间中吸收, 即对任意 $x$ 存在 $t> 0$ 使 $x\in tC$), 下确界有限.
 
-**齐次**: $\left\|\lambda x\right\|_C=\inf\left\{t> 0:\lambda x\in tC\right\}=\inf\left\{t> 0:x\in\left(t/\left|\lambda\right|\right)C\right\}$ (设 $C$ 平衡, 即 $\lambda C=C$ 对 $\left|\lambda\right|=1$; 否则取 $C$ 为平衡凸邻域). 等于 $\left|\lambda\right|\left\|x\right\|_C$.
+齐次: $\left\|\lambda x\right\|_C=\inf\left\{t> 0:\lambda x\in tC\right\}=\inf\left\{t> 0:x\in\left(t/\left|\lambda\right|\right)C\right\}$ (设 $C$ 平衡, 即 $\lambda C=C$ 对 $\left|\lambda\right|=1$; 否则取 $C$ 为平衡凸邻域). 等于 $\left|\lambda\right|\left\|x\right\|_C$.
 
-**三角不等式**: 设 $\left\|x\right\|_C< a$, $\left\|y\right\|_C< b$, 则 $x\in aC$, $y\in bC$. 由**定义 4.23 (凸集)**,
+三角不等式: 设 $\left\|x\right\|_C< a$, $\left\|y\right\|_C< b$, 则 $x\in aC$, $y\in bC$. 由**定义 4.23 (凸集)**,
 
 $$
 \frac{x+y}{a+b}=\frac{a}{a+b}\cdot\frac{x}{a}+\frac{b}{a+b}\cdot\frac{y}{b}\in C.
@@ -314,9 +314,9 @@ $$
 
 由**定义 6.20 (赋范线性空间)**, 设 $T:E\to F$ 线性.
 
-**($\Rightarrow$)** 若 $T$ 连续, 则 $T$ 在 $0$ 连续, 故存在 $\delta> 0$ 使 $\left\|x\right\|< \delta$ 时 $\left\|Tx\right\|\le1$. 对任意 $x\neq0$, 令 $y=\frac{\delta}{2\left\|x\right\|}x$, 则 $\left\|y\right\|< \delta$, $\left\|Ty\right\|\le1$, 由线性性 $\left\|Tx\right\|=\frac{2\left\|x\right\|}{\delta}\left\|Ty\right\|\le\frac{2}{\delta}\left\|x\right\|$. 故 $\sup_{\left\|x\right\|\le1}\left\|Tx\right\|\le2/\delta< \infty$, 即 $T$ 有界.
+($\Rightarrow$) 若 $T$ 连续, 则 $T$ 在 $0$ 连续, 故存在 $\delta> 0$ 使 $\left\|x\right\|< \delta$ 时 $\left\|Tx\right\|\le1$. 对任意 $x\neq0$, 令 $y=\frac{\delta}{2\left\|x\right\|}x$, 则 $\left\|y\right\|< \delta$, $\left\|Ty\right\|\le1$, 由线性性 $\left\|Tx\right\|=\frac{2\left\|x\right\|}{\delta}\left\|Ty\right\|\le\frac{2}{\delta}\left\|x\right\|$. 故 $\sup_{\left\|x\right\|\le1}\left\|Tx\right\|\le2/\delta< \infty$, 即 $T$ 有界.
 
-**($\Leftarrow$)** 若 $T$ 有界, 即 $\left\|Tx\right\|\le M\left\|x\right\|$ 对一切 $x$. 则对任意 $\varepsilon> 0$, 取 $\delta=\varepsilon/M$, 当 $\left\|x-y\right\|< \delta$ 时 $\left\|Tx-Ty\right\|=\left\|T\left(x-y\right)\right\|\le M\left\|x-y\right\|< \varepsilon$. 由**定义 6.28 (算子范数)** 的定义, $T$ 连续. $\blacksquare$
+($\Leftarrow$) 若 $T$ 有界, 即 $\left\|Tx\right\|\le M\left\|x\right\|$ 对一切 $x$. 则对任意 $\varepsilon> 0$, 取 $\delta=\varepsilon/M$, 当 $\left\|x-y\right\|< \delta$ 时 $\left\|Tx-Ty\right\|=\left\|T\left(x-y\right)\right\|\le M\left\|x-y\right\|< \varepsilon$. 由**定义 6.28 (算子范数)** 的定义, $T$ 连续. $\blacksquare$
 
 ## 12.13 ($\mathbb R\left[X\right]$ 上使 $X^n\to0$ 的范数)
 
