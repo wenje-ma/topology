@@ -218,7 +218,7 @@ $$
 
 (4) $\Gamma$ 连通故是区间; 闭包 $\overline\Gamma$ 也是区间 (连通集的闭包仍连通); $f'\left(I\right)$ 夹在二者之间, 故 $f'\left(I\right)$ 是区间. $\blacksquare$
 
-## 6.4 (商映射保持连通性、路径连通性与局部连通性)
+## 6.4 (商映射保持连通性, 路径连通性与局部连通性)
 
 设 $X$ 是拓扑空间, $\pi:X\to{Y}$ 是商映射, $Y$ 配以由 $\pi$ 诱导的商拓扑.
 
@@ -290,7 +290,7 @@ $$
 
 定义路径 $\gamma:\left[0,1\right]\to{E}$: 在 $t\in\left[1/\left(k+1\right),1/k\right]$ 上, $\gamma$ 沿直线段从 $x_{k+1}$ 走到 $x_k$, 并令 $\gamma\left(0\right)=-e$. 因 $x_n\to-e$, 该折线在 $0$ 处连续. 对 $t>0$, $\gamma\left(t\right)\in{e}+H$, 故 $\varphi\left(\gamma\left(t\right)\right)=1$; 而 $\varphi\left(\gamma\left(0\right)\right)=\varphi\left(-e\right)=-1$. 故 $\gamma$ 全段在 $E\setminus{H}$ 中, 从 $-e$ 连到 $e$. 由**定义 4.22 (路径连通)**, $H^{-}$ 与 $H^{+}$ 各自道路连通, 任意两点可经 $-e\to{e}$ 折线互相连通. 故 $E\setminus{H}$ 道路连通. $\blacksquare$
 
-## 6.8 (不动点性质、截面连通与 $\left[0,1\right]$ 上映射的不动点)
+## 6.8 (不动点性质, 截面连通与 $\left[0,1\right]$ 上映射的不动点)
 
 (7.2 连通性)
 

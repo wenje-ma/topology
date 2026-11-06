@@ -80,7 +80,7 @@
 
 > **定义 3.28 (扎里斯基拓扑)**
 > 
-> 设 $K$ 为域, $\mathbb{A}^n\left(K\right)=K^n$. 扎里斯基闭集是一族多项式 $\left(P_i\right)_{i\in{I}}$ 的公共零点集 $\left\{x\in\mathbb{A}^n\left(K\right):\forall{i}\in{I},\,P_i\left(x\right)=0\right\}$. (题集 $\S1.4$)
+> 设 $K$ 为域, $\mathbb{A}^n\left(K\right)=K^n$. 扎里斯基闭集是一族多项式 $\left(P_i\right)_{i\in{I}}$ 的公共零点集 $\left\{x\in\mathbb{A}^n\left(K\right):\forall{i}\in{I},P_i\left(x\right)=0\right\}$. (题集 $\S1.4$)
 
 > **定义 3.29 (由子集族生成的拓扑)**
 > 
@@ -236,7 +236,7 @@ $$
 
 任取 $x,y\in{X}$ 且 $x\neq{y}$. $Y$ 中含 $x$ 的开集形如 $O\cup\left\{\omega\right\}$ 且 $x\in{O}$; $Y$ 中含 $y$ 的开集同理形如 $O'\cup\left\{\omega\right\}$ 且 $y\in{O}'$. 而两邻域含 $\omega$ 必相交. 故 $X$ 中任两点在 $Y$ 中没有不相交的邻域. $\blacksquare$
 
-## 2.3 (超度量的球、球面与球族结构)
+## 2.3 (超度量的球, 球面与球族结构)
 
 回忆距离 $d:X\times{X}\to\mathbb{R}_{\ge0}$ 满足四条公理. 超度量是将三角不等式加强为 $d\left(x,z\right)\le\max\left(d\left(x,y\right),d\left(y,z\right)\right)$ 的距离 (例如通常的 $p$-进度量). 设 $d$ 是超度量, 证明:
 
@@ -304,7 +304,7 @@ $$
 
 由**定义 6.36 (开球)**, 任何含 $0$ 的开球都含非零点, 故 $\left\{0\right\}$ 不含任何开球, 不是开集. $\blacksquare$
 
-## 2.6 (原像与并、交交换，而直接像不然)
+## 2.6 (原像与并, 交交换，而直接像不然)
 
 回忆函数的原像. 证明原像运算与并运算, 交运算可交换. 那直接像呢?
 
@@ -343,7 +343,7 @@ $$
 具体构造: 令
 
 $$
-\operatorname{span}\left(\mathcal{F}\right)=\left\{\sum_{k=1}^{m}c_kv_{\alpha_k}:m\ge1,\,c_k\text{~为域中元素},\,v_{\alpha_k}\in\mathcal{F}\right\},
+\operatorname{span}\left(\mathcal{F}\right)=\left\{\sum_{k=1}^{m}c_kv_{\alpha_k}:m\ge1,c_k\text{~为域中元素},v_{\alpha_k}\in\mathcal{F}\right\},
 $$
 
 即 $\mathcal{F}$ 中元素的有限线性组合全体. 它本身是包含 $\mathcal{F}$ 的向量子空间, 故含于抽象构造. 反之, 任何包含 $\mathcal{F}$ 的向量子空间对线性组合封闭, 故包含全部有限线性组合, 因而抽象构造 (一切子空间之交) 也含于该具体集合. 两者相等. $\blacksquare$
@@ -368,7 +368,7 @@ $$
 
 由**定义 3.29 (由子集族生成的拓扑)**, 给定子集族 $\mathcal{S}\subset\mathcal{P}\left(X\right)$, 它生成的拓扑即包含 $\mathcal{S}$ 的最粗拓扑, 存在且等于一切包含 $\mathcal{S}$ 的拓扑之交. 其具体构造为: 先取 $\mathcal{S}$ 中元素的有限交 (约定空交为 $X$), 再取这些有限交的任意并 (约定空并为 $\emptyset$). 所得族 $\tau$ 确实是拓扑: $\emptyset,X\in\tau$; 任意并仍是任意并; 两个有限交的有限交仍是有限交, 故有限交封闭; 由**定义 3.18 (拓扑空间)** $\tau$ 是拓扑. 它包含 $\mathcal{S}$ (每个 $S\in\mathcal{S}$ 是单元素族的有限交). 反之, 任何包含 $\mathcal{S}$ 的拓扑由**定义 3.18 (拓扑空间)** 对有限交与任意并封闭, 必包含 $\tau$ 的全部元素, 故 $\tau$ 是最粗的. $\blacksquare$
 
-## 2.10 (初始拓扑、最终拓扑与包含映射的例子)
+## 2.10 (初始拓扑, 最终拓扑与包含映射的例子)
 
 证明: 若 $f:X\to\left(Y,\mathcal{O}\right)$ 是到拓扑空间 $Y$ 的映射, 则集合族 $\left\{f^{-1}\left(O\right):O\in\mathcal{O}\right\}$ 在 $X$ 上定义一个拓扑. 证明它是使 $f$ 连续的最粗拓扑, 即初始拓扑. 研究 $f$ 为包含映射的情形, 例如 $f:\mathbb{R}\to\mathbb{R}^2$, 其中 $\mathbb{R}^2$ 装备欧氏拓扑. 反过来, 能否把 $X$ 上的拓扑前推, 在 $Y$ 上定义所谓最终拓扑?
 
@@ -396,7 +396,7 @@ $\emptyset$ 与 $X$ 开; 任意并 $\bigcup_i\left(X\setminus{F}_i\right)=X\setm
 
 最后, 设 $x_n\in{A}$ 且 $x_n\to2$. 令 $C=\left\{x_n:n\ge1\right\}$, 它可数. 则 $U=\mathbb{R}\setminus{C}$ 是余可数开集, 含 $2$, 但不含任何 $x_n$. 由**定义 3.25 (邻域与极限)**, 这与 $x_n\to2$ 矛盾. 故 $A$ 中没有序列收敛到 $2$. $\blacksquare$
 
-## 2.12 (扎里斯基拓扑、扎里斯基开集的稠密性与闭包)
+## 2.12 (扎里斯基拓扑, 扎里斯基开集的稠密性与闭包)
 
 设 $K$ 为域, $n\in\mathbb{N}$ 为非负整数, $\mathbb{A}^n\left(K\right)=K^n$. $\mathbb{A}^n\left(K\right)$ 中扎里斯基闭集形如 $F=\left\{x\in\mathbb{A}^n\left(K\right):\forall{i}\in{I},P_i\left(x\right)=0\right\}$, 其中 $\left(P_i\right)_{i\in{I}}$ 是一族多项式. 证明这确实定义了一个拓扑 (即扎里斯基拓扑). 证明 $\mathbb{R}^2$ 中扎里斯基开集在 $\mathbb{R}^2$ 中稠密. 求 $\left\{\left(0,\frac1{2^n}\right):n\ge0\right\}\subset\mathbb{R}^2$ 的扎里斯基闭包.
 

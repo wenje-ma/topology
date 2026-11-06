@@ -132,7 +132,7 @@
 
 > **定义 6.48 (豪斯多夫距离)**
 > 
-> $d\left(A,B\right)=\inf\left\{r>0:A\subset{U}_r\left(B\right),\,B\subset{U}_r\left(A\right)\right\}$; 在紧子集族 $\mathcal{K}\left(X\right)$ 上是真度量. (题集 $\S3.2$)
+> $d\left(A,B\right)=\inf\left\{r>0:A\subset{U}_r\left(B\right),B\subset{U}_r\left(A\right)\right\}$; 在紧子集族 $\mathcal{K}\left(X\right)$ 上是真度量. (题集 $\S3.2$)
 
 > **定义 6.49 (等距映射)**
 > 
@@ -168,13 +168,13 @@
 
 设 $E=\mathbb{R}^n$ 装备通常拓扑, $K$ 是 $E$ 中的紧集, $F$ 是 $E$ 中的闭集.
 
-(1) 证明存在 $x\in{K}$ 与 $y\in{F}$ 使 $d\left(K,F\right)=d\left(x,y\right)$, 其中 $d\left(K,F\right)=\inf_{x\in{K},\,y\in{F}}d\left(x,y\right)$;
+(1) 证明存在 $x\in{K}$ 与 $y\in{F}$ 使 $d\left(K,F\right)=d\left(x,y\right)$, 其中 $d\left(K,F\right)=\inf_{x\in{K},y\in{F}}d\left(x,y\right)$;
 
 (2) 举例说明把 $E$ 换成 $l^\infty$ 后结论不成立. 可考虑 $F=\left\{\left(1+2^{-n}\right)e_n\right\}_{n\ge0}$, 其中 $e_n$ 是第 $n$ 位为 $1$ 其余为 $0$ 的序列.
 
 ### 解答 7.7
 
-(1) 由**定义 6.46 (点到集合的距离)**, $d\left(K,F\right)=\inf_{x\in{K},\,y\in{F}}\left\|x-y\right\|$. 取序列 $x_n\in{K}$, $y_n\in{F}$ 使 $\left\|x_n-y_n\right\|\to{d}\left(K,F\right)$. 由**定理 6.1 (紧 $=$ 序列紧)**, $K$ 紧故 $\left(x_n\right)$ 有收敛子列 $x_{n_j}\to{x}\in{K}$. 此时 $\left\|y_{n_j}\right\|\le\left\|y_{n_j}-x_{n_j}\right\|+\left\|x_{n_j}-x\right\|+\left\|x\right\|$ 有界, 故 $y_{n_j}$ 落在某个闭球内; 由**定理 5.3 ($\mathbb{R}^n$ 中的紧集)** 该闭球闭且有界故紧, 再由**定理 6.1 (紧 $=$ 序列紧)** 抽出子列 $y_{n_{j_k}}\to{y}$. 因 $F$ 闭, 由**定义 3.21 (闭集)** $y\in{F}$. 取极限得
+(1) 由**定义 6.46 (点到集合的距离)**, $d\left(K,F\right)=\inf_{x\in{K},y\in{F}}\left\|x-y\right\|$. 取序列 $x_n\in{K}$, $y_n\in{F}$ 使 $\left\|x_n-y_n\right\|\to{d}\left(K,F\right)$. 由**定理 6.1 (紧 $=$ 序列紧)**, $K$ 紧故 $\left(x_n\right)$ 有收敛子列 $x_{n_j}\to{x}\in{K}$. 此时 $\left\|y_{n_j}\right\|\le\left\|y_{n_j}-x_{n_j}\right\|+\left\|x_{n_j}-x\right\|+\left\|x\right\|$ 有界, 故 $y_{n_j}$ 落在某个闭球内; 由**定理 5.3 ($\mathbb{R}^n$ 中的紧集)** 该闭球闭且有界故紧, 再由**定理 6.1 (紧 $=$ 序列紧)** 抽出子列 $y_{n_{j_k}}\to{y}$. 因 $F$ 闭, 由**定义 3.21 (闭集)** $y\in{F}$. 取极限得
 
 $$
 \left\|x-y\right\|=\lim_{k\to\infty}\left\|x_{n_{j_k}}-y_{n_{j_k}}\right\|=d\left(K,F\right).

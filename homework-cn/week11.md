@@ -196,7 +196,7 @@
 
 > **定义 6.48 (豪斯多夫距离)**
 > 
-> $d\left(A,B\right)=\inf\left\{r>0:A\subset{U}_r\left(B\right),\,B\subset{U}_r\left(A\right)\right\}$; 在紧子集族 $\mathcal{K}\left(X\right)$ 上是真度量. (题集 $\S3.2$)
+> $d\left(A,B\right)=\inf\left\{r>0:A\subset{U}_r\left(B\right),B\subset{U}_r\left(A\right)\right\}$; 在紧子集族 $\mathcal{K}\left(X\right)$ 上是真度量. (题集 $\S3.2$)
 
 > **定义 6.49 (等距映射)**
 > 
@@ -316,7 +316,7 @@ $$
 
 (3) 若 $f$ 不单调, 则存在 $a<{}b<{}c$ 使 $f\left(a\right)=f\left(c\right)\neq{f}\left(b\right)$. 于是 $V\left(f\right)$ 中函数在 $a,c$ 处必取同值. 而函数 $h$ 满足 $h\left(a\right)\neq{h}\left(c\right)$ 的连续函数不在 $V\left(f\right)$ 中, 且与 $V\left(f\right)$ 保持正距离. 由**定理 6.13 (贝尔纲定理)** 与**定理 6.14 (递增闭集族)**, 完备空间中闭而无内部的子空间不稠密. $\blacksquare$
 
-## 11.7 (等距映射的单射性、完备性与同胚)
+## 11.7 (等距映射的单射性, 完备性与同胚)
 
 (等距与拓扑) 设 $\left(X,d_X\right)$, $\left(Y,d_Y\right)$ 是度量空间, $f:X\to{Y}$ 是等距映射. 证明 $f$ 是单射, 连续, 且 $f^{-1}:f\left(X\right)\to{X}$ 也是等距映射. 若 $X$ 完备, 证明 $f\left(X\right)$ 完备. 若 $f$ 是满射, 证明 $f$ 是同胚.
 
@@ -499,7 +499,7 @@ $$
 ($\Leftarrow$): 设拓扑由半范数族 $\left\{p_\alpha\right\}_{\alpha\in{A}}$ 定义. 由**定义 6.25 (半范数)**, 每个 $p_\alpha$ 是凸函数 (由三角不等式 $p_\alpha\left(\left(1-t\right)x+ty\right)\le\left(1-t\right)p_\alpha\left(x\right)+tp_\alpha\left(y\right)$). 形如
 
 $$
-U_{\alpha_1,\dots,\alpha_n;\varepsilon}=\left\{x:p_{\alpha_i}\left(x\right)<\varepsilon,\,i=1,\dots,n\right\}
+U_{\alpha_1,\dots,\alpha_n;\varepsilon}=\left\{x:p_{\alpha_i}\left(x\right)<\varepsilon,i=1,\dots,n\right\}
 $$
 
 的集合是有限个凸集的交, 由**定义 4.23 (凸集)** 仍是凸集; 它们构成 $0$ 的邻域基. 故由**定义 6.26 (局部凸空间)**, 空间局部凸.
@@ -512,7 +512,7 @@ $$
 
 这正是**定义 6.27 (规范函数)**. 由 $C_\alpha$ 凸且平衡, $p_\alpha$ 满足**定义 6.25 (半范数)** 的两条: 齐次 $p_\alpha\left(\lambda{x}\right)=\left|\lambda\right|p_\alpha\left(x\right)$; 三角不等式由 $C_\alpha$ 凸推出. 邻域 $\left\{p_\alpha<\varepsilon\right\}$ 就是 $\varepsilon{C}_\alpha$, 故半范数族 $\left\{p_\alpha\right\}$ 定义的拓扑与原拓扑相同.
 
-可数情形: 若 $0$ 有可数凸邻域基 $\left\{C_n\right\}_{n\ge1}$, 上面的构造给出可数半范数族 $\left\{p_n\right\}$. 反之, 若拓扑由可数半范数族 $\left\{p_n\right\}$ 定义, 则 $\left\{x:p_i\left(x\right)<1/k,\,i=1,\dots,n\right\}$ ($n,k\ge1$) 是可数凸邻域基. $\blacksquare$
+可数情形: 若 $0$ 有可数凸邻域基 $\left\{C_n\right\}_{n\ge1}$, 上面的构造给出可数半范数族 $\left\{p_n\right\}$. 反之, 若拓扑由可数半范数族 $\left\{p_n\right\}$ 定义, 则 $\left\{x:p_i\left(x\right)<1/k,i=1,\dots,n\right\}$ ($n,k\ge1$) 是可数凸邻域基. $\blacksquare$
 
 ## 11.16 (交集的规范函数是各规范函数的上确界)
 

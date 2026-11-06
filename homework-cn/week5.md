@@ -344,7 +344,7 @@ $$
 > 
 > $1/n$ 特殊的原因在于其经过有限次求和后为 $1$, 因此可以利用望远镜级数, 最终求和得到 $f\left(0\right)-f\left(1\right)=0$, 即第 2 问的证明过程.
 
-## 5.8 (球面的连通性、路径连通性、挖去一点后的同胚与紧性)
+## 5.8 (球面的连通性, 路径连通性, 挖去一点后的同胚与紧性)
 
 (2024 年卷 A 题目二, 20 分). 我们记 $S^2=\left\{\left(x,y,z\right)\in\mathbb{R}^3:x^2+y^2+z^2=1\right\}$ 为 $\mathbb{R}^3$ 中的单位球面, $D=\left\{\left(x,y\right)\in\mathbb{R}^2:x^2+y^2\le1\right\}$ 为单位圆盘.
 
@@ -396,7 +396,7 @@ $D^+\cap{D}^-=\left\{\left(x,y,0\right):x^2+y^2=1\right\}\neq\emptyset$. 由**�
 (2) 先验证基条件. 这正是**定义 4.11 (弗斯滕伯格拓扑)** 的基. 两个基元素之交
 
 $$
-S\left(a,b\right)\cap{S}\left(c,d\right)=\left\{x:x\equiv{b}\pmod{a},\,x\equiv{d}\pmod{c}\right\}.
+S\left(a,b\right)\cap{S}\left(c,d\right)=\left\{x:x\equiv{b}\pmod{a},x\equiv{d}\pmod{c}\right\}.
 $$
 
 它非空当且仅当 $b\equiv{d}\pmod{\gcd\left(a,c\right)}$; 此时交本身是一个以 $\operatorname{lcm}\left(a,c\right)$ 为步长的等差数列 $S\left(\operatorname{lcm}\left(a,c\right),x_0\right)$. 故交含某基元素. 又 $S\left(1,0\right)=\mathbb{Z}$ 覆盖全空间. 由**定义 3.15 (拓扑基)**, 以此生成的开集族满足**定义 3.18 (拓扑空间)** 的全部公理: 任意并由生成方式保证, 有限交由基条件 (2) 保证, $\emptyset$ 与 $\mathbb{Z}$ 分别为空并与 $S\left(1,0\right)$.
@@ -459,7 +459,7 @@ $$
 
 由中国剩余定理 为 $\left\{x\equiv{b}_i\pmod{p_i}\right\}=S\left(M,x_0\right)$, 其中 $M=p_1\cdots{p}_k$, $p_i\nmid{x}_0$. 两个这样的有限交之交仍是同形的有限交. 故有限交全体构成一个基, 由**定义 3.15 (拓扑基)** 与**定义 3.18 (拓扑空间)** 生成 $\mathbb{Z}_{>0}$ 上的**定义 4.13 (基尔希拓扑)**. $\blacksquare$
 
-## 5.11 (三种等差数列拓扑的豪斯多夫性、正则性与连通性)
+## 5.11 (三种等差数列拓扑的豪斯多夫性, 正则性与连通性)
 
 考察上述拓扑的拓扑性质.
 

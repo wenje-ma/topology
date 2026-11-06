@@ -1,4 +1,4 @@
-# week3（连续函数与商、积构造）
+# week3（连续函数与商, 积构造）
 
 > **定理 3.1 (复合连续)**
 > 
@@ -68,7 +68,7 @@
 
 > **定义 3.28 (扎里斯基拓扑)**
 > 
-> 设 $K$ 为域, $\mathbb{A}^n\left(K\right)=K^n$. 扎里斯基闭集是一族多项式 $\left(P_i\right)_{i\in{I}}$ 的公共零点集 $\left\{x\in\mathbb{A}^n\left(K\right):\forall{i}\in{I},\,P_i\left(x\right)=0\right\}$. (题集 $\S1.4$)
+> 设 $K$ 为域, $\mathbb{A}^n\left(K\right)=K^n$. 扎里斯基闭集是一族多项式 $\left(P_i\right)_{i\in{I}}$ 的公共零点集 $\left\{x\in\mathbb{A}^n\left(K\right):\forall{i}\in{I},P_i\left(x\right)=0\right\}$. (题集 $\S1.4$)
 
 > **定义 3.30 (基本邻域系)**
 > 
@@ -318,7 +318,7 @@ $$
 (2) 取 $\mathbb{R}^2$, 令 $A=\left\{\left(x,y\right):xy=1\right\}$. $A$ 包含它所有的极限点, 故是闭集; 由**定义 3.21 (闭集)** 其补集 $\left\{xy\neq1\right\}$ 开. 但
 
 $$
-p_1\left(A\right)=\left\{x\in\mathbb{R}:\exists{y},\,xy=1\right\}=\mathbb{R}\setminus\left\{0\right\},
+p_1\left(A\right)=\left\{x\in\mathbb{R}:\exists{y},xy=1\right\}=\mathbb{R}\setminus\left\{0\right\},
 $$
 
 由**定义 3.21 (闭集)** $\mathbb{R}\setminus\left\{0\right\}$ 不是闭集 ($0$ 是其极限点). 故投影不是闭映射.
@@ -347,7 +347,7 @@ $$
 
 > 一般地, 若 $D$ 稠密而 $U$ 是含 $D$ 的开集, 只能推出 $\overline{U}=X$: 由**定义 3.26 (闭包)**, $D\subset{U}$ 给出 $X=\overline{D}\subset\overline{U}$; 开集稠密不必等于全空间. 题中 $\bigcup_{p/q}B\left(p/q,1/q^k\right)$ 也是开稠密集, 取 $k$ 充分大时仍遗漏某些有理逼近系数很小的无理数, 故不等于 $\mathbb{R}$.
 
-## 3.9 (离散拓扑、单点族的最终拓扑与不交和的三者等价)
+## 3.9 (离散拓扑, 单点族的最终拓扑与不交和的三者等价)
 
 设 $X$ 是拓扑空间. 证明下列三条等价:
 

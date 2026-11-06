@@ -64,7 +64,7 @@
 
 > **定义 3.28 (扎里斯基拓扑)**
 > 
-> 设 $K$ 为域, $\mathbb{A}^n\left(K\right)=K^n$. 扎里斯基闭集是一族多项式 $\left(P_i\right)_{i\in{I}}$ 的公共零点集 $\left\{x\in\mathbb{A}^n\left(K\right):\forall{i}\in{I},\,P_i\left(x\right)=0\right\}$. (题集 $\S1.4$)
+> 设 $K$ 为域, $\mathbb{A}^n\left(K\right)=K^n$. 扎里斯基闭集是一族多项式 $\left(P_i\right)_{i\in{I}}$ 的公共零点集 $\left\{x\in\mathbb{A}^n\left(K\right):\forall{i}\in{I},P_i\left(x\right)=0\right\}$. (题集 $\S1.4$)
 
 > **定义 3.32 (稠密)**
 > 
@@ -306,7 +306,7 @@ $S^1$ 是 $\mathbb{R}^2$ 的闭有界子集, 由**定理 5.3 ($\mathbb{R}^n$ 中
 
 (2) 对每个 $n$, 由第 (1) 小题取半径 $1/n$ 的有限覆盖球心集 $C_n$. 令 $C=\bigcup_{n\ge1}C_n$, 它可数 (可数个有限集之并). 任取 $x$ 与 $r>0$, 取 $n$ 使 $1/n<{}r$, 存在 $c\in{C}_n$ 使 $d\left(x,c\right)<1/n<{}r$, 即 $c\in{B}\left(x,r\right)$. 故 $x$ 的每个开球邻域都与 $C$ 相交; 开球构成度量拓扑的基 (由**定义 6.36 (开球)**), 故 $x$ 的每个邻域都与 $C$ 相交, 由**定义 3.24 (极限点)** 与**定理 3.5 (闭包与极限点)** $x\in\overline{C}$. 因 $x$ 任意, $\overline{C}=X$, 由**定义 3.32 (稠密)** $C$ 稠密. 由**定义 3.9 (可分)** $X$ 可分.
 
-(3) 令 $\mathcal{B}=\left\{B\left(c,q\right):c\in{C},\,q\in\mathbb{Q}_{>0}\right\}$. 它可数 ($C$ 可数, $\mathbb{Q}_{>0}$ 可数). 验证它是基: 任取开集 $U$ 与 $x\in{U}$, 由**定义 6.36 (开球)** 存在 $r>0$ 使 $B\left(x,r\right)\subset{U}$. 由 $C$ 稠密取 $c\in{C}$ 使 $d\left(x,c\right)<{}r/3$ (由**定义 3.32 (稠密)** 与**定义 3.26 (闭包)**), 再取有理数 $q$ 使 $d\left(x,c\right)<{}q<{}r/3$. 则 $x\in{B}\left(c,q\right)$ (因 $d\left(x,c\right)<{}q$), 且 $B\left(c,q\right)\subset{B}\left(x,r\right)\subset{U}$ (对 $z\in{B}\left(c,q\right)$, 由三角不等式 (**定义 6.35 (度量空间)**) $d\left(x,z\right)\le{d}\left(x,c\right)+d\left(c,z\right)<{}r/3+q<{}r$). 故 $U$ 是 $\mathcal{B}$ 中元素之并; 由**定义 3.15 (拓扑基)**, $\mathcal{B}$ 是可数基.
+(3) 令 $\mathcal{B}=\left\{B\left(c,q\right):c\in{C},q\in\mathbb{Q}_{>0}\right\}$. 它可数 ($C$ 可数, $\mathbb{Q}_{>0}$ 可数). 验证它是基: 任取开集 $U$ 与 $x\in{U}$, 由**定义 6.36 (开球)** 存在 $r>0$ 使 $B\left(x,r\right)\subset{U}$. 由 $C$ 稠密取 $c\in{C}$ 使 $d\left(x,c\right)<{}r/3$ (由**定义 3.32 (稠密)** 与**定义 3.26 (闭包)**), 再取有理数 $q$ 使 $d\left(x,c\right)<{}q<{}r/3$. 则 $x\in{B}\left(c,q\right)$ (因 $d\left(x,c\right)<{}q$), 且 $B\left(c,q\right)\subset{B}\left(x,r\right)\subset{U}$ (对 $z\in{B}\left(c,q\right)$, 由三角不等式 (**定义 6.35 (度量空间)**) $d\left(x,z\right)\le{d}\left(x,c\right)+d\left(c,z\right)<{}r/3+q<{}r$). 故 $U$ 是 $\mathcal{B}$ 中元素之并; 由**定义 3.15 (拓扑基)**, $\mathcal{B}$ 是可数基.
 
 (4) 设 $\left\{U_\alpha\right\}$ 是任意开覆盖. 由第 (3) 小题的可数基 $\mathcal{B}=\left\{V_\beta\right\}$, 每个开集是基元素之并 (**定义 3.15 (拓扑基)**); 对每个基元素 $V_\beta$, 若存在覆盖元 $U\supset{V}_\beta$ 则取定其一记为 $G_\beta$, 则 $\left\{G_\beta\right\}$ 可数且仍覆盖 $X$ (每个 $x\in{X}$ 在某 $U$ 中, $x$ 又在其某基元素 $V_\beta\subset{U}$ 中, 该 $V_\beta$ 被 $G_\beta$ 覆盖). 将 $\left\{G_\beta\right\}$ 编号为 $G_1,G_2,\dots$. 反证无有限子覆盖: 取 $x_n\notin{G}_1\cup\dots\cup{G}_n$. 集合 $\left\{x_n\right\}$ 无穷 (各 $x_n$ 互异), 由题设有极限点 $x$. 因 $\left\{G_n\right\}$ 覆盖 $X$, 存在 $N$ 使 $x\in{G}_N$. 由**定义 6.36 (开球)**, $G_N$ 含开球 $B\left(x,r\right)$, 由第 (1) 小题的论证 $B\left(x,r\right)$ 含 $S\setminus\left\{x\right\}$ 的无穷多点, 故 $G_N$ 含无穷多个 $x_n$. 但对 $n\ge{N}$, $x_n\notin{G}_1\cup\dots\cup{G}_n\supset{G}_N$, 故 $G_N$ 至多含 $x_1,\dots,x_{N-1}$ 有限个, 矛盾. 故存在有限子覆盖, 由**定义 5.16 (紧致空间)** $X$ 紧.
 
@@ -321,10 +321,10 @@ $S^1$ 是 $\mathbb{R}^2$ 的闭有界子集, 由**定理 5.3 ($\mathbb{R}^n$ 中
 一条边 $\left(x,y\right)$ 的染色条件即 $f\left(x\right)\neq{f}\left(y\right)$. 故
 
 $$
-X_F=\bigcup_{i\neq{j}}\left\{f:f\left(x\right)=i,\,f\left(y\right)=j\right\}.
+X_F=\bigcup_{i\neq{j}}\left\{f:f\left(x\right)=i,f\left(y\right)=j\right\}.
 $$
 
-每个柱集 $C_{ij}=\left\{f:f\left(x\right)=i,\,f\left(y\right)=j\right\}$ 是坐标投影 $\pi_x:X\to\left\{1,\dots,k\right\}$ 与 $\pi_y$ 的纤维之交. 由**定义 3.11 (乘积拓扑)**, 坐标投影连续; 离散空间 $\left\{1,\dots,k\right\}$ 中单点 $\left\{i\right\}$ 闭, 由**定义 3.22 (连续映射)** 其原像 $\pi_x^{-1}\left(\left\{i\right\}\right)$ 闭. 故 $C_{ij}$ 闭. 而 $X_F$ 是有限个 $C_{ij}$ ($i\neq{j}$) 之并, 闭集的有限并仍闭. 故 $X_F$ 闭. $\blacksquare$
+每个柱集 $C_{ij}=\left\{f:f\left(x\right)=i,f\left(y\right)=j\right\}$ 是坐标投影 $\pi_x:X\to\left\{1,\dots,k\right\}$ 与 $\pi_y$ 的纤维之交. 由**定义 3.11 (乘积拓扑)**, 坐标投影连续; 离散空间 $\left\{1,\dots,k\right\}$ 中单点 $\left\{i\right\}$ 闭, 由**定义 3.22 (连续映射)** 其原像 $\pi_x^{-1}\left(\left\{i\right\}\right)$ 闭. 故 $C_{ij}$ 闭. 而 $X_F$ 是有限个 $C_{ij}$ ($i\neq{j}$) 之并, 闭集的有限并仍闭. 故 $X_F$ 闭. $\blacksquare$
 
 ## 8.6 (任意边集的染色集闭)
 

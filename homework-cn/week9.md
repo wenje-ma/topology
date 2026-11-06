@@ -200,7 +200,7 @@
 
 > **定义 6.48 (豪斯多夫距离)**
 > 
-> $d\left(A,B\right)=\inf\left\{r>0:A\subset{U}_r\left(B\right),\,B\subset{U}_r\left(A\right)\right\}$; 在紧子集族 $\mathcal{K}\left(X\right)$ 上是真度量. (题集 $\S3.2$)
+> $d\left(A,B\right)=\inf\left\{r>0:A\subset{U}_r\left(B\right),B\subset{U}_r\left(A\right)\right\}$; 在紧子集族 $\mathcal{K}\left(X\right)$ 上是真度量. (题集 $\S3.2$)
 
 > **定义 6.49 (等距映射)**
 > 
@@ -286,7 +286,7 @@ $$
 
 其中等号用了**定义 6.49 (等距映射)**. 但由**定理 6.1 (紧 $=$ 序列紧)**, $K$ 中轨道有收敛子列, 必为**定义 6.37 (柯西列)**, 与相邻项距离恒 $\ge\delta$ 矛盾. 故 $f$ 满. $\blacksquare$
 
-## 9.4 (紧性三题：局部单射的扩张、里茨定理与蒂茨–乌雷松扩张)
+## 9.4 (紧性三题：局部单射的扩张, 里茨定理与蒂茨–乌雷松扩张)
 
 (7.1 紧性)
 
@@ -352,7 +352,7 @@ $$
 (2) 单条边时, $X_{\left\{\left(x,y\right)\right\}}=\left\{f:f\left(x\right)\neq{f}\left(y\right)\right\}$. 其补集为
 
 $$
-X\setminus{X}_F=\bigcup_{c=1}^k\left\{f:f\left(x\right)=c,\,f\left(y\right)=c\right\}.
+X\setminus{X}_F=\bigcup_{c=1}^k\left\{f:f\left(x\right)=c,f\left(y\right)=c\right\}.
 $$
 
 每个集合是两个连续取值映射 ($f\mapsto{f}\left(x\right)$) 的纤维之交, 在离散拓扑下既开又闭, 故为闭集; 有限并闭. 因此补集闭, 由**定义 3.21 (闭集)**, $X_F$ 闭.
@@ -387,7 +387,7 @@ $$
 
 ## 9.8 (集合间下确界距离一般不是度量)
 
-设 $\left(X,d\right)$ 是度量空间. 证明朴素定义 $d\left(A,B\right)=\inf_{a\in{A},\,b\in{B}}d\left(a,b\right)$ 一般不是度量.
+设 $\left(X,d\right)$ 是度量空间. 证明朴素定义 $d\left(A,B\right)=\inf_{a\in{A},b\in{B}}d\left(a,b\right)$ 一般不是度量.
 
 ### 解答 7.1
 
@@ -442,7 +442,7 @@ $$
 定义子集 $A,B\subset{X}$ 之间的豪斯多夫距离
 
 $$
-d_H\left(A,B\right)=\inf\left\{r>0:A\subset{U}_r\left(B\right),\,B\subset{U}_r\left(A\right)\right\}.
+d_H\left(A,B\right)=\inf\left\{r>0:A\subset{U}_r\left(B\right),B\subset{U}_r\left(A\right)\right\}.
 $$
 
 证明豪斯多夫距离是伪距离, 即满足度量的全部公理, 只是 $d_H\left(A,B\right)=0$ 不一定蕴含 $A=B$.

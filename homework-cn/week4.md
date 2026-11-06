@@ -80,7 +80,7 @@
 
 > **定义 3.28 (扎里斯基拓扑)**
 > 
-> 设 $K$ 为域, $\mathbb{A}^n\left(K\right)=K^n$. 扎里斯基闭集是一族多项式 $\left(P_i\right)_{i\in{I}}$ 的公共零点集 $\left\{x\in\mathbb{A}^n\left(K\right):\forall{i}\in{I},\,P_i\left(x\right)=0\right\}$. (题集 $\S1.4$)
+> 设 $K$ 为域, $\mathbb{A}^n\left(K\right)=K^n$. 扎里斯基闭集是一族多项式 $\left(P_i\right)_{i\in{I}}$ 的公共零点集 $\left\{x\in\mathbb{A}^n\left(K\right):\forall{i}\in{I},P_i\left(x\right)=0\right\}$. (题集 $\S1.4$)
 
 > **定义 3.30 (基本邻域系)**
 > 
@@ -368,7 +368,7 @@ $$
 
 第 (3) 小题: $\phi$ 是双射: $\left(e^{2\pi{i}t_1},\dots\right)$ 的原像陪集唯一. $T^n$ 紧: 它是 $n$ 方体 $\left[0,1\right]^n$ 的商, 由**定理 5.1 (紧空间连续像紧)** 紧. $\left(S^1\right)^n$ 豪斯多夫. 由**定理 5.6 (紧豪斯多夫间的连续双射)**, $\phi$ 是同胚. $\blacksquare$
 
-## 4.7 (最终拓扑、商拓扑与粘合映射的三者等价)
+## 4.7 (最终拓扑, 商拓扑与粘合映射的三者等价)
 
 设 $X$ 是拓扑空间, $A$ 是集合, $\pi:X\to{A}$ 是满射. 证明下列三条等价:
 

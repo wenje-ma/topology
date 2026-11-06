@@ -106,7 +106,7 @@
 > 
 > 关于一族映射 $f_i:X_i\to{Y}$ 使每个 $f_i$ 连续的最细拓扑; $U\subset{Y}$ 开当且仅当每个 $f_i^{-1}\left(U\right)$ 在 $X_i$ 中开. (题集 §1.4 C6; 题集 §5 Q1-Q2)
 
-## 1.1 (谢尔宾斯基空间：闭包、收敛与连续自映射)
+## 1.1 (谢尔宾斯基空间：闭包, 收敛与连续自映射)
 
 考虑谢尔宾斯基空间, 其中 $X=\left\{0,1\right\}$, $\mathcal{O}=\left\{\emptyset,\left\{0\right\},\left\{0,1\right\}\right\}$.
 
@@ -212,7 +212,7 @@ $\mathcal{O}_2\subset\mathcal{O}_1\Rightarrow$ (1): 设 $F$ 在 $\mathcal{O}_2$ 
 
 (3) $\Rightarrow\mathcal{O}_2\subset\mathcal{O}_1$: 由**定义 3.25 (邻域与极限)**, 设 $V$ 是 $x$ 在 $\mathcal{O}_2$ 中的邻域, 即 $V\in\mathcal{O}_2$; 由假设 $V$ 也是 $x$ 在 $\mathcal{O}_1$ 中的邻域, 即 $V\in\mathcal{O}_1$. 故 $\mathcal{O}_2\subset\mathcal{O}_1$. $\blacksquare$
 
-## 1.5 (加细拓扑保持豪斯多夫性、闭包、内部与可分性)
+## 1.5 (加细拓扑保持豪斯多夫性, 闭包, 内部与可分性)
 
 设 $\left(X,\mathcal{O}_1\right)$ 比 $\left(X,\mathcal{O}_2\right)$ 细. 证明:
 
@@ -280,7 +280,7 @@ $$
 
 由**定义 3.15 (拓扑基)**, $\mathcal{B}_A$ 满足基的两条刻画, 故 $\mathcal{B}_A$ 是 $A$ 的拓扑基. $\blacksquare$
 
-## 1.9 (子空间的开集与闭集何时在原空间中开、闭)
+## 1.9 (子空间的开集与闭集何时在原空间中开, 闭)
 
 证明: $A$ 在 $X$ 中开 (闭), 当且仅当 $A$ 的每个开集 $U$ (闭集 $F$) 在 $X$ 中开 (闭).
 

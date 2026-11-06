@@ -64,7 +64,7 @@
 
 > **定义 3.28 (扎里斯基拓扑)**
 > 
-> 设 $K$ 为域, $\mathbb{A}^n\left(K\right)=K^n$. 扎里斯基闭集是一族多项式 $\left(P_i\right)_{i\in{I}}$ 的公共零点集 $\left\{x\in\mathbb{A}^n\left(K\right):\forall{i}\in{I},\,P_i\left(x\right)=0\right\}$. (题集 $\S1.4$)
+> 设 $K$ 为域, $\mathbb{A}^n\left(K\right)=K^n$. 扎里斯基闭集是一族多项式 $\left(P_i\right)_{i\in{I}}$ 的公共零点集 $\left\{x\in\mathbb{A}^n\left(K\right):\forall{i}\in{I},P_i\left(x\right)=0\right\}$. (题集 $\S1.4$)
 
 > **定义 3.32 (稠密)**
 > 
@@ -355,7 +355,7 @@ $$
 令 $g\left(x\right)=d\left(x,B\right)$. 由**定义 6.46 (点到集合的距离)**, $g$ 有定义. 由**定义 6.35 (度量空间)** 的三角不等式与**定义 6.46 (点到集合的距离)**, 对任意 $x,y\in{X}$ 与 $b\in{B}$ 有 $d\left(x,b\right)\le{d}\left(x,y\right)+d\left(y,b\right)$, 对 $b$ 取下确界再对称化得 $\left|g\left(x\right)-g\left(y\right)\right|\le{d}\left(x,y\right)$; 于是 $x_n\to{x}$ 蕴含 $g\left(x_n\right)\to{g}\left(x\right)$, 由**说明 6.51 (度量连续与序列)**, $g$ 连续. 因 $A$ 紧致, 由**定理 5.11 (紧空间上连续函数取最大值)**, $g$ 在 $A$ 上取到最小值
 
 $$
-m=\min_{a\in{A}}g\left(a\right)=\inf_{a\in{A},\,b\in{B}}d\left(a,b\right)=d\left(A,B\right).
+m=\min_{a\in{A}}g\left(a\right)=\inf_{a\in{A},b\in{B}}d\left(a,b\right)=d\left(A,B\right).
 $$
 
 若 $m=0$, 则存在 $a_0\in{A}$ 使 $d\left(a_0,B\right)=0$, 即对每个 $r>0$ 开球 $B\left(a_0,r\right)$ 都与 $B$ 相交 (由**定义 6.36 (开球)**); 因 $a_0\notin{B}$ (由 $A\cap{B}=\emptyset$), 由**定义 3.24 (极限点)** $a_0$ 是 $B$ 的极限点. 由**定理 3.5 (闭包与极限点)** $a_0\in\overline{B}$, 而 $B$ 闭, 由**定义 3.26 (闭包)** $\overline{B}=B$, 故 $a_0\in{B}$, 与 $A\cap{B}=\emptyset$ 矛盾. 故 $m>0$, 即 $d\left(A,B\right)>0$. $\blacksquare$
