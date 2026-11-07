@@ -1,4 +1,4 @@
-# week10（完备空间：柯西列与完备性）
+# week10 (完备空间: 柯西列与完备性)
 
 > **定义 3.10 (豪斯多夫空间)**
 > 
@@ -44,7 +44,7 @@
 
 > **定理 5.5 (豪斯多夫中紧集闭)**
 > 
-> 若 $X$ 是豪斯多夫空间, 则 $X$ 中任意紧子集 $K\subset{X}$ 是闭的. (教材 §5; 《基础拓扑学》(修订版) 第3章 定理(3.6))
+> 若 $X$ 是豪斯多夫空间, 则 $X$ 中任意紧子集 $K\subset{X}$ 是闭的. (教材 §5; "基础拓扑学"(修订版) 第3章 定理(3.6))
 
 > **定理 6.1 (紧 $=$ 序列紧)**
 > 
@@ -140,9 +140,9 @@
 
 > **定义 7.4 (局部紧空间)**
 > 
-> 设 $X$ 为豪斯多夫空间. 若 $X$ 有由紧集组成的基 $\left\{B\right\}$, 则称 $X$ 局部紧. 等价地, $X$ 在 $x$ 处局部紧, 若存在 $X$ 的紧子空间 $C$ 包含着 $x$ 的一个邻域; 每点如此则称 $X$ 局部紧. (教材 $\S7$, p44; 《拓扑学》(原书第2版) $\S29$)
+> 设 $X$ 为豪斯多夫空间. 若 $X$ 有由紧集组成的基 $\left\{B\right\}$, 则称 $X$ 局部紧. 等价地, $X$ 在 $x$ 处局部紧, 若存在 $X$ 的紧子空间 $C$ 包含着 $x$ 的一个邻域; 每点如此则称 $X$ 局部紧. (教材 $\S7$, p44; "拓扑学"(原书第2版) $\S29$)
 
-## 10.1 ($\left(0,\infty\right)$ 上的倒数度量：诱导通常拓扑却不完备)
+## 10.1 ($\left(0,\infty\right)$ 上的倒数度量: 诱导通常拓扑却不完备)
 
 (2024 年卷 B 题目二) 在 $\left(0,\infty\right)$ 上定义 $\delta\left(x,y\right)=\left|\frac1x-\frac1y\right|$.
 
@@ -164,7 +164,7 @@
 
 (4) 设 $x_n\in\left(0,1\right]$ 是 $\delta$-柯西列. 则 $1/x_n\in\left[1,\infty\right)$ 通常柯西, 由**定义 6.39 (完备化)** (即 $\mathbb{R}$ 完备), $1/x_n\to{L}\ge1$. 令 $x=1/L\in\left(0,1\right]$, 则 $\delta\left(x_n,x\right)\to0$. 故 $\left(\left(0,1\right],\delta\right)$ 完备. $\blacksquare$
 
-## 10.2 ($\mathbb{R}^n$ 中紧集与闭集的距离可达，$l^\infty$ 中不可达)
+## 10.2 ($\mathbb{R}^n$ 中紧集与闭集的距离可达, $l^\infty$ 中不可达)
 
 设 $E=\mathbb{R}^n$ 装备通常拓扑, $K$ 是 $E$ 中的紧集, $F$ 是 $E$ 中的闭集.
 
@@ -226,7 +226,7 @@ $$
 
 由**定义 6.41 (一致收敛与一致度量)**, $g_n$ 一致收敛到 $g$. $\blacksquare$
 
-## 10.4 (对角线的第一步：有界数列取收敛子列)
+## 10.4 (对角线的第一步: 有界数列取收敛子列)
 
 第一部分是对角线论证. 设 $f_n\left(m\right)$ 是正整数上的函数列, 一致有界, 即存在常数 $C$ 使对一切 $n,m$ 有 $\left|f_n\left(m\right)\right|\le{C}$. 证明序列 $\left(f_n\left(1\right)\right)_{n\ge0}$ 有收敛子列 $\left(f_{n_i^{\left(1\right)}}\left(1\right)\right)_{i\ge0}$.
 
@@ -264,7 +264,7 @@ $$
 
 固定 $x\in\left[a,b\right]$, 则 $\left|f_n\left(x\right)-f_m\left(x\right)\right|\le\sup<\varepsilon$, 故 $\left(f_n\left(x\right)\right)$ 是 $\mathbb{R}$ 中的**定义 6.37 (柯西列)**. 由**定义 6.39 (完备化)**, $\mathbb{R}$ 是**定义 6.38 (完备度量空间)**, 故 $\left(f_n\left(x\right)\right)$ 收敛. 记其极限为 $f\left(x\right)$. 逐点极限 $f$ 由此定义. $\blacksquare$
 
-## 10.8 (一致极限的连续性（$\varepsilon/3$ 论证）)
+## 10.8 (一致极限的连续性 ($\varepsilon/3$ 论证))
 
 设 $f$ 是连续函数列 $\left(f_n\right)$ 的极限. 固定 $x\in\left[a,b\right]$ 与 $\varepsilon>0$. 证明可选取 $n$ 使 $\left\|f_n-f\right\|_\infty<\varepsilon/3$; 证明可选取 $\delta>0$, 使 $\left|x-y\right|<\delta$ 蕴含 $\left|f_n\left(x\right)-f_n\left(y\right)\right|<\varepsilon/3$; 由此证明 $f$ 连续.
 
@@ -304,7 +304,7 @@ $$
 
 由**习题 7.13**, $f$ 连续, 故 $f\in{C}\left[a,b\right]$. 于是 $C\left[a,b\right]$ 中每个**定义 6.37 (柯西列)** 都收敛到 $C\left[a,b\right]$ 中的元素, 由**定义 6.38 (完备度量空间)**, $C\left[a,b\right]$ 完备, 即**定理 6.8 ($C\left(X,Y\right)$ 完备)** 的特例. $\blacksquare$
 
-## 10.10 (豪斯多夫空间中极限唯一，度量空间中聚点即子列极限)
+## 10.10 (豪斯多夫空间中极限唯一, 度量空间中聚点即子列极限)
 
 序列与度量空间. 证明: **定义 3.10 (豪斯多夫空间)** 中序列的极限唯一. 证明: 在**定义 6.35 (度量空间)** 中, 序列的聚点就是其子列极限. 若空间不是度量空间, 会发生什么?
 
@@ -326,7 +326,7 @@ $$
 
 反设 $\left(x_n\right)$ 不收敛到 $z$. 则存在 $\varepsilon>0$ 与无穷多个 $n$ 使 $\left\|x_n-z\right\|\ge\varepsilon$. 从每个 $n_j$ 出发, 若其后轨道始终在 $B\left(z,\varepsilon\right)$ 内, 则尾部落在紧闭球中, 由**定理 5.3 ($\mathbb{R}^n$ 中的紧集)** 与**定理 6.1 (紧 $=$ 序列紧)**, 该尾部的任何聚点都是 $z$, 矛盾于不收敛. 故从每个 $n_j$ 出发, 存在第一个 $m_j>{}n_j$ 使 $\left\|x_{m_j}-z\right\|=\varepsilon$. 点 $x_{m_j}$ 都落在紧球面 $\partial{B}\left(z,\varepsilon\right)$ 上, 抽子列 $x_{m_{j_k}}\to{w}$, $\left\|w-z\right\|=\varepsilon$. 则 $w$ 是 $\left(x_n\right)$ 的聚点且 $w\neq{z}$, 矛盾. 故 $\left(x_n\right)\to{z}$. $\blacksquare$
 
-## 10.12 (紧集与闭集之和闭，两闭集之和未必闭)
+## 10.12 (紧集与闭集之和闭, 两闭集之和未必闭)
 
 闭集之和. 设 $E=\mathbb{R}^n$, $A,B\subset{E}$.
 
