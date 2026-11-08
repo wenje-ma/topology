@@ -272,7 +272,7 @@ $\emptyset$ 与 $X$ 开; 任意并 $\bigcup_i\left(X\setminus{F}_i\right)=X\setm
 
 序列 $\left\{n\right\}_{n\ge1}$ 在余有限拓扑 $\mathbb{R}$ 中收敛到任一点 $x$: $x$ 的任一邻域是 $X\setminus{F}$ ($F$ 有限). 因 $F$ 只含有限个自然数, 除有限个 $n$ 外 $n\notin{F}$, 故 $n\in{X}\setminus{F}$ 最终成立. 由**定义 3.25 (邻域与极限)**, $n\to{x}$.
 
-余可数拓扑: 由**定义 3.27 (余可数拓扑)**, 开集为 $\emptyset$ 与所有余可数集 $X\setminus{C}$ ($C$ 可数). 现在取 $X=\mathbb{R}$ 装备余可数拓扑, 对于 $\left(-1,1\right)$, $\overline{\left(-1,1\right)}$ 是包含 $(-1,1)$ 的最小可数集, 由于 $(-1,1)$ 自己不可数, 则 $\overline{\left(-1,1\right)}$ 只能是 $\mathbb{R}$.
+余可数拓扑: 由**定义 3.27 (余可数拓扑)**, 开集为 $\emptyset$ 与所有余可数集 $X\setminus{C}$ ($C$ 可数). 现在取 $X=\mathbb{R}$ 装备余可数拓扑, 对于 $\left(-1,1\right)$, $\overline{\left(-1,1\right)}$ 是包含 $\left(-1,1\right)$ 的最小可数集, 由于 $\left(-1,1\right)$ 自己不可数, 则 $\overline{\left(-1,1\right)}$ 只能是 $\mathbb{R}$.
 
 最后, 设 $x_n\in{A}$ 且 $x_n\to2$. 由于 $2$ 本身可数, 即 $2\in{C}$, 则其任意的邻域 $X\setminus{C}$ 都不含 $2$, 因此没有任何序列收敛到 $2$. $\blacksquare$
 

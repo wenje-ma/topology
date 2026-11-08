@@ -120,7 +120,7 @@
 
 ## 3.1 (基本邻域系: 点成立而子集未必)
 
-基本邻域系. 回忆点 $x$ (或子集 $A$) 的邻域; $x$ (或 $A$) 的基本邻域系是 $x$ (或 $A$) 的一族邻域 $\mathcal{P}$, 使 $x$ (或 $A$) 的每个邻域都含某个 $\mathcal{P}$ 中元素.
+基本邻域系. 回忆点 $A$ 的邻域; $A$ 的基本邻域系是 $A$ 的一族邻域 $\mathcal{P}$, 使 $A$ 的每个邻域都含某个 $\mathcal{P}$ 中元素.
 
 (1) 证明度量空间中, 任取 $r_n\to0$, $B\left(x,r_n\right)$ 是 $x$ 的基本邻域系;
 
@@ -136,7 +136,7 @@ $$
 
 由**定义 3.30 (基本邻域系)**, $\left\{B\left(x,r_n\right)\right\}$ 是 $x$ 的基本邻域系.
 
-(2) 取题中 $A=\left\{\left(x,1/x\right):x>0\right\}\subset\mathbb{R}^2$, $U=\left\{\left(x,y\right):x>0,y>0\right\}$. $U$ 开且 $A\subset{U}$, 故 $U$ 是 $A$ 的邻域. 对任意 $\varepsilon>0$, 取点
+(2) $U$ 开且 $A\subset{U}$, 故 $U$ 是 $A$ 的邻域. 对任意 $\varepsilon>0$, 取点
 
 $$
 a=\left(\frac{\varepsilon}{2},\frac{2}{\varepsilon}\right)\in{A},
@@ -144,7 +144,7 @@ $$
 
 再取 $a'=\left(-\frac{\varepsilon}{4},\frac{2}{\varepsilon}\right)$. 由**定义 6.46 (点到集合的距离)**, $d\left(a',A\right)\le{d}\left(a',a\right)=\frac{3\varepsilon}{4}<\varepsilon$, 故由**定义 6.47 ($\varepsilon$-邻域)** $a'\in{V}_{\varepsilon}\left(A\right)$. 但 $a'$ 的横坐标为负, $a'\notin{U}$. 于是对每个 $\varepsilon>0$, $V_{\varepsilon}\left(A\right)\not\subset{U}$. 故没有任何 $V_{\varepsilon}\left(A\right)$ 含于 $U$, 由**定义 3.30 (基本邻域系)**, $\left\{V_{\varepsilon}\left(A\right)\right\}$ 不是 $A$ 的基本邻域系. $\blacksquare$
 
-> 同样的构造基本邻域系的规则, 为什么全集就满足, 子集就不满足呢? 因为全集上定义的邻域必定全在全集内部; 而对于子集, 我们可以找到该子集的边界作为反例的邻域, 在其上的任何 $\varepsilon$-邻域都会超出其范围, 导致了这种构造方法的失效.
+> 同样的构造基本邻域系的规则, 为什么全集就满足, 子集就不满足呢? 因为全集上定义的邻域必定全在全集内部; 而对于子集, 我们可以找到该子集的边界作为反例的邻域, 在其上的任何 $\varepsilon$-邻域都会超出其范围.
 
 ## 3.2 (度量空间豪斯多夫, 扎里斯基拓扑不豪斯多夫)
 
@@ -152,7 +152,7 @@ $$
 
 (1) 证明度量空间总是豪斯多夫的;
 
-(2) 证明 $\mathbb{A}^n\left(\mathbb{R}\right)$ (或 $\mathbb{R}^n$) 的每个扎里斯基开集在通常拓扑下既开又稠密; 证明 $\mathbb{A}^n\left(\mathbb{R}\right)$ 的扎里斯基拓扑对任意 $n>0$ 都不是豪斯多夫的.
+(2) 证明 $\mathbb{A}^n\left(\mathbb{R}\right)$ 的扎里斯基拓扑对任意 $n>0$ 都不是豪斯多夫的.
 
 ### 解答 3.2
 
@@ -164,9 +164,7 @@ $$
 
 矛盾. 故 $B\left(x,r\right)\cap{B}\left(y,r\right)=\emptyset$. 由**定义 3.10 (豪斯多夫空间)**, 度量空间是豪斯多夫的.
 
-(2) 由**定义 3.28 (扎里斯基拓扑)**, 扎里斯基闭集是若干多项式公共零点集. 非零多项式不能在任一通常开集上恒为零 (一元多项式恒零判据), 故扎里斯基闭集在通常拓扑下内部为空. 于是其补集, 即扎里斯基开集, 在通常拓扑下稠密 (**定义 3.32 (稠密)**).
-
-再证非豪斯多夫. 任取 $x\neq{y}$. 任一非空扎里斯基开集都稠密, 故任意两个非空扎里斯基开集相交. 因而不存在不相交的两个扎里斯基开集分别含 $x$ 与 $y$, 由**定义 3.10 (豪斯多夫空间)**, 扎里斯基拓扑不是豪斯多夫的. $\blacksquare$
+(2) 任取 $x\neq{y}$. 已知在扎里斯基拓扑下, 任一非空扎里斯基开集都稠密, 故任意两个非空扎里斯基开集相交. 因而不存在不相交的两个扎里斯基开集分别含 $x$ 与 $y$, 由**定义 3.10 (豪斯多夫空间)**, 扎里斯基拓扑不是豪斯多夫的. $\blacksquare$
 
 ## 3.3 (正规性的两种刻画与度量空间的正规性)
 
@@ -174,7 +172,7 @@ $$
 
 ### 解答 3.3
 
-先证两种定义等价. 设 $F$ 闭, $V$ 开, $F\subset{V}$. 若 $X$ 满足**定义 7.6 (正规空间)**, 对不相交闭集 $F$ 与 $X\setminus{V}$ 取不相交开集 $U\supset{F}$ 与 $W\supset{X}\setminus{V}$. 则 $\overline{U}\subset{X}\setminus{W}\subset{V}$, 故 $F\subset{U}\subset\overline{U}\subset{V}$. 反过来, 设任意闭 $F\subset$ 开 $V$ 有 $U$ 使 $F\subset{U}\subset\overline{U}\subset{V}$. 对不相交闭集 $F,F'$, 取 $V=X\setminus{F}'$ (开). 由假设存在 $U\supset{F}$ 使 $\overline{U}\subset{X}\setminus{F}'$. 令 $W=X\setminus\overline{U}$ (开, 由**定义 3.26 (闭包)** 与**定义 3.21 (闭集)**), 则 $F'\subset{W}$ 且 $U\cap{W}=\emptyset$. 故 $F,F'$ 有不相交邻域. 特别地单点闭 (取 $F=\left\{x\right\}$, 若 $X$ 满足条件则单点为闭), 即 $T_1$, 故为豪斯多夫的.
+先证两种定义等价. 若 $X$ 满足**定义 7.6 (正规空间)**, 则对任意含于开集 $V$ 的闭集 $F$, 存在开集 $U$ 使 $F\subset{U}\subset\overline{U}\subset{V}$. 则 $x\in{F}$ 与 $y\in{X\setminus{V}}$ 的开集 $U$ 与 $X\setminus{\overline{V}}$ 不相交. $F$ 任意则 $X$ 是豪斯多夫的; 反过来, $X$ 是豪斯多夫的, 则任意 $x\ne y$, 都存在开集 $U\ni{x}$, $V\ni{y}$ 不相交, 则存在闭集 $B(x,\varepsilon)$ 满足 $x\in{B(x,\varepsilon)}\subset{\overline{B}(x,\varepsilon)}\subset{U}\subset{\overline{U}}\subset{X\setminus\overline{V}}$.
 
 再证度量空间正规. 设 $F$ 闭. 由**定义 6.46 (点到集合的距离)**, $d\left(x,F\right)=\inf_{a\in{F}}d\left(x,a\right)$. 由**定义 6.35 (度量空间)** 的三角不等式,
 
