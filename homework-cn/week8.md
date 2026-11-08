@@ -234,7 +234,7 @@
 
 设 $X$ 是紧豪斯多夫空间. 证明锥空间 $CX$ 同胚于 $X\times\left[0,1\right)$ 的单点紧化. 若 $A\subset{X}$ 闭, 证明 $X/\left\langle{A}\right\rangle$ 同胚于 $X\setminus{A}$ 的单点紧化.
 
-### 解答 5.12
+### 解答 8.1
 
 第一问: 由**定义 11.6 (锥)**, $CX=X\times\left[0,1\right]/X\times\left\{1\right\}$, 商映射 $\pi:X\times\left[0,1\right]\to{C}X$ 把 $X\times\left\{1\right\}$ 捏成一点, 在 $X\times\left[0,1\right)$ 上单射 (划分 (b) 为单点类). 令 $Y=X\times\left[0,1\right)$. $Y$ 豪斯多夫: 由**定理 3.6 (豪斯多夫的遗传性)**, $X$ 豪斯多夫 (题设), $\left[0,1\right)$ 是度量空间 $\mathbb{R}$ 的子空间故豪斯多夫 (由**说明 6.50 (度量空间是豪斯多夫的)** 与**定理 3.6 (豪斯多夫的遗传性)**), 乘积仍豪斯多夫. $Y$ 局部紧 (按**定义 7.4 (局部紧空间)** 的等价表述): 对 $\left(x,t\right)\in{Y}$, 取 $t'$ 使 $t<{}t'<1$; $\left[0,t'\right]\subset\mathbb{R}$ 闭且有界, 由**定理 5.3 ($\mathbb{R}^n$ 中的紧集)** 紧, $X$ 紧 (题设), 由**定理 5.7 (有限乘积紧)** $X\times\left[0,t'\right]$ 紧; 它含 $\left(x,t\right)$ 的开邻域 $X\times\left(0,t'\right)$, 故是 $\left(x,t\right)$ 的紧邻域. 由**定义 7.5 (单点紧化)**, $Y^*=Y\cup\left\{\infty\right\}$, $\infty$ 的邻域为 $\left(Y\setminus{K}\right)\cup\left\{\infty\right\}$, $K\subset{Y}$ 紧.
 
@@ -260,7 +260,7 @@ $X/\left\langle{A}\right\rangle$ 紧: $\pi$ 连续, $X$ 紧, 由**定理 5.1 (�
 
 (扎里斯基紧不蕴含扎里斯基闭) 在 $\mathbb{A}^1\left(\mathbb{R}\right)=\mathbb{R}$ 上配**定义 3.28 (扎里斯基拓扑)**, 即余有限拓扑. 证明子集 $\left(0,1\right)$ 在扎里斯基拓扑下紧但不闭.
 
-### 解答 5.13
+### 解答 8.2
 
 扎里斯基拓扑下, 由**定义 3.28 (扎里斯基拓扑)**, 闭集为有限集或全空间 ($n=1$ 时多项式零点集即有限集或全空间); 由**定义 3.21 (闭集)**, 开集为余有限集或空集.
 
@@ -272,11 +272,11 @@ $X/\left\langle{A}\right\rangle$ 紧: $\pi$ 连续, $X$ 紧, 由**定理 5.1 (�
 
 (单点紧化) 回顾**定义 7.5 (单点紧化)**. 证明 $\mathbb{R}$ 的单点紧化同胚于单位圆 $S^1$.
 
-### 解答 5.14
+### 解答 8.3
 
 由**定义 7.5 (单点紧化)**, $\mathbb{R}^*=\mathbb{R}\cup\left\{\infty\right\}$, $\infty$ 的邻域为 $\left(\mathbb{R}\setminus{K}\right)\cup\left\{\infty\right\}$, 其中 $K\subset\mathbb{R}$ 紧, 由**定理 5.3 ($\mathbb{R}^n$ 中的紧集)** 即闭有界集.
 
-先证 $\mathbb{R}^*$ 紧: 任取开覆盖 $\mathcal{U}$, 取 $U_\infty\in\mathcal{U}$ 含 $\infty$. 由**定义 7.5 (单点紧化)**, $U_\infty\supset\left(\mathbb{R}\setminus{K}'\right)\cup\left\{\infty\right\}$ 对某紧集 $K'$; 于是 $K=\mathbb{R}\setminus{U}_\infty\subset{K}'$ 且 $K$ 闭 ($U_\infty$ 开), 由**定理 5.4 (闭子集紧)** $K$ 紧. 同**习题 5.5**的论证, $K$ 被 $\mathcal{U}\setminus\left\{U_\infty\right\}$ 中有限个集合覆盖, 故 $\mathcal{U}$ 有有限子覆盖; 由**定义 5.16 (紧致空间)**, $\mathbb{R}^*$ 紧.
+先证 $\mathbb{R}^*$ 紧: 任取开覆盖 $\mathcal{U}$, 取 $U_\infty\in\mathcal{U}$ 含 $\infty$. 由**定义 7.5 (单点紧化)**, $U_\infty\supset\left(\mathbb{R}\setminus{K}'\right)\cup\left\{\infty\right\}$ 对某紧集 $K'$; 于是 $K=\mathbb{R}\setminus{U}_\infty\subset{K}'$ 且 $K$ 闭 ($U_\infty$ 开), 由**定理 5.4 (闭子集紧)** $K$ 紧. 同**习题 7.7**的论证, $K$ 被 $\mathcal{U}\setminus\left\{U_\infty\right\}$ 中有限个集合覆盖, 故 $\mathcal{U}$ 有有限子覆盖; 由**定义 5.16 (紧致空间)**, $\mathbb{R}^*$ 紧.
 
 球极投影 $\sigma:\mathbb{R}\to{S}^1\setminus\left\{N\right\}$ ($N=\left(0,1\right)$ 为北极) 由公式 $\sigma\left(x\right)=\left(\frac{2x}{x^2+1},\frac{x^2-1}{x^2+1}\right)$ 给出, 是连续双射, 其逆 $\left(X,Y\right)\mapsto\frac{X}{1-Y}$ 也连续, 故 $\sigma$ 是同胚 (双向连续的双射即同胚).
 
@@ -300,7 +300,7 @@ $S^1$ 是 $\mathbb{R}^2$ 的闭有界子集, 由**定理 5.3 ($\mathbb{R}^n$ 中
 
 (5) (附加题, 10 分) 证明一个紧致度量空间 $K$ 一定是可分的.
 
-### 解答 5.15
+### 解答 8.4
 
 (1) 固定 $\delta>0$. 依次选 $x_1,x_2,\dots$ 使 $d\left(x_i,x_j\right)\ge\delta$ ($i\neq{j}$). 若此过程无穷, $\left\{x_i\right\}$ 是无穷集, 由题设有极限点 $x$. 由**定义 3.24 (极限点)**, 开球 $B\left(x,\frac\delta2\right)$ 含 $S\setminus\left\{x\right\}$ 的无穷多点: 若仅含有限个, 取 $r$ 小于这些点到 $x$ 的距离, 则 $B\left(x,r\right)$ 与 $S\setminus\left\{x\right\}$ 无交, 与极限点定义矛盾. 取其中两个不同点 $x_i,x_j$, 由三角不等式 (**定义 6.35 (度量空间)**) $d\left(x_i,x_j\right)\le{d}\left(x_i,x\right)+d\left(x,x_j\right)<\delta$, 与 $d\left(x_i,x_j\right)\ge\delta$ 矛盾. 故过程有限停止, 得 $x_1,\dots,x_m$, 且 $\bigcup_{i=1}^mB\left(x_i,\delta\right)=X$ (否则可再选一点), 即有限 $\delta$-覆盖. 由**定义 6.42 (完全有界)**, $X$ 完全有界.
 
@@ -316,7 +316,7 @@ $S^1$ 是 $\mathbb{R}^2$ 的闭有界子集, 由**定理 5.3 ($\mathbb{R}^n$ 中
 
 若 $F=\left\{\left(x,y\right)\right\}$ 只有一条边, 证明 $X_F$ 闭. ($X_F$ 见文首记号)
 
-### 解答 6.1
+### 解答 8.5
 
 一条边 $\left(x,y\right)$ 的染色条件即 $f\left(x\right)\neq{f}\left(y\right)$. 故
 
@@ -330,7 +330,7 @@ $$
 
 证明: 对任意 $F\subset{E}$, $X_F$ 闭.
 
-### 解答 6.2
+### 解答 8.6
 
 一个映射是 $\left(V,F\right)$ 的染色, 当且仅当它对每条边 $e\in{F}$ 都合法. 故
 
@@ -338,13 +338,13 @@ $$
 X_F=\bigcap_{e\in{F}}X_{\left\{e\right\}}.
 $$
 
-由**习题 6.1**, 每个 $X_{\left\{e\right\}}$ 闭; 由**定义 3.21 (闭集)**, 闭集的任意交仍闭 (补集为开集的任意并). 故 $X_F$ 闭. $\blacksquare$
+由**习题 8.5**, 每个 $X_{\left\{e\right\}}$ 闭; 由**定义 3.21 (闭集)**, 闭集的任意交仍闭 (补集为开集的任意并). 故 $X_F$ 闭. $\blacksquare$
 
 ## 8.7 (有限子图可染蕴含染色集族的有限交非空)
 
 现设图 $G$ 的任意有限子图都可 $k$-染色. 证明 $\mathcal{F}$ 中任意有限个集合之交非空. ($\mathcal{F}$ 见文首记号)
 
-### 解答 6.3
+### 解答 8.7
 
 设 $F_1,\dots,F_n\subset{E}$ 有限. 由染色条件逐条叠加,
 
@@ -358,9 +358,9 @@ $$
 
 用 $X$ 的紧致性证明: $\mathcal{F}$ 中所有集合之交非空.
 
-### 解答 6.4
+### 解答 8.8
 
-由文首记号, $X=\prod_{v\in{V}}\left\{1,\dots,k\right\}$; 每个因子 $\left\{1,\dots,k\right\}$ 为有限离散空间故紧 (任意开覆盖每点选一覆盖元即有限子覆盖, 由**定义 5.16 (紧致空间)**), 由**定理 5.9 (吉洪诺夫定理)**, $X$ 在乘积拓扑下紧. 由**习题 6.2**, 每个 $X_F$ 是紧空间 $X$ 中的闭集. 由**习题 6.3**, $\mathcal{F}=\left\{X_F:F\subset{E}\text{~有限}\right\}$ 具有限交性质 (由**定义 5.17 (有限交性质)**). 由**定理 5.10 (有限交判据)**,
+由文首记号, $X=\prod_{v\in{V}}\left\{1,\dots,k\right\}$; 每个因子 $\left\{1,\dots,k\right\}$ 为有限离散空间故紧 (任意开覆盖每点选一覆盖元即有限子覆盖, 由**定义 5.16 (紧致空间)**), 由**定理 5.9 (吉洪诺夫定理)**, $X$ 在乘积拓扑下紧. 由**习题 8.6**, 每个 $X_F$ 是紧空间 $X$ 中的闭集. 由**习题 8.7**, $\mathcal{F}=\left\{X_F:F\subset{E}\text{~有限}\right\}$ 具有限交性质 (由**定义 5.17 (有限交性质)**). 由**定理 5.10 (有限交判据)**,
 
 $$
 \bigcap_{F\subset{E}\text{~有限}}X_F\neq\emptyset.
@@ -372,9 +372,9 @@ $\blacksquare$
 
 证明德布鲁因-埃尔德什定理: 若图 $G$ 的任意有限子图都可 $k$-染色, 则 $G$ 可 $k$-染色. 即使 $G$ 有不可数个顶点也成立.
 
-### 解答 6.5
+### 解答 8.9
 
-由**习题 6.4**, 可取
+由**习题 8.8**, 可取
 
 $$
 f\in\bigcap_{F\subset{E}\text{~有限}}X_F.
@@ -386,7 +386,7 @@ $$
 
 设 $X$ 是紧度量空间, $\left\{u_n\right\}_{n\ge0}$ 是 $X$ 中序列且 $d\left(u_n,u_{n+1}\right)\to0$. 证明 $\left\{u_n\right\}$ 的聚点集紧致, 并且连通.
 
-### 解答 6.6
+### 解答 8.10
 
 令
 
@@ -408,7 +408,7 @@ $$
 
 设 $\left(X,d\right)$ 是度量空间, $f:X\to{X}$ 是**定义 6.49 (等距映射)**. 证明: 若 $X$ 紧致, 则 $f$ 双射且是同胚.
 
-### 解答 6.7
+### 解答 8.11
 
 $f$ 单: 由**定义 6.49 (等距映射)**, $f\left(x\right)=f\left(y\right)$ 蕴含 $d\left(x,y\right)=d\left(f\left(x\right),f\left(y\right)\right)=0$, 故 $x=y$.
 
@@ -426,7 +426,7 @@ $f$ 连续 (由等距映射蕴含利普希茨连续), $X$ 紧致故为紧豪斯�
 
 (紧集的膨胀) 设 $X$ 是某赋范线性空间的紧子空间. 设 $f:X\to{X}$ 满足对一切 $x,y\in{X}$, $\left|f\left(y\right)-f\left(x\right)\right|\ge\left|y-x\right|$. 证明 $f$ 是**定义 6.49 (等距映射)** 且双射. 再证明满的 $1$-利普希茨函数 $g:X\to{X}$ 是等距.
 
-### 解答 6.8
+### 解答 8.12
 
 固定 $a,b\in{X}$, 记 $c_n=\left|f^n\left(a\right)-f^n\left(b\right)\right|$. 由膨胀条件应用于 $\left(f^{n-1}\left(a\right),f^{n-1}\left(b\right)\right)$, $c_{n+1}\ge{c}_n$, 又 $c_n\le\operatorname{diam}\left(X\right)$, 故 $c_n\uparrow{L}$. 由**定理 6.1 (紧 $=$ 序列紧)**, $X\times{X}$ 紧, $\left(f^n\left(a\right),f^n\left(b\right)\right)$ 有子列 $\left(f^{n_j}\left(a\right),f^{n_j}\left(b\right)\right)\to\left(u,v\right)$, 于是 $\left|u-v\right|=L$. 因 $c_{n_j}\to{L}$ 且 $c_{n_j+1}\to{L}$, 由三角不等式,
 
@@ -436,7 +436,7 @@ $$
 
 左端趋于 $0$, 故两项都趋于 $0$. 由 $f$ 连续 (膨胀条件蕴含利普希茨), $f\left(f^{n_j}\left(a\right)\right)=f^{n_j+1}\left(a\right)\to{f}\left(u\right)$; 而它也 $\to{u}$, 故 $f\left(u\right)=u$. 同理 $f\left(v\right)=v$. 由膨胀条件应用于 $\left(a,u\right)$: $\left|f^{n_j}\left(a\right)-f^{n_j}\left(u\right)\right|\ge\left|a-u\right|$, 即 $\left|f^{n_j}\left(a\right)-u\right|\ge\left|a-u\right|$. 令 $j\to\infty$ 得 $0\ge\left|a-u\right|$, 故 $u=a$. 同理 $v=b$. 于是 $L=\left|u-v\right|=\left|a-b\right|=c_0$, 而 $c_n$ 从 $c_0$ 起不减且收敛到 $c_0$, 故 $c_1=c_0$, 即 $\left|f\left(a\right)-f\left(b\right)\right|=\left|a-b\right|$. 由**定义 6.49 (等距映射)**, $f$ 是等距.
 
-再由**定理 5.1 (紧空间连续像紧)** 及**习题 6.7**的论证, $f$ 双射.
+再由**定理 5.1 (紧空间连续像紧)** 及**习题 8.11**的论证, $f$ 双射.
 
 现设 $g:X\to{X}$ 满且 $\left|g\left(y\right)-g\left(x\right)\right|\le\left|y-x\right|$. 对任意 $u,v\in{X}$, 取原像 $x,y$ 使 $g\left(x\right)=u$, $g\left(y\right)=v$, 则 $\left|u-v\right|\le\left|x-y\right|$, 即 $g^{-1}$ 满足膨胀条件. 由上一段, $g^{-1}$ 是等距, 故 $g$ 也是等距. $\blacksquare$
 
@@ -444,7 +444,7 @@ $$
 
 (紧空间不动点定理) 设 $K$ 是某赋范线性空间的紧子空间. 设 $f:K\to{K}$ 严格压缩, 即 $x\neq{y}$ 时 $\left|f\left(y\right)-f\left(x\right)\right|<\left|y-x\right|$. 证明 $f$ 在 $K$ 中有唯一不动点, 且对一切 $a\in{K}$, $f^n\left(a\right)$ 收敛到该不动点.
 
-### 解答 6.9
+### 解答 8.13
 
 严格压缩条件蕴含 $f$ 连续 ($\left|f\left(y\right)-f\left(x\right)\right|<\left|y-x\right|$ 即利普希茨常数 $<1$). 令 $g\left(x\right)=\left|f\left(x\right)-x\right|\ge0$; 由**定义 3.22 (连续映射)** 与**定理 3.1 (复合连续)**, $g$ 连续. 由**定理 5.11 (紧空间上连续函数取最大值)** (及其最小值情形), $g$ 在紧集 $K$ 上取到最小值, 设为 $g\left(x_0\right)$. 若 $g\left(x_0\right)>0$, 则由严格压缩,
 

@@ -158,7 +158,7 @@
 
 设 $E,F,G$ 是赋范域 $\mathbb{K}$ 上的拓扑向量空间. 对 $f\in{L}\left(E,F\right)$, 右复合映射 $R_f:L\left(F,G\right)\to{L}\left(E,G\right)$, $g\mapsto{g}\circ{f}$. 证明 $R_f$ 的算子范数不超过 $f$ 的算子范数; 左复合同理. 证明映射 $E\to{L}\left(\mathbb{K},E\right)$, $x\mapsto\left(\varphi_x:t\mapsto{t}x\right)$ 是等距线性同构.
 
-### 解答 8.8
+### 解答 12.1
 
 由**定义 6.24 (拓扑向量空间)**, $E,F,G$ 的加法与数乘连续; 由**定义 6.20 (赋范线性空间)**, 其上装备范数, $L\left(E,F\right)$ 为连续线性映射全体.
 
@@ -184,7 +184,7 @@ $$
 
 证明: 若 $E$ 是无穷维拓扑向量空间, 则 $E$ 上强拓扑与弱拓扑不同. 计算弱拓扑下 $E$ 的开单位球的内部; 计算弱拓扑下 $E$ 的单位球面的闭包.
 
-### 解答 8.9
+### 解答 12.2
 
 由**定义 6.30 (弱拓扑)**, 弱拓扑是由 $E^*$ 中全体连续线性泛函诱导的初始拓扑. 由**定理 6.50 (哈恩-巴拿赫定理)**, $E^*$ 分离 $E$ 的点. 弱拓扑的基本邻域形如
 
@@ -204,7 +204,7 @@ $$
 
 证明弱星拓扑总是豪斯多夫的.
 
-### 解答 8.10
+### 解答 12.3
 
 由**定义 6.31 (弱星拓扑)**, $E^*$ 上的弱星拓扑是由赋值映射 $\operatorname{ev}_x:E^*\to\mathbb{R}$, $\operatorname{ev}_x\left(\varphi\right)=\varphi\left(x\right)$, $x\in{E}$, 诱导的初始拓扑. 由**定义 3.22 (连续映射)**, $\operatorname{ev}_x$ 连续. 任取 $\varphi,\psi\in{E}^*$, $\varphi\neq\psi$. 由**定义 6.32 (拓扑对偶)** 二者为连续线性泛函, 存在 $x\in{E}$ 使 $\varphi\left(x\right)\neq\psi\left(x\right)$. 取不相交开区间 $I\ni\varphi\left(x\right)$, $J\ni\psi\left(x\right)$. 由**定义 3.14 (初始拓扑)**, $\operatorname{ev}_x^{-1}\left(I\right)$ 与 $\operatorname{ev}_x^{-1}\left(J\right)$ 是 $E^*$ 中不相交开集, 分别含 $\varphi,\psi$. 由**定义 3.10 (豪斯多夫空间)**, 弱星拓扑豪斯多夫. $\blacksquare$
 
@@ -212,7 +212,7 @@ $$
 
 设 $E$ 是 $\mathbb{R}$ 上赋范拓扑向量空间, $D\subset{E}$. 设 $E^*$ 装备由线性形式族 $\left\{\varphi_x:E^*\to\mathbb{R}\right\}_{x\in{D}}$ 诱导的初始拓扑. 证明该拓扑粗于 $E^*$ 上的弱星拓扑. 证明若 $D$ 在 $E$ 中稠密, 则在 $E^*$ 的所有 (对偶范数下) 有界集上, 该初始拓扑与弱星拓扑的限制相同.
 
-### 解答 8.11
+### 解答 12.4
 
 粗于弱星拓扑: 由**定义 6.31 (弱星拓扑)**, 弱星拓扑由全部 $x\in{E}$ 的赋值诱导. 本题初始拓扑仅用 $x\in{D}\subset{E}$. 映射更少, 由**定义 3.14 (初始拓扑)** 的"最粗性", 用较少映射得到的拓扑粗于用全部映射得到的弱星拓扑.
 
@@ -228,7 +228,7 @@ $$
 
 证明: 由半范数族 $\left\{p_\alpha\right\}$ 定义的拓扑向量空间是局部凸的.
 
-### 解答 8.12
+### 解答 12.5
 
 由**定义 6.25 (半范数)**, 每个 $p_\alpha:E\to\left[0,\infty\right)$ 满足齐次 $p_\alpha\left(\lambda{x}\right)=\left|\lambda\right|p_\alpha\left(x\right)$ 与三角不等式 $p_\alpha\left(x+y\right)\le{p}_\alpha\left(x\right)+p_\alpha\left(y\right)$.
 
@@ -244,7 +244,7 @@ $$
 
 证明: 若 $C$ 是 $0$ 的凸邻域, 则其规范函数是半范数.
 
-### 解答 8.13
+### 解答 12.6
 
 由**定义 6.27 (规范函数)**, $\left\|x\right\|_C=\inf\left\{t>0:x\in{t}C\right\}$. 由假设 $C$ 吸收 (凸邻域在拓扑向量空间中吸收, 即对任意 $x$ 存在 $t>0$ 使 $x\in{t}C$), 下确界有限.
 
@@ -264,7 +264,7 @@ $$
 
 证明: 若 $\Omega$ 是 $\mathbb{R}^n$ 中的凸集且在 $\mathbb{R}^n$ 中稠密, 则 $\Omega=\mathbb{R}^n$.
 
-### 解答 8.14
+### 解答 12.7
 
 由**定义 3.32 (稠密)**, $\overline\Omega=\mathbb{R}^n$. 由 $\Omega$ 是**定义 4.23 (凸集)**, 若它含一段开线段, 则沿该线段作小邻域可撑开一个开球. 具体地, 任取 $x\in\Omega$. 若 $\Omega\neq\mathbb{R}^n$, 取 $y\notin\Omega$. 沿连线 $\left[x,y\right]$, 由凸性整段在 $\Omega$ 中直到边界点. 由稠密性, $\Omega$ 含某个内点 $x_0$, 即存在开球 $B\left(x_0,r\right)\subset\Omega$. 对任意 $z\in\mathbb{R}^n$, 由稠密性可取 $w\in\Omega$ 充分接近 $z$. 由凸性, 以 $w$ 为顶点, 以 $B\left(x_0,r\right)$ 为底的锥形中所有点都在 $\Omega$ 中, 该锥形含一个以 $z$ 为中心的小球. 故 $\Omega$ 含非空开集且沿任意方向可撑开, 即 $\Omega$ 含一个非空开集. 但凸闭集 $\overline\Omega=\mathbb{R}^n$, 而凸集若含内点则其在边界上的延拓受凸性约束: 由分离定理, 若 $\Omega\neq\mathbb{R}^n$, 存在非零线性泛函在 $\Omega$ 上方有界, 这与 $\Omega$ 稠密矛盾. 故 $\Omega=\mathbb{R}^n$. $\blacksquare$
 
@@ -272,7 +272,7 @@ $$
 
 设 $\Omega$ 是赋范空间 $E$ 中的有界凸开集, 且满足: 任意两点 $x,y\in\Omega$ 都存在一个开球 $B\subset\Omega$ 使 $x,y\in{B}$. 证明 $\Omega$ 是一个开球.
 
-### 解答 8.15
+### 解答 12.8
 
 设 $\Omega$ 有界且凸. 取 $x,y\in\Omega$. 由题设, 存在开球 $B\subset\Omega$ 含 $x,y$. 由 $\Omega$ 凸, 连线 $\left[x,y\right]\subset\Omega$.
 
@@ -282,7 +282,7 @@ $$
 
 证明 $C\left(\left[0,1\right]\right)$ 在最大模范数 $\left\|f\right\|_\infty=\max_{x\in\left[0,1\right]}\left|f\left(x\right)\right|$ 下是巴拿赫空间.
 
-### 解答 8.16
+### 解答 12.9
 
 最大范数满足**定义 6.20 (赋范线性空间)** 的三公理: 正定性 ($\left\|f\right\|_\infty=0$ 蕴含 $f=0$), 齐次, 三角不等式 (由 $\left|f+g\right|\le\left|f\right|+\left|g\right|$ 取 max).
 
@@ -292,7 +292,7 @@ $$
 
 证明有界序列空间 $l^\infty$ 装备范数 $\left\|x\right\|_\infty=\sup_n\left|x_n\right|$ 是巴拿赫空间.
 
-### 解答 8.17
+### 解答 12.10
 
 由**定义 6.20 (赋范线性空间)**, $\left\|\cdot\right\|_\infty$ 满足三公理.
 
@@ -302,7 +302,7 @@ $$
 
 证明 $C^1\left(\left[0,1\right]\right)$ (一次连续可微函数) 装备范数 $\left\|f\right\|=\max\left(\left\|f\right\|_\infty,\left\|f'\right\|_\infty\right)$ 不是巴拿赫空间.
 
-### 解答 8.18
+### 解答 12.11
 
 反例: 取 $f_n\left(x\right)=\sqrt{x^2+1/n^2}$. 则 $f_n$ 连续可微, 且 $\left\|f_n-f_m\right\|_\infty\to0$ (一致收敛到 $\left|x\right|$). 同时 $\left\|f_n'\right\|_\infty\le1$ 有界. 但 $f_n\to\left|x\right|$ 在 $C\left(\left[0,1\right]\right)$ 中, 而 $\left|x\right|$ 在 $x=0$ 处不可导. 故 $\left(f_n\right)$ 在 $C^1\left(\left[0,1\right]\right)$ 的范数下是柯西列 (其差 $\left|f_n-f_m\right|$ 与 $\left|f_n'-f_m'\right|$ 都趋于 $0$), 但极限不在 $C^1$ 中. 由**定义 6.38 (完备度量空间)**, $C^1$ 不完备, 故不是**定义 6.21 (巴拿赫空间)**. $\blacksquare$
 
@@ -310,7 +310,7 @@ $$
 
 证明: 在赋范空间上, 线性映射连续当且仅当它是有界的.
 
-### 解答 8.19
+### 解答 12.12
 
 由**定义 6.20 (赋范线性空间)**, 设 $T:E\to{F}$ 线性.
 
@@ -322,7 +322,7 @@ $$
 
 证明存在 $\mathbb{R}\left[X\right]$ 上的范数, 使 $X^n$ 在该范数下收敛到 $Q=0$ (即 $\left\|X^n\right\|\to0$).
 
-### 解答 8.20
+### 解答 12.13
 
 由**定义 6.20 (赋范线性空间)**, 构造如下: 对多项式 $p=\sum_{k=0}^Na_kX^k$, 定义
 
@@ -336,7 +336,7 @@ $$
 
 证明算子复合映射 $L\left(E,F\right)\times{L}\left(F,G\right)\to{L}\left(E,G\right)$, $\left(S,T\right)\mapsto{T}\circ{S}$ 连续.
 
-### 解答 8.21
+### 解答 12.14
 
 对 $\left(S_0,T_0\right)$, 当 $\left\|S-S_0\right\|<\varepsilon$, $\left\|T-T_0\right\|<\varepsilon$ 时,
 
@@ -350,7 +350,7 @@ $$
 
 举例说明一个非完备度量空间不是贝尔空间.
 
-### 解答 8.22
+### 解答 12.15
 
 取 $\mathbb{Q}\subset\mathbb{R}$ 装备通常度量. $\mathbb{Q}$ 不完备. 每个单点 $\left\{q\right\}$ 在 $\mathbb{Q}$ 中是闭集且无处稠密 (其内部在 $\mathbb{Q}$ 中为空). 而 $\mathbb{Q}=\bigcup_{q\in\mathbb{Q}}\left\{q\right\}$ 是可数并. 由**定理 6.13 (贝尔纲定理)** 的逆否形式, 完备度量空间不能写成可数个无处稠密闭集之并, 故 $\mathbb{Q}$ 不是贝尔空间. $\blacksquare$
 
@@ -358,7 +358,7 @@ $$
 
 证明赋范空间上的范数是连续函数; 赋范空间是豪斯多夫的.
 
-### 解答 8.23
+### 解答 12.16
 
 由**定义 6.20 (赋范线性空间)**, 由范数的反三角不等式 $\bigl|\left\|x\right\|-\left\|y\right\|\bigr|\le\left\|x-y\right\|$, 范数是利普希茨映射, 故连续.
 
@@ -368,7 +368,7 @@ $$
 
 设 $E$ 是赋范空间, $F\subset{E}$ 是闭子空间. 证明商范数使 $E/F$ 成为赋范空间.
 
-### 解答 8.24
+### 解答 12.17
 
 由**定义 6.29 (商范数)**, $\left\|\left[x\right]\right\|=\inf_{y\in{F}}\left\|x+y\right\|$. 非负显然. 齐次: $\left\|\lambda\left[x\right]\right\|=\inf_{y\in{F}}\left\|\lambda{x}+y\right\|=\left|\lambda\right|\inf_{y\in{F}}\left\|x+y/\lambda\right\|=\left|\lambda\right|\left\|\left[x\right]\right\|$.
 
@@ -386,7 +386,7 @@ $$
 
 证明: 拓扑向量空间 $E$ 中的超平面 $H$ 是核, 即存在非零连续线性泛函 $\varphi:E\to\mathbb{K}$ 使 $H=\ker\varphi$.
 
-### 解答 8.25
+### 解答 12.18
 
 由**定义 6.55 (超平面)**, $H$ 余维数为 $1$. 任取 $x_0\notin{H}$, 则 $E=H\oplus\mathbb{K}x_0$. 定义 $\varphi\left(h+\lambda{x}_0\right)=\lambda$. 它是**定义 6.56 (线性泛函)** 且核为 $H$.
 
@@ -396,7 +396,7 @@ $$
 
 叙述并证明开映射定理的一个推论: 巴拿赫空间之间的连续线性双射是同胚.
 
-### 解答 8.26
+### 解答 12.19
 
 设 $T:E\to{F}$ 是巴拿赫空间之间的连续线性双射. 由**定理 6.57 (开映射定理)**, $T$ 是开映射, 即 $T$ 把开集映为开集. 对任意开集 $U\subset{E}$, $T\left(U\right)$ 开于 $F$. 由**定义 3.22 (连续映射)**, $T^{-1}:F\to{E}$ 连续. 又 $T$ 连续, 由**定义 3.23 (同胚)**, $T$ 是同胚. $\blacksquare$
 
@@ -404,7 +404,7 @@ $$
 
 叙述并证明巴拿赫-施坦豪斯定理的一个推论: 弱收敛的序列在赋范空间中是有界的.
 
-### 解答 8.27
+### 解答 12.20
 
 设 $\left(x_n\right)\subset{E}$ 弱收敛, 即对一切 $\varphi\in{E}^*$, $\varphi\left(x_n\right)$ 收敛, 从而有界. 视 $x_n$ 为 $E^{**}$ 中元素 (即 $x_n\left(\varphi\right)=\varphi\left(x_n\right)$). 由**定理 6.58 (巴拿赫-施坦豪斯定理)**, 逐点有界族 $\left\{x_n\right\}\subset{E}^{**}$ 一致有界, 即 $\sup_n\left\|x_n\right\|<\infty$. 由**定义 3.22 (连续映射)** 的赋范版本, $\left(x_n\right)$ 有界. $\blacksquare$
 
@@ -412,7 +412,7 @@ $$
 
 叙述并证明巴拿赫-绍德不动点定理的一个推论: 紧凸集到自身的连续映射有不动点.
 
-### 解答 8.28
+### 解答 12.21
 
 由**定理 6.59 (巴拿赫-绍德不动点定理)**, 设 $K\subset{E}$ 紧凸, $f:K\to{K}$ 连续. 紧凸集可被有限维逼近 (绍德尔逼近), 在每片上用有限维不动点定理 (布劳威尔不动点定理), 再取极限即得不动点. 这正是该定理的标准推论. $\blacksquare$
 
@@ -420,7 +420,7 @@ $$
 
 证明: 无穷维赋范空间不能写成可数个有限维子空间之并.
 
-### 解答 8.29
+### 解答 12.22
 
 由**定义 6.21 (巴拿赫空间)**, 完备赋范空间不能写成可数个真闭子空间之并. 每个有限维子空间是闭的 (有限维子空间闭). 若 $E=\bigcup_{k=1}^{\infty}F_k$ 其中每个 $F_k$ 有限维, 则由**定理 6.14 (递增闭集族)**, 某 $F_k$ 有非空内部. 但有限维真子空间的内部为空 (否则它含一个开球, 由线性性撑开整个 $E$, 与真子空间矛盾). 故每个 $F_k$ 内部为空. 与**定理 6.13 (贝尔纲定理)** 矛盾. $\blacksquare$
 
@@ -428,7 +428,7 @@ $$
 
 设 $E$ 是赋范空间, $\left(f_n\right)\subset{E}^*$ 逐点收敛到 $f$. 证明: 若 $E$ 完备, 则 $f$ 连续且 $\left\|f_n\right\|$ 有界.
 
-### 解答 8.30
+### 解答 12.23
 
 由逐点收敛, $\left(f_n\left(x\right)\right)$ 对每个 $x$ 有界. 由**定理 6.14 (递增闭集族)** (或等价地贝尔纲), 存在 $N$ 与非空开集 $U\subset{E}$ 使 $\sup_{x\in{U}}\left|f_n\left(x\right)\right|\le{N}$ 对一切 $n$. 由开集 $U$ 含一个小球 $B\left(x_0,r\right)$, 对任意 $\left\|h\right\|<{}r$, $x_0+h\in{U}$, 故
 
@@ -442,7 +442,7 @@ $$
 
 证明: 对 $1\le{p}<{}q\le\infty$, $l^p\subsetneq{l}^q$. 进一步证明 $l^p$ 在 $l^q$ 中闭.
 
-### 解答 8.31
+### 解答 12.24
 
 包含 $\subset$: 若 $\sum_n\left|x_n\right|^p<\infty$, 则 $\left|x_n\right|\to0$, 故 $\left(x_n\right)$ 有界, 从而 $\sup_n\left|x_n\right|<\infty$, 即 $x\in{l}^\infty$. 对有限 $q>{}p$, 由 $\left|x_n\right|\to0$, 存在 $N$ 使 $n\ge{N}$ 时 $\left|x_n\right|\le1$, 于是 $\left|x_n\right|^q\le\left|x_n\right|^p$, 故 $\sum_n\left|x_n\right|^q<\infty$.
 

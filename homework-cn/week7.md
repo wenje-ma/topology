@@ -280,7 +280,7 @@
 
 (3) (10 分) 证明 $A$ 包含一条从原点出发的长度无穷的半直线.
 
-### 解答 4.13
+### 解答 7.1
 
 (1) 因 $A$ 无界, 对每个 $p$, 存在 $M_p\in{A}$ 使 $\left|M_p\right|\ge{p}$ (否则 $A$ 含于半径 $p$ 的球内, 有界). 由**定义 4.23 (凸集)**, $O\in{A}$ 与 $M_p\in{A}$ 的连线线段 $OM_p$ 含于 $A$, 且其长度 $\left|OM_p\right|=\left|M_p\right|\ge{p}$.
 
@@ -304,7 +304,7 @@
 
 (5) 证明 $\mathbb{Z}$ 中的质数有无穷多个.
 
-### 解答 4.14
+### 解答 7.2
 
 (0) 由**定义 3.15 (拓扑基)** 验证: $\mathbb{Z}=\bigcup_aS\left(a,0\right)$ (例如 $S\left(1,0\right)=\mathbb{Z}$). 两等差数列之交 $S\left(a,b\right)\cap{S}\left(c,d\right)$ 或者为空, 或者仍是一个等差数列 (公差为 $a,c$ 的最小公倍数), 从而含某 $S\left(e,f\right)$. 故 $\left\{S\left(a,b\right)\right\}$ 满足基条件, 由**定义 4.11 (弗斯滕伯格拓扑)** 生成弗斯滕伯格拓扑, 开集恰为这些 $S\left(a,b\right)$ 之并.
 
@@ -322,7 +322,7 @@
 
 证明 $\left\{0,1\right\}^{\left[0,1\right]}$ 赋通常乘积拓扑不是序列紧致的.
 
-### 解答 5.1
+### 解答 7.3
 
 把 $\left\{0,1\right\}^{\left[0,1\right]}$ 中的点视为函数 $f:\left[0,1\right]\to\left\{0,1\right\}$. 由**定义 3.11 (乘积拓扑)** 与**命题 3.33 (点态收敛判据)**, 在乘积拓扑下 $f_n\to{f}$ 当且仅当每个坐标 $t\in\left[0,1\right]$ 都有 $f_n\left(t\right)\to{f}\left(t\right)$; 该判据对任意因子空间 $A^{S}$ 成立, 因为乘积拓扑的基与因子空间无关.
 
@@ -332,7 +332,7 @@
 
 称集合族 $\mathcal{F}$ 具有有限交性质, 若其任意有限子族之交非空. 证明: 空间 $X$ 紧致等价于, $X$ 中任意具有限交性质的闭集族 $\mathcal{F}$ 都满足 $\bigcap_{F\in\mathcal{F}}F\neq\emptyset$.
 
-### 解答 5.2
+### 解答 7.4
 
 由**定义 5.15 (开覆盖与有限子覆盖)** 与**定义 5.16 (紧致空间)**, 分两个方向证明.
 
@@ -350,7 +350,7 @@ $$
 
 设 $A,B$ 是度量空间 $\left(X,d\right)$ 中不相交的闭集, 且 $A$ 紧致. 证明 $d\left(A,B\right)>0$.
 
-### 解答 5.3
+### 解答 7.5
 
 令 $g\left(x\right)=d\left(x,B\right)$. 由**定义 6.46 (点到集合的距离)**, $g$ 有定义. 由**定义 6.35 (度量空间)** 的三角不等式与**定义 6.46 (点到集合的距离)**, 对任意 $x,y\in{X}$ 与 $b\in{B}$ 有 $d\left(x,b\right)\le{d}\left(x,y\right)+d\left(y,b\right)$, 对 $b$ 取下确界再对称化得 $\left|g\left(x\right)-g\left(y\right)\right|\le{d}\left(x,y\right)$; 于是 $x_n\to{x}$ 蕴含 $g\left(x_n\right)\to{g}\left(x\right)$, 由**说明 6.51 (度量连续与序列)**, $g$ 连续. 因 $A$ 紧致, 由**定理 5.11 (紧空间上连续函数取最大值)**, $g$ 在 $A$ 上取到最小值
 
@@ -364,9 +364,9 @@ $$
 
 设 $\left(X,d\right)$ 是无孤立点的度量空间. 证明: $X$ 紧致当且仅当对任意一对不相交闭集 $A,B$, 都有 $d\left(A,B\right)>0$.
 
-### 解答 5.4
+### 解答 7.6
 
-($\Rightarrow$) 设 $X$ 紧致, $A,B$ 为不相交闭集. 由**定理 5.4 (闭子集紧)**, $A$ 紧致. 由**习题 5.3**的论证 (连续函数 $d\left(\cdot,B\right)$ 在 $A$ 上取到正最小值) 即得 $d\left(A,B\right)>0$.
+($\Rightarrow$) 设 $X$ 紧致, $A,B$ 为不相交闭集. 由**定理 5.4 (闭子集紧)**, $A$ 紧致. 由**习题 7.5**的论证 (连续函数 $d\left(\cdot,B\right)$ 在 $A$ 上取到正最小值) 即得 $d\left(A,B\right)>0$.
 
 ($\Leftarrow$) 反证, 设 $X$ 不紧致. 由**定理 6.1 (紧 $=$ 序列紧)**, $X$ 不是序列紧致的, 故存在序列 $\left\{x_n\right\}$ 无收敛子列. 必要时取子列使 $x_n$ 两两不同. 于是 $S=\left\{x_n:n\ge1\right\}$ 无极限点: 若 $x$ 是 $S$ 的极限点, 由**定义 3.24 (极限点)** 每个开球 $B\left(x,1/k\right)$ 都含 $S\setminus\left\{x\right\}$ 的点, 且事实上含无穷多个 (若某球只含有限个, 取半径小于这些点到 $x$ 的距离, 得与极限点定义矛盾的球), 故可归纳选取两两不同的 $x_{n_k}\in{B}\left(x,1/k\right)$, 得收敛于 $x$ 的子列, 矛盾. 故 $S'=\emptyset$, 由**定理 3.5 (闭包与极限点)** $\overline{S}=S$, 由**定义 3.26 (闭包)** $S$ 闭. 因 $X$ 无孤立点, 每个 $x_n$ 的任意邻域都含异于 $x_n$ 的点; 归纳地选取 $y_n$, 使 $0<{}d\left(y_n,x_n\right)<1/n$, 且 $y_n\notin{S}\cup\left\{y_1,\dots,y_{n-1}\right\}$. 则 $\left\{y_n\right\}$ 也无收敛子列: 若 $y_{n_k}\to{y}$, 则由**定义 6.35 (度量空间)** 的三角不等式,
 
@@ -380,7 +380,7 @@ $$
 
 考虑 $\mathbb{C}$ 与一个无穷远点 $\left\{\infty\right\}$. 记 $\overline{\mathbb{C}}=\mathbb{C}\cup\left\{\infty\right\}$, 规定 $U\subset\overline{\mathbb{C}}$ 的拓扑为: 若 $\infty\notin{U}$, 则 $U$ 开当且仅当它是 $\mathbb{C}$ 中通常开集; 若 $\infty\in{U}$, 则 $U$ 开当且仅当 $\mathbb{C}\setminus\left(U\cap\mathbb{C}\right)$ 在 $\mathbb{C}$ 中紧致. 证明 $\overline{\mathbb{C}}$ 紧致. 此即亚历山德罗夫单点紧化, $\overline{\mathbb{C}}$ 称为黎曼球面.
 
-### 解答 5.5
+### 解答 7.7
 
 由**定义 7.5 (单点紧化)**, $\overline{\mathbb{C}}$ 正是 $\mathbb{C}$ 的单点紧化. 任取 $\overline{\mathbb{C}}$ 的开覆盖 $\mathcal{U}$. 取 $U_\infty\in\mathcal{U}$ 使 $\infty\in{U}_\infty$. 由拓扑定义, $K=\mathbb{C}\setminus\left(U_\infty\cap\mathbb{C}\right)$ 在 $\mathbb{C}$ 中紧致. 族
 
@@ -394,7 +394,7 @@ $$
 
 给 $\left\{1,\dots,k\right\}$ 赋离散拓扑. 证明 $\left\{1,\dots,k\right\}$ 在该拓扑下紧致.
 
-### 解答 5.6
+### 解答 7.8
 
 设 $\mathcal{U}$ 是 $\left\{1,\dots,k\right\}$ 的任意开覆盖. 由**定义 5.15 (开覆盖与有限子覆盖)**, 对每个点 $i\in\left\{1,\dots,k\right\}$ 选取 $U_i\in\mathcal{U}$ 使 $i\in{U}_i$. 则 $\left\{U_1,\dots,U_k\right\}$ 是有限子族且仍覆盖 $\left\{1,\dots,k\right\}$. 由**定义 5.16 (紧致空间)**, $\left\{1,\dots,k\right\}$ 紧致. $\blacksquare$
 
@@ -404,15 +404,15 @@ $$
 
 用吉洪诺夫定理证明: 映射集合 $X=\left\{f:V\to\left\{1,\dots,k\right\}\right\}$ 紧致.
 
-### 解答 5.7
+### 解答 7.9
 
-集合 $X=\left\{1,\dots,k\right\}^{V}=\prod_{v\in{V}}\left\{1,\dots,k\right\}$ 是离散有限空间 $\left\{1,\dots,k\right\}$ 的乘积. 由**习题 5.6**, 每个因子 $\left\{1,\dots,k\right\}$ 紧致. 由**定理 5.9 (吉洪诺夫定理)**, 乘积 $X$ 在乘积拓扑下紧致. $\blacksquare$
+集合 $X=\left\{1,\dots,k\right\}^{V}=\prod_{v\in{V}}\left\{1,\dots,k\right\}$ 是离散有限空间 $\left\{1,\dots,k\right\}$ 的乘积. 由**习题 7.8**, 每个因子 $\left\{1,\dots,k\right\}$ 紧致. 由**定理 5.9 (吉洪诺夫定理)**, 乘积 $X$ 在乘积拓扑下紧致. $\blacksquare$
 
 ## 7.10 (连续等价于在每个紧子集上连续)
 
 设 $X,Y$ 是度量空间, $f:X\to{Y}$. 证明: $f$ 连续当且仅当 $f$ 在任意紧子集 $K\subset{X}$ 上的限制都连续.
 
-### 解答 5.8
+### 解答 7.10
 
 ($\Rightarrow$) 设 $f$ 连续, $K\subset{X}$ 紧. 由**定义 3.22 (连续映射)** 与**定义 3.19 (子空间拓扑)**, $f|_K$ 连续: 对 $Y$ 中开集 $U$, $\left(f|_K\right)^{-1}\left(U\right)=f^{-1}\left(U\right)\cap{K}$ 是 $K$ 中开集.
 
@@ -422,7 +422,7 @@ $$
 
 设 $X$ 是豪斯多夫空间. 证明: $X$ 局部紧 (即每点有紧邻域基) 当且仅当每点有一个紧邻域.
 
-### 解答 5.9
+### 解答 7.11
 
 ($\Rightarrow$) 设每点有紧邻域基 (即题目括号中的表述, 见**定义 7.4 (局部紧空间)**). 则对每个 $x$, 其紧邻域基的任一成员都是 $x$ 的一个紧邻域. 故每点有一个紧邻域.
 
@@ -432,7 +432,7 @@ $$
 
 (维数与紧性) 证明: 任意实赋范线性空间的单位球紧致, 当且仅当该空间维数有限.
 
-### 解答 5.10
+### 解答 7.12
 
 设 $E$ 是**定义 6.20 (赋范线性空间)** 中的空间.
 
@@ -448,12 +448,12 @@ $$
 
 (2) 举例说明若 $f$ 不单射, 上述等价可以失效.
 
-### 解答 5.11
+### 解答 7.13
 
-(1) ($\Rightarrow$) 设 $f$ 连续, $K\subset{E}$ 紧. $f|_K$ 连续 (由**定义 3.22 (连续映射)** 与**定义 3.19 (子空间拓扑)**, 同**习题 5.8** ($\Rightarrow$)), 由**定理 5.1 (紧空间连续像紧)**, $f\left(K\right)$ 紧.
+(1) ($\Rightarrow$) 设 $f$ 连续, $K\subset{E}$ 紧. $f|_K$ 连续 (由**定义 3.22 (连续映射)** 与**定义 3.19 (子空间拓扑)**, 同**习题 7.10** ($\Rightarrow$)), 由**定理 5.1 (紧空间连续像紧)**, $f\left(K\right)$ 紧.
 
-($\Leftarrow$) 设对每个紧集 $K\subset{E}$, $f\left(K\right)$ 紧. 反设 $f$ 在某点 $x$ 不连续. 由**说明 6.51 (度量连续与序列)** 的逆否与**定义 3.25 (邻域与极限)**, 存在 $\varepsilon>0$ 与序列 $x_n\to{x}$ 使 $d_F\left(f\left(x_n\right),f\left(x\right)\right)\ge\varepsilon$. 由 $f$ 单射及 $d_F\left(f\left(x_n\right),f\left(x\right)\right)\ge\varepsilon>0$ 知 $x_n\neq{x}$. 令 $K=\left\{x\right\}\cup\left\{x_n:n\ge1\right\}$, 它紧 (同**习题 5.8**的论证: 收敛序列加极限). 由假设 $f\left(K\right)$ 紧; $F$ 是度量空间, 由**说明 6.50 (度量空间是豪斯多夫的)** 豪斯多夫, 由**定理 5.5 (豪斯多夫中紧集闭)**, $f\left(K\right)$ 在 $F$ 中闭.
+($\Leftarrow$) 设对每个紧集 $K\subset{E}$, $f\left(K\right)$ 紧. 反设 $f$ 在某点 $x$ 不连续. 由**说明 6.51 (度量连续与序列)** 的逆否与**定义 3.25 (邻域与极限)**, 存在 $\varepsilon>0$ 与序列 $x_n\to{x}$ 使 $d_F\left(f\left(x_n\right),f\left(x\right)\right)\ge\varepsilon$. 由 $f$ 单射及 $d_F\left(f\left(x_n\right),f\left(x\right)\right)\ge\varepsilon>0$ 知 $x_n\neq{x}$. 令 $K=\left\{x\right\}\cup\left\{x_n:n\ge1\right\}$, 它紧 (同**习题 7.10**的论证: 收敛序列加极限). 由假设 $f\left(K\right)$ 紧; $F$ 是度量空间, 由**说明 6.50 (度量空间是豪斯多夫的)** 豪斯多夫, 由**定理 5.5 (豪斯多夫中紧集闭)**, $f\left(K\right)$ 在 $F$ 中闭.
 
 由**定理 6.1 (紧 $=$ 序列紧)**, $f\left(x_n\right)$ 在紧集 $f\left(K\right)$ 中有收敛子列 $f\left(x_{n_j}\right)\to{y}\in{f}\left(K\right)$. 设 $y=f\left(z\right)$, $z\in{K}$. 若 $z=x$, 则 $f\left(x_{n_j}\right)\to{f}\left(x\right)$, 与 $d_F\left(f\left(x_{n_j}\right),f\left(x\right)\right)\ge\varepsilon$ 矛盾. 故 $z=x_m$ 是某固定项. 取尾部紧集 $K'=\left\{x\right\}\cup\left\{x_{n_j}:j>{}m\right\}$. 由假设 $f\left(K'\right)$ 紧, 再由**定理 5.5 (豪斯多夫中紧集闭)** $f\left(K'\right)$ 闭. 但 $f\left(x_{n_j}\right)\to{f}\left(x_m\right)$ 且 $x_m\notin{K}'$, 由 $f$ 单射 $f\left(x_m\right)\notin{f}\left(K'\right)$; 而 $f\left(x_m\right)$ 是 $f\left(K'\right)$ 的极限点 (每个邻域含充分大的 $f\left(x_{n_j}\right)$, 由**定义 3.25 (邻域与极限)**), 由**定理 3.5 (闭包与极限点)** 与**定义 3.26 (闭包)** 应有 $f\left(x_m\right)\in\overline{f\left(K'\right)}=f\left(K'\right)$, 矛盾. 故 $f$ 连续.
 
-(2) 取 $E=\left\{0\right\}\cup\left\{1/n:n\ge1\right\}$, $F=\left\{0,1\right\}$ 装备离散度量, $f\left(0\right)=0$, $f\left(1/n\right)=1$ 对一切 $n$. $f$ 不单射. 对 $E$ 中任何紧集 $K$, 像 $f\left(K\right)\subset\left\{0,1\right\}$; 离散空间中任何有限子集都紧 (**习题 5.6**), 故 $f$ 保持紧集; 但 $x_n=1/n\to0$ 时 $f\left(x_n\right)=1$ 不趋于 $f\left(0\right)=0$, 由**定义 3.25 (邻域与极限)** $f$ 不连续. 可见单射不可少. $\blacksquare$
+(2) 取 $E=\left\{0\right\}\cup\left\{1/n:n\ge1\right\}$, $F=\left\{0,1\right\}$ 装备离散度量, $f\left(0\right)=0$, $f\left(1/n\right)=1$ 对一切 $n$. $f$ 不单射. 对 $E$ 中任何紧集 $K$, 像 $f\left(K\right)\subset\left\{0,1\right\}$; 离散空间中任何有限子集都紧 (**习题 7.8**), 故 $f$ 保持紧集; 但 $x_n=1/n\to0$ 时 $f\left(x_n\right)=1$ 不趋于 $f\left(0\right)=0$, 由**定义 3.25 (邻域与极限)** $f$ 不连续. 可见单射不可少. $\blacksquare$

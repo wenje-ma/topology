@@ -238,7 +238,7 @@
 
 (贝尔纲, 局部紧版本) 证明: 在局部紧豪斯多夫空间中, 可数个稠密开集之交仍稠密.
 
-### 解答 7.22
+### 解答 11.1
 
 设 $\left\{U_n\right\}_{n=1}^{\infty}$ 是稠密开集, $V_0$ 是任意非空开集. 归纳构造非空开集 $V_n$: 由 $U_1$ 稠密, $V_0\cap{U}_1\neq\emptyset$. 取非空开 $V_1$ 使 $\overline{V_1}\subset{V}_0\cap{U}_1$ 且 $\overline{V_1}$ 紧 (由**定义 7.4 (局部紧空间)**, 局部紧豪斯多夫提供闭紧邻域基, 可在 $V_0\cap{U}_1$ 内取闭紧邻域). 归纳地, 由 $U_n$ 稠密, $V_{n-1}\cap{U}_n\neq\emptyset$, 取非空开 $V_n$ 使 $\overline{V_n}\subset{V}_{n-1}\cap{U}_n$ 且 $\overline{V_n}$ 紧.
 
@@ -248,7 +248,7 @@
 
 (不可数个稠密开集不必相交) 证明: $\mathbb{Q}$ 是可数个无处稠密集之并. 由此说明**定理 6.13 (贝尔纲定理)** 中可数性不能放宽到不可数.
 
-### 解答 7.23
+### 解答 11.2
 
 $\mathbb{Q}=\bigcup_{q\in\mathbb{Q}}\left\{q\right\}$, 每个单点集 $\left\{q\right\}$ 是闭集且内部为空 ($\mathbb{R}$ 无孤立点, 任何开区间含非 $q$ 的点), 故无处稠密. 这是可数个 ($\mathbb{Q}$ 可数) 无处稠密集之并等于 $\mathbb{R}$ 的稠密子集.
 
@@ -258,9 +258,9 @@ $\mathbb{Q}=\bigcup_{q\in\mathbb{Q}}\left\{q\right\}$, 每个单点集 $\left\{q
 
 设 $E$ 是赋范线性空间. 证明: 若 $E$ 中每个绝对收敛级数都收敛, 则 $E$ 完备.
 
-### 解答 7.24
+### 解答 11.3
 
-这是习题 7.21 第 (1) 小题中 ($\Rightarrow$) 方向的重述. 设**定义 6.37 (柯西列)** $\left(x_n\right)$, 选子列 $\left(x_{n_k}\right)$ 使 $\left\|x_{n_{k+1}}-x_{n_k}\right\|<2^{-k}$. 则 $\sum_k\left(x_{n_{k+1}}-x_{n_k}\right)$ 绝对收敛, 由假设收敛, 部分和即 $x_{n_{k+1}}-x_{n_1}$, 故子列收敛. 由柯西列含收敛子列则全列收敛, 全列收敛. 故 $E$ 完备. $\blacksquare$
+这是习题 10.16 第 (1) 小题中 ($\Rightarrow$) 方向的重述. 设**定义 6.37 (柯西列)** $\left(x_n\right)$, 选子列 $\left(x_{n_k}\right)$ 使 $\left\|x_{n_{k+1}}-x_{n_k}\right\|<2^{-k}$. 则 $\sum_k\left(x_{n_{k+1}}-x_{n_k}\right)$ 绝对收敛, 由假设收敛, 部分和即 $x_{n_{k+1}}-x_{n_1}$, 故子列收敛. 由柯西列含收敛子列则全列收敛, 全列收敛. 故 $E$ 完备. $\blacksquare$
 
 ## 11.4 (勒贝格: 无处稠密的常值集与非常数连续函数)
 
@@ -272,7 +272,7 @@ $$
 
 证明 $A_n$ 无处稠密, 由此得出存在连续函数在任何正测度区间上都不常数.
 
-### 解答 7.25
+### 解答 11.4
 
 $A_n$ 闭. 若 $f_k\in{A}_n$ 且 $f_k\to{f}$ 一致, 则每个 $f_k$ 在某区间 $\left[a_k,b_k\right]$ (长度 $\ge1/n$) 上为常数. 区间端点抽子列收敛到 $\left[a,b\right]$, $b-a\ge1/n$, 由一致收敛 $f$ 在 $\left[a,b\right]$ 上为常数. 故 $A_n$ 闭.
 
@@ -284,7 +284,7 @@ $A_n$ 无内部. 任给 $f$ 与 $\varepsilon>0$, 用锯齿形连续函数 $g$, �
 
 设 $E$ 是赋范线性空间. 证明: $E$ 是完备度量空间当且仅当 $E$ 中每个绝对收敛级数都收敛.
 
-### 解答 7.26
+### 解答 11.5
 
 ($\Rightarrow$) 设 $E$ 完备, $\sum_n\left\|x_n\right\|<\infty$. 部分和 $S_N=\sum_{n=1}^Nx_n$ 对 $M>{}N$ 满足
 
@@ -308,7 +308,7 @@ $$
 
 (3) 证明若 $f$ 不单调, 则 $V\left(f\right)$ 不是 $C\left(\left[0,1\right],\mathbb{R}\right)$ 的稠密子集.
 
-### 解答 7.27
+### 解答 11.6
 
 (1) 线性: $\left(g_1+g_2\right)\circ{f}=g_1\circ{f}+g_2\circ{f}$, $\left(\lambda{g}_1\right)\circ{f}=\lambda\left(g_1\circ{f}\right)$. 闭: 若 $g_n\circ{f}\to{h}$ 一致, 则 $h$ 在 $f$ 的每个纤维 $f^{-1}\left(t\right)$ 上为常数. 由此可定义 $g\left(t\right)=h\left(x\right)$ ($x\in{f}^{-1}\left(t\right)$). $g$ 连续 (由**定义 3.22 (连续映射)** 与 $f$ 连续), 故 $h=g\circ{f}\in{V}\left(f\right)$. 由**定义 3.21 (闭集)**, $V\left(f\right)$ 闭.
 
@@ -320,7 +320,7 @@ $$
 
 (等距与拓扑) 设 $\left(X,d_X\right)$, $\left(Y,d_Y\right)$ 是度量空间, $f:X\to{Y}$ 是等距映射. 证明 $f$ 是单射, 连续, 且 $f^{-1}:f\left(X\right)\to{X}$ 也是等距映射. 若 $X$ 完备, 证明 $f\left(X\right)$ 完备. 若 $f$ 是满射, 证明 $f$ 是同胚.
 
-### 解答 7.28
+### 解答 11.7
 
 单射. 由**定义 6.49 (等距映射)**, $f\left(x\right)=f\left(y\right)\Rightarrow{d}_Y\left(f\left(x\right),f\left(y\right)\right)=0=d_X\left(x,y\right)\Rightarrow{x}=y$.
 
@@ -336,7 +336,7 @@ $f$ 满则 $f$ 是同胚. $f^{-1}$ 连续 (上面已证 $f^{-1}$ 是等距故连
 
 (2025 年卷 B 题目四, 20 分). 设 $X$ 为非空完备度量空间. 证明: 若 $X$ 被可数个闭集 $F_1,F_2,\dots$ 覆盖, 则至少存在一个 $F_n$ 包含非空开集.
 
-### 解答 7.29
+### 解答 11.8
 
 反证. 设每个 $F_n$ 的内部为空. 由**定义 3.18 (拓扑空间)**, 补集 $G_n=X\setminus{F}_n$ 是稠密开集 ($F_n$ 闭且无内部当且仅当 $G_n$ 开且稠密). 由**定理 6.13 (贝尔纲定理)**, $\bigcap_nG_n$ 稠密, 特别非空. 取 $x\in\bigcap_nG_n$, 则 $x\notin{F}_n$ 对一切 $n$, 与 $\bigcup_nF_n=X$ 矛盾. 故存在 $n$ 使 $F_n$ 含非空开集. 这就是**定理 6.14 (递增闭集族)**. $\blacksquare$
 
@@ -352,7 +352,7 @@ $f$ 满则 $f$ 是同胚. $f^{-1}$ 连续 (上面已证 $f^{-1}$ 是等距故连
 
 (4) 假设存在 $n\ge1$ 使得 $T^n$ 是幂零映射. 证明 $f$ 是双射.
 
-### 解答 7.30
+### 解答 11.9
 
 (1) 设 $f\left(x\right)=f\left(y\right)$, 则 $x-T\left(x\right)=y-T\left(y\right)$, 即 $\left(x-y\right)=T\left(x-y\right)$. 于是
 
@@ -368,7 +368,7 @@ $$
 \left\|x_{n+1}-x_n\right\|=\left\|T\left(x_n-x_{n-1}\right)\right\|\le\left\|T\right\|\left\|x_n-x_{n-1}\right\|\le\left\|T\right\|^n\left\|x_1-x_0\right\|.
 $$
 
-由几何级数, $\sum_n\left\|x_{n+1}-x_n\right\|<\sum_n\left\|T\right\|^n\left\|x_1-x_0\right\|<\infty$. 由**定义 6.21 (巴拿赫空间)** 即 $X$ 完备, 由习题 7.21 结论 (绝对收敛级数收敛), $x_n$ 收敛到某 $x$. 取极限 $x=y+T\left(x\right)$, 即 $f\left(x\right)=y$. 故 $f$ 满射.
+由几何级数, $\sum_n\left\|x_{n+1}-x_n\right\|<\sum_n\left\|T\right\|^n\left\|x_1-x_0\right\|<\infty$. 由**定义 6.21 (巴拿赫空间)** 即 $X$ 完备, 由习题 10.16 结论 (绝对收敛级数收敛), $x_n$ 收敛到某 $x$. 取极限 $x=y+T\left(x\right)$, 即 $f\left(x\right)=y$. 故 $f$ 满射.
 
 (3) $f=I-T$ 连续 ($T$ 连续, $I$ 连续). 由第 (1), (2) 步, $f$ 双射. 逆映射由级数给出: $f^{-1}=I+T+T^2+\cdots$, 且 $\left\|f^{-1}\right\|\le\frac{1}{1-\left\|T\right\|}$, 故 $f^{-1}$ 连续. 由**定义 3.23 (同胚)**, $f$ 是同胚.
 
@@ -384,7 +384,7 @@ $$
 
 设 $\left(X,d\right)$ 是非空完备度量空间, $f:X\to{X}$ 是严格压缩的, 即存在 $0<{}k<1$ 使对一切 $x,y\in{X}$ 有 $d\left(f\left(x\right),f\left(y\right)\right)\le{k}\,d\left(x,y\right)$. 证明 $f$ 在 $X$ 中有唯一不动点, 即存在唯一的 $x\in{X}$ 使 $f\left(x\right)=x$.
 
-### 解答 8.1
+### 解答 11.10
 
 任取初值 $x_0\in{X}$, 迭代 $x_{n+1}=f\left(x_n\right)$. 由压缩条件,
 
@@ -406,7 +406,7 @@ $$
 
 设 $\left(E,\left\|\cdot\right\|\right)$ 是域 $\mathbb{K}$ 上的赋范线性空间, $f:E\to{E}$ 是连续线性映射. 证明存在常数 $K>0$, 使对一切 $x,y\in{E}$ 有 $\left\|f\left(x\right)-f\left(y\right)\right\|\le{K}\left\|x-y\right\|$.
 
-### 解答 8.2
+### 解答 11.11
 
 由 $f$ 在 $0$ 连续 (按**定义 3.22 (连续映射)**, $\left\|z\right\|\to0$ 时 $\left\|f\left(z\right)\right\|\to0$), 存在 $\delta>0$, 使 $\left\|z\right\|<\delta$ 时 $\left\|f\left(z\right)\right\|\le1$. 对任意 $x\neq0$, 令 $z=\frac{\delta}{2\left\|x\right\|}x$, 则 $\left\|z\right\|=\delta/2<\delta$, 故 $\left\|f\left(z\right)\right\|\le1$. 由线性性,
 
@@ -424,7 +424,7 @@ $\blacksquare$
 
 ## 11.12 (压缩映射 $g_a$ 与解算子 $J$)
 
-沿用习题 8.2 的设定, $E$ 完备. 证明: 对给定的 $\lambda\in\mathbb{K}$ 满足 $\left|\lambda\right|>{}K$, 固定 $a\in{E}$, 映射
+沿用习题 11.11 的设定, $E$ 完备. 证明: 对给定的 $\lambda\in\mathbb{K}$ 满足 $\left|\lambda\right|>{}K$, 固定 $a\in{E}$, 映射
 
 $$
 g_a\left(x\right)=\frac{a-f\left(x\right)}{\lambda}
@@ -432,9 +432,9 @@ $$
 
 是压缩映射; 用巴拿赫不动点定理推出 $g_a$ 有唯一不动点 $J\left(a\right)\in{E}$.
 
-### 解答 8.3
+### 解答 11.12
 
-对 $x,y\in{E}$, 由习题 8.2,
+对 $x,y\in{E}$, 由习题 11.11,
 
 $$
 \left\|g_a\left(x\right)-g_a\left(y\right)\right\|=\frac{\left\|f\left(x\right)-f\left(y\right)\right\|}{\left|\lambda\right|}\le\frac{K}{\left|\lambda\right|}\left\|x-y\right\|.
@@ -446,7 +446,7 @@ $$
 
 证明 $\left\|J\left(a\right)-J\left(b\right)\right\|\le\frac{1}{\left|\lambda\right|-K}\left\|a-b\right\|$.
 
-### 解答 8.4
+### 解答 11.13
 
 由 $J\left(a\right)$ 与 $J\left(b\right)$ 分别是 $g_a$ 与 $g_b$ 的不动点,
 
@@ -460,7 +460,7 @@ $$
 J\left(a\right)-J\left(b\right)=\frac{a-b-f\left(J\left(a\right)\right)+f\left(J\left(b\right)\right)}{\lambda}.
 $$
 
-取范数并用三角不等式与习题 8.2 的估计,
+取范数并用三角不等式与习题 11.11 的估计,
 
 $$
 \left\|J\left(a\right)-J\left(b\right)\right\|\le\frac{\left\|a-b\right\|+\left\|f\left(J\left(a\right)\right)-f\left(J\left(b\right)\right)\right\|}{\left|\lambda\right|}\le\frac{\left\|a-b\right\|+K\left\|J\left(a\right)-J\left(b\right)\right\|}{\left|\lambda\right|}.
@@ -478,23 +478,23 @@ $\blacksquare$
 
 总结如下结论: 对任意连续线性映射 $f:E\to{E}$, 存在 $K>0$, 使对一切满足 $\left|\lambda\right|>{}K$ 的 $\lambda$ 与一切 $a\in{E}$, 方程 $f\left(x\right)-\lambda{x}=a$ (未知量 $x\in{E}$) 有唯一解 $J\left(a\right)$, 且映射 $a\mapsto{J}\left(a\right)$ 连续.
 
-### 解答 8.5
+### 解答 11.14
 
-由习题 8.2, 存在 $K>0$ 使 $\left\|f\left(x\right)-f\left(y\right)\right\|\le{K}\left\|x-y\right\|$. 设 $\left|\lambda\right|>{}K$. 方程 $f\left(x\right)-\lambda{x}=a$ 等价于
+由习题 11.11, 存在 $K>0$ 使 $\left\|f\left(x\right)-f\left(y\right)\right\|\le{K}\left\|x-y\right\|$. 设 $\left|\lambda\right|>{}K$. 方程 $f\left(x\right)-\lambda{x}=a$ 等价于
 
 $$
 x=\frac{a-f\left(x\right)}{\lambda}=g_a\left(x\right).
 $$
 
-由习题 8.3, $g_a$ 是**定义 6.19 (压缩映射)**, 由**定理 6.16 (巴拿赫不动点定理)**, 该方程有唯一解 $J\left(a\right)$.
+由习题 11.12, $g_a$ 是**定义 6.19 (压缩映射)**, 由**定理 6.16 (巴拿赫不动点定理)**, 该方程有唯一解 $J\left(a\right)$.
 
-由习题 8.4, $\left\|J\left(a\right)-J\left(b\right)\right\|\le\frac{1}{\left|\lambda\right|-K}\left\|a-b\right\|$, 即 $J$ 是利普希茨映射. 由利普希茨映射连续, $J$ 连续. $\blacksquare$
+由习题 11.13, $\left\|J\left(a\right)-J\left(b\right)\right\|\le\frac{1}{\left|\lambda\right|-K}\left\|a-b\right\|$, 即 $J$ 是利普希茨映射. 由利普希茨映射连续, $J$ 连续. $\blacksquare$
 
 ## 11.15 (局部凸等价于由半范数族定义, 以及可数凸邻域基)
 
 证明: 实或复拓扑向量空间是局部凸的, 当且仅当其拓扑由一族半范数定义. 进一步证明: 在实或复拓扑向量空间中, $0$ 有可数凸邻域基, 当且仅当拓扑由可数族半范数定义.
 
-### 解答 8.6
+### 解答 11.15
 
 ($\Leftarrow$): 设拓扑由半范数族 $\left\{p_\alpha\right\}_{\alpha\in{A}}$ 定义. 由**定义 6.25 (半范数)**, 每个 $p_\alpha$ 是凸函数 (由三角不等式 $p_\alpha\left(\left(1-t\right)x+ty\right)\le\left(1-t\right)p_\alpha\left(x\right)+tp_\alpha\left(y\right)$). 形如
 
@@ -522,7 +522,7 @@ $$
 \left\|\cdot\right\|_{\bigcap_{\alpha\in{A}}C_\alpha}=\sup_{\alpha\in{A}}\left\|\cdot\right\|_{C_\alpha}.
 $$
 
-### 解答 8.7
+### 解答 11.16
 
 记 $C=\bigcap_{\alpha\in{A}}C_\alpha$. 由**定义 6.27 (规范函数)**,
 

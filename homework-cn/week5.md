@@ -230,7 +230,7 @@
 
 证明拓扑学家正弦曲线连通但不路径连通.
 
-### 解答 3.7
+### 解答 5.1
 
 记
 
@@ -248,7 +248,7 @@ $$
 
 连通性与连续函数. 证明: $X$ 是**定义 4.18 (连通空间)** 当且仅当一切连续映射 $f:X\to\left\{0,1\right\}$ (目标装备离散拓扑) 都是常值的. 再设 $A,B$ 是两个连通度量空间, $X,Y$ 分别是 $A,B$ 的真子集. 证明 $C=\left(A\times{B}\right)\setminus\left(X\times{Y}\right)$ 是 $A\times{B}$ 的连通子集.
 
-### 解答 3.8
+### 解答 5.2
 
 ($\Rightarrow$) 设 $X$ 是**定义 4.18 (连通空间)**, $f:X\to\left\{0,1\right\}$ 连续. 由**定理 4.2 (连续像连通)**, $f\left(X\right)$ 连通; 离散两点集 $\left\{0,1\right\}$ 的连通子集只有单点, 故 $f\left(X\right)$ 是单点集, 即 $f$ 常值.
 
@@ -260,7 +260,7 @@ $$
 
 连通性与边界. 设 $E$ 是连通度量空间, $F$ 是 $E$ 的闭集. 证明: 若 $F$ 的边界 $\partial{F}$ 连通, 则 $F$ 连通. 再举例说明 $F$ 不假设闭时结论失效.
 
-### 解答 3.9
+### 解答 5.3
 
 反设 $F$ 不连通. 则 $F$ 有非空分离 $F=A\cup{B}$, $A,B$ 非空不相交, 且在 $F$ 中既开又闭. 因 $F$ 在 $E$ 中闭, 由**定义 3.21 (闭集)**, $A,B$ 在 $E$ 中也闭. 由**定义 3.20 (边界)**, $\partial{F}=F\cap\overline{E\setminus{F}}$. 断言
 
@@ -276,7 +276,7 @@ $$
 
 链空间. 称度量空间 $X$ 是 $\varepsilon$-链的, 若任意 $a,b\in{X}$ 可由有限点列 $x_0=a,\dots,x_n=b$ 连接使 $d\left(x_i,x_{i+1}\right)<\varepsilon$; 对一切 $\varepsilon>0$ 都成立称**定义 4.14 ($\varepsilon$-链空间)**. 证明: $X$ 连通则 $X$ 是 $\varepsilon$-链空间; $X$ 紧且 $\varepsilon$-链则 $X$ 连通; 举例说明 $\varepsilon$-链空间可以不连通.
 
-### 解答 3.10
+### 解答 5.4
 
 连通 $\Rightarrow$ $\varepsilon$-链: 固定 $\varepsilon>0$, 定义 $a\sim{b}$ 为存在 $\varepsilon$-链. 等价类在**定义 6.36 (开球)** $B\left(x,\varepsilon\right)$ 下封闭, 故每个等价类开; 其余等价类之并也开. 由**定义 4.19 (既开又闭集)**, 连通空间只有一个等价类, 即 $X$ 是**定义 4.14 ($\varepsilon$-链空间)**.
 
@@ -288,7 +288,7 @@ $\varepsilon$-链但不连通的例子: 有理数集 $\mathbb{Q}$ 装备通常�
 
 不动点与连通性. 设 $X$ 是度量空间, 假设一切连续映射 $f:X\to{X}$ 都有不动点. 证明 $X$ 连通. 再问: 若 $X$ 紧且连通, 是否一切连续映射 $f:X\to{X}$ 都有不动点?
 
-### 解答 3.11
+### 解答 5.5
 
 反设 $X$ 不连通, 则 $X=A\cup{B}$, $A,B$ 非空不相交且由**定义 4.19 (既开又闭集)** 既开又闭. 取 $a\in{A}$, $b\in{B}$, 定义 $f$: 在 $A$ 上取常值 $b$, 在 $B$ 上取常值 $a$. 因 $A,B$ 既开又闭, 由**定义 3.22 (连续映射)** $f$ 连续; 但 $f\left(A\right)\subset{B}$, $f\left(B\right)\subset{A}$, 而 $A\cap{B}=\emptyset$, 故 $f$ 无不动点. 矛盾. 故 $X$ 连通.
 
@@ -300,7 +300,7 @@ $\varepsilon$-链但不连通的例子: 有理数集 $\mathbb{Q}$ 装备通常�
 
 (连通边界) 设 $\left(E,d\right)$ 是连通度量空间, $F\subset{E}$ 闭, 且 $\partial{F}$ 连通. 证明 $F$ 连通.
 
-### 解答 3.12
+### 解答 5.6
 
 反设 $F$ 不连通. 则 $F$ 有非空分离 $F=A\cup{B}$, $A,B$ 非空不相交, 且在 $F$ 中既开又闭. 因 $F$ 在 $E$ 中闭, 由**定义 3.21 (闭集)**, $A,B$ 在 $E$ 中也闭. 由**定义 3.20 (边界)**, $\partial{F}=F\cap\overline{E\setminus{F}}$. 断言
 
@@ -320,7 +320,7 @@ $$
 
 (3) (5 分) 证明存在一个连续函数 $f:\left[0,1\right]\to\mathbb{R}$ 使得对于任意的 $x\in\left[0,\frac35\right]$ 都有 $f\left(x\right)\neq{f}\left(x+\frac25\right)$.
 
-### 解答 3.13
+### 解答 5.7
 
 (1) 令 $g\left(x\right)=f\left(x\right)-f\left(x+\frac12\right)$, 定义域 $\left[0,\frac12\right]$. 若 $g\left(0\right)=0$, 则 $x=0$ 已满足. 否则
 
@@ -361,7 +361,7 @@ $$
 
 (4) 证明球面 $S^2$ 是紧的.
 
-### 解答 3.14
+### 解答 5.8
 
 (1) 闭单位圆盘 $D\subset\mathbb{R}^2$ 由**定义 4.23 (凸集)** 是凸集, 凸集中任意两点可由线段连接故路径连通, 路径连通蕴含连通. 映射 $\phi^+:\left(u,v\right)\mapsto\left(u,v,\sqrt{1-u^2-v^2}\right)$ 连续, 其像为 $D^+$. 由**定理 4.2 (连续像连通)**, $D^+$ 连通. 同理 $D^-$ 连通.
 
@@ -389,7 +389,7 @@ $D^+\cap{D}^-=\left\{\left(x,y,0\right):x^2+y^2=1\right\}\neq\emptyset$. 由**�
 
 (6) 证明素数有无穷多个 (弗斯滕伯格的拓扑证明).
 
-### 解答 4.1
+### 解答 5.9
 
 (1) 由**定义 3.15 (拓扑基)**, 开集恰为若干 $S\left(a,b\right)$ 之并. 若 $U$ 开且 $x\in{U}$, 则 $x$ 含于某个并项 $S\left(a,b\right)\subset{U}$, 而 $x\in{S}\left(a,b\right)$ 等价于 $b\equiv{x}\pmod{a}$, 即 $S\left(a,b\right)=S\left(a,x\right)$. 故存在 $a\neq0$ 使 $S\left(a,x\right)\subset{U}$. 反过来, 若每点 $x\in{U}$ 都含某 $S\left(a,x\right)\subset{U}$, 则 $U=\bigcup_{x\in{U}}S\left(a_x,x\right)$ 是基元素之并, 故开.
 
@@ -437,7 +437,7 @@ $$
 
 (4) (基尔希) 验证这确实给出 $\mathbb{Z}_{>0}$ 上的拓扑.
 
-### 解答 4.2
+### 解答 5.10
 
 (1) 对基元素 $S\left(a,b\right)=\left\{an+b:n\in\mathbb{N}\right\}$, $\gcd\left(a,b\right)=1$. 作带余除法 $b=qa+r$, $0\le{r}<{}a$. 则 $\gcd\left(a,r\right)=\gcd\left(a,b\right)=1$, 且 $S\left(a,b\right)=\left\{a\left(n+q\right)+r:n\in\mathbb{N}\right\}\subset{S}\left(a,r\right)$. 反之, 对 $x=an_0+b\in{S}\left(a,b\right)$, $\gcd\left(a,x\right)=\gcd\left(a,an_0+b\right)=\gcd\left(a,b\right)=1$, 于是
 
@@ -469,11 +469,11 @@ $$
 
 (3) 证明弗斯滕伯格拓扑完全不连通, 戈洛姆拓扑连通但不局部连通, 基尔希拓扑既连通又局部连通.
 
-### 解答 4.3
+### 解答 5.11
 
 (1) 豪斯多夫: 取 $x\neq{y}$. 选非零 $a$ 使 $a>\left|x-y\right|$. 若 $S\left(a,x\right)\cap{S}\left(a,y\right)\neq\emptyset$, 则 $x+an=y+am$, 即 $a\left(n-m\right)=y-x$, 与 $a>\left|x-y\right|$ 矛盾. 故 $S\left(a,x\right)$ 与 $S\left(a,y\right)$ 不相交. 由**定义 3.10 (豪斯多夫空间)**, 弗斯滕伯格拓扑是豪斯多夫的. 由**定义 3.33 ($T_1$ 空间)**, 单点集皆闭.
 
-正则: 设 $A$ 闭, $x\notin{A}$. 则 $\mathbb{Z}-A$ 是开集且含 $x$, 由习题 4.1 第 (1) 小题存在 $a\neq0$ 使 $S\left(a,x\right)\subset\mathbb{Z}-A$, 即 $S\left(a,x\right)\cap{A}=\emptyset$. 由习题 4.1 第 (4) 小题 $S\left(a,x\right)$ 既开又闭 (**定义 4.19 (既开又闭集)**), 且 $A\subset\mathbb{Z}-S\left(a,x\right)$, 后者开. 故 $x$ 与 $A$ 有不相交开邻域, 由**定义 7.7 (正则空间)** 弗斯滕伯格拓扑正则.
+正则: 设 $A$ 闭, $x\notin{A}$. 则 $\mathbb{Z}-A$ 是开集且含 $x$, 由习题 5.9 第 (1) 小题存在 $a\neq0$ 使 $S\left(a,x\right)\subset\mathbb{Z}-A$, 即 $S\left(a,x\right)\cap{A}=\emptyset$. 由习题 5.9 第 (4) 小题 $S\left(a,x\right)$ 既开又闭 (**定义 4.19 (既开又闭集)**), 且 $A\subset\mathbb{Z}-S\left(a,x\right)$, 后者开. 故 $x$ 与 $A$ 有不相交开邻域, 由**定义 7.7 (正则空间)** 弗斯滕伯格拓扑正则.
 
 可度量化与同胚于 $\mathbb{Q}$: $\mathbb{Z}$ 可数, 故该拓扑有可数基; 由**定理 34.1 (乌雷松度量化定理)**, 有可数基的正则空间可度量化. 又该拓扑无孤立点: 每点 $x$ 的邻域 $S\left(a,x\right)$ 无限. 由**定理 4.16 (谢尔宾斯基同胚定理)**, 任意两个无孤立点的可数可度量化空间互相同胚, 故它与带通常子空间拓扑的 $\mathbb{Q}$ 同胚.
 
@@ -483,7 +483,7 @@ $$
 
 不正则: 以戈洛姆拓扑为例. 取闭集 $E$ 为全体偶正整数 (奇数集开: 对奇 $x$, $S\left(2,x\right)=\left\{x+2n\right\}$ 全奇且 $\gcd\left(2,x\right)=1$), 再取点 $1$. 点 $1$ 的任一邻域形如 $S\left(a,1\right)=\left\{1+an:n\in\mathbb{N}\right\}$, 而含偶数 $2$ 的任一开集必含某 $S\left(b,2\right)=\left\{2+bn:n\in\mathbb{N}\right\}$ ($\gcd\left(b,2\right)=1$, 即 $b$ 奇). 由同余式相容, $S\left(a,1\right)\cap{S}\left(b,2\right)$ 非空, 故无法用不相交开集分离 $1$ 与闭集 $E$. 由**定义 7.7 (正则空间)**, 戈洛姆拓扑不正则. 基尔希拓扑同理不正则.
 
-(3) 弗斯滕伯格完全不连通: 取 $x\neq{y}$. 选 $a$ 使 $y\notin{S}\left(a,x\right)$. 由习题 4.1 第 (4) 小题 $S\left(a,x\right)$ 既开又闭且含 $x$ 不含 $y$, 故任何同时含 $x,y$ 的子集都被这个非平凡既开又闭集切断, 不能连通. 由**定义 4.20 (完全不连通)**, 弗斯滕伯格拓扑完全不连通.
+(3) 弗斯滕伯格完全不连通: 取 $x\neq{y}$. 选 $a$ 使 $y\notin{S}\left(a,x\right)$. 由习题 5.9 第 (4) 小题 $S\left(a,x\right)$ 既开又闭且含 $x$ 不含 $y$, 故任何同时含 $x,y$ 的子集都被这个非平凡既开又闭集切断, 不能连通. 由**定义 4.20 (完全不连通)**, 弗斯滕伯格拓扑完全不连通.
 
 戈洛姆连通: 设 $C$ 既开又闭且 $1\in{C}$. 由标准归纳 (取 $\mathbb{Z}_{>0}-C$ 中最小元 $n$, 由于开集 $C$ 必然含 $S\left(a,1\right)$, 可推出 $n\in{C}$), 得 $C=\mathbb{Z}_{>0}$. 故 $\mathbb{Z}_{>0}$ 仅有的既开又闭非空集是全空间, 由**定义 4.18 (连通空间)** 戈洛姆拓扑连通. 它不**定义 4.9 (局部连通)**: 点 $1$ 的任一邻域 $S\left(a,1\right)$ 都含非平凡既开又闭子集, 故没有连通邻域基.
 

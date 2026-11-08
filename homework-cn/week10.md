@@ -154,7 +154,7 @@
 
 (4) 证明 $\left(\left(0,1\right],\delta\right)$ 完备.
 
-### 解答 7.6
+### 解答 10.1
 
 (1) 令 $\varphi\left(x\right)=1/x$, 则 $\delta\left(x,y\right)=\left|\varphi\left(x\right)-\varphi\left(y\right)\right|$ 由绝对值诱导, 满足**定义 6.35 (度量空间)** 的全部四条公理.
 
@@ -172,7 +172,7 @@
 
 (2) 举例说明把 $E$ 换成 $l^\infty$ 后结论不成立. 可考虑 $F=\left\{\left(1+2^{-n}\right)e_n\right\}_{n\ge0}$, 其中 $e_n$ 是第 $n$ 位为 $1$ 其余为 $0$ 的序列.
 
-### 解答 7.7
+### 解答 10.2
 
 (1) 由**定义 6.46 (点到集合的距离)**, $d\left(K,F\right)=\inf_{x\in{K},y\in{F}}\left\|x-y\right\|$. 取序列 $x_n\in{K}$, $y_n\in{F}$ 使 $\left\|x_n-y_n\right\|\to{d}\left(K,F\right)$. 由**定理 6.1 (紧 $=$ 序列紧)**, $K$ 紧故 $\left(x_n\right)$ 有收敛子列 $x_{n_j}\to{x}\in{K}$. 此时 $\left\|y_{n_j}\right\|\le\left\|y_{n_j}-x_{n_j}\right\|+\left\|x_{n_j}-x\right\|+\left\|x\right\|$ 有界, 故 $y_{n_j}$ 落在某个闭球内; 由**定理 5.3 ($\mathbb{R}^n$ 中的紧集)** 该闭球闭且有界故紧, 再由**定理 6.1 (紧 $=$ 序列紧)** 抽出子列 $y_{n_{j_k}}\to{y}$. 因 $F$ 闭, 由**定义 3.21 (闭集)** $y\in{F}$. 取极限得
 
@@ -206,7 +206,7 @@ $$
 
 (3) 记上一问中的逐点极限为 $g$, 再用 $\varepsilon/3$ 论证证明 $g$ 实际上是 $\left(g_n\right)$ 在 $\left[0,1\right]$ 上的一致极限.
 
-### 解答 7.8
+### 解答 10.3
 
 (1) 设 $\left\{r_1,r_2,\dots\right\}$ 是 $\left[0,1\right]$ 中全体有理数. 固定 $k$, 数列 $\left(f_n\left(r_k\right)\right)_{n\ge1}$ 有界: $\left|f_n\left(r_k\right)\right|\le{M}$. 由**定理 5.2 (区间紧)**, 有界闭区间 $\left[-M,M\right]$ 紧, 再由**定理 6.1 (紧 $=$ 序列紧)**, $\left(f_n\left(r_1\right)\right)$ 有收敛子列 $\left(f_{n_i^{\left(1\right)}}\left(r_1\right)\right)$. 接着在该子列内取子列使 $\left(f_n\left(r_2\right)\right)$ 收敛; 如此归纳, 得一串嵌套子列 $\left(f_{n_i^{\left(k\right)}}\right)$ 使第 $k$ 个子列在 $r_1,\dots,r_k$ 处都收敛. 对角线子列 $g_i=f_{n_i^{\left(i\right)}}$ 是每个嵌套子列的尾部, 故在每个有理点 $r_k$ 处收敛.
 
@@ -230,23 +230,23 @@ $$
 
 第一部分是对角线论证. 设 $f_n\left(m\right)$ 是正整数上的函数列, 一致有界, 即存在常数 $C$ 使对一切 $n,m$ 有 $\left|f_n\left(m\right)\right|\le{C}$. 证明序列 $\left(f_n\left(1\right)\right)_{n\ge0}$ 有收敛子列 $\left(f_{n_i^{\left(1\right)}}\left(1\right)\right)_{i\ge0}$.
 
-### 解答 7.9
+### 解答 10.4
 
 数列 $\left(f_n\left(1\right)\right)_{n\ge0}$ 含于有界闭区间 $\left[-C,C\right]$. 由**定理 5.2 (区间紧)** 平移即知 $\left[-C,C\right]$ 是紧集; 由**定理 6.1 (紧 $=$ 序列紧)**, 紧度量空间中每个序列都有收敛子列. 故存在子列 $\left(f_{n_i^{\left(1\right)}}\left(1\right)\right)_{i\ge0}$ 收敛. $\blacksquare$
 
 ## 10.5 (对角线子列的归纳构造)
 
-沿用习题 7.9 的记号. 证明可以依次构造子列 $\left(f_{n_i^{\left(k\right)}}\left(m\right)\right)_{i\ge0}$, 使 $\left(f_{n_i^{\left(k+1\right)}}\right)$ 是 $\left(f_{n_i^{\left(k\right)}}\right)$ 的子列, 且 $\left(f_{n_i^{\left(k\right)}}\left(k\right)\right)_{i\ge0}$ 当 $i\to\infty$ 时收敛.
+沿用习题 10.4 的记号. 证明可以依次构造子列 $\left(f_{n_i^{\left(k\right)}}\left(m\right)\right)_{i\ge0}$, 使 $\left(f_{n_i^{\left(k+1\right)}}\right)$ 是 $\left(f_{n_i^{\left(k\right)}}\right)$ 的子列, 且 $\left(f_{n_i^{\left(k\right)}}\left(k\right)\right)_{i\ge0}$ 当 $i\to\infty$ 时收敛.
 
-### 解答 7.10
+### 解答 10.5
 
-归纳构造. $k=1$ 时由**习题 7.9**已得子列 $\left(f_{n_i^{\left(1\right)}}\right)$, 使 $\left(f_{n_i^{\left(1\right)}}\left(1\right)\right)$ 收敛. 设已构造第 $k$ 个子列 $\left(f_{n_i^{\left(k\right)}}\right)$. 数列 $\left(f_{n_i^{\left(k\right)}}\left(k+1\right)\right)_{i\ge0}$ 仍含于 $\left[-C,C\right]$, 由**定理 5.2 (区间紧)** 与**定理 6.1 (紧 $=$ 序列紧)**, 有收敛子列, 记为 $\left(f_{n_i^{\left(k+1\right)}}\left(k+1\right)\right)_{i\ge0}$, 其中 $\left(n_i^{\left(k+1\right)}\right)$ 是 $\left(n_i^{\left(k\right)}\right)$ 的子列. 于是 $\left(f_{n_i^{\left(k+1\right)}}\right)$ 是 $\left(f_{n_i^{\left(k\right)}}\right)$ 的子列, 且由构造 $\left(f_{n_i^{\left(k\right)}}\left(k\right)\right)_{i\ge0}$ 收敛. 归纳完成. $\blacksquare$
+归纳构造. $k=1$ 时由**习题 10.4**已得子列 $\left(f_{n_i^{\left(1\right)}}\right)$, 使 $\left(f_{n_i^{\left(1\right)}}\left(1\right)\right)$ 收敛. 设已构造第 $k$ 个子列 $\left(f_{n_i^{\left(k\right)}}\right)$. 数列 $\left(f_{n_i^{\left(k\right)}}\left(k+1\right)\right)_{i\ge0}$ 仍含于 $\left[-C,C\right]$, 由**定理 5.2 (区间紧)** 与**定理 6.1 (紧 $=$ 序列紧)**, 有收敛子列, 记为 $\left(f_{n_i^{\left(k+1\right)}}\left(k+1\right)\right)_{i\ge0}$, 其中 $\left(n_i^{\left(k+1\right)}\right)$ 是 $\left(n_i^{\left(k\right)}\right)$ 的子列. 于是 $\left(f_{n_i^{\left(k+1\right)}}\right)$ 是 $\left(f_{n_i^{\left(k\right)}}\right)$ 的子列, 且由构造 $\left(f_{n_i^{\left(k\right)}}\left(k\right)\right)_{i\ge0}$ 收敛. 归纳完成. $\blacksquare$
 
 ## 10.6 (对角子列使各点收敛)
 
 证明存在子列 $\left(f_{n_i}\left(m\right)\right)$, 使对每个固定的 $m$, $\left(f_{n_i}\left(m\right)\right)_{i\ge0}$ 当 $i\to\infty$ 时收敛. 可考虑序列 $n_k=n_k^{\left(k\right)}$.
 
-### 解答 7.11
+### 解答 10.6
 
 取对角子列 $n_i=n_i^{\left(i\right)}$. 固定 $m$. 对一切 $i\ge{m}$, 由嵌套关系, $\left(n_j^{\left(i\right)}\right)_{j\ge1}$ 是 $\left(n_j^{\left(m\right)}\right)_{j\ge1}$ 的子列, 特别地 $n_i=n_i^{\left(i\right)}$ 本身是第 $m$ 个子列 $\left(n_j^{\left(m\right)}\right)_{j\ge1}$ 中序号充分大的一项. 而由构造, $\left(f_{n_j^{\left(m\right)}}\left(m\right)\right)_{j\ge1}$ 收敛. 收敛序列的尾部仍收敛, 故子列 $\left(f_{n_i}\left(m\right)\right)_{i\ge{m}}$ 收敛, 即 $\left(f_{n_i}\left(m\right)\right)_{i\ge0}$ 收敛. 对一切 $m$ 同时成立. $\blacksquare$
 
@@ -254,7 +254,7 @@ $$
 
 第二部分是 $\varepsilon/3$ 论证. 设 $C\left[a,b\right]$ 是 $\left[a,b\right]$ 上连续实值函数空间, 装备**定义 6.43 (上确界度量)** $d\left(f,g\right)=\sup_{x\in\left[a,b\right]}\left|f\left(x\right)-g\left(x\right)\right|$. 设 $\left(f_n\right)$ 是该度量下的**定义 6.37 (柯西列)**. 证明对每个 $x\in\left[a,b\right]$, $\left(f_n\left(x\right)\right)$ 收敛到某个 $f\left(x\right)\in\mathbb{R}$.
 
-### 解答 7.12
+### 解答 10.7
 
 由 $\left(f_n\right)$ 是**定义 6.37 (柯西列)**, 对任意 $\varepsilon>0$ 存在 $N$, 使 $n,m\ge{N}$ 时
 
@@ -268,9 +268,9 @@ $$
 
 设 $f$ 是连续函数列 $\left(f_n\right)$ 的极限. 固定 $x\in\left[a,b\right]$ 与 $\varepsilon>0$. 证明可选取 $n$ 使 $\left\|f_n-f\right\|_\infty<\varepsilon/3$; 证明可选取 $\delta>0$, 使 $\left|x-y\right|<\delta$ 蕴含 $\left|f_n\left(x\right)-f_n\left(y\right)\right|<\varepsilon/3$; 由此证明 $f$ 连续.
 
-### 解答 7.13
+### 解答 10.8
 
-由**习题 7.12**, $\left(f_n\right)$ 逐点收敛到 $f$. 又 $\left(f_n\right)$ 是**定义 6.37 (柯西列)**, 对任意 $\varepsilon>0$ 存在 $N$, 使 $n,m\ge{N}$ 时 $\sup_x\left|f_n\left(x\right)-f_m\left(x\right)\right|<\varepsilon/3$. 固定 $n\ge{N}$, 令 $m\to\infty$, 由**习题 7.12** $f_m\left(x\right)\to{f}\left(x\right)$, 故
+由**习题 10.7**, $\left(f_n\right)$ 逐点收敛到 $f$. 又 $\left(f_n\right)$ 是**定义 6.37 (柯西列)**, 对任意 $\varepsilon>0$ 存在 $N$, 使 $n,m\ge{N}$ 时 $\sup_x\left|f_n\left(x\right)-f_m\left(x\right)\right|<\varepsilon/3$. 固定 $n\ge{N}$, 令 $m\to\infty$, 由**习题 10.7** $f_m\left(x\right)\to{f}\left(x\right)$, 故
 
 $$
 \left|f_n\left(x\right)-f\left(x\right)\right|=\lim_{m\to\infty}\left|f_n\left(x\right)-f_m\left(x\right)\right|\le\varepsilon/3.
@@ -292,9 +292,9 @@ $$
 
 证明 $f_n\to{f}$ 在 $C\left[a,b\right]$ 中, 即依**定义 6.43 (上确界度量)** 收敛; 由此得出 $C\left[a,b\right]$ 是完备的.
 
-### 解答 7.14
+### 解答 10.9
 
-由**习题 7.12**, $\left(f_n\right)$ 逐点收敛到 $f$. 由 $\left(f_n\right)$ 是**定义 6.37 (柯西列)**, 对任意 $\varepsilon>0$ 存在 $N$, 使 $n,m\ge{N}$ 时 $\sup_x\left|f_n\left(x\right)-f_m\left(x\right)\right|<\varepsilon$. 固定 $n\ge{N}$ 与任意 $x$, 令 $m\to\infty$, 由**习题 7.12** $f_m\left(x\right)\to{f}\left(x\right)$, 故
+由**习题 10.7**, $\left(f_n\right)$ 逐点收敛到 $f$. 由 $\left(f_n\right)$ 是**定义 6.37 (柯西列)**, 对任意 $\varepsilon>0$ 存在 $N$, 使 $n,m\ge{N}$ 时 $\sup_x\left|f_n\left(x\right)-f_m\left(x\right)\right|<\varepsilon$. 固定 $n\ge{N}$ 与任意 $x$, 令 $m\to\infty$, 由**习题 10.7** $f_m\left(x\right)\to{f}\left(x\right)$, 故
 
 $$
 \left|f_n\left(x\right)-f\left(x\right)\right|=\lim_{m\to\infty}\left|f_n\left(x\right)-f_m\left(x\right)\right|\le\varepsilon.
@@ -302,13 +302,13 @@ $$
 
 对 $x$ 取上确界, 得 $\left\|f_n-f\right\|_\infty\le\varepsilon$ 对一切 $n\ge{N}$ 成立. 由**定义 6.41 (一致收敛与一致度量)** 与**定义 6.43 (上确界度量)**, $f_n\to{f}$ 一致收敛, 即在 $C\left[a,b\right]$ 中收敛.
 
-由**习题 7.13**, $f$ 连续, 故 $f\in{C}\left[a,b\right]$. 于是 $C\left[a,b\right]$ 中每个**定义 6.37 (柯西列)** 都收敛到 $C\left[a,b\right]$ 中的元素, 由**定义 6.38 (完备度量空间)**, $C\left[a,b\right]$ 完备, 即**定理 6.8 ($C\left(X,Y\right)$ 完备)** 的特例. $\blacksquare$
+由**习题 10.8**, $f$ 连续, 故 $f\in{C}\left[a,b\right]$. 于是 $C\left[a,b\right]$ 中每个**定义 6.37 (柯西列)** 都收敛到 $C\left[a,b\right]$ 中的元素, 由**定义 6.38 (完备度量空间)**, $C\left[a,b\right]$ 完备, 即**定理 6.8 ($C\left(X,Y\right)$ 完备)** 的特例. $\blacksquare$
 
 ## 10.10 (豪斯多夫空间中极限唯一, 度量空间中聚点即子列极限)
 
 序列与度量空间. 证明: **定义 3.10 (豪斯多夫空间)** 中序列的极限唯一. 证明: 在**定义 6.35 (度量空间)** 中, 序列的聚点就是其子列极限. 若空间不是度量空间, 会发生什么?
 
-### 解答 7.15
+### 解答 10.10
 
 极限唯一: 设 $x_n\to{x}$ 且 $x_n\to{y}$, $x\neq{y}$. 由**定义 3.10 (豪斯多夫空间)**, 存在不相交开集 $U,V$ 使 $x\in{U}$, $y\in{V}$. 由**定义 3.25 (邻域与极限)**, 对充分大的 $n$ 有 $x_n\in{U}$, 又对充分大的 $n$ 有 $x_n\in{V}$, 与 $U\cap{V}=\emptyset$ 矛盾. 故 $x=y$.
 
@@ -320,7 +320,7 @@ $$
 
 恰一个聚点. 设 $f:\mathbb{R}^n\to\mathbb{R}^n$ 连续, 且序列 $\left(f^n\left(x_0\right)\right)$ 恰有一个聚点. 证明该序列收敛.
 
-### 解答 7.16
+### 解答 10.11
 
 记 $x_n=f^n\left(x_0\right)$, 设唯一聚点为 $z$. 取子列 $x_{n_j}\to{z}$. 由 $f$ 连续, $x_{n_j+1}=f\left(x_{n_j}\right)\to{f}\left(z\right)$. 而 $\left(x_{n_j+1}\right)$ 是 $\left(x_n\right)$ 的子列, 其极限 $f\left(z\right)$ 必为聚点, 由唯一性 $f\left(z\right)=z$.
 
@@ -334,7 +334,7 @@ $$
 
 (2) 证明: 若 $A,B$ 都闭, $A+B$ 不必闭.
 
-### 解答 7.17
+### 解答 10.12
 
 (1) 取序列 $a_n+b_n\in{A}+B$ 收敛到 $y$. 由**定理 6.1 (紧 $=$ 序列紧)**, $A$ 紧, 故 $\left(a_n\right)$ 有子列 $a_{n_j}\to{a}\in{A}$. 则 $b_{n_j}=\left(a_{n_j}+b_{n_j}\right)-a_{n_j}\to{y}-a$. 因 $B$ 闭, 由**定义 3.21 (闭集)**, $y-a\in{B}$. 故 $y=a+\left(y-a\right)\in{A}+B$. $A+B$ 含一切收敛序列的极限, 故闭.
 
@@ -350,7 +350,7 @@ $$
 
 (完备化) 设 $\left(M,d\right)$ 不完备. 考虑全体柯西列 $\left\{x_n\right\}$, 等价关系 $\left\{x_n\right\}\sim\left\{y_n\right\}$ 当且仅当 $\lim_{n\to\infty}d\left(x_n,y_n\right)=0$. 令 $\widehat{M}$ 为等价类集合, 距离 $\widehat{d}\left(\left[x\right],\left[y\right]\right)=\lim_{n\to\infty}d\left(x_n,y_n\right)$. 证明 $\widehat{M}$ 完备, 且 $M$ 在嵌入 $x\mapsto\left(x,x,\dots\right)$ 下在 $\widehat{M}$ 中稠密.
 
-### 解答 7.18
+### 解答 10.13
 
 $\widehat{d}$ 适定: 若 $\left[x_n\right]=\left[x_n'\right]$, $\left[y_n\right]=\left[y_n'\right]$, 则 $d\left(x_n,y_n\right)-d\left(x_n',y_n'\right)$ 由三角不等式趋于 $0$, 极限与代表元无关. 由**定义 6.35 (度量空间)**, $\widehat{d}$ 满足四公理. 这里等价关系中出现的 $\left\{x_n\right\}$ 是**定义 6.37 (柯西列)** 意义下的柯西列.
 
@@ -362,7 +362,7 @@ $\widehat{d}$ 适定: 若 $\left[x_n\right]=\left[x_n'\right]$, $\left[y_n\right
 
 设 $Y$ 为完备度量空间, $X$ 为拓扑空间. 证明在 $Y^X$ 中以一致度量给出的有界连续函数集 $C_b\left(X,Y\right)$ 是完备的.
 
-### 解答 7.19
+### 解答 10.14
 
 设 $\left(f_n\right)\subset{C}_b\left(X,Y\right)$ 是一致度量下的柯西列. 由**定义 6.37 (柯西列)**, $\lim_{N\to\infty}\sup_{i,j>{}N}\sup_{x\in{X}}d_Y\left(f_i\left(x\right),f_j\left(x\right)\right)=0$. 固定 $x\in{X}$, 则 $\left(f_n\left(x\right)\right)$ 是 $Y$ 中柯西列; 由**定义 6.38 (完备度量空间)**, 逐点极限 $f\left(x\right)=\lim_nf_n\left(x\right)$ 存在.
 
@@ -372,9 +372,9 @@ $\widehat{d}$ 适定: 若 $\left[x_n\right]=\left[x_n'\right]$, $\left[y_n\right
 
 设 $K\subset{X}$ 是紧度量空间. 证明 $C\left(K,\mathbb{R}\right)$ 完备. 这里 $X$ 是完备度量空间.
 
-### 解答 7.20
+### 解答 10.15
 
-由**定理 6.3 (紧度量空间完备)**, $K$ 紧故 $K$ 完备. 但此处 $C\left(K,\mathbb{R}\right)$ 中的函数定义在 $K$ 上而取值于 $\mathbb{R}$, 而 $\mathbb{R}$ 是完备度量空间. 由习题 7.19 的论证, 柯西列逐点收敛且一致收敛, 由**定理 6.7 (连续函数的一致极限连续)** 极限连续, 故 $C\left(K,\mathbb{R}\right)$ 完备, 即**定理 6.8 ($C\left(X,Y\right)$ 完备)** 的特例. $\blacksquare$
+由**定理 6.3 (紧度量空间完备)**, $K$ 紧故 $K$ 完备. 但此处 $C\left(K,\mathbb{R}\right)$ 中的函数定义在 $K$ 上而取值于 $\mathbb{R}$, 而 $\mathbb{R}$ 是完备度量空间. 由习题 10.14 的论证, 柯西列逐点收敛且一致收敛, 由**定理 6.7 (连续函数的一致极限连续)** 极限连续, 故 $C\left(K,\mathbb{R}\right)$ 完备, 即**定理 6.8 ($C\left(X,Y\right)$ 完备)** 的特例. $\blacksquare$
 
 ## 10.16 (巴拿赫空间等价于绝对收敛级数皆收敛)
 
@@ -384,7 +384,7 @@ $\widehat{d}$ 适定: 若 $\left[x_n\right]=\left[x_n'\right]$, $\left[y_n\right
 
 (2) 举例说明若 $E$ 不完备, 存在绝对收敛但不收敛的级数.
 
-### 解答 7.21
+### 解答 10.16
 
 第 (1) 小题.
 

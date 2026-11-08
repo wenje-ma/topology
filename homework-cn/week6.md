@@ -170,7 +170,7 @@
 
 (4) $n$ 重连通区域只能连续映到另一个 $n$ 重连通区域; 反过来, 任意两个 $n$ 重连通区域之间是否必有同胚?
 
-### 解答 4.4
+### 解答 6.1
 
 (1) $G$ 开, 故由**定义 3.21 (闭集)**, $\mathbb{R}^2\setminus{G}$ 闭. 连通分支是闭的 (由**定义 4.18 (连通空间)** 配合分支含其闭包, 而闭包仍连通, 故分支闭). 故 $F$ 闭.
 
@@ -184,7 +184,7 @@
 
 (证明回顾) 回顾路径连通的定义. 回顾删齿梳空间的定义及其非路径连通性的证明. 问: 删齿梳空间有多少个路径连通分支? 若现在允许路径由 $f:\left[0,\infty\right)\to{X}$ 连续参数化, 同一证明还成立吗? 课上另一个用紧致性的证明呢?
 
-### 解答 4.5
+### 解答 6.2
 
 由**定义 4.22 (路径连通)**, $X$ 路径连通指任意两点间有连续路径. 删齿梳空间指
 
@@ -208,7 +208,7 @@ $$
 
 (4) 证明 $f'\left(I\right)$ 是区间.
 
-### 解答 4.6
+### 解答 6.3
 
 (1) $A$ 由不等式 $x<{}y$ 定义, 是凸集; 由**定义 4.23 (凸集)**, 凸集路径连通, 再由**定理 4.3 (路径连通蕴含连通)**, $A$ 连通.
 
@@ -228,7 +228,7 @@ $$
 
 (3) 证明若 $\pi$ 是开映射且 $X$ 局部连通 (分别: 局部路径连通), 则 $Y$ 局部连通 (分别: 局部路径连通).
 
-### 解答 4.7
+### 解答 6.4
 
 第 (1) 小题: 反证. 若 $Y$ 不连通, 由**定义 4.18 (连通空间)** 存在不相交非空开集 $V,W\subset{Y}$ 使 $Y=V\sqcup{W}$. 由**定义 11.2 (粘合映射)**, $\pi^{-1}\left(V\right)$ 与 $\pi^{-1}\left(W\right)$ 是 $X$ 中不相交非空开集, 且 $X=\pi^{-1}\left(V\right)\cup\pi^{-1}\left(W\right)$. 由**定义 4.18 (连通空间)**, 这与 $X$ 连通矛盾. 故 $Y$ 连通.
 
@@ -240,7 +240,7 @@ $$
 
 设 $E$ 是无穷维赋范线性空间, $K\subset{E}$ 是紧集. 证明 $E\setminus{K}$ 道路连通. 问有限维赋范线性空间中此结论是否成立?
 
-### 解答 4.8
+### 解答 6.5
 
 无穷维情形: 由**定理 6.17 (里茨定理)**, 无穷维赋范线性空间的闭单位球非紧, 故任何紧集 $K$ 必无内部 (否则 $K$ 含某闭球的平移, 该闭球紧, 与里茨定理矛盾).
 
@@ -254,7 +254,7 @@ $$
 
 设 $f:\mathbb{R}^n\to\mathbb{R}$ 连续, $n\ge2$, 且对每个 $a\in\mathbb{R}$, 等值集 $f^{-1}\left(a\right)$ 紧. 证明 $f$ 取得全局极值 (上确界或下确界之一达到). 问 $n=1$ 时结论如何?
 
-### 解答 4.9
+### 解答 6.6
 
 取定 $a$ 使 $f^{-1}\left(a\right)\neq\emptyset$ (若非空), 即存在 $x_0$ 使 $f\left(x_0\right)=a$. 由假设 $f^{-1}\left(a\right)$ 紧, 由**定理 5.3 ($\mathbb{R}^n$ 中的紧集)** 它是闭有界集, 故存在 $R>0$ 使 $f^{-1}\left(a\right)\subset{B}\left(0,R\right)$.
 
@@ -274,9 +274,9 @@ $n=1$: 结论不成立. 取 $f\left(x\right)=x$, 则 $f^{-1}\left(a\right)=\left
 
 注: 题集原文误作 "当且仅当 $H$ 是闭集", 与其附证方向不符 (附证证的正是 $H$ 非闭时道路连通, $H$ 闭时 $E\setminus{H}$ 分裂为两个凸分支); 此处按数学本意改正.
 
-### 解答 4.10
+### 解答 6.7
 
-取线性泛函 $\varphi$ 使 $H=\ker\varphi$ (习题 8.25). 记
+取线性泛函 $\varphi$ 使 $H=\ker\varphi$ (习题 12.18). 记
 
 $$
 H^{-}=\varphi^{-1}\left(\left(-\infty,0\right)\right),\quad{H}^{+}=\varphi^{-1}\left(\left(0,\infty\right)\right).
@@ -284,9 +284,9 @@ $$
 
 由 $\varphi$ 线性, $H^{-}$ 与 $H^{+}$ 都是凸集, 由**定义 4.23 (凸集)** 它们道路连通.
 
-($H$ 闭 $\Rightarrow$ $E\setminus{H}$ 不道路连通): 由习题 8.25, $H$ 闭时 $\varphi$ 连续. 由**定义 3.22 (连续映射)**, $H^{-}$ 与 $H^{+}$ 都是开集, 且 $E\setminus{H}=H^{-}\sqcup{H}^{+}$ 是两个非空不相交开集之并. 由**定义 4.18 (连通空间)**, $E\setminus{H}$ 不连通, 故不道路连通. 直观地, 若有连续路径 $\gamma:\left[0,1\right]\to{E}\setminus{H}$ 从 $H^{-}$ 到 $H^{+}$, 则 $\varphi\circ\gamma$ 是**定理 4.1 (区间连通)** 上的连续实函数, 在两端异号, 由连续函数的介值定理 必取 $0$, 即某 $\gamma\left(t\right)\in{H}$, 矛盾.
+($H$ 闭 $\Rightarrow$ $E\setminus{H}$ 不道路连通): 由习题 12.18, $H$ 闭时 $\varphi$ 连续. 由**定义 3.22 (连续映射)**, $H^{-}$ 与 $H^{+}$ 都是开集, 且 $E\setminus{H}=H^{-}\sqcup{H}^{+}$ 是两个非空不相交开集之并. 由**定义 4.18 (连通空间)**, $E\setminus{H}$ 不连通, 故不道路连通. 直观地, 若有连续路径 $\gamma:\left[0,1\right]\to{E}\setminus{H}$ 从 $H^{-}$ 到 $H^{+}$, 则 $\varphi\circ\gamma$ 是**定理 4.1 (区间连通)** 上的连续实函数, 在两端异号, 由连续函数的介值定理 必取 $0$, 即某 $\gamma\left(t\right)\in{H}$, 矛盾.
 
-($H$ 不闭 $\Rightarrow$ $E\setminus{H}$ 道路连通): 由习题 8.25, $H$ 不闭时 $\varphi$ 不连续, 此时 $\overline{H}=E$ (即 $H$ 在 $E$ 中稠密). 取 $e\in{E}$ 使 $\varphi\left(e\right)=1$. 则 $\varphi^{-1}\left(1\right)=e+H$ 在 $E$ 中稠密 (平移不改变稠密性). 任取 $-e\in{H}^{-}$ ($\varphi\left(-e\right)=-1$), 由**定义 3.32 (稠密)** 可取序列 $x_n\in{e}+H$ 使 $x_n\to-e$, 且不妨设 $x_1=e$.
+($H$ 不闭 $\Rightarrow$ $E\setminus{H}$ 道路连通): 由习题 12.18, $H$ 不闭时 $\varphi$ 不连续, 此时 $\overline{H}=E$ (即 $H$ 在 $E$ 中稠密). 取 $e\in{E}$ 使 $\varphi\left(e\right)=1$. 则 $\varphi^{-1}\left(1\right)=e+H$ 在 $E$ 中稠密 (平移不改变稠密性). 任取 $-e\in{H}^{-}$ ($\varphi\left(-e\right)=-1$), 由**定义 3.32 (稠密)** 可取序列 $x_n\in{e}+H$ 使 $x_n\to-e$, 且不妨设 $x_1=e$.
 
 定义路径 $\gamma:\left[0,1\right]\to{E}$: 在 $t\in\left[1/\left(k+1\right),1/k\right]$ 上, $\gamma$ 沿直线段从 $x_{k+1}$ 走到 $x_k$, 并令 $\gamma\left(0\right)=-e$. 因 $x_n\to-e$, 该折线在 $0$ 处连续. 对 $t>0$, $\gamma\left(t\right)\in{e}+H$, 故 $\varphi\left(\gamma\left(t\right)\right)=1$; 而 $\varphi\left(\gamma\left(0\right)\right)=\varphi\left(-e\right)=-1$. 故 $\gamma$ 全段在 $E\setminus{H}$ 中, 从 $-e$ 连到 $e$. 由**定义 4.22 (路径连通)**, $H^{-}$ 与 $H^{+}$ 各自道路连通, 任意两点可经 $-e\to{e}$ 折线互相连通. 故 $E\setminus{H}$ 道路连通. $\blacksquare$
 
@@ -300,7 +300,7 @@ $$
 
 (3) 设 $f:\left[0,1\right]\to\left[0,1\right]$. (a) 设 $f$ 非递减 (不必连续). 证明 $f$ 有不动点. (b) 设 $f$ 连续 (不必递增). 证明 $f$ 有不动点. (c) 设 $f,g:\left[0,1\right]\to\left[0,1\right]$ 连续且 $f\circ{g}=g\circ{f}$. 证明存在 $a\in\left[0,1\right]$ 使 $f\left(a\right)=g\left(a\right)$. (d) 设 $f:\mathbb{R}\to\mathbb{R}$ 连续, 且 $f\circ{f}$ 有不动点. 证明 $f$ 有不动点.
 
-### 解答 4.11
+### 解答 6.8
 
 第 (1) 小题: 反证. 若 $E$ 不连通, 由**定义 4.18 (连通空间)**, $E=U\sqcup{V}$, 其中 $U,V$ 是非空不相交开集. 取 $u\in{U}$, $v\in{V}$. 定义 $f:E\to{E}$ 为 $f\left(U\right)=\left\{v\right\}$, $f\left(V\right)=\left\{u\right\}$. 由**定义 3.22 (连续映射)**, $f$ 连续 (常值映射在开集上连续, 拼接不相交开集). 但 $f$ 无不动点: 对 $x\in{U}$, $f\left(x\right)=v\notin{U}$; 对 $x\in{V}$, $f\left(x\right)=u\notin{V}$. 矛盾. 故 $E$ 连通.
 
@@ -334,7 +334,7 @@ $$
 
 (4) (5 分) 证明 $f'\left(I\right)$ 是 $\mathbb{R}$ 中的一个区间.
 
-### 解答 4.12
+### 解答 6.9
 
 (1) 任取两点 $P_1=\left(x_1,y_1\right),P_2=\left(x_2,y_2\right)\in{A}$, 则 $x_1<{}y_1$ 且 $x_2<{}y_2$. 对 $t\in\left[0,1\right]$, 线段上的点为 $x\left(t\right)=\left(1-t\right)x_1+tx_2$, $y\left(t\right)=\left(1-t\right)y_1+ty_2$. 于是
 

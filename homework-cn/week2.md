@@ -210,7 +210,7 @@
 
 证明: 若 $X$ 是豪斯多夫度量空间, 则装备诱导拓扑的 $A$ 也是豪斯多夫空间.
 
-### 解答 1.14
+### 解答 2.1
 
 任取 $x,y\in{A}$ 且 $x\neq{y}$. 由**定义 3.10 (豪斯多夫空间)**, 因 $X$ 是豪斯多夫的, 存在 $X$ 中不相交的开集 $U,V$ 使 $x\in{U}$, $y\in{V}$. 由**定义 3.19 (子空间拓扑)**, $U\cap{A}$ 与 $V\cap{A}$ 都是 $A$ 中开集, 且 $x\in{U}\cap{A}$, $y\in{V}\cap{A}$. 又因 $U\cap{V}=\emptyset$, 故 $\left(U\cap{A}\right)\cap\left(V\cap{A}\right)=\emptyset$. 由**定义 3.10 (豪斯多夫空间)**, $A$ 中任意一对不同点都有不相交的邻域, 故 $A$ 是豪斯多夫空间. $\blacksquare$
 
@@ -218,7 +218,7 @@
 
 构造例子: 子空间 $X\subset{Y}$ 是豪斯多夫的, 但 $X$ 中两点在 $Y$ 中没有不相交的邻域. 可考虑 $Y=X\cup\left\{\omega\right\}$, 其中 $\omega$ 是额外一点, $Y$ 的任一非空开集形如 $O\cup\left\{\omega\right\}$, 其中 $O$ 是 $X$ 中的开集.
 
-### 解答 1.15
+### 解答 2.2
 
 取 $X=\mathbb{R}$ 装备通常拓扑, 由**定义 3.10 (豪斯多夫空间)** 它是豪斯多夫的. 令 $Y=X\cup\left\{\omega\right\}$, 规定 $Y$ 的开集为 $\emptyset$ 与一切形如 $O\cup\left\{\omega\right\}$ 的集合, 其中 $O$ 取遍 $X$ 中开集. 验证这是 $Y$ 上的拓扑, 由**定义 3.18 (拓扑空间)** 逐条验证: $\emptyset$ 开 (题设); 取 $O=X$ 得 $Y=X\cup\left\{\omega\right\}$ 开. 任意并
 
@@ -248,7 +248,7 @@ $$
 
 (4) 任意两个开球或者不相交, 或者一个含于另一个.
 
-### 解答 1.16
+### 解答 2.3
 
 (1) 不妨设 $d\left(x,y\right)<{}d\left(x,z\right)$, 则欲证 $d\left(y,z\right)=\max\left\{d\left(x,y\right),d\left(x,z\right)\right\}$, 只需证 $d\left(x,z\right)=d\left(y,z\right)$.
 
@@ -278,7 +278,7 @@ $$
 
 设 $\left(X,d\right)$ 是度量空间, 再定义度量 $d^{*}\left(x,y\right)=\min\left(d\left(x,y\right),1\right)$ 与 $d^{**}\left(x,y\right)=\frac{d\left(x,y\right)}{1+d\left(x,y\right)}$. 证明他们与 $d$ 诱导同一拓扑. 注意有界性依赖于度量的选取, 而不依赖于拓扑.
 
-### 解答 1.17
+### 解答 2.4
 
 对 $r\in\left(0,1\right)$, $d^{*}\left(x,y\right)=\min\left(d\left(x,y\right),1\right)=d\left(x,y\right)$, 故 $d^{*}$ 与 $d$ 的半径小于 $1$ 的球族完全相同;
 
@@ -294,7 +294,7 @@ $$
 
 回忆 $\mathbb{R}^n$ 上的通常度量拓扑. 证明 $\mathbb{R}^n$ 中任意一族开集之并仍是开集. 证明开集的交未必是开集.
 
-### 解答 1.18
+### 解答 2.5
 
 由**定义 3.18 (拓扑空间)**, 开集的任意并仍开; 但任意交未必开. 取 $\mathbb{R}$ 中一列开区间 $\left(-\frac1n,\frac1n\right)$ ($n\ge1$), 其交为
 
@@ -308,7 +308,7 @@ $$
 
 回忆函数的原像. 证明原像运算与并运算, 交运算可交换. 那直接像呢?
 
-### 解答 1.19
+### 解答 2.6
 
 对于原像, 由原像与并运算交换与原像与交运算交换易证:
 
@@ -334,7 +334,7 @@ $$
 
 回忆由一族向量生成的向量子空间. 给出一个利用向量空间对交集稳定性的抽象构造, 以及一个利用有限线性组合的具体构造.
 
-### 解答 1.20
+### 解答 2.7
 
 设 $E$ 是域上向量空间, $\mathcal{F}=\left\{v_\alpha\right\}_{\alpha\in{A}}\subset{E}$.
 
@@ -352,7 +352,7 @@ $$
 
 证明: 集合 $F$ 在 $\mathbb{R}$ 的通常度量拓扑下闭, 当且仅当 $F$ 的每个收敛序列的极限都在 $F$ 中.
 
-### 解答 1.21
+### 解答 2.8
 
 ($\Rightarrow$) 设 $F$ 闭. 由**定义 3.21 (闭集)**, $\mathbb{R}\setminus{F}$ 开. 设 $x_n\in{F}$ 且 $x_n\to{x}$. 若 $x\notin{F}$, 则 $x\in\mathbb{R}\setminus{F}$, 而 $\mathbb{R}\setminus{F}$ 是 $x$ 的邻域. 由**定义 3.25 (邻域与极限)**, 对所有充分大的 $n$ 有 $x_n\in\mathbb{R}\setminus{F}$, 与 $x_n\in{F}$ 矛盾. 故 $x\in{F}$.
 
@@ -362,7 +362,7 @@ $$
 
 回忆同一空间 $X$ 上一族拓扑的交集仍是拓扑. 回忆由 $X$ 的一族子集生成的拓扑是什么. 是否有一个利用有限交的具体构造?
 
-### 解答 1.22
+### 解答 2.9
 
 同一空间 $X$ 上一族拓扑 $\left\{\mathcal{O}_\alpha\right\}_{\alpha\in{A}}$ 的交集 $\mathcal{O}=\bigcap_{\alpha\in{A}}\mathcal{O}_\alpha$ 仍是拓扑: 由原像保空集与全集类的平凡性, $\emptyset$ 与 $X$ 属于每个 $\mathcal{O}_\alpha$, 故属于 $\mathcal{O}$; 若 $\left\{U_i\right\}\subset\mathcal{O}$, 则对每个 $\alpha$ 有 $\left\{U_i\right\}\subset\mathcal{O}_\alpha$, 由**定义 3.18 (拓扑空间)** (开集的任意并仍开) $\bigcup_iU_i\in\mathcal{O}_\alpha$, 故 $\bigcup_iU_i\in\mathcal{O}$; 有限交同理 (**定义 3.18 (拓扑空间)** (2)).
 
@@ -372,7 +372,7 @@ $$
 
 证明: 若 $f:X\to\left(Y,\mathcal{O}\right)$ 是到拓扑空间 $Y$ 的映射, 则集合族 $\left\{f^{-1}\left(O\right):O\in\mathcal{O}\right\}$ 在 $X$ 上定义一个拓扑. 证明它是使 $f$ 连续的最粗拓扑, 即初始拓扑. 研究 $f$ 为包含映射的情形, 例如 $f:\mathbb{R}\to\mathbb{R}^2$, 其中 $\mathbb{R}^2$ 装备欧氏拓扑. 反过来, 能否把 $X$ 上的拓扑前推, 在 $Y$ 上定义所谓最终拓扑?
 
-### 解答 1.23
+### 解答 2.10
 
 记 $\mathcal{O}_f=\left\{f^{-1}\left(O\right):O\in\mathcal{O}\right\}$. 由原像与并运算交换, 原像与交运算交换 与原像保空集与全集, $\mathcal{O}_f$ 满足**定义 3.18 (拓扑空间)** 的三条: $\emptyset=f^{-1}\left(\emptyset\right)$ 与 $X=f^{-1}\left(Y\right)$ 在 $\mathcal{O}_f$ 中; 任意并 $\bigcup_jf^{-1}\left(O_j\right)=f^{-1}\left(\bigcup_jO_j\right)$ 仍在 $\mathcal{O}_f$ 中; 有限交 $f^{-1}\left(O_1\right)\cap{f}^{-1}\left(O_2\right)=f^{-1}\left(O_1\cap{O}_2\right)$ 仍在其中. 故 $\mathcal{O}_f$ 是 $X$ 上的拓扑.
 
@@ -386,21 +386,21 @@ $$
 
 设 $X$ 为集合. 证明下列是拓扑: 所有非平凡开集都是 $X$ 的某有限子集的补集; 这称为 $X$ 上的余有限拓扑. 证明序列 $\left\{1,2,3,4,\dots\right\}$ 在 $\mathbb{R}$ 的余有限拓扑中收敛到 $\mathbb{R}$ 的每一点. 能否在 $X$ 上定义余可数拓扑? 现在取 $X=\mathbb{R}$ 装备余可数拓扑, 考虑 $\left(-1,1\right)\subset\mathbb{R}$. 证明 $\overline{\left(-1,1\right)}=\mathbb{R}$. 证明 $\left(-1,1\right)$ 中没有序列收敛到 $2\in\mathbb{R}$.
 
-### 解答 2.1
+### 解答 2.11
 
 $\emptyset$ 与 $X$ 开; 任意并 $\bigcup_i\left(X\setminus{F}_i\right)=X\setminus\bigcap_iF_i$, 而任意一族有限集之交仍有限, 故仍余有限; 有限交 $\bigcap_{k=1}^{m}\left(X\setminus{F}_k\right)=X\setminus\bigcup_{k=1}^{m}F_k$, 有限个有限集之并仍有限. 由**定义 3.18 (拓扑空间)** 这是拓扑.
 
 序列 $\left\{n\right\}_{n\ge1}$ 在余有限拓扑 $\mathbb{R}$ 中收敛到任一点 $x$: $x$ 的任一邻域是 $X\setminus{F}$ ($F$ 有限). 因 $F$ 只含有限个自然数, 除有限个 $n$ 外 $n\notin{F}$, 故 $n\in{X}\setminus{F}$ 最终成立. 由**定义 3.25 (邻域与极限)**, $n\to{x}$.
 
-余可数拓扑: 由**定义 3.27 (余可数拓扑)**, 开集为 $\emptyset$ 与所有余可数集 $X\setminus{C}$ ($C$ 可数). 现在取 $X=\mathbb{R}$ 装备余可数拓扑, 令 $A=\left(-1,1\right)$. 任取 $x\in\mathbb{R}$ 与其任一邻域 $U=\mathbb{R}\setminus{C}$ ($C$ 可数). 因 $\left(-1,1\right)$ 不可数而 $C$ 可数, 故 $A\setminus{C}=\left(-1,1\right)\setminus{C}\neq\emptyset$, 即 $U\cap{A}\neq\emptyset$. 由**定义 3.26 (闭包)**, $x$ 属于 $A$ 的闭包. 故 $\overline{A}=\mathbb{R}$.
+余可数拓扑: 由**定义 3.27 (余可数拓扑)**, 开集为 $\emptyset$ 与所有余可数集 $X\setminus{C}$ ($C$ 可数). 现在取 $X=\mathbb{R}$ 装备余可数拓扑, 对于 $\left(-1,1\right)$, $\overline{\left(-1,1\right)}$ 是包含 $(-1,1)$ 的最小可数集, 由于 $(-1,1)$ 自己不可数, 则 $\overline{\left(-1,1\right)}$ 只能是 $\mathbb{R}$.
 
-最后, 设 $x_n\in{A}$ 且 $x_n\to2$. 令 $C=\left\{x_n:n\ge1\right\}$, 它可数. 则 $U=\mathbb{R}\setminus{C}$ 是余可数开集, 含 $2$, 但不含任何 $x_n$. 由**定义 3.25 (邻域与极限)**, 这与 $x_n\to2$ 矛盾. 故 $A$ 中没有序列收敛到 $2$. $\blacksquare$
+最后, 设 $x_n\in{A}$ 且 $x_n\to2$. 由于 $2$ 本身可数, 即 $2\in{C}$, 则其任意的邻域 $X\setminus{C}$ 都不含 $2$, 因此没有任何序列收敛到 $2$. $\blacksquare$
 
 ## 2.12 (扎里斯基拓扑, 扎里斯基开集的稠密性与闭包)
 
-设 $K$ 为域, $n\in\mathbb{N}$ 为非负整数, $\mathbb{A}^n\left(K\right)=K^n$. $\mathbb{A}^n\left(K\right)$ 中扎里斯基闭集形如 $F=\left\{x\in\mathbb{A}^n\left(K\right):\forall{i}\in{I},P_i\left(x\right)=0\right\}$, 其中 $\left(P_i\right)_{i\in{I}}$ 是一族多项式. 证明这确实定义了一个拓扑 (即扎里斯基拓扑). 证明 $\mathbb{R}^2$ 中扎里斯基开集在 $\mathbb{R}^2$ 中稠密. 求 $\left\{\left(0,\frac1{2^n}\right):n\ge0\right\}\subset\mathbb{R}^2$ 的扎里斯基闭包.
+设 $K$ 为域, $n\in\mathbb{N}$ 为非负整数, $\mathbb{A}^n\left(K\right)=K^n$. $\mathbb{A}^n\left(K\right)$ 中扎里斯基闭集形如 $F=\left\{x:\forall{i}\in{I},P_i\left(x\right)=0\right\}$, 其中 $\left(P_i\right)_{i\in{I}}$ 是一族多项式. 证明这确实定义了一个拓扑 (即扎里斯基拓扑). 证明 $\mathbb{R}^2$ 中扎里斯基开集在 $\mathbb{R}^2$ 中稠密. 求 $\left\{\left(0,\frac1{2^n}\right):n\ge0\right\}\subset\mathbb{R}^2$ 的扎里斯基闭包.
 
-### 解答 2.2
+### 解答 2.12
 
 由**定义 3.28 (扎里斯基拓扑)**, 记 $Z\left(P_i\right)_{i\in{I}}=\left\{x:\forall{i}\in{I},P_i\left(x\right)=0\right\}$. 验证闭集族满足**定义 3.21 (闭集)**: 空集 $Z\left(1\right)$ (常数多项式 $1$ 无零点); 全空间 $Z\left(0\right)$ (零多项式处处为零); 任意交
 
@@ -411,12 +411,12 @@ $$
 仍为公共零点集; 两个闭集之并
 
 $$
-Z\left(P_i\right)_{i\in{I}}\cup{Z}\left(Q_j\right)_{j\in{J}}=Z\left(P_iQ_j\right)_{i,j}
+Z\left(P_i\right)_{i\in{I}}\cup{Z}\left(Q_j\right)_{j\in{J}}=Z\left(P_iQ_j\right)_{i,j},
 $$
 
-(因 $x$ 在左端当且仅当某 $P_i\left(x\right)=0$ 或某 $Q_j\left(x\right)=0$, 当且仅当对一切 $\left(i,j\right)$ 有 $P_i\left(x\right)Q_j\left(x\right)=0$). 故闭集族满足**定义 3.21 (闭集)**, 扎里斯基拓扑成立.
+故闭集族满足**定义 3.21 (闭集)**, 扎里斯基拓扑成立.
 
-扎里斯基开集稠密: 非空扎里斯基开集是某非零多项式 $P$ 的零点集的补集 $\mathbb{R}^2\setminus{Z}\left(P\right)$. 若 $Z\left(P\right)$ 含某开球, 则该开球内沿任一直线限制 $P$ 所得一元多项式在无限多点为零, 由一元多项式恒零判据 故恒为零; 从而 $P$ 在该开球上恒为零, 进而 $P\equiv0$, 矛盾. 故 $Z\left(P\right)$ 无内部. 由**定义 3.32 (稠密)**, 其补集 (扎里斯基开集) 稠密.
+扎里斯基开集稠密: 非空扎里斯基开集是某非零多项式 $P$ 的零点集的补集 $\mathbb{R}^2\setminus{Z}\left(P\right)$. 若 $Z\left(P\right)$ 含某开球, 则该开球内沿任一直线限制 $P$ 所得一元多项式在无限多点为零, 由一元多项式恒零判据故恒为零; 从而 $P$ 在该开球上恒为零, 进而 $P\equiv0$, 矛盾. 故 $Z\left(P\right)$ 无内部. 由**定义 3.32 (稠密)**, 其补集 (扎里斯基开集) 稠密.
 
 求闭包: 令 $S=\left\{\left(0,2^{-n}\right):n\ge0\right\}$. 多项式 $P$ 在 $S$ 上恒零当且仅当一元多项式 $P\left(0,y\right)$ 在无限多点 $y=2^{-n}$ 为零, 由一元多项式恒零判据 当且仅当 $P\left(0,\cdot\right)\equiv0$, 即 $x\mid{P}\left(x,y\right)$. 全体这样的 $P$ 的公共零点集为 $\left\{\left(0,y\right):y\in\mathbb{R}\right\}$, 即 $y$ 轴. 由**定义 3.26 (闭包)**, 这就是 $S$ 的扎里斯基闭包. $\blacksquare$
 
@@ -424,7 +424,7 @@ $$
 
 回忆拓扑基的定义. 回忆其等价刻画. 若去掉其中任一条件会怎样? 证明定义与刻画的等价性.
 
-### 解答 2.3
+### 解答 2.13
 
 由**定义 3.15 (拓扑基)**, 拓扑基的定义是: $\mathcal{B}\subset\mathcal{P}\left(X\right)$ 中元素的任意并构成 $X$ 上一个拓扑. 其等价刻画为: (1) $X=\bigcup_{B\in\mathcal{B}}B$; (2) 对任意 $B_1,B_2\in\mathcal{B}$ 与任意 $x\in{B}_1\cap{B}_2$, 存在 $B_3\in\mathcal{B}$ 使 $x\in{B}_3\subset{B}_1\cap{B}_2$.
 
@@ -442,7 +442,7 @@ $$
 
 (2) 考虑 $\mathbb{R}$ 上以 $\mathcal{B}=\left\{\left(a,b\right]\subset\mathbb{R}:a<{}b\right\}$ 为基. 证明 $\mathcal{B}$ 确实是某拓扑 $\mathcal{O}$ 的基; 证明 $\mathcal{O}$ 可分但没有可数基; 证明 $\mathcal{O}$ 不来自度量拓扑 (即不可度量化).
 
-### 解答 2.4
+### 解答 2.14
 
 (1) 设 $\left\{B_n\right\}_{n\ge1}$ 是 $X$ 的可数基. 每点取 $x_n\in{B}_n$, 令 $D=\left\{x_n:n\ge1\right\}$. 由于 $\overline{D}\subset{X}$ 显然, 只需证明 $X\subset\overline{D}$. 任取 $x\in{X}$ 与非空开集 $U\ni{x}$, 由**定义 3.15 (拓扑基)** 存在某 $B_n\subset{U}$, 故存在一个 $x_n$ 满足 $x_n\in{D}\cap{U}\neq\emptyset$, 这说明 $x$ 是 $D$ 的闭包点, 即 $x\in\overline{D}$. 由**定义 3.32 (稠密)**, $D$ 在 $X$ 中稠密; 由**定义 3.9 (可分)**, $X$ 可分.
 

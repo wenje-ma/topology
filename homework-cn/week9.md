@@ -230,7 +230,7 @@
 
 (2) 设 $f:K\to{K}$ 连续, $x\in{K}$, 序列 $f^n\left(x\right)$ 恰有两个子列极限 $z_0,z_1$. 证明: 对 $z_0,z_1$ 的任意邻域 $V_0,V_1$, 序列最终落入 $V_0\cup{V}_1$; 并证明 $f\left(z_0\right)=z_1$, $f\left(z_1\right)=z_0$, 且 $f^{2k}\left(x\right)$ 与 $f^{2k+1}\left(x\right)$ 分别收敛到 $z_0,z_1$.
 
-### 解答 6.10
+### 解答 9.1
 
 (1) ($\Rightarrow$) 显然. ($\Leftarrow$) 设唯一子列极限为 $L$. 若序列不收敛到 $L$, 则存在 $\varepsilon>0$ 与子列恒在 $B\left(L,\varepsilon\right)$ 外; 由**定理 6.1 (紧 $=$ 序列紧)**, 该子列有收敛子列, 其极限异于 $L$, 矛盾. 故序列收敛到 $L$.
 
@@ -248,7 +248,7 @@ $f$ 连续, 把子列极限映为序列 $f^{n+1}\left(x\right)$ 的子列极限,
 
 (3) 最后证明: 若 $g:E\to{E}$ 是连续双射且 $d\left(g\left(x\right),g\left(y\right)\right)\le{d}\left(x,y\right)$ 对一切 $x,y$ 成立, 则 $g$ 也是**定义 6.49 (等距映射)**.
 
-### 解答 6.11
+### 解答 9.2
 
 (1) 固定 $x,y\in{E}$, 记 $a_n=d\left(f^n\left(x\right),f^n\left(y\right)\right)$. 由条件应用于 $\left(f^{n-1}\left(x\right),f^{n-1}\left(y\right)\right)$, $a_{n+1}\ge{a}_n$, 又 $a_n\le\operatorname{diam}\left(E\right)$, 故 $a_n\uparrow{L}$. 由**定理 6.1 (紧 $=$ 序列紧)**, $E\times{E}$ 紧, $\left(f^n\left(x\right),f^n\left(y\right)\right)$ 有子列 $\left(f^{n_j}\left(x\right),f^{n_j}\left(y\right)\right)\to\left(u,v\right)$, 于是 $d\left(u,v\right)=L$. 因 $a_{n_j}\to{L}$ 且 $a_{n_j+1}\to{L}$, 由三角不等式
 
@@ -274,7 +274,7 @@ $$
 
 等距与紧性. 设 $K\subset\mathbb{R}^n$ 是非空紧集, $\varepsilon>0$. 称 $A\subset{K}$ 是 $\varepsilon$-分离的, 若 $x\neq{y}$ 蕴含 $\left|x-y\right|>\varepsilon$. 证明存在有限数 $M\left(\varepsilon\right)$, 使 $K$ 中任何 $\varepsilon$-分离集的基数不超过 $M\left(\varepsilon\right)$. 再证明: 若 $f:K\to{K}$ 是**定义 6.49 (等距映射)**, 则 $f$ 满.
 
-### 解答 6.12
+### 解答 9.3
 
 反设存在任意大的 $\varepsilon$-分离集. 则可取两两不同的点列 $x_m\in{K}$ 使 $m\neq{m}'$ 时 $\left|x_m-x_{m'}\right|>\varepsilon$. 由**定理 5.3 ($\mathbb{R}^n$ 中的紧集)** 与**定理 6.1 (紧 $=$ 序列紧)**, $\left(x_m\right)$ 有收敛子列; 收敛子列是**定义 6.37 (柯西列)**, 充分靠后两项距离 $<\varepsilon$, 与 $\varepsilon$-分离矛盾. 故存在 $M\left(\varepsilon\right)$.
 
@@ -301,7 +301,7 @@ $$
 \inf_{x\in{E}}g\left(x\right)=\inf_{x\in{A}}f\left(x\right).
 $$
 
-### 解答 6.13
+### 解答 9.4
 
 第 (1) 小题: 对 $n\ge1$, 定义 $K_n=\left\{x\in{E}:d\left(x,K\right)<1/n\right\}$. 每个 $K_n$ 是开集且含 $K$. 反证: 若对每个 $n$, $f$ 在 $K_n$ 上不单射, 则存在 $x_n,y_n\in{K}_n$, $x_n\neq{y}_n$, 使 $f\left(x_n\right)=f\left(y_n\right)$. 由 $x_n,y_n\in{K}_n$, 可取 $x'_n,y'_n\in{K}$ 使 $d\left(x_n,x'_n\right)<1/n$, $d\left(y_n,y'_n\right)<1/n$. 由**定义 5.16 (紧致空间)**, $K\times{K}$ 紧; 由**定理 6.1 (紧 $=$ 序列紧)**, 存在子列 $\left(x'_{\varphi\left(n\right)},y'_{\varphi\left(n\right)}\right)\to\left(x,y\right)\in{K}\times{K}$. 由三角不等式, $x_{\varphi\left(n\right)}\to{x}$, $y_{\varphi\left(n\right)}\to{y}$. 由 $f$ 连续, $f\left(x_{\varphi\left(n\right)}\right)=f\left(y_{\varphi\left(n\right)}\right)$ 取极限得 $f\left(x\right)=f\left(y\right)$. 因 $f$ 在 $K$ 上单射, $x=y$. 但由假设, $x$ 有邻域 $B\left(x,\varepsilon\right)$ 使 $f$ 单射, 而 $x_{\varphi\left(n\right)}\neq{y}_{\varphi\left(n\right)}$ 且当 $n$ 充分大时二者都在 $B\left(x,\varepsilon\right)$ 内, $f\left(x_{\varphi\left(n\right)}\right)=f\left(y_{\varphi\left(n\right)}\right)$, 矛盾. 故存在 $n$ 使 $f$ 在 $K_n$ 上单射, 取 $\Omega=K_n$ 即可.
 
@@ -343,7 +343,7 @@ $$
 
 (5) 证明德布鲁因-埃尔德什定理: 如果图 $G$ 的任意有限子图都是 $k$-可染色的, 那么 $G$ 也是 $k$-可染色的.
 
-### 解答 6.14
+### 解答 9.5
 
 (0) $\left\{1,\dots,k\right\}$ 是有限集. 任意开覆盖中, 每个点选一个覆盖元, 仅需 $k$ 个即可覆盖, 故由**定义 5.16 (紧致空间)** 它紧.
 
@@ -371,7 +371,7 @@ $$
 
 (2) 在巴拿赫不动点定理的条件中, 把完备度量空间换为紧度量空间, 结论仍成立.
 
-### 解答 6.15
+### 解答 9.6
 
 第 (1) 小题: 由**定义 4.23 (凸集)**, $K$ 凸. 由**定理 6.3 (紧度量空间完备)**, $K$ 完备. 在严格条件 $\left\|f\left(x\right)-f\left(y\right)\right\|<\left\|x-y\right\|$ ($x\neq{y}$) 下, 由 $K$ 紧 (由**定理 6.1 (紧 $=$ 序列紧)** 取最小距离对), 可推出 $f$ 实际上是**定义 6.19 (压缩映射)** 意义下的压缩映射 (存在统一的 $0<{}k<1$). 故由**定理 6.16 (巴拿赫不动点定理)**, $f$ 有不动点.
 
@@ -381,7 +381,7 @@ $$
 
 证明: 紧凸集到自身的连续仿射映射有不动点 (角谷-马尔可夫定理).
 
-### 解答 6.16
+### 解答 9.7
 
 设 $K\subset{E}$ 紧凸, $f:K\to{K}$ 连续仿射. 考虑 $K$ 的所有非空闭凸子集族, 它们在 $f$ 下不变. 由**定理 5.1 (紧空间连续像紧)** 与**定义 4.23 (凸集)**, $f$ 把闭凸集映为闭凸集. 由**定义 5.17 (有限交性质)** 与**定理 5.10 (有限交判据)**, 这些不变闭凸子集族具有有限交性质, 其交 $K_0$ 非空. 取 $K_0$ 为极小不变闭凸集. 由极小性, $f\left(K_0\right)=K_0$. 若 $K_0$ 多于一点, 由凸性与仿射性可进一步收缩, 矛盾. 故 $K_0$ 为单点 $\left\{x\right\}$, 即 $f\left(x\right)=x$. $\blacksquare$
 
@@ -389,7 +389,7 @@ $$
 
 设 $\left(X,d\right)$ 是度量空间. 证明朴素定义 $d\left(A,B\right)=\inf_{a\in{A},b\in{B}}d\left(a,b\right)$ 一般不是度量.
 
-### 解答 7.1
+### 解答 9.8
 
 在 $\mathbb{R}^2$ (配通常欧氏距离) 中取
 
@@ -417,7 +417,7 @@ $$
 
 但反过来一般不成立.
 
-### 解答 7.2
+### 解答 9.9
 
 设 $x\in{U}_{r_1}\left(U_{r_2}\left(A\right)\right)$. 由**定义 6.47 ($\varepsilon$-邻域)**, 存在 $y\in{U}_{r_2}\left(A\right)$ 使 $d\left(x,y\right)<{}r_1$; 再由**定义 6.46 (点到集合的距离)**, 存在 $a\in{A}$ 使 $d\left(y,a\right)<{}r_2$. 由**定义 6.35 (度量空间)** 的三角不等式,
 
@@ -447,11 +447,11 @@ $$
 
 证明豪斯多夫距离是伪距离, 即满足度量的全部公理, 只是 $d_H\left(A,B\right)=0$ 不一定蕴含 $A=B$.
 
-### 解答 7.3
+### 解答 9.10
 
 由**定义 6.48 (豪斯多夫距离)**, 非负性与对称性是显然的 (定义关于 $A,B$ 对称). 又 $d_H\left(A,A\right)=0$, 因为对任意 $r>0$, $A\subset{U}_r\left(A\right)$ 恒成立.
 
-剩证三角不等式. 设 $A,B,C\subset{X}$. 由**定义 6.48 (豪斯多夫距离)**, $d_H\left(A,B\right)<{}r$ 意味着 $A\subset{U}_r\left(B\right)$ 且 $B\subset{U}_r\left(A\right)$. 若 $A\subset{U}_r\left(B\right)$ 且 $B\subset{U}_s\left(C\right)$, 由**习题 7.2**的包含关系 (**定义 6.47 ($\varepsilon$-邻域)**),
+剩证三角不等式. 设 $A,B,C\subset{X}$. 由**定义 6.48 (豪斯多夫距离)**, $d_H\left(A,B\right)<{}r$ 意味着 $A\subset{U}_r\left(B\right)$ 且 $B\subset{U}_r\left(A\right)$. 若 $A\subset{U}_r\left(B\right)$ 且 $B\subset{U}_s\left(C\right)$, 由**习题 9.9**的包含关系 (**定义 6.47 ($\varepsilon$-邻域)**),
 
 $$
 A\subset{U}_r\left(B\right)\subset{U}_r\left(U_s\left(C\right)\right)\subset{U}_{r+s}\left(C\right).
@@ -471,7 +471,7 @@ $$
 
 证明: 对一切 $A\subset{X}$, $d_H\left(A,A\right)=0$. 若 $A,B$ 闭, 则 $d_H\left(A,B\right)=0$ 蕴含 $A=B$.
 
-### 解答 7.4
+### 解答 9.11
 
 现设 $A,B$ 闭且 $d_H\left(A,B\right)=0$. 任取 $a\in{A}$. 对每个 $n$, 由**定义 6.48 (豪斯多夫距离)** 与 $d_H\left(A,B\right)=0$, 存在 $b_n\in{B}$ 使 $d_H\left(a,b_n\right)<1/n$. 于是 $b_n\to{a}$. 由**定义 3.21 (闭集)**, 闭集含其中序列的极限, 故 $a\in{B}$. 这证明 $A\subset{B}$. 交换 $A,B$ 同理得 $B\subset{A}$, 故 $A=B$. $\blacksquare$
 
@@ -479,6 +479,6 @@ $$
 
 证明: 若把豪斯多夫距离限制在紧子集族 $\mathcal{K}\left(X\right)$ 上, 则它是 $\mathcal{K}\left(X\right)$ 上的真度量.
 
-### 解答 7.5
+### 解答 9.12
 
-由**习题 7.3**, $d_H$ 是伪距离, 已满足非负性, 对称性与三角不等式. 剩证分离性. 设 $A,B\in\mathcal{K}\left(X\right)$ 紧致且 $d_H\left(A,B\right)=0$. 度量空间是**定义 3.10 (豪斯多夫空间)**, 由**定理 5.5 (豪斯多夫中紧集闭)**, 紧集 $A,B$ 在 $X$ 中闭. 由**习题 7.4**的结论, $d_H\left(A,B\right)=0$ 且 $A,B$ 闭蕴含 $A=B$. 故分离性成立. $\blacksquare$
+由**习题 9.10**, $d_H$ 是伪距离, 已满足非负性, 对称性与三角不等式. 剩证分离性. 设 $A,B\in\mathcal{K}\left(X\right)$ 紧致且 $d_H\left(A,B\right)=0$. 度量空间是**定义 3.10 (豪斯多夫空间)**, 由**定理 5.5 (豪斯多夫中紧集闭)**, 紧集 $A,B$ 在 $X$ 中闭. 由**习题 9.11**的结论, $d_H\left(A,B\right)=0$ 且 $A,B$ 闭蕴含 $A=B$. 故分离性成立. $\blacksquare$

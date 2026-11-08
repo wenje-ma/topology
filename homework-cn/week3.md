@@ -182,7 +182,7 @@
 
 (2) 但当 $A$ 是子集时, $V_{\varepsilon}\left(A\right)=\left\{x:d\left(x,A\right)<\varepsilon\right\}$ 不一定是 $A$ 的基本邻域系. 例如取 $A=\left\{xy=1,x>0\right\}\subset\mathbb{R}^2$ 与 $U=\left\{x,y>0\right\}\subset\mathbb{R}^2$.
 
-### 解答 2.5
+### 解答 3.1
 
 (1) 设 $U$ 是 $x$ 的任一邻域 (**定义 3.25 (邻域与极限)**). 由**定义 6.36 (开球)**, 度量拓扑中存在 $r>0$ 使 $B\left(x,r\right)\subset{U}$. 由 $r_n\to0$, 存在 $n$ 使 $r_n<{}r$, 于是
 
@@ -210,7 +210,7 @@ $$
 
 (2) 证明 $\mathbb{A}^n\left(\mathbb{R}\right)$ (或 $\mathbb{R}^n$) 的每个扎里斯基开集在通常拓扑下既开又稠密; 证明 $\mathbb{A}^n\left(\mathbb{R}\right)$ 的扎里斯基拓扑对任意 $n>0$ 都不是豪斯多夫的.
 
-### 解答 2.6
+### 解答 3.2
 
 (1) 设 $\left(X,d\right)$ 是**定义 6.35 (度量空间)**. 取 $x\neq{y}$, 令 $r=\frac13d\left(x,y\right)>0$. 由**定义 6.36 (开球)**, $B\left(x,r\right)$ 与 $B\left(y,r\right)$ 是开集. 若二者相交, 取交点 $z$, 由**定义 6.35 (度量空间)** (4) 的三角不等式
 
@@ -228,7 +228,7 @@ $$
 
 正规空间. 称拓扑空间 $X$ 是正规的, 若对任意含于开集 $V$ 的闭集 $F$, 存在开集 $U$ 使 $F\subset{U}\subset\overline{U}\subset{V}$. 证明这等价于说 $X$ 是豪斯多夫的, 且任意两不相交闭集有不相交邻域 (即**定义 7.6 (正规空间)**). 证明度量空间正规 (可先证 $f:x\mapsto{d}\left(x,F\right)$ 当 $F$ 闭时连续).
 
-### 解答 2.7
+### 解答 3.3
 
 先证两种定义等价. 设 $F$ 闭, $V$ 开, $F\subset{V}$. 若 $X$ 满足**定义 7.6 (正规空间)**, 对不相交闭集 $F$ 与 $X\setminus{V}$ 取不相交开集 $U\supset{F}$ 与 $W\supset{X}\setminus{V}$. 则 $\overline{U}\subset{X}\setminus{W}\subset{V}$, 故 $F\subset{U}\subset\overline{U}\subset{V}$. 反过来, 设任意闭 $F\subset$ 开 $V$ 有 $U$ 使 $F\subset{U}\subset\overline{U}\subset{V}$. 对不相交闭集 $F,F'$, 取 $V=X\setminus{F}'$ (开). 由假设存在 $U\supset{F}$ 使 $\overline{U}\subset{X}\setminus{F}'$. 令 $W=X\setminus\overline{U}$ (开, 由**定义 3.26 (闭包)** 与**定义 3.21 (闭集)**), 则 $F'\subset{W}$ 且 $U\cap{W}=\emptyset$. 故 $F,F'$ 有不相交邻域. 特别地单点闭 (取 $F=\left\{x\right\}$, 若 $X$ 满足条件则单点为闭), 即 $T_1$, 故为豪斯多夫的.
 
@@ -263,7 +263,7 @@ $$
 
 证明 $\mathcal{B}=\bigcup_{x\in{X}}\mathcal{B}\left(x\right)$ 是某拓扑的基; 证明该拓扑不是豪斯多夫的; 证明 $0^{+}$ 没有由闭邻域组成的基本邻域系.
 
-### 解答 2.8
+### 解答 3.4
 
 先验基条件. 对 $x\in\left(0,1\right]$, 两个形如 $\left(x-\frac1n,x+\frac1n\right)\cap\left(0,1\right]$ 的集之交仍含一个同形集; 对 $0^{\pm}$, $\left\{0^{\pm}\right\}\cup\left(0,\frac1n\right)$ 之交为 $\left\{0^{\pm}\right\}\cup\left(0,1/\max\left(n,m\right)\right)$. 全体覆盖 $X$. 由**定义 3.15 (拓扑基)**, $\mathcal{B}$ 是某拓扑的基.
 
@@ -275,7 +275,7 @@ $0^{+}$ 无闭邻域基本系: 设 $C$ 是 $0^{+}$ 的任一闭邻域. 它必含
 
 泛性质. 设 $X$ 是拓扑空间, $Y\subset{X}$ 配自然含映射 $\iota:Y\to{X}$. 证明 $Y$ 上的子空间拓扑具有如下性质: 对任意拓扑空间 $Z$ 与映射 $f:Z\to{Y}$, $f$ 连续当且仅当 $\iota\circ{f}:Z\to{X}$ 连续.
 
-### 解答 2.9
+### 解答 3.5
 
 ($\Rightarrow$) 若 $f:Z\to{Y}$ 连续, 由**定义 3.19 (子空间拓扑)**, 含映射 $\iota:Y\to{X}$ 连续. 由**定理 3.1 (复合连续)**, $\iota\circ{f}:Z\to{X}$ 连续.
 
@@ -299,7 +299,7 @@ $$
 
 (3) 证明开性的逆命题不成立: 存在 $W\subset\prod_{i\in{I}}X_i$ 使所有 $p_i\left(W\right)$ 都是开集, 但 $W$ 本身不是开集. 可在 $\mathbb{R}^2$ 中去掉若干点构造反例.
 
-### 解答 2.10
+### 解答 3.6
 
 (1) 由**定义 3.11 (乘积拓扑)**, 乘积拓扑的基本开集形如 $\prod_{i\in{I}}U_i$, 其中 $U_i$ 在 $X_i$ 中开且除有限个外 $U_i=X_i$. 对固定的 $k$, 投影满足
 
@@ -329,7 +329,7 @@ $$
 
 序列, 度量空间与连续. 证明: 对**定义 6.35 (度量空间)** 之间的映射 $f:X\to{Y}$, $f$ 连续当且仅当 $X$ 中每个收敛序列的像列在 $Y$ 中收敛. 证明中哪些地方用到了度量结构? 能否放松假设?
 
-### 解答 2.11
+### 解答 3.7
 
 ($\Rightarrow$) 设 $f$ 连续, $x_n\to{x}$. 任取 $f\left(x\right)$ 的邻域 $V$, 由**定义 3.22 (连续映射)**, $f^{-1}\left(V\right)$ 是 $x$ 的邻域; 由**定义 3.25 (邻域与极限)**, 充分大的 $n$ 有 $x_n\in{f}^{-1}\left(V\right)$, 即 $f\left(x_n\right)\in{V}$. 故 $f\left(x_n\right)\to{f}\left(x\right)$.
 
@@ -341,7 +341,7 @@ $$
 
 稠密集的邻域. $X$ 中稠密集的任意邻域是否覆盖 $X$? 可考虑 $\bigcup_{p/q}B\left(p/q,1/q^k\right)$ ($p/q\in\mathbb{Q}$, $k$ 充分大) 的例子.
 
-### 解答 2.12
+### 解答 3.8
 
 不覆盖. 设 $X=\mathbb{R}$, $D=\mathbb{Q}$ 是**定义 3.32 (稠密)** 的. 取 $U=\mathbb{R}\setminus\left\{\sqrt2\right\}$. $U$ 是开集, 由**定义 3.21 (闭集)** 单点 $\left\{\sqrt2\right\}$ 闭故其补集开; $U$ 含 $\mathbb{Q}$, 即 $U$ 是稠密集 $\mathbb{Q}$ 的一个邻域, 但 $U\neq\mathbb{R}$. $\blacksquare$
 
@@ -357,7 +357,7 @@ $$
 
 (3) 从不交和 $\coprod_{x\in{X}}\left\{x\right\}$ 到 $X$ 的典范映射是同胚.
 
-### 解答 2.13
+### 解答 3.9
 
 记 $i_x:\left\{x\right\}\to{X}$ 为把单点映到其唯一点的含入映射.
 
@@ -371,7 +371,7 @@ $$
 
 设 $X_i$ 是拓扑空间, $X_i\subset{X}_{i+1}$, $X=\bigcup_{i=1}^{\infty}X_i$. 设每个 $X_i$ 在 $X_{i+1}$ 中闭, 且 $X_i$ 的拓扑就是 $X_{i+1}$ 的拓扑在 $X_i$ 上诱导的子空间拓扑. 证明: 对每个 $i$, $X_i$ 的拓扑等于 $X$ 上由族 $\left\{X_i\right\}$ 诱导的弱 (最终) 拓扑在 $X_i$ 上诱导的子空间拓扑; 进一步每个 $X_i$ 在 $X$ 中闭.
 
-### 解答 2.14
+### 解答 3.10
 
 记 $\tau$ 为 $X$ 上由含入 $j_i:X_i\to{X}$ 诱导的最终拓扑. 由**定义 11.14 (最终拓扑)**, $U\subset{X}$ 在 $\tau$ 中开当且仅当对每个 $k$, $U\cap{X}_k$ 在 $X_k$ 中开. 由题设归纳可知: 对 $k\ge{i}$, $X_i$ 在 $X_k$ 中闭; 且 $X_i$ 的拓扑就是 $X_k$ 的拓扑在 $X_i$ 上的子空间拓扑.
 
@@ -395,7 +395,7 @@ $$
 
 (二元关系生成的等价关系) 设 $X$ 是集合, $R\subset{X}\times{X}$ 是二元关系 (未必是等价关系). 证明: 存在唯一的最小等价关系 $\sim$ 包含 $R$ (在 $X\times{X}$ 的子集意义下), 称为由 $R$ 生成的等价关系.
 
-### 解答 2.15
+### 解答 3.11
 
 先证一族等价关系的交仍是等价关系. 设 $\left\{\sim_\alpha\right\}_{\alpha\in{A}}$ 是 $X$ 上的等价关系族, 定义 $x\sim{y}$ 当且仅当对一切 $\alpha$ 有 $x\sim_\alpha{y}$.
 
@@ -413,7 +413,7 @@ $$
 
 (伪距离的商距离) 回顾伪距离 $d$ 是除 $d\left(x,y\right)=0\Rightarrow{x}=y$ 外满足全部度量公理的函数. 伪距离空间 $\left(X,d\right)$ 以开球 $B\left(x,\varepsilon\right)$ 为基有拓扑. 定义 $x\sim{y}$ 当且仅当 $d\left(x,y\right)=0$. 证明: $\sim$ 是等价关系; 商空间 $X/{\sim}$ 上可赋予距离 $d'$ 使 $d'\left(\left[x\right],\left[y\right]\right)=d\left(x,y\right)$; 验证 $d'$ 定义适定; 证明度量空间 $\left(X/{\sim},d'\right)$ 与商空间 $X/{\sim}$ 拓扑相同; 并证明若 $F$ 是豪斯多夫空间且 $f:X\to{F}$ 连续, 则 $f$ 可分解为 $f=f'\circ\pi$, 其中 $f':X/{\sim}\to{F}$.
 
-### 解答 2.16
+### 解答 3.12
 
 $\sim$ 是等价关系: 由**定义 6.44 (伪距离)**, $d\left(x,x\right)=0$ 给出自反; $d\left(x,y\right)=d\left(y,x\right)$ 给出对称; 三角不等式 $d\left(x,z\right)\le{d}\left(x,y\right)+d\left(y,z\right)$ 在 $d\left(x,y\right)=d\left(y,z\right)=0$ 时给出 $d\left(x,z\right)=0$, 即传递.
 
