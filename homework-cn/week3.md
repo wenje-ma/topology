@@ -104,7 +104,7 @@
 
 > **定义 11.2 (粘合映射)**
 > 
-> 满射 $f:X\to{Y}$ 使 $U\subset{Y}$ 开当且仅当 $f^{-1}\left(U\right)$ 开; 等价地, $Y$ 上的拓扑是使 $f$ 连续的最大拓扑. 此时 $g:Y\to{Z}$ 连续当且仅当 $gf:X\to{Z}$ 连续. (教材 §11, p61; "基础拓扑学"(修订版) 第4章 定理(4.1)-(4.2), p55-56)
+> 满射 $f:X\to{Y}$ 使 $U\subset{Y}$ 开当且仅当 $f^{-1}\left(U\right)$ 开; 等价地, $Y$ 上的拓扑是使 $f$ 连续的最大拓扑. 此时 $g:Y\to{Z}$ 连续当且仅当 $g\circ{f}:X\to{Z}$ 连续. (教材 §11, p61; "基础拓扑学"(修订版) 第4章 定理(4.1)-(4.2), p55-56)
 
 > **定义 11.14 (最终拓扑)**
 > 
@@ -172,7 +172,7 @@ $$
 
 ### 解答 3.3
 
-先证两种定义等价. 若 $X$ 满足**定义 7.6 (正规空间)**, 则对任意含于开集 $V$ 的闭集 $F$, 存在开集 $U$ 使 $F\subset{U}\subset\overline{U}\subset{V}$. 则 $x\in{F}$ 与 $y\in{X\setminus{V}}$ 的开集 $U$ 与 $X\setminus{\overline{V}}$ 不相交. $F$ 任意则 $X$ 是豪斯多夫的; 反过来, $X$ 是豪斯多夫的, 则任意 $x\ne y$, 都存在开集 $U\ni{x}$, $V\ni{y}$ 不相交, 则存在闭集 $B(x,\varepsilon)$ 满足 $x\in{B(x,\varepsilon)}\subset{\overline{B}(x,\varepsilon)}\subset{U}\subset{\overline{U}}\subset{X\setminus\overline{V}}$.
+先证两种定义等价. 若 $X$ 满足**定义 7.6 (正规空间)**, 则对任意含于开集 $V$ 的闭集 $F$, 存在开集 $U$ 使 $F\subset{U}\subset\overline{U}\subset{V}$. 则 $x\in{F}$ 与 $y\in{X\setminus{V}}$ 的开集 $U$ 与 $X\setminus{\overline{V}}$ 不相交. $F$ 任意则 $X$ 是豪斯多夫的; 反过来, $X$ 是豪斯多夫的, 则任意 $x\ne{y}$, 都存在开集 $U\ni{x}$, $V\ni{y}$ 不相交, 则存在闭集 $B\left(x,\varepsilon\right)$ 满足 $x\in{B\left(x,\varepsilon\right)}\subset{\overline{B}\left(x,\varepsilon\right)}\subset{U}\subset{\overline{U}}\subset{X\setminus\overline{V}}$.
 
 再证度量空间正规. 设 $F$ 闭. 由**定义 6.46 (点到集合的距离)**, $d\left(x,F\right)=\inf_{a\in{F}}d\left(x,a\right)$. 由**定义 6.35 (度量空间)** 的三角不等式,
 
@@ -267,6 +267,8 @@ $$
 
 (3) 取 $W=\mathbb{R}^2\setminus\left(\left\{0\right\}\times\left(0,1\right)\right)$. 先看两个投影: 对任意 $x\in\mathbb{R}$, 取 $y=2$ 则 $\left(x,2\right)\in{W}$, 故 $p_1\left(W\right)=\mathbb{R}$; 对任意 $y\in\mathbb{R}$, 取 $x=1$ 则 $\left(1,y\right)\in{W}$, 故 $p_2\left(W\right)=\mathbb{R}$. 两个投影都是开集. 但 $W$ 的补集为 $\left\{0\right\}\times\left(0,1\right)$, 它的闭包是 $\left\{0\right\}\times\left[0,1\right]$, 不等于自身, 由**定义 3.21 (闭集)** 补集不闭, 故 $W$ 不是开集. 这说明所有投影开不能推出原集合开. $\blacksquare$
 
+> (2) (3) 说明单个坐标上的信息不足以控制整个乘积空间中点的收敛性与边界行为.
+
 ## 3.7 (度量空间中连续等价于序列保持收敛)
 
 序列, 度量空间与连续. 证明: 对**定义 6.35 (度量空间)** 之间的映射 $f:X\to{Y}$, $f$ 连续当且仅当 $X$ 中每个收敛序列的像列在 $Y$ 中收敛. 证明中哪些地方用到了度量结构? 能否放松假设?
@@ -281,13 +283,13 @@ $$
 
 ## 3.8 (稠密集的邻域未必覆盖全空间)
 
-稠密集的邻域. $X$ 中稠密集的任意邻域是否覆盖 $X$? 可考虑 $\bigcup_{p/q}B\left(p/q,1/q^k\right)$ ($p/q\in\mathbb{Q}$, $k$ 充分大) 的例子.
+稠密集的邻域. $X$ 中稠密集的任意邻域是否覆盖 $X$?
 
 ### 解答 3.8
 
 不覆盖. 设 $X=\mathbb{R}$, $D=\mathbb{Q}$ 是**定义 3.32 (稠密)** 的. 取 $U=\mathbb{R}\setminus\left\{\sqrt2\right\}$. $U$ 是开集, 由**定义 3.21 (闭集)** 单点 $\left\{\sqrt2\right\}$ 闭故其补集开; $U$ 含 $\mathbb{Q}$, 即 $U$ 是稠密集 $\mathbb{Q}$ 的一个邻域, 但 $U\neq\mathbb{R}$. $\blacksquare$
 
-> 一般地, 若 $D$ 稠密而 $U$ 是含 $D$ 的开集, 只能推出 $\overline{U}=X$: 由**定义 3.26 (闭包)**, $D\subset{U}$ 给出 $X=\overline{D}\subset\overline{U}$; 开集稠密不必等于全空间. 题中 $\bigcup_{p/q}B\left(p/q,1/q^k\right)$ 也是开稠密集, 取 $k$ 充分大时仍遗漏某些有理逼近系数很小的无理数, 故不等于 $\mathbb{R}$.
+> 一般地, 若 $D$ 稠密而 $U$ 是含 $D$ 的开集, 只能推出 $\overline{U}=X$.
 
 ## 3.9 (离散拓扑, 单点族的最终拓扑与不交和的三者等价)
 
@@ -311,7 +313,7 @@ $$
 
 ## 3.10 (递增闭子空间列的最终拓扑与闭性)
 
-设 $X_i$ 是拓扑空间, $X_i\subset{X}_{i+1}$, $X=\bigcup_{i=1}^{\infty}X_i$. 设每个 $X_i$ 在 $X_{i+1}$ 中闭, 且 $X_i$ 的拓扑就是 $X_{i+1}$ 的拓扑在 $X_i$ 上诱导的子空间拓扑. 证明: 对每个 $i$, $X_i$ 的拓扑等于 $X$ 上由族 $\left\{X_i\right\}$ 诱导的弱 (最终) 拓扑在 $X_i$ 上诱导的子空间拓扑; 进一步每个 $X_i$ 在 $X$ 中闭.
+设 $X_i$ 是拓扑空间, $X_i\subset{X}_{i+1}$, $X=\bigcup_{i=1}^{\infty}X_i$. 设每个 $X_i$ 在 $X_{i+1}$ 中闭, 且 $X_i$ 的拓扑就是 $X_{i+1}$ 的拓扑在 $X_i$ 上诱导的子空间拓扑. 证明: 对每个 $i$, $X_i$ 的拓扑等于 $X$ 上由族 $\left\{X_i\right\}$ 诱导的最终拓扑在 $X_i$ 上诱导的子空间拓扑; 进一步每个 $X_i$ 在 $X$ 中闭.
 
 ### 解答 3.10
 
@@ -327,11 +329,9 @@ $$
 U=V\cup\left(X\setminus{X}_i\right).
 $$
 
-则 $U\cap{X}_i=V$. 验证 $U\in\tau$: 对 $k=i$, $U\cap{X}_i=V$ 开; 对 $k<{}i$, $X_k\subset{X}_i$, 故 $U\cap{X}_k=V\cap{X}_k$, 由 $X_k$ 的子空间性质它在 $X_k$ 中开; 对 $k>{}i$, $X_i$ 在 $X_k$ 中闭, 故 $X_k\setminus{X}_i$ 在 $X_k$ 中开, 而 $V$ 在 $X_i$ 中开, 由 $X_i$ 是 $X_k$ 的子空间可写 $V=X_i\cap{W}$, $W$ 在 $X_k$ 中开, 于是 $U\cap{X}_k=\left(X_i\cap{W}\right)\cup\left(X_k\setminus{X}_i\right)=W\cup\left(X_k\setminus{X}_i\right)$ 在 $X_k$ 中开. 故 $U\in\tau$, 且 $V=U\cap{X}_i$ 是继承开集.
+则 $U\cap{X}_i=V$. 验证 $U\in\tau$, 即对于任意的 $k\ge1$, $U\cap{X}_k$ 在 $U_k$ 中的拓扑都是开集: 对 $k=i$, $U\cap{X}_i=V$ 开; 对 $k<{}i$, $X_k\subset{X}_i$, 故 $U\cap{X}_k=V\cap{X}_k$, 由 $X_k$ 的子空间性质它在 $X_k$ 中开; 对 $k>{}i$, $X_i$ 在 $X_k$ 中闭, 故 $X_k\setminus{X}_i$ 在 $X_k$ 中开, 而 $V$ 在 $X_i$ 中开, 由 $X_i$ 是 $X_k$ 的子空间可写 $V=X_i\cap{W}$, $W$ 在 $X_k$ 中开, 于是 $U\cap{X}_k=W$ 在 $X_k$ 中开.
 
-故 $X_i$ 的原拓扑等于继承拓扑.
-
-再证 $X_i$ 在 $X$ 中闭. 只需证 $X\setminus{X}_i$ 在 $\tau$ 中开. 对 $k\le{i}$, $\left(X\setminus{X}_i\right)\cap{X}_k=\emptyset$ 开; 对 $k>{}i$, $X_i$ 在 $X_k$ 中闭, 故 $\left(X\setminus{X}_i\right)\cap{X}_k=X_k\setminus{X}_i$ 在 $X_k$ 中开. 由**定义 11.14 (最终拓扑)**, $X\setminus{X}_i\in\tau$, 故 $X_i$ 闭. $\blacksquare$
+再证 $X_i$ 在 $X$ 中闭. 只需证 $X\setminus{X}_i$ 在 $\tau$ 中开, 即对于任意的 $k\ge1$, $(X\setminus{X}_i)\cap{X}_k$ 在 $U_k$ 中的拓扑都是开集: 对 $k\le{i}$, $\left(X\setminus{X}_i\right)\cap{X}_k=\emptyset$ 开; 对 $k>{}i$, $X_i$ 在 $X_k$ 中闭, 故 $\left(X\setminus{X}_i\right)\cap{X}_k=X_k\setminus{X}_i$ 在 $X_k$ 中开. $\blacksquare$
 
 ## 3.11 (由二元关系生成的最小等价关系)
 
@@ -353,13 +353,13 @@ $$
 
 ## 3.12 (伪距离的商距离与商拓扑一致)
 
-(伪距离的商距离) 回顾伪距离 $d$ 是除 $d\left(x,y\right)=0\Rightarrow{x}=y$ 外满足全部度量公理的函数. 伪距离空间 $\left(X,d\right)$ 以开球 $B\left(x,\varepsilon\right)$ 为基有拓扑. 定义 $x\sim{y}$ 当且仅当 $d\left(x,y\right)=0$. 证明: $\sim$ 是等价关系; 商空间 $X/{\sim}$ 上可赋予距离 $d'$ 使 $d'\left(\left[x\right],\left[y\right]\right)=d\left(x,y\right)$; 验证 $d'$ 定义适定; 证明度量空间 $\left(X/{\sim},d'\right)$ 与商空间 $X/{\sim}$ 拓扑相同; 并证明若 $F$ 是豪斯多夫空间且 $f:X\to{F}$ 连续, 则 $f$ 可分解为 $f=f'\circ\pi$, 其中 $f':X/{\sim}\to{F}$.
+(伪距离的商距离) 回顾伪距离 $d$ 是除 $d\left(x,y\right)=0\Rightarrow{x}=y$ 外满足全部度量公理的函数. 伪距离空间 $\left(X,d\right)$ 以开球 $B\left(x,\varepsilon\right)$ 为基有拓扑. 定义 $x\sim{y}$ 当且仅当 $d\left(x,y\right)=0$. 证明: $\sim$ 是等价关系; 商空间 $X/{\sim}$ 上可赋予距离 $d'$ 使 $d'\left(\left[x\right],\left[y\right]\right)=d\left(x,y\right)$, 其中 $[x]$ 为 $x$ 的等价类, 验证 $d'$ 良定义 (即当我们想用代表元定义一个东西的时候, 定义结果不依赖你选哪个代表元); 证明度量空间 $\left(X/{\sim},d'\right)$ 与商空间 $X/{\sim}$ 拓扑相同; 并证明若 $F$ 是豪斯多夫空间且 $f:X\to{F}$ 连续, 则 $f$ 可分解为 $f=f'\circ\pi$, 其中 $f':X/{\sim}\to{F}$.
 
 ### 解答 3.12
 
 $\sim$ 是等价关系: 由**定义 6.44 (伪距离)**, $d\left(x,x\right)=0$ 给出自反; $d\left(x,y\right)=d\left(y,x\right)$ 给出对称; 三角不等式 $d\left(x,z\right)\le{d}\left(x,y\right)+d\left(y,z\right)$ 在 $d\left(x,y\right)=d\left(y,z\right)=0$ 时给出 $d\left(x,z\right)=0$, 即传递.
 
-$d'$ 适定: 若 $x\sim{x}'$, $y\sim{y}'$, 则 $d\left(x,x'\right)=d\left(y,y'\right)=0$, 由三角不等式,
+$d'$ 良定义: 若 $x\sim{x}'$, $y\sim{y}'$, 则 $d\left(x,x'\right)=d\left(y,y'\right)=0$, 由三角不等式,
 
 $$
 d\left(x,y\right)\le{d}\left(x,x'\right)+d\left(x',y'\right)+d\left(y',y\right)=d\left(x',y'\right),
@@ -375,8 +375,6 @@ $$
 \pi^{-1}\left(B_{d'}\left(\left[x\right],\varepsilon\right)\right)=B_d\left(x,\varepsilon\right).
 $$
 
-包含 $\subset$: 若 $z$ 使 $d'\left(\left[z\right],\left[x\right]\right)<\varepsilon$, 即 $d\left(z,x\right)<\varepsilon$, 则 $z\in{B}_d\left(x,\varepsilon\right)$. 包含 $\supset$: 若 $z\in{B}_d\left(x,\varepsilon\right)$, 则 $d'\left(\left[z\right],\left[x\right]\right)=d\left(z,x\right)<\varepsilon$. 由**定义 11.1 (商拓扑)**, $B_{d'}\left(\left[x\right],\varepsilon\right)$ 是商开集, 故度量拓扑粗于商拓扑. 反之, 若 $U$ 是商开集, 则 $\pi^{-1}\left(U\right)$ 是 $d$-开集, 从而是若干 $d$-球之并, 其像 $U=\pi\left(\pi^{-1}\left(U\right)\right)$ 是若干 $d'$-球之并, 故 $U$ 是度量开集. 二者一致.
+由**定义 11.1 (商拓扑)**, $B_{d'}\left(\left[x\right],\varepsilon\right)$ 是商开集, 故度量拓扑粗于商拓扑. 反之, 若 $U$ 是商开集, 则 $\pi^{-1}\left(U\right)$ 是 $d$-开集, 从而是若干 $d$-球之并, 其像 $U=\pi\left(\pi^{-1}\left(U\right)\right)$ 是若干 $d'$-球之并, 故 $U$ 是度量开集. 二者一致.
 
-泛分解: 设 $F$ 豪斯多夫, $f:X\to{F}$ 连续. 先证 $f$ 在等价类上取常值. 若 $x\sim{x}'$, 即 $d\left(x,x'\right)=0$, 则 $x$ 与 $x'$ 在 $X$ 中无法用开集分离: 对任意 $\varepsilon>0$, $B_d\left(x,\varepsilon\right)=B_d\left(x',\varepsilon\right)$. 若 $f\left(x\right)\neq{f}\left(x'\right)$, 由**定义 3.10 (豪斯多夫空间)** 存在不相交开邻域 $V\ni{f}\left(x\right)$, $W\ni{f}\left(x'\right)$. 由**定义 3.22 (连续映射)**, $f^{-1}\left(V\right)$ 是 $x$ 的开邻域, 从而含 $x'$, 故 $f\left(x'\right)\in{V}$, 与 $V\cap{W}=\emptyset$ 及 $f\left(x'\right)\in{W}$ 矛盾. 故 $f\left(x\right)=f\left(x'\right)$.
-
-于是可定义 $f'\left(\left[x\right]\right)=f\left(x\right)$, 适定. 由**定义 11.2 (粘合映射)**, 为证 $f'$ 连续, 只需对任意开集 $O\subset{F}$, $\left(f'\right)^{-1}\left(O\right)$ 商开, 即 $\pi^{-1}\left(\left(f'\right)^{-1}\left(O\right)\right)=f^{-1}\left(O\right)$ 在 $X$ 中开; 这由 $f$ 连续保证. 故 $f=f'\circ\pi$. $\blacksquare$
+泛分解: 设 $F$ 豪斯多夫, $f:X\to{F}$ 连续. 先证 $f$ 在等价类上取常值. 若 $x\sim{x}'$, 即 $d\left(x,x'\right)=0$, 则 $x$ 与 $x'$ 在 $X$ 中无法用开集分离: 对任意 $\varepsilon>0$, $B_d\left(x,\varepsilon\right)=B_d\left(x',\varepsilon\right)$. 若 $f\left(x\right)\neq{f}\left(x'\right)$, 依据**定义 3.10 (豪斯多夫空间)**, 存在不相交开邻域 $V\ni{f}\left(x\right)$, $W\ni{f}\left(x'\right)$. 由**定义 3.22 (连续映射)**,  $x$ 与 $x'$ 在 $X$ 中可用开集 $f^{-1}(V)$ 与 $f^{-1}(W)$ 分离, 矛盾. 故 $f\left(x\right)=f\left(x'\right)$. 于是可定义 $f'\left(\left[x\right]\right)=f\left(x\right)$, 良定义. 由**定义 11.2 (粘合映射)**, 为证 $f'$ 连续, 只需对任意开集 $O\subset{F}$, $\left(f'\right)^{-1}\left(O\right)$ 商开, 即 $\pi^{-1}\left(\left(f'\right)^{-1}\left(O\right)\right)=f^{-1}\left(O\right)$ 在 $X$ 中开; 这由 $f$ 连续保证. 故 $f=f'\circ\pi$. $\blacksquare$
