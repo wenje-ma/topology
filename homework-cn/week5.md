@@ -30,10 +30,6 @@
 > 
 > 函数 $f:X\to{Y}$ 是连续的, 若对所有开集 $U\subset{Y}$, $f^{-1}\left(U\right)$ 是开的. (教材 $\S3$, p14)
 
-> **定义 3.23 (同胚)**
-> 
-> 空间之间的双射 $f:X\to{Y}$ 称为同胚, 若 $f$ 与 $f^{-1}$ 都连续. 这等价于说: $U$ 是开的当且仅当 $f\left(U\right)$ 是开的. (教材 §3, p15)
-
 > **定义 3.26 (闭包)**
 > 
 > 集合 $A\subset{X}$ 的闭包 $\overline{A}$ 就是包含 $A$ 的最小闭集; 它存在, 因为闭集的交集仍是闭的. (教材 $\S3$, p18)
@@ -106,10 +102,6 @@
 > 
 > 任意 $x,y\in{X}$ 有连续路径 $\gamma:\left[0,1\right]\to{X}$ 以 $x,y$ 为端点. (教材 §4, p24)
 
-> **定义 4.23 (凸集)**
-> 
-> $K\subset\mathbb{R}^n$ 凸即 $x,y\in{K}$ 蕴含线段 $\left(1-t\right)x+ty$ ($t\in\left[0,1\right]$) 全在 $K$ 中; 凸集必路径连通, 路径连通蕴含连通. (教材 §4, p24)
-
 > **定义 4.24 (拓扑学家正弦曲线)**
 > 
 > $y=\sin\left(1/x\right)$ 在 $\left(0,1\right]$ 上的图像与 $y$ 轴上 $\left[-1,1\right]$ 的并; 它连通但不路径连通. (教材 §4, p24)
@@ -130,6 +122,10 @@
 > 
 > 开球 $B\left(x,r\right)=\left\{y\in{X}:d\left(x,y\right)<{}r\right\}$. 全体开球构成度量拓扑的一个基. (教材 $\S6$)
 
+> **定义 6.46 (点到集合的距离)**
+> 
+> $d\left(x,A\right)=\inf_{a\in{A}}d\left(x,a\right)$. (题集 $\S3.2$)
+
 > **定义 7.7 (正则空间)**
 > 
 > 闭集 $A$ 与不在 $A$ 中的点有不相交开邻域. (教材 §7)
@@ -143,8 +139,9 @@
 > 每一个具有可数基的正则空间都是可度量化的. ("拓扑学"(原书第2版) §34 定理 34.1, p165; 教材 §7 定理 7.3, p43 表述为正规空间加可数基可度量化, 而正则加可数基蕴含正规)
 
 ## 5.1 (拓扑学家正弦曲线连通但不路径连通)
-
 证明拓扑学家正弦曲线连通但不路径连通.
+
+题集 §2.3 Q3.
 
 ### 解答 5.1
 
@@ -161,8 +158,9 @@ $$
 再证不路径连通. 反设存在路径 $\gamma:\left[0,1\right]\to{S}$ 以 $\left(0,0\right)\in{L}$ 为起点, 以 $\left(1,\sin1\right)\in{G}$ 为终点. 令 $t_0=\inf\left\{t:\gamma\left(t\right)\text{~的横坐标}>0\right\}$. 由连续性 $\gamma\left(t_0\right)\in{L}$. 取 $t_n\downarrow{t}_0$, 则 $\gamma\left(t_n\right)=\left(x_n,\sin\left(1/x_n\right)\right)$, $x_n\to0^{+}$. 序列 $\sin\left(1/x_n\right)$ 既有收敛到 $1$ 的子列, 又有收敛到 $-1$ 的子列, 不可能收敛到 $\gamma\left(t_0\right)$ 的纵坐标, 与 $\gamma$ 连续矛盾. 故不存在这样的路径, $S$ 不路径连通, 即它不是**定义 4.22 (路径连通)** 意义下的路径连通空间. $\blacksquare$
 
 ## 5.2 (连通等价于到两点空间的连续映射常值, 以及乘积去方块后的连通性)
-
 连通性与连续函数. 证明: $X$ 是**定义 4.18 (连通空间)** 当且仅当一切连续映射 $f:X\to\left\{0,1\right\}$ (目标装备离散拓扑) 都是常值的. 再设 $A,B$ 是两个连通度量空间, $X,Y$ 分别是 $A,B$ 的真子集. 证明 $C=\left(A\times{B}\right)\setminus\left(X\times{Y}\right)$ 是 $A\times{B}$ 的连通子集.
+
+题集 §4.5 C3.
 
 ### 解答 5.2
 
@@ -173,8 +171,9 @@ $$
 第二问: $C=\left(\left(A\setminus{X}\right)\times{B}\right)\cup\left(A\times\left(B\setminus{Y}\right)\right)$. 因 $X,Y$ 是真子集, 可取 $a_0\in{A}\setminus{X}$, $b_0\in{B}\setminus{Y}$. 固定 $b_0$, 集合 $A\times\left\{b_0\right\}$ 由**定理 4.7 (乘积连通)** 连通. 对每个 $a\in{A}\setminus{X}$, 集合 $\left\{a\right\}\times{B}$ 连通 (**定理 4.7 (乘积连通)**), 且与 $A\times\left\{b_0\right\}$ 交于 $\left(a,b_0\right)$. 由**定理 4.6 (扇形连通)**, $S=A\times\left\{b_0\right\}\cup\bigcup_{a\in{A}\setminus{X}}\left\{a\right\}\times{B}$ 连通. 再对每个 $b\in{B}\setminus{Y}$, 集合 $A\times\left\{b\right\}$ 连通, 且与 $S$ 交于 $\left(a_0,b\right)$. 再用**定理 4.6 (扇形连通)**, 加入所有 $A\times\left\{b\right\}$ 后仍连通, 所得正是 $C$. $\blacksquare$
 
 ## 5.3 (边界连通蕴含闭集连通 (附闭性不可少的反例))
-
 连通性与边界. 设 $E$ 是连通度量空间, $F$ 是 $E$ 的闭集. 证明: 若 $F$ 的边界 $\partial{F}$ 连通, 则 $F$ 连通. 再举例说明 $F$ 不假设闭时结论失效.
+
+题集 §4.5 C4; 题集 §5.1 C18 同题.
 
 ### 解答 5.3
 
@@ -189,8 +188,9 @@ $$
 反例: 取 $E=\left[0,1\right]$, $F=\left[0,1/2\right)\cup\left(1/2,1\right]$. $F$ 不闭, 且不连通; 但 $\partial{F}=\left\{1/2\right\}$ 是单点, 连通. $\blacksquare$
 
 ## 5.4 ($\varepsilon$-链空间: 连通蕴含链性, 紧且链性蕴含连通)
-
 链空间. 称度量空间 $X$ 是 $\varepsilon$-链的, 若任意 $a,b\in{X}$ 可由有限点列 $x_0=a,\dots,x_n=b$ 连接使 $d\left(x_i,x_{i+1}\right)<\varepsilon$; 对一切 $\varepsilon>0$ 都成立称**定义 4.14 ($\varepsilon$-链空间)**. 证明: $X$ 连通则 $X$ 是 $\varepsilon$-链空间; $X$ 紧且 $\varepsilon$-链则 $X$ 连通; 举例说明 $\varepsilon$-链空间可以不连通.
+
+题集 §4.5 C5.
 
 ### 解答 5.4
 
@@ -201,8 +201,9 @@ $$
 $\varepsilon$-链但不连通的例子: 有理数集 $\mathbb{Q}$ 装备通常度量. 对任意 $\varepsilon>0$, 任意两个有理数之间可插入间距小于 $\varepsilon$ 的有理点列, 故 $\mathbb{Q}$ 是 $\varepsilon$-链的; 但 $\mathbb{Q}$ 完全不连通. $\blacksquare$
 
 ## 5.5 (自映射皆有不动点蕴含连通, 而紧连通不足)
-
 不动点与连通性. 设 $X$ 是度量空间, 假设一切连续映射 $f:X\to{X}$ 都有不动点. 证明 $X$ 连通. 再问: 若 $X$ 紧且连通, 是否一切连续映射 $f:X\to{X}$ 都有不动点?
+
+题集 §4.5 C6.
 
 ### 解答 5.5
 
@@ -212,22 +213,7 @@ $\varepsilon$-链但不连通的例子: 有理数集 $\mathbb{Q}$ 装备通常�
 
 > 紧与连通只能保证空间是连在一起的, 而不动点与空间的自同胚相关, 这是两件事.
 
-## 5.6 (连通边界蕴含闭集连通 (重述))
-
-(连通边界) 设 $\left(E,d\right)$ 是连通度量空间, $F\subset{E}$ 闭, 且 $\partial{F}$ 连通. 证明 $F$ 连通.
-
-### 解答 5.6
-
-反设 $F$ 不连通. 则 $F$ 有非空分离 $F=A\cup{B}$, $A,B$ 非空不相交, 且在 $F$ 中既开又闭. 因 $F$ 在 $E$ 中闭, 由**定义 3.21 (闭集)**, $A,B$ 在 $E$ 中也闭. 由**定义 3.20 (边界)**, $\partial{F}=F\cap\overline{E\setminus{F}}$. 断言
-
-$$
-\partial{F}=\left(A\cap\overline{E\setminus{F}}\right)\cup\left(B\cap\overline{E\setminus{F}}\right),
-$$
-
-两边都非空. 若 $A\cap\overline{E\setminus{F}}=\emptyset$, 则 $A\subset\operatorname{int}\left(F\right)$; 又 $A$ 在 $F$ 中开, 即 $A=F\cap{O}$ ($O$ 开于 $E$), 于是 $A=O\cap\operatorname{int}\left(F\right)$ 在 $E$ 中开. $A$ 在 $E$ 中既开又闭, 由**定义 4.19 (既开又闭集)**, $E$ 连通推出 $A=\emptyset$ 或 $E$, 与 $A$ 是 $F$ 的非空真子集矛盾. 故 $A\cap\overline{E\setminus{F}}\neq\emptyset$, 同理 $B\cap\overline{E\setminus{F}}\neq\emptyset$. 这两个非空不交闭集分离了 $\partial{F}$, 与 $\partial{F}$ 连通矛盾. 故 $F$ 连通. $\blacksquare$
-
-## 5.7 (周期连续函数的中点等值问题)
-
+## 5.6 (周期连续函数的中点等值问题)
 设 $f:\left[0,1\right]\to\mathbb{R}$ 是一个连续函数并且 $f\left(0\right)=f\left(1\right)$.
 
 (1) (10 分) 证明存在 $x\in\left[0,\frac12\right]$ 使得 $f\left(x\right)=f\left(x+\frac12\right)$.
@@ -236,7 +222,9 @@ $$
 
 (3) (5 分) 证明存在一个连续函数 $f:\left[0,1\right]\to\mathbb{R}$ 使得对于任意的 $x\in\left[0,\frac35\right]$ 都有 $f\left(x\right)\neq{f}\left(x+\frac25\right)$.
 
-### 解答 5.7
+卷 B 题一.
+
+### 解答 5.6
 
 (1) 令 $g\left(x\right)=f\left(x\right)-f\left(x+\frac12\right)$, 定义域 $\left[0,\frac12\right]$. 若 $g\left(0\right)=0$, 则 $x=0$ 已满足. 否则
 
@@ -260,37 +248,42 @@ $$
 > 
 > $1/n$ 特殊的原因在于其经过有限次求和后为 $1$, 因此可以利用望远镜级数, 最终求和得到 $f\left(0\right)-f\left(1\right)=0$, 即第 2 问的证明过程.
 
-## 5.8 (球面的连通性, 路径连通性, 挖去一点后的同胚与紧性)
+## 5.7 (2024 卷 C 题一: 贝尔纲定理, 球面与双曲面的连通性, 开子空间的完备化)
+本大题各小问相互独立.
 
-(2024 年卷 A 题目二, 20 分). 我们记 $S^2=\left\{\left(x,y,z\right)\in\mathbb{R}^3:x^2+y^2+z^2=1\right\}$ 为 $\mathbb{R}^3$ 中的单位球面, $D=\left\{\left(x,y\right)\in\mathbb{R}^2:x^2+y^2\le1\right\}$ 为单位圆盘.
+(1) 叙述贝尔纲定理的一个版本;
 
-(1) 证明集合 $D^+=\left\{\left(x,y,\sqrt{1-x^2-y^2}\right):\left(x,y\right)\in{D}\right\}$ 与 $D^-=\left\{\left(x,y,-\sqrt{1-x^2-y^2}\right):\left(x,y\right)\in{D}\right\}$ 都连通. 由此推导 $S^2$ 连通.
+(2) 证明球面 $S^2=\left\{\left(x,y,z\right)\in\mathbb{R}^3:x^2+y^2+z^2=1\right\}$ 连通, 而曲面 $H^2=\left\{\left(x,y,z\right)\in\mathbb{R}^3:x^2+y^2-z^2=-1\right\}$ 不连通;
 
-(2) 证明球面 $S^2$ 是路径连通的.
+(3) 设 $\left(X,d\right)$ 是完备度量空间, $F\subset{X}$ 是闭子空间. 证明 $\left(F,d\right)$ 完备; 再证明当 $O\subset{X}$ 是开子空间时 $\left(O,d\right)$ 不必完备;
 
-(3) 证明 $\mathbb{R}^3\setminus\left\{P\right\}$ 与 $S^2$ 同胚, 其中 $P=\left(0,0,2\right)$. 你可以使用球极投影
+(4) 设 $\left(X,d\right)$ 是完备度量空间, $O\subset{X}$ 开. 证明存在 $O$ 上由 $d$ 诱导的度量 $d'$, 使 $\left(O,d'\right)$ 完备.
 
-$$
-\pi:\mathbb{R}^2\to{S}^2\setminus\left\{\left(0,0,1\right)\right\},\quad
-\pi\left(u,v\right)=\frac{\left(2u,2v,u^2+v^2-1\right)}{u^2+v^2+1}.
-$$
+2024 卷 C 题一.
 
-(4) 证明球面 $S^2$ 是紧的.
+### 解答 5.7
 
-### 解答 5.8
+(1) 完备度量空间中可数个稠密开集之交仍稠密; 等价地, 可数个无处稠密闭集之并不含非空开集. 这正是**定理 6.13 (贝尔纲定理)** 的陈述.
 
-(1) 闭单位圆盘 $D\subset\mathbb{R}^2$ 由**定义 4.23 (凸集)** 是凸集, 凸集中任意两点可由线段连接故路径连通, 路径连通蕴含连通. 映射 $\phi^+:\left(u,v\right)\mapsto\left(u,v,\sqrt{1-u^2-v^2}\right)$ 连续, 其像为 $D^+$. 由**定理 4.2 (连续像连通)**, $D^+$ 连通. 同理 $D^-$ 连通.
+(2) 记 $S^2_+=\left\{z\ge0\right\}\cap{S}^2$, $S^2_-=\left\{z\le0\right\}\cap{S}^2$, $D=\left\{\left(x,y\right):x^2+y^2\le1\right\}$. 投影 $\left(x,y,z\right)\mapsto\left(x,y\right)$ 在 $S^2_+$ 上是到 $D$ 的双射, 其逆为 $\left(x,y\right)\mapsto\left(x,y,\sqrt{1-x^2-y^2}\right)$, 由**定义 3.22 (连续映射)** 两者都连续 (根号在 $D$ 上连续), 故 $S^2_+$ 同胚于 $D$. 而 $D$ 是 $\mathbb{R}^2$ 中的凸集, 由**定义 4.18 (连通空间)** 与**定理 4.1 (区间连通)** 的一般形式, 凸集连通: 任意两点可由线段连接, 线段是闭区间的连续像. 故 $S^2_+$ 连通; 同理 $S^2_-$ 连通. 二者之交 $S^2_+\cap{S}^2_-=\left\{z=0\right\}\cap{S}^2$ 是赤道, 非空. 两个有公共点的连通集之并连通, 故 $S^2$ 连通.
 
-$D^+\cap{D}^-=\left\{\left(x,y,0\right):x^2+y^2=1\right\}\neq\emptyset$. 由**定理 4.6 (扇形连通)**, 两个连通集有公共点其并连通, 故 $S^2=D^+\cup{D}^-$ 连通. 由**定义 4.18 (连通空间)**, $S^2$ 连通.
+$H^2$ 上 $z^2=x^2+y^2+1\ge1$, 故 $\left|z\right|\ge1$. 令 $A=H^2\cap\left\{z\ge1\right\}$, $B=H^2\cap\left\{z\le-1\right\}$. 二者非空, 不交, 并为 $H^2$, 且都是 $H^2$ 中相对闭集 (分别是闭集 $\left\{z\ge1\right\}$ 与 $\left\{z\le-1\right\}$ 与 $H^2$ 之交). 由**定义 4.18 (连通空间)**, $H^2$ 不连通, 它恰有两个连通分支 $A,B$.
 
-(2) 已证 $D^+$ 是 $D$ 在连续映射下的像, $D$ 凸故路径连通, 连续像路径连通; 同理 $D^-$ 路径连通. $D^+\cap{D}^-\neq\emptyset$, 故 $S^2=D^+\cup{D}^-$ 路径连通.
+(3) 设 $\left(x_n\right)$ 是 $F$ 中的柯西列. 它在 $X$ 中柯西, 由 $X$ 完备收敛到某 $x\in{X}$. 因 $F$ 闭, 由**定义 3.21 (闭集)** $x\in{F}$. 故 $F$ 中每个柯西列在 $F$ 中收敛, $\left(F,d\right)$ 完备.
 
-(3) 球极投影 $\pi:\mathbb{R}^2\to{S}^2\setminus\left\{\left(0,0,1\right)\right\}$ 是双射且双向连续, 由**定义 3.23 (同胚)**, $\mathbb{R}^2\cong{S}^2\setminus\left\{\left(0,0,1\right)\right\}$. 要证 $\mathbb{R}^3\setminus\left\{P\right\}\cong{S}^2$, 从 $\mathbb{R}^3\setminus\left\{P\right\}$ 作以 $P$ 为中心的中心投影到平面 $z=0$, 再经 $\pi$ 映到 $S^2\setminus\left\{\left(0,0,1\right)\right\}$; 北极 $\left(0,0,1\right)$ 对应平面方向无穷远点. 该映射连续双射, 逆连续, 为同胚.
+开而不完备的例子: $X=\mathbb{R}$ 带通常度量, $O=\left(0,1\right)$. 列 $x_n=1/n$ 在 $O$ 中柯西, 若在 $O$ 中收敛到 $x\in\left(0,1\right)$, 则在 $\mathbb{R}$ 中也收敛到 $x$, 而它在 $\mathbb{R}$ 中收敛到 $0\notin{O}$, 矛盾. 故 $\left(O,d\right)$ 不完备.
 
-(4) $S^2=\left\{\left(x,y,z\right)\in\mathbb{R}^3:x^2+y^2+z^2=1\right\}$ 是 $\mathbb{R}^3$ 中有界闭集, 由海涅-博雷尔定理 ($\mathbb{R}^n$ 中有界闭集紧), $S^2$ 紧. 也可由 $S^2$ 是紧集 $D$ 在连续映射下的像 ($D^+$), 与另一半球面拼接; $D$ 闭且有界故紧 (**定理 6.1 (紧 $=$ 序列紧)**), 连续像紧, 故 $S^2$ 紧. $\blacksquare$
+(4) 由**定义 6.46 (点到集合的距离)**, 令 $\varphi\left(x\right)=1/d\left(x,X-O\right)$, 它在 $O$ 上连续且为正: 因 $X-O$ 闭, $d\left(x,X-O\right)>0$ 对 $x\in{O}$ 成立. 令 $d'\left(x,y\right)=d\left(x,y\right)+\left|\varphi\left(x\right)-\varphi\left(y\right)\right|$. 它是 $O$ 上的度量: 正定与对称显然, 三角不等式由 $d$ 与绝对值各自的三角不等式相加得到.
 
-## 5.9 (弗斯滕伯格拓扑的开集刻画与素数无穷)
+作嵌入 $f:O\to{X}\times\mathbb{R}$, $f\left(x\right)=\left(x,\varphi\left(x\right)\right)$. 由**定义 3.22 (连续映射)**, $f$ 连续. 且 $d'\left(x,y\right)$ 正是 $X\times\mathbb{R}$ 上乘积度量 $d+\left|\cdot\right|$ 沿 $f$ 的拉回, 故 $f$ 是 $O$ 到 $f\left(O\right)$ 的等距.
 
+证 $f\left(O\right)$ 在 $X\times\mathbb{R}$ 中闭. 设 $f\left(x_k\right)\to\left(x,t\right)$. 则 $x_k\to{x}$ 且 $\varphi\left(x_k\right)\to{t}$. 若 $x\notin{O}$, 则 $x\in{X}-O$, 由**定义 6.46 (点到集合的距离)** $d\left(x_k,X-O\right)\le{d}\left(x_k,x\right)\to0$, 故 $\varphi\left(x_k\right)\to+\infty$, 与 $\varphi\left(x_k\right)\to{t}$ 矛盾. 故 $x\in{O}$, 从而 $\left(x,t\right)=f\left(x\right)\in{f}\left(O\right)$. 于是 $f\left(O\right)$ 闭.
+
+$X\times\mathbb{R}$ 完备 (两个完备空间之积完备), 由第 (3) 小题 $f\left(O\right)$ 完备; $f$ 是等距, 故 $\left(O,d'\right)$ 完备. $\blacksquare$
+
+> 度量 $d'$ 就是让 $O$ 上"逃向边界"的柯西列不再柯西, 代价是把边界推到无穷远.
+
+## 5.8 (弗斯滕伯格拓扑的开集刻画与素数无穷)
 在 $\mathbb{Z}$ 上以非平凡等差数列 $S\left(a,b\right)=a\mathbb{Z}+b=\left\{an+b:n\in\mathbb{Z}\right\}$ ($a\neq0$) 为基定义拓扑, 即**定义 4.11 (弗斯滕伯格拓扑)**.
 
 (1) 证明 $U\subset\mathbb{Z}$ 开当且仅当对任意 $x\in{U}$, 存在某非零 $a\in\mathbb{Z}$ 使 $S\left(a,x\right)\subset{U}$;
@@ -305,7 +298,9 @@ $D^+\cap{D}^-=\left\{\left(x,y,0\right):x^2+y^2=1\right\}\neq\emptyset$. 由**�
 
 (6) 证明素数有无穷多个 (弗斯滕伯格的拓扑证明).
 
-### 解答 5.9
+题集 §2.2 A1-A6; 2025 卷 A 题一 与之大面积重叠, 已合于此.
+
+### 解答 5.8
 
 (1) 由**定义 3.15 (拓扑基)**, 开集恰为若干 $S\left(a,b\right)$ 之并. 若 $U$ 开且 $x\in{U}$, 则 $x$ 含于某个并项 $S\left(a,b\right)\subset{U}$, 而 $x\in{S}\left(a,b\right)$ 等价于 $b\equiv{x}\pmod{a}$, 即 $S\left(a,b\right)=S\left(a,x\right)$. 故存在 $a\neq0$ 使 $S\left(a,x\right)\subset{U}$. 反过来, 若每点 $x\in{U}$ 都含某 $S\left(a,x\right)\subset{U}$, 则 $U=\bigcup_{x\in{U}}S\left(a_x,x\right)$ 是基元素之并, 故开.
 
@@ -341,8 +336,7 @@ $$
 
 由第 (4) 小题每个 $S\left(p_i,0\right)$ 既开又闭, 有限个既开又闭集之并仍既开又闭 (**定义 4.19 (既开又闭集)**). 故 $\mathbb{Z}-\left\{-1,1\right\}$ 既开又闭, 其补集 $\left\{-1,1\right\}$ 也既开又闭. 但由第 (3) 小题 $\left\{-1,1\right\}$ 非空有限, 不能开, 矛盾. 故素数有无穷多个. $\blacksquare$
 
-## 5.10 (戈洛姆拓扑与基尔希拓扑的基约化)
-
+## 5.9 (戈洛姆拓扑与基尔希拓扑的基约化)
 在 $\mathbb{Z}_{>0}$ 上分别用 (非平凡) 等差数列 $a\mathbb{N}+b=\left\{an+b:n\in\mathbb{N}\right\}$ ($a,b$ 互素) 与 $p\mathbb{N}+b=\left\{pn+b:n\in\mathbb{N}\right\}$ ($p$ 为素数且 $p\nmid{b}$) 为基 (前者) 与子基 (后者) 定义两个拓扑.
 
 (1) (戈洛姆) 证明基可限制到满足 $0\le{b}<{}a$ 且 $a,b$ 互素的偶对;
@@ -353,7 +347,9 @@ $$
 
 (4) (基尔希) 验证这确实给出 $\mathbb{Z}_{>0}$ 上的拓扑.
 
-### 解答 5.10
+题集 §2.2 B1-B4.
+
+### 解答 5.9
 
 (1) 对基元素 $S\left(a,b\right)=\left\{an+b:n\in\mathbb{N}\right\}$, $\gcd\left(a,b\right)=1$. 作带余除法 $b=qa+r$, $0\le{r}<{}a$. 则 $\gcd\left(a,r\right)=\gcd\left(a,b\right)=1$, 且 $S\left(a,b\right)=\left\{a\left(n+q\right)+r:n\in\mathbb{N}\right\}\subset{S}\left(a,r\right)$. 反之, 对 $x=an_0+b\in{S}\left(a,b\right)$, $\gcd\left(a,x\right)=\gcd\left(a,an_0+b\right)=\gcd\left(a,b\right)=1$, 于是
 
@@ -375,8 +371,7 @@ $$
 
 由中国剩余定理 为 $\left\{x\equiv{b}_i\pmod{p_i}\right\}=S\left(M,x_0\right)$, 其中 $M=p_1\cdots{p}_k$, $p_i\nmid{x}_0$. 两个这样的有限交之交仍是同形的有限交. 故有限交全体构成一个基, 由**定义 3.15 (拓扑基)** 与**定义 3.18 (拓扑空间)** 生成 $\mathbb{Z}_{>0}$ 上的**定义 4.13 (基尔希拓扑)**. $\blacksquare$
 
-## 5.11 (三种等差数列拓扑的豪斯多夫性, 正则性与连通性)
-
+## 5.10 (三种等差数列拓扑的豪斯多夫性, 正则性与连通性)
 考察上述拓扑的拓扑性质.
 
 (1) 证明弗斯滕伯格拓扑是豪斯多夫的且正则; 它可度量化但不可完备度量化, 实际上它与带通常子空间拓扑的有理数集 $\mathbb{Q}$ 同胚;
@@ -385,11 +380,13 @@ $$
 
 (3) 证明弗斯滕伯格拓扑完全不连通, 戈洛姆拓扑连通但不局部连通, 基尔希拓扑既连通又局部连通.
 
-### 解答 5.11
+题集 §2.2 C1-C3.
+
+### 解答 5.10
 
 (1) 豪斯多夫: 取 $x\neq{y}$. 选非零 $a$ 使 $a>\left|x-y\right|$. 若 $S\left(a,x\right)\cap{S}\left(a,y\right)\neq\emptyset$, 则 $x+an=y+am$, 即 $a\left(n-m\right)=y-x$, 与 $a>\left|x-y\right|$ 矛盾. 故 $S\left(a,x\right)$ 与 $S\left(a,y\right)$ 不相交. 由**定义 3.10 (豪斯多夫空间)**, 弗斯滕伯格拓扑是豪斯多夫的. 由**定义 3.33 ($T_1$ 空间)**, 单点集皆闭.
 
-正则: 设 $A$ 闭, $x\notin{A}$. 则 $\mathbb{Z}-A$ 是开集且含 $x$, 由习题 5.9 第 (1) 小题存在 $a\neq0$ 使 $S\left(a,x\right)\subset\mathbb{Z}-A$, 即 $S\left(a,x\right)\cap{A}=\emptyset$. 由习题 5.9 第 (4) 小题 $S\left(a,x\right)$ 既开又闭 (**定义 4.19 (既开又闭集)**), 且 $A\subset\mathbb{Z}-S\left(a,x\right)$, 后者开. 故 $x$ 与 $A$ 有不相交开邻域, 由**定义 7.7 (正则空间)** 弗斯滕伯格拓扑正则.
+正则: 设 $A$ 闭, $x\notin{A}$. 则 $\mathbb{Z}-A$ 是开集且含 $x$, 由习题 5.8 第 (1) 小题存在 $a\neq0$ 使 $S\left(a,x\right)\subset\mathbb{Z}-A$, 即 $S\left(a,x\right)\cap{A}=\emptyset$. 由习题 5.8 第 (4) 小题 $S\left(a,x\right)$ 既开又闭 (**定义 4.19 (既开又闭集)**), 且 $A\subset\mathbb{Z}-S\left(a,x\right)$, 后者开. 故 $x$ 与 $A$ 有不相交开邻域, 由**定义 7.7 (正则空间)** 弗斯滕伯格拓扑正则.
 
 可度量化与同胚于 $\mathbb{Q}$: $\mathbb{Z}$ 可数, 故该拓扑有可数基; 由**定理 34.1 (乌雷松度量化定理)**, 有可数基的正则空间可度量化. 又该拓扑无孤立点: 每点 $x$ 的邻域 $S\left(a,x\right)$ 无限. 由**定理 4.16 (谢尔宾斯基同胚定理)**, 任意两个无孤立点的可数可度量化空间互相同胚, 故它与带通常子空间拓扑的 $\mathbb{Q}$ 同胚.
 
@@ -399,7 +396,7 @@ $$
 
 不正则: 以戈洛姆拓扑为例. 取闭集 $E$ 为全体偶正整数 (奇数集开: 对奇 $x$, $S\left(2,x\right)=\left\{x+2n\right\}$ 全奇且 $\gcd\left(2,x\right)=1$), 再取点 $1$. 点 $1$ 的任一邻域形如 $S\left(a,1\right)=\left\{1+an:n\in\mathbb{N}\right\}$, 而含偶数 $2$ 的任一开集必含某 $S\left(b,2\right)=\left\{2+bn:n\in\mathbb{N}\right\}$ ($\gcd\left(b,2\right)=1$, 即 $b$ 奇). 由同余式相容, $S\left(a,1\right)\cap{S}\left(b,2\right)$ 非空, 故无法用不相交开集分离 $1$ 与闭集 $E$. 由**定义 7.7 (正则空间)**, 戈洛姆拓扑不正则. 基尔希拓扑同理不正则.
 
-(3) 弗斯滕伯格完全不连通: 取 $x\neq{y}$. 选 $a$ 使 $y\notin{S}\left(a,x\right)$. 由习题 5.9 第 (4) 小题 $S\left(a,x\right)$ 既开又闭且含 $x$ 不含 $y$, 故任何同时含 $x,y$ 的子集都被这个非平凡既开又闭集切断, 不能连通. 由**定义 4.20 (完全不连通)**, 弗斯滕伯格拓扑完全不连通.
+(3) 弗斯滕伯格完全不连通: 取 $x\neq{y}$. 选 $a$ 使 $y\notin{S}\left(a,x\right)$. 由习题 5.8 第 (4) 小题 $S\left(a,x\right)$ 既开又闭且含 $x$ 不含 $y$, 故任何同时含 $x,y$ 的子集都被这个非平凡既开又闭集切断, 不能连通. 由**定义 4.20 (完全不连通)**, 弗斯滕伯格拓扑完全不连通.
 
 戈洛姆连通: 设 $C$ 既开又闭且 $1\in{C}$. 由标准归纳 (取 $\mathbb{Z}_{>0}-C$ 中最小元 $n$, 由于开集 $C$ 必然含 $S\left(a,1\right)$, 可推出 $n\in{C}$), 得 $C=\mathbb{Z}_{>0}$. 故 $\mathbb{Z}_{>0}$ 仅有的既开又闭非空集是全空间, 由**定义 4.18 (连通空间)** 戈洛姆拓扑连通. 它不**定义 4.9 (局部连通)**: 点 $1$ 的任一邻域 $S\left(a,1\right)$ 都含非平凡既开又闭子集, 故没有连通邻域基.
 

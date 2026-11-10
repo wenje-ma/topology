@@ -1,12 +1,8 @@
-# week6 (道路连通)
+# week6 (((道路连通)))
 
 > **定理 3.1 (复合连续)**
 > 
 > 两个连续映射的复合连续. (教材 $\S3$)
-
-> **定理 3.5 (闭包与极限点)**
-> 
-> $A$ 的闭包是 $A$ 与其全体极限点之并: $\overline{A}=A\cup{A}'$. (教材 $\S3$, 定理 3.5)
 
 > **定义 3.21 (闭集)**
 > 
@@ -19,10 +15,6 @@
 > **定义 3.25 (邻域与极限)**
 > 
 > $b\in{X}$ 的邻域就是含 $b$ 的开集 $U$. 我们称 $a_n\to{b}$, 若对 $b$ 的任何邻域 $U$, 对所有充分大的 $n$ 都有 $a_n\in{U}$. (教材 $\S3$, p16)
-
-> **定义 3.26 (闭包)**
-> 
-> 集合 $A\subset{X}$ 的闭包 $\overline{A}$ 就是包含 $A$ 的最小闭集; 它存在, 因为闭集的交集仍是闭的. (教材 $\S3$, p18)
 
 > **定义 3.32 (稠密)**
 > 
@@ -94,10 +86,9 @@
 
 > **定义 11.2 (粘合映射)**
 > 
-> 满射 $f:X\to{Y}$ 使 $U\subset{Y}$ 开当且仅当 $f^{-1}\left(U\right)$ 开; 等价地, $Y$ 上的拓扑是使 $f$ 连续的最大拓扑. 此时 $g:Y\to{Z}$ 连续当且仅当 $gf:X\to{Z}$ 连续. (教材 §11, p61; "基础拓扑学"(修订版) 第4章 定理(4.1)-(4.2), p55-56)
+> 满射 $f:X\to{Y}$ 使 $U\subset{Y}$ 开当且仅当 $f^{-1}\left(U\right)$ 开; 等价地, $Y$ 上的拓扑是使 $f$ 连续的最大拓扑. 此时 $g:Y\to{Z}$ 连续当且仅当 $g\circ{f}:X\to{Z}$ 连续. (教材 §11, p61; "基础拓扑学"(修订版) 第4章 定理(4.1)-(4.2), p55-56)
 
 ## 6.1 (平面区域的单连通与 $n$ 重连通)
-
 (单连通性) 平面区域 $G\subset\mathbb{R}^2$ 指开且路径连通的子集. 若其余集连通, 称 $G$ 单连通; 若余集由 $n$ 个连通分支组成, 称 $G$ $n$ 重连通. 证明:
 
 (1) 余集的每个分支 $F$ 闭;
@@ -107,6 +98,8 @@
 (3) $n$ 重连通区域的边界由 $n$ 个连通分支组成;
 
 (4) $n$ 重连通区域只能连续映到另一个 $n$ 重连通区域; 反过来, 任意两个 $n$ 重连通区域之间是否必有同胚?
+
+题集 §3.5 C1.
 
 ### 解答 6.1
 
@@ -119,8 +112,9 @@
 (4) 平面 $n$ 重连通区域彼此同胚 (同胚于带 $n-1$ 个洞的圆盘), 故连续双射 (进而同胚) 保持分支数. 反过来: 是, 任意两个 $n$ 重连通平面区域之间存在同胚. 由**定理 4.3 (路径连通蕴含连通)** 与**定义 4.18 (连通空间)** 可作拓扑分类. (阿尔福斯五岛定理是复分析值分布的著名结果, 可自行检索.) $\blacksquare$
 
 ## 6.2 (删齿梳空间的路径分支与证明回顾)
-
 (证明回顾) 回顾路径连通的定义. 回顾删齿梳空间的定义及其非路径连通性的证明. 问: 删齿梳空间有多少个路径连通分支? 若现在允许路径由 $f:\left[0,\infty\right)\to{X}$ 连续参数化, 同一证明还成立吗? 课上另一个用紧致性的证明呢?
+
+题集 §3.5 C2.
 
 ### 解答 6.2
 
@@ -135,7 +129,6 @@ $$
 改用 $\left[0,\infty\right)$ 参数化时, 上述连通性论证在首个逃逸时刻附近局部成立, 不依赖定义域紧致, 故仍无路径. 课上用紧致性的证明 (连续像 $\gamma\left(\left[0,1\right]\right)$ 紧致, 由**定理 5.1 (紧空间连续像紧)**) 对 $\left[0,\infty\right)$ 失效, 但连通性证明已足够. $\blacksquare$
 
 ## 6.3 (差商的像与导函数的值域)
-
 (2024年卷A 题目一) 设 $f:\mathbb{R}\to\mathbb{R}$ 可微但不假设 $f'$ 连续, $I\subset\mathbb{R}$ 为非平凡开区间.
 
 (1) 证明 $A=\left\{\left(x,y\right)\in{I}^2:x<{}y\right\}$ 连通;
@@ -145,6 +138,8 @@ $$
 (3) 证明 $\Gamma\subset{f}'\left(I\right)\subset\overline\Gamma$;
 
 (4) 证明 $f'\left(I\right)$ 是区间.
+
+2024 卷 A 题一; 原 6.9 是它的重述, 已合于此.
 
 ### 解答 6.3
 
@@ -157,7 +152,6 @@ $$
 (4) $\Gamma$ 连通故是区间; 闭包 $\overline\Gamma$ 也是区间 (连通集的闭包仍连通); $f'\left(I\right)$ 夹在二者之间, 故 $f'\left(I\right)$ 是区间. $\blacksquare$
 
 ## 6.4 (商映射保持连通性, 路径连通性与局部连通性)
-
 设 $X$ 是拓扑空间, $\pi:X\to{Y}$ 是商映射, $Y$ 配以由 $\pi$ 诱导的商拓扑.
 
 (1) 证明若 $X$ 连通, 则 $Y$ 连通;
@@ -165,6 +159,8 @@ $$
 (2) 证明若 $X$ 路径连通, 则 $Y$ 路径连通;
 
 (3) 证明若 $\pi$ 是开映射且 $X$ 局部连通 (分别: 局部路径连通), 则 $Y$ 局部连通 (分别: 局部路径连通).
+
+题集 §5 Q3.
 
 ### 解答 6.4
 
@@ -175,8 +171,9 @@ $$
 第 (3) 小题: 只证局部连通情形, 局部路径连通完全平行. 任取 $y\in{Y}$ 与由**定义 3.25 (邻域与极限)** 给出的开邻域 $O\subset{Y}$. 取 $x\in\pi^{-1}\left(y\right)$. 由**定义 11.2 (粘合映射)**, $\pi^{-1}\left(O\right)$ 是 $x$ 的开邻域. 由 $X$ 局部连通与**定义 4.9 (局部连通)**, 存在连通开集 $U\subset{X}$ 使 $x\in{U}\subset\pi^{-1}\left(O\right)$. 因 $\pi$ 是开映射, $\pi\left(U\right)$ 是 $Y$ 中开集; 它含 $y$, 含于 $O$, 且由**定理 4.2 (连续像连通)** 它连通. 故 $y$ 有含于 $O$ 的连通开邻域, $Y$ 局部连通. 对局部路径连通, 把 "连通开集" 换成 "路径连通开集", 由**定义 4.10 (局部路径连通)** 同样在每点取得路径连通开邻域, 再由**定理 3.1 (复合连续)** 路径的连续像仍是路径, 故 $\pi\left(U\right)$ 路径连通, 即得 $Y$ 局部路径连通. $\blacksquare$
 
 ## 6.5 (无穷维赋范空间中紧集的余集道路连通)
-
 设 $E$ 是无穷维赋范线性空间, $K\subset{E}$ 是紧集. 证明 $E\setminus{K}$ 道路连通. 问有限维赋范线性空间中此结论是否成立?
+
+题集 §6 C1.
 
 ### 解答 6.5
 
@@ -189,8 +186,9 @@ $$
 有限维情形: 结论不成立. 取 $E=\mathbb{R}^2$, $K=S^1=\left\{\left(u,v\right):u^2+v^2=1\right\}$. $S^1$ 由**定理 5.3 ($\mathbb{R}^n$ 中的紧集)** 是闭有界集, 故紧. 但 $\mathbb{R}^2\setminus{S}^1=\left\{u^2+v^2<1\right\}\cup\left\{u^2+v^2>1\right\}$ 是两个非空不相交开集之并, 由**定义 4.18 (连通空间)** 不连通, 因而不道路连通. $\blacksquare$
 
 ## 6.6 (等值集皆紧的连续函数必取到极值)
-
 设 $f:\mathbb{R}^n\to\mathbb{R}$ 连续, $n\ge2$, 且对每个 $a\in\mathbb{R}$, 等值集 $f^{-1}\left(a\right)$ 紧. 证明 $f$ 取得全局极值 (上确界或下确界之一达到). 问 $n=1$ 时结论如何?
+
+题集 §6 C2.
 
 ### 解答 6.6
 
@@ -207,10 +205,11 @@ $$
 $n=1$: 结论不成立. 取 $f\left(x\right)=x$, 则 $f^{-1}\left(a\right)=\left\{a\right\}$ 是单点集紧, 但 $f:\mathbb{R}\to\mathbb{R}$ 既无最大值也无最小值. $\blacksquare$
 
 ## 6.7 (超平面的余集道路连通当且仅当超平面不闭)
-
 设 $E$ 是赋范线性空间, $H$ 是超平面. 证明 $E\setminus{H}$ 道路连通当且仅当 $H$ 不是闭集.
 
 注: 题集原文误作 "当且仅当 $H$ 是闭集", 与其附证方向不符 (附证证的正是 $H$ 非闭时道路连通, $H$ 闭时 $E\setminus{H}$ 分裂为两个凸分支); 此处按数学本意改正.
+
+题集 §6 C4.
 
 ### 解答 6.7
 
@@ -230,13 +229,13 @@ $$
 
 ## 6.8 (不动点性质, 截面连通与 $\left[0,1\right]$ 上映射的不动点)
 
-(7.2 连通性)
-
 (1) 设 $\left(E,d\right)$ 是度量空间, 且每个连续映射 $f:E\to{E}$ 都有**定义 4.17 (不动点)**. 证明 $E$ 连通.
 
 (2) 设 $K\subset\left[0,1\right]^2$ 闭, 且对每个 $x\in\left[0,1\right]$, 截面 $K_x=\left\{y\in\left[0,1\right]:\left(x,y\right)\in{K}\right\}$ 是非平凡区间. 证明 $K$ 连通. 进一步证明存在 $x\in\left[0,1\right]$ 使 $x\in{K}_x$.
 
 (3) 设 $f:\left[0,1\right]\to\left[0,1\right]$. (a) 设 $f$ 非递减 (不必连续). 证明 $f$ 有不动点. (b) 设 $f$ 连续 (不必递增). 证明 $f$ 有不动点. (c) 设 $f,g:\left[0,1\right]\to\left[0,1\right]$ 连续且 $f\circ{g}=g\circ{f}$. 证明存在 $a\in\left[0,1\right]$ 使 $f\left(a\right)=g\left(a\right)$. (d) 设 $f:\mathbb{R}\to\mathbb{R}$ 连续, 且 $f\circ{f}$ 有不动点. 证明 $f$ 有不动点.
+
+题集 §7.2 (三题).
 
 ### 解答 6.8
 
@@ -259,33 +258,3 @@ $$
 (c): 由 (b), $f$ 有不动点集 $E=\left\{x:f\left(x\right)=x\right\}$ 非空. 对 $x\in{E}$, $f\left(g\left(x\right)\right)=g\left(f\left(x\right)\right)=g\left(x\right)$, 故 $g\left(x\right)\in{E}$. 令 $m=\inf{E}$, $M=\sup{E}$. $E$ 闭 (由 $f-\operatorname{id}$ 连续), 故 $m,M\in{E}$. 考虑 $h=f-g$. $h\left(m\right)=f\left(m\right)-g\left(m\right)=m-g\left(m\right)$. 因 $g\left(m\right)\in{E}$, $g\left(m\right)\ge{m}$, 故 $h\left(m\right)\le0$. 同理 $h\left(M\right)=M-g\left(M\right)\ge0$. 由连续函数的介值定理, 存在 $a\in\left[m,M\right]\subset{E}$ 使 $h\left(a\right)=0$, 即 $f\left(a\right)=g\left(a\right)$.
 
 (d): 设 $f\circ{f}$ 有不动点 $p$, 即 $f\left(f\left(p\right)\right)=p$. 若 $f\left(p\right)=p$, 则 $p$ 已是 $f$ 的不动点. 若 $f\left(p\right)\neq{p}$, 令 $h\left(x\right)=f\left(x\right)-x$. 则 $h\left(p\right)=f\left(p\right)-p$ 与 $h\left(f\left(p\right)\right)=f\left(f\left(p\right)\right)-f\left(p\right)=p-f\left(p\right)$ 异号. 由**定理 4.1 (区间连通)** 与连续函数的介值定理, $h$ 在 $p$ 与 $f\left(p\right)$ 之间有零点 $a$, 即 $f\left(a\right)=a$. $\blacksquare$
-
-## 6.9 (差商像的连通性与导函数的值域 (2024 卷 A 题一重述))
-
-考虑一个可微的函数 $f:\mathbb{R}\to\mathbb{R}$, 但不假设 $f'$ 是连续的. 取 $\mathbb{R}$ 上一个非平凡开区间 $I$.
-
-(1) (10 分) 考虑集合 $A=\left\{\left(x,y\right)\in{I}^2:x<{}y\right\}$. 证明 $A$ 在最自然的拓扑下是一个连通集合.
-
-(2) (10 分) 考虑在 $A$ 上定义的实函数 $F\left(x,y\right)=\frac{f\left(x\right)-f\left(y\right)}{x-y}$. 证明 $\Gamma=F\left(A\right)$ 是 $\mathbb{R}$ 中的一个连通集.
-
-(3) (5 分) 证明 $\Gamma\subset{f}'\left(I\right)\subset\overline{\Gamma}$ (这里 $f'\left(I\right)$ 指的是 $I$ 被 $f'$ 这个函数映射到的像集).
-
-(4) (5 分) 证明 $f'\left(I\right)$ 是 $\mathbb{R}$ 中的一个区间.
-
-### 解答 6.9
-
-(1) 任取两点 $P_1=\left(x_1,y_1\right),P_2=\left(x_2,y_2\right)\in{A}$, 则 $x_1<{}y_1$ 且 $x_2<{}y_2$. 对 $t\in\left[0,1\right]$, 线段上的点为 $x\left(t\right)=\left(1-t\right)x_1+tx_2$, $y\left(t\right)=\left(1-t\right)y_1+ty_2$. 于是
-
-$$
-y\left(t\right)-x\left(t\right)=\left(1-t\right)\left(y_1-x_1\right)+t\left(y_2-x_2\right)>0,
-$$
-
-故整条线段含于 $A$. 由**定义 4.23 (凸集)**, $A$ 是凸集, 凸集必路径连通 (由**定义 4.22 (路径连通)**), 再由**定理 4.3 (路径连通蕴含连通)** $A$ 连通.
-
-(2) 因 $f$ 可微, $f$ 连续; 在 $A$ 上恒有 $x-y\neq0$, 故 $F\left(x,y\right)=\frac{f\left(x\right)-f\left(y\right)}{x-y}$ 是 $A$ 上的连续函数. 由第 (1) 小题 $A$ 连通, 由**定理 4.2 (连续像连通)**, $\Gamma=F\left(A\right)$ 连通.
-
-(3) 先证 $\Gamma\subset{f}'\left(I\right)$. 任取 $\left(x,y\right)\in{A}$, $x<{}y$. 由微分中值定理, 存在 $c\in\left(x,y\right)\subset{I}$ 使 $\frac{f\left(x\right)-f\left(y\right)}{x-y}=f'\left(c\right)$. 故 $F\left(x,y\right)\in{f}'\left(I\right)$, 即 $\Gamma\subset{f}'\left(I\right)$.
-
-再证 $f'\left(I\right)\subset\overline{\Gamma}$. 任取 $t\in{I}$ (因 $I$ 为开区间, $t$ 非端点). 取充分小的 $h$ 使 $t+h\in{I}$, 则 $q_h=\frac{f\left(t+h\right)-f\left(t\right)}{h}\in\Gamma$. 由导数定义 $q_h\to{f}'\left(t\right)$ ($h\to0$). 故 $f'\left(t\right)$ 是 $\Gamma$ 的极限点, 由**定理 3.5 (闭包与极限点)** 它含于 $\overline{\Gamma}$ (由**定义 3.26 (闭包)**, $\overline{\Gamma}$ 是含 $\Gamma$ 的最小闭集). 即 $f'\left(I\right)\subset\overline{\Gamma}$.
-
-(4) 由第 (2) 小题, $\Gamma$ 是 $\mathbb{R}$ 中的连通集, 而 $\mathbb{R}$ 中连通集必为区间 (若 $a<{}c<{}b$ 且 $a,b\in{S}$, $c\notin{S}$, 则 $S=\left(S\cap\left(-\infty,c\right)\right)\cup\left(S\cap\left(c,\infty\right)\right)$ 是一个分离, 矛盾). 故 $\Gamma$ 是区间. 由第 (3) 小题, $\Gamma\subset{f}'\left(I\right)\subset\overline{\Gamma}$. 一个区间与其闭包之间的差别至多是它的两个端点; 在区间上任意添去两端点的一个子集仍得区间. 因此夹在区间 $\Gamma$ 与 $\overline{\Gamma}$ 之间的 $f'\left(I\right)$ 仍是区间. $\blacksquare$

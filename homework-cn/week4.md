@@ -96,9 +96,9 @@
 > 
 > 若 $X$ 是豪斯多夫空间, 则 $X$ 中任意紧子集 $K\subset{X}$ 是闭的. (教材 §5; "基础拓扑学"(修订版) 第3章 定理(3.6))
 
-> **定理 5.6 (紧豪斯多夫间的连续双射)**
+> **定理 5.6 (紧豪斯多夫间的连续单射是同胚)**
 > 
-> 紧豪斯多夫空间之间的连续双射是同胚. (教材 §5; "基础拓扑学"(修订版) 第3章 定理(3.7))
+> 紧豪斯多夫空间之间的连续单射是同胚. (教材 §5; "基础拓扑学"(修订版) 第3章 定理(3.7))
 
 > **定理 5.7 (有限乘积紧)**
 > 
@@ -120,21 +120,13 @@
 > 
 > 开球 $B\left(x,r\right)=\left\{y\in{X}:d\left(x,y\right)<{}r\right\}$. 全体开球构成度量拓扑的一个基. (教材 $\S6$)
 
-> **定义 6.46 (点到集合的距离)**
-> 
-> $d\left(x,A\right)=\inf_{a\in{A}}d\left(x,a\right)$. (题集 $\S3.2$)
-
-> **定理 7.2 (乌雷松引理)**
-> 
-> 正规空间中不相交闭集可被连续函数分离. (题集 §6 C13)
-
 > **定义 11.1 (商拓扑)**
 > 
 > 满射 $\pi:X\to{Y}$ 下, $U\subset{Y}$ 开当且仅当 $\pi^{-1}\left(U\right)\subset{X}$ 开. (教材 §11, p61; "拓扑学"(原书第2版) §22, p105; "基础拓扑学"(修订版) 第4章 4.2, p55)
 
 > **定义 11.2 (粘合映射)**
 > 
-> 满射 $f:X\to{Y}$ 使 $U\subset{Y}$ 开当且仅当 $f^{-1}\left(U\right)$ 开; 等价地, $Y$ 上的拓扑是使 $f$ 连续的最大拓扑. 此时 $g:Y\to{Z}$ 连续当且仅当 $gf:X\to{Z}$ 连续. (教材 §11, p61; "基础拓扑学"(修订版) 第4章 定理(4.1)-(4.2), p55-56)
+> 满射 $f:X\to{Y}$ 使 $U\subset{Y}$ 开当且仅当 $f^{-1}\left(U\right)$ 开; 等价地, $Y$ 上的拓扑是使 $f$ 连续的最大拓扑. 此时 $g:Y\to{Z}$ 连续当且仅当 $g\circ{f}:X\to{Z}$ 连续. (教材 §11, p61; "基础拓扑学"(修订版) 第4章 定理(4.1)-(4.2), p55-56)
 
 > **定义 11.3 (等价关系粘合)**
 > 
@@ -165,28 +157,30 @@
 > 关于一族映射 $f_i:X_i\to{Y}$ 使每个 $f_i$ 连续的最细拓扑; $U\subset{Y}$ 开当且仅当每个 $f_i^{-1}\left(U\right)$ 在 $X_i$ 中开. (题集 §1.4 C6; 题集 §5 Q1-Q2)
 
 ## 4.1 (环面上有理斜率与无理斜率直线的像)
-
 设 $\pi:\mathbb{R}^2\to{T}^2$ 是典范投影, $\alpha\in\mathbb{R}\cup\left\{\infty\right\}$, $D$ 是 $\mathbb{R}^2$ 中斜率为 $\alpha$ 的直线. 证明: 若 $\alpha\in\mathbb{Q}\cup\left\{\infty\right\}$, 则 $\pi\left(D\right)$ 同胚于一个圆; 若 $\alpha\notin\mathbb{Q}\cup\left\{\infty\right\}$, 则 $\pi\left(D\right)$ 在 $T^2$ 中稠密, 且 $\pi|_D$ 是 $D$ 到 $\pi\left(D\right)$ 的连续双射.
+
+题集 §5 Q7.
 
 ### 解答 4.1
 
-由**定义 11.7 (环面)**, $T^2=\mathbb{R}^2/\mathbb{Z}^2$, $\pi$ 为商投影. 不妨取 $D=\left\{\left(t,\alpha{t}\right):t\in\mathbb{R}\right\}$ (竖直直线 $\alpha=\infty$ 同理).
+由**定义 11.7 (环面)**, $T^2=\mathbb{R}^2/\mathbb{Z}^2$, $\pi$ 为商投影. 不妨取 $D=\left\{\left(t,\alpha{t}\right):t\in\mathbb{R}\right\}$.
 
-有理斜率: 设 $\alpha=p/q$, $p,q\in\mathbb{Z}$, $\gcd\left(p,q\right)=1$. 映射 $g:\mathbb{R}/q\mathbb{Z}\to{T}^2$, $g\left(t\right)=\pi\left(t,\alpha{t}\right)$. 它良定义且连续 (由**定义 11.2 (粘合映射)**, $\mathbb{R}/q\mathbb{Z}$ 上的映射经由商投影分解). 它是单射: 若 $\pi\left(t,\alpha{t}\right)=\pi\left(t',\alpha{t}'\right)$, 则 $t-t'\in\mathbb{Z}$ 且 $p\left(t-t'\right)/q\in\mathbb{Z}$, 即 $q\mid{p}\left(t-t'\right)$; 由 $\gcd\left(p,q\right)=1$, $q\mid{t}-t'$, 即在 $\mathbb{R}/q\mathbb{Z}$ 中相等. $\mathbb{R}/q\mathbb{Z}$ 是紧圆 (同胚于 $S^1$), $T^2$ 是豪斯多夫的 (由**定义 11.7 (环面)** $T^2\cong{S}^1\times{S}^1$, 而 $S^1$ 是 $\mathbb{R}^2$ 的子空间故豪斯多夫, 由**定理 3.6 (豪斯多夫的遗传性)** 乘积仍豪斯多夫). 由**定理 5.6 (紧豪斯多夫间的连续双射)**, $g$ 是同胚. 故 $\pi\left(D\right)=g\left(\mathbb{R}/q\mathbb{Z}\right)$ 同胚于圆.
+有理斜率: 设 $\alpha=p/q$, $p,q\in\mathbb{Z}$, $\gcd\left(p,q\right)=1$. 映射 $g:\mathbb{R}/q\mathbb{Z}\to{T}^2$, $g\left(t\right)=\pi\left(t,\alpha{t}\right)$. 由**定义 11.2 (粘合映射)**, 存在商映射 $\rho:\mathbb{R}\to\mathbb{R/q\mathbb{Z}}$ 满足 $\pi=g\circ\rho$, 则 $\pi$, $\rho$, $g$ 良定义且均连续. 由**定义 11.7 (环面)** $T^2\cong{S}^1\times{S}^1$, 而 $S^1$ 是 $\mathbb{R}^2$ 的子空间故豪斯多夫, 由**定理 3.6 (豪斯多夫的遗传性)** 乘积仍豪斯多夫, 即 $T^2$ 是豪斯多夫的. 已知 $\mathbb{R}/q\mathbb{Z}$ 同胚于 $S^1$ (紧圆), 且它是单射: 若 $\pi\left(t,\alpha{t}\right)=\pi\left(t',\alpha{t}'\right)$, 则 $t-t'\in\mathbb{Z}$ 且 $p\left(t-t'\right)/q\in\mathbb{Z}$, 即 $q\mid{p}\left(t-t'\right)$; 由 $\gcd\left(p,q\right)=1$, $q\mid{t}-t'$, 即 $t$ 与 $t'$ 在 $\mathbb{R}/q\mathbb{Z}$ 中相等. 由**定理 5.6 (紧豪斯多夫间的连续单射是同胚)**, $g$ 是同胚. 故 $\pi\left(D\right)=g\left(\mathbb{R}/q\mathbb{Z}\right)$ 同胚于圆.
 
-无理斜率: 设 $\alpha\notin\mathbb{Q}$. 先证 $\pi\left(D\right)$ 在 $T^2$ 中稠密. 记 $H=\pi\left(D\right)=\left\{\pi\left(t,\alpha{t}\right):t\in\mathbb{R}\right\}\subset{T}^2$. 由狄利克雷逼近, 对任意 $\varepsilon>0$ 存在非零整数 $m$ 使 $\left\|m\alpha\right\|<\varepsilon$ (到最近整数距离), 即 $\pi\left(m,m\alpha\right)$ 离 $\left(0,0\right)\in{T}^2$ 任意近. $H$ 中含任意接近单位元的非零点. 而 $H$ 在第一坐标上的投影 $t\mapsto{t}\pmod1$ 是满射到 $S^1$ (因 $t$ 取遍 $\mathbb{R}$), 结合第二坐标 $t\mapsto\alpha{t}\pmod1$ 的无理旋转 (稠密), 即得 $H$ 在 $T^2$ 中稠密.
+无理斜率: 设 $\alpha\notin\mathbb{Q}$. 先证 $\pi\left(D\right)$ 在 $T^2$ 中稠密. 记 $H=\pi\left(D\right)=\left\{\pi\left(t,\alpha{t}\right):t\in\mathbb{R}\right\}\subset{T}^2$. 由狄利克雷逼近, 对任意 $\varepsilon>0$ 存在非零整数 $m$ 使 $\left\|m\alpha\right\|<\varepsilon$ (到最近整数距离), 即 $\pi\left(m,m\alpha\right)$ 离 $\left(0,0\right)\in{T}^2$ 任意近, $H$ 中含任意接近单位元的非零点. 而 $H$ 在第一坐标上的投影 $t\mapsto{t}\pmod1$ 是满射到 $S^1$ (因 $t$ 取遍 $\mathbb{R}$), 结合第二坐标 $t\mapsto\alpha{t}\pmod1$ 的无理旋转是稠密的, 即得 $H$ 在 $T^2$ 中稠密.
 
-$\pi|_D:D\to\pi\left(D\right)$ 连续 (它是商映射 $\pi$ 在子空间 $D$ 上的限制, 由**定义 3.19 (子空间拓扑)** 连续). 它是双射: 若 $\pi\left(t,\alpha{t}\right)=\pi\left(t',\alpha{t}'\right)$, 则 $t-t'\in\mathbb{Z}$ 且 $\alpha\left(t-t'\right)\in\mathbb{Z}$, 由 $\alpha$ 无理必有 $t-t'=0$. $\blacksquare$
+$\pi|_D:D\to\pi\left(D\right)$ 是商映射 $\pi$ 在子空间 $D$ 上的限制, 由**定义 3.19 (子空间拓扑)** 连续, 则其连续且是满射. 它是单射: 若 $\pi\left(t,\alpha{t}\right)=\pi\left(t',\alpha{t}'\right)$, 则 $t-t'\in\mathbb{Z}$ 且 $\alpha\left(t-t'\right)\in\mathbb{Z}$, 由 $\alpha$ 无理必有 $t-t'=0$. $\blacksquare$
 
 ## 4.2 (环面按稠密子群粘合: 豪斯多夫当且仅当斜率为有理数)
-
 设 $\pi:\mathbb{R}^2\to{T}^2$ 是典范投影, $\alpha\in\mathbb{R}\cup\left\{\infty\right\}$. 在 $T^2$ 上定义关系: $x'\sim{y}'$ 当且仅当存在 $x,y\in\mathbb{R}^2$ 与斜率为 $\alpha$ 的直线使 $\pi\left(x\right)=x'$, $\pi\left(y\right)=y'$. 证明 $\sim$ 是等价关系; 证明商空间 $T^2/{\sim}$ 豪斯多夫当且仅当 $\alpha\in\mathbb{Q}$, 此时商空间同胚于一个圆; 若 $\alpha\notin\mathbb{Q}$, 证明商空间 $T^2/{\sim}$ 具有平凡拓扑.
+
+题集 §5 Q8.
 
 ### 解答 4.2
 
-把 $\pi\left(D\right)$ 记为 $H\subset{T}^2$, 其中 $D=\left\{\left(t,\alpha{t}\right)\right\}$. 关系 $x'\sim{y}'$ 即 $y'-x'\in{H}$ ($T^2$ 中的群运算).
+把 $\pi\left(D\right)$ 记为 $H\subset{T}^2$, 其中 $D=\left\{\left(t,\alpha{t}\right)\right\}$. 依据 $T^2$ 中的群运算, 关系 $x'\sim{y}'$ 当且仅当 $y'-x'\in{H}$.
 
-等价关系: $H$ 是 $T^2$ 的子群: 含单位元; 对减法封闭. 故按子群取陪集是等价关系: 自反 ($0\in{H}$), 对称 ($H$ 对逆元封闭), 传递 ($H$ 对加法封闭). 由**定义 11.3 (等价关系粘合)**, $T^2/{\sim}=T^2/H$.
+等价关系: 已知 $H$ 是 $T^2$ 的子群. 由于 $0\in{H}$, 自反性成立; 由于 $H$ 对逆元封闭, 对称性成立; 由于 $H$ 对加法封闭, 传递性成立. 故是等价关系.
 
 有理斜率: 设 $\alpha=p/q\in\mathbb{Q}$. 由习题 4.1, $H=\pi\left(D\right)$ 同胚于一个圆, 故 $H$ 紧; 又 $T^2$ 豪斯多夫 (见习题 4.1), 由**定理 5.5 (豪斯多夫中紧集闭)**, $H$ 是 $T^2$ 中的闭子群. 定义
 
@@ -194,13 +188,14 @@ $$
 \varphi:T^2\to{S}^1,\quad\varphi\left(u,v\right)=qu-pv\pmod1.
 $$
 
-$\varphi$ 连续, 其核恰为 $H$ (即 $\varphi\left(u,v\right)=0\Leftrightarrow\left(u,v\right)\in{H}$). 由**定义 11.2 (粘合映射)** 的泛性质, $\varphi$ 诱导连续双射 $\overline\varphi:T^2/H\to{S}^1$. $T^2/H$ 紧 ($T^2$ 紧, 由**定理 5.1 (紧空间连续像紧)** 商连续像紧), $S^1$ 豪斯多夫. 由**定理 5.6 (紧豪斯多夫间的连续双射)**, $\overline\varphi$ 是同胚. 故 $T^2/H$ 同胚于圆, 且圆豪斯多夫, 由**定义 3.10 (豪斯多夫空间)** 商空间豪斯多夫.
+$\varphi$ 连续, 其核恰为 $H$ (即 $\varphi\left(u,v\right)=0\Leftrightarrow\left(u,v\right)\in{H}$). 由**定义 11.2 (粘合映射)** 的泛性质, $\varphi$ 诱导连续双射 $\overline\varphi:T^2/H\to{S}^1$. $T^2/H$ 紧 ($T^2$ 紧, 由**定理 5.1 (紧空间连续像紧)** 商连续像紧), $S^1$ 豪斯多夫. 由**定理 5.6 (紧豪斯多夫间的连续单射是同胚)**, $\overline\varphi$ 是同胚. 故 $T^2/H$ 同胚于圆, 且圆豪斯多夫, 由**定义 3.10 (豪斯多夫空间)** 商空间豪斯多夫.
 
 无理斜率: 由习题 4.1, $H$ 在 $T^2$ 中稠密. 商拓扑下, 由**定义 11.1 (商拓扑)**, 开集 $U\subset{T}^2/H$ 对应于 $T^2$ 中的 $H$-饱和开集. 若 $U$ 非空, 取饱和开集 $V\subset{T}^2$, $V\neq\emptyset$. 因 $H$ 稠密, $V+H=T^2$; 而 $V$ 已饱和, $V+H=V$, 故 $V=T^2$, 即 $U=T^2/H$. 故仅有的开集是 $\emptyset$ 与全空间, 即平凡拓扑. 此时商空间不豪斯多夫 (除非单点), 与有理情形对照. $\blacksquare$
 
 ## 4.3 (锥空间的嵌入与函子性)
-
 (锥) 设 $CX$ 是 $X$ 上的锥空间, 为 $CX=X\times\left[0,1\right]/X\times\left\{1\right\}$. 证明: 映射 $X\to{C}X$, $x\mapsto\left[\left(x,0\right)\right]$ 是到其像的同胚, 从而 $X$ 可视为 $CX$ 的子集. 证明: 若 $f:X\to{Y}$ 连续, 则 $Cf:CX\to{C}Y$, $\left[\left(x,t\right)\right]\mapsto\left[\left(f\left(x\right),t\right)\right]$ 连续.
+
+题集 §5 Q9.
 
 ### 解答 4.3
 
@@ -219,8 +214,9 @@ $$
 $\pi_Y^{-1}\left(W\right)$ 在 $Y\times\left[0,1\right]$ 中开, $f\times\operatorname{id}$ 连续 (由 $f$ 连续与 $\operatorname{id}$ 连续, 乘积映射连续), 故由**定义 3.22 (连续映射)**, 上式在 $X\times\left[0,1\right]$ 中开. 故 $Cf$ 连续. $\blacksquare$
 
 ## 4.4 (悬垂把 $S^n$ 抬高一维)
-
 (悬垂) 设 $S^n=\left\{x\in\mathbb{R}^{n+1}:x_1^2+\cdots+x_{n+1}^2=1\right\}$. 证明悬垂 $S\left(S^n\right)$ 同胚于 $S^{n+1}$.
+
+题集 §5 Q10.
 
 ### 解答 4.4
 
@@ -232,11 +228,12 @@ $$
 
 验证: $\left\|\sqrt{1-t^2}\,u\right\|^2+t^2=\left(1-t^2\right)\left\|u\right\|^2+t^2=1$, 故像在 $S^{n+1}$ 上. $F$ 连续. $F\left(u,1\right)=\left(0,1\right)$ 对一切 $u$, $F\left(u,-1\right)=\left(0,-1\right)$ 对一切 $u$, 故两端被压成两点, $F$ 经由商映射分解为连续双射 $\overline{F}:S\left(S^n\right)\to{S}^{n+1}$.
 
-紧性: $S^n$ 是 $\mathbb{R}^{n+1}$ 的有界闭子集故紧, $\left[-1,1\right]$ 紧, 由**定理 5.7 (有限乘积紧)**, $S^n\times\left[-1,1\right]$ 紧; 再由**定理 5.1 (紧空间连续像紧)**, $S\left(S^n\right)$ 紧. $S^{n+1}$ 是豪斯多夫的 ($\mathbb{R}^{n+2}$ 的子空间, 由**定理 3.6 (豪斯多夫的遗传性)**). 由**定理 5.6 (紧豪斯多夫间的连续双射)**, $\overline{F}$ 是同胚. $\blacksquare$
+紧性: $S^n$ 是 $\mathbb{R}^{n+1}$ 的有界闭子集故紧, $\left[-1,1\right]$ 紧, 由**定理 5.7 (有限乘积紧)**, $S^n\times\left[-1,1\right]$ 紧; 再由**定理 5.1 (紧空间连续像紧)**, $S\left(S^n\right)$ 紧. $S^{n+1}$ 是豪斯多夫的 ($\mathbb{R}^{n+2}$ 的子空间, 由**定理 3.6 (豪斯多夫的遗传性)**). 由**定理 5.6 (紧豪斯多夫间的连续单射是同胚)**, $\overline{F}$ 是同胚. $\blacksquare$
 
 ## 4.5 (塌缩商限制在余集上是同胚, 锥商同胚于悬垂)
-
 (塌缩) 证明: 若 $A\subset{X}$ 是开 (或闭) 集, 则投影 $X\to{X}/\left\langle{A}\right\rangle$ 限制在 $X\setminus{A}$ 上是同胚. 证明 $CX/\left\langle{X}\right\rangle$ 与 $SX$ 同胚 (这里把 $X$ 等同于 $\pi\left(X\times\left\{0\right\}\right)\subset{C}X$).
+
+题集 §5 Q11.
 
 ### 解答 4.5
 
@@ -249,7 +246,6 @@ $A$ 开: 任取子空间开 $U=V\cap\left(X\setminus{A}\right)$, $V$ 开. 令 $W
 $CX/\left\langle{X}\right\rangle\cong{S}X$: 由**定义 11.6 (锥)**, $CX=X\times\left[0,1\right]/X\times\left\{1\right\}$. 在 $CX$ 中再把 $\pi\left(X\times\left\{0\right\}\right)$ 捏成一点, 等价于在 $X\times\left[0,1\right]$ 上把 $X\times\left\{0\right\}$ 与 $X\times\left\{1\right\}$ 各捏成一点. 这正是**定义 11.11 (悬垂)** 中的 $SX$ (经 $t\mapsto2t-1$ 把 $\left[0,1\right]$ 线性映到 $\left[-1,1\right]$). $\blacksquare$
 
 ## 4.6 ($n$ 维环面与环面乘积同胚)
-
 ($n$-维环面) 设 $T^n=\mathbb{R}^n/\mathbb{Z}^n$, 映射
 
 $$
@@ -262,16 +258,17 @@ $$
 
 (3) 证明 $\phi$ 是同胚.
 
+题集 §5 Q13.
+
 ### 解答 4.6
 
 第 (1) 小题: 由**定义 11.13 ($n$-维环面)**, $\mathbb{R}^n\to\left(S^1\right)^n$ 的映射 $F\left(t\right)=\left(e^{2\pi{i}t_1},\dots,e^{2\pi{i}t_n}\right)$ 连续, 且在 $\mathbb{Z}^n$ 陪集上取等值. 由**定义 11.2 (粘合映射)**, $F$ 经由商映射分解为连续 $\phi:T^n\to\left(S^1\right)^n$.
 
 第 (2) 小题: $T^n$ 是豪斯多夫的: 下一问证 $\phi$ 是到 $\left(S^1\right)^n$ 的同胚, 而 $\left(S^1\right)^n$ 由**定理 3.6 (豪斯多夫的遗传性)** 是豪斯多夫的, 故 $T^n$ 豪斯多夫.
 
-第 (3) 小题: $\phi$ 是双射: $\left(e^{2\pi{i}t_1},\dots\right)$ 的原像陪集唯一. $T^n$ 紧: 它是 $n$ 方体 $\left[0,1\right]^n$ 的商, 由**定理 5.1 (紧空间连续像紧)** 紧. $\left(S^1\right)^n$ 豪斯多夫. 由**定理 5.6 (紧豪斯多夫间的连续双射)**, $\phi$ 是同胚. $\blacksquare$
+第 (3) 小题: $\phi$ 是双射: $\left(e^{2\pi{i}t_1},\dots\right)$ 的原像陪集唯一. $T^n$ 紧: 它是 $n$ 方体 $\left[0,1\right]^n$ 的商, 由**定理 5.1 (紧空间连续像紧)** 紧. $\left(S^1\right)^n$ 豪斯多夫. 由**定理 5.6 (紧豪斯多夫间的连续单射是同胚)**, $\phi$ 是同胚. $\blacksquare$
 
 ## 4.7 (最终拓扑, 商拓扑与粘合映射的三者等价)
-
 设 $X$ 是拓扑空间, $A$ 是集合, $\pi:X\to{A}$ 是满射. 证明下列三条等价:
 
 (a) $A$ 上的拓扑是最终拓扑;
@@ -279,6 +276,8 @@ $$
 (b) 映射 $\pi$ 满足: $U\subset{A}$ 开当且仅当 $\pi^{-1}\left(U\right)$ 在 $X$ 中开;
 
 (c) 映射 $\pi$ 是粘合映射.
+
+题集 §6 C12.
 
 ### 解答 4.7
 
@@ -288,27 +287,12 @@ $$
 
 (c) $\Rightarrow$ (a): 由**定义 11.2 (粘合映射)**, $A$ 上的拓扑是使 $\pi$ 连续的最大拓扑, 即最终拓扑. 三链贯通, 等价. 由**定义 3.22 (连续映射)** 与**定义 3.21 (闭集)** 的对偶, 上述等价成立. $\blacksquare$
 
-## 4.8 (乌雷松引理的度量版本)
-
-证明乌雷松引理的度量版本: 若 $X$ 是度量空间, $F\subset{X}$ 闭集, 则存在连续函数 $f:X\to\left[0,1\right]$ 使 $f=0$ 在 $F$ 上, $f=1$ 在 $X\setminus{B}\left(F,\varepsilon\right)$ 上.
-
-### 解答 4.8
-
-由**定义 6.46 (点到集合的距离)**, $d\left(x,F\right)=\inf_{a\in{F}}d\left(x,a\right)$. 定义
-
-$$
-f\left(x\right)=\min\left(1,\frac{d\left(x,F\right)}{\varepsilon}\right).
-$$
-
-由 $F$ 闭, $d\left(x,F\right)=0$ 当且仅当 $x\in{F}$, 故 $f=0$ 在 $F$ 上. 若 $x\notin{B}\left(F,\varepsilon\right)$, 则 $d\left(x,F\right)\ge\varepsilon$, 故 $f\left(x\right)=1$.
-
-连续性: $d\left(\cdot,F\right)$ 是利普希茨映射 (由**定义 6.35 (度量空间)** 的三角不等式 $\left|d\left(x,F\right)-d\left(y,F\right)\right|\le{d}\left(x,y\right)$), 复合 $\min\left(1,\cdot\right)$ 连续. 由**定义 3.22 (连续映射)**, $f$ 连续. 这是**定理 7.2 (乌雷松引理)** 在度量空间中的直接形式. $\blacksquare$
-
-## 4.9 ($\mathbb{R}$ 的开子集分解为可数个互不相交的开区间)
-
+## 4.8 ($\mathbb{R}$ 的开子集分解为可数个互不相交的开区间)
 证明下列定理: $\mathbb{R}$ 的任一开子集 $U$ 可唯一地写成可数个互不相交的开区间之并, 且这些区间的端点不属于 $U$. 提示: 可考虑含 $x\in{U}$ 的极大开区间 $I_x\subset{U}$.
 
-### 解答 4.9
+题集 §1.3 Q1.
+
+### 解答 4.8
 
 由**定义 6.36 (开球)**, $\mathbb{R}$ 的通常拓扑以开区间为基. 对每个 $x\in{U}$, 令 $I_x$ 为一切含 $x$ 且含于 $U$ 的开区间之并. 因每个这样的开区间都含 $x$, 其并仍是含 $x$ 的开区间 (一族两两相交于同一点的开区间之并为开区间), 含于 $U$, 且在含 $x$ 且含于 $U$ 的开区间中极大.
 
@@ -320,11 +304,12 @@ $$
 
 唯一性: 若另有分解 $U=\bigcup_{j\in{J}}J_j$, 其中 $J_j$ 为互不相交开区间. 对每个 $x\in{U}$, $x$ 属于唯一的 $J_{j\left(x\right)}$. $J_{j\left(x\right)}$ 是含 $x$ 且含于 $U$ 的开区间, 由 $I_x$ 的极大性 $J_{j\left(x\right)}\subset{I}_x$; 反之, $I_x$ 是含 $x$ 且含于 $U$ 的开区间, 而 $J_{j\left(x\right)}$ 是含 $x$ 的极大连通开块, 故 $I_x\subset{J}_{j\left(x\right)}$. 因此 $J_{j\left(x\right)}=I_x$, 两分解一致. $\blacksquare$
 
-## 4.10 ($\mathbb{R}$ 与 $\mathbb{R}^2$ 等势但不同胚)
-
+## 4.9 ($\mathbb{R}$ 与 $\mathbb{R}^2$ 等势但不同胚)
 证明 $\mathbb{R}$ 与 $\mathbb{R}^2$ 基数相同, 但不同胚. 提示: 可考察 $\mathbb{R}^2-\left\{0\right\}$ 的像.
 
-### 解答 4.10
+题集 §2.1 Q1.
+
+### 解答 4.9
 
 先证基数相同. 由**定理 2.13 (实数与自然数幂集等势)**, $\mathbb{R}$ 与 $\mathcal{P}\left(\mathbb{N}\right)$ 等势. 由**定理 2.13 (实数与自然数幂集等势)**, 把一对实数对应到一对子集 $\left(A,B\right)\subset\mathcal{P}\left(\mathbb{N}\right)^2$, 再作
 
@@ -348,11 +333,12 @@ $$
 
 同胚保持连通分支的个数 (连通集映为连通集, 极大性保持). 但上述同胚把有两个分支的 $\mathbb{R}-\left\{0\right\}$ 映到只有一个分支的 $\mathbb{R}^2-\left\{h\left(0\right)\right\}$, 矛盾. 故 $\mathbb{R}$ 与 $\mathbb{R}^2$ 不同胚. $\blacksquare$
 
-## 4.11 (不存在以素数集与有理数集互换的连续函数)
-
+## 4.10 (不存在以素数集与有理数集互换的连续函数)
 证明不存在连续函数 $f:\mathbb{R}\to\mathbb{R}$ 满足 $f\left(P\right)\subset\mathbb{Q}$ 且 $f\left(\mathbb{Q}\right)\subset{P}$, 其中 $P$ 为素数全体. 提示: 可考察 $f\left(\mathbb{R}\right)$.
 
-### 解答 4.11
+题集 §2.1 Q2.
+
+### 解答 4.10
 
 $\mathbb{R}$ 是**定义 4.23 (凸集)** 意义下的凸集, 故路径连通, 由**定理 4.3 (路径连通蕴含连通)** $\mathbb{R}$ 连通. 由**定理 4.2 (连续像连通)**, $f\left(\mathbb{R}\right)$ 是 $\mathbb{R}$ 中的连通子集.
 
@@ -366,11 +352,12 @@ $$
 
 于是连通集 $f\left(\mathbb{R}\right)$ 含于 $P$. 由素数集在实直线上闭且离散, $P$ 作为子空间是离散的, 而离散空间的任一子集既开又闭, 由**定义 4.18 (连通空间)** 离散空间的连通子集只能是单点集. 故 $f\left(\mathbb{R}\right)=\left\{p_0\right\}$, 即 $f$ 必为常值映射. 因此满足条件的连续函数只能是常值映射, 不存在非常值的这类连续函数. $\blacksquare$
 
-## 4.12 (连通且局部路径连通蕴含路径连通)
-
+## 4.11 (连通且局部路径连通蕴含路径连通)
 证明连通且局部路径连通的空间必路径连通. 提示: 可考察某点的 "路径连通" 分支.
 
-### 解答 4.12
+题集 §2.1 Q3.
+
+### 解答 4.11
 
 设 $X$ 连通且局部路径连通, 固定 $x\in{X}$, 令
 
@@ -384,21 +371,23 @@ $$
 
 故 $C$ 既开又闭 (**定义 4.19 (既开又闭集)**). $X$ 连通 (**定义 4.18 (连通空间)**), 且 $C\neq\emptyset$ ($x\in{C}$), 故由**定义 4.19 (既开又闭集)** 得 $C=X$. 由**定义 4.22 (路径连通)**, $X$ 路径连通. $\blacksquare$
 
-## 4.13 (多于一点的连通度量空间不可数)
-
+## 4.12 (多于一点的连通度量空间不可数)
 证明多于一点的连通度量空间不可数.
 
-### 解答 4.13
+题集 §2.3 Q1.
+
+### 解答 4.12
 
 反设 $\left(X,d\right)$ 是**定义 6.35 (度量空间)** 意义下的连通度量空间, $\left|X\right|\ge2$, 且 $X$ 可数. 由**定理 4.5 (可数度量空间完全不连通)**, $X$ 是**定义 4.20 (完全不连通)** 意义下的完全不连通空间, 即其唯一连通子集是单点集.
 
 但 $X$ 本身作为子集由题设连通 (**定义 4.18 (连通空间)**), 且 $\left|X\right|\ge2$, 与完全不连通矛盾. 故 $X$ 不可数. $\blacksquare$
 
-## 4.14 ($GL\left(n,\mathbb{R}\right)$ 与 $GL\left(n,\mathbb{C}\right)$ 的连通分支)
-
+## 4.13 ($GL\left(n,\mathbb{R}\right)$ 与 $GL\left(n,\mathbb{C}\right)$ 的连通分支)
 证明一般线性群 $GL\left(n,\mathbb{R}\right)$ (即 $n\times{n}$ 实可逆矩阵之群) 由两个连通分支组成: 行列式为正者与行列式为负者; 特别地它不连通. 证明与之对照, $GL\left(n,\mathbb{C}\right)$ 连通.
 
-### 解答 4.14
+题集 §2.3 Q2.
+
+### 解答 4.13
 
 行列式映射 $\det:GL\left(n,\mathbb{R}\right)\to\mathbb{R}-\left\{0\right\}$ 是矩阵元素的多项式, 故由**定义 3.22 (连续映射)** 它连续. 由**定理 4.2 (连续像连通)**, $GL\left(n,\mathbb{R}\right)$ 中连通子集的行列式必落入 $\mathbb{R}-\left\{0\right\}=\left(-\infty,0\right)\cup\left(0,\infty\right)$ 的同一连通分支. 故
 

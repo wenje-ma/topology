@@ -1,4 +1,4 @@
-# week1 (拓扑空间)
+# week1 (((拓扑空间)))
 
 > **定义 3.9 (可分)**
 > 
@@ -87,7 +87,6 @@
 > 开球 $B\left(x,r\right)=\left\{y\in{X}:d\left(x,y\right)<{}r\right\}$. 全体开球构成度量拓扑的一个基. (教材 $\S6$)
 
 ## 1.1 (谢尔宾斯基空间: 闭包, 收敛与连续自映射)
-
 考虑谢尔宾斯基空间, 其中 $X=\left\{0,1\right\}$, $\mathcal{O}=\left\{\emptyset,\left\{0\right\},\left\{0,1\right\}\right\}$.
 
 (1) 计算 $\left\{1\right\}$ 的闭包;
@@ -103,6 +102,8 @@
 (6) 构造一个既收敛到 $0$ 又收敛到 $1$ 的序列;
 
 (7) 证明从 $\left(X,\mathcal{O}\right)$ 到自身的连续映射恰有三个.
+
+题集 §1.1 Q1.
 
 ### 解答 1.1
 
@@ -131,8 +132,9 @@
 > 看似未讨论 $f^{-1}\left(\emptyset\right)$ 与 $f^{-1}\left(\left\{0,1\right\}\right)$, 只讨论了 $f^{-1}\left(\left\{0\right\}\right)$; 实际上由原像保空集与全集, 恒有 $f^{-1}\left(\emptyset\right)=\emptyset$, $f^{-1}\left(\left\{0,1\right\}\right)=\left\{0,1\right\}$, 此为平凡情形故省略.
 
 ## 1.2 (由映射诱导的初始拓扑)
-
 设 $f:X\to{Y}$ 是函数, 且 $Y$ 赋予一个拓扑 $\mathcal{O}$. 证明: 若 $\mathcal{O}_f=\left\{f^{-1}\left(O\right)\subset{X}:O\in\mathcal{O}\right\}$, 则 $\mathcal{O}_f$ 是 $X$ 上的拓扑; 且它是使 $f$ 连续的最粗拓扑. 上述拓扑称为由 $f$ 诱导的初始拓扑.
+
+题集 §1.1 Q2.
 
 ### 解答 1.2
 
@@ -151,8 +153,9 @@
 > 证明拓扑最粗的思路是: 证明该拓扑最小.
 
 ## 1.3 (拓扑之交仍是拓扑, 而并不必是拓扑)
-
 证明: 给定一族拓扑 $\left\{\left(X,\mathcal{O}_\alpha\right)\right\}_{\alpha\in{A}}$, 它们的交集 (即 $X$ 的子集 $U$ 使得 $U$ 在每个 $\mathcal{O}_\alpha$ 中都是开的) 仍是拓扑. 论证将交集换成并集则不成立.
+
+题集 §1.1 Q3.
 
 ### 解答 1.3
 
@@ -171,7 +174,6 @@
 > 在拓扑的 3 条公理中, 对有限交封闭这一性质最难保持.
 
 ## 1.4 ($\mathcal{O}_1$ 比 $\mathcal{O}_2$ 细的等价刻画)
-
 证明下列是 "$\mathcal{O}_1$ 比 $\mathcal{O}_2$ 细" 的等价定义:
 
 (1) $\mathcal{O}_2$ 的每个闭集在 $\mathcal{O}_1$ 中都是闭的;
@@ -179,6 +181,8 @@
 (2) 恒等映射 $\left(E,\mathcal{O}_1\right)\to\left(E,\mathcal{O}_2\right)$ 连续;
 
 (3) 对任意 $x\in{X}$, $\mathcal{O}_2$ 中 $x$ 的每个邻域都是 $\mathcal{O}_1$ 中 $x$ 的邻域.
+
+题集 §1.1 Q4.
 
 ### 解答 1.4
 
@@ -193,7 +197,6 @@ $\mathcal{O}_2\subset\mathcal{O}_1\Rightarrow$ (1): 设 $F$ 在 $\mathcal{O}_2$ 
 (3) $\Rightarrow\mathcal{O}_2\subset\mathcal{O}_1$: 由**定义 3.25 (邻域与极限)**, 设 $V$ 是 $x$ 在 $\mathcal{O}_2$ 中的邻域, 即 $V\in\mathcal{O}_2$; 由假设 $V$ 也是 $x$ 在 $\mathcal{O}_1$ 中的邻域, 即 $V\in\mathcal{O}_1$. 故 $\mathcal{O}_2\subset\mathcal{O}_1$. $\blacksquare$
 
 ## 1.5 (加细拓扑保持豪斯多夫性, 闭包, 内部与可分性)
-
 设 $\left(X,\mathcal{O}_1\right)$ 比 $\left(X,\mathcal{O}_2\right)$ 细. 证明:
 
 (1) 若 $\mathcal{O}_2$ 是豪斯多夫的, 则 $\mathcal{O}_1$ 也是豪斯多夫的;
@@ -201,6 +204,8 @@ $\mathcal{O}_2\subset\mathcal{O}_1\Rightarrow$ (1): 设 $F$ 在 $\mathcal{O}_2$ 
 (2) 对一切 $A\subset{X}$, 其在 $\mathcal{O}_1$ 中的闭包含于其在 $\mathcal{O}_2$ 中的闭包, 其在 $\mathcal{O}_2$ 中的内部含于其在 $\mathcal{O}_1$ 中的内部.
 
 (3) 若 $\mathcal{O}_1$ 是可分的 (即含可数稠密子集), 则 $\mathcal{O}_2$ 也是可分的;
+
+题集 §1.1 Q5.
 
 ### 解答 1.5
 
@@ -213,8 +218,9 @@ $\mathcal{O}_2\subset\mathcal{O}_1\Rightarrow$ (1): 设 $F$ 在 $\mathcal{O}_2$ 
 (3) 由**定义 3.9 (可分)**, $\mathcal{O}_1$ 有可数稠密子集 $D$, 即由**定义 3.32 (稠密)** $\overline{D}^{1}=X$. 由第 (2) 小题, $\overline{D}^{1}\subset\overline{D}^{2}$, 故 $X\subset\overline{D}^{2}$, 即 $\overline{D}^{2}=X$. 由**定义 3.32 (稠密)**, $D$ 在 $\mathcal{O}_2$ 中稠密; 再由**定义 3.9 (可分)**, $\mathcal{O}_2$ 可分. $\blacksquare$
 
 ## 1.6 (对角线闭当且仅当空间豪斯多夫)
-
 证明: $X$ 是豪斯多夫空间, 当且仅当对角线 $\Delta=\left\{\left(x,x\right):x\in{X}\right\}\subset{X}\times{X}$ 在 $X\times{X}$ 的乘积拓扑下是闭的.
+
+题集 §1.1 Q6.
 
 ### 解答 1.6
 
@@ -229,8 +235,9 @@ $$
 $\left(\Leftarrow\right)$ 已知 $\Delta$ 闭. 取 $x\neq{y}$, 由**定义 3.12 (对角线)** 则 $\left(x,y\right)\notin\Delta$. 由**定义 3.11 (乘积拓扑)**, 存在基本开集 $U\times{V}$ 使 $\left(x,y\right)\in{U}\times{V}\subset\left(X\times{X}\right)\setminus\Delta$, 其中 $U,V$ 为开集. 则 $x\in{U}$, $y\in{V}$, 且 $U\cap{V}=\emptyset$ (否则 $U\times{V}\cap\Delta\neq\emptyset$, 与含于 $\left(X\times{X}\right)\setminus\Delta$ 矛盾). 由**定义 3.10 (豪斯多夫空间)**, $X$ 是豪斯多夫的. $\blacksquare$
 
 ## 1.7 (子空间中闭集的刻画)
-
 设 $\left(X,\mathcal{O}_X\right)$ 为拓扑空间, $A\subset{X}$, $\iota:A\to{X}$ 为包含映射; $A$ 的子空间拓扑规定 $U\subset{A}$ 开当且仅当存在 $X$ 中开集 $O$ 使 $U=O\cap{A}$. 证明: $F\subset{A}$ 在 $A$ 中闭, 当且仅当存在 $X$ 中闭集 $F'$ 使 $F=F'\cap{A}$.
+
+题集 §1.2 Q1.
 
 ### 解答 1.7
 
@@ -239,8 +246,9 @@ $\left(\Leftarrow\right)$ 已知 $\Delta$ 闭. 取 $x\neq{y}$, 由**定义 3.12 
 ($\Rightarrow$) 设 $F$ 在 $A$ 中闭. 由**定义 3.21 (闭集)**, $A\setminus{F}$ 是 $A$ 中开集. 由**定义 3.19 (子空间拓扑)**, 存在 $X$ 中开集 $O$ 使 $A\setminus{F}=O\cap{A}$. 令 $F'=X\setminus{O}$, 则由**定义 3.21 (闭集)** $F'$ 是 $X$ 中闭集; 由集合运算恒等式, $F=A\setminus\left(O\cap{A}\right)=A\cap\left(X\setminus{O}\right)=F'\cap{A}$. 故存在 $X$ 中闭集 $F'$ 使 $F=F'\cap{A}$. $\blacksquare$
 
 ## 1.8 (拓扑基限制到子空间仍是基)
-
 证明: 若 $\mathcal{B}$ 是 $X$ 的拓扑基, 则 $\left\{O\cap{A}:O\in\mathcal{B}\right\}$ 是 $A$ 的拓扑基.
+
+题集 §1.2 Q2.
 
 ### 解答 1.8
 
@@ -261,8 +269,9 @@ $$
 由**定义 3.15 (拓扑基)**, $\mathcal{B}_A$ 满足基的两条刻画, 故 $\mathcal{B}_A$ 是 $A$ 的拓扑基. $\blacksquare$
 
 ## 1.9 (子空间的开集与闭集何时在原空间中开, 闭)
-
 证明: $A$ 在 $X$ 中开 (闭), 当且仅当 $A$ 的每个开集 $U$ (闭集 $F$) 在 $X$ 中开 (闭).
+
+题集 §1.2 Q3.
 
 ### 解答 1.9
 
@@ -279,8 +288,9 @@ $$
 ($\Leftarrow$) 设 $A$ 的每个闭集都是 $X$ 中闭集. 由**定义 3.21 (闭集)**, 全空间 $A$ 自身是 $A$ 中闭集, 故由假设 $A$ 是 $X$ 中闭集. $\blacksquare$
 
 ## 1.10 (包含映射连续且诱导的初始拓扑恰为子空间拓扑)
-
 证明: 包含映射 $\iota:A\to{X}$ 连续, 且子空间拓扑与 $\iota$ 诱导的初始拓扑相同.
+
+题集 §1.2 Q4.
 
 ### 解答 1.10
 
@@ -289,8 +299,9 @@ $$
 由**定义 3.14 (初始拓扑)**, $\iota$ 在 $A$ 上诱导的初始拓扑为 $\left\{\iota^{-1}\left(O\right):O\;\text{是}\;X\;\text{中开集}\right\}=\left\{O\cap{A}:O\;\text{是}\;X\;\text{中开集}\right\}$, 且该拓扑是使 $\iota$ 连续的最粗拓扑; 而**定义 3.19 (子空间拓扑)** 亦给出使 $\iota$ 连续的最粗拓扑, 故两者相同. $\blacksquare$
 
 ## 1.11 (子空间闭包的传递公式)
-
 设 $A\subset{B}\subset{X}$, $B$ 装备 $X$ 诱导的子空间拓扑. 证明: $A$ 在 $B$ 中的闭包等于 $A$ 在 $X$ 中的闭包与 $B$ 的交.
+
+题集 §1.2 Q5.
 
 ### 解答 1.11
 
@@ -301,8 +312,9 @@ $$
 再证反包含. 任取 $B$ 中包含 $A$ 的闭集 $F'\cap{B}$ (其中 $F'$ 是 $X$ 中闭集且 $A\subset{F}'$). 由**定义 3.26 (闭包)**, $\overline{A}^{X}\subset{F}'$, 故 $\overline{A}^{X}\cap{B}\subset{F}'\cap{B}$. 即 $\overline{A}^{X}\cap{B}$ 含于 $B$ 中每个包含 $A$ 的闭集, 特别地含于最小者 $\overline{A}^{B}$. 故 $\overline{A}^{B}\supset\overline{A}^{X}\cap{B}$. 综上 $\overline{A}^{B}=\overline{A}^{X}\cap{B}$. $\blacksquare$
 
 ## 1.12 (闭集在自身中稠密)
-
 证明: 若 $A$ 等于 $A$ 在 $X$ 中的闭包, 则 $A$ 在 $A$ (装备 $A$ 上的诱导拓扑) 中稠密.
+
+题集 §1.2 Q6.
 
 ### 解答 1.12
 
@@ -315,8 +327,9 @@ $$
 由**定义 3.32 (稠密)**, $A$ 在 $A$ 中稠密当且仅当其在 $A$ 中的闭包等于 $A$ 自身. 上式恰给出此条件, 故 $A$ 在 $A$ 中稠密. $\blacksquare$
 
 ## 1.13 (度量空间子空间的拓扑由限制度量给出)
-
 证明: 若 $X$ 是带距离 $d$ 的度量空间, 则 $A$ 上的子空间拓扑也是度量拓扑, 其度量为 $d$ 在 $A$ 上的限制.
+
+题集 §1.2 Q7.
 
 ### 解答 1.13
 
