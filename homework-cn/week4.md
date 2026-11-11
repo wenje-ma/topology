@@ -86,7 +86,7 @@
 
 > **定义 4.23 (凸集)**
 > 
-> $K\subset\mathbb{R}^n$ 凸即 $x,y\in{K}$ 蕴含线段 $\left(1-t\right)x+ty$ ($t\in\left[0,1\right]$) 全在 $K$ 中; 凸集必路径连通, 路径连通蕴含连通. (教材 §4, p24)
+> $K\subset\mathbb{R}^n$ 凸即 $\boldsymbol{x},\boldsymbol{y}\in{K}$ 蕴含线段 $\left(1-t\right)\boldsymbol{x}+t\boldsymbol{y}$ ($t\in\left[0,1\right]$) 全在 $K$ 中; 凸集必路径连通, 路径连通蕴含连通. (教材 §4, p24)
 
 > **定理 5.1 (紧空间连续像紧)**
 > 
@@ -157,6 +157,7 @@
 > 关于一族映射 $f_i:X_i\to{Y}$ 使每个 $f_i$ 连续的最细拓扑; $U\subset{Y}$ 开当且仅当每个 $f_i^{-1}\left(U\right)$ 在 $X_i$ 中开. (题集 §1.4 C6; 题集 §5 Q1-Q2)
 
 ## 4.1 (环面上有理斜率与无理斜率直线的像)
+
 设 $\pi:\mathbb{R}^2\to{T}^2$ 是典范投影, $\alpha\in\mathbb{R}\cup\left\{\infty\right\}$, $D$ 是 $\mathbb{R}^2$ 中斜率为 $\alpha$ 的直线. 证明: 若 $\alpha\in\mathbb{Q}\cup\left\{\infty\right\}$, 则 $\pi\left(D\right)$ 同胚于一个圆; 若 $\alpha\notin\mathbb{Q}\cup\left\{\infty\right\}$, 则 $\pi\left(D\right)$ 在 $T^2$ 中稠密, 且 $\pi|_D$ 是 $D$ 到 $\pi\left(D\right)$ 的连续双射.
 
 题集 §5 Q7.
@@ -172,7 +173,8 @@
 $\pi|_D:D\to\pi\left(D\right)$ 是商映射 $\pi$ 在子空间 $D$ 上的限制, 由**定义 3.19 (子空间拓扑)** 连续, 则其连续且是满射. 它是单射: 若 $\pi\left(t,\alpha{t}\right)=\pi\left(t',\alpha{t}'\right)$, 则 $t-t'\in\mathbb{Z}$ 且 $\alpha\left(t-t'\right)\in\mathbb{Z}$, 由 $\alpha$ 无理必有 $t-t'=0$. $\blacksquare$
 
 ## 4.2 (环面按稠密子群粘合: 豪斯多夫当且仅当斜率为有理数)
-设 $\pi:\mathbb{R}^2\to{T}^2$ 是典范投影, $\alpha\in\mathbb{R}\cup\left\{\infty\right\}$. 在 $T^2$ 上定义关系: $x'\sim{y}'$ 当且仅当存在 $x,y\in\mathbb{R}^2$ 与斜率为 $\alpha$ 的直线使 $\pi\left(x\right)=x'$, $\pi\left(y\right)=y'$. 证明 $\sim$ 是等价关系; 证明商空间 $T^2/{\sim}$ 豪斯多夫当且仅当 $\alpha\in\mathbb{Q}$, 此时商空间同胚于一个圆; 若 $\alpha\notin\mathbb{Q}$, 证明商空间 $T^2/{\sim}$ 具有平凡拓扑.
+
+设 $\pi:\mathbb{R}^2\to{T}^2$ 是典范投影, $\alpha\in\mathbb{R}\cup\left\{\infty\right\}$. 在 $T^2$ 上定义关系: $x'\sim{y}'$ 当且仅当存在 $\boldsymbol{x},\boldsymbol{y}\in\mathbb{R}^2$ 与斜率为 $\alpha$ 的直线使 $\pi\left(\boldsymbol{x}\right)=x'$, $\pi\left(\boldsymbol{y}\right)=y'$. 证明 $\sim$ 是等价关系; 证明商空间 $T^2/{\sim}$ 豪斯多夫当且仅当 $\alpha\in\mathbb{Q}$, 此时商空间同胚于一个圆; 若 $\alpha\notin\mathbb{Q}$, 证明商空间 $T^2/{\sim}$ 具有平凡拓扑.
 
 题集 §5 Q8.
 
@@ -194,6 +196,7 @@ $\varphi$ 连续, 其核恰为 $H$, 即 $\varphi\left(u,v\right)=0\Leftrightarro
 无理斜率: 由习题 4.1, $H$ 在 $T^2$ 中稠密. 商拓扑下, 由**定义 11.1 (商拓扑)**, 开集 $U\subset{T}^2/H$ 对应于 $T^2$ 中的 $H$-饱和开集. 若 $U$ 非空, 取饱和开集 $V\subset{T}^2$, $V\neq\emptyset$. 因 $H$ 稠密, $V+H=T^2$; 而 $V$ 已饱和, $V+H=V$, 故 $V=T^2$, 即 $U=T^2/H$. 故仅有的开集是 $\emptyset$ 与全空间, 即平凡拓扑. $\blacksquare$
 
 ## 4.3 (锥空间的嵌入与函子性)
+
 (锥) 设 $CX$ 是 $X$ 上的锥空间, 为 $CX=X\times\left[0,1\right]/X\times\left\{1\right\}$. 证明: 映射 $j:X\to{C}X$, $x\mapsto\left[\left(x,0\right)\right]$ 是到其像的同胚, 从而 $X$ 可视为 $CX$ 的子集. 证明: 若 $f:X\to{Y}$ 连续, 则 $Cf:CX\to{C}Y$, $\left[\left(x,t\right)\right]\mapsto\left[\left(f\left(x\right),t\right)\right]$ 连续.
 
 题集 §5 Q9.
@@ -211,6 +214,7 @@ $$
 $\pi_Y^{-1}\left(W\right)$ 在 $Y\times\left[0,1\right]$ 中开, $f\times\operatorname{id}$ 连续 (由 $f$ 连续与 $\operatorname{id}$ 连续, 乘积映射连续), 故由**定义 3.22 (连续映射)**, 上式在 $X\times\left[0,1\right]$ 中开. 故 $Cf$ 连续. $\blacksquare$
 
 ## 4.4 (悬垂把 $S^n$ 抬高一维)
+
 (悬垂) 设 $S^n=\left\{x\in\mathbb{R}^{n+1}:x_1^2+\cdots+x_{n+1}^2=1\right\}$. 证明悬垂 $S\left(S^n\right)$ 同胚于 $S^{n+1}$.
 
 题集 §5 Q10.
@@ -230,6 +234,7 @@ $$
 > 已知只是把面缩成一点并不会降维 — 只有完全消除一个维度时才降维. 因此构造锥面时, 把一面缩成一点, 维数不变; 然而, 构造悬垂的时候, 上下均所成一点, 这样中间的部分反而变得变化多端, 已知任意横截面都是一个圆, 因此圆的半径与一个新参数 $t$ 有关, 这便升了维度; 锥面则不然, 只有一侧缩成一点, 其中间部分仍然由底层平面控制, 并未产生新参数.
 
 ## 4.5 (塌缩商限制在余集上是同胚, 锥商同胚于悬垂)
+
 (塌缩) 证明: 若 $A\subset{X}$ 是开 (或闭) 集, 则投影 $X\to{X}/\left\langle{A}\right\rangle$ 限制在 $X\setminus{A}$ 上是同胚. 证明 $CX/\left\langle{X}\right\rangle$ 与 $SX$ 同胚 (这里把 $X$ 等同于 $\pi\left(X\times\left\{0\right\}\right)\subset{C}X$).
 
 题集 §5 Q11.
@@ -249,6 +254,7 @@ $$
 $\blacksquare$
 
 ## 4.6 ($n$ 维环面与环面乘积同胚)
+
 ($n$-维环面) 设 $T^n=\mathbb{R}^n/\mathbb{Z}^n$, 映射
 
 $$
@@ -272,6 +278,7 @@ $$
 (3) 已知 $\phi$ 是 $T^n$ 到 $\left(S^1\right)^n$ 的同胚, 而 $\left(S^1\right)^n$ 由**定理 3.6 (豪斯多夫的遗传性)** 是豪斯多夫的, 故 $T^n$ 豪斯多夫. $\blacksquare$
 
 ## 4.7 (满射 $+$ 最终拓扑, 商拓扑与粘合映射的三者等价)
+
 设 $X$ 是拓扑空间, $A$ 是集合, $\pi:X\to{A}$ 是满射. 证明下列三条等价:
 
 (a) $A$ 上的拓扑是最终拓扑;
@@ -291,23 +298,25 @@ $$
 (c) $\Rightarrow$ (a): 已知 (c), 则其为商映射, 而 $A$ 上的拓扑正是使 $\pi$ 连续的最大拓扑, 即最终拓扑. $\blacksquare$
 
 ## 4.8 ($\mathbb{R}$ 的开子集分解为可数个互不相交的开区间)
+
 证明下列定理: $\mathbb{R}$ 的任一开子集 $U$ 可唯一地写成可数个互不相交的开区间之并, 且这些区间的端点不属于 $U$. 提示: 可考虑含 $x\in{U}$ 的极大开区间 $I_x\subset{U}$.
 
 题集 §1.3 Q1.
 
 ### 解答 4.8
 
-由**定义 6.36 (开球)**, $\mathbb{R}$ 的通常拓扑以开区间为基. 对每个 $x\in{U}$, 令 $I_x$ 为一切含 $x$ 且含于 $U$ 的开区间之并. 因每个这样的开区间都含 $x$, 其并仍是含 $x$ 的开区间 (一族两两相交于同一点的开区间之并为开区间), 含于 $U$, 且在含 $x$ 且含于 $U$ 的开区间中极大.
+由**定义 6.36 (开球)**, $\mathbb{R}$ 的通常拓扑以开区间为基. 对每个 $x\in{U}$, 令 $I_x$ 为一切含 $x$ 且含于 $U$ 的开区间之并. 因每个这样的开区间都含 $x$, 其并仍是含 $x$ 的开区间, 含于 $U$, 且在含 $x$ 且含于 $U$ 的开区间中极大.
 
 断言: 对 $x,y\in{U}$, 或者 $I_x=I_y$, 或者 $I_x\cap{I}_y=\emptyset$. 事实上, 若 $I_x\cap{I}_y\neq\emptyset$, 则 $I_x\cup{I}_y$ 是含 $x,y$ 且含于 $U$ 的开区间, 由 $I_x$ 与 $I_y$ 的极大性, $I_x\cup{I}_y\subset{I}_x$ 且 $I_x\cup{I}_y\subset{I}_y$, 故 $I_x=I_y=I_x\cup{I}_y$.
 
-可数性: 每个 $I_x$ 是非空开区间, 由有理数在实直线上稠密 可取其中一个有理数 $q_x$. 因诸 $I_x$ 互不相交, 不同 $x$ 给出不同 $q_x$, 故 $\left\{I_x:x\in{U}\right\}$ 与 $\mathbb{Q}$ 的某子集一一对应, 因而是可数族. 又因每个 $x\in{U}$ 都含于 $I_x$, 故 $U=\bigcup_{x\in{U}}I_x$.
+可数性: 每个 $I_x$ 是非空开区间, 由有理数在实直线上稠密, 可取其中一个有理数 $q_x$. 因诸 $I_x$ 互不相交, 不同 $x$ 给出不同 $q_x$, 故 $\left\{I_x:x\in{U}\right\}$ 与 $\mathbb{Q}$ 的某子集一一对应, 因而是可数族. 又因每个 $x\in{U}$ 都含于 $I_x$, 故 $U=\bigcup_{x\in{U}}I_x$.
 
 端点: 写 $I_x=\left(a_x,b_x\right)$. 若 $a_x\in{U}$, 则 $a_x\in{I}_y$ 对某 $y\in{U}$. 因 $I_y$ 开, 存在 $\varepsilon>0$ 使 $\left(a_x-\varepsilon,a_x+\varepsilon\right)\subset{I}_y\subset{U}$. 于是 $\left(a_x-\varepsilon,b_x\right)$ 是含 $x$ 且含于 $U$ 的开区间, 它比 $I_x$ 向左更长, 与 $I_x$ 的极大性矛盾. 故 $a_x\notin{U}$. 同理 $b_x\notin{U}$.
 
-唯一性: 若另有分解 $U=\bigcup_{j\in{J}}J_j$, 其中 $J_j$ 为互不相交开区间. 对每个 $x\in{U}$, $x$ 属于唯一的 $J_{j\left(x\right)}$. $J_{j\left(x\right)}$ 是含 $x$ 且含于 $U$ 的开区间, 由 $I_x$ 的极大性 $J_{j\left(x\right)}\subset{I}_x$; 反之, $I_x$ 是含 $x$ 且含于 $U$ 的开区间, 而 $J_{j\left(x\right)}$ 是含 $x$ 的极大连通开块, 故 $I_x\subset{J}_{j\left(x\right)}$. 因此 $J_{j\left(x\right)}=I_x$, 两分解一致. $\blacksquare$
+唯一性: 若另有分解 $U=\bigcup_{j\in{J}}J_j$, 其中 $J_j$ 为互不相交开区间. 对每个 $x\in{U}$, $x$ 属于唯一的 $J_{j\left(x\right)}$. $J_{j\left(x\right)}$ 是含 $x$ 且含于 $U$ 的开区间, 由 $I_x$ 的极大性 $J_{j\left(x\right)}\subset{I}_x$, 同理 $I_x\subset{J}_{j\left(x\right)}$. 因此 $J_{j\left(x\right)}=I_x$, 两分解一致. $\blacksquare$
 
 ## 4.9 ($\mathbb{R}$ 与 $\mathbb{R}^2$ 等势但不同胚)
+
 证明 $\mathbb{R}$ 与 $\mathbb{R}^2$ 基数相同, 但不同胚. 提示: 可考察 $\mathbb{R}^2-\left\{0\right\}$ 的像.
 
 题集 §2.1 Q1.
@@ -324,38 +333,26 @@ $$
 
 再证不同胚. 反设存在同胚 $h:\mathbb{R}\to\mathbb{R}^2$. 由**定义 3.23 (同胚)**, $h$ 限制到 $\mathbb{R}-\left\{0\right\}$ 上, 配以**定义 3.19 (子空间拓扑)**, 仍给出到 $\mathbb{R}^2-\left\{h\left(0\right)\right\}$ 的同胚. 考察两边挖去一点后的连通分支数.
 
-在 $\mathbb{R}$ 一侧,
+在 $\mathbb{R}$ 一侧, $\mathbb{R}-\left\{0\right\}=\left(-\infty,0\right)\cup\left(0,\infty\right)$ 不连通, 由**定义 4.8 (连通分支)** 它恰有两个连通分支; 在 $\mathbb{R}^2$ 一侧, $\mathbb{R}^2-\left\{0\right\}$ 路径连通: 任取两点 $\boldsymbol{u},\boldsymbol{v}$, 选点 $\boldsymbol{w}$ 使 $0,\boldsymbol{u},\boldsymbol{w}$ 与 $0,\boldsymbol{w},\boldsymbol{v}$ 均不共线, 折线 $\boldsymbol{u}\to\boldsymbol{w}\to\boldsymbol{v}$ 避开原点. 由**定理 4.3 (路径连通蕴含连通)**, $\mathbb{R}^2-\left\{0\right\}$ 连通, 由**定义 4.8 (连通分支)** 它只有一个连通分支. 已知同胚保持连通分支的个数, 故 $\mathbb{R}$ 与 $\mathbb{R}^2$ 不同胚. $\blacksquare$
 
-$$
-\mathbb{R}-\left\{0\right\}=\left(-\infty,0\right)\cup\left(0,\infty\right).
-$$
+## 4.10 (不存在以无理数集与有理数集互换的连续函数)
 
-由**定理 4.1 (区间连通)**, 两区间各自连通; 它们是不相交非空开集, 故由**定义 4.18 (连通空间)** $\mathbb{R}-\left\{0\right\}$ 不连通, 由**定义 4.8 (连通分支)** 它恰有两个连通分支.
-
-在 $\mathbb{R}^2$ 一侧, $\mathbb{R}^2-\left\{0\right\}$ 路径连通: 任取两点 $u,v$, 选点 $w$ 使 $0,u,w$ 与 $0,w,v$ 均不共线, 折线 $u\to{w}\to{v}$ 避开原点. 由**定理 4.3 (路径连通蕴含连通)**, $\mathbb{R}^2-\left\{0\right\}$ 连通, 由**定义 4.8 (连通分支)** 它只有一个连通分支.
-
-同胚保持连通分支的个数 (连通集映为连通集, 极大性保持). 但上述同胚把有两个分支的 $\mathbb{R}-\left\{0\right\}$ 映到只有一个分支的 $\mathbb{R}^2-\left\{h\left(0\right)\right\}$, 矛盾. 故 $\mathbb{R}$ 与 $\mathbb{R}^2$ 不同胚. $\blacksquare$
-
-## 4.10 (不存在以素数集与有理数集互换的连续函数)
-证明不存在连续函数 $f:\mathbb{R}\to\mathbb{R}$ 满足 $f\left(P\right)\subset\mathbb{Q}$ 且 $f\left(\mathbb{Q}\right)\subset{P}$, 其中 $P$ 为素数全体. 提示: 可考察 $f\left(\mathbb{R}\right)$.
+证明不存在连续函数 $f:\mathbb{R}\to\mathbb{R}$ 满足 $f\left(\mathbb{R}\setminus\mathbb{Q}\right)\subset\mathbb{Q}$ 且 $f\left(\mathbb{Q}\right)\subset\mathbb{R}\setminus\mathbb{Q}$. 提示: 可考察 $f\left(\mathbb{R}\right)$.
 
 题集 §2.1 Q2.
 
 ### 解答 4.10
 
-$\mathbb{R}$ 是**定义 4.23 (凸集)** 意义下的凸集, 故路径连通, 由**定理 4.3 (路径连通蕴含连通)** $\mathbb{R}$ 连通. 由**定理 4.2 (连续像连通)**, $f\left(\mathbb{R}\right)$ 是 $\mathbb{R}$ 中的连通子集.
-
-$\mathbb{Q}$ 在 $\mathbb{R}$ 中稠密 (有理数在实直线上稠密). 由 $f$ 连续, $f\left(\mathbb{Q}\right)$ 在 $f\left(\mathbb{R}\right)$ 中稠密: 对任意 $y=f\left(x\right)\in{f}\left(\mathbb{R}\right)$, 取有理数列 $q_n\to{x}$, 则由**定义 3.22 (连续映射)** $f\left(q_n\right)\to{f}\left(x\right)=y$.
-
-由题设 $f\left(\mathbb{Q}\right)\subset{P}$. 由素数集在实直线上闭且离散, $P$ 是闭集, 故由**定义 3.26 (闭包)**,
+反设存在连续函数 $f:\mathbb{R}\to\mathbb{R}$ 满足题设条件. 由**定理 4.1 (区间连通)**, $\left[a,b\right]$ 连通; 由**定理 4.2 (连续像连通)**, $f\left(\left[a,b\right]\right)$ 连通. 记 $I=f\left(\left[a,b\right]\right)$, 则 $I\setminus\mathbb{Q}$ 不可数. 对每个 $s\in{I}\setminus\mathbb{Q}$ 取 $x_s\in\left[a,b\right]$ 使 $f\left(x_s\right)=s$. 若 $x_s\in\mathbb{R}\setminus\mathbb{Q}$, 则与题设 $f\left(x_s\right)\in\mathbb{Q}$ 矛盾; 故 $x_s\in\mathbb{Q}\cap\left[a,b\right]$. 又当 $x_s=x_{s'}$ 时 $s=f\left(x_s\right)=f\left(x_{s'}\right)=s'$, 故
 
 $$
-f\left(\mathbb{R}\right)\subset\overline{f\left(\mathbb{Q}\right)}\subset\overline{P}=P.
+f:I\setminus\mathbb{Q}\to\mathbb{Q}\cap\left[a,b\right],\quad{f}\left(x_s\right)=s
 $$
 
-于是连通集 $f\left(\mathbb{R}\right)$ 含于 $P$. 由素数集在实直线上闭且离散, $P$ 作为子空间是离散的, 而离散空间的任一子集既开又闭, 由**定义 4.18 (连通空间)** 离散空间的连通子集只能是单点集. 故 $f\left(\mathbb{R}\right)=\left\{p_0\right\}$, 即 $f$ 必为常值映射. 因此满足条件的连续函数只能是常值映射, 不存在非常值的这类连续函数. $\blacksquare$
+是单射. 然而其左端不可数而右端可数, 不可数集不能单射到可数集, 矛盾. $\blacksquare$
 
 ## 4.11 (连通且局部路径连通蕴含路径连通)
+
 证明连通且局部路径连通的空间必路径连通. 提示: 可考察某点的 "路径连通" 分支.
 
 题集 §2.1 Q3.
@@ -375,31 +372,29 @@ $$
 故 $C$ 既开又闭 (**定义 4.19 (既开又闭集)**). $X$ 连通 (**定义 4.18 (连通空间)**), 且 $C\neq\emptyset$ ($x\in{C}$), 故由**定义 4.19 (既开又闭集)** 得 $C=X$. 由**定义 4.22 (路径连通)**, $X$ 路径连通. $\blacksquare$
 
 ## 4.12 (多于一点的连通度量空间不可数)
+
 证明多于一点的连通度量空间不可数.
 
 题集 §2.3 Q1.
 
 ### 解答 4.12
 
-反设 $\left(X,d\right)$ 是**定义 6.35 (度量空间)** 意义下的连通度量空间, $\left|X\right|\ge2$, 且 $X$ 可数. 由**定理 4.5 (可数度量空间完全不连通)**, $X$ 是**定义 4.20 (完全不连通)** 意义下的完全不连通空间, 即其唯一连通子集是单点集.
+反设 $\left(X,d\right)$ 是**定义 6.35 (度量空间)** 意义下的连通度量空间, $\left|X\right|\ge2$, 且 $X$ 可数. 由**定理 4.5 (可数度量空间完全不连通)**, $X$ 是**定义 4.20 (完全不连通)** 意义下的完全不连通空间, 即其唯一连通子集是单点集, 与 $\left|X\right|\ge2$ 矛盾. 故 $X$ 不可数. $\blacksquare$
 
-但 $X$ 本身作为子集由题设连通 (**定义 4.18 (连通空间)**), 且 $\left|X\right|\ge2$, 与完全不连通矛盾. 故 $X$ 不可数. $\blacksquare$
+## 4.13 ($\operatorname{GL}\left(n,\mathbb{R}\right)$ 与 $\operatorname{GL}\left(n,\mathbb{C}\right)$ 的连通分支)
 
-## 4.13 ($GL\left(n,\mathbb{R}\right)$ 与 $GL\left(n,\mathbb{C}\right)$ 的连通分支)
-证明一般线性群 $GL\left(n,\mathbb{R}\right)$ (即 $n\times{n}$ 实可逆矩阵之群) 由两个连通分支组成: 行列式为正者与行列式为负者; 特别地它不连通. 证明与之对照, $GL\left(n,\mathbb{C}\right)$ 连通.
+证明一般线性群 $\operatorname{GL}\left(n,\mathbb{R}\right)$ (即 $n\times{n}$ 实可逆矩阵之群) 由两个连通分支组成: 行列式为正者与行列式为负者; 特别地它不连通. 证明与之对照, $\operatorname{GL}\left(n,\mathbb{C}\right)$ 连通.
 
 题集 §2.3 Q2.
 
 ### 解答 4.13
 
-行列式映射 $\det:GL\left(n,\mathbb{R}\right)\to\mathbb{R}-\left\{0\right\}$ 是矩阵元素的多项式, 故由**定义 3.22 (连续映射)** 它连续. 由**定理 4.2 (连续像连通)**, $GL\left(n,\mathbb{R}\right)$ 中连通子集的行列式必落入 $\mathbb{R}-\left\{0\right\}=\left(-\infty,0\right)\cup\left(0,\infty\right)$ 的同一连通分支. 故
+行列式映射 $\det:\operatorname{GL}\left(n,\mathbb{R}\right)\to\mathbb{R}-\left\{0\right\}$ 是矩阵元素的多项式, 故由**定义 3.22 (连续映射)** 它连续. 由**定理 4.2 (连续像连通)**, $\operatorname{GL}\left(n,\mathbb{R}\right)$ 中连通子集的行列式必落入 $\mathbb{R}-\left\{0\right\}=\left(-\infty,0\right)\cup\left(0,\infty\right)$ 的同一连通分支. 故
 
 $$
-GL\left(n,\mathbb{R}\right)=GL^{+}\sqcup{G}L^{-}
+\operatorname{GL}\left(n,\mathbb{R}\right)=\operatorname{GL}^{+}\sqcup\operatorname{GL}^{-}
 $$
 
-其中 $GL^{+}=\left\{A:\det{A}>0\right\}$, $GL^{-}=\left\{A:\det{A}<0\right\}$, 二者不相交且各自为开集.
+其中 $\operatorname{GL}^{+}=\left\{\boldsymbol{A}:\det{\boldsymbol{A}}>0\right\}$, $\operatorname{GL}^{-}=\left\{\boldsymbol{A}:\det{\boldsymbol{A}}<0\right\}$, 二者不相交且各自为开集.
 
-现证 $GL^{+}$ 路径连通. 对任意 $A\in{G}L^{+}$, 作格拉姆-施密特分解 $A=QR$, 其中 $Q\in{S}O\left(n\right)$, $R$ 为对角元全正的上三角阵. 全体这样的 $R$ 构成**定义 4.23 (凸集)** 意义下的凸集, 故路径连通; $SO\left(n\right)$ 中任一正交阵可分解为平面旋转之积, 各旋转角连续收缩到 $0$ 即与单位阵相连. 拼接两条路径, $A$ 与单位阵在 $GL^{+}$ 中路径相连. 同理, 若 $A\in{G}L^{-}$, 取 $D=\operatorname{diag}\left(-1,1,\dots,1\right)$, 则 $AD\in{G}L^{+}$, $AD$ 与单位阵路径相连, 从而 $A$ 与 $D$ 路径相连. 故 $GL^{+}$ 与 $GL^{-}$ 各自路径连通, 由**定义 4.8 (连通分支)** 它们正是 $GL\left(n,\mathbb{R}\right)$ 的两个连通分支; 由**定义 4.18 (连通空间)** $GL\left(n,\mathbb{R}\right)$ 不连通.
-
-对复的情形, 任意 $A\in{G}L\left(n,\mathbb{C}\right)$, 格拉姆-施密特分解 $A=QU$, 其中 $U$ 为酉阵. 酉阵可对角化, 特征值均在单位圆上, 各辐角连续收缩到 $0$ 即与单位阵相连, 故 $U$ 与单位阵路径相连, 从而 $A$ 与单位阵路径相连. 故 $GL\left(n,\mathbb{C}\right)$ 路径连通, 由**定理 4.3 (路径连通蕴含连通)** 它连通. $\blacksquare$
+对复的情形, 任意 $\boldsymbol{A}\in\operatorname{GL}\left(n,\mathbb{C}\right)$, 格拉姆-施密特分解 $\boldsymbol{A}=\boldsymbol{Q}\boldsymbol{U}$, 其中 $\boldsymbol{U}$ 为酉阵. 酉阵可对角化, 特征值均在单位圆上, 各辐角连续收缩到 $0$ 即与单位阵相连, 故 $\boldsymbol{U}$ 与单位阵路径相连, 从而 $\boldsymbol{A}$ 与单位阵路径相连. 故 $\operatorname{GL}\left(n,\mathbb{C}\right)$ 路径连通, 由**定理 4.3 (路径连通蕴含连通)** 它连通. $\blacksquare$
