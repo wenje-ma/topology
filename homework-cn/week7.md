@@ -156,9 +156,9 @@
 
 ### 解答 7.1
 
-(1) 因 $A$ 无界, 对每个 $p$, 存在 $\boldsymbol{M}_p\in{A}$ 使 $\left|\boldsymbol{M}_p\right|\ge{p}$ (否则 $A$ 含于半径 $p$ 的球内, 有界). 由**定义 4.23 (凸集)**, $O\in{A}$ 与 $\boldsymbol{M}_p\in{A}$ 的连线线段 $O\boldsymbol{M}_p$ 含于 $A$, 且其长度 $\left|O\boldsymbol{M}_p\right|=\left|\boldsymbol{M}_p\right|\ge{p}$.
+(1) 因 $A$ 无界, 对每个 $p$, 存在 $\boldsymbol{M}_p\in{A}$ 使 $\left|\boldsymbol{M}_p\right|\ge{p}$ (否则 $A$ 含于半径 $p$ 的球内, 有界). 由**定义 4.23 (凸集)**, $O\in{A}$ 与 $\boldsymbol{M}_p\in{A}$ 的连线线段 $O\boldsymbol{M}_p$ 含于 $A$, 且其长度 $\left|O\boldsymbol{M}_p\right|=\left|\boldsymbol{M}_p\right|\ge{p}$. $\blacksquare$
 
-(2) 令 $r_p=\left|\boldsymbol{M}_p\right|$, $\boldsymbol{u}_p=\frac{\boldsymbol{M}_p}{r_p}$, 则 $\boldsymbol{u}_p$ 在单位圆周 $S^1=\left\{\boldsymbol{v}\in\mathbb{R}^2:\left|\boldsymbol{v}\right|=1\right\}$ 上. $S^1$ 闭且有界, 由**定理 5.3 ($\mathbb{R}^n$ 中的紧集)** $S^1$ 紧. 由**定理 6.1 (紧 $=$ 序列紧)**, 序列 $\left(\boldsymbol{u}_p\right)\subset{S}^1$ 有收敛子列 $\boldsymbol{u}_{p_j}\to\boldsymbol{u}\in{S}^1$.
+(2) 令 $r_p=\left|\boldsymbol{M}_p\right|$, $\boldsymbol{u}_p=\frac{\boldsymbol{M}_p}{r_p}$, 则 $\boldsymbol{u}_p$ 在单位圆周 $S^1=\left\{\boldsymbol{v}\in\mathbb{R}^2:\left|\boldsymbol{v}\right|=1\right\}$ 上. $S^1$ 闭且有界, 由**定理 5.3 ($\mathbb{R}^n$ 中的紧集)** $S^1$ 紧. 由**定理 6.1 (紧 $=$ 序列紧)**, 序列 $\left(\boldsymbol{u}_p\right)\subset{S}^1$ 有收敛子列 $\boldsymbol{u}_{p_j}\to\boldsymbol{u}\in{S}^1$. $\blacksquare$
 
 (3) 固定 $\lambda\ge0$. 对充分大的 $j$, $r_{p_j}\ge\lambda$ (因 $r_{p_j}\ge{p}_j\to\infty$). 由**定义 4.23 (凸集)**, $\lambda\boldsymbol{u}_{p_j}=\frac{\lambda}{r_{p_j}}\boldsymbol{M}_{p_j}+\left(1-\frac{\lambda}{r_{p_j}}\right)O$ 是 $\boldsymbol{M}_{p_j}$ 与 $O$ 的凸组合, 故 $\lambda\boldsymbol{u}_{p_j}\in{A}$. 当 $j\to\infty$, $\boldsymbol{u}_{p_j}\to\boldsymbol{u}$, 故 $\lambda\boldsymbol{u}_{p_j}\to\lambda\boldsymbol{u}$. 因 $A$ 闭 (由**定义 3.21 (闭集)**, 闭集含其序列极限), $\lambda\boldsymbol{u}\in{A}$. 由 $\lambda\ge0$ 任意, 半直线 $\left\{\lambda\boldsymbol{u}:\lambda\ge0\right\}\subset{A}$, 即 $A$ 含一条从原点出发的无穷长半直线. $\blacksquare$
 
@@ -184,7 +184,7 @@
 
 由**定义 5.15 (开覆盖与有限子覆盖)** 与**定义 5.16 (紧致空间)**, 分两个方向证明.
 
-($\Rightarrow$) 设 $X$ 紧致, $\mathcal{F}$ 是具有限交性质的闭集族. 若 $\bigcap_{F\in\mathcal{F}}F=\emptyset$, 则 $\left\{X\setminus{F}:F\in\mathcal{F}\right\}$ 是 $X$ 的开覆盖: 各 $F$ 闭, 由**定义 3.21 (闭集)** 其补开. 由**定义 5.16 (紧致空间)**, 它有有限子覆盖 $X\setminus{F}_1,\dots,X\setminus{F}_k$, 即 $X=\bigcup_{i=1}^{k}\left(X\setminus{F}_i\right)$. 取补集得 $\bigcap_{i=1}^{k}F_i=\emptyset$, 与**定义 5.17 (有限交性质)** 矛盾. 故全族之交非空.
+($\Rightarrow$) 设 $X$ 紧致, $\mathcal{F}$ 是具有限交性质的闭集族. 若 $\bigcap_{F\in\mathcal{F}}F=\emptyset$, 则 $\left\{X\setminus{F}:F\in\mathcal{F}\right\}$ 是 $X$ 的开覆盖: 各 $F$ 闭, 由**定义 3.21 (闭集)** 其补开. 由**定义 5.16 (紧致空间)**, 它有有限子覆盖 $X\setminus{F}_1,\dots,X\setminus{F}_k$, 即 $X=\bigcup_{i=1}^{k}\left(X\setminus{F}_i\right)$. 取补集得 $\bigcap_{i=1}^{k}F_i=\emptyset$, 与**定义 5.17 (有限交性质)** 矛盾. 故全族之交非空. $\blacksquare$
 
 ($\Leftarrow$) 设任意具有限交性质的闭集族之交非空. 任取 $X$ 的开覆盖 $\left\{U_i\right\}$. 令 $F_i=X\setminus{U}_i$, 由**定义 3.21 (闭集)** 各 $F_i$ 闭. 若 $\left\{U_i\right\}$ 无有限子覆盖, 则任意有限个 $F_{i_1},\dots,F_{i_k}$ 满足
 
@@ -218,7 +218,7 @@ $$
 
 ### 解答 7.5
 
-($\Rightarrow$) 设 $X$ 紧致, $A,B$ 为不相交闭集. 由**定理 5.4 (闭子集紧)**, $A$ 紧致. 由**习题 7.4**的论证 (连续函数 $d\left(\cdot,B\right)$ 在 $A$ 上取到正最小值) 即得 $d\left(A,B\right)>0$.
+($\Rightarrow$) 设 $X$ 紧致, $A,B$ 为不相交闭集. 由**定理 5.4 (闭子集紧)**, $A$ 紧致. 由**习题 7.4**的论证 (连续函数 $d\left(\cdot,B\right)$ 在 $A$ 上取到正最小值) 即得 $d\left(A,B\right)>0$. $\blacksquare$
 
 ($\Leftarrow$) 反证, 设 $X$ 不紧致. 由**定理 6.1 (紧 $=$ 序列紧)**, $X$ 不是序列紧致的, 故存在序列 $\left\{x_n\right\}$ 无收敛子列. 必要时取子列使 $x_n$ 两两不同. 于是 $S=\left\{x_n:n\ge1\right\}$ 无极限点: 若 $x$ 是 $S$ 的极限点, 由**定义 3.24 (极限点)** 每个开球 $B\left(x,1/k\right)$ 都含 $S\setminus\left\{x\right\}$ 的点, 且事实上含无穷多个 (若某球只含有限个, 取半径小于这些点到 $x$ 的距离, 得与极限点定义矛盾的球), 故可归纳选取两两不同的 $x_{n_k}\in{B}\left(x,1/k\right)$, 得收敛于 $x$ 的子列, 矛盾. 故 $S'=\emptyset$, 由**定理 3.5 (闭包与极限点)** $\overline{S}=S$, 由**定义 3.26 (闭包)** $S$ 闭. 因 $X$ 无孤立点, 每个 $x_n$ 的任意邻域都含异于 $x_n$ 的点; 归纳地选取 $y_n$, 使 $0<{}d\left(y_n,x_n\right)<1/n$, 且 $y_n\notin{S}\cup\left\{y_1,\dots,y_{n-1}\right\}$. 则 $\left\{y_n\right\}$ 也无收敛子列: 若 $y_{n_k}\to{y}$, 则由**定义 6.35 (度量空间)** 的三角不等式,
 
@@ -274,7 +274,7 @@ $$
 
 ### 解答 7.9
 
-($\Rightarrow$) 设 $f$ 连续, $K\subset{X}$ 紧. 由**定义 3.22 (连续映射)** 与**定义 3.19 (子空间拓扑)**, $f|_K$ 连续: 对 $Y$ 中开集 $U$, $\left(f|_K\right)^{-1}\left(U\right)=f^{-1}\left(U\right)\cap{K}$ 是 $K$ 中开集.
+($\Rightarrow$) 设 $f$ 连续, $K\subset{X}$ 紧. 由**定义 3.22 (连续映射)** 与**定义 3.19 (子空间拓扑)**, $f|_K$ 连续: 对 $Y$ 中开集 $U$, $\left(f|_K\right)^{-1}\left(U\right)=f^{-1}\left(U\right)\cap{K}$ 是 $K$ 中开集. $\blacksquare$
 
 ($\Leftarrow$) 反设 $f$ 在某点 $x$ 不连续. 由**说明 6.51 (度量连续与序列)** 的逆否与**定义 3.25 (邻域与极限)**, 存在 $\varepsilon>0$ 与序列 $x_n\to{x}$ 使 $d_Y\left(f\left(x_n\right),f\left(x\right)\right)\ge\varepsilon$. 集合 $K=\left\{x\right\}\cup\left\{x_n\right\}$ 紧致: 任取开覆盖, 含 $x$ 的开集 $U$ 是 $x$ 的邻域 (由**定义 3.25 (邻域与极限)**), 由 $x_n\to{x}$ 它含除有限个外的所有 $x_n$; 其余有限个点再各取一个覆盖元, 得有限子覆盖. 由假设 $f|_K$ 连续, 故 $x_n\to{x}$ 时由**说明 6.51 (度量连续与序列)** 应有 $f\left(x_n\right)\to{f}\left(x\right)$, 矛盾. 因此 $f$ 处处连续. $\blacksquare$
 
@@ -286,7 +286,7 @@ $$
 
 ### 解答 7.10
 
-($\Rightarrow$) 设每点有紧邻域基 (即题目括号中的表述, 见**定义 7.4 (局部紧空间)**). 则对每个 $x$, 其紧邻域基的任一成员都是 $x$ 的一个紧邻域. 故每点有一个紧邻域.
+($\Rightarrow$) 设每点有紧邻域基 (即题目括号中的表述, 见**定义 7.4 (局部紧空间)**). 则对每个 $x$, 其紧邻域基的任一成员都是 $x$ 的一个紧邻域. 故每点有一个紧邻域. $\blacksquare$
 
 ($\Leftarrow$) 设每点有一个紧邻域. 取 $x$ 的紧邻域 $K$; 由**定理 5.5 (豪斯多夫中紧集闭)**, $K$ 闭. 任取 $x$ 的邻域 $U$, 即含 $x$ 的开集 (由**定义 3.25 (邻域与极限)**). 令 $L=K\setminus{U}$, 它是紧集 $K$ 的闭子集, 由**定理 5.4 (闭子集紧)** 紧. 对每个 $y\in{L}$, 由**定义 3.10 (豪斯多夫空间)** 有不相交开集 $O_y\ni{x}$, $W_y\ni{y}$; 因 $L$ 紧, $L\subset\bigcup_{i=1}^{m}W_{y_i}$ 对某个有限子族成立. 令 $O=\bigcap_{i=1}^{m}O_{y_i}$, 由**定义 3.18 (拓扑空间)** (有限交仍开) $O$ 是含 $x$ 的开集, 且 $O\cap\bigcup_{i=1}^{m}W_{y_i}=\emptyset$, 故 $O\cap{L}=\emptyset$. 记 $W=\bigcup_{i=1}^{m}W_{y_i}$, 则 $O\subset{X}\setminus{W}$ 且 $X\setminus{W}$ 闭, 由**定义 3.26 (闭包)** $\overline{O}\subset{X}\setminus{W}$; 于是 $\overline{O}\cap{K}\subset\left(X\setminus{W}\right)\cap{K}\subset{K}\setminus{L}=K\cap{U}\subset{U}$. 又 $\overline{O}\cap{K}$ 是紧集 $K$ 的闭子集 ($\overline{O}$ 闭, 见**定义 3.26 (闭包)**), 由**定理 5.4 (闭子集紧)** 紧; 它含 $x$ 的开邻域 $O\cap\operatorname{int}\left(K\right)$. 故 $x$ 有含于 $U$ 的紧邻域; 因 $U$ 任意, $x$ 有紧邻域基. 由题目括号中的表述 (局部紧即每点有紧邻域基), $X$ 局部紧. $\blacksquare$
 
@@ -300,7 +300,7 @@ $$
 
 设 $E$ 是**定义 6.20 (赋范线性空间)** 中的空间.
 
-($\Leftarrow$) 设 $\dim{E}=n<\infty$. 由有限维实赋范线性空间与欧几里得空间线性同胚, $E$ 线性同构于 $\mathbb{R}^n$ 且该同胚是同胚. 单位球是有界闭集: 有界由范数定义, 闭由 $\left\|\cdot\right\|$ 连续 (三角不等式 (**定义 6.20 (赋范线性空间)**) 给出 $\left|\left\|x\right\|-\left\|y\right\|\right|\le\left\|x-y\right\|$) 得出. 故其在 $\mathbb{R}^n$ 中的像闭且有界, 由**定理 5.3 ($\mathbb{R}^n$ 中的紧集)** 紧; 紧性在同胚下保持 (由**定理 5.1 (紧空间连续像紧)** 或同胚定义), 故单位球紧.
+($\Leftarrow$) 设 $\dim{E}=n<\infty$. 由有限维实赋范线性空间与欧几里得空间线性同胚, $E$ 线性同构于 $\mathbb{R}^n$ 且该同胚是同胚. 单位球是有界闭集: 有界由范数定义, 闭由 $\left\|\cdot\right\|$ 连续 (三角不等式 (**定义 6.20 (赋范线性空间)**) 给出 $\left|\left\|x\right\|-\left\|y\right\|\right|\le\left\|x-y\right\|$) 得出. 故其在 $\mathbb{R}^n$ 中的像闭且有界, 由**定理 5.3 ($\mathbb{R}^n$ 中的紧集)** 紧; 紧性在同胚下保持 (由**定理 5.1 (紧空间连续像紧)** 或同胚定义), 故单位球紧. $\blacksquare$
 
 ($\Rightarrow$) 反之, 若 $E$ 无穷维, 由**定理 6.17 (里茨定理)**, 其闭单位球非紧. 故单位球紧致蕴含维数有限. $\blacksquare$
 
@@ -316,7 +316,7 @@ $$
 
 ### 解答 7.12
 
-(1) ($\Rightarrow$) 设 $f$ 连续, $K\subset{E}$ 紧. $f|_K$ 连续 (由**定义 3.22 (连续映射)** 与**定义 3.19 (子空间拓扑)**, 同**习题 7.9** ($\Rightarrow$)), 由**定理 5.1 (紧空间连续像紧)**, $f\left(K\right)$ 紧.
+(1) ($\Rightarrow$) 设 $f$ 连续, $K\subset{E}$ 紧. $f|_K$ 连续 (由**定义 3.22 (连续映射)** 与**定义 3.19 (子空间拓扑)**, 同**习题 7.9** ($\Rightarrow$)), 由**定理 5.1 (紧空间连续像紧)**, $f\left(K\right)$ 紧. $\blacksquare$
 
 ($\Leftarrow$) 设对每个紧集 $K\subset{E}$, $f\left(K\right)$ 紧. 反设 $f$ 在某点 $x$ 不连续. 由**说明 6.51 (度量连续与序列)** 的逆否与**定义 3.25 (邻域与极限)**, 存在 $\varepsilon>0$ 与序列 $x_n\to{x}$ 使 $d_F\left(f\left(x_n\right),f\left(x\right)\right)\ge\varepsilon$. 由 $f$ 单射及 $d_F\left(f\left(x_n\right),f\left(x\right)\right)\ge\varepsilon>0$ 知 $x_n\neq{x}$. 令 $K=\left\{x\right\}\cup\left\{x_n:n\ge1\right\}$, 它紧 (同**习题 7.9**的论证: 收敛序列加极限). 由假设 $f\left(K\right)$ 紧; $F$ 是度量空间, 由**说明 6.50 (度量空间是豪斯多夫的)** 豪斯多夫, 由**定理 5.5 (豪斯多夫中紧集闭)**, $f\left(K\right)$ 在 $F$ 中闭.
 

@@ -152,11 +152,11 @@ $$
 d\left(y,z\right)\le\max\left\{d\left(x,y\right),d\left(x,z\right)\right\},
 $$
 
-由于 $d\left(x,y\right)<{}d\left(x,z\right)$, 则 $\max\left\{d\left(x,y\right),d\left(x,z\right)\right\}=d\left(x,z\right)$, 即 $d\left(y,z\right)\le{d}\left(x,z\right)$. 合并得 $d\left(y,z\right)=d\left(x,z\right)=\max\left(d\left(x,y\right),d\left(x,z\right)\right)$.
+由于 $d\left(x,y\right)<{}d\left(x,z\right)$, 则 $\max\left\{d\left(x,y\right),d\left(x,z\right)\right\}=d\left(x,z\right)$, 即 $d\left(y,z\right)\le{d}\left(x,z\right)$. 合并得 $d\left(y,z\right)=d\left(x,z\right)=\max\left(d\left(x,y\right),d\left(x,z\right)\right)$. $\blacksquare$
 
-(2) 设 $z\in{B}\left(x,r\right)$, 即由**定义 6.36 (开球)** $d\left(x,z\right)<{}r$. 任取 $w\in{B}\left(x,r\right)$, 即 $d\left(x,w\right)<{}r$. 由**定义 6.45 (超度量)**, $d\left(z,w\right)\le\max\left(d\left(z,x\right),d\left(x,w\right)\right)$; 因两项都 $<{}r$, 故 $d\left(z,w\right)<{}r$, 即 $w\in{B}\left(z,r\right)$. 于是 $B\left(x,r\right)\subset{B}\left(z,r\right)$. 同理 $B\left(z,r\right)\subset{B}\left(x,r\right)$. 因此 $B\left(x,r\right)=B\left(z,r\right)$, 即 $z$ 也是该开球的中心.
+(2) 设 $z\in{B}\left(x,r\right)$, 即由**定义 6.36 (开球)** $d\left(x,z\right)<{}r$. 任取 $w\in{B}\left(x,r\right)$, 即 $d\left(x,w\right)<{}r$. 由**定义 6.45 (超度量)**, $d\left(z,w\right)\le\max\left(d\left(z,x\right),d\left(x,w\right)\right)$; 因两项都 $<{}r$, 故 $d\left(z,w\right)<{}r$, 即 $w\in{B}\left(z,r\right)$. 于是 $B\left(x,r\right)\subset{B}\left(z,r\right)$. 同理 $B\left(z,r\right)\subset{B}\left(x,r\right)$. 因此 $B\left(x,r\right)=B\left(z,r\right)$, 即 $z$ 也是该开球的中心. $\blacksquare$
 
-(3) 由**定义 6.34 (球面)**, $S\left(x,r\right)=\left\{y:d\left(x,y\right)=r\right\}$. 设 $z\in{B}\left(x,r\right)$, 即 $d\left(x,z\right)<{}r$. 任取 $w\in{S}\left(x,r\right)$, 即 $d\left(x,w\right)=r$. 因 $d\left(x,z\right)<{}r=d\left(x,w\right)$, 故 $d\left(x,z\right)\neq{d}\left(x,w\right)$; 由第 (1) 小题, $d\left(z,w\right)=\max\left(d\left(x,z\right),d\left(x,w\right)\right)=r$, 故 $w\in{S}\left(z,r\right)$, 即 $S\left(x,r\right)\subset{S}\left(z,r\right)$, 同理, $S\left(z,r\right)\subset{S}\left(x,r\right)$. 故 $S\left(x,r\right)=S\left(z,r\right)$, 即 $z$ 也是该球面的中心.
+(3) 由**定义 6.34 (球面)**, $S\left(x,r\right)=\left\{y:d\left(x,y\right)=r\right\}$. 设 $z\in{B}\left(x,r\right)$, 即 $d\left(x,z\right)<{}r$. 任取 $w\in{S}\left(x,r\right)$, 即 $d\left(x,w\right)=r$. 因 $d\left(x,z\right)<{}r=d\left(x,w\right)$, 故 $d\left(x,z\right)\neq{d}\left(x,w\right)$; 由第 (1) 小题, $d\left(z,w\right)=\max\left(d\left(x,z\right),d\left(x,w\right)\right)=r$, 故 $w\in{S}\left(z,r\right)$, 即 $S\left(x,r\right)\subset{S}\left(z,r\right)$, 同理, $S\left(z,r\right)\subset{S}\left(x,r\right)$. 故 $S\left(x,r\right)=S\left(z,r\right)$, 即 $z$ 也是该球面的中心. $\blacksquare$
 
 (4) 设 $B\left(x,r\right)$ 与 $B\left(y,s\right)$ 为两个开球. 若不相交则结论已成立. 若相交, 取 $z\in{B}\left(x,r\right)\cap{B}\left(y,s\right)$. 由第 (2) 小题, $B\left(x,r\right)=B\left(z,r\right)$ 且 $B\left(y,s\right)=B\left(z,s\right)$. 不妨设 $r\le{s}$, 则 $B\left(z,r\right)\subset{B}\left(z,s\right)$, 即 $B\left(x,r\right)\subset{B}\left(y,s\right)$. $\blacksquare$
 
@@ -180,13 +180,19 @@ $$
 
 ## 2.5 (开集的任意并开而任意交未必开)
 
-回忆 $\mathbb{R}^n$ 上的通常度量拓扑. 证明 $\mathbb{R}^n$ 中任意一族开集之并仍是开集. 证明开集的交未必是开集.
+回忆 $\mathbb{R}^n$ 上的通常度量拓扑. 证明:
+
+(1) $\mathbb{R}^n$ 中任意一族开集之并仍是开集;
+
+(2) 开集的交未必是开集.
 
 题集 §1.4 C1.
 
 ### 解答 2.5
 
-由**定义 3.18 (拓扑空间)**, 开集的任意并仍开; 但任意交未必开. 取 $\mathbb{R}$ 中一列开区间 $\left(-\frac1n,\frac1n\right)$ ($n\ge1$), 其交为
+(1) 由**定义 3.18 (拓扑空间)**, 开集的任意并仍开. $\blacksquare$
+
+(2) 但任意交未必开. 取 $\mathbb{R}$ 中一列开区间 $\left(-\frac1n,\frac1n\right)$ ($n\ge1$), 其交为
 
 $$
 \bigcap_{n=1}^{\infty}\left(-\frac1n,\frac1n\right)=\left\{0\right\}.
@@ -196,19 +202,25 @@ $$
 
 ## 2.6 (原像与并, 交交换, 而直接像不然)
 
-回忆函数的原像. 证明原像运算与并运算, 交运算可交换. 那直接像呢?
+回忆函数的原像. 证明:
+
+(1) 原像运算与并运算, 交运算可交换;
+
+(2) 那直接像呢?
 
 题集 §1.4 C2.
 
 ### 解答 2.6
 
-对于原像, 由原像与并运算交换与原像与交运算交换易证:
+(1) 对于原像, 由原像与并运算交换与原像与交运算交换易证:
 
 $$
 f^{-1}\left(\bigcup_jA_j\right)=\bigcup_jf^{-1}\left(A_j\right),\quad{f}^{-1}\left(\bigcap_jA_j\right)=\bigcap_jf^{-1}\left(A_j\right).
 $$
 
-直接像 $f\left(A\right)=\left\{f\left(x\right):x\in{A}\right\}$ 则不然: 并运算可交换, $f\left(\bigcup_jA_j\right)=\bigcup_jf\left(A_j\right)$; 但交运算只含一边,
+即原像运算与并运算, 交运算可交换. $\blacksquare$
+
+(2) 直接像 $f\left(A\right)=\left\{f\left(x\right):x\in{A}\right\}$ 则不然: 并运算可交换, $f\left(\bigcup_jA_j\right)=\bigcup_jf\left(A_j\right)$; 但交运算只含一边,
 
 $$
 f\left(\bigcap_jA_j\right)\subset\bigcap_jf\left(A_j\right),
@@ -250,7 +262,7 @@ $$
 
 ### 解答 2.8
 
-($\Rightarrow$) 设 $F$ 闭. 由**定义 3.21 (闭集)**, $\mathbb{R}\setminus{F}$ 开. 设 $x_n\in{F}$ 且 $x_n\to{x}$. 若 $x\notin{F}$, 则 $x\in\mathbb{R}\setminus{F}$, 而 $\mathbb{R}\setminus{F}$ 是 $x$ 的邻域. 由**定义 3.25 (邻域与极限)**, 对所有充分大的 $n$ 有 $x_n\in\mathbb{R}\setminus{F}$, 与 $x_n\in{F}$ 矛盾. 故 $x\in{F}$.
+($\Rightarrow$) 设 $F$ 闭. 由**定义 3.21 (闭集)**, $\mathbb{R}\setminus{F}$ 开. 设 $x_n\in{F}$ 且 $x_n\to{x}$. 若 $x\notin{F}$, 则 $x\in\mathbb{R}\setminus{F}$, 而 $\mathbb{R}\setminus{F}$ 是 $x$ 的邻域. 由**定义 3.25 (邻域与极限)**, 对所有充分大的 $n$ 有 $x_n\in\mathbb{R}\setminus{F}$, 与 $x_n\in{F}$ 矛盾. 故 $x\in{F}$. $\blacksquare$
 
 ($\Leftarrow$) 反证. 设 $F$ 不闭. 由**定义 3.21 (闭集)**, $\mathbb{R}\setminus{F}$ 不开. 故存在 $x\notin{F}$ 使 $x$ 的任何邻域都不含于 $\mathbb{R}\setminus{F}$, 即 $x$ 的任何邻域都与 $F$ 相交, 说明 $x$ 在 $F$ 的边界上. 由**定义 6.36 (开球)**, 球 $B\left(x,1/n\right)=\left(x-\frac1n,x+\frac1n\right)$ 与 $F$ 相交, 取 $x_n\in{F}\cap{B}\left(x,1/n\right)$, 则 $d\left(x_n,x\right)<1/n$. 任给 $x$ 的邻域, 由**定义 6.36 (开球)** 它包含某 $B\left(x,\varepsilon\right)$; 当 $n>1/\varepsilon$ 时 $x_n\in{B}\left(x,\varepsilon\right)$, 故由**定义 3.25 (邻域与极限)** $x_n\to{x}$. 但 $x\notin{F}$, 与假设矛盾. 故 $F$ 闭. $\blacksquare$
 
@@ -268,45 +280,71 @@ $$
 
 ## 2.10 (初始拓扑, 最终拓扑与包含映射的例子)
 
-证明: 若 $f:X\to\left(Y,\mathcal{O}\right)$ 是到拓扑空间 $Y$ 的映射, 则集合族 $\left\{f^{-1}\left(O\right):O\in\mathcal{O}\right\}$ 在 $X$ 上定义一个拓扑. 证明它是使 $f$ 连续的最粗拓扑, 即初始拓扑. 研究 $f$ 为包含映射的情形, 例如 $f:\mathbb{R}\to\mathbb{R}^2$, 其中 $\mathbb{R}^2$ 装备欧氏拓扑. 反过来, 能否把 $X$ 上的拓扑前推, 在 $Y$ 上定义所谓最终拓扑?
+证明:
+
+(1) 若 $f:X\to\left(Y,\mathcal{O}\right)$ 是到拓扑空间 $Y$ 的映射, 则集合族 $\left\{f^{-1}\left(O\right):O\in\mathcal{O}\right\}$ 在 $X$ 上定义一个拓扑;
+
+(2) 它是使 $f$ 连续的最粗拓扑, 即初始拓扑;
+
+(3) 研究 $f$ 为包含映射的情形, 例如 $f:\mathbb{R}\to\mathbb{R}^2$, 其中 $\mathbb{R}^2$ 装备欧氏拓扑;
+
+(4) 反过来, 能否把 $X$ 上的拓扑前推, 在 $Y$ 上定义所谓最终拓扑?
 
 题集 §1.4 C6.
 
 ### 解答 2.10
 
-记 $\mathcal{O}_f=\left\{f^{-1}\left(O\right):O\in\mathcal{O}\right\}$. 由原像与并运算交换, 原像与交运算交换 与原像保空集与全集, $\mathcal{O}_f$ 满足**定义 3.18 (拓扑空间)** 的三条: $\emptyset=f^{-1}\left(\emptyset\right)$ 与 $X=f^{-1}\left(Y\right)$ 在 $\mathcal{O}_f$ 中; 任意并 $\bigcup_jf^{-1}\left(O_j\right)=f^{-1}\left(\bigcup_jO_j\right)$ 仍在 $\mathcal{O}_f$ 中; 有限交 $f^{-1}\left(O_1\right)\cap{f}^{-1}\left(O_2\right)=f^{-1}\left(O_1\cap{O}_2\right)$ 仍在其中. 故 $\mathcal{O}_f$ 是 $X$ 上的拓扑.
+(1) 记 $\mathcal{O}_f=\left\{f^{-1}\left(O\right):O\in\mathcal{O}\right\}$. 由原像与并运算交换, 原像与交运算交换 与原像保空集与全集, $\mathcal{O}_f$ 满足**定义 3.18 (拓扑空间)** 的三条: $\emptyset=f^{-1}\left(\emptyset\right)$ 与 $X=f^{-1}\left(Y\right)$ 在 $\mathcal{O}_f$ 中; 任意并 $\bigcup_jf^{-1}\left(O_j\right)=f^{-1}\left(\bigcup_jO_j\right)$ 仍在 $\mathcal{O}_f$ 中; 有限交 $f^{-1}\left(O_1\right)\cap{f}^{-1}\left(O_2\right)=f^{-1}\left(O_1\cap{O}_2\right)$ 仍在其中. 故 $\mathcal{O}_f$ 是 $X$ 上的拓扑. $\blacksquare$
 
-对任意 $O\in\mathcal{O}$, $f^{-1}\left(O\right)\in\mathcal{O}_f$ 是开集, 由**定义 3.22 (连续映射)** $f$ 连续. 反之, 若 $\tau$ 是 $X$ 上任一使 $f$ 连续的拓扑, 则对每个 $O\in\mathcal{O}$, 由**定义 3.22 (连续映射)** $f^{-1}\left(O\right)\in\tau$, 故 $\mathcal{O}_f\subset\tau$. 由**定义 3.14 (初始拓扑)**, $\mathcal{O}_f$ 正是 $f$ 诱导的初始拓扑.
+(2) 对任意 $O\in\mathcal{O}$, $f^{-1}\left(O\right)\in\mathcal{O}_f$ 是开集, 由**定义 3.22 (连续映射)** $f$ 连续. 反之, 若 $\tau$ 是 $X$ 上任一使 $f$ 连续的拓扑, 则对每个 $O\in\mathcal{O}$, 由**定义 3.22 (连续映射)** $f^{-1}\left(O\right)\in\tau$, 故 $\mathcal{O}_f\subset\tau$. 由**定义 3.14 (初始拓扑)**, $\mathcal{O}_f$ 正是 $f$ 诱导的初始拓扑. $\blacksquare$
 
-包含映射的情形: 取 $f:\mathbb{R}\to\mathbb{R}^2$, $f\left(t\right)=\left(t,0\right)$, $\mathbb{R}^2$ 装备欧氏拓扑. 则 $f^{-1}\left(U\right)=U\cap\left(\mathbb{R}\times\left\{0\right\}\right)$, 它在 $x$ 轴上的投影恰为 $\mathbb{R}$ 的通常开集, 故 $\mathcal{O}_f$ 就是 $\mathbb{R}$ 的通常拓扑.
+(3) 包含映射的情形: 取 $f:\mathbb{R}\to\mathbb{R}^2$, $f\left(t\right)=\left(t,0\right)$, $\mathbb{R}^2$ 装备欧氏拓扑. 则 $f^{-1}\left(U\right)=U\cap\left(\mathbb{R}\times\left\{0\right\}\right)$, 它在 $x$ 轴上的投影恰为 $\mathbb{R}$ 的通常开集, 故 $\mathcal{O}_f$ 就是 $\mathbb{R}$ 的通常拓扑. $\blacksquare$
 
-反过来的构造: 由**定义 11.14 (最终拓扑)**, 对映射 $f:X\to{Y}$, 在 $Y$ 上规定 $U\subset{Y}$ 开当且仅当 $f^{-1}\left(U\right)$ 在 $X$ 中开. 这是使 $f$ 连续的最细拓扑, 即最终拓扑. $\blacksquare$
+(4) 反过来的构造: 由**定义 11.14 (最终拓扑)**, 对映射 $f:X\to{Y}$, 在 $Y$ 上规定 $U\subset{Y}$ 开当且仅当 $f^{-1}\left(U\right)$ 在 $X$ 中开. 这是使 $f$ 连续的最细拓扑, 即最终拓扑. $\blacksquare$
 
 ## 2.11 (余有限拓扑与余可数拓扑中的收敛和闭包)
 
-设 $X$ 为集合. 证明下列是拓扑: 所有非平凡开集都是 $X$ 的某有限子集的补集; 这称为 $X$ 上的余有限拓扑. 证明序列 $\left\{1,2,3,4,\dots\right\}$ 在 $\mathbb{R}$ 的余有限拓扑中收敛到 $\mathbb{R}$ 的每一点. 能否在 $X$ 上定义余可数拓扑? 现在取 $X=\mathbb{R}$ 装备余可数拓扑, 考虑 $\left(-1,1\right)\subset\mathbb{R}$. 证明 $\overline{\left(-1,1\right)}=\mathbb{R}$. 证明 $\left(-1,1\right)$ 中没有序列收敛到 $2\in\mathbb{R}$.
+设 $X$ 为集合.
+
+(1) 证明 "所有非平凡开集都是 $X$ 的某有限子集的补集" 定义了拓扑, 这称为 $X$ 上的余有限拓扑;
+
+(2) 证明序列 $\left\{1,2,3,4,\dots\right\}$ 在 $\mathbb{R}$ 的余有限拓扑中收敛到 $\mathbb{R}$ 的每一点;
+
+(3) 能否在 $X$ 上定义余可数拓扑?
+
+(4) 现在取 $X=\mathbb{R}$ 装备余可数拓扑, 考虑 $\left(-1,1\right)\subset\mathbb{R}$, 证明 $\overline{\left(-1,1\right)}=\mathbb{R}$;
+
+(5) 证明 $\left(-1,1\right)$ 中没有序列收敛到 $2\in\mathbb{R}$.
 
 题集 §1.4 C7.
 
 ### 解答 2.11
 
-$\emptyset$ 与 $X$ 开; 任意并 $\bigcup_i\left(X\setminus{F}_i\right)=X\setminus\bigcap_iF_i$, 而任意一族有限集之交仍有限, 故仍余有限; 有限交 $\bigcap_{k=1}^{m}\left(X\setminus{F}_k\right)=X\setminus\bigcup_{k=1}^{m}F_k$, 有限个有限集之并仍有限. 由**定义 3.18 (拓扑空间)** 这是拓扑.
+(1) $\emptyset$ 与 $X$ 开; 任意并 $\bigcup_i\left(X\setminus{F}_i\right)=X\setminus\bigcap_iF_i$, 而任意一族有限集之交仍有限, 故仍余有限; 有限交 $\bigcap_{k=1}^{m}\left(X\setminus{F}_k\right)=X\setminus\bigcup_{k=1}^{m}F_k$, 有限个有限集之并仍有限. 由**定义 3.18 (拓扑空间)** 这是拓扑. $\blacksquare$
 
-序列 $\left\{n\right\}_{n\ge1}$ 在余有限拓扑 $\mathbb{R}$ 中收敛到任一点 $x$: $x$ 的任一邻域是 $X\setminus{F}$ ($F$ 有限). 因 $F$ 只含有限个自然数, 除有限个 $n$ 外 $n\notin{F}$, 故 $n\in{X}\setminus{F}$ 最终成立. 由**定义 3.25 (邻域与极限)**, $n\to{x}$.
+(2) 序列 $\left\{n\right\}_{n\ge1}$ 在余有限拓扑 $\mathbb{R}$ 中收敛到任一点 $x$: $x$ 的任一邻域是 $X\setminus{F}$ ($F$ 有限). 因 $F$ 只含有限个自然数, 除有限个 $n$ 外 $n\notin{F}$, 故 $n\in{X}\setminus{F}$ 最终成立. 由**定义 3.25 (邻域与极限)**, $n\to{x}$. $\blacksquare$
 
-余可数拓扑: 由**定义 3.27 (余可数拓扑)**, 开集为 $\emptyset$ 与所有余可数集 $X\setminus{C}$ ($C$ 可数). 现在取 $X=\mathbb{R}$ 装备余可数拓扑, 对于 $\left(-1,1\right)$, $\overline{\left(-1,1\right)}$ 是包含 $\left(-1,1\right)$ 的最小可数集, 由于 $\left(-1,1\right)$ 自己不可数, 则 $\overline{\left(-1,1\right)}$ 只能是 $\mathbb{R}$.
+(3) 余可数拓扑: 由**定义 3.27 (余可数拓扑)**, 开集为 $\emptyset$ 与所有余可数集 $X\setminus{C}$ ($C$ 可数). $\blacksquare$
 
-最后, 设 $x_n\in{A}$ 且 $x_n\to2$. 由于 $2$ 本身可数, 即 $2\in{C}$, 则其任意的邻域 $X\setminus{C}$ 都不含 $2$, 因此没有任何序列收敛到 $2$. $\blacksquare$
+(4) 现在取 $X=\mathbb{R}$ 装备余可数拓扑, 对于 $\left(-1,1\right)$, $\overline{\left(-1,1\right)}$ 是包含 $\left(-1,1\right)$ 的最小可数集, 由于 $\left(-1,1\right)$ 自己不可数, 则 $\overline{\left(-1,1\right)}$ 只能是 $\mathbb{R}$. $\blacksquare$
+
+(5) 最后, 设 $x_n\in{A}$ 且 $x_n\to2$. 由于 $2$ 本身可数, 即 $2\in{C}$, 则其任意的邻域 $X\setminus{C}$ 都不含 $2$, 因此没有任何序列收敛到 $2$. $\blacksquare$
 
 ## 2.12 (扎里斯基拓扑, 扎里斯基开集的稠密性与闭包)
 
-设 $K$ 为域, $n\in\mathbb{N}$ 为非负整数, $\mathbb{A}^n\left(K\right)=K^n$. $\mathbb{A}^n\left(K\right)$ 中扎里斯基闭集形如 $F=\left\{\boldsymbol{x}:\forall{i}\in{I},P_i\left(\boldsymbol{x}\right)=0\right\}$, 其中 $\left(P_i\right)_{i\in{I}}$ 是一族多项式. 证明这确实定义了一个拓扑 (即扎里斯基拓扑). 证明 $\mathbb{R}^2$ 中扎里斯基开集在 $\mathbb{R}^2$ 中稠密. 求 $\left\{\left(0,\frac1{2^n}\right):n\ge0\right\}\subset\mathbb{R}^2$ 的扎里斯基闭包.
+设 $K$ 为域, $n\in\mathbb{N}$ 为非负整数, $\mathbb{A}^n\left(K\right)=K^n$. $\mathbb{A}^n\left(K\right)$ 中扎里斯基闭集形如 $F=\left\{\boldsymbol{x}:\forall{i}\in{I},P_i\left(\boldsymbol{x}\right)=0\right\}$, 其中 $\left(P_i\right)_{i\in{I}}$ 是一族多项式. 证明:
+
+(1) 这确实定义了一个拓扑 (即扎里斯基拓扑);
+
+(2) $\mathbb{R}^2$ 中扎里斯基开集在 $\mathbb{R}^2$ 中稠密;
+
+(3) 求 $\left\{\left(0,\frac1{2^n}\right):n\ge0\right\}\subset\mathbb{R}^2$ 的扎里斯基闭包.
 
 题集 §1.4 C8.
 
 ### 解答 2.12
 
-由**定义 3.28 (扎里斯基拓扑)**, 记 $Z\left(P_i\right)_{i\in{I}}=\left\{\boldsymbol{x}:\forall{i}\in{I},P_i\left(\boldsymbol{x}\right)=0\right\}$. 验证闭集族满足**定义 3.21 (闭集)**: 空集 $Z\left(1\right)$ (常数多项式 $1$ 无零点); 全空间 $Z\left(0\right)$ (零多项式处处为零); 任意交
+(1) 由**定义 3.28 (扎里斯基拓扑)**, 记 $Z\left(P_i\right)_{i\in{I}}=\left\{\boldsymbol{x}:\forall{i}\in{I},P_i\left(\boldsymbol{x}\right)=0\right\}$. 验证闭集族满足**定义 3.21 (闭集)**: 空集 $Z\left(1\right)$ (常数多项式 $1$ 无零点); 全空间 $Z\left(0\right)$ (零多项式处处为零); 任意交
 
 $$
 \bigcap_{\alpha}Z\left(P_{\alpha,j}\right)_{j\in{J}_\alpha}=Z\left(\bigcup_\alpha\left\{P_{\alpha,j}\right\}\right)
@@ -318,11 +356,11 @@ $$
 Z\left(P_i\right)_{i\in{I}}\cup{Z}\left(Q_j\right)_{j\in{J}}=Z\left(P_iQ_j\right)_{i,j},
 $$
 
-故闭集族满足**定义 3.21 (闭集)**, 扎里斯基拓扑成立.
+故闭集族满足**定义 3.21 (闭集)**, 扎里斯基拓扑成立. $\blacksquare$
 
-扎里斯基开集稠密: 非空扎里斯基开集是某非零多项式 $P$ 的零点集的补集 $\mathbb{R}^2\setminus{Z}\left(P\right)$. 若 $Z\left(P\right)$ 含某开球, 则该开球内沿任一直线限制 $P$ 所得一元多项式在无限多点为零, 由一元多项式恒零判据故恒为零; 从而 $P$ 在该开球上恒为零, 进而 $P\equiv0$, 矛盾. 故 $Z\left(P\right)$ 无内部. 由**定义 3.32 (稠密)**, 其补集 (扎里斯基开集) 稠密.
+(2) 扎里斯基开集稠密: 非空扎里斯基开集是某非零多项式 $P$ 的零点集的补集 $\mathbb{R}^2\setminus{Z}\left(P\right)$. 若 $Z\left(P\right)$ 含某开球, 则该开球内沿任一直线限制 $P$ 所得一元多项式在无限多点为零, 由一元多项式恒零判据故恒为零; 从而 $P$ 在该开球上恒为零, 进而 $P\equiv0$, 矛盾. 故 $Z\left(P\right)$ 无内部. 由**定义 3.32 (稠密)**, 其补集 (扎里斯基开集) 稠密. $\blacksquare$
 
-求闭包: 令 $S=\left\{\left(0,2^{-n}\right):n\ge0\right\}$. 多项式 $P$ 在 $S$ 上恒零当且仅当一元多项式 $P\left(0,y\right)$ 在无限多点 $y=2^{-n}$ 为零, 由一元多项式恒零判据 当且仅当 $P\left(0,\cdot\right)\equiv0$, 即 $x\mid{P}\left(x,y\right)$. 全体这样的 $P$ 的公共零点集为 $\left\{\left(0,y\right):y\in\mathbb{R}\right\}$, 即 $y$ 轴. 由**定义 3.26 (闭包)**, 这就是 $S$ 的扎里斯基闭包. $\blacksquare$
+(3) 求闭包: 令 $S=\left\{\left(0,2^{-n}\right):n\ge0\right\}$. 多项式 $P$ 在 $S$ 上恒零当且仅当一元多项式 $P\left(0,y\right)$ 在无限多点 $y=2^{-n}$ 为零, 由一元多项式恒零判据 当且仅当 $P\left(0,\cdot\right)\equiv0$, 即 $x\mid{P}\left(x,y\right)$. 全体这样的 $P$ 的公共零点集为 $\left\{\left(0,y\right):y\in\mathbb{R}\right\}$, 即 $y$ 轴. 由**定义 3.26 (闭包)**, 这就是 $S$ 的扎里斯基闭包. $\blacksquare$
 
 ## 2.13 (拓扑基的定义与等价刻画及其等价性)
 
@@ -334,9 +372,9 @@ $$
 
 由**定义 3.15 (拓扑基)**, 拓扑基的定义是: $\mathcal{B}\subset\mathcal{P}\left(X\right)$ 中元素的任意并构成 $X$ 上一个拓扑. 其等价刻画为: (1) $X=\bigcup_{B\in\mathcal{B}}B$; (2) 对任意 $B_1,B_2\in\mathcal{B}$ 与任意 $x\in{B}_1\cap{B}_2$, 存在 $B_3\in\mathcal{B}$ 使 $x\in{B}_3\subset{B}_1\cap{B}_2$.
 
-定义 $\Rightarrow$ 刻画: 若 $\mathcal{B}$ 的任意并构成拓扑, 由**定义 3.18 (拓扑空间)**, 则 $X=\bigcup_{B\in\mathcal{B}}B$ 是开集, 即 (1). 又 $B_1\cap{B}_2$ 是两开集之交, 仍开, 故可表为 $\mathcal{B}$ 中元素之并; 任取 $x\in{B}_1\cap{B}_2$, 存在 $B_3\in\mathcal{B}$ 使 $x\in{B}_3\subset{B}_1\cap{B}_2$, 即 (2).
+定义 $\Rightarrow$ 刻画: 若 $\mathcal{B}$ 的任意并构成拓扑, 由**定义 3.18 (拓扑空间)**, 则 $X=\bigcup_{B\in\mathcal{B}}B$ 是开集, 即 (1). 又 $B_1\cap{B}_2$ 是两开集之交, 仍开, 故可表为 $\mathcal{B}$ 中元素之并; 任取 $x\in{B}_1\cap{B}_2$, 存在 $B_3\in\mathcal{B}$ 使 $x\in{B}_3\subset{B}_1\cap{B}_2$, 即 (2). $\blacksquare$
 
-刻画 $\Rightarrow$ 定义: 设 (1)(2) 成立. 令 $\tau=\left\{\bigcup_{B\in\mathcal{C}}B:\mathcal{C}\subset\mathcal{B}\right\}$. 由 (1) $X\in\tau$, 空并 $\emptyset\in\tau$. $\tau$ 中任意并显然仍在 $\tau$ 中. 设 $U=\bigcup_{\alpha}B_\alpha\in\tau$, $V=\bigcup_{\beta}B'_\beta\in\tau$, 则 $U\cap{V}=\bigcup_{\alpha,\beta}\left(B_\alpha\cap{B}'_\beta\right)$. 对每个 $x\in{B}_\alpha\cap{B}'_\beta$, 由 (2) 存在 $B_3\in\mathcal{B}$ 使 $x\in{B}_3\subset{B}_\alpha\cap{B}'_\beta$, 故 $B_\alpha\cap{B}'_\beta$ 是若干 $\mathcal{B}$ 中元素之并, 从而 $U\cap{V}\in\tau$. 由**定义 3.18 (拓扑空间)**, $\tau$ 是拓扑.
+刻画 $\Rightarrow$ 定义: 设 (1)(2) 成立. 令 $\tau=\left\{\bigcup_{B\in\mathcal{C}}B:\mathcal{C}\subset\mathcal{B}\right\}$. 由 (1) $X\in\tau$, 空并 $\emptyset\in\tau$. $\tau$ 中任意并显然仍在 $\tau$ 中. 设 $U=\bigcup_{\alpha}B_\alpha\in\tau$, $V=\bigcup_{\beta}B'_\beta\in\tau$, 则 $U\cap{V}=\bigcup_{\alpha,\beta}\left(B_\alpha\cap{B}'_\beta\right)$. 对每个 $x\in{B}_\alpha\cap{B}'_\beta$, 由 (2) 存在 $B_3\in\mathcal{B}$ 使 $x\in{B}_3\subset{B}_\alpha\cap{B}'_\beta$, 故 $B_\alpha\cap{B}'_\beta$ 是若干 $\mathcal{B}$ 中元素之并, 从而 $U\cap{V}\in\tau$. 由**定义 3.18 (拓扑空间)**, $\tau$ 是拓扑. $\blacksquare$
 
 去掉条件: 若去掉 (1), 例如 $\mathcal{B}=\left\{\emptyset\right\}$, 其任意并只能得 $\emptyset$, 盖不住 $X$; 若去掉 (2), 例如 $X=\mathbb{R}$, $\mathcal{B}=\left\{\left(-\infty,a\right):a\in\mathbb{R}\right\}\cup\left\{\left(b,+\infty\right):b\in\mathbb{R}\right\}$, 则 $\left(-\infty,1\right)\cap\left(0,+\infty\right)=\left(0,1\right)$ 不能表为 $\mathcal{B}$ 中元素之并, 故 $\mathcal{B}$ 的任意并不构成拓扑. $\blacksquare$
 
@@ -352,7 +390,7 @@ $$
 
 ### 解答 2.14
 
-(1) 设 $\left\{B_n\right\}_{n\ge1}$ 是 $X$ 的可数基. 每点取 $x_n\in{B}_n$, 令 $D=\left\{x_n:n\ge1\right\}$. 由于 $\overline{D}\subset{X}$ 显然, 只需证明 $X\subset\overline{D}$. 任取 $x\in{X}$ 与非空开集 $U\ni{x}$, 由**定义 3.15 (拓扑基)** 存在某 $B_n\subset{U}$, 故存在一个 $x_n$ 满足 $x_n\in{D}\cap{U}\neq\emptyset$, 这说明 $x$ 是 $D$ 的闭包点, 即 $x\in\overline{D}$. 由**定义 3.32 (稠密)**, $D$ 在 $X$ 中稠密; 由**定义 3.9 (可分)**, $X$ 可分.
+(1) 设 $\left\{B_n\right\}_{n\ge1}$ 是 $X$ 的可数基. 每点取 $x_n\in{B}_n$, 令 $D=\left\{x_n:n\ge1\right\}$. 由于 $\overline{D}\subset{X}$ 显然, 只需证明 $X\subset\overline{D}$. 任取 $x\in{X}$ 与非空开集 $U\ni{x}$, 由**定义 3.15 (拓扑基)** 存在某 $B_n\subset{U}$, 故存在一个 $x_n$ 满足 $x_n\in{D}\cap{U}\neq\emptyset$, 这说明 $x$ 是 $D$ 的闭包点, 即 $x\in\overline{D}$. 由**定义 3.32 (稠密)**, $D$ 在 $X$ 中稠密; 由**定义 3.9 (可分)**, $X$ 可分. $\blacksquare$
 
 (2) 先验基条件:
 

@@ -156,7 +156,11 @@
 
 ## 12.1 (复合映射的算子范数与 $E\cong{L}\left(\mathbb{K},E\right)$)
 
-设 $E,F,G$ 是赋范域 $\mathbb{K}$ 上的拓扑向量空间. 对 $f\in{L}\left(E,F\right)$, 右复合映射 $R_f:L\left(F,G\right)\to{L}\left(E,G\right)$, $g\mapsto{g}\circ{f}$. 证明 $R_f$ 的算子范数不超过 $f$ 的算子范数; 左复合同理. 证明映射 $E\to{L}\left(\mathbb{K},E\right)$, $x\mapsto\left(\varphi_x:t\mapsto{t}x\right)$ 是等距线性同构.
+设 $E,F,G$ 是赋范域 $\mathbb{K}$ 上的拓扑向量空间. 对 $f\in{L}\left(E,F\right)$, 右复合映射 $R_f:L\left(F,G\right)\to{L}\left(E,G\right)$, $g\mapsto{g}\circ{f}$. 证明:
+
+(1) $R_f$ 的算子范数不超过 $f$ 的算子范数, 左复合同理;
+
+(2) 映射 $E\to{L}\left(\mathbb{K},E\right)$, $x\mapsto\left(\varphi_x:t\mapsto{t}x\right)$ 是等距线性同构.
 
 题集 §5 Q15.
 
@@ -164,7 +168,7 @@
 
 由**定义 6.24 (拓扑向量空间)**, $E,F,G$ 的加法与数乘连续; 由**定义 6.20 (赋范线性空间)**, 其上装备范数, $L\left(E,F\right)$ 为连续线性映射全体.
 
-右复合: 由**定义 6.28 (算子范数)**, 对 $g\in{L}\left(F,G\right)$ 与 $x\in{E}$, $g\circ{f}$ 作为复合映射由**定理 3.1 (复合连续)** 连续, 且
+(1) 右复合: 由**定义 6.28 (算子范数)**, 对 $g\in{L}\left(F,G\right)$ 与 $x\in{E}$, $g\circ{f}$ 作为复合映射由**定理 3.1 (复合连续)** 连续, 且
 
 $$
 \left\|g\circ{f}\left(x\right)\right\|\le\left\|g\right\|\cdot\left\|f\left(x\right)\right\|\le\left\|g\right\|\cdot\left\|f\right\|\cdot\left\|x\right\|.
@@ -172,9 +176,9 @@ $$
 
 两边除以 $\left\|x\right\|$ 并取上确界, 得 $\left\|g\circ{f}\right\|\le\left\|g\right\|\left\|f\right\|$. 于是 $\left\|R_f\left(g\right)\right\|\le\left\|f\right\|\left\|g\right\|$, 即 $\left\|R_f\right\|\le\left\|f\right\|$.
 
-左复合: 同理, $L_f:g\mapsto{f}\circ{g}$ ($g\in{L}\left(G,E\right)$, $f\in{L}\left(E,F\right)$), 有 $\left\|f\circ{g}\right\|\le\left\|f\right\|\left\|g\right\|$, 故 $\left\|L_f\right\|\le\left\|f\right\|$.
+左复合: 同理, $L_f:g\mapsto{f}\circ{g}$ ($g\in{L}\left(G,E\right)$, $f\in{L}\left(E,F\right)$), 有 $\left\|f\circ{g}\right\|\le\left\|f\right\|\left\|g\right\|$, 故 $\left\|L_f\right\|\le\left\|f\right\|$. $\blacksquare$
 
-等距线性同构: 映射 $x\mapsto\varphi_x$, $\varphi_x\left(t\right)=tx$. 线性显然. 由**定义 6.28 (算子范数)**,
+(2) 等距线性同构: 映射 $x\mapsto\varphi_x$, $\varphi_x\left(t\right)=tx$. 线性显然. 由**定义 6.28 (算子范数)**,
 
 $$
 \left\|\varphi_x\right\|=\sup_{\left\|t\right\|\le1}\left\|tx\right\|=\sup_{\left\|t\right\|\le1}\left|t\right|\cdot\left\|x\right\|=\left\|x\right\|.
@@ -184,7 +188,13 @@ $$
 
 ## 12.2 (无穷维空间中强拓扑与弱拓扑不同)
 
-证明: 若 $E$ 是无穷维拓扑向量空间, 则 $E$ 上强拓扑与弱拓扑不同. 计算弱拓扑下 $E$ 的开单位球的内部; 计算弱拓扑下 $E$ 的单位球面的闭包.
+证明:
+
+(1) 若 $E$ 是无穷维拓扑向量空间, 则 $E$ 上强拓扑与弱拓扑不同;
+
+(2) 计算弱拓扑下 $E$ 的开单位球的内部;
+
+(3) 计算弱拓扑下 $E$ 的单位球面的闭包.
 
 题集 §5 Q16.
 
@@ -198,11 +208,11 @@ $$
 
 它是 $x_0$ 加上有限个超平面交 (即无穷维仿射子空间) 的 $\varepsilon$-管.
 
-强 $\neq$ 弱: 在无穷维, 任意弱开邻域 $U$ 都含一个无穷维仿射子空间, 故不可能含于一个强有界集; 特别地强开单位球不是弱开的. 故弱拓扑严格粗于强拓扑.
+(1) 在无穷维, 任意弱开邻域 $U$ 都含一个无穷维仿射子空间, 故不可能含于一个强有界集; 特别地强开单位球不是弱开的. 故弱拓扑严格粗于强拓扑. $\blacksquare$
 
-开单位球的弱内部: 弱开邻域含无穷维仿射子空间, 因而其中有无界点, 不可能含于有界开单位球. 故弱拓扑下开单位球的内部为 $\emptyset$.
+(2) 弱开邻域含无穷维仿射子空间, 因而其中有无界点, 不可能含于有界开单位球. 故弱拓扑下开单位球的内部为 $\emptyset$. $\blacksquare$
 
-单位球面的弱闭包: 由**定理 6.50 (哈恩-巴拿赫定理)**, 任意 $x_0$ 满足 $\left\|x_0\right\|\le1$ 都可被球面中点弱逼近: 若 $\left\|x_0\right\|<1$, 沿任意方向取小步长即可进入球面; 若 $\left\|x_0\right\|=1$, $x_0$ 本身在球面上. 反之弱闭包不能超出闭单位球 (范数是弱下半连续的). 故弱闭包等于闭单位球 $\left\{x:\left\|x\right\|\le1\right\}$. $\blacksquare$
+(3) 由**定理 6.50 (哈恩-巴拿赫定理)**, 任意 $x_0$ 满足 $\left\|x_0\right\|\le1$ 都可被球面中点弱逼近: 若 $\left\|x_0\right\|<1$, 沿任意方向取小步长即可进入球面; 若 $\left\|x_0\right\|=1$, $x_0$ 本身在球面上. 反之弱闭包不能超出闭单位球 (范数是弱下半连续的). 故弱闭包等于闭单位球 $\left\{x:\left\|x\right\|\le1\right\}$. $\blacksquare$
 
 ## 12.3 (弱星拓扑总是豪斯多夫)
 
@@ -222,7 +232,7 @@ $$
 
 ### 解答 12.4
 
-粗于弱星拓扑: 由**定义 6.31 (弱星拓扑)**, 弱星拓扑由全部 $x\in{E}$ 的赋值诱导. 本题初始拓扑仅用 $x\in{D}\subset{E}$. 映射更少, 由**定义 3.14 (初始拓扑)** 的"最粗性", 用较少映射得到的拓扑粗于用全部映射得到的弱星拓扑.
+粗于弱星拓扑: 由**定义 6.31 (弱星拓扑)**, 弱星拓扑由全部 $x\in{E}$ 的赋值诱导. 本题初始拓扑仅用 $x\in{D}\subset{E}$. 映射更少, 由**定义 3.14 (初始拓扑)** 的"最粗性", 用较少映射得到的拓扑粗于用全部映射得到的弱星拓扑. $\blacksquare$
 
 稠密 $D$ 时在有界集上相同: 设 $B\subset{E}^*$ 有界, 即 $\sup_{\varphi\in{B}}\left\|\varphi\right\|<\infty$. 已知弱星 $\Rightarrow$ 初始方向 (上一问). 反之, 设网 $\left\{\varphi_\alpha\right\}\subset{B}$ 在初始拓扑下收敛到 $\varphi\in{B}$, 即对每个 $x\in{D}$, $\varphi_\alpha\left(x\right)\to\varphi\left(x\right)$. 任取 $y\in{E}$, 由 $D$ 稠密取 $x_n\in{D}\to{y}$. 对 $\varepsilon>0$, 取 $x_n$ 使 $\left\|y-x_n\right\|<\varepsilon/\left(\sup_B\left\|\varphi_\alpha\right\|+\sup_B\left\|\varphi\right\|+1\right)$. 则
 
@@ -338,7 +348,7 @@ $$
 
 由**定义 6.20 (赋范线性空间)**, 设 $T:E\to{F}$ 线性.
 
-($\Rightarrow$) 若 $T$ 连续, 则 $T$ 在 $0$ 连续, 故存在 $\delta>0$ 使 $\left\|x\right\|<\delta$ 时 $\left\|Tx\right\|\le1$. 对任意 $x\neq0$, 令 $y=\frac{\delta}{2\left\|x\right\|}x$, 则 $\left\|y\right\|<\delta$, $\left\|Ty\right\|\le1$, 由线性性 $\left\|Tx\right\|=\frac{2\left\|x\right\|}{\delta}\left\|Ty\right\|\le\frac{2}{\delta}\left\|x\right\|$. 故 $\sup_{\left\|x\right\|\le1}\left\|Tx\right\|\le2/\delta<\infty$, 即 $T$ 有界.
+($\Rightarrow$) 若 $T$ 连续, 则 $T$ 在 $0$ 连续, 故存在 $\delta>0$ 使 $\left\|x\right\|<\delta$ 时 $\left\|Tx\right\|\le1$. 对任意 $x\neq0$, 令 $y=\frac{\delta}{2\left\|x\right\|}x$, 则 $\left\|y\right\|<\delta$, $\left\|Ty\right\|\le1$, 由线性性 $\left\|Tx\right\|=\frac{2\left\|x\right\|}{\delta}\left\|Ty\right\|\le\frac{2}{\delta}\left\|x\right\|$. 故 $\sup_{\left\|x\right\|\le1}\left\|Tx\right\|\le2/\delta<\infty$, 即 $T$ 有界. $\blacksquare$
 
 ($\Leftarrow$) 若 $T$ 有界, 即 $\left\|Tx\right\|\le{M}\left\|x\right\|$ 对一切 $x$. 则对任意 $\varepsilon>0$, 取 $\delta=\varepsilon/M$, 当 $\left\|x-y\right\|<\delta$ 时 $\left\|Tx-Ty\right\|=\left\|T\left(x-y\right)\right\|\le{M}\left\|x-y\right\|<\varepsilon$. 由**定义 6.28 (算子范数)** 的定义, $T$ 连续. $\blacksquare$
 
@@ -392,7 +402,7 @@ $$
 
 ### 解答 12.16
 
-由**定义 6.20 (赋范线性空间)**, 由范数的反三角不等式 $\bigl|\left\|x\right\|-\left\|y\right\|\bigr|\le\left\|x-y\right\|$, 范数是利普希茨映射, 故连续.
+由**定义 6.20 (赋范线性空间)**, 由范数的反三角不等式 $\bigl|\left\|x\right\|-\left\|y\right\|\bigr|\le\left\|x-y\right\|$, 范数是利普希茨映射, 故连续. $\blacksquare$
 
 豪斯多夫: 设 $x\neq{y}$, 取 $r=\left\|x-y\right\|/3>0$, 则开球 $B\left(x,r\right)$ 与 $B\left(y,r\right)$ 不相交 (若 $z$ 同时在二者中, 则 $\left\|x-y\right\|\le\left\|x-z\right\|+\left\|z-y\right\|<2r<\left\|x-y\right\|$, 矛盾). 由**定义 3.10 (豪斯多夫空间)**, 赋范空间豪斯多夫. $\blacksquare$
 
@@ -472,7 +482,7 @@ $$
 
 设 $\left(E,d\right),\left(F,\delta\right)$ 是度量空间, $E$ 完备, $f_n:E\to{F}$ 连续, 且 $f_n$ 逐点收敛到 $f$.
 
-(1) 对 $\varepsilon>0$ 与 $n\in\mathbb{N}$ 令 $F_{n,\varepsilon}=\left\{x\in{E}:\forall p\ge{n},\delta\left(f_p\left(x\right),f_n\left(x\right)\right)\le\varepsilon\right\}$. 用贝尔纲定理证明 $\Omega_\varepsilon=\bigcup_n\operatorname{int}\left(F_{n,\varepsilon}\right)$ 在 $E$ 中稠密;
+(1) 对 $\varepsilon>0$ 与 $n\in\mathbb{N}$ 令 $F_{n,\varepsilon}=\left\{x\in{E}:\forall{p}\ge{n},\delta\left(f_p\left(x\right),f_n\left(x\right)\right)\le\varepsilon\right\}$. 用贝尔纲定理证明 $\Omega_\varepsilon=\bigcup_n\operatorname{int}\left(F_{n,\varepsilon}\right)$ 在 $E$ 中稠密;
 
 (2) 证明对每个 $x_0\in\Omega_\varepsilon$ 存在 $x_0$ 的邻域 $V$, 使 $x\in{V}$ 时 $\delta\left(f\left(x_0\right),f\left(x\right)\right)\le3\varepsilon$;
 
@@ -484,7 +494,7 @@ $$
 
 ### 解答 12.23
 
-(1) $F_{n,\varepsilon}$ 闭: 它是可数个 $\left\{x:\delta\left(f_p\left(x\right),f_n\left(x\right)\right)\le\varepsilon\right\}$ 之交, 每个由 $\delta\circ\left(f_p,f_n\right)$ 连续而闭 (**定义 3.21 (闭集)**). 又 $\bigcup_nF_{n,\varepsilon}=E$: 固定 $x$, $\left(f_p\left(x\right)\right)$ 收敛故柯西, 取 $n$ 使 $p\ge{n}$ 时两项距离 $\le\varepsilon$ 即 $x\in{F}_{n,\varepsilon}$. 由**定理 6.13 (贝尔纲定理)**, 完备空间 $E$ 中可数个闭集不能都是无处稠密的, 故某个 $F_{n,\varepsilon}$ 含内点. 对 $E$ 的任意开球 $B$ 用同一论证 (以 $B$ 代 $E$), 得 $B$ 内有某个 $F_{n,\varepsilon}$ 的内点. 故 $\Omega_\varepsilon$ 在每个开球中非空, 稠密; 它本身开.
+(1) $F_{n,\varepsilon}$ 闭: 它是可数个 $\left\{x:\delta\left(f_p\left(x\right),f_n\left(x\right)\right)\le\varepsilon\right\}$ 之交, 每个由 $\delta\circ\left(f_p,f_n\right)$ 连续而闭 (**定义 3.21 (闭集)**). 又 $\bigcup_nF_{n,\varepsilon}=E$: 固定 $x$, $\left(f_p\left(x\right)\right)$ 收敛故柯西, 取 $n$ 使 $p\ge{n}$ 时两项距离 $\le\varepsilon$ 即 $x\in{F}_{n,\varepsilon}$. 由**定理 6.13 (贝尔纲定理)**, 完备空间 $E$ 中可数个闭集不能都是无处稠密的, 故某个 $F_{n,\varepsilon}$ 含内点. 对 $E$ 的任意开球 $B$ 用同一论证 (以 $B$ 代 $E$), 得 $B$ 内有某个 $F_{n,\varepsilon}$ 的内点. 故 $\Omega_\varepsilon$ 在每个开球中非空, 稠密; 它本身开. $\blacksquare$
 
 (2) 设 $x_0\in\operatorname{int}\left(F_{n,\varepsilon}\right)$, 取邻域 $V\subset{F}_{n,\varepsilon}$. 对 $x\in{V}$,
 
@@ -492,9 +502,9 @@ $$
 \delta\left(f\left(x_0\right),f\left(x\right)\right)\le\delta\left(f\left(x_0\right),f_n\left(x_0\right)\right)+\delta\left(f_n\left(x_0\right),f_n\left(x\right)\right)+\delta\left(f_n\left(x\right),f\left(x\right)\right).
 $$
 
-第一, 第三项 $\le\varepsilon$: 因 $x_0,x\in{F}_{n,\varepsilon}$ 且 $p\to\infty$ 取极限. 第二项 $\le\varepsilon$: 因 $f_n$ 连续 (**定义 3.22 (连续映射)**), 必要时缩小 $V$ 使 $x\in{V}$ 时 $\delta\left(f_n\left(x_0\right),f_n\left(x\right)\right)\le\varepsilon$. 三者相加得 $3\varepsilon$.
+第一, 第三项 $\le\varepsilon$: 因 $x_0,x\in{F}_{n,\varepsilon}$ 且 $p\to\infty$ 取极限. 第二项 $\le\varepsilon$: 因 $f_n$ 连续 (**定义 3.22 (连续映射)**), 必要时缩小 $V$ 使 $x\in{V}$ 时 $\delta\left(f_n\left(x_0\right),f_n\left(x\right)\right)\le\varepsilon$. 三者相加得 $3\varepsilon$. $\blacksquare$
 
-(3) 令 $\Omega=\bigcap_{m}\Omega_{1/m}$. 它是稠密 $G_\delta$ (可数个稠密开集之交). 对 $x_0\in\Omega$ 与任意 $m$, 由 (2) 取 $V_m$ 使 $x\in{V}_m$ 时 $\delta\left(f\left(x_0\right),f\left(x\right)\right)\le3/m$. 故 $f$ 在 $x_0$ 连续. 于是连续点集包含稠密集 $\Omega$, 从而稠密.
+(3) 令 $\Omega=\bigcap_{m}\Omega_{1/m}$. 它是稠密 $G_\delta$ (可数个稠密开集之交). 对 $x_0\in\Omega$ 与任意 $m$, 由 (2) 取 $V_m$ 使 $x\in{V}_m$ 时 $\delta\left(f\left(x_0\right),f\left(x\right)\right)\le3/m$. 故 $f$ 在 $x_0$ 连续. 于是连续点集包含稠密集 $\Omega$, 从而稠密. $\blacksquare$
 
 (4) 设 $f$ 在 $\mathbb{R}$ 上可导. 对每个 $h\neq0$ 令
 
@@ -516,7 +526,7 @@ $$
 
 包含 $\subset$: 若 $\sum_n\left|x_n\right|^p<\infty$, 则 $\left|x_n\right|\to0$, 故 $\left(x_n\right)$ 有界, 从而 $\sup_n\left|x_n\right|<\infty$, 即 $x\in{l}^\infty$. 对有限 $q>{}p$, 由 $\left|x_n\right|\to0$, 存在 $N$ 使 $n\ge{N}$ 时 $\left|x_n\right|\le1$, 于是 $\left|x_n\right|^q\le\left|x_n\right|^p$, 故 $\sum_n\left|x_n\right|^q<\infty$.
 
-严格包含: $x_n=n^{-1/p}$ 时 $\sum_nn^{-1}$ 发散, 但 $\sum_nn^{-q/p}<\infty$ (因 $q/p>1$), 故 $x\in{l}^q$ 但 $x\notin{l}^p$.
+严格包含: $x_n=n^{-1/p}$ 时 $\sum_nn^{-1}$ 发散, 但 $\sum_nn^{-q/p}<\infty$ (因 $q/p>1$), 故 $x\in{l}^q$ 但 $x\notin{l}^p$. $\blacksquare$
 
 闭性: 设 $x^{\left(m\right)}\in{l}^p$ 按 $l^q$ 范数收敛到 $x$. 对任意有限 $N$,
 
@@ -544,7 +554,7 @@ $$
 \left(\boldsymbol{D}_t^{-1}\boldsymbol{T}\boldsymbol{D}_t\right)_{ij}=t^{j-i}T_{ij}.
 $$
 
-当 $i\ge{j}$ 时 $T_{ij}=0$; 当 $i<j$ 时 $t^{j-i}\to0$ ($t\to0^+$), 而 $T_{ij}$ 固定. 故 $\boldsymbol{D}_t^{-1}\boldsymbol{T}\boldsymbol{D}_t\to0$ ($t\to0^+$). 又 $\boldsymbol{D}_t^{-1}\boldsymbol{T}\boldsymbol{D}_t=\left(\boldsymbol{P}\boldsymbol{D}_t\right)^{-1}\boldsymbol{N}\left(\boldsymbol{P}\boldsymbol{D}_t\right)$, 故 $0$ 是共轭族 $\left\{\boldsymbol{P}^{-1}\boldsymbol{N}\boldsymbol{P}\right\}$ 的聚点.
+当 $i\ge{j}$ 时 $T_{ij}=0$; 当 $i<{}j$ 时 $t^{j-i}\to0$ ($t\to0^+$), 而 $T_{ij}$ 固定. 故 $\boldsymbol{D}_t^{-1}\boldsymbol{T}\boldsymbol{D}_t\to0$ ($t\to0^+$). 又 $\boldsymbol{D}_t^{-1}\boldsymbol{T}\boldsymbol{D}_t=\left(\boldsymbol{P}\boldsymbol{D}_t\right)^{-1}\boldsymbol{N}\left(\boldsymbol{P}\boldsymbol{D}_t\right)$, 故 $0$ 是共轭族 $\left\{\boldsymbol{P}^{-1}\boldsymbol{N}\boldsymbol{P}\right\}$ 的聚点. $\blacksquare$
 
 反之设 $0$ 是该族的聚点, 即有 $\boldsymbol{P}_k\in{GL}_n\left(\mathbb{C}\right)$ 使 $\boldsymbol{P}_k^{-1}\boldsymbol{N}\boldsymbol{P}_k\to0$. 特征多项式 $\chi_M\left(\lambda\right)=\det\left(\lambda{I}-\boldsymbol{M}\right)$ 的系数是 $\boldsymbol{M}$ 的元素的连续函数, 故
 
@@ -561,24 +571,28 @@ $$
 设 $\boldsymbol{A}\in{M}_n\left(\mathbb{R}\right)$, 定义 $A^*:\mathbb{R}^n\to\mathbb{R}^n$ 为
 
 $$
-\left[A^*\boldsymbol{v}\right]_j=\min\left\{v_i+A_{ij}:1\le{i}\le{n}\right\},\quad 1\le{j}\le{n}.
+\left[A^*\boldsymbol{v}\right]_j=\min\left\{v_i+A_{ij}:1\le{i}\le{n}\right\},\quad1\le{j}\le{n}.
 $$
 
-证明 $A^*$ 是利普希茨的; 再证明对每个 $\lambda\in\left(0,1\right)$ 存在唯一的 $\boldsymbol{v}_\lambda\in\mathbb{R}^n$ 使 $\boldsymbol{v}_\lambda=A^*\left(\lambda\boldsymbol{v}_\lambda\right)$.
+证明:
+
+(1) $A^*$ 是利普希茨的;
+
+(2) 对每个 $\lambda\in\left(0,1\right)$ 存在唯一的 $\boldsymbol{v}_\lambda\in\mathbb{R}^n$ 使 $\boldsymbol{v}_\lambda=A^*\left(\lambda\boldsymbol{v}_\lambda\right)$.
 
 题集 $\S8.5$ W4.
 
 ### 解答 12.26
 
-利普希茨: 对 $\boldsymbol{v},\boldsymbol{w}\in\mathbb{R}^n$ 与 $j$, 令 $i_v$ 使 $\left[A^*\boldsymbol{v}\right]_j=v_{i_v}+A_{i_vj}$ 取到最小. 则
+(1) 对 $\boldsymbol{v},\boldsymbol{w}\in\mathbb{R}^n$ 与 $j$, 令 $i_v$ 使 $\left[A^*\boldsymbol{v}\right]_j=v_{i_v}+A_{i_vj}$ 取到最小. 则
 
 $$
 \left[A^*\boldsymbol{v}\right]_j-\left[A^*\boldsymbol{w}\right]_j\le\left(v_{i_v}+A_{i_vj}\right)-\left(w_{i_v}+A_{i_vj}\right)=v_{i_v}-w_{i_v}\le\left\|\boldsymbol{v}-\boldsymbol{w}\right\|_\infty.
 $$
 
-交换 $\boldsymbol{v},\boldsymbol{w}$ 得 $\left|\left[A^*\boldsymbol{v}\right]_j-\left[A^*\boldsymbol{w}\right]_j\right|\le\left\|\boldsymbol{v}-\boldsymbol{w}\right\|_\infty$, 对 $j$ 取最大即 $\left\|A^*\boldsymbol{v}-A^*\boldsymbol{w}\right\|_\infty\le\left\|\boldsymbol{v}-\boldsymbol{w}\right\|_\infty$.
+交换 $\boldsymbol{v},\boldsymbol{w}$ 得 $\left|\left[A^*\boldsymbol{v}\right]_j-\left[A^*\boldsymbol{w}\right]_j\right|\le\left\|\boldsymbol{v}-\boldsymbol{w}\right\|_\infty$, 对 $j$ 取最大即 $\left\|A^*\boldsymbol{v}-A^*\boldsymbol{w}\right\|_\infty\le\left\|\boldsymbol{v}-\boldsymbol{w}\right\|_\infty$. $\blacksquare$
 
-压缩不动点: 令 $\Phi_\lambda\left(\boldsymbol{v}\right)=A^*\left(\lambda\boldsymbol{v}\right)$. 由上一段
+(2) 令 $\Phi_\lambda\left(\boldsymbol{v}\right)=A^*\left(\lambda\boldsymbol{v}\right)$. 由上一段
 
 $$
 \left\|\Phi_\lambda\left(\boldsymbol{v}\right)-\Phi_\lambda\left(\boldsymbol{w}\right)\right\|_\infty=\left\|A^*\left(\lambda\boldsymbol{v}\right)-A^*\left(\lambda\boldsymbol{w}\right)\right\|_\infty\le\lambda\left\|\boldsymbol{v}-\boldsymbol{w}\right\|_\infty,
@@ -586,7 +600,7 @@ $$
 
 故 $\Phi_\lambda$ 是常数 $\lambda<1$ 的**定义 6.19 (压缩映射)**; $\mathbb{R}^n$ 带上确界范数完备, 由**定理 6.16 (巴拿赫不动点定理)**, $\Phi_\lambda$ 有唯一不动点 $\boldsymbol{v}_\lambda$, 即 $\boldsymbol{v}_\lambda=A^*\left(\lambda\boldsymbol{v}_\lambda\right)$. $\blacksquare$
 
-> $A^*$ 是"取最小"这种逐坐标的极值算子, 它满足 $\left|\min a_j-\min b_j\right|\le\max\left|a_j-b_j\right|$, 因此天然是 $1$-利普希茨的, 压缩性只能来自外面的因子 $\lambda$.
+> $A^*$ 是"取最小"这种逐坐标的极值算子, 它满足 $\left|\min{a}_j-\min{b}_j\right|\le\max\left|a_j-b_j\right|$, 因此天然是 $1$-利普希茨的, 压缩性只能来自外面的因子 $\lambda$.
 
 ## 12.27 ($\mathbb{R}^2$ 不是可数条 $C^1$ 曲线之并)
 
@@ -626,9 +640,9 @@ $$
 
 ### 解答 12.28
 
-(1) 设 $u$ 单调 (例如不减) 且 $u\left(a\right)=u\left(b\right)=x$, $a<b$. 对 $a<c<b$ 有 $u\left(a\right)\le{u}\left(c\right)\le{u}\left(b\right)$, 故 $u\left(c\right)=x$, 于是 $u^{-1}\left(\left\{x\right\}\right)$ 是区间, 由**定理 4.1 (区间连通)** 连通.
+(1) 设 $u$ 单调 (例如不减) 且 $u\left(a\right)=u\left(b\right)=x$, $a<{}b$. 对 $a<{}c<{}b$ 有 $u\left(a\right)\le{u}\left(c\right)\le{u}\left(b\right)$, 故 $u\left(c\right)=x$, 于是 $u^{-1}\left(\left\{x\right\}\right)$ 是区间, 由**定理 4.1 (区间连通)** 连通.
 
-反之设 $u$ 不单调. 则存在 $a<b<c$ 使 $u\left(b\right)$ 严格大于 $u\left(a\right)$ 与 $u\left(c\right)$ 中的最大者, 或严格小于两者中的最小者 (否则 $u$ 在三点上单调). 设前一种情形, 令 $m=\max\left\{u\left(a\right),u\left(c\right)\right\}$. 取 $x$ 使 $m<x<u\left(b\right)$. 由**定理 4.1 (区间连通)** 的一般形式 (连续函数的介值性不必要, 这里只用区间性质): $u$ 在 $\left[a,b\right]$ 上从 $\le{m}$ 走到 $>x$, 故有 $s\in\left(a,b\right)$ 使 $u\left(s\right)=x$; 同理 $t\in\left(b,c\right)$ 使 $u\left(t\right)=x$. 于是 $u^{-1}\left(\left\{x\right\}\right)$ 含 $s<b<t$ 而不含 $b$, 不是区间, 由**定理 4.1 (区间连通)** 不连通.
+反之设 $u$ 不单调. 则存在 $a<{}b<{}c$ 使 $u\left(b\right)$ 严格大于 $u\left(a\right)$ 与 $u\left(c\right)$ 中的最大者, 或严格小于两者中的最小者 (否则 $u$ 在三点上单调). 设前一种情形, 令 $m=\max\left\{u\left(a\right),u\left(c\right)\right\}$. 取 $x$ 使 $m<{}x<{}u\left(b\right)$. 由**定理 4.1 (区间连通)** 的一般形式 (连续函数的介值性不必要, 这里只用区间性质): $u$ 在 $\left[a,b\right]$ 上从 $\le{m}$ 走到 $>{}x$, 故有 $s\in\left(a,b\right)$ 使 $u\left(s\right)=x$; 同理 $t\in\left(b,c\right)$ 使 $u\left(t\right)=x$. 于是 $u^{-1}\left(\left\{x\right\}\right)$ 含 $s<{}b<{}t$ 而不含 $b$, 不是区间, 由**定理 4.1 (区间连通)** 不连通. $\blacksquare$
 
 (2) $F^{-1}\left(A\right)$ 闭: $A$ 闭, $F$ 连续, 由**定义 3.22 (连续映射)** 原像闭.
 
@@ -636,7 +650,7 @@ $$
 
 对每个 $a\in{A}$, 纤维 $F^{-1}\left(a\right)$ 连通, 故 $\varphi$ 在其上常值, 记该值为 $c\left(a\right)\in\left\{0,1\right\}$. 下证 $c$ 局部常值. 设 $a\in{A}$ 且 $c\left(a\right)=0$, 取 $a_k\in{A}$ 使 $c\left(a_k\right)=1$ 且 $a_k\to{a}$. 由 $F$ 满射, 取 $x_k\in{F}^{-1}\left(a_k\right)$. 由**定理 6.1 (紧 $=$ 序列紧)**, $X$ 紧 (**定义 5.16 (紧致空间)**), 故有子列 $x_{k'}\to{x}\in{X}$. 由 $F$ 连续, $F\left(x\right)=\lim{a}_{k'}=a$, 即 $x\in{F}^{-1}\left(a\right)$. 因 $c\left(a\right)=0$, $x\in\varphi^{-1}\left(\left\{0\right\}\right)$; 而 $x_{k'}\in{F}^{-1}\left(a_{k'}\right)$ 且 $c\left(a_{k'}\right)=1$, 故 $x_{k'}\in\varphi^{-1}\left(\left\{1\right\}\right)$; 后者闭, 故 $x\in\varphi^{-1}\left(\left\{1\right\}\right)$. 于是 $x$ 同时属于两个不交的闭集 $\varphi^{-1}\left(\left\{0\right\}\right),\varphi^{-1}\left(\left\{1\right\}\right)$, 矛盾. 故 $c$ 不能在 $c\left(a\right)=0$ 的点附近取值 $1$; 同理反向. 故 $c$ 局部常值.
 
-$A$ 连通 (**定义 4.18 (连通空间)**) 故局部常值的 $c$ 常值, 于是 $\varphi$ 在整个 $F^{-1}\left(A\right)$ 上常值. 故 $F^{-1}\left(A\right)$ 连通.
+$A$ 连通 (**定义 4.18 (连通空间)**) 故局部常值的 $c$ 常值, 于是 $\varphi$ 在整个 $F^{-1}\left(A\right)$ 上常值. 故 $F^{-1}\left(A\right)$ 连通. $\blacksquare$
 
 (3) 连续与满射: 一致极限保持连续 (**定义 3.22 (连续映射)**). 满射: $F_j\left(X\right)=Y$, 且 $F_j\to{F}$ 一致, $X$ 紧故 $F\left(X\right)$ 紧 (**定理 6.1 (紧 $=$ 序列紧)**) 从而闭; 任 $y\in{Y}$, 取 $x_j$ 使 $F_j\left(x_j\right)=y$, 沿子列 $x_{j'}\to{x}$ (**定理 6.1 (紧 $=$ 序列紧)**), 由一致性 $F\left(x\right)=y$. 故 $F$ 满射.
 
@@ -664,13 +678,13 @@ $A$ 连通 (**定义 4.18 (连通空间)**) 故局部常值的 $c$ 常值, 于�
 
 ### 解答 12.29
 
-(1) $F_n=\ker\left(f^n\right)$. $f^n$ 是连续线性映射 (有限次复合), 故 $F_n$ 是闭子空间: 线性显然; 闭由**定义 3.21 (闭集)** 与连续性, $\ker$ 是闭集 $\left\{0\right\}$ 的原像. 又 $F_1\subset{F}_2\subset\cdots$.
+(1) $F_n=\ker\left(f^n\right)$. $f^n$ 是连续线性映射 (有限次复合), 故 $F_n$ 是闭子空间: 线性显然; 闭由**定义 3.21 (闭集)** 与连续性, $\ker$ 是闭集 $\left\{0\right\}$ 的原像. 又 $F_1\subset{F}_2\subset\cdots$. $\blacksquare$
 
-(2) 由假设 $X=\bigcup_nF_n$. $\left(X,d\right)$ 完备, 由**定理 6.13 (贝尔纲定理)**, 可数个闭集覆盖完备空间时至少一个含内点. 故某 $F_N$ 含内点.
+(2) 由假设 $X=\bigcup_nF_n$. $\left(X,d\right)$ 完备, 由**定理 6.13 (贝尔纲定理)**, 可数个闭集覆盖完备空间时至少一个含内点. 故某 $F_N$ 含内点. $\blacksquare$
 
-(3) 若闭子空间 $F_N$ 含内点, 即含某开球 $B\left(x_0,r\right)$, 则对任意 $x\in{X}$ 与 $x\neq0$, 向量 $x_0+\frac{r}{2\left\|x\right\|}x\in{B}\left(x_0,r\right)\subset{F}_N$, 而 $x_0\in{F}_N$, 由线性得 $\frac{r}{2\left\|x\right\|}x\in{F}_N$, 故 $x\in{F}_N$. 于是 $F_N=X$.
+(3) 若闭子空间 $F_N$ 含内点, 即含某开球 $B\left(x_0,r\right)$, 则对任意 $x\in{X}$ 与 $x\neq0$, 向量 $x_0+\frac{r}{2\left\|x\right\|}x\in{B}\left(x_0,r\right)\subset{F}_N$, 而 $x_0\in{F}_N$, 由线性得 $\frac{r}{2\left\|x\right\|}x\in{F}_N$, 故 $x\in{F}_N$. 于是 $F_N=X$. $\blacksquare$
 
-(4) $F_N=X$ 即 $f^N\left(x\right)=0$ 对一切 $x$ 成立, 故 $f^N=0$, $f$ 幂零.
+(4) $F_N=X$ 即 $f^N\left(x\right)=0$ 对一切 $x$ 成立, 故 $f^N=0$, $f$ 幂零. $\blacksquare$
 
 (5) 在 $\mathbb{R}\left[X\right]$ (不带范数, 或任何使它不成为巴拿赫空间的度量) 上取求导 $D\left(P\right)=P'$. 每个 $P$ 都有 $D^{m}\left(P\right)=0$ 只要 $m>\deg{P}$: 逐点有限次归零成立. 但 $D$ 不幂零: 对任意 $m$, $X^{m}$ 的 $m$ 次导数非零, 故 $D^m\neq0$. 与 (1)-(4) 对照, 差别只在 $\mathbb{R}\left[X\right]$ 不完备: $\mathbb{R}\left[X\right]=\bigcup_nF_n$ 时 $F_n$ 都是真闭子空间, 但没有一个有内点, 贝尔纲定理恰好失效. $\blacksquare$
 

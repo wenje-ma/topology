@@ -154,67 +154,85 @@ $$
 
 由**定义 4.24 (拓扑学家正弦曲线)**, $S$ 即拓扑学家正弦曲线.
 
-先证连通. $G$ 以 $x$ 为参数路径连通, 故由**定理 4.3 (路径连通蕴含连通)** $G$ 连通. 当 $x\to0^{+}$ 时 $\sin\left(1/x\right)$ 在 $\left[-1,1\right]$ 上稠密振荡, 故 $G$ 的闭包 $\overline{G}=G\cup{L}=S$ (**定义 3.26 (闭包)**). 由**定理 4.15 (闭包保持连通性)**, $\overline{G}$ 连通, 故 $S$ 连通 (**定义 4.18 (连通空间)**).
+先证连通. $G$ 以 $x$ 为参数路径连通, 故由**定理 4.3 (路径连通蕴含连通)** $G$ 连通. 当 $x\to0^{+}$ 时 $\sin\left(1/x\right)$ 在 $\left[-1,1\right]$ 上稠密振荡, 故 $G$ 的闭包 $\overline{G}=G\cup{L}=S$ (**定义 3.26 (闭包)**). 由**定理 4.15 (闭包保持连通性)**, $\overline{G}$ 连通, 故 $S$ 连通 (**定义 4.18 (连通空间)**). $\blacksquare$
 
 再证不路径连通. 反设存在路径 $\gamma:\left[0,1\right]\to{S}$ 以 $\left(0,0\right)\in{L}$ 为起点, 以 $\left(1,\sin1\right)\in{G}$ 为终点. 令 $t_0=\inf\left\{t:\gamma\left(t\right)\text{~的横坐标}>0\right\}$. 由连续性 $\gamma\left(t_0\right)\in{L}$. 取 $t_n\downarrow{t}_0$, 则 $\gamma\left(t_n\right)=\left(x_n,\sin\left(1/x_n\right)\right)$, $x_n\to0^{+}$. 序列 $\sin\left(1/x_n\right)$ 既有收敛到 $1$ 的子列, 又有收敛到 $-1$ 的子列, 不可能收敛到 $\gamma\left(t_0\right)$ 的纵坐标, 与 $\gamma$ 连续矛盾. 故不存在这样的路径, $S$ 不路径连通, 即它不是**定义 4.22 (路径连通)** 意义下的路径连通空间. $\blacksquare$
 
 ## 5.2 (连通等价于到两点空间的连续映射常值, 以及乘积去方块后的连通性)
 
-连通性与连续函数. 证明: $X$ 是**定义 4.18 (连通空间)** 当且仅当一切连续映射 $f:X\to\left\{0,1\right\}$ (目标装备离散拓扑) 都是常值的. 再设 $A,B$ 是两个连通度量空间, $X,Y$ 分别是 $A,B$ 的真子集. 证明 $C=\left(A\times{B}\right)\setminus\left(X\times{Y}\right)$ 是 $A\times{B}$ 的连通子集.
+连通性与连续函数. 证明:
+
+(1) $X$ 是**定义 4.18 (连通空间)** 当且仅当一切连续映射 $f:X\to\left\{0,1\right\}$ (目标装备离散拓扑) 都是常值的;
+
+(2) 再设 $A,B$ 是两个连通度量空间, $X,Y$ 分别是 $A,B$ 的真子集, $C=\left(A\times{B}\right)\setminus\left(X\times{Y}\right)$ 是 $A\times{B}$ 的连通子集.
 
 题集 §4.5 C3.
 
 ### 解答 5.2
 
-($\Rightarrow$) 设 $X$ 是**定义 4.18 (连通空间)**, $f:X\to\left\{0,1\right\}$ 连续. 由**定理 4.2 (连续像连通)**, $f\left(X\right)$ 连通; 离散两点集 $\left\{0,1\right\}$ 的连通子集只有单点, 故 $f\left(X\right)$ 是单点集, 即 $f$ 常值.
+(1) ($\Rightarrow$) 设 $X$ 是**定义 4.18 (连通空间)**, $f:X\to\left\{0,1\right\}$ 连续. 由**定理 4.2 (连续像连通)**, $f\left(X\right)$ 连通; 离散两点集 $\left\{0,1\right\}$ 的连通子集只有单点, 故 $f\left(X\right)$ 是单点集, 即 $f$ 常值.
 
-($\Leftarrow$) 若 $X$ 不连通, 则 $X=U\cup{V}$, $U,V$ 非空不相交开集. 定义 $f$ 在 $U$ 上取 $0$, 在 $V$ 上取 $1$; 因 $U,V$ 既开又闭, 由**定义 3.22 (连续映射)** $f$ 连续, 但 $f$ 非常值. 矛盾.
+($\Leftarrow$) 若 $X$ 不连通, 则 $X=U\cup{V}$, $U,V$ 非空不相交开集. 定义 $f$ 在 $U$ 上取 $0$, 在 $V$ 上取 $1$; 因 $U,V$ 既开又闭, 由**定义 3.22 (连续映射)** $f$ 连续, 但 $f$ 非常值. 矛盾. $\blacksquare$
 
-第二问: $C=\left(\left(A\setminus{X}\right)\times{B}\right)\cup\left(A\times\left(B\setminus{Y}\right)\right)$. 因 $X,Y$ 是真子集, 可取 $a_0\in{A}\setminus{X}$, $b_0\in{B}\setminus{Y}$. 固定 $b_0$, 集合 $A\times\left\{b_0\right\}$ 由**定理 4.7 (乘积连通)** 连通. 对每个 $a\in{A}\setminus{X}$, 集合 $\left\{a\right\}\times{B}$ 连通 (**定理 4.7 (乘积连通)**), 且与 $A\times\left\{b_0\right\}$ 交于 $\left(a,b_0\right)$. 由**定理 4.6 (扇形连通)**, $S=A\times\left\{b_0\right\}\cup\bigcup_{a\in{A}\setminus{X}}\left\{a\right\}\times{B}$ 连通. 再对每个 $b\in{B}\setminus{Y}$, 集合 $A\times\left\{b\right\}$ 连通, 且与 $S$ 交于 $\left(a_0,b\right)$. 再用**定理 4.6 (扇形连通)**, 加入所有 $A\times\left\{b\right\}$ 后仍连通, 所得正是 $C$. $\blacksquare$
+(2) $C=\left(\left(A\setminus{X}\right)\times{B}\right)\cup\left(A\times\left(B\setminus{Y}\right)\right)$. 因 $X,Y$ 是真子集, 可取 $a_0\in{A}\setminus{X}$, $b_0\in{B}\setminus{Y}$. 固定 $b_0$, 集合 $A\times\left\{b_0\right\}$ 由**定理 4.7 (乘积连通)** 连通. 对每个 $a\in{A}\setminus{X}$, 集合 $\left\{a\right\}\times{B}$ 连通 (**定理 4.7 (乘积连通)**), 且与 $A\times\left\{b_0\right\}$ 交于 $\left(a,b_0\right)$. 由**定理 4.6 (扇形连通)**, $S=A\times\left\{b_0\right\}\cup\bigcup_{a\in{A}\setminus{X}}\left\{a\right\}\times{B}$ 连通. 再对每个 $b\in{B}\setminus{Y}$, 集合 $A\times\left\{b\right\}$ 连通, 且与 $S$ 交于 $\left(a_0,b\right)$. 再用**定理 4.6 (扇形连通)**, 加入所有 $A\times\left\{b\right\}$ 后仍连通, 所得正是 $C$. $\blacksquare$
 
 ## 5.3 (边界连通蕴含闭集连通 (附闭性不可少的反例))
 
-连通性与边界. 设 $E$ 是连通度量空间, $F$ 是 $E$ 的闭集. 证明: 若 $F$ 的边界 $\partial{F}$ 连通, 则 $F$ 连通. 再举例说明 $F$ 不假设闭时结论失效.
+连通性与边界. 设 $E$ 是连通度量空间, $F$ 是 $E$ 的闭集. 证明:
+
+(1) 若 $F$ 的边界 $\partial{F}$ 连通, 则 $F$ 连通;
+
+(2) 再举例说明 $F$ 不假设闭时结论失效.
 
 题集 §4.5 C4; 题集 §5.1 C18 同题.
 
 ### 解答 5.3
 
-反设 $F$ 不连通. 则 $F$ 有非空分离 $F=A\cup{B}$, $A,B$ 非空不相交, 且在 $F$ 中既开又闭. 因 $F$ 在 $E$ 中闭, 由**定义 3.21 (闭集)**, $A,B$ 在 $E$ 中也闭. 由**定义 3.20 (边界)**, $\partial{F}=F\cap\overline{E\setminus{F}}$. 断言
+(1) 反设 $F$ 不连通. 则 $F$ 有非空分离 $F=A\cup{B}$, $A,B$ 非空不相交, 且在 $F$ 中既开又闭. 因 $F$ 在 $E$ 中闭, 由**定义 3.21 (闭集)**, $A,B$ 在 $E$ 中也闭. 由**定义 3.20 (边界)**, $\partial{F}=F\cap\overline{E\setminus{F}}$. 断言
 
 $$
 \partial{F}=\left(A\cap\overline{E\setminus{F}}\right)\cup\left(B\cap\overline{E\setminus{F}}\right),
 $$
 
-两边都非空. 若 $A\cap\overline{E\setminus{F}}=\emptyset$, 则 $A\subset\operatorname{int}\left(F\right)$; 又 $A$ 在 $F$ 中开, 即 $A=F\cap{O}$ ($O$ 开于 $E$), 于是 $A=O\cap\operatorname{int}\left(F\right)$ 在 $E$ 中开. $A$ 在 $E$ 中既开又闭, 由**定义 4.19 (既开又闭集)**, $E$ 连通推出 $A=\emptyset$ 或 $E$, 与 $A$ 是 $F$ 的非空真子集矛盾. 故 $A\cap\overline{E\setminus{F}}\neq\emptyset$, 同理 $B\cap\overline{E\setminus{F}}\neq\emptyset$. 这两个非空不交闭集分离了 $\partial{F}$, 与 $\partial{F}$ 连通矛盾. 故 $F$ 连通.
+两边都非空. 若 $A\cap\overline{E\setminus{F}}=\emptyset$, 则 $A\subset\operatorname{int}\left(F\right)$; 又 $A$ 在 $F$ 中开, 即 $A=F\cap{O}$ ($O$ 开于 $E$), 于是 $A=O\cap\operatorname{int}\left(F\right)$ 在 $E$ 中开. $A$ 在 $E$ 中既开又闭, 由**定义 4.19 (既开又闭集)**, $E$ 连通推出 $A=\emptyset$ 或 $E$, 与 $A$ 是 $F$ 的非空真子集矛盾. 故 $A\cap\overline{E\setminus{F}}\neq\emptyset$, 同理 $B\cap\overline{E\setminus{F}}\neq\emptyset$. 这两个非空不交闭集分离了 $\partial{F}$, 与 $\partial{F}$ 连通矛盾. 故 $F$ 连通. $\blacksquare$
 
-反例: 取 $E=\left[0,1\right]$, $F=\left[0,1/2\right)\cup\left(1/2,1\right]$. $F$ 不闭, 且不连通; 但 $\partial{F}=\left\{1/2\right\}$ 是单点, 连通. $\blacksquare$
+(2) 反例: 取 $E=\left[0,1\right]$, $F=\left[0,1/2\right)\cup\left(1/2,1\right]$. $F$ 不闭, 且不连通; 但 $\partial{F}=\left\{1/2\right\}$ 是单点, 连通. $\blacksquare$
 
 ## 5.4 ($\varepsilon$-链空间: 连通蕴含链性, 紧且链性蕴含连通)
 
-链空间. 称度量空间 $X$ 是 $\varepsilon$-链的, 若任意 $a,b\in{X}$ 可由有限点列 $x_0=a,\dots,x_n=b$ 连接使 $d\left(x_i,x_{i+1}\right)<\varepsilon$; 对一切 $\varepsilon>0$ 都成立称**定义 4.14 ($\varepsilon$-链空间)**. 证明: $X$ 连通则 $X$ 是 $\varepsilon$-链空间; $X$ 紧且 $\varepsilon$-链则 $X$ 连通; 举例说明 $\varepsilon$-链空间可以不连通.
+链空间. 称度量空间 $X$ 是 $\varepsilon$-链的, 若任意 $a,b\in{X}$ 可由有限点列 $x_0=a,\dots,x_n=b$ 连接使 $d\left(x_i,x_{i+1}\right)<\varepsilon$; 对一切 $\varepsilon>0$ 都成立称**定义 4.14 ($\varepsilon$-链空间)**. 证明:
+
+(1) $X$ 连通则 $X$ 是 $\varepsilon$-链空间;
+
+(2) $X$ 紧且 $\varepsilon$-链则 $X$ 连通;
+
+(3) 举例说明 $\varepsilon$-链空间可以不连通.
 
 题集 §4.5 C5.
 
 ### 解答 5.4
 
-连通 $\Rightarrow$ $\varepsilon$-链: 固定 $\varepsilon>0$, 定义 $a\sim{b}$ 为存在 $\varepsilon$-链. 等价类在**定义 6.36 (开球)** $B\left(x,\varepsilon\right)$ 下封闭, 故每个等价类开; 其余等价类之并也开. 由**定义 4.19 (既开又闭集)**, 连通空间只有一个等价类, 即 $X$ 是**定义 4.14 ($\varepsilon$-链空间)**.
+(1) 连通 $\Rightarrow$ $\varepsilon$-链: 固定 $\varepsilon>0$, 定义 $a\sim{b}$ 为存在 $\varepsilon$-链. 等价类在**定义 6.36 (开球)** $B\left(x,\varepsilon\right)$ 下封闭, 故每个等价类开; 其余等价类之并也开. 由**定义 4.19 (既开又闭集)**, 连通空间只有一个等价类, 即 $X$ 是**定义 4.14 ($\varepsilon$-链空间)**. $\blacksquare$
 
-紧且 $\varepsilon$-链 $\Rightarrow$ 连通: 反设 $X$ 不连通, 则 $X=A\cup{B}$ 为非空不交闭集分离. 因 $X$ 紧, $A,B$ 是闭子集, 由**定理 5.4 (闭子集紧)** 它们紧. 距离 $\delta=d\left(A,B\right)>0$: 取 $a_n\in{A}$, $b_n\in{B}$ 使 $d\left(a_n,b_n\right)\to\delta$, 由**定理 6.1 (紧 $=$ 序列紧)** 抽子列 $a_{n_j}\to{a}\in{A}$, $b_{n_j}\to{b}\in{B}$, 若 $\delta=0$ 则 $d\left(a,b\right)=0$, 即 $a=b$, 与 $A\cap{B}=\emptyset$ 矛盾, 故 $\delta>0$. 取 $\varepsilon<\delta$, 则 $\varepsilon$-链不可能从 $A$ 跨到 $B$, 与 $\varepsilon$-链矛盾.
+(2) 紧且 $\varepsilon$-链 $\Rightarrow$ 连通: 反设 $X$ 不连通, 则 $X=A\cup{B}$ 为非空不交闭集分离. 因 $X$ 紧, $A,B$ 是闭子集, 由**定理 5.4 (闭子集紧)** 它们紧. 距离 $\delta=d\left(A,B\right)>0$: 取 $a_n\in{A}$, $b_n\in{B}$ 使 $d\left(a_n,b_n\right)\to\delta$, 由**定理 6.1 (紧 $=$ 序列紧)** 抽子列 $a_{n_j}\to{a}\in{A}$, $b_{n_j}\to{b}\in{B}$, 若 $\delta=0$ 则 $d\left(a,b\right)=0$, 即 $a=b$, 与 $A\cap{B}=\emptyset$ 矛盾, 故 $\delta>0$. 取 $\varepsilon<\delta$, 则 $\varepsilon$-链不可能从 $A$ 跨到 $B$, 与 $\varepsilon$-链矛盾. $\blacksquare$
 
-$\varepsilon$-链但不连通的例子: 有理数集 $\mathbb{Q}$ 装备通常度量. 对任意 $\varepsilon>0$, 任意两个有理数之间可插入间距小于 $\varepsilon$ 的有理点列, 故 $\mathbb{Q}$ 是 $\varepsilon$-链的; 但 $\mathbb{Q}$ 完全不连通. $\blacksquare$
+(3) $\varepsilon$-链但不连通的例子: 有理数集 $\mathbb{Q}$ 装备通常度量. 对任意 $\varepsilon>0$, 任意两个有理数之间可插入间距小于 $\varepsilon$ 的有理点列, 故 $\mathbb{Q}$ 是 $\varepsilon$-链的; 但 $\mathbb{Q}$ 完全不连通. $\blacksquare$
 
 ## 5.5 (自映射皆有不动点蕴含连通, 而紧连通不足)
 
-不动点与连通性. 设 $X$ 是度量空间, 假设一切连续映射 $f:X\to{X}$ 都有不动点. 证明 $X$ 连通. 再问: 若 $X$ 紧且连通, 是否一切连续映射 $f:X\to{X}$ 都有不动点?
+不动点与连通性. 设 $X$ 是度量空间, 假设一切连续映射 $f:X\to{X}$ 都有不动点. 证明:
+
+(1) $X$ 连通;
+
+(2) 再问: 若 $X$ 紧且连通, 是否一切连续映射 $f:X\to{X}$ 都有不动点?
 
 题集 §4.5 C6.
 
 ### 解答 5.5
 
-反设 $X$ 不连通, 则 $X=A\cup{B}$, $A,B$ 非空不相交且由**定义 4.19 (既开又闭集)** 既开又闭. 取 $a\in{A}$, $b\in{B}$, 定义 $f$: 在 $A$ 上取常值 $b$, 在 $B$ 上取常值 $a$. 因 $A,B$ 既开又闭, 由**定义 3.22 (连续映射)** $f$ 连续; 但 $f\left(A\right)\subset{B}$, $f\left(B\right)\subset{A}$, 而 $A\cap{B}=\emptyset$, 故 $f$ 无不动点. 矛盾. 故 $X$ 连通.
+(1) 反设 $X$ 不连通, 则 $X=A\cup{B}$, $A,B$ 非空不相交且由**定义 4.19 (既开又闭集)** 既开又闭. 取 $a\in{A}$, $b\in{B}$, 定义 $f$: 在 $A$ 上取常值 $b$, 在 $B$ 上取常值 $a$. 因 $A,B$ 既开又闭, 由**定义 3.22 (连续映射)** $f$ 连续; 但 $f\left(A\right)\subset{B}$, $f\left(B\right)\subset{A}$, 而 $A\cap{B}=\emptyset$, 故 $f$ 无不动点. 矛盾. 故 $X$ 连通. $\blacksquare$
 
-不一定. 紧且连通不足以保证不动点: 取圆周 $X=S^1$, 旋转 $90^\circ$ 的映射 $f\left(e^{i\theta}\right)=e^{i\left(\theta+\pi/2\right)}$. $S^1$ 紧且连通, $f$ 连续, 但 $f$ 无不动点. $\blacksquare$
+(2) 不一定. 紧且连通不足以保证不动点: 取圆周 $X=S^1$, 旋转 $90^\circ$ 的映射 $f\left(e^{i\theta}\right)=e^{i\left(\theta+\pi/2\right)}$. $S^1$ 紧且连通, $f$ 连续, 但 $f$ 无不动点. $\blacksquare$
 
 > 紧与连通只能保证空间是连在一起的, 而不动点与空间的自同胚相关, 这是两件事.
 
@@ -238,7 +256,7 @@ $$
 g\left(\frac12\right)=f\left(\frac12\right)-f\left(1\right)=f\left(\frac12\right)-f\left(0\right)=-g\left(0\right),
 $$
 
-故 $g\left(0\right)$ 与 $g\left(\frac12\right)$ 异号. 由**定理 24.3 (介值定理)**, 存在 $x\in\left[0,\frac12\right]$ 使 $g\left(x\right)=0$, 即 $f\left(x\right)=f\left(x+\frac12\right)$.
+故 $g\left(0\right)$ 与 $g\left(\frac12\right)$ 异号. 由**定理 24.3 (介值定理)**, 存在 $x\in\left[0,\frac12\right]$ 使 $g\left(x\right)=0$, 即 $f\left(x\right)=f\left(x+\frac12\right)$. $\blacksquare$
 
 (2) 令 $g\left(x\right)=f\left(x\right)-f\left(x+\frac1n\right)$, 定义域 $\left[0,1-\frac1n\right]$. 累加得
 
@@ -246,7 +264,7 @@ $$
 \sum_{j=0}^{n-1}g\left(\frac{j}{n}\right)=\sum_{j=0}^{n-1}\left(f\left(\frac{j}{n}\right)-f\left(\frac{j+1}{n}\right)\right)=f\left(0\right)-f\left(1\right)=0.
 $$
 
-若 $g$ 在 $\left[0,1-\frac1n\right]$ 上恒不为 $0$, 因该区间连通 (由**定理 4.1 (区间连通)**), 连续函数 $g$ 的像由**定理 4.2 (连续像连通)** 是 $\mathbb{R}$ 中不含 $0$ 的连通集, 故必恒正或恒负, 从而各 $g\left(\frac{j}{n}\right)$ 同号, 其和不为 $0$, 矛盾. 故存在 $x$ 使 $g\left(x\right)=0$, 即 $f\left(x\right)=f\left(x+\frac1n\right)$.
+若 $g$ 在 $\left[0,1-\frac1n\right]$ 上恒不为 $0$, 因该区间连通 (由**定理 4.1 (区间连通)**), 连续函数 $g$ 的像由**定理 4.2 (连续像连通)** 是 $\mathbb{R}$ 中不含 $0$ 的连通集, 故必恒正或恒负, 从而各 $g\left(\frac{j}{n}\right)$ 同号, 其和不为 $0$, 矛盾. 故存在 $x$ 使 $g\left(x\right)=0$, 即 $f\left(x\right)=f\left(x+\frac1n\right)$. $\blacksquare$
 
 (3) 取 $f\left(x\right)=x$. 它连续, 且对任意 $x\in\left[0,\frac35\right]$, $f\left(x+\frac25\right)-f\left(x\right)=\frac25\neq0$, 故 $f\left(x\right)\neq{f}\left(x+\frac25\right)$. 此例即满足要求. $\blacksquare$
 
@@ -270,15 +288,15 @@ $$
 
 ### 解答 5.7
 
-(1) 完备度量空间中可数个稠密开集之交仍稠密; 等价地, 可数个无处稠密闭集之并不含非空开集. 这正是**定理 6.13 (贝尔纲定理)** 的陈述.
+(1) 完备度量空间中可数个稠密开集之交仍稠密; 等价地, 可数个无处稠密闭集之并不含非空开集. 这正是**定理 6.13 (贝尔纲定理)** 的陈述. $\blacksquare$
 
-(2) 记 $S^2_+=\left\{z\ge0\right\}\cap{S}^2$, $S^2_-=\left\{z\le0\right\}\cap{S}^2$, $D=\left\{\left(x,y\right):x^2+y^2\le1\right\}$. 投影 $\left(x,y,z\right)\mapsto\left(x,y\right)$ 在 $S^2_+$ 上是到 $D$ 的双射, 其逆为 $\left(x,y\right)\mapsto\left(x,y,\sqrt{1-x^2-y^2}\right)$, 由**定义 3.22 (连续映射)** 两者都连续 (根号在 $D$ 上连续), 故 $S^2_+$ 同胚于 $D$. 而 $D$ 是 $\mathbb{R}^2$ 中的凸集, 由**定义 4.18 (连通空间)** 与**定理 4.1 (区间连通)** 的一般形式, 凸集连通: 任意两点可由线段连接, 线段是闭区间的连续像. 故 $S^2_+$ 连通; 同理 $S^2_-$ 连通. 二者之交 $S^2_+\cap{S}^2_-=\left\{z=0\right\}\cap{S}^2$ 是赤道, 非空. 两个有公共点的连通集之并连通, 故 $S^2$ 连通.
+(2) 记 $S^2_+=\left\{z\ge0\right\}\cap{S}^2$, $S^2_-=\left\{z\le0\right\}\cap{S}^2$, $D=\left\{\left(x,y\right):x^2+y^2\le1\right\}$. 投影 $\left(x,y,z\right)\mapsto\left(x,y\right)$ 在 $S^2_+$ 上是到 $D$ 的双射, 其逆为 $\left(x,y\right)\mapsto\left(x,y,\sqrt{1-x^2-y^2}\right)$, 由**定义 3.22 (连续映射)** 两者都连续 (根号在 $D$ 上连续), 故 $S^2_+$ 同胚于 $D$. 而 $D$ 是 $\mathbb{R}^2$ 中的凸集, 由**定义 4.18 (连通空间)** 与**定理 4.1 (区间连通)** 的一般形式, 凸集连通: 任意两点可由线段连接, 线段是闭区间的连续像. 故 $S^2_+$ 连通; 同理 $S^2_-$ 连通. 二者之交 $S^2_+\cap{S}^2_-=\left\{z=0\right\}\cap{S}^2$ 是赤道, 非空. 两个有公共点的连通集之并连通, 故 $S^2$ 连通. $\blacksquare$
 
-$H^2$ 上 $z^2=x^2+y^2+1\ge1$, 故 $\left|z\right|\ge1$. 令 $A=H^2\cap\left\{z\ge1\right\}$, $B=H^2\cap\left\{z\le-1\right\}$. 二者非空, 不交, 并为 $H^2$, 且都是 $H^2$ 中相对闭集 (分别是闭集 $\left\{z\ge1\right\}$ 与 $\left\{z\le-1\right\}$ 与 $H^2$ 之交). 由**定义 4.18 (连通空间)**, $H^2$ 不连通, 它恰有两个连通分支 $A,B$.
+$H^2$ 上 $z^2=x^2+y^2+1\ge1$, 故 $\left|z\right|\ge1$. 令 $A=H^2\cap\left\{z\ge1\right\}$, $B=H^2\cap\left\{z\le-1\right\}$. 二者非空, 不交, 并为 $H^2$, 且都是 $H^2$ 中相对闭集 (分别是闭集 $\left\{z\ge1\right\}$ 与 $\left\{z\le-1\right\}$ 与 $H^2$ 之交). 由**定义 4.18 (连通空间)**, $H^2$ 不连通, 它恰有两个连通分支 $A,B$. $\blacksquare$
 
-(3) 设 $\left(x_n\right)$ 是 $F$ 中的柯西列. 它在 $X$ 中柯西, 由 $X$ 完备收敛到某 $x\in{X}$. 因 $F$ 闭, 由**定义 3.21 (闭集)** $x\in{F}$. 故 $F$ 中每个柯西列在 $F$ 中收敛, $\left(F,d\right)$ 完备.
+(3) 设 $\left(x_n\right)$ 是 $F$ 中的柯西列. 它在 $X$ 中柯西, 由 $X$ 完备收敛到某 $x\in{X}$. 因 $F$ 闭, 由**定义 3.21 (闭集)** $x\in{F}$. 故 $F$ 中每个柯西列在 $F$ 中收敛, $\left(F,d\right)$ 完备. $\blacksquare$
 
-开而不完备的例子: $X=\mathbb{R}$ 带通常度量, $O=\left(0,1\right)$. 列 $x_n=1/n$ 在 $O$ 中柯西, 若在 $O$ 中收敛到 $x\in\left(0,1\right)$, 则在 $\mathbb{R}$ 中也收敛到 $x$, 而它在 $\mathbb{R}$ 中收敛到 $0\notin{O}$, 矛盾. 故 $\left(O,d\right)$ 不完备.
+开而不完备的例子: $X=\mathbb{R}$ 带通常度量, $O=\left(0,1\right)$. 列 $x_n=1/n$ 在 $O$ 中柯西, 若在 $O$ 中收敛到 $x\in\left(0,1\right)$, 则在 $\mathbb{R}$ 中也收敛到 $x$, 而它在 $\mathbb{R}$ 中收敛到 $0\notin{O}$, 矛盾. 故 $\left(O,d\right)$ 不完备. $\blacksquare$
 
 (4) 由**定义 6.46 (点到集合的距离)**, 令 $\varphi\left(x\right)=1/d\left(x,X-O\right)$, 它在 $O$ 上连续且为正: 因 $X-O$ 闭, $d\left(x,X-O\right)>0$ 对 $x\in{O}$ 成立. 令 $d'\left(x,y\right)=d\left(x,y\right)+\left|\varphi\left(x\right)-\varphi\left(y\right)\right|$. 它是 $O$ 上的度量: 正定与对称显然, 三角不等式由 $d$ 与绝对值各自的三角不等式相加得到.
 
@@ -310,7 +328,7 @@ $X\times\mathbb{R}$ 完备 (两个完备空间之积完备), 由第 (3) 小题 $
 
 ### 解答 5.8
 
-(1) 由**定义 3.15 (拓扑基)**, 开集恰为若干 $S\left(a,b\right)$ 之并. 若 $U$ 开且 $x\in{U}$, 则 $x$ 含于某个并项 $S\left(a,b\right)\subset{U}$, 而 $x\in{S}\left(a,b\right)$ 等价于 $b\equiv{x}\pmod{a}$, 即 $S\left(a,b\right)=S\left(a,x\right)$. 故存在 $a\neq0$ 使 $S\left(a,x\right)\subset{U}$. 反过来, 若每点 $x\in{U}$ 都含某 $S\left(a,x\right)\subset{U}$, 则 $U=\bigcup_{x\in{U}}S\left(a_x,x\right)$ 是基元素之并, 故开.
+(1) 由**定义 3.15 (拓扑基)**, 开集恰为若干 $S\left(a,b\right)$ 之并. 若 $U$ 开且 $x\in{U}$, 则 $x$ 含于某个并项 $S\left(a,b\right)\subset{U}$, 而 $x\in{S}\left(a,b\right)$ 等价于 $b\equiv{x}\pmod{a}$, 即 $S\left(a,b\right)=S\left(a,x\right)$. 故存在 $a\neq0$ 使 $S\left(a,x\right)\subset{U}$. 反过来, 若每点 $x\in{U}$ 都含某 $S\left(a,x\right)\subset{U}$, 则 $U=\bigcup_{x\in{U}}S\left(a_x,x\right)$ 是基元素之并, 故开. $\blacksquare$
 
 (2) 先验证基条件. 这正是**定义 4.11 (弗斯滕伯格拓扑)** 的基. 两个基元素之交
 
@@ -318,9 +336,9 @@ $$
 S\left(a,b\right)\cap{S}\left(c,d\right)=\left\{x:x\equiv{b}\pmod{a},x\equiv{d}\pmod{c}\right\}.
 $$
 
-它非空当且仅当 $b\equiv{d}\pmod{\gcd\left(a,c\right)}$; 此时交本身是一个以 $\operatorname{lcm}\left(a,c\right)$ 为步长的等差数列 $S\left(\operatorname{lcm}\left(a,c\right),x_0\right)$. 故交含某基元素. 又 $S\left(1,0\right)=\mathbb{Z}$ 覆盖全空间. 由**定义 3.15 (拓扑基)**, 以此生成的开集族满足**定义 3.18 (拓扑空间)** 的全部公理: 任意并由生成方式保证, 有限交由基条件 (2) 保证, $\emptyset$ 与 $\mathbb{Z}$ 分别为空并与 $S\left(1,0\right)$.
+它非空当且仅当 $b\equiv{d}\pmod{\gcd\left(a,c\right)}$; 此时交本身是一个以 $\operatorname{lcm}\left(a,c\right)$ 为步长的等差数列 $S\left(\operatorname{lcm}\left(a,c\right),x_0\right)$. 故交含某基元素. 又 $S\left(1,0\right)=\mathbb{Z}$ 覆盖全空间. 由**定义 3.15 (拓扑基)**, 以此生成的开集族满足**定义 3.18 (拓扑空间)** 的全部公理: 任意并由生成方式保证, 有限交由基条件 (2) 保证, $\emptyset$ 与 $\mathbb{Z}$ 分别为空并与 $S\left(1,0\right)$. $\blacksquare$
 
-(3) 任一基元素 $S\left(a,x\right)=\left\{an+x:n\in\mathbb{Z}\right\}$ 是无限集. 非空开集由第 (1) 小题必含某无限集 $S\left(a,x\right)$, 故它本身无限. 因而非空有限集不能开. 特别地 $\left\{-1,1\right\}$ 非空有限, 故不开; 由**定义 3.21 (闭集)**, 其补集 $\mathbb{Z}-\left\{-1,1\right\}$ 不闭.
+(3) 任一基元素 $S\left(a,x\right)=\left\{an+x:n\in\mathbb{Z}\right\}$ 是无限集. 非空开集由第 (1) 小题必含某无限集 $S\left(a,x\right)$, 故它本身无限. 因而非空有限集不能开. 特别地 $\left\{-1,1\right\}$ 非空有限, 故不开; 由**定义 3.21 (闭集)**, 其补集 $\mathbb{Z}-\left\{-1,1\right\}$ 不闭. $\blacksquare$
 
 (4) $S\left(a,b\right)$ 是基元素, 故开. 其补集
 
@@ -328,13 +346,15 @@ $$
 \mathbb{Z}-S\left(a,b\right)=\bigcup_{r=1}^{a-1}S\left(a,b+r\right)
 $$
 
-是其余 $a-1$ 个模 $a$ 剩余类之并, 每个都是基元素, 故补集开. 由**定义 3.21 (闭集)**, $S\left(a,b\right)$ 闭. 故 $S\left(a,b\right)$ 既开又闭 (**定义 4.19 (既开又闭集)**).
+是其余 $a-1$ 个模 $a$ 剩余类之并, 每个都是基元素, 故补集开. 由**定义 3.21 (闭集)**, $S\left(a,b\right)$ 闭. 故 $S\left(a,b\right)$ 既开又闭 (**定义 4.19 (既开又闭集)**). $\blacksquare$
 
 (5) $S\left(p,0\right)=\left\{pn:n\in\mathbb{Z}\right\}$ 是 $p$ 的倍数全体. 整数 $n$ 被某素数整除当且仅当 $\left|n\right|\ge2$; $0$ 被一切素数整除; $\pm1$ 不被任何素数整除. 故
 
 $$
 \bigcup_{p\in{P}}S\left(p,0\right)=\mathbb{Z}-\left\{-1,1\right\}.
 $$
+
+$\blacksquare$
 
 (6) 反设素数只有有限个 $p_1,\dots,p_k$. 由第 (5) 小题,
 
@@ -366,11 +386,11 @@ $$
 S\left(a,x\right)=\left\{an+x:n\in\mathbb{N}\right\}\subset\left\{b+am:m\ge{n}_0\right\}\subset{S}\left(a,b\right).
 $$
 
-故每点 $x$ 的邻域都可由满足 $0\le{r}<{}a$ 的基元素生成, 基可限制到 $0\le{b}<{}a$ 且互素的偶对.
+故每点 $x$ 的邻域都可由满足 $0\le{r}<{}a$ 的基元素生成, 基可限制到 $0\le{b}<{}a$ 且互素的偶对. $\blacksquare$
 
-(2) 验证基条件. $S\left(a,b\right)\cap{S}\left(c,d\right)$ 非空当且仅当 $\gcd\left(a,c\right)\mid\left(b-d\right)$; 此时交为 $S\left(\operatorname{lcm}\left(a,c\right),x_0\right)$, 且 $\gcd\left(\operatorname{lcm}\left(a,c\right),x_0\right)=1$. 它仍是**定义 4.12 (戈洛姆拓扑)** 的基元素. 又 $S\left(1,1\right)=\mathbb{Z}_{>0}$ 覆盖全空间. 由**定义 3.15 (拓扑基)** 与**定义 3.18 (拓扑空间)**, 这给出 $\mathbb{Z}_{>0}$ 上的拓扑.
+(2) 验证基条件. $S\left(a,b\right)\cap{S}\left(c,d\right)$ 非空当且仅当 $\gcd\left(a,c\right)\mid\left(b-d\right)$; 此时交为 $S\left(\operatorname{lcm}\left(a,c\right),x_0\right)$, 且 $\gcd\left(\operatorname{lcm}\left(a,c\right),x_0\right)=1$. 它仍是**定义 4.12 (戈洛姆拓扑)** 的基元素. 又 $S\left(1,1\right)=\mathbb{Z}_{>0}$ 覆盖全空间. 由**定义 3.15 (拓扑基)** 与**定义 3.18 (拓扑空间)**, 这给出 $\mathbb{Z}_{>0}$ 上的拓扑. $\blacksquare$
 
-(3) 对基尔希的 $S\left(p,b\right)=\left\{pn+b:n\in\mathbb{N}\right\}$, $p$ 素数, $p\nmid{b}$. 作带余除法 $b=qp+r$, $0\le{r}<{}p$, 则 $p\nmid{r}$ (否则 $p\mid{b}$), 且 $S\left(p,b\right)\subset{S}\left(p,r\right)$. 同第 (1) 小题, 对 $x=pn_0+b\in{S}\left(p,b\right)$ 有 $p\nmid{x}$, 故 $S\left(p,x\right)\subset{S}\left(p,b\right)$. 基可限制到 $0\le{b}<{}p$ 且 $p\nmid{b}$ 的偶对.
+(3) 对基尔希的 $S\left(p,b\right)=\left\{pn+b:n\in\mathbb{N}\right\}$, $p$ 素数, $p\nmid{b}$. 作带余除法 $b=qp+r$, $0\le{r}<{}p$, 则 $p\nmid{r}$ (否则 $p\mid{b}$), 且 $S\left(p,b\right)\subset{S}\left(p,r\right)$. 同第 (1) 小题, 对 $x=pn_0+b\in{S}\left(p,b\right)$ 有 $p\nmid{x}$, 故 $S\left(p,x\right)\subset{S}\left(p,b\right)$. 基可限制到 $0\le{b}<{}p$ 且 $p\nmid{b}$ 的偶对. $\blacksquare$
 
 (4) 以 $\left\{S\left(p,b\right)\right\}$ 为子基, 其有限交
 
@@ -400,11 +420,11 @@ $$
 
 可度量化与同胚于 $\mathbb{Q}$: $\mathbb{Z}$ 可数, 故该拓扑有可数基; 由**定理 34.1 (乌雷松度量化定理)**, 有可数基的正则空间可度量化. 又该拓扑无孤立点: 每点 $x$ 的邻域 $S\left(a,x\right)$ 无限. 由**定理 4.16 (谢尔宾斯基同胚定理)**, 任意两个无孤立点的可数可度量化空间互相同胚, 故它与带通常子空间拓扑的 $\mathbb{Q}$ 同胚.
 
-不可完备度量化: 反证法. 若它可完备度量化, 则同胚于它的 $\mathbb{Q}$ 也可完备度量化. 则 $\mathbb{Q}=\left\{q_1,q_2,\dots\right\}$. 对每一个 $q_n\in\mathbb{Q}$, 定义 $U_n=\mathbb{Q}-\left\{q_n\right\}$. 由于 $\left\{q_n\right\}$ 闭, 故 $U_n$ 开, $\left\{U_n\right\}$ 是一族可数稠密开集. 而 $\bigcap_{n=1}^\infty{U}_n=\bigcap_{n=1}^\infty\left(\mathbb{Q}-\left\{q_n\right\}\right)=\mathbb{Q}-\bigcap_{n=1}^\infty\left\{q_n\right\}=\mathbb{Q}-\mathbb{Q}=\emptyset$ 是空集, 与**定理 6.13 (贝尔纲定理)** 矛盾. 故它不可完备度量化.
+不可完备度量化: 反证法. 若它可完备度量化, 则同胚于它的 $\mathbb{Q}$ 也可完备度量化. 则 $\mathbb{Q}=\left\{q_1,q_2,\dots\right\}$. 对每一个 $q_n\in\mathbb{Q}$, 定义 $U_n=\mathbb{Q}-\left\{q_n\right\}$. 由于 $\left\{q_n\right\}$ 闭, 故 $U_n$ 开, $\left\{U_n\right\}$ 是一族可数稠密开集. 而 $\bigcap_{n=1}^\infty{U}_n=\bigcap_{n=1}^\infty\left(\mathbb{Q}-\left\{q_n\right\}\right)=\mathbb{Q}-\bigcap_{n=1}^\infty\left\{q_n\right\}=\mathbb{Q}-\mathbb{Q}=\emptyset$ 是空集, 与**定理 6.13 (贝尔纲定理)** 矛盾. 故它不可完备度量化. $\blacksquare$
 
 (2) 豪斯多夫: 取 $x\neq{y}\in\mathbb{Z}_{>0}$. 选素数 $p$ 使 $p>\left|x-y\right|$ 且 $p\nmid{x}$, $p\nmid{y}$ (这样的素数存在, 因素数无穷). 则 $S\left(p,x\right)$ 与 $S\left(p,y\right)$ 分别是**定义 4.12 (戈洛姆拓扑)** 与**定义 4.13 (基尔希拓扑)** 的基元素; 若相交则 $p\mid\left(x-y\right)$, 与 $p>\left|x-y\right|$ 矛盾. 由**定义 3.10 (豪斯多夫空间)**, 两拓扑均豪斯多夫.
 
-不正则: 以戈洛姆拓扑为例. 取闭集 $E$ 为全体偶正整数 (奇数集开: 对奇 $x$, $S\left(2,x\right)=\left\{x+2n\right\}$ 全奇且 $\gcd\left(2,x\right)=1$), 再取点 $1$. 点 $1$ 的任一邻域形如 $S\left(a,1\right)=\left\{1+an:n\in\mathbb{N}\right\}$, 而含偶数 $2$ 的任一开集必含某 $S\left(b,2\right)=\left\{2+bn:n\in\mathbb{N}\right\}$ ($\gcd\left(b,2\right)=1$, 即 $b$ 奇). 由同余式相容, $S\left(a,1\right)\cap{S}\left(b,2\right)$ 非空, 故无法用不相交开集分离 $1$ 与闭集 $E$. 由**定义 7.7 (正则空间)**, 戈洛姆拓扑不正则. 基尔希拓扑同理不正则.
+不正则: 以戈洛姆拓扑为例. 取闭集 $E$ 为全体偶正整数 (奇数集开: 对奇 $x$, $S\left(2,x\right)=\left\{x+2n\right\}$ 全奇且 $\gcd\left(2,x\right)=1$), 再取点 $1$. 点 $1$ 的任一邻域形如 $S\left(a,1\right)=\left\{1+an:n\in\mathbb{N}\right\}$, 而含偶数 $2$ 的任一开集必含某 $S\left(b,2\right)=\left\{2+bn:n\in\mathbb{N}\right\}$ ($\gcd\left(b,2\right)=1$, 即 $b$ 奇). 由同余式相容, $S\left(a,1\right)\cap{S}\left(b,2\right)$ 非空, 故无法用不相交开集分离 $1$ 与闭集 $E$. 由**定义 7.7 (正则空间)**, 戈洛姆拓扑不正则. 基尔希拓扑同理不正则. $\blacksquare$
 
 (3) 弗斯滕伯格完全不连通: 取 $x\neq{y}$. 选 $a$ 使 $y\notin{S}\left(a,x\right)$. 由习题 5.8 第 (4) 小题 $S\left(a,x\right)$ 既开又闭且含 $x$ 不含 $y$, 故任何同时含 $x,y$ 的子集都被这个非平凡既开又闭集切断, 不能连通. 由**定义 4.20 (完全不连通)**, 弗斯滕伯格拓扑完全不连通.
 

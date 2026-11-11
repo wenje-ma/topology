@@ -68,9 +68,9 @@
 
 (1) 设 $f:\mathbb{R}_{\ge0}\to\mathbb{R}$ 连续, 且对每个 $x>0$ 序列 $\left\{f\left(nx\right)\right\}_{n\ge1}$ 收敛到 $0$. 证明 $\lim_{x\to\infty}f\left(x\right)=0$. 此结论称为克罗夫特引理;
 
-(2) (2024 卷 A 题四) 取定 $\varepsilon>0$, 令 $F_n=\left\{x\ge0:\forall p\in\mathbb{N},p\ge{n},\left|f\left(px\right)\right|\le\varepsilon\right\}$. 证明每个 $F_n$ 闭, $\bigcup_nF_n\supset\left(0,\infty\right)$, 再用贝尔纲定理由此推出 (1);
+(2) (2024 卷 A 题四) 取定 $\varepsilon>0$, 令 $F_n=\left\{x\ge0:\forall{p}\in\mathbb{N},p\ge{n},\left|f\left(px\right)\right|\le\varepsilon\right\}$. 证明每个 $F_n$ 闭, $\bigcup_nF_n\supset\left(0,\infty\right)$, 再用贝尔纲定理由此推出 (1);
 
-(3) (2024 卷 B 题四) 设 $\Omega\subset\left(0,\infty\right)$ 非空开且无界, 令 $\Omega_n=\left\{x\in\mathbb{R}:\exists p\ge{n},px\in\Omega\right\}$. 证明每个 $\Omega_n$ 是稠密开集, 再用贝尔纲定理由此推出 (1).
+(3) (2024 卷 B 题四) 设 $\Omega\subset\left(0,\infty\right)$ 非空开且无界, 令 $\Omega_n=\left\{x\in\mathbb{R}:\exists{p}\ge{n},px\in\Omega\right\}$. 证明每个 $\Omega_n$ 是稠密开集, 再用贝尔纲定理由此推出 (1).
 
 题集 $\S6$ C8; 2024 卷 A 题四; 2024 卷 B 题四.
 
@@ -78,7 +78,7 @@
 
 (1) 反设结论不真. 则存在 $\varepsilon>0$ 与趋于无穷的 $x_k$ 使 $\left|f\left(x_k\right)\right|>\varepsilon$.
 
-对 $n\ge1$ 令 $F_n=\left\{x\ge0:\forall p\ge{n},\left|f\left(px\right)\right|\le\frac{\varepsilon}{2}\right\}$. 它是闭集 (**定义 3.21 (闭集)**): 每个 $\left\{x:\left|f\left(px\right)\right|\le\frac{\varepsilon}{2}\right\}$ 是连续函数 $\left|f\left(p\cdot\right)\right|$ 的闭水平集.
+对 $n\ge1$ 令 $F_n=\left\{x\ge0:\forall{p}\ge{n},\left|f\left(px\right)\right|\le\frac{\varepsilon}{2}\right\}$. 它是闭集 (**定义 3.21 (闭集)**): 每个 $\left\{x:\left|f\left(px\right)\right|\le\frac{\varepsilon}{2}\right\}$ 是连续函数 $\left|f\left(p\cdot\right)\right|$ 的闭水平集.
 
 $F_n$ 覆盖 $\left(0,\infty\right)$: 固定 $x>0$, 由假设 $f\left(px\right)\to0$, 故存在 $n$ 使 $p\ge{n}$ 时 $\left|f\left(px\right)\right|\le\frac{\varepsilon}{2}$, 即 $x\in{F}_n$.
 
@@ -87,18 +87,18 @@ $\left(0,\infty\right)$ 是完备空间 $\mathbb{R}$ 的开子集, 故它自身�
 取 $y\in\left(u,v\right)$ 固定. 对 $k$ 令 $p_k=\left\lfloor\frac{x_k}{y}\right\rfloor$. 因 $x_k\to\infty$, 有 $p_k\to\infty$, 故 $p_k\ge{N}$ 对大的 $k$ 成立; 又
 
 $$
-\frac{x_k}{p_k}=\frac{x_k}{\left\lfloor x_k/y\right\rfloor}\longrightarrow{y},
+\frac{x_k}{p_k}=\frac{x_k}{\left\lfloor{x}_k/y\right\rfloor}\longrightarrow{y},
 $$
 
-故 $\frac{x_k}{p_k}\in\left(u,v\right)\subset{F}_N$ 对大的 $k$ 成立. 于是 $x_k=p_k\cdot\frac{x_k}{p_k}$ 且 $p_k\ge{N}$, 由 $F_N$ 的定义 $\left|f\left(x_k\right)\right|\le\frac{\varepsilon}{2}$, 与 $\left|f\left(x_k\right)\right|>\varepsilon$ 矛盾.
+故 $\frac{x_k}{p_k}\in\left(u,v\right)\subset{F}_N$ 对大的 $k$ 成立. 于是 $x_k=p_k\cdot\frac{x_k}{p_k}$ 且 $p_k\ge{N}$, 由 $F_N$ 的定义 $\left|f\left(x_k\right)\right|\le\frac{\varepsilon}{2}$, 与 $\left|f\left(x_k\right)\right|>\varepsilon$ 矛盾. $\blacksquare$
 
-(2) 闭性同 (1). 覆盖: 固定 $x>0$, $f\left(px\right)\to0$ 故存在 $n$ 使 $p\ge{n}$ 时 $\left|f\left(px\right)\right|\le\varepsilon$, 即 $x\in{F}_n$; 于是 $\bigcup_nF_n\supset\left(0,\infty\right)$. 收尾与 (1) 完全一样, 只把 $\frac{\varepsilon}{2}$ 换成 $\varepsilon$. 这两步正是卷 A 的分法.
+(2) 闭性同 (1). 覆盖: 固定 $x>0$, $f\left(px\right)\to0$ 故存在 $n$ 使 $p\ge{n}$ 时 $\left|f\left(px\right)\right|\le\varepsilon$, 即 $x\in{F}_n$; 于是 $\bigcup_nF_n\supset\left(0,\infty\right)$. 收尾与 (1) 完全一样, 只把 $\frac{\varepsilon}{2}$ 换成 $\varepsilon$. 这两步正是卷 A 的分法. $\blacksquare$
 
-(3) $\Omega_n$ 开: $\Omega_n=\bigcup_{p\ge{n}}\frac{1}{p}\Omega$, 而 $\frac{1}{p}\Omega$ 是开集在连续映射 $x\mapsto\frac{x}{p}$ 下的像, 开. 稠密: 取非退化区间 $J\subset\mathbb{R}$, 要证 $J\cap\Omega_n\neq\emptyset$. 因 $\Omega$ 无界开, 取 $q\in\Omega$ 使 $q>n\cdot\max\left\{\left|t\right|:t\in{J}\right\}$; 则 $\frac{q}{p}\in{J}$ 对某个 $p\ge{n}$ 成立 (因 $\frac{q}{p}$ 随 $p$ 从 $\frac{q}{n}$ 递减到 $0$, 而 $J$ 含区间内所有足够小的正数), 且 $p\cdot\frac{q}{p}=q\in\Omega$, 故 $\frac{q}{p}\in\Omega_n$.
+(3) $\Omega_n$ 开: $\Omega_n=\bigcup_{p\ge{n}}\frac{1}{p}\Omega$, 而 $\frac{1}{p}\Omega$ 是开集在连续映射 $x\mapsto\frac{x}{p}$ 下的像, 开. 稠密: 取非退化区间 $J\subset\mathbb{R}$, 要证 $J\cap\Omega_n\neq\emptyset$. 因 $\Omega$ 无界开, 取 $q\in\Omega$ 使 $q>{}n\cdot\max\left\{\left|t\right|:t\in{J}\right\}$; 则 $\frac{q}{p}\in{J}$ 对某个 $p\ge{n}$ 成立 (因 $\frac{q}{p}$ 随 $p$ 从 $\frac{q}{n}$ 递减到 $0$, 而 $J$ 含区间内所有足够小的正数), 且 $p\cdot\frac{q}{p}=q\in\Omega$, 故 $\frac{q}{p}\in\Omega_n$.
 
-由**定理 6.13 (贝尔纲定理)**, 可数个稠密开集之交稠密, 取 $x_0\in\bigcap_n\Omega_n$ 且 $x_0>0$. 则对每个 $n$ 有 $p\ge{n}$ 使 $p x_0\in\Omega$; 若 $\lim_{x\to\infty}f\left(x\right)\neq0$, 取 $\varepsilon$ 与 $y_m\to\infty$ 使 $\left|f\left(y_m\right)\right|>\varepsilon$, 则那些 $p x_0$ 任意大而 $f\left(px_0\right)\to0$, 与 $\Omega$ 内 $\left|f\right|$ 一致地大于 $\varepsilon$ 的取法矛盾. 严格地说: 由 $\Omega$ 与 $\varepsilon$ 的取法 (把 $\Omega$ 取成 $\left|f\right|>\varepsilon$ 的开集, 它无界), Baire 给出的 $x_0$ 使无穷多个 $p x_0$ 落在 $\Omega$, 于是沿这列 $\left|f\left(px_0\right)\right|>\varepsilon$, 与 $f\left(px_0\right)\to0$ 矛盾. $\blacksquare$
+由**定理 6.13 (贝尔纲定理)**, 可数个稠密开集之交稠密, 取 $x_0\in\bigcap_n\Omega_n$ 且 $x_0>0$. 则对每个 $n$ 有 $p\ge{n}$ 使 $px_0\in\Omega$; 若 $\lim_{x\to\infty}f\left(x\right)\neq0$, 取 $\varepsilon$ 与 $y_m\to\infty$ 使 $\left|f\left(y_m\right)\right|>\varepsilon$, 则那些 $px_0$ 任意大而 $f\left(px_0\right)\to0$, 与 $\Omega$ 内 $\left|f\right|$ 一致地大于 $\varepsilon$ 的取法矛盾. 严格地说: 由 $\Omega$ 与 $\varepsilon$ 的取法 (把 $\Omega$ 取成 $\left|f\right|>\varepsilon$ 的开集, 它无界), Baire 给出的 $x_0$ 使无穷多个 $px_0$ 落在 $\Omega$, 于是沿这列 $\left|f\left(px_0\right)\right|>\varepsilon$, 与 $f\left(px_0\right)\to0$ 矛盾. $\blacksquare$
 
-> 三个版本是同一件事的三种包装: 卷 A 用闭集 $F_n$ 逼近, 卷 B 用稠密开集 $\Omega_n$ 逼近. 反设之后必须把"沿某个 $y$ 的所有整数倍"与"给定的坏列 $x_k$"接起来, 这一步靠的是 $\frac{x_k}{\left\lfloor x_k/y\right\rfloor}\to{y}$.
+> 三个版本是同一件事的三种包装: 卷 A 用闭集 $F_n$ 逼近, 卷 B 用稠密开集 $\Omega_n$ 逼近. 反设之后必须把"沿某个 $y$ 的所有整数倍"与"给定的坏列 $x_k$"接起来, 这一步靠的是 $\frac{x_k}{\left\lfloor{x}_k/y\right\rfloor}\to{y}$.
 
 ## 11.3 (对平移量的收敛在紧区间上一致)
 
@@ -108,7 +108,7 @@ $$
 
 ### 解答 11.3
 
-对 $x\ge0$ 令 $M\left(x\right)=\sup_{\lambda\in\left[a,b\right]}\left|f\left(x+\lambda\right)-f\left(x\right)\right|$. 它是有限值: 固定 $x$ 时 $\lambda\mapsto f\left(x+\lambda\right)-f\left(x\right)$ 在紧区间 $\left[a,b\right]$ 上连续, 故有界.
+对 $x\ge0$ 令 $M\left(x\right)=\sup_{\lambda\in\left[a,b\right]}\left|f\left(x+\lambda\right)-f\left(x\right)\right|$. 它是有限值: 固定 $x$ 时 $\lambda\mapsto{f}\left(x+\lambda\right)-f\left(x\right)$ 在紧区间 $\left[a,b\right]$ 上连续, 故有界.
 
 对 $\varepsilon>0$ 令 $A_\varepsilon=\left\{x\ge0:M\left(x\right)\le\varepsilon\right\}$. 它是闭集: $M$ 是连续函数族 $\left(x,\lambda\right)\mapsto\left|f\left(x+\lambda\right)-f\left(x\right)\right|$ 对紧参数 $\lambda$ 取上确界, 故 $M$ 下半连续, 而下半连续函数的 $\left\{M\le\varepsilon\right\}$ 是闭集.
 
@@ -250,7 +250,7 @@ $$
 x=\frac{a-f\left(x\right)}{\lambda}=g_a\left(x\right).
 $$
 
-由习题 11.6, $g_a$ 是**定义 6.19 (压缩映射)**, 由**定理 6.16 (巴拿赫不动点定理)**, 该方程有唯一解 $J\left(a\right)$.
+由习题 11.6, $g_a$ 是**定义 6.19 (压缩映射)**, 由**定理 6.16 (巴拿赫不动点定理)**, 该方程有唯一解 $J\left(a\right)$. $\blacksquare$
 
 由习题 11.7, $\left\|J\left(a\right)-J\left(b\right)\right\|\le\frac{1}{\left|\lambda\right|-K}\left\|a-b\right\|$, 即 $J$ 是利普希茨映射. 由利普希茨映射连续, $J$ 连续. $\blacksquare$
 
