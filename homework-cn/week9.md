@@ -196,7 +196,7 @@ $$
 
 (2) (里茨定理) 设 $E$ 是实无穷维赋范线性空间. 证明 $E$ 的闭单位球不能被有限个半径 $1$ 的开球覆盖.
 
-(3) (蒂茨-乌雷松扩张定理) 设 $\left(E,d\right)$ 是度量空间, $A\subset{E}$ 闭, $f:A\to\mathbb{R}$ 连续有界. 证明存在连续 $g:E\to\mathbb{R}$, $g\big|_A=f$, 且
+(3) (蒂茨-乌雷松扩张定理) 设 $\left(E,d\right)$ 是度量空间, $A\subset{E}$ 闭, $f:A\to\mathbb{R}$ 连续有界. 证明存在连续 $g:E\to\mathbb{R}$, $\left.g\right|_A=f$, 且
 
 $$
 \sup_{x\in{E}}g\left(x\right)=\sup_{x\in{A}}f\left(x\right),\quad

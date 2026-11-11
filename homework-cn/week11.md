@@ -84,10 +84,10 @@ $F_n$ 覆盖 $\left(0,\infty\right)$: 固定 $x>0$, 由假设 $f\left(px\right)\
 
 $\left(0,\infty\right)$ 是完备空间 $\mathbb{R}$ 的开子集, 故它自身是贝尔空间. 由**定理 6.13 (贝尔纲定理)**, 闭集的可数并不整个覆盖它而不留内点, 故某个 $F_N$ 含非退化区间 $\left(u,v\right)\subset\left(0,\infty\right)$.
 
-取 $y\in\left(u,v\right)$ 固定. 对 $k$ 令 $p_k=\left\lfloor\frac{x_k}{y}\right\rfloor$. 因 $x_k\to\infty$, 有 $p_k\to\infty$, 故 $p_k\ge{N}$ 对大的 $k$ 成立; 又
+取 $y\in\left(u,v\right)$ 固定. 对 $k$ 令 $p_k=\lfloor\frac{x_k}{y}\rfloor$. 因 $x_k\to\infty$, 有 $p_k\to\infty$, 故 $p_k\ge{N}$ 对大的 $k$ 成立; 又
 
 $$
-\frac{x_k}{p_k}=\frac{x_k}{\left\lfloor{x}_k/y\right\rfloor}\longrightarrow{y},
+\frac{x_k}{p_k}=\frac{x_k}{\lfloor{x}_k/y\rfloor}\longrightarrow{y},
 $$
 
 故 $\frac{x_k}{p_k}\in\left(u,v\right)\subset{F}_N$ 对大的 $k$ 成立. 于是 $x_k=p_k\cdot\frac{x_k}{p_k}$ 且 $p_k\ge{N}$, 由 $F_N$ 的定义 $\left|f\left(x_k\right)\right|\le\frac{\varepsilon}{2}$, 与 $\left|f\left(x_k\right)\right|>\varepsilon$ 矛盾. $\blacksquare$
@@ -98,7 +98,7 @@ $$
 
 由**定理 6.13 (贝尔纲定理)**, 可数个稠密开集之交稠密, 取 $x_0\in\bigcap_n\Omega_n$ 且 $x_0>0$. 则对每个 $n$ 有 $p\ge{n}$ 使 $px_0\in\Omega$; 若 $\lim_{x\to\infty}f\left(x\right)\neq0$, 取 $\varepsilon$ 与 $y_m\to\infty$ 使 $\left|f\left(y_m\right)\right|>\varepsilon$, 则那些 $px_0$ 任意大而 $f\left(px_0\right)\to0$, 与 $\Omega$ 内 $\left|f\right|$ 一致地大于 $\varepsilon$ 的取法矛盾. 严格地说: 由 $\Omega$ 与 $\varepsilon$ 的取法 (把 $\Omega$ 取成 $\left|f\right|>\varepsilon$ 的开集, 它无界), Baire 给出的 $x_0$ 使无穷多个 $px_0$ 落在 $\Omega$, 于是沿这列 $\left|f\left(px_0\right)\right|>\varepsilon$, 与 $f\left(px_0\right)\to0$ 矛盾. $\blacksquare$
 
-> 三个版本是同一件事的三种包装: 卷 A 用闭集 $F_n$ 逼近, 卷 B 用稠密开集 $\Omega_n$ 逼近. 反设之后必须把"沿某个 $y$ 的所有整数倍"与"给定的坏列 $x_k$"接起来, 这一步靠的是 $\frac{x_k}{\left\lfloor{x}_k/y\right\rfloor}\to{y}$.
+> 三个版本是同一件事的三种包装: 卷 A 用闭集 $F_n$ 逼近, 卷 B 用稠密开集 $\Omega_n$ 逼近. 反设之后必须把"沿某个 $y$ 的所有整数倍"与"给定的坏列 $x_k$"接起来, 这一步靠的是 $\frac{x_k}{\lfloor{x}_k/y\rfloor}\to{y}$.
 
 ## 11.3 (对平移量的收敛在紧区间上一致)
 

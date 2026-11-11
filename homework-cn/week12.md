@@ -402,7 +402,7 @@ $$
 
 ### 解答 12.16
 
-由**定义 6.20 (赋范线性空间)**, 由范数的反三角不等式 $\bigl|\left\|x\right\|-\left\|y\right\|\bigr|\le\left\|x-y\right\|$, 范数是利普希茨映射, 故连续. $\blacksquare$
+由**定义 6.20 (赋范线性空间)**, 由范数的反三角不等式 $\left|\left\|x\right\|-\left\|y\right\|\right|\le\left\|x-y\right\|$, 范数是利普希茨映射, 故连续. $\blacksquare$
 
 豪斯多夫: 设 $x\neq{y}$, 取 $r=\left\|x-y\right\|/3>0$, 则开球 $B\left(x,r\right)$ 与 $B\left(y,r\right)$ 不相交 (若 $z$ 同时在二者中, 则 $\left\|x-y\right\|\le\left\|x-z\right\|+\left\|z-y\right\|<2r<\left\|x-y\right\|$, 矛盾). 由**定义 3.10 (豪斯多夫空间)**, 赋范空间豪斯多夫. $\blacksquare$
 
