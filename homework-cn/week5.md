@@ -139,6 +139,7 @@
 > 每一个具有可数基的正则空间都是可度量化的. ("拓扑学"(原书第2版) §34 定理 34.1, p165; 教材 §7 定理 7.3, p43 表述为正规空间加可数基可度量化, 而正则加可数基蕴含正规)
 
 ## 5.1 (拓扑学家正弦曲线连通但不路径连通)
+
 证明拓扑学家正弦曲线连通但不路径连通.
 
 题集 §2.3 Q3.
@@ -158,6 +159,7 @@ $$
 再证不路径连通. 反设存在路径 $\gamma:\left[0,1\right]\to{S}$ 以 $\left(0,0\right)\in{L}$ 为起点, 以 $\left(1,\sin1\right)\in{G}$ 为终点. 令 $t_0=\inf\left\{t:\gamma\left(t\right)\text{~的横坐标}>0\right\}$. 由连续性 $\gamma\left(t_0\right)\in{L}$. 取 $t_n\downarrow{t}_0$, 则 $\gamma\left(t_n\right)=\left(x_n,\sin\left(1/x_n\right)\right)$, $x_n\to0^{+}$. 序列 $\sin\left(1/x_n\right)$ 既有收敛到 $1$ 的子列, 又有收敛到 $-1$ 的子列, 不可能收敛到 $\gamma\left(t_0\right)$ 的纵坐标, 与 $\gamma$ 连续矛盾. 故不存在这样的路径, $S$ 不路径连通, 即它不是**定义 4.22 (路径连通)** 意义下的路径连通空间. $\blacksquare$
 
 ## 5.2 (连通等价于到两点空间的连续映射常值, 以及乘积去方块后的连通性)
+
 连通性与连续函数. 证明: $X$ 是**定义 4.18 (连通空间)** 当且仅当一切连续映射 $f:X\to\left\{0,1\right\}$ (目标装备离散拓扑) 都是常值的. 再设 $A,B$ 是两个连通度量空间, $X,Y$ 分别是 $A,B$ 的真子集. 证明 $C=\left(A\times{B}\right)\setminus\left(X\times{Y}\right)$ 是 $A\times{B}$ 的连通子集.
 
 题集 §4.5 C3.
@@ -171,6 +173,7 @@ $$
 第二问: $C=\left(\left(A\setminus{X}\right)\times{B}\right)\cup\left(A\times\left(B\setminus{Y}\right)\right)$. 因 $X,Y$ 是真子集, 可取 $a_0\in{A}\setminus{X}$, $b_0\in{B}\setminus{Y}$. 固定 $b_0$, 集合 $A\times\left\{b_0\right\}$ 由**定理 4.7 (乘积连通)** 连通. 对每个 $a\in{A}\setminus{X}$, 集合 $\left\{a\right\}\times{B}$ 连通 (**定理 4.7 (乘积连通)**), 且与 $A\times\left\{b_0\right\}$ 交于 $\left(a,b_0\right)$. 由**定理 4.6 (扇形连通)**, $S=A\times\left\{b_0\right\}\cup\bigcup_{a\in{A}\setminus{X}}\left\{a\right\}\times{B}$ 连通. 再对每个 $b\in{B}\setminus{Y}$, 集合 $A\times\left\{b\right\}$ 连通, 且与 $S$ 交于 $\left(a_0,b\right)$. 再用**定理 4.6 (扇形连通)**, 加入所有 $A\times\left\{b\right\}$ 后仍连通, 所得正是 $C$. $\blacksquare$
 
 ## 5.3 (边界连通蕴含闭集连通 (附闭性不可少的反例))
+
 连通性与边界. 设 $E$ 是连通度量空间, $F$ 是 $E$ 的闭集. 证明: 若 $F$ 的边界 $\partial{F}$ 连通, 则 $F$ 连通. 再举例说明 $F$ 不假设闭时结论失效.
 
 题集 §4.5 C4; 题集 §5.1 C18 同题.
@@ -188,6 +191,7 @@ $$
 反例: 取 $E=\left[0,1\right]$, $F=\left[0,1/2\right)\cup\left(1/2,1\right]$. $F$ 不闭, 且不连通; 但 $\partial{F}=\left\{1/2\right\}$ 是单点, 连通. $\blacksquare$
 
 ## 5.4 ($\varepsilon$-链空间: 连通蕴含链性, 紧且链性蕴含连通)
+
 链空间. 称度量空间 $X$ 是 $\varepsilon$-链的, 若任意 $a,b\in{X}$ 可由有限点列 $x_0=a,\dots,x_n=b$ 连接使 $d\left(x_i,x_{i+1}\right)<\varepsilon$; 对一切 $\varepsilon>0$ 都成立称**定义 4.14 ($\varepsilon$-链空间)**. 证明: $X$ 连通则 $X$ 是 $\varepsilon$-链空间; $X$ 紧且 $\varepsilon$-链则 $X$ 连通; 举例说明 $\varepsilon$-链空间可以不连通.
 
 题集 §4.5 C5.
@@ -201,6 +205,7 @@ $$
 $\varepsilon$-链但不连通的例子: 有理数集 $\mathbb{Q}$ 装备通常度量. 对任意 $\varepsilon>0$, 任意两个有理数之间可插入间距小于 $\varepsilon$ 的有理点列, 故 $\mathbb{Q}$ 是 $\varepsilon$-链的; 但 $\mathbb{Q}$ 完全不连通. $\blacksquare$
 
 ## 5.5 (自映射皆有不动点蕴含连通, 而紧连通不足)
+
 不动点与连通性. 设 $X$ 是度量空间, 假设一切连续映射 $f:X\to{X}$ 都有不动点. 证明 $X$ 连通. 再问: 若 $X$ 紧且连通, 是否一切连续映射 $f:X\to{X}$ 都有不动点?
 
 题集 §4.5 C6.
@@ -214,6 +219,7 @@ $\varepsilon$-链但不连通的例子: 有理数集 $\mathbb{Q}$ 装备通常�
 > 紧与连通只能保证空间是连在一起的, 而不动点与空间的自同胚相关, 这是两件事.
 
 ## 5.6 (周期连续函数的中点等值问题)
+
 设 $f:\left[0,1\right]\to\mathbb{R}$ 是一个连续函数并且 $f\left(0\right)=f\left(1\right)$.
 
 (1) (10 分) 证明存在 $x\in\left[0,\frac12\right]$ 使得 $f\left(x\right)=f\left(x+\frac12\right)$.
@@ -249,6 +255,7 @@ $$
 > $1/n$ 特殊的原因在于其经过有限次求和后为 $1$, 因此可以利用望远镜级数, 最终求和得到 $f\left(0\right)-f\left(1\right)=0$, 即第 2 问的证明过程.
 
 ## 5.7 (2024 卷 C 题一: 贝尔纲定理, 球面与双曲面的连通性, 开子空间的完备化)
+
 本大题各小问相互独立.
 
 (1) 叙述贝尔纲定理的一个版本;
@@ -284,6 +291,7 @@ $X\times\mathbb{R}$ 完备 (两个完备空间之积完备), 由第 (3) 小题 $
 > 度量 $d'$ 就是让 $O$ 上"逃向边界"的柯西列不再柯西, 代价是把边界推到无穷远.
 
 ## 5.8 (弗斯滕伯格拓扑的开集刻画与素数无穷)
+
 在 $\mathbb{Z}$ 上以非平凡等差数列 $S\left(a,b\right)=a\mathbb{Z}+b=\left\{an+b:n\in\mathbb{Z}\right\}$ ($a\neq0$) 为基定义拓扑, 即**定义 4.11 (弗斯滕伯格拓扑)**.
 
 (1) 证明 $U\subset\mathbb{Z}$ 开当且仅当对任意 $x\in{U}$, 存在某非零 $a\in\mathbb{Z}$ 使 $S\left(a,x\right)\subset{U}$;
@@ -337,6 +345,7 @@ $$
 由第 (4) 小题每个 $S\left(p_i,0\right)$ 既开又闭, 有限个既开又闭集之并仍既开又闭 (**定义 4.19 (既开又闭集)**). 故 $\mathbb{Z}-\left\{-1,1\right\}$ 既开又闭, 其补集 $\left\{-1,1\right\}$ 也既开又闭. 但由第 (3) 小题 $\left\{-1,1\right\}$ 非空有限, 不能开, 矛盾. 故素数有无穷多个. $\blacksquare$
 
 ## 5.9 (戈洛姆拓扑与基尔希拓扑的基约化)
+
 在 $\mathbb{Z}_{>0}$ 上分别用 (非平凡) 等差数列 $a\mathbb{N}+b=\left\{an+b:n\in\mathbb{N}\right\}$ ($a,b$ 互素) 与 $p\mathbb{N}+b=\left\{pn+b:n\in\mathbb{N}\right\}$ ($p$ 为素数且 $p\nmid{b}$) 为基 (前者) 与子基 (后者) 定义两个拓扑.
 
 (1) (戈洛姆) 证明基可限制到满足 $0\le{b}<{}a$ 且 $a,b$ 互素的偶对;
@@ -372,6 +381,7 @@ $$
 由中国剩余定理 为 $\left\{x\equiv{b}_i\pmod{p_i}\right\}=S\left(M,x_0\right)$, 其中 $M=p_1\cdots{p}_k$, $p_i\nmid{x}_0$. 两个这样的有限交之交仍是同形的有限交. 故有限交全体构成一个基, 由**定义 3.15 (拓扑基)** 与**定义 3.18 (拓扑空间)** 生成 $\mathbb{Z}_{>0}$ 上的**定义 4.13 (基尔希拓扑)**. $\blacksquare$
 
 ## 5.10 (三种等差数列拓扑的豪斯多夫性, 正则性与连通性)
+
 考察上述拓扑的拓扑性质.
 
 (1) 证明弗斯滕伯格拓扑是豪斯多夫的且正则; 它可度量化但不可完备度量化, 实际上它与带通常子空间拓扑的有理数集 $\mathbb{Q}$ 同胚;

@@ -87,6 +87,7 @@
 > 可分度量空间必有可数基. (题集 M30.1)
 
 ## 2.1 (豪斯多夫性对子空间遗传)
+
 证明: 若 $X$ 是豪斯多夫度量空间, 则装备诱导拓扑的 $A$ 也是豪斯多夫空间.
 
 题集 §1.2 Q8.
@@ -96,6 +97,7 @@
 任取 $x,y\in{A}$ 且 $x\neq{y}$. 由**定义 3.10 (豪斯多夫空间)**, 因 $X$ 是豪斯多夫的, 存在 $X$ 中不相交的开集 $U,V$ 使 $x\in{U}$, $y\in{V}$. 由**定义 3.19 (子空间拓扑)**, $U\cap{A}$ 与 $V\cap{A}$ 都是 $A$ 中开集, 且 $x\in{U}\cap{A}$, $y\in{V}\cap{A}$. 又因 $U\cap{V}=\emptyset$, 故 $\left(U\cap{A}\right)\cap\left(V\cap{A}\right)=\emptyset$. 由**定义 3.10 (豪斯多夫空间)**, $A$ 中任意一对不同点都有不相交的邻域, 故 $A$ 是豪斯多夫空间. $\blacksquare$
 
 ## 2.2 (子空间豪斯多夫而全空间不豪斯多夫的例子)
+
 构造例子: 子空间 $X\subset{Y}$ 是豪斯多夫的, 但 $X$ 中两点在 $Y$ 中没有不相交的邻域. 可考虑 $Y=X\cup\left\{\omega\right\}$, 其中 $\omega$ 是额外一点, $Y$ 的任一非空开集形如 $O\cup\left\{\omega\right\}$, 其中 $O$ 是 $X$ 中的开集.
 
 题集 §1.2 Q9.
@@ -119,6 +121,7 @@ $$
 任取 $x,y\in{X}$ 且 $x\neq{y}$. $Y$ 中含 $x$ 的开集形如 $O\cup\left\{\omega\right\}$ 且 $x\in{O}$; $Y$ 中含 $y$ 的开集同理形如 $O'\cup\left\{\omega\right\}$ 且 $y\in{O}'$. 而两邻域含 $\omega$ 必相交. 故 $X$ 中任两点在 $Y$ 中没有不相交的邻域. $\blacksquare$
 
 ## 2.3 (超度量的球, 球面与球族结构)
+
 回忆距离 $d:X\times{X}\to\mathbb{R}_{\ge0}$ 满足四条公理. 超度量是将三角不等式加强为 $d\left(x,z\right)\le\max\left(d\left(x,y\right),d\left(y,z\right)\right)$ 的距离 (例如通常的 $p$-进度量). 设 $d$ 是超度量, 证明:
 
 (1) 若 $d\left(x,y\right)\neq{d}\left(x,z\right)$, 则 $d\left(y,z\right)=\max\left\{d\left(x,y\right),d\left(x,z\right)\right\}$;
@@ -158,6 +161,7 @@ $$
 (4) 设 $B\left(x,r\right)$ 与 $B\left(y,s\right)$ 为两个开球. 若不相交则结论已成立. 若相交, 取 $z\in{B}\left(x,r\right)\cap{B}\left(y,s\right)$. 由第 (2) 小题, $B\left(x,r\right)=B\left(z,r\right)$ 且 $B\left(y,s\right)=B\left(z,s\right)$. 不妨设 $r\le{s}$, 则 $B\left(z,r\right)\subset{B}\left(z,s\right)$, 即 $B\left(x,r\right)\subset{B}\left(y,s\right)$. $\blacksquare$
 
 ## 2.4 (两个有界化度量诱导同一拓扑)
+
 设 $\left(X,d\right)$ 是度量空间, 再定义度量 $d^{*}\left(x,y\right)=\min\left(d\left(x,y\right),1\right)$ 与 $d^{**}\left(x,y\right)=\frac{d\left(x,y\right)}{1+d\left(x,y\right)}$. 证明他们与 $d$ 诱导同一拓扑. 注意有界性依赖于度量的选取, 而不依赖于拓扑.
 
 题集 §1.3 Q3.
@@ -175,6 +179,7 @@ $$
 > 而 $d'$ 与 $d''$ 比较, 则只是换了一个参数: 对于 $r\in\left(0,1\right)$, $r\mapsto\frac{r}{1-r}=:\rho$. 因此二者自然生成同一拓扑.
 
 ## 2.5 (开集的任意并开而任意交未必开)
+
 回忆 $\mathbb{R}^n$ 上的通常度量拓扑. 证明 $\mathbb{R}^n$ 中任意一族开集之并仍是开集. 证明开集的交未必是开集.
 
 题集 §1.4 C1.
@@ -190,6 +195,7 @@ $$
 由**定义 6.36 (开球)**, 任何含 $0$ 的开球都含非零点, 故 $\left\{0\right\}$ 不含任何开球, 不是开集. $\blacksquare$
 
 ## 2.6 (原像与并, 交交换, 而直接像不然)
+
 回忆函数的原像. 证明原像运算与并运算, 交运算可交换. 那直接像呢?
 
 题集 §1.4 C2.
@@ -217,6 +223,7 @@ $$
 > (2) 直接像的并可交换, 但直接像的交不可交换: 考虑并时, 虽然是看着 $y$ 找 $x$, 但并集的含义是 "存在一个" 即可, 因此虽然可能有多个 $x$, 找到一个就行; 考虑交时, 交集的含义是 "任意一个" 均需要满足, 这就要求了 $x$ 需唯一才行, 因此不可逆, 自然也不可交换.
 
 ## 2.7 (生成子空间的两种构造)
+
 回忆由一族向量生成的向量子空间. 给出一个利用向量空间对交集稳定性的抽象构造, 以及一个利用有限线性组合的具体构造.
 
 题集 §1.4 C3.
@@ -236,6 +243,7 @@ $$
 即 $\mathcal{F}$ 中元素的有限线性组合全体. 它本身是包含 $\mathcal{F}$ 的向量子空间, 故含于抽象构造. 反之, 任何包含 $\mathcal{F}$ 的向量子空间对线性组合封闭, 故包含全部有限线性组合, 因而抽象构造 (一切子空间之交) 也含于该具体集合. 两者相等. $\blacksquare$
 
 ## 2.8 ($\mathbb{R}$ 中闭集与序列极限的刻画)
+
 证明: 集合 $F$ 在 $\mathbb{R}$ 的通常度量拓扑下闭, 当且仅当 $F$ 的每个收敛序列的极限都在 $F$ 中.
 
 题集 §1.4 C4.
@@ -247,6 +255,7 @@ $$
 ($\Leftarrow$) 反证. 设 $F$ 不闭. 由**定义 3.21 (闭集)**, $\mathbb{R}\setminus{F}$ 不开. 故存在 $x\notin{F}$ 使 $x$ 的任何邻域都不含于 $\mathbb{R}\setminus{F}$, 即 $x$ 的任何邻域都与 $F$ 相交, 说明 $x$ 在 $F$ 的边界上. 由**定义 6.36 (开球)**, 球 $B\left(x,1/n\right)=\left(x-\frac1n,x+\frac1n\right)$ 与 $F$ 相交, 取 $x_n\in{F}\cap{B}\left(x,1/n\right)$, 则 $d\left(x_n,x\right)<1/n$. 任给 $x$ 的邻域, 由**定义 6.36 (开球)** 它包含某 $B\left(x,\varepsilon\right)$; 当 $n>1/\varepsilon$ 时 $x_n\in{B}\left(x,\varepsilon\right)$, 故由**定义 3.25 (邻域与极限)** $x_n\to{x}$. 但 $x\notin{F}$, 与假设矛盾. 故 $F$ 闭. $\blacksquare$
 
 ## 2.9 (由子集族生成的拓扑及其有限交构造)
+
 回忆同一空间 $X$ 上一族拓扑的交集仍是拓扑. 回忆由 $X$ 的一族子集生成的拓扑是什么. 是否有一个利用有限交的具体构造?
 
 题集 §1.4 C5.
@@ -258,6 +267,7 @@ $$
 由**定义 3.29 (由子集族生成的拓扑)**, 给定子集族 $\mathcal{S}\subset\mathcal{P}\left(X\right)$, 它生成的拓扑即包含 $\mathcal{S}$ 的最粗拓扑, 存在且等于一切包含 $\mathcal{S}$ 的拓扑之交. 其具体构造为: 先取 $\mathcal{S}$ 中元素的有限交 (约定空交为 $X$), 再取这些有限交的任意并 (约定空并为 $\emptyset$). 所得族 $\tau$ 确实是拓扑: $\emptyset,X\in\tau$; 任意并仍是任意并; 两个有限交的有限交仍是有限交, 故有限交封闭; 由**定义 3.18 (拓扑空间)** $\tau$ 是拓扑. 它包含 $\mathcal{S}$ (每个 $S\in\mathcal{S}$ 是单元素族的有限交). 反之, 任何包含 $\mathcal{S}$ 的拓扑由**定义 3.18 (拓扑空间)** 对有限交与任意并封闭, 必包含 $\tau$ 的全部元素, 故 $\tau$ 是最粗的. $\blacksquare$
 
 ## 2.10 (初始拓扑, 最终拓扑与包含映射的例子)
+
 证明: 若 $f:X\to\left(Y,\mathcal{O}\right)$ 是到拓扑空间 $Y$ 的映射, 则集合族 $\left\{f^{-1}\left(O\right):O\in\mathcal{O}\right\}$ 在 $X$ 上定义一个拓扑. 证明它是使 $f$ 连续的最粗拓扑, 即初始拓扑. 研究 $f$ 为包含映射的情形, 例如 $f:\mathbb{R}\to\mathbb{R}^2$, 其中 $\mathbb{R}^2$ 装备欧氏拓扑. 反过来, 能否把 $X$ 上的拓扑前推, 在 $Y$ 上定义所谓最终拓扑?
 
 题集 §1.4 C6.
@@ -273,6 +283,7 @@ $$
 反过来的构造: 由**定义 11.14 (最终拓扑)**, 对映射 $f:X\to{Y}$, 在 $Y$ 上规定 $U\subset{Y}$ 开当且仅当 $f^{-1}\left(U\right)$ 在 $X$ 中开. 这是使 $f$ 连续的最细拓扑, 即最终拓扑. $\blacksquare$
 
 ## 2.11 (余有限拓扑与余可数拓扑中的收敛和闭包)
+
 设 $X$ 为集合. 证明下列是拓扑: 所有非平凡开集都是 $X$ 的某有限子集的补集; 这称为 $X$ 上的余有限拓扑. 证明序列 $\left\{1,2,3,4,\dots\right\}$ 在 $\mathbb{R}$ 的余有限拓扑中收敛到 $\mathbb{R}$ 的每一点. 能否在 $X$ 上定义余可数拓扑? 现在取 $X=\mathbb{R}$ 装备余可数拓扑, 考虑 $\left(-1,1\right)\subset\mathbb{R}$. 证明 $\overline{\left(-1,1\right)}=\mathbb{R}$. 证明 $\left(-1,1\right)$ 中没有序列收敛到 $2\in\mathbb{R}$.
 
 题集 §1.4 C7.
@@ -288,13 +299,14 @@ $\emptyset$ 与 $X$ 开; 任意并 $\bigcup_i\left(X\setminus{F}_i\right)=X\setm
 最后, 设 $x_n\in{A}$ 且 $x_n\to2$. 由于 $2$ 本身可数, 即 $2\in{C}$, 则其任意的邻域 $X\setminus{C}$ 都不含 $2$, 因此没有任何序列收敛到 $2$. $\blacksquare$
 
 ## 2.12 (扎里斯基拓扑, 扎里斯基开集的稠密性与闭包)
-设 $K$ 为域, $n\in\mathbb{N}$ 为非负整数, $\mathbb{A}^n\left(K\right)=K^n$. $\mathbb{A}^n\left(K\right)$ 中扎里斯基闭集形如 $F=\left\{x:\forall{i}\in{I},P_i\left(x\right)=0\right\}$, 其中 $\left(P_i\right)_{i\in{I}}$ 是一族多项式. 证明这确实定义了一个拓扑 (即扎里斯基拓扑). 证明 $\mathbb{R}^2$ 中扎里斯基开集在 $\mathbb{R}^2$ 中稠密. 求 $\left\{\left(0,\frac1{2^n}\right):n\ge0\right\}\subset\mathbb{R}^2$ 的扎里斯基闭包.
+
+设 $K$ 为域, $n\in\mathbb{N}$ 为非负整数, $\mathbb{A}^n\left(K\right)=K^n$. $\mathbb{A}^n\left(K\right)$ 中扎里斯基闭集形如 $F=\left\{\boldsymbol{x}:\forall{i}\in{I},P_i\left(\boldsymbol{x}\right)=0\right\}$, 其中 $\left(P_i\right)_{i\in{I}}$ 是一族多项式. 证明这确实定义了一个拓扑 (即扎里斯基拓扑). 证明 $\mathbb{R}^2$ 中扎里斯基开集在 $\mathbb{R}^2$ 中稠密. 求 $\left\{\left(0,\frac1{2^n}\right):n\ge0\right\}\subset\mathbb{R}^2$ 的扎里斯基闭包.
 
 题集 §1.4 C8.
 
 ### 解答 2.12
 
-由**定义 3.28 (扎里斯基拓扑)**, 记 $Z\left(P_i\right)_{i\in{I}}=\left\{x:\forall{i}\in{I},P_i\left(x\right)=0\right\}$. 验证闭集族满足**定义 3.21 (闭集)**: 空集 $Z\left(1\right)$ (常数多项式 $1$ 无零点); 全空间 $Z\left(0\right)$ (零多项式处处为零); 任意交
+由**定义 3.28 (扎里斯基拓扑)**, 记 $Z\left(P_i\right)_{i\in{I}}=\left\{\boldsymbol{x}:\forall{i}\in{I},P_i\left(\boldsymbol{x}\right)=0\right\}$. 验证闭集族满足**定义 3.21 (闭集)**: 空集 $Z\left(1\right)$ (常数多项式 $1$ 无零点); 全空间 $Z\left(0\right)$ (零多项式处处为零); 任意交
 
 $$
 \bigcap_{\alpha}Z\left(P_{\alpha,j}\right)_{j\in{J}_\alpha}=Z\left(\bigcup_\alpha\left\{P_{\alpha,j}\right\}\right)
@@ -313,6 +325,7 @@ $$
 求闭包: 令 $S=\left\{\left(0,2^{-n}\right):n\ge0\right\}$. 多项式 $P$ 在 $S$ 上恒零当且仅当一元多项式 $P\left(0,y\right)$ 在无限多点 $y=2^{-n}$ 为零, 由一元多项式恒零判据 当且仅当 $P\left(0,\cdot\right)\equiv0$, 即 $x\mid{P}\left(x,y\right)$. 全体这样的 $P$ 的公共零点集为 $\left\{\left(0,y\right):y\in\mathbb{R}\right\}$, 即 $y$ 轴. 由**定义 3.26 (闭包)**, 这就是 $S$ 的扎里斯基闭包. $\blacksquare$
 
 ## 2.13 (拓扑基的定义与等价刻画及其等价性)
+
 回忆拓扑基的定义. 回忆其等价刻画. 若去掉其中任一条件会怎样? 证明定义与刻画的等价性.
 
 题集 §1.4 C9.
@@ -328,6 +341,7 @@ $$
 去掉条件: 若去掉 (1), 例如 $\mathcal{B}=\left\{\emptyset\right\}$, 其任意并只能得 $\emptyset$, 盖不住 $X$; 若去掉 (2), 例如 $X=\mathbb{R}$, $\mathcal{B}=\left\{\left(-\infty,a\right):a\in\mathbb{R}\right\}\cup\left\{\left(b,+\infty\right):b\in\mathbb{R}\right\}$, 则 $\left(-\infty,1\right)\cap\left(0,+\infty\right)=\left(0,1\right)$ 不能表为 $\mathcal{B}$ 中元素之并, 故 $\mathcal{B}$ 的任意并不构成拓扑. $\blacksquare$
 
 ## 2.14 (可数基蕴含可分; 半开区间基的反例)
+
 可分空间与具有可数基的空间.
 
 (1) 证明具有可数基的拓扑空间必可分;

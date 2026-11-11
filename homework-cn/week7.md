@@ -52,7 +52,7 @@
 
 > **定义 4.23 (凸集)**
 > 
-> $K\subset\mathbb{R}^n$ 凸即 $x,y\in{K}$ 蕴含线段 $\left(1-t\right)x+ty$ ($t\in\left[0,1\right]$) 全在 $K$ 中; 凸集必路径连通, 路径连通蕴含连通. (教材 §4, p24)
+> $K\subset\mathbb{R}^n$ 凸即 $\boldsymbol{x},\boldsymbol{y}\in{K}$ 蕴含线段 $\left(1-t\right)\boldsymbol{x}+t\boldsymbol{y}$ ($t\in\left[0,1\right]$) 全在 $K$ 中; 凸集必路径连通, 路径连通蕴含连通. (教材 §4, p24)
 
 > **定理 5.1 (紧空间连续像紧)**
 > 
@@ -143,6 +143,7 @@
 > 亚历山德罗夫紧化 $\overline{X}=X\cup\left\{\infty\right\}$, 以 $\left(X-K\right)\cup\left\{\infty\right\}$ (其中 $K\subset{X}$ 紧致) 为 $\infty$ 的邻域. (教材 $\S7$)
 
 ## 7.1 (无界闭凸集含一条从原点出发的无穷射线)
+
 考虑一个 $\mathbb{R}^2$ 中的闭集 $A$. 还假设 $A$ 是一个凸集, 原点 $O\in{A}$, 并且 $A$ 不是有界的.
 
 (1) (10 分) 证明对于任意的正整数 $p\ge1$, 都存在一个点 $M_p\in{A}$, 线段 $OM_p$ 属于 $A$, 并且其长度 $\left|OM_p\right|\ge{p}$.
@@ -155,13 +156,14 @@
 
 ### 解答 7.1
 
-(1) 因 $A$ 无界, 对每个 $p$, 存在 $M_p\in{A}$ 使 $\left|M_p\right|\ge{p}$ (否则 $A$ 含于半径 $p$ 的球内, 有界). 由**定义 4.23 (凸集)**, $O\in{A}$ 与 $M_p\in{A}$ 的连线线段 $OM_p$ 含于 $A$, 且其长度 $\left|OM_p\right|=\left|M_p\right|\ge{p}$.
+(1) 因 $A$ 无界, 对每个 $p$, 存在 $\boldsymbol{M}_p\in{A}$ 使 $\left|\boldsymbol{M}_p\right|\ge{p}$ (否则 $A$ 含于半径 $p$ 的球内, 有界). 由**定义 4.23 (凸集)**, $O\in{A}$ 与 $\boldsymbol{M}_p\in{A}$ 的连线线段 $O\boldsymbol{M}_p$ 含于 $A$, 且其长度 $\left|O\boldsymbol{M}_p\right|=\left|\boldsymbol{M}_p\right|\ge{p}$.
 
-(2) 令 $r_p=\left|M_p\right|$, $u_p=\frac{M_p}{r_p}$, 则 $u_p$ 在单位圆周 $S^1=\left\{v\in\mathbb{R}^2:\left|v\right|=1\right\}$ 上. $S^1$ 闭且有界, 由**定理 5.3 ($\mathbb{R}^n$ 中的紧集)** $S^1$ 紧. 由**定理 6.1 (紧 $=$ 序列紧)**, 序列 $\left(u_p\right)\subset{S}^1$ 有收敛子列 $u_{p_j}\to{u}\in{S}^1$.
+(2) 令 $r_p=\left|\boldsymbol{M}_p\right|$, $\boldsymbol{u}_p=\frac{\boldsymbol{M}_p}{r_p}$, 则 $\boldsymbol{u}_p$ 在单位圆周 $S^1=\left\{\boldsymbol{v}\in\mathbb{R}^2:\left|\boldsymbol{v}\right|=1\right\}$ 上. $S^1$ 闭且有界, 由**定理 5.3 ($\mathbb{R}^n$ 中的紧集)** $S^1$ 紧. 由**定理 6.1 (紧 $=$ 序列紧)**, 序列 $\left(\boldsymbol{u}_p\right)\subset{S}^1$ 有收敛子列 $\boldsymbol{u}_{p_j}\to\boldsymbol{u}\in{S}^1$.
 
-(3) 固定 $\lambda\ge0$. 对充分大的 $j$, $r_{p_j}\ge\lambda$ (因 $r_{p_j}\ge{p}_j\to\infty$). 由**定义 4.23 (凸集)**, $\lambda{u}_{p_j}=\frac{\lambda}{r_{p_j}}M_{p_j}+\left(1-\frac{\lambda}{r_{p_j}}\right)O$ 是 $M_{p_j}$ 与 $O$ 的凸组合, 故 $\lambda{u}_{p_j}\in{A}$. 当 $j\to\infty$, $u_{p_j}\to{u}$, 故 $\lambda{u}_{p_j}\to\lambda{u}$. 因 $A$ 闭 (由**定义 3.21 (闭集)**, 闭集含其序列极限), $\lambda{u}\in{A}$. 由 $\lambda\ge0$ 任意, 半直线 $\left\{\lambda{u}:\lambda\ge0\right\}\subset{A}$, 即 $A$ 含一条从原点出发的无穷长半直线. $\blacksquare$
+(3) 固定 $\lambda\ge0$. 对充分大的 $j$, $r_{p_j}\ge\lambda$ (因 $r_{p_j}\ge{p}_j\to\infty$). 由**定义 4.23 (凸集)**, $\lambda\boldsymbol{u}_{p_j}=\frac{\lambda}{r_{p_j}}\boldsymbol{M}_{p_j}+\left(1-\frac{\lambda}{r_{p_j}}\right)O$ 是 $\boldsymbol{M}_{p_j}$ 与 $O$ 的凸组合, 故 $\lambda\boldsymbol{u}_{p_j}\in{A}$. 当 $j\to\infty$, $\boldsymbol{u}_{p_j}\to\boldsymbol{u}$, 故 $\lambda\boldsymbol{u}_{p_j}\to\lambda\boldsymbol{u}$. 因 $A$ 闭 (由**定义 3.21 (闭集)**, 闭集含其序列极限), $\lambda\boldsymbol{u}\in{A}$. 由 $\lambda\ge0$ 任意, 半直线 $\left\{\lambda\boldsymbol{u}:\lambda\ge0\right\}\subset{A}$, 即 $A$ 含一条从原点出发的无穷长半直线. $\blacksquare$
 
 ## 7.2 ($\left\{0,1\right\}^{\left[0,1\right]}$ 在乘积拓扑下不序列紧)
+
 证明 $\left\{0,1\right\}^{\left[0,1\right]}$ 赋通常乘积拓扑不是序列紧致的.
 
 题集 §3.1 Q1.
@@ -173,6 +175,7 @@
 对每个 $n\ge1$, 定义 $f_n\left(t\right)$ 为 $t$ 的二进制展开中小数点后第 $n$ 位数字 (二进有理点固定取其一展开). 任取严格递增的正整数列 $n_1<{}n_2<\dots$, 我们证明 $\left\{f_{n_k}\right\}$ 不收敛. 取 $t^{*}\in\left[0,1\right]$, 使其二进制展开在第 $n_{2k-1}$ 位为 $0$, 在第 $n_{2k}$ 位为 $1$, 其余位任意 (例如取 $0$). 则坐标 $t^{*}$ 处 $f_{n_k}\left(t^{*}\right)$ 依次为 $0,1,0,1,\dots$, 在离散空间 $\left\{0,1\right\}$ 中不收敛: 由**定义 3.25 (邻域与极限)**, $\left\{0\right\}$ 是 $0$ 的邻域而不含无穷多个 $f_{n_k}\left(t^{*}\right)$. 由**命题 3.33 (点态收敛判据)**, $\left\{f_{n_k}\right\}$ 在乘积拓扑下不收敛. 因每个子列都有同样形式, 由**定义 6.40 (序列紧致)**, $\left\{0,1\right\}^{\left[0,1\right]}$ 不是序列紧致的. $\blacksquare$
 
 ## 7.3 (紧致等价于具有限交性质的闭集族交非空)
+
 称集合族 $\mathcal{F}$ 具有有限交性质, 若其任意有限子族之交非空. 证明: 空间 $X$ 紧致等价于, $X$ 中任意具有限交性质的闭集族 $\mathcal{F}$ 都满足 $\bigcap_{F\in\mathcal{F}}F\neq\emptyset$.
 
 题集 §3.1 Q2.
@@ -192,6 +195,7 @@ $$
 即 $\left\{F_i\right\}$ 具有限交性质. 由假设 $\bigcap_iF_i\neq\emptyset$, 即 $X\setminus\bigcup_iU_i\neq\emptyset$, 与 $\left\{U_i\right\}$ 覆盖 $X$ 矛盾. 故存在有限子覆盖, 由**定义 5.16 (紧致空间)**, $X$ 紧致. $\blacksquare$
 
 ## 7.4 (紧集与不相交闭集的距离为正)
+
 设 $A,B$ 是度量空间 $\left(X,d\right)$ 中不相交的闭集, 且 $A$ 紧致. 证明 $d\left(A,B\right)>0$.
 
 题集 §3.1 Q3.
@@ -207,6 +211,7 @@ $$
 若 $m=0$, 则存在 $a_0\in{A}$ 使 $d\left(a_0,B\right)=0$, 即对每个 $r>0$ 开球 $B\left(a_0,r\right)$ 都与 $B$ 相交 (由**定义 6.36 (开球)**); 因 $a_0\notin{B}$ (由 $A\cap{B}=\emptyset$), 由**定义 3.24 (极限点)** $a_0$ 是 $B$ 的极限点. 由**定理 3.5 (闭包与极限点)** $a_0\in\overline{B}$, 而 $B$ 闭, 由**定义 3.26 (闭包)** $\overline{B}=B$, 故 $a_0\in{B}$, 与 $A\cap{B}=\emptyset$ 矛盾. 故 $m>0$, 即 $d\left(A,B\right)>0$. $\blacksquare$
 
 ## 7.5 (无孤立点度量空间中紧致等价于闭集间距离皆为正)
+
 设 $\left(X,d\right)$ 是无孤立点的度量空间. 证明: $X$ 紧致当且仅当对任意一对不相交闭集 $A,B$, 都有 $d\left(A,B\right)>0$.
 
 题集 §3.1 Q4.
@@ -224,6 +229,7 @@ $$
 与 $\left\{x_n\right\}$ 无收敛子列矛盾. 故 $T=\left\{y_n:n\ge1\right\}$ 也闭 (同上). 令 $A=S$, $B=T$, 则二者不相交闭, 但对一切 $n$ 有 $d\left(A,B\right)\le{d}\left(x_n,y_n\right)<1/n$, 故 $d\left(A,B\right)=0$, 与假设矛盾. 因此 $X$ 紧致. $\blacksquare$
 
 ## 7.6 (黎曼球面 (单点紧化) 紧致)
+
 考虑 $\mathbb{C}$ 与一个无穷远点 $\left\{\infty\right\}$. 记 $\overline{\mathbb{C}}=\mathbb{C}\cup\left\{\infty\right\}$, 规定 $U\subset\overline{\mathbb{C}}$ 的拓扑为: 若 $\infty\notin{U}$, 则 $U$ 开当且仅当它是 $\mathbb{C}$ 中通常开集; 若 $\infty\in{U}$, 则 $U$ 开当且仅当 $\mathbb{C}\setminus\left(U\cap\mathbb{C}\right)$ 在 $\mathbb{C}$ 中紧致. 证明 $\overline{\mathbb{C}}$ 紧致. 此即亚历山德罗夫单点紧化, $\overline{\mathbb{C}}$ 称为黎曼球面.
 
 题集 §3.1 Q5.
@@ -239,6 +245,7 @@ $$
 中每个集合是 $\mathbb{C}$ 中开集 (不含 $\infty$ 的开集在 $\overline{\mathbb{C}}$ 与在 $\mathbb{C}$ 中同样开), 且它们覆盖 $K$ (因 $K$ 与 $U_\infty$ 无交). 由 $K$ 紧致, 即由**定义 5.16 (紧致空间)**, 有有限子族 $U_1,\dots,U_m$ 使 $K\subset\bigcup_{i=1}^{m}U_i$. 于是 $U_\infty,U_1,\dots,U_m$ 覆盖 $\overline{\mathbb{C}}$: $U_\infty$ 含 $\infty$ 与 $U_\infty\cap\mathbb{C}$, 其余集合覆盖 $K$. 故 $\overline{\mathbb{C}}$ 的任意开覆盖都有有限子覆盖, 由**定义 5.16 (紧致空间)**, $\overline{\mathbb{C}}$ 紧致. $\blacksquare$
 
 ## 7.7 (有限离散空间紧致)
+
 给 $\left\{1,\dots,k\right\}$ 赋离散拓扑. 证明 $\left\{1,\dots,k\right\}$ 在该拓扑下紧致.
 
 题集 §3.3 Q1; 2025 卷 B 题一 第 0 小问.
@@ -250,6 +257,7 @@ $$
 > 离散拓扑: 每个点自己就是开集, 开集的并也是开集, 这么说每个点又都是闭集, 所以每个点都是开闭集.
 
 ## 7.8 (吉洪诺夫定理: 映射空间 $\left\{1,\dots,k\right\}^{V}$ 紧致)
+
 用吉洪诺夫定理证明: 映射集合 $X=\left\{f:V\to\left\{1,\dots,k\right\}\right\}$ 紧致.
 
 题集 §3.3 Q2; 2025 卷 B 题一 第 1 小问.
@@ -259,6 +267,7 @@ $$
 集合 $X=\left\{1,\dots,k\right\}^{V}=\prod_{v\in{V}}\left\{1,\dots,k\right\}$ 是离散有限空间 $\left\{1,\dots,k\right\}$ 的乘积. 由**习题 7.7**, 每个因子 $\left\{1,\dots,k\right\}$ 紧致. 由**定理 5.9 (吉洪诺夫定理)**, 乘积 $X$ 在乘积拓扑下紧致. $\blacksquare$
 
 ## 7.9 (连续等价于在每个紧子集上连续)
+
 设 $X,Y$ 是度量空间, $f:X\to{Y}$. 证明: $f$ 连续当且仅当 $f$ 在任意紧子集 $K\subset{X}$ 上的限制都连续.
 
 题集 §3.4 Q2.
@@ -270,6 +279,7 @@ $$
 ($\Leftarrow$) 反设 $f$ 在某点 $x$ 不连续. 由**说明 6.51 (度量连续与序列)** 的逆否与**定义 3.25 (邻域与极限)**, 存在 $\varepsilon>0$ 与序列 $x_n\to{x}$ 使 $d_Y\left(f\left(x_n\right),f\left(x\right)\right)\ge\varepsilon$. 集合 $K=\left\{x\right\}\cup\left\{x_n\right\}$ 紧致: 任取开覆盖, 含 $x$ 的开集 $U$ 是 $x$ 的邻域 (由**定义 3.25 (邻域与极限)**), 由 $x_n\to{x}$ 它含除有限个外的所有 $x_n$; 其余有限个点再各取一个覆盖元, 得有限子覆盖. 由假设 $f|_K$ 连续, 故 $x_n\to{x}$ 时由**说明 6.51 (度量连续与序列)** 应有 $f\left(x_n\right)\to{f}\left(x\right)$, 矛盾. 因此 $f$ 处处连续. $\blacksquare$
 
 ## 7.10 (豪斯多夫空间中局部紧的两种表述等价)
+
 设 $X$ 是豪斯多夫空间. 证明: $X$ 局部紧 (即每点有紧邻域基) 当且仅当每点有一个紧邻域.
 
 题集 §3.5 C3.
@@ -281,6 +291,7 @@ $$
 ($\Leftarrow$) 设每点有一个紧邻域. 取 $x$ 的紧邻域 $K$; 由**定理 5.5 (豪斯多夫中紧集闭)**, $K$ 闭. 任取 $x$ 的邻域 $U$, 即含 $x$ 的开集 (由**定义 3.25 (邻域与极限)**). 令 $L=K\setminus{U}$, 它是紧集 $K$ 的闭子集, 由**定理 5.4 (闭子集紧)** 紧. 对每个 $y\in{L}$, 由**定义 3.10 (豪斯多夫空间)** 有不相交开集 $O_y\ni{x}$, $W_y\ni{y}$; 因 $L$ 紧, $L\subset\bigcup_{i=1}^{m}W_{y_i}$ 对某个有限子族成立. 令 $O=\bigcap_{i=1}^{m}O_{y_i}$, 由**定义 3.18 (拓扑空间)** (有限交仍开) $O$ 是含 $x$ 的开集, 且 $O\cap\bigcup_{i=1}^{m}W_{y_i}=\emptyset$, 故 $O\cap{L}=\emptyset$. 记 $W=\bigcup_{i=1}^{m}W_{y_i}$, 则 $O\subset{X}\setminus{W}$ 且 $X\setminus{W}$ 闭, 由**定义 3.26 (闭包)** $\overline{O}\subset{X}\setminus{W}$; 于是 $\overline{O}\cap{K}\subset\left(X\setminus{W}\right)\cap{K}\subset{K}\setminus{L}=K\cap{U}\subset{U}$. 又 $\overline{O}\cap{K}$ 是紧集 $K$ 的闭子集 ($\overline{O}$ 闭, 见**定义 3.26 (闭包)**), 由**定理 5.4 (闭子集紧)** 紧; 它含 $x$ 的开邻域 $O\cap\operatorname{int}\left(K\right)$. 故 $x$ 有含于 $U$ 的紧邻域; 因 $U$ 任意, $x$ 有紧邻域基. 由题目括号中的表述 (局部紧即每点有紧邻域基), $X$ 局部紧. $\blacksquare$
 
 ## 7.11 (单位球紧致当且仅当空间维数有限)
+
 (维数与紧性) 证明: 任意实赋范线性空间的单位球紧致, 当且仅当该空间维数有限.
 
 题集 §3.5 C6.
@@ -294,6 +305,7 @@ $$
 ($\Rightarrow$) 反之, 若 $E$ 无穷维, 由**定理 6.17 (里茨定理)**, 其闭单位球非紧. 故单位球紧致蕴含维数有限. $\blacksquare$
 
 ## 7.12 (单射连续当且仅当紧集的像皆紧)
+
 设 $E,F$ 是两个度量空间, $f:E\to{F}$ 是单射.
 
 (1) 证明: $f$ 连续当且仅当对每个紧集 $K\subset{E}$, 像集 $f\left(K\right)$ 在 $F$ 中是紧集;

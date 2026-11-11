@@ -53,6 +53,7 @@
 > 设 $X$ 为豪斯多夫空间. 若 $X$ 有由紧集组成的基 $\left\{B\right\}$, 则称 $X$ 局部紧. 等价地, $X$ 在 $x$ 处局部紧, 若存在 $X$ 的紧子空间 $C$ 包含着 $x$ 的一个邻域; 每点如此则称 $X$ 局部紧. (教材 $\S7$, p44; "拓扑学"(原书第2版) $\S29$)
 
 ## 11.1 (贝尔纲定理的局部紧版本)
+
 (贝尔纲, 局部紧版本) 证明: 在局部紧豪斯多夫空间中, 可数个稠密开集之交仍稠密.
 
 题集 §5.1 C6.
@@ -64,6 +65,7 @@
 于是 $\left\{\overline{V_n}\right\}$ 是非空紧集套. 由紧集的有限交性质 (紧空间中具有有限交性质的闭集族之交非空), 存在 $x\in\bigcap_n\overline{V_n}$. 由 $\overline{V_n}\subset{U}_n$ 与 $\overline{V_n}\subset{V}_0$, 有 $x\in{V}_0\cap\bigcap_nU_n$. 故 $V_0$ 与 $\bigcap_nU_n$ 相交. $V_0$ 任意, 由**定义 3.32 (稠密)**, $\bigcap_nU_n$ 稠密. 这正是**定理 6.13 (贝尔纲定理)** 的局部紧版本. $\blacksquare$
 
 ## 11.2 (克罗夫特引理: 题集的版本与两份卷子的版本)
+
 (1) 设 $f:\mathbb{R}_{\ge0}\to\mathbb{R}$ 连续, 且对每个 $x>0$ 序列 $\left\{f\left(nx\right)\right\}_{n\ge1}$ 收敛到 $0$. 证明 $\lim_{x\to\infty}f\left(x\right)=0$. 此结论称为克罗夫特引理;
 
 (2) (2024 卷 A 题四) 取定 $\varepsilon>0$, 令 $F_n=\left\{x\ge0:\forall p\in\mathbb{N},p\ge{n},\left|f\left(px\right)\right|\le\varepsilon\right\}$. 证明每个 $F_n$ 闭, $\bigcup_nF_n\supset\left(0,\infty\right)$, 再用贝尔纲定理由此推出 (1);
@@ -99,6 +101,7 @@ $$
 > 三个版本是同一件事的三种包装: 卷 A 用闭集 $F_n$ 逼近, 卷 B 用稠密开集 $\Omega_n$ 逼近. 反设之后必须把"沿某个 $y$ 的所有整数倍"与"给定的坏列 $x_k$"接起来, 这一步靠的是 $\frac{x_k}{\left\lfloor x_k/y\right\rfloor}\to{y}$.
 
 ## 11.3 (对平移量的收敛在紧区间上一致)
+
 设 $f:\mathbb{R}_{\ge0}\to\mathbb{R}$ 连续, 且对每个 $\lambda\ge0$ 有 $\lim_{x\to\infty}\left(f\left(x+\lambda\right)-f\left(x\right)\right)=0$. 证明对任意 $\left[a,b\right]\subset\mathbb{R}_{\ge0}$, 该收敛对 $\lambda\in\left[a,b\right]$ 一致, 即 $\sup_{\lambda\in\left[a,b\right]}\left|f\left(x+\lambda\right)-f\left(x\right)\right|\to0$ ($x\to\infty$).
 
 题集 $\S6$ C10.
@@ -132,6 +135,7 @@ $$
 > 一致性不能从"每个 $\lambda$ 都收敛"直接读出, 因为对 $\lambda$ 的收敛可能被 $\lambda$ 的微小移动放大; 贝尔纲在这里的作用就是禁止这种放大发生在任意大的 $x$ 处.
 
 ## 11.4 (完备度量空间上严格压缩映射的不动点)
+
 设 $\left(X,d\right)$ 是非空完备度量空间, $f:X\to{X}$ 是严格压缩的, 即存在 $0<{}k<1$ 使对一切 $x,y\in{X}$ 有 $d\left(f\left(x\right),f\left(y\right)\right)\le{k}\,d\left(x,y\right)$. 证明 $f$ 在 $X$ 中有唯一不动点, 即存在唯一的 $x\in{X}$ 使 $f\left(x\right)=x$.
 
 题集 §4.3 Q1.
@@ -155,6 +159,7 @@ $$
 唯一性: 若 $f\left(x\right)=x$, $f\left(y\right)=y$, 则 $d\left(x,y\right)=d\left(f\left(x\right),f\left(y\right)\right)\le{k}\,d\left(x,y\right)$, 而 $0<{}k<1$, 故 $d\left(x,y\right)=0$, 由**定义 6.35 (度量空间)** 的正定性得 $x=y$. 这就是**定理 6.16 (巴拿赫不动点定理)**. $\blacksquare$
 
 ## 11.5 (连续线性映射的利普希茨估计)
+
 设 $\left(E,\left\|\cdot\right\|\right)$ 是域 $\mathbb{K}$ 上的赋范线性空间, $f:E\to{E}$ 是连续线性映射. 证明存在常数 $K>0$, 使对一切 $x,y\in{E}$ 有 $\left\|f\left(x\right)-f\left(y\right)\right\|\le{K}\left\|x-y\right\|$.
 
 题集 §4.3 Q2.
@@ -176,6 +181,7 @@ $$
 $\blacksquare$
 
 ## 11.6 (压缩映射 $g_a$ 与解算子 $J$)
+
 沿用习题 11.5 的设定, $E$ 完备. 证明: 对给定的 $\lambda\in\mathbb{K}$ 满足 $\left|\lambda\right|>{}K$, 固定 $a\in{E}$, 映射
 
 $$
@@ -197,6 +203,7 @@ $$
 由假设 $\left|\lambda\right|>{}K$, 故 $k=K/\left|\lambda\right|<1$. 由**定义 6.19 (压缩映射)**, $g_a$ 是压缩映射. $E$ 非空且是**定义 6.38 (完备度量空间)**, 由**定理 6.16 (巴拿赫不动点定理)**, $g_a$ 有唯一不动点, 记为 $J\left(a\right)$. $\blacksquare$
 
 ## 11.7 (解算子 $J$ 的利普希茨估计)
+
 证明 $\left\|J\left(a\right)-J\left(b\right)\right\|\le\frac{1}{\left|\lambda\right|-K}\left\|a-b\right\|$.
 
 题集 §4.3 Q4.
@@ -230,6 +237,7 @@ $$
 $\blacksquare$
 
 ## 11.8 (方程 $f\left(x\right)-\lambda{x}=a$ 的唯一可解性与解的连续性)
+
 总结如下结论: 对任意连续线性映射 $f:E\to{E}$, 存在 $K>0$, 使对一切满足 $\left|\lambda\right|>{}K$ 的 $\lambda$ 与一切 $a\in{E}$, 方程 $f\left(x\right)-\lambda{x}=a$ (未知量 $x\in{E}$) 有唯一解 $J\left(a\right)$, 且映射 $a\mapsto{J}\left(a\right)$ 连续.
 
 题集 §4.3 Q5.
@@ -247,6 +255,7 @@ $$
 由习题 11.7, $\left\|J\left(a\right)-J\left(b\right)\right\|\le\frac{1}{\left|\lambda\right|-K}\left\|a-b\right\|$, 即 $J$ 是利普希茨映射. 由利普希茨映射连续, $J$ 连续. $\blacksquare$
 
 ## 11.9 (交集的规范函数是各规范函数的上确界)
+
 设 $E$ 是 $\mathbb{K}$ 上拓扑向量空间, $C$ 是 $0$ 的凸邻域, 规范函数 $\left\|\cdot\right\|_C:E\to\left[0,\infty\right)$ 由规范函数给出. 若 $\left\{C_\alpha\right\}_{\alpha\in{A}}$ 是 $E$ 中一族凸集且其交是 $0$ 的凸邻域, 证明
 
 $$

@@ -58,7 +58,7 @@
 
 > **定义 4.23 (凸集)**
 > 
-> $K\subset\mathbb{R}^n$ 凸即 $x,y\in{K}$ 蕴含线段 $\left(1-t\right)x+ty$ ($t\in\left[0,1\right]$) 全在 $K$ 中; 凸集必路径连通, 路径连通蕴含连通. (教材 §4, p24)
+> $K\subset\mathbb{R}^n$ 凸即 $\boldsymbol{x},\boldsymbol{y}\in{K}$ 蕴含线段 $\left(1-t\right)\boldsymbol{x}+t\boldsymbol{y}$ ($t\in\left[0,1\right]$) 全在 $K$ 中; 凸集必路径连通, 路径连通蕴含连通. (教材 §4, p24)
 
 > **定理 5.1 (紧空间连续像紧)**
 > 
@@ -89,6 +89,7 @@
 > 满射 $f:X\to{Y}$ 使 $U\subset{Y}$ 开当且仅当 $f^{-1}\left(U\right)$ 开; 等价地, $Y$ 上的拓扑是使 $f$ 连续的最大拓扑. 此时 $g:Y\to{Z}$ 连续当且仅当 $g\circ{f}:X\to{Z}$ 连续. (教材 §11, p61; "基础拓扑学"(修订版) 第4章 定理(4.1)-(4.2), p55-56)
 
 ## 6.1 (平面区域的单连通与 $n$ 重连通)
+
 (单连通性) 平面区域 $G\subset\mathbb{R}^2$ 指开且路径连通的子集. 若其余集连通, 称 $G$ 单连通; 若余集由 $n$ 个连通分支组成, 称 $G$ $n$ 重连通. 证明:
 
 (1) 余集的每个分支 $F$ 闭;
@@ -112,6 +113,7 @@
 (4) 平面 $n$ 重连通区域彼此同胚 (同胚于带 $n-1$ 个洞的圆盘), 故连续双射 (进而同胚) 保持分支数. 反过来: 是, 任意两个 $n$ 重连通平面区域之间存在同胚. 由**定理 4.3 (路径连通蕴含连通)** 与**定义 4.18 (连通空间)** 可作拓扑分类. (阿尔福斯五岛定理是复分析值分布的著名结果, 可自行检索.) $\blacksquare$
 
 ## 6.2 (删齿梳空间的路径分支与证明回顾)
+
 (证明回顾) 回顾路径连通的定义. 回顾删齿梳空间的定义及其非路径连通性的证明. 问: 删齿梳空间有多少个路径连通分支? 若现在允许路径由 $f:\left[0,\infty\right)\to{X}$ 连续参数化, 同一证明还成立吗? 课上另一个用紧致性的证明呢?
 
 题集 §3.5 C2.
@@ -129,6 +131,7 @@ $$
 改用 $\left[0,\infty\right)$ 参数化时, 上述连通性论证在首个逃逸时刻附近局部成立, 不依赖定义域紧致, 故仍无路径. 课上用紧致性的证明 (连续像 $\gamma\left(\left[0,1\right]\right)$ 紧致, 由**定理 5.1 (紧空间连续像紧)**) 对 $\left[0,\infty\right)$ 失效, 但连通性证明已足够. $\blacksquare$
 
 ## 6.3 (差商的像与导函数的值域)
+
 (2024年卷A 题目一) 设 $f:\mathbb{R}\to\mathbb{R}$ 可微但不假设 $f'$ 连续, $I\subset\mathbb{R}$ 为非平凡开区间.
 
 (1) 证明 $A=\left\{\left(x,y\right)\in{I}^2:x<{}y\right\}$ 连通;
@@ -152,6 +155,7 @@ $$
 (4) $\Gamma$ 连通故是区间; 闭包 $\overline\Gamma$ 也是区间 (连通集的闭包仍连通); $f'\left(I\right)$ 夹在二者之间, 故 $f'\left(I\right)$ 是区间. $\blacksquare$
 
 ## 6.4 (商映射保持连通性, 路径连通性与局部连通性)
+
 设 $X$ 是拓扑空间, $\pi:X\to{Y}$ 是商映射, $Y$ 配以由 $\pi$ 诱导的商拓扑.
 
 (1) 证明若 $X$ 连通, 则 $Y$ 连通;
@@ -171,6 +175,7 @@ $$
 第 (3) 小题: 只证局部连通情形, 局部路径连通完全平行. 任取 $y\in{Y}$ 与由**定义 3.25 (邻域与极限)** 给出的开邻域 $O\subset{Y}$. 取 $x\in\pi^{-1}\left(y\right)$. 由**定义 11.2 (粘合映射)**, $\pi^{-1}\left(O\right)$ 是 $x$ 的开邻域. 由 $X$ 局部连通与**定义 4.9 (局部连通)**, 存在连通开集 $U\subset{X}$ 使 $x\in{U}\subset\pi^{-1}\left(O\right)$. 因 $\pi$ 是开映射, $\pi\left(U\right)$ 是 $Y$ 中开集; 它含 $y$, 含于 $O$, 且由**定理 4.2 (连续像连通)** 它连通. 故 $y$ 有含于 $O$ 的连通开邻域, $Y$ 局部连通. 对局部路径连通, 把 "连通开集" 换成 "路径连通开集", 由**定义 4.10 (局部路径连通)** 同样在每点取得路径连通开邻域, 再由**定理 3.1 (复合连续)** 路径的连续像仍是路径, 故 $\pi\left(U\right)$ 路径连通, 即得 $Y$ 局部路径连通. $\blacksquare$
 
 ## 6.5 (无穷维赋范空间中紧集的余集道路连通)
+
 设 $E$ 是无穷维赋范线性空间, $K\subset{E}$ 是紧集. 证明 $E\setminus{K}$ 道路连通. 问有限维赋范线性空间中此结论是否成立?
 
 题集 §6 C1.
@@ -186,25 +191,27 @@ $$
 有限维情形: 结论不成立. 取 $E=\mathbb{R}^2$, $K=S^1=\left\{\left(u,v\right):u^2+v^2=1\right\}$. $S^1$ 由**定理 5.3 ($\mathbb{R}^n$ 中的紧集)** 是闭有界集, 故紧. 但 $\mathbb{R}^2\setminus{S}^1=\left\{u^2+v^2<1\right\}\cup\left\{u^2+v^2>1\right\}$ 是两个非空不相交开集之并, 由**定义 4.18 (连通空间)** 不连通, 因而不道路连通. $\blacksquare$
 
 ## 6.6 (等值集皆紧的连续函数必取到极值)
+
 设 $f:\mathbb{R}^n\to\mathbb{R}$ 连续, $n\ge2$, 且对每个 $a\in\mathbb{R}$, 等值集 $f^{-1}\left(a\right)$ 紧. 证明 $f$ 取得全局极值 (上确界或下确界之一达到). 问 $n=1$ 时结论如何?
 
 题集 §6 C2.
 
 ### 解答 6.6
 
-取定 $a$ 使 $f^{-1}\left(a\right)\neq\emptyset$ (若非空), 即存在 $x_0$ 使 $f\left(x_0\right)=a$. 由假设 $f^{-1}\left(a\right)$ 紧, 由**定理 5.3 ($\mathbb{R}^n$ 中的紧集)** 它是闭有界集, 故存在 $R>0$ 使 $f^{-1}\left(a\right)\subset{B}\left(0,R\right)$.
+取定 $a$ 使 $f^{-1}\left(a\right)\neq\emptyset$ (若非空), 即存在 $\boldsymbol{x}_0$ 使 $f\left(\boldsymbol{x}_0\right)=a$. 由假设 $f^{-1}\left(a\right)$ 紧, 由**定理 5.3 ($\mathbb{R}^n$ 中的紧集)** 它是闭有界集, 故存在 $R>0$ 使 $f^{-1}\left(a\right)\subset{B}\left(0,R\right)$.
 
 球面 $\partial{B}\left(0,R\right)$ 在 $n\ge2$ 时连通 (它是 $\mathbb{R}^n$ 中连通紧集). 由**定义 3.22 (连续映射)**, $f\left(\partial{B}\left(0,R\right)\right)$ 是 $\mathbb{R}$ 中不含 $a$ 的连通集; 由**定理 4.2 (连续像连通)** 它连通, 故必全在 $\left(a,\infty\right)$ 或全在 $\left(-\infty,a\right)$ 中. 不妨设 $f>{}a$ 在 $\partial{B}\left(0,R\right)$ 上.
 
-反证: 假设 $f$ 既无全局最大值也无全局最小值. 由 $f$ 无最小值, 存在 $x$ 使 $f\left(x\right)<{}a$. 若 $\left\|x\right\|>{}R$, 考虑从 $x$ 到球心 $0$ 的径向线段; 由**定理 4.1 (区间连通)** 该线段连通, 其上 $f$ 连续, 在端点 $x$ 处 $f<{}a$, 在球面处 $f>{}a$, 由连续函数的介值定理 必有点 $p$ 在该线段上使 $f\left(p\right)=a$ 且 $\left\|p\right\|>{}R$, 这与 $f^{-1}\left(a\right)\subset{B}\left(0,R\right)$ 矛盾. 故 $f$ 无最小值只能在 $\left\|x\right\|<{}R$ 内发生.
+反证: 假设 $f$ 既无全局最大值也无全局最小值. 由 $f$ 无最小值, 存在 $\boldsymbol{x}$ 使 $f\left(\boldsymbol{x}\right)<{}a$. 若 $\left\|\boldsymbol{x}\right\|>{}R$, 考虑从 $\boldsymbol{x}$ 到球心 $0$ 的径向线段; 由**定理 4.1 (区间连通)** 该线段连通, 其上 $f$ 连续, 在端点 $\boldsymbol{x}$ 处 $f<{}a$, 在球面处 $f>{}a$, 由连续函数的介值定理 必有点 $\boldsymbol{p}$ 在该线段上使 $f\left(\boldsymbol{p}\right)=a$ 且 $\left\|\boldsymbol{p}\right\|>{}R$, 这与 $f^{-1}\left(a\right)\subset{B}\left(0,R\right)$ 矛盾. 故 $f$ 无最小值只能在 $\left\|\boldsymbol{x}\right\|<{}R$ 内发生.
 
-同理, 由 $f$ 无最大值, 存在 $y$ 使 $f\left(y\right)>{}a$. 若 $\left\|y\right\|>{}R$, 则因外部区域 $\mathbb{R}^n\setminus\overline{B}\left(0,R\right)$ 在 $n\ge2$ 时连通且 $f>{}a$ 在其边界 $\partial{B}\left(0,R\right)$ 上, 由**定理 4.2 (连续像连通)** 与连续函数的介值定理 推出外部某处 $f=a$, 矛盾. 故 $f$ 的上无界性也只能在 $\overline{B}\left(0,R\right)$ 内发生.
+同理, 由 $f$ 无最大值, 存在 $\boldsymbol{y}$ 使 $f\left(\boldsymbol{y}\right)>{}a$. 若 $\left\|\boldsymbol{y}\right\|>{}R$, 则因外部区域 $\mathbb{R}^n\setminus\overline{B}\left(0,R\right)$ 在 $n\ge2$ 时连通且 $f>{}a$ 在其边界 $\partial{B}\left(0,R\right)$ 上, 由**定理 4.2 (连续像连通)** 与连续函数的介值定理 推出外部某处 $f=a$, 矛盾. 故 $f$ 的上无界性也只能在 $\overline{B}\left(0,R\right)$ 内发生.
 
 于是在紧集 $\overline{B}\left(0,R\right)$ 上由**定理 5.11 (紧空间上连续函数取最大值)**, $f$ 取得最大值与最小值; 而在 $\mathbb{R}^n\setminus\overline{B}\left(0,R\right)$ 上 $f>{}a$, 故 $f$ 在 $\overline{B}\left(0,R\right)$ 上取得的最小值就是全局最小值. 故 $f$ 取得全局极值.
 
 $n=1$: 结论不成立. 取 $f\left(x\right)=x$, 则 $f^{-1}\left(a\right)=\left\{a\right\}$ 是单点集紧, 但 $f:\mathbb{R}\to\mathbb{R}$ 既无最大值也无最小值. $\blacksquare$
 
 ## 6.7 (超平面的余集道路连通当且仅当超平面不闭)
+
 设 $E$ 是赋范线性空间, $H$ 是超平面. 证明 $E\setminus{H}$ 道路连通当且仅当 $H$ 不是闭集.
 
 注: 题集原文误作 "当且仅当 $H$ 是闭集", 与其附证方向不符 (附证证的正是 $H$ 非闭时道路连通, $H$ 闭时 $E\setminus{H}$ 分裂为两个凸分支); 此处按数学本意改正.

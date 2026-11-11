@@ -18,7 +18,7 @@
 
 > **定义 4.23 (凸集)**
 > 
-> $K\subset\mathbb{R}^n$ 凸即 $x,y\in{K}$ 蕴含线段 $\left(1-t\right)x+ty$ ($t\in\left[0,1\right]$) 全在 $K$ 中; 凸集必路径连通, 路径连通蕴含连通. (教材 §4, p24)
+> $K\subset\mathbb{R}^n$ 凸即 $\boldsymbol{x},\boldsymbol{y}\in{K}$ 蕴含线段 $\left(1-t\right)\boldsymbol{x}+t\boldsymbol{y}$ ($t\in\left[0,1\right]$) 全在 $K$ 中; 凸集必路径连通, 路径连通蕴含连通. (教材 §4, p24)
 
 > **定理 5.1 (紧空间连续像紧)**
 > 
@@ -117,6 +117,7 @@
 > 度量空间 $X$ 是豪斯多夫的, 故极限唯一. (教材 $\S6$, p33)
 
 ## 9.1 (序列收敛等价于唯一子列极限 (附两个子列极限的轨道))
+
 (两个子列极限) 设 $K$ 是某**定义 6.20 (赋范线性空间)** 的紧子空间.
 
 (1) 证明 $K$ 中序列收敛当且仅当它只有唯一子列极限;
@@ -134,6 +135,7 @@
 $f$ 连续, 把子列极限映为序列 $f^{n+1}\left(x\right)$ 的子列极限, 而后者的子列极限集同为 $\left\{z_0,z_1\right\}$. 故 $f\left(z_0\right),f\left(z_1\right)\in\left\{z_0,z_1\right\}$. 若 $f\left(z_0\right)=z_0$, 则偶子列将只有一个子列极限, 与第 (1) 小题矛盾; 故 $f\left(z_0\right)=z_1$, 同理 $f\left(z_1\right)=z_0$. 于是 $f^{2k}\left(x\right)$ 恰在 $z_0$ 附近累积, $f^{2k+1}\left(x\right)$ 恰在 $z_1$ 附近累积, 由第 (1) 小题分别收敛到 $z_0,z_1$. $\blacksquare$
 
 ## 9.2 (紧度量空间中不减距离的连续自映射是等距且双射)
+
 设 $E$ 是紧度量空间, $f:E\to{E}$ 连续, 且对一切 $x,y\in{E}$ 满足 $d\left(f\left(x\right),f\left(y\right)\right)\ge{d}\left(x,y\right)$.
 
 (1) 证明 $f$ 实际上是**定义 6.49 (等距映射)**, 即 $d\left(f\left(x\right),f\left(y\right)\right)=d\left(x,y\right)$;
@@ -167,15 +169,16 @@ $$
 (3) $E$ 紧且是**说明 6.50 (度量空间是豪斯多夫的)**, $g$ 是紧豪斯多夫空间之间的连续双射, 由**定理 5.6 (紧豪斯多夫间的连续双射)**, $g^{-1}$ 连续. 条件 $d\left(g\left(x\right),g\left(y\right)\right)\le{d}\left(x,y\right)$ 改写为: 对任意 $u,v\in{E}$, 令 $u=g\left(x\right)$, $v=g\left(y\right)$, 则 $d\left(g^{-1}\left(u\right),g^{-1}\left(v\right)\right)\ge{d}\left(u,v\right)$. 即 $g^{-1}$ 是紧度量空间上连续且距离不减的映射. 由第 (1) 小题, $g^{-1}$ 是**定义 6.49 (等距映射)**, 从而 $g$ 也是等距. $\blacksquare$
 
 ## 9.3 (紧集的 $\varepsilon$-分离集基数有界)
-等距与紧性. 设 $K\subset\mathbb{R}^n$ 是非空紧集, $\varepsilon>0$. 称 $A\subset{K}$ 是 $\varepsilon$-分离的, 若 $x\neq{y}$ 蕴含 $\left|x-y\right|>\varepsilon$. 证明存在有限数 $M\left(\varepsilon\right)$, 使 $K$ 中任何 $\varepsilon$-分离集的基数不超过 $M\left(\varepsilon\right)$. 再证明: 若 $f:K\to{K}$ 是**定义 6.49 (等距映射)**, 则 $f$ 满.
+
+等距与紧性. 设 $K\subset\mathbb{R}^n$ 是非空紧集, $\varepsilon>0$. 称 $A\subset{K}$ 是 $\varepsilon$-分离的, 若 $\boldsymbol{x}\neq\boldsymbol{y}$ 蕴含 $\left|\boldsymbol{x}-\boldsymbol{y}\right|>\varepsilon$. 证明存在有限数 $M\left(\varepsilon\right)$, 使 $K$ 中任何 $\varepsilon$-分离集的基数不超过 $M\left(\varepsilon\right)$. 再证明: 若 $f:K\to{K}$ 是**定义 6.49 (等距映射)**, 则 $f$ 满.
 
 题集 §4.5 C8.
 
 ### 解答 9.3
 
-反设存在任意大的 $\varepsilon$-分离集. 则可取两两不同的点列 $x_m\in{K}$ 使 $m\neq{m}'$ 时 $\left|x_m-x_{m'}\right|>\varepsilon$. 由**定理 5.3 ($\mathbb{R}^n$ 中的紧集)** 与**定理 6.1 (紧 $=$ 序列紧)**, $\left(x_m\right)$ 有收敛子列; 收敛子列是**定义 6.37 (柯西列)**, 充分靠后两项距离 $<\varepsilon$, 与 $\varepsilon$-分离矛盾. 故存在 $M\left(\varepsilon\right)$.
+反设存在任意大的 $\varepsilon$-分离集. 则可取两两不同的点列 $\boldsymbol{x}_m\in{K}$ 使 $m\neq{m}'$ 时 $\left|\boldsymbol{x}_m-\boldsymbol{x}_{m'}\right|>\varepsilon$. 由**定理 5.3 ($\mathbb{R}^n$ 中的紧集)** 与**定理 6.1 (紧 $=$ 序列紧)**, $\left(\boldsymbol{x}_m\right)$ 有收敛子列; 收敛子列是**定义 6.37 (柯西列)**, 充分靠后两项距离 $<\varepsilon$, 与 $\varepsilon$-分离矛盾. 故存在 $M\left(\varepsilon\right)$.
 
-满性: 反设 $f$ 不满, 取 $p\notin{f}\left(K\right)$. $f\left(K\right)$ 紧, 由**定理 5.3 ($\mathbb{R}^n$ 中的紧集)** 闭, 故 $\delta=d\left(p,f\left(K\right)\right)>0$. 轨道 $p,f\left(p\right),f^2\left(p\right),\dots$ 满足
+满性: 反设 $f$ 不满, 取 $\boldsymbol{p}\notin{f}\left(K\right)$. $f\left(K\right)$ 紧, 由**定理 5.3 ($\mathbb{R}^n$ 中的紧集)** 闭, 故 $\delta=d\left(\boldsymbol{p},f\left(K\right)\right)>0$. 轨道 $\boldsymbol{p},f\left(\boldsymbol{p}\right),f^2\left(\boldsymbol{p}\right),\dots$ 满足
 
 $$
 \left|f^{n+1}\left(p\right)-f^n\left(p\right)\right|=\left|f\left(f^n\left(p\right)\right)-f\left(f^{n-1}\left(p\right)\right)\right|=\left|f^n\left(p\right)-f^{n-1}\left(p\right)\right|\ge\cdots\ge\left|f\left(p\right)-p\right|\ge\delta,
@@ -225,6 +228,7 @@ $$
 对 $x\in{A}$ 令 $g\left(x\right)=f\left(x\right)$. 由平移缩放 (不妨设 $\inf_Af=1$, $\sup_Af=2$), 可验证 $g$ 连续: $x\in\operatorname{int}A$ 时 $g=f$ 连续; $x\notin{A}$ 时由三角不等式 $d\left(x,A\right)$ 连续且正, $g$ 连续; $x\in\partial{A}$ 时由 $f$ 在 $A$ 上连续, 对 $\varepsilon>0$ 取 $r>0$ 使 $y\in{B}\left(x,r\right)\cap{A}$ 时 $\left|f\left(y\right)-f\left(x\right)\right|<\varepsilon$, 再对 $z\notin{A}$ 且 $\left\|z-x\right\|<{}r/4$ 用三角不等式估计得 $\left|g\left(z\right)-f\left(x\right)\right|<\varepsilon$. 由**定义 3.22 (连续映射)**, $g$ 在全 $E$ 上连续. 由构造 $\inf_Eg=\inf_Af$, $\sup_Eg=\sup_Af$. 这就是**定理 6.18 (蒂茨-乌雷松扩张定理)**. $\blacksquare$
 
 ## 9.5 (2024 卷 A 题三: 紧凸集上非扩张映射的不动点)
+
 设 $E$ 是赋范线性空间, $K\subset{E}$ 紧且凸, $f:K\to{K}$ 连续, 且对任意 $x,y\in{K}$ 有 $\left\|f\left(x\right)-f\left(y\right)\right\|\le\left\|x-y\right\|$.
 
 (1) 证明: 若把条件加强为对 $x\neq{y}$ 有 $\left\|f\left(x\right)-f\left(y\right)\right\|<\left\|x-y\right\|$, 则 $f$ 至少有一个不动点;
@@ -266,6 +270,7 @@ $$
 > 三条路线放在一起看: 严格压缩直接给出最小点; 非扩张则先压一点点换成压缩映射, 再用紧性把不动点传回极限.
 
 ## 9.6 (紧凸集上连续仿射映射的不动点 (角谷–马尔可夫定理))
+
 证明: 紧凸集到自身的连续仿射映射有不动点 (角谷-马尔可夫定理).
 
 2025 卷 A 题二.
@@ -275,6 +280,7 @@ $$
 设 $K\subset{E}$ 紧凸, $f:K\to{K}$ 连续仿射. 考虑 $K$ 的所有非空闭凸子集族, 它们在 $f$ 下不变. 由**定理 5.1 (紧空间连续像紧)** 与**定义 4.23 (凸集)**, $f$ 把闭凸集映为闭凸集. 由**定义 5.17 (有限交性质)** 与**定理 5.10 (有限交判据)**, 这些不变闭凸子集族具有有限交性质, 其交 $K_0$ 非空. 取 $K_0$ 为极小不变闭凸集. 由极小性, $f\left(K_0\right)=K_0$. 若 $K_0$ 多于一点, 由凸性与仿射性可进一步收缩, 矛盾. 故 $K_0$ 为单点 $\left\{x\right\}$, 即 $f\left(x\right)=x$. $\blacksquare$
 
 ## 9.7 (集合间下确界距离一般不是度量)
+
 设 $\left(X,d\right)$ 是度量空间. 证明朴素定义 $d\left(A,B\right)=\inf_{a\in{A},b\in{B}}d\left(a,b\right)$ 一般不是度量.
 
 题集 §3.2 Q1.
@@ -298,6 +304,7 @@ $$
 > 这给出了我们需要定义豪斯多夫距离的一个原因.
 
 ## 9.8 ($\varepsilon$-邻域的嵌套不等式)
+
 定义集合 $A\subset{X}$ 的 $\varepsilon$-邻域 $U_\varepsilon\left(A\right)=\left\{x\in{X}:d\left(x,A\right)<\varepsilon\right\}$, 其中 $d\left(x,A\right)=\inf_{a\in{A}}d\left(x,a\right)$. 证明: 对 $r_1,r_2>0$ 与任意 $A\subset{X}$,
 
 $$
@@ -329,6 +336,7 @@ $$
 > 不可逆的原因正是因为邻域是严格小于, 这导致三角不等式变成了严格成立.
 
 ## 9.9 (豪斯多夫距离是伪距离)
+
 定义子集 $A,B\subset{X}$ 之间的豪斯多夫距离
 
 $$
@@ -360,6 +368,7 @@ $$
 > $d_H\left(A,B\right)=0\not\Rightarrow{A}=B$: 取 $A=\left(0,1\right)$, $B=\left[0,1\right]$, $d_H\left(A,B\right)=0$ 但 $A\ne{B}$.
 
 ## 9.10 (闭集间豪斯多夫距离为零蕴含两集相等)
+
 证明: 对一切 $A\subset{X}$, $d_H\left(A,A\right)=0$. 若 $A,B$ 闭, 则 $d_H\left(A,B\right)=0$ 蕴含 $A=B$.
 
 题集 §3.2 Q4.
@@ -369,6 +378,7 @@ $$
 现设 $A,B$ 闭且 $d_H\left(A,B\right)=0$. 任取 $a\in{A}$. 对每个 $n$, 由**定义 6.48 (豪斯多夫距离)** 与 $d_H\left(A,B\right)=0$, 存在 $b_n\in{B}$ 使 $d_H\left(a,b_n\right)<1/n$. 于是 $b_n\to{a}$. 由**定义 3.21 (闭集)**, 闭集含其中序列的极限, 故 $a\in{B}$. 这证明 $A\subset{B}$. 交换 $A,B$ 同理得 $B\subset{A}$, 故 $A=B$. $\blacksquare$
 
 ## 9.11 (豪斯多夫距离限制在紧子集族上是真度量)
+
 证明: 若把豪斯多夫距离限制在紧子集族 $\mathcal{K}\left(X\right)$ 上, 则它是 $\mathcal{K}\left(X\right)$ 上的真度量.
 
 题集 §3.2 Q5.
