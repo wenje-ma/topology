@@ -132,7 +132,9 @@ $$
 B\left(x,r_n\right)\subset{B}\left(x,r\right)\subset{U}.
 $$
 
-由**定义 3.30 (基本邻域系)**, $\left\{B\left(x,r_n\right)\right\}$ 是 $x$ 的基本邻域系. $\blacksquare$
+由**定义 3.30 (基本邻域系)**, $\left\{B\left(x,r_n\right)\right\}$ 是 $x$ 的基本邻域系.
+
+$\blacksquare$
 
 (2) $U$ 开且 $A\subset{U}$, 故 $U$ 是 $A$ 的邻域. 对任意 $\varepsilon>0$, 取点
 
@@ -140,7 +142,9 @@ $$
 a=\left(\frac{\varepsilon}{2},\frac{2}{\varepsilon}\right)\in{A},
 $$
 
-再取 $a'=\left(-\frac{\varepsilon}{4},\frac{2}{\varepsilon}\right)$. 由**定义 6.46 (点到集合的距离)**, $d\left(a',A\right)\le{d}\left(a',a\right)=\frac{3\varepsilon}{4}<\varepsilon$, 故由**定义 6.47 ($\varepsilon$-邻域)** $a'\in{V}_{\varepsilon}\left(A\right)$. 但 $a'$ 的横坐标为负, $a'\notin{U}$. 于是对每个 $\varepsilon>0$, $V_{\varepsilon}\left(A\right)\not\subset{U}$. 故没有任何 $V_{\varepsilon}\left(A\right)$ 含于 $U$, 由**定义 3.30 (基本邻域系)**, $\left\{V_{\varepsilon}\left(A\right)\right\}$ 不是 $A$ 的基本邻域系. $\blacksquare$
+再取 $a'=\left(-\frac{\varepsilon}{4},\frac{2}{\varepsilon}\right)$. 由**定义 6.46 (点到集合的距离)**, $d\left(a',A\right)\le{d}\left(a',a\right)=\frac{3\varepsilon}{4}<\varepsilon$, 故由**定义 6.47 ($\varepsilon$-邻域)** $a'\in{V}_{\varepsilon}\left(A\right)$. 但 $a'$ 的横坐标为负, $a'\notin{U}$. 于是对每个 $\varepsilon>0$, $V_{\varepsilon}\left(A\right)\not\subset{U}$. 故没有任何 $V_{\varepsilon}\left(A\right)$ 含于 $U$, 由**定义 3.30 (基本邻域系)**, $\left\{V_{\varepsilon}\left(A\right)\right\}$ 不是 $A$ 的基本邻域系.
+
+$\blacksquare$
 
 > 同样的构造基本邻域系的规则, 为什么全集就满足, 子集就不满足呢? 因为全集上定义的邻域必定全在全集内部; 而对于子集, 我们可以找到该子集的边界作为反例的邻域, 在其上的任何 $\varepsilon$-邻域都会超出其范围.
 
@@ -162,9 +166,13 @@ $$
 d\left(x,y\right)\le{d}\left(x,z\right)+d\left(z,y\right)<2r=\frac23d\left(x,y\right),
 $$
 
-矛盾. 故 $B\left(x,r\right)\cap{B}\left(y,r\right)=\emptyset$. 由**定义 3.10 (豪斯多夫空间)**, 度量空间是豪斯多夫的. $\blacksquare$
+矛盾. 故 $B\left(x,r\right)\cap{B}\left(y,r\right)=\emptyset$. 由**定义 3.10 (豪斯多夫空间)**, 度量空间是豪斯多夫的.
 
-(2) 任取 $x\neq{y}$. 已知在扎里斯基拓扑下, 任一非空扎里斯基开集都稠密, 故任意两个非空扎里斯基开集相交. 因而不存在不相交的两个扎里斯基开集分别含 $x$ 与 $y$, 由**定义 3.10 (豪斯多夫空间)**, 扎里斯基拓扑不是豪斯多夫的. $\blacksquare$
+$\blacksquare$
+
+(2) 任取 $x\neq{y}$. 已知在扎里斯基拓扑下, 任一非空扎里斯基开集都稠密, 故任意两个非空扎里斯基开集相交. 因而不存在不相交的两个扎里斯基开集分别含 $x$ 与 $y$, 由**定义 3.10 (豪斯多夫空间)**, 扎里斯基拓扑不是豪斯多夫的.
+
+$\blacksquare$
 
 ## 3.3 (正规性的两种刻画与度量空间的正规性)
 
@@ -178,7 +186,9 @@ $$
 
 ### 解答 3.3
 
-(1) 证两种定义等价. 若 $X$ 满足**定义 7.6 (正规空间)**, 则对任意含于开集 $V$ 的闭集 $F$, 存在开集 $U$ 使 $F\subset{U}\subset\overline{U}\subset{V}$. 则 $x\in{F}$ 与 $y\in{X\setminus{V}}$ 的开集 $U$ 与 $X\setminus{\overline{V}}$ 不相交. $F$ 任意则 $X$ 是豪斯多夫的; 反过来, $X$ 是豪斯多夫的, 则任意 $x\ne{y}$, 都存在开集 $U\ni{x}$, $V\ni{y}$ 不相交, 则存在闭集 $B\left(x,\varepsilon\right)$ 满足 $x\in{B\left(x,\varepsilon\right)}\subset{\overline{B}\left(x,\varepsilon\right)}\subset{U}\subset{\overline{U}}\subset{X\setminus\overline{V}}$. $\blacksquare$
+(1) 证两种定义等价. 若 $X$ 满足**定义 7.6 (正规空间)**, 则对任意含于开集 $V$ 的闭集 $F$, 存在开集 $U$ 使 $F\subset{U}\subset\overline{U}\subset{V}$. 则 $x\in{F}$ 与 $y\in{X\setminus{V}}$ 的开集 $U$ 与 $X\setminus{\overline{V}}$ 不相交. $F$ 任意则 $X$ 是豪斯多夫的; 反过来, $X$ 是豪斯多夫的, 则任意 $x\ne{y}$, 都存在开集 $U\ni{x}$, $V\ni{y}$ 不相交, 则存在闭集 $B\left(x,\varepsilon\right)$ 满足 $x\in{B\left(x,\varepsilon\right)}\subset{\overline{B}\left(x,\varepsilon\right)}\subset{U}\subset{\overline{U}}\subset{X\setminus\overline{V}}$.
+
+$\blacksquare$
 
 (2) 证度量空间正规. 设 $F$ 闭. 由**定义 6.46 (点到集合的距离)**, $d\left(x,F\right)=\inf_{a\in{F}}d\left(x,a\right)$. 由**定义 6.35 (度量空间)** 的三角不等式,
 
@@ -193,7 +203,9 @@ U=\left\{x:d\left(x,F\right)<{}d\left(x,F'\right)\right\},\quad
 V=\left\{x:d\left(x,F'\right)<{}d\left(x,F\right)\right\}.
 $$
 
-二者开 (连续函数的原像, 由**定义 3.22 (连续映射)**), 不相交, 且 $F\subset{U}$ (因 $x\in{F}$ 时 $d\left(x,F\right)=0<{}d\left(x,F'\right)$), $F'\subset{V}$. 由**定义 7.6 (正规空间)**, 度量空间正规. $\blacksquare$
+二者开 (连续函数的原像, 由**定义 3.22 (连续映射)**), 不相交, 且 $F\subset{U}$ (因 $x\in{F}$ 时 $d\left(x,F\right)=0<{}d\left(x,F'\right)$), $F'\subset{V}$. 由**定义 7.6 (正规空间)**, 度量空间正规.
+
+$\blacksquare$
 
 ## 3.4 (混合烧烤拓扑: 非豪斯多夫且无闭邻域基本系)
 
@@ -221,11 +233,17 @@ $$
 
 ### 解答 3.4
 
-(1) 先验基条件. 对 $x\in\left(0,1\right]$, 两个形如 $\left(x-\frac1n,x+\frac1n\right)\cap\left(0,1\right]$ 的集之交仍含一个同形集; 对 $0^{\pm}$, $\left\{0^{\pm}\right\}\cup\left(0,\frac1n\right)$ 之交为 $\left\{0^{\pm}\right\}\cup\left(0,1/\max\left(n,m\right)\right)$. 全体覆盖 $X$. 由**定义 3.15 (拓扑基)**, $\mathcal{B}$ 是某拓扑的基. $\blacksquare$
+(1) 先验基条件. 对 $x\in\left(0,1\right]$, 两个形如 $\left(x-\frac1n,x+\frac1n\right)\cap\left(0,1\right]$ 的集之交仍含一个同形集; 对 $0^{\pm}$, $\left\{0^{\pm}\right\}\cup\left(0,\frac1n\right)$ 之交为 $\left\{0^{\pm}\right\}\cup\left(0,1/\max\left(n,m\right)\right)$. 全体覆盖 $X$. 由**定义 3.15 (拓扑基)**, $\mathcal{B}$ 是某拓扑的基.
 
-(2) 非豪斯多夫: 任取 $0^{-}$ 的邻域, 它含某 $\left\{0^{-}\right\}\cup\left(0,\frac1n\right)$; $0^{+}$ 的邻域含某 $\left\{0^{+}\right\}\cup\left(0,\frac1m\right)$. 二者都含 $\left(0,1/\max\left(n,m\right)\right)$, 故相交. 不存在不相交开集分别含 $0^{-}$ 与 $0^{+}$, 由**定义 3.10 (豪斯多夫空间)**, 该拓扑非豪斯多夫. $\blacksquare$
+$\blacksquare$
 
-(3) $0^{+}$ 无闭邻域基本系: 设 $C$ 是 $0^{+}$ 的任一闭邻域. 它必含某基本开邻域 $\left\{0^{+}\right\}\cup\left(0,\frac1m\right)$, 特别含区间 $\left(0,\frac1m\right)$. 点 $0^{-}$ 的每个邻域含某 $\left\{0^{-}\right\}\cup\left(0,\frac1n\right)$, 与 $\left(0,\frac1m\right)$ 相交, 故 $0^{-}\in\overline{\left(0,\frac1m\right)}$ (**定义 3.26 (闭包)**). $C$ 闭且含 $\left(0,\frac1m\right)$, 故 $C$ 含其闭包, 从而 $0^{-}\in{C}$. 于是 $0^{+}$ 的任何闭邻域都含 $0^{-}$, 不可能含于开集 $U=\left\{0^{+}\right\}\cup\left(0,1\right)$ (它不含 $0^{-}$). 由**定义 3.30 (基本邻域系)**, $0^{+}$ 没有由闭邻域组成的基本邻域系. $\blacksquare$
+(2) 非豪斯多夫: 任取 $0^{-}$ 的邻域, 它含某 $\left\{0^{-}\right\}\cup\left(0,\frac1n\right)$; $0^{+}$ 的邻域含某 $\left\{0^{+}\right\}\cup\left(0,\frac1m\right)$. 二者都含 $\left(0,1/\max\left(n,m\right)\right)$, 故相交. 不存在不相交开集分别含 $0^{-}$ 与 $0^{+}$, 由**定义 3.10 (豪斯多夫空间)**, 该拓扑非豪斯多夫.
+
+$\blacksquare$
+
+(3) $0^{+}$ 无闭邻域基本系: 设 $C$ 是 $0^{+}$ 的任一闭邻域. 它必含某基本开邻域 $\left\{0^{+}\right\}\cup\left(0,\frac1m\right)$, 特别含区间 $\left(0,\frac1m\right)$. 点 $0^{-}$ 的每个邻域含某 $\left\{0^{-}\right\}\cup\left(0,\frac1n\right)$, 与 $\left(0,\frac1m\right)$ 相交, 故 $0^{-}\in\overline{\left(0,\frac1m\right)}$ (**定义 3.26 (闭包)**). $C$ 闭且含 $\left(0,\frac1m\right)$, 故 $C$ 含其闭包, 从而 $0^{-}\in{C}$. 于是 $0^{+}$ 的任何闭邻域都含 $0^{-}$, 不可能含于开集 $U=\left\{0^{+}\right\}\cup\left(0,1\right)$ (它不含 $0^{-}$). 由**定义 3.30 (基本邻域系)**, $0^{+}$ 没有由闭邻域组成的基本邻域系.
+
+$\blacksquare$
 
 ## 3.5 (子空间拓扑的泛性质)
 
@@ -235,7 +253,9 @@ $$
 
 ### 解答 3.5
 
-($\Rightarrow$) 若 $f:Z\to{Y}$ 连续, 由**定义 3.19 (子空间拓扑)**, 含映射 $\iota:Y\to{X}$ 连续. 由**定理 3.1 (复合连续)**, $\iota\circ{f}:Z\to{X}$ 连续. $\blacksquare$
+($\Rightarrow$) 若 $f:Z\to{Y}$ 连续, 由**定义 3.19 (子空间拓扑)**, 含映射 $\iota:Y\to{X}$ 连续. 由**定理 3.1 (复合连续)**, $\iota\circ{f}:Z\to{X}$ 连续.
+
+$\blacksquare$
 
 ($\Leftarrow$) 设 $\iota\circ{f}:Z\to{X}$ 连续. 任取 $Y$ 中开集 $O$. 由**定义 3.19 (子空间拓扑)**, $O=Y\cap{U}$, 其中 $U$ 是 $X$ 中开集. 于是
 
@@ -243,7 +263,9 @@ $$
 f^{-1}\left(O\right)=f^{-1}\left(Y\cap{U}\right)=f^{-1}\left(U\right)=\left(\iota\circ{f}\right)^{-1}\left(U\right),
 $$
 
-最后一步用到 $f$ 映到 $Y$ 中. 由 $\iota\circ{f}$ 连续及**定义 3.22 (连续映射)**, 右端为 $Z$ 中开集. 故 $f^{-1}\left(O\right)$ 开, 由**定义 3.22 (连续映射)**, $f$ 连续. $\blacksquare$
+最后一步用到 $f$ 映到 $Y$ 中. 由 $\iota\circ{f}$ 连续及**定义 3.22 (连续映射)**, 右端为 $Z$ 中开集. 故 $f^{-1}\left(O\right)$ 开, 由**定义 3.22 (连续映射)**, $f$ 连续.
+
+$\blacksquare$
 
 > 证明中的核心步骤是 $f^{-1}\left(U\right)=\left(\iota\circ{f}\right)^{-1}\left(U\right)$, 这都归功于 $\iota$ 是含入映射, 即映射到 $Y$ 上的就相当于映射到 $X$ 上.
 
@@ -273,7 +295,9 @@ $$
 p_k\left(W\right)=\bigcup_{\alpha}p_k\left(V_\alpha\right),
 $$
 
-由**定义 3.18 (拓扑空间)** (开集任意并仍开), $p_k\left(W\right)$ 是开集. 故每个 $p_k$ 都是开映射. $\blacksquare$
+由**定义 3.18 (拓扑空间)** (开集任意并仍开), $p_k\left(W\right)$ 是开集. 故每个 $p_k$ 都是开映射.
+
+$\blacksquare$
 
 (2) 取 $\mathbb{R}^2$, 令 $A=\left\{\left(x,y\right):xy=1\right\}$. $A$ 包含它所有的极限点, 故是闭集; 由**定义 3.21 (闭集)** 其补集 $\left\{xy\neq1\right\}$ 开. 但
 
@@ -281,9 +305,13 @@ $$
 p_1\left(A\right)=\left\{x\in\mathbb{R}:\exists{y},xy=1\right\}=\mathbb{R}\setminus\left\{0\right\},
 $$
 
-由**定义 3.21 (闭集)** $\mathbb{R}\setminus\left\{0\right\}$ 不是闭集 ($0$ 是其极限点). 故投影不是闭映射. $\blacksquare$
+由**定义 3.21 (闭集)** $\mathbb{R}\setminus\left\{0\right\}$ 不是闭集 ($0$ 是其极限点). 故投影不是闭映射.
 
-(3) 取 $W=\mathbb{R}^2\setminus\left(\left\{0\right\}\times\left(0,1\right)\right)$. 先看两个投影: 对任意 $x\in\mathbb{R}$, 取 $y=2$ 则 $\left(x,2\right)\in{W}$, 故 $p_1\left(W\right)=\mathbb{R}$; 对任意 $y\in\mathbb{R}$, 取 $x=1$ 则 $\left(1,y\right)\in{W}$, 故 $p_2\left(W\right)=\mathbb{R}$. 两个投影都是开集. 但 $W$ 的补集为 $\left\{0\right\}\times\left(0,1\right)$, 它的闭包是 $\left\{0\right\}\times\left[0,1\right]$, 不等于自身, 由**定义 3.21 (闭集)** 补集不闭, 故 $W$ 不是开集. 这说明所有投影开不能推出原集合开. $\blacksquare$
+$\blacksquare$
+
+(3) 取 $W=\mathbb{R}^2\setminus\left(\left\{0\right\}\times\left(0,1\right)\right)$. 先看两个投影: 对任意 $x\in\mathbb{R}$, 取 $y=2$ 则 $\left(x,2\right)\in{W}$, 故 $p_1\left(W\right)=\mathbb{R}$; 对任意 $y\in\mathbb{R}$, 取 $x=1$ 则 $\left(1,y\right)\in{W}$, 故 $p_2\left(W\right)=\mathbb{R}$. 两个投影都是开集. 但 $W$ 的补集为 $\left\{0\right\}\times\left(0,1\right)$, 它的闭包是 $\left\{0\right\}\times\left[0,1\right]$, 不等于自身, 由**定义 3.21 (闭集)** 补集不闭, 故 $W$ 不是开集. 这说明所有投影开不能推出原集合开.
+
+$\blacksquare$
 
 > (2) (3) 说明单个坐标上的信息不足以控制整个乘积空间中点的收敛性与边界行为.
 
@@ -303,11 +331,17 @@ $$
 
 (1) ($\Rightarrow$) 设 $f$ 连续, $x_n\to{x}$. 任取 $f\left(x\right)$ 的邻域 $V$, 由**定义 3.22 (连续映射)**, $f^{-1}\left(V\right)$ 是 $x$ 的邻域; 由**定义 3.25 (邻域与极限)**, 充分大的 $n$ 有 $x_n\in{f}^{-1}\left(V\right)$, 即 $f\left(x_n\right)\in{V}$. 故 $f\left(x_n\right)\to{f}\left(x\right)$.
 
-($\Leftarrow$) 设序列保持收敛. 反设 $f$ 在 $x$ 不连续, 则存在 $f\left(x\right)$ 的邻域 $V$ 使 $f^{-1}\left(V\right)$ 不是 $x$ 的邻域. 由**定义 6.36 (开球)**, $B\left(x,1/n\right)\not\subset{f}^{-1}\left(V\right)$, 取 $x_n\in{B}\left(x,1/n\right)\setminus{f}^{-1}\left(V\right)$. 则 $d\left(x_n,x\right)<1/n\to0$, 即 $x_n\to{x}$, 但 $f\left(x_n\right)\notin{V}$, 故 $\left(f\left(x_n\right)\right)$ 不收敛到 $f\left(x\right)$, 矛盾. $\blacksquare$
+($\Leftarrow$) 设序列保持收敛. 反设 $f$ 在 $x$ 不连续, 则存在 $f\left(x\right)$ 的邻域 $V$ 使 $f^{-1}\left(V\right)$ 不是 $x$ 的邻域. 由**定义 6.36 (开球)**, $B\left(x,1/n\right)\not\subset{f}^{-1}\left(V\right)$, 取 $x_n\in{B}\left(x,1/n\right)\setminus{f}^{-1}\left(V\right)$. 则 $d\left(x_n,x\right)<1/n\to0$, 即 $x_n\to{x}$, 但 $f\left(x_n\right)\notin{V}$, 故 $\left(f\left(x_n\right)\right)$ 不收敛到 $f\left(x\right)$, 矛盾.
 
-(2) 用到度量结构之处在于: 用可数邻域基 $B\left(x,1/n\right)$ 把 "$f^{-1}\left(V\right)$ 不是邻域" 翻译成一列点 $\left(x_n\right)$, 即把否定连续性直接转化为序列. $\blacksquare$
+$\blacksquare$
 
-(3) 在一般拓扑空间中, 这一翻译不成立, 但可放松为第一可数空间 (每点有可数邻域基). $\blacksquare$
+(2) 用到度量结构之处在于: 用可数邻域基 $B\left(x,1/n\right)$ 把 "$f^{-1}\left(V\right)$ 不是邻域" 翻译成一列点 $\left(x_n\right)$, 即把否定连续性直接转化为序列.
+
+$\blacksquare$
+
+(3) 在一般拓扑空间中, 这一翻译不成立, 但可放松为第一可数空间 (每点有可数邻域基).
+
+$\blacksquare$
 
 ## 3.8 (稠密集的邻域未必覆盖全空间)
 
@@ -317,7 +351,9 @@ $$
 
 ### 解答 3.8
 
-不覆盖. 设 $X=\mathbb{R}$, $D=\mathbb{Q}$ 是**定义 3.32 (稠密)** 的. 取 $U=\mathbb{R}\setminus\left\{\sqrt2\right\}$. $U$ 是开集, 由**定义 3.21 (闭集)** 单点 $\left\{\sqrt2\right\}$ 闭故其补集开; $U$ 含 $\mathbb{Q}$, 即 $U$ 是稠密集 $\mathbb{Q}$ 的一个邻域, 但 $U\neq\mathbb{R}$. $\blacksquare$
+不覆盖. 设 $X=\mathbb{R}$, $D=\mathbb{Q}$ 是**定义 3.32 (稠密)** 的. 取 $U=\mathbb{R}\setminus\left\{\sqrt2\right\}$. $U$ 是开集, 由**定义 3.21 (闭集)** 单点 $\left\{\sqrt2\right\}$ 闭故其补集开; $U$ 含 $\mathbb{Q}$, 即 $U$ 是稠密集 $\mathbb{Q}$ 的一个邻域, 但 $U\neq\mathbb{R}$.
+
+$\blacksquare$
 
 > 一般地, 若 $D$ 稠密而 $U$ 是含 $D$ 的开集, 只能推出 $\overline{U}=X$.
 
@@ -337,11 +373,17 @@ $$
 
 记 $i_x:\left\{x\right\}\to{X}$ 为把单点映到其唯一点的含入映射.
 
-(1) $\Rightarrow$ (2): 设 $X$ 具离散拓扑, 由**定义 3.16 (离散拓扑与平凡拓扑)** 每个子集都开. 由**定义 3.18 (拓扑空间)** 这是一个合法拓扑. 由**定义 11.14 (最终拓扑)**, 由 $\left\{i_x\right\}$ 诱导的最终拓扑是使每个 $i_x$ 连续的最细拓扑; 离散拓扑本身使每个 $i_x$ 连续 (单点空间唯一可能), 且它已是最细拓扑, 故二者相同. $\blacksquare$
+(1) $\Rightarrow$ (2): 设 $X$ 具离散拓扑, 由**定义 3.16 (离散拓扑与平凡拓扑)** 每个子集都开. 由**定义 3.18 (拓扑空间)** 这是一个合法拓扑. 由**定义 11.14 (最终拓扑)**, 由 $\left\{i_x\right\}$ 诱导的最终拓扑是使每个 $i_x$ 连续的最细拓扑; 离散拓扑本身使每个 $i_x$ 连续 (单点空间唯一可能), 且它已是最细拓扑, 故二者相同.
 
-(2) $\Rightarrow$ (1): 设 $X$ 上的拓扑就是由 $\left\{i_x\right\}$ 诱导的最终拓扑. 由**定义 11.14 (最终拓扑)**, $U\subset{X}$ 开当且仅当对每个 $x$, $i_x^{-1}\left(U\right)$ 在单点空间 $\left\{x\right\}$ 中开. 而单点空间的任意子集 (仅 $\emptyset$ 与 $\left\{x\right\}$) 都开, 故 $X$ 的任意子集 $U$ 都开. 由**定义 3.16 (离散拓扑与平凡拓扑)**, 这就是离散拓扑. $\blacksquare$
+$\blacksquare$
 
-(2) $\Leftrightarrow$ (3): 由**定义 11.18 (不交和拓扑)**, 不交和 $Z=\coprod_{x\in{X}}\left\{x\right\}$ 上的拓扑是每个单点都开, 即离散拓扑. 典范映射 $i:Z\to{X}$ 把每个 $\left\{x\right\}$ 映到 $x$, 是双射. 由**定义 11.14 (最终拓扑)**, $i$ 连续当且仅当 $X$ 的拓扑粗于由 $\left\{i_x\right\}$ 诱导的最终拓扑; 反过来 $i^{-1}$ 连续当且仅当该最终拓扑粗于 $X$ 的拓扑. 由**定义 3.23 (同胚)**, $i$ 是同胚当且仅当 $X$ 的拓扑等于由 $\left\{i_x\right\}$ 诱导的最终拓扑, 即 (2). 三链贯通, 三条等价. $\blacksquare$
+(2) $\Rightarrow$ (1): 设 $X$ 上的拓扑就是由 $\left\{i_x\right\}$ 诱导的最终拓扑. 由**定义 11.14 (最终拓扑)**, $U\subset{X}$ 开当且仅当对每个 $x$, $i_x^{-1}\left(U\right)$ 在单点空间 $\left\{x\right\}$ 中开. 而单点空间的任意子集 (仅 $\emptyset$ 与 $\left\{x\right\}$) 都开, 故 $X$ 的任意子集 $U$ 都开. 由**定义 3.16 (离散拓扑与平凡拓扑)**, 这就是离散拓扑.
+
+$\blacksquare$
+
+(2) $\Leftrightarrow$ (3): 由**定义 11.18 (不交和拓扑)**, 不交和 $Z=\coprod_{x\in{X}}\left\{x\right\}$ 上的拓扑是每个单点都开, 即离散拓扑. 典范映射 $i:Z\to{X}$ 把每个 $\left\{x\right\}$ 映到 $x$, 是双射. 由**定义 11.14 (最终拓扑)**, $i$ 连续当且仅当 $X$ 的拓扑粗于由 $\left\{i_x\right\}$ 诱导的最终拓扑; 反过来 $i^{-1}$ 连续当且仅当该最终拓扑粗于 $X$ 的拓扑. 由**定义 3.23 (同胚)**, $i$ 是同胚当且仅当 $X$ 的拓扑等于由 $\left\{i_x\right\}$ 诱导的最终拓扑, 即 (2). 三链贯通, 三条等价.
+
+$\blacksquare$
 
 ## 3.10 (递增闭子空间列的最终拓扑与闭性)
 
@@ -367,9 +409,13 @@ $$
 U=V\cup\left(X\setminus{X}_i\right).
 $$
 
-则 $U\cap{X}_i=V$. 验证 $U\in\tau$, 即对于任意的 $k\ge1$, $U\cap{X}_k$ 在 $U_k$ 中的拓扑都是开集: 对 $k=i$, $U\cap{X}_i=V$ 开; 对 $k<{}i$, $X_k\subset{X}_i$, 故 $U\cap{X}_k=V\cap{X}_k$, 由 $X_k$ 的子空间性质它在 $X_k$ 中开; 对 $k>{}i$, $X_i$ 在 $X_k$ 中闭, 故 $X_k\setminus{X}_i$ 在 $X_k$ 中开, 而 $V$ 在 $X_i$ 中开, 由 $X_i$ 是 $X_k$ 的子空间可写 $V=X_i\cap{W}$, $W$ 在 $X_k$ 中开, 于是 $U\cap{X}_k=W$ 在 $X_k$ 中开. $\blacksquare$
+则 $U\cap{X}_i=V$. 验证 $U\in\tau$, 即对于任意的 $k\ge1$, $U\cap{X}_k$ 在 $U_k$ 中的拓扑都是开集: 对 $k=i$, $U\cap{X}_i=V$ 开; 对 $k<{}i$, $X_k\subset{X}_i$, 故 $U\cap{X}_k=V\cap{X}_k$, 由 $X_k$ 的子空间性质它在 $X_k$ 中开; 对 $k>i$, $X_i$ 在 $X_k$ 中闭, 故 $X_k\setminus{X}_i$ 在 $X_k$ 中开, 而 $V$ 在 $X_i$ 中开, 由 $X_i$ 是 $X_k$ 的子空间可写 $V=X_i\cap{W}$, $W$ 在 $X_k$ 中开, 于是 $U\cap{X}_k=W$ 在 $X_k$ 中开.
 
-(2) 证 $X_i$ 在 $X$ 中闭. 只需证 $X\setminus{X}_i$ 在 $\tau$ 中开, 即对于任意的 $k\ge1$, $\left(X\setminus{X}_i\right)\cap{X}_k$ 在 $U_k$ 中的拓扑都是开集: 对 $k\le{i}$, $\left(X\setminus{X}_i\right)\cap{X}_k=\emptyset$ 开; 对 $k>{}i$, $X_i$ 在 $X_k$ 中闭, 故 $\left(X\setminus{X}_i\right)\cap{X}_k=X_k\setminus{X}_i$ 在 $X_k$ 中开. $\blacksquare$
+$\blacksquare$
+
+(2) 证 $X_i$ 在 $X$ 中闭. 只需证 $X\setminus{X}_i$ 在 $\tau$ 中开, 即对于任意的 $k\ge1$, $\left(X\setminus{X}_i\right)\cap{X}_k$ 在 $U_k$ 中的拓扑都是开集: 对 $k\le{i}$, $\left(X\setminus{X}_i\right)\cap{X}_k=\emptyset$ 开; 对 $k>i$, $X_i$ 在 $X_k$ 中闭, 故 $\left(X\setminus{X}_i\right)\cap{X}_k=X_k\setminus{X}_i$ 在 $X_k$ 中开.
+
+$\blacksquare$
 
 ## 3.11 (由二元关系生成的最小等价关系)
 
@@ -389,7 +435,9 @@ $$
 
 故 $\sim$ 是等价关系.
 
-现令 $\mathcal{E}$ 为 $X$ 上全体包含 $R$ 的等价关系所成之族. 全体成员的交 $\bigcap\mathcal{E}$ 仍含 $R$ (每个成员含 $R$), 且由上面的交性质是等价关系. 它是含 $R$ 的最小等价关系: 任何含 $R$ 的等价关系都在 $\mathcal{E}$ 中, 从而包含这个交. 唯一性由"最小"即集包含意义下唯一决定. 由**定义 11.15 (等价关系的生成)**, 这个交就是由 $R$ 生成的等价关系. $\blacksquare$
+现令 $\mathcal{E}$ 为 $X$ 上全体包含 $R$ 的等价关系所成之族. 全体成员的交 $\bigcap\mathcal{E}$ 仍含 $R$ (每个成员含 $R$), 且由上面的交性质是等价关系. 它是含 $R$ 的最小等价关系: 任何含 $R$ 的等价关系都在 $\mathcal{E}$ 中, 从而包含这个交. 唯一性由"最小"即集包含意义下唯一决定. 由**定义 11.15 (等价关系的生成)**, 这个交就是由 $R$ 生成的等价关系.
+
+$\blacksquare$
 
 ## 3.12 (伪距离的商距离与商拓扑一致)
 
@@ -407,7 +455,9 @@ $$
 
 ### 解答 3.12
 
-(1) $\sim$ 是等价关系: 由**定义 6.44 (伪距离)**, $d\left(x,x\right)=0$ 给出自反; $d\left(x,y\right)=d\left(y,x\right)$ 给出对称; 三角不等式 $d\left(x,z\right)\le{d}\left(x,y\right)+d\left(y,z\right)$ 在 $d\left(x,y\right)=d\left(y,z\right)=0$ 时给出 $d\left(x,z\right)=0$, 即传递. $\blacksquare$
+(1) $\sim$ 是等价关系: 由**定义 6.44 (伪距离)**, $d\left(x,x\right)=0$ 给出自反; $d\left(x,y\right)=d\left(y,x\right)$ 给出对称; 三角不等式 $d\left(x,z\right)\le{d}\left(x,y\right)+d\left(y,z\right)$ 在 $d\left(x,y\right)=d\left(y,z\right)=0$ 时给出 $d\left(x,z\right)=0$, 即传递.
+
+$\blacksquare$
 
 (2) $d'$ 良定义: 若 $x\sim{x}'$, $y\sim{y}'$, 则 $d\left(x,x'\right)=d\left(y,y'\right)=0$, 由三角不等式,
 
@@ -417,7 +467,9 @@ $$
 
 同理 $d\left(x',y'\right)\le{d}\left(x,y\right)$. 故二者相等, $d'\left(\left[x\right],\left[y\right]\right):=d\left(x,y\right)$ 与代表元选取无关.
 
-$d'$ 是度量: 非负, 对称, 三角不等式都从 $d$ 继承; 而 $d'\left(\left[x\right],\left[y\right]\right)=0$ 即 $d\left(x,y\right)=0$, 即 $x\sim{y}$, 即 $\left[x\right]=\left[y\right]$. 正定性成立. $\blacksquare$
+$d'$ 是度量: 非负, 对称, 三角不等式都从 $d$ 继承; 而 $d'\left(\left[x\right],\left[y\right]\right)=0$ 即 $d\left(x,y\right)=0$, 即 $x\sim{y}$, 即 $\left[x\right]=\left[y\right]$. 正定性成立.
+
+$\blacksquare$
 
 (3) 拓扑相同: 记 $\pi:X\to{X}/{\sim}$ 为商投影. 对任意 $x,\varepsilon$,
 
@@ -425,6 +477,10 @@ $$
 \pi^{-1}\left(B_{d'}\left(\left[x\right],\varepsilon\right)\right)=B_d\left(x,\varepsilon\right).
 $$
 
-由**定义 11.1 (商拓扑)**, $B_{d'}\left(\left[x\right],\varepsilon\right)$ 是商开集, 故度量拓扑粗于商拓扑. 反之, 若 $U$ 是商开集, 则 $\pi^{-1}\left(U\right)$ 是 $d$-开集, 从而是若干 $d$-球之并, 其像 $U=\pi\left(\pi^{-1}\left(U\right)\right)$ 是若干 $d'$-球之并, 故 $U$ 是度量开集. 二者一致. $\blacksquare$
+由**定义 11.1 (商拓扑)**, $B_{d'}\left(\left[x\right],\varepsilon\right)$ 是商开集, 故度量拓扑粗于商拓扑. 反之, 若 $U$ 是商开集, 则 $\pi^{-1}\left(U\right)$ 是 $d$-开集, 从而是若干 $d$-球之并, 其像 $U=\pi\left(\pi^{-1}\left(U\right)\right)$ 是若干 $d'$-球之并, 故 $U$ 是度量开集. 二者一致.
 
-(4) 泛分解: 设 $F$ 豪斯多夫, $f:X\to{F}$ 连续. 先证 $f$ 在等价类上取常值. 若 $x\sim{x}'$, 即 $d\left(x,x'\right)=0$, 则 $x$ 与 $x'$ 在 $X$ 中无法用开集分离: 对任意 $\varepsilon>0$, $B_d\left(x,\varepsilon\right)=B_d\left(x',\varepsilon\right)$. 若 $f\left(x\right)\neq{f}\left(x'\right)$, 依据**定义 3.10 (豪斯多夫空间)**, 存在不相交开邻域 $V\ni{f}\left(x\right)$, $W\ni{f}\left(x'\right)$. 由**定义 3.22 (连续映射)**,  $x$ 与 $x'$ 在 $X$ 中可用开集 $f^{-1}\left(V\right)$ 与 $f^{-1}\left(W\right)$ 分离, 矛盾. 故 $f\left(x\right)=f\left(x'\right)$. 于是可定义 $f'\left(\left[x\right]\right)=f\left(x\right)$, 良定义. 由**定义 11.2 (粘合映射)**, 为证 $f'$ 连续, 只需对任意开集 $O\subset{F}$, $\left(f'\right)^{-1}\left(O\right)$ 商开, 即 $\pi^{-1}\left(\left(f'\right)^{-1}\left(O\right)\right)=f^{-1}\left(O\right)$ 在 $X$ 中开; 这由 $f$ 连续保证. 故 $f=f'\circ\pi$. $\blacksquare$
+$\blacksquare$
+
+(4) 泛分解: 设 $F$ 豪斯多夫, $f:X\to{F}$ 连续. 先证 $f$ 在等价类上取常值. 若 $x\sim{x}'$, 即 $d\left(x,x'\right)=0$, 则 $x$ 与 $x'$ 在 $X$ 中无法用开集分离: 对任意 $\varepsilon>0$, $B_d\left(x,\varepsilon\right)=B_d\left(x',\varepsilon\right)$. 若 $f\left(x\right)\neq{f}\left(x'\right)$, 依据**定义 3.10 (豪斯多夫空间)**, 存在不相交开邻域 $V\ni{f}\left(x\right)$, $W\ni{f}\left(x'\right)$. 由**定义 3.22 (连续映射)**,  $x$ 与 $x'$ 在 $X$ 中可用开集 $f^{-1}\left(V\right)$ 与 $f^{-1}\left(W\right)$ 分离, 矛盾. 故 $f\left(x\right)=f\left(x'\right)$. 于是可定义 $f'\left(\left[x\right]\right)=f\left(x\right)$, 良定义. 由**定义 11.2 (粘合映射)**, 为证 $f'$ 连续, 只需对任意开集 $O\subset{F}$, $\left(f'\right)^{-1}\left(O\right)$ 商开, 即 $\pi^{-1}\left(\left(f'\right)^{-1}\left(O\right)\right)=f^{-1}\left(O\right)$ 在 $X$ 中开; 这由 $f$ 连续保证. 故 $f=f'\circ\pi$.
+
+$\blacksquare$

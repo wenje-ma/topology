@@ -42,7 +42,7 @@
 
 > **定义 6.37 (柯西列)**
 > 
-> 序列 $\left(x_n\right)$ 是柯西列, 若 $\lim_{N\to\infty}\sup_{i,j>{}N}d\left(x_i,x_j\right)=0$. (教材 $\S6$)
+> 序列 $\left(x_n\right)$ 是柯西列, 若 $\lim_{N\to\infty}\sup_{i,j>N}d\left(x_i,x_j\right)=0$. (教材 $\S6$)
 
 > **定义 6.38 (完备度量空间)**
 > 
@@ -62,7 +62,9 @@
 
 设 $\left\{U_n\right\}_{n=1}^{\infty}$ 是稠密开集, $V_0$ 是任意非空开集. 归纳构造非空开集 $V_n$: 由 $U_1$ 稠密, $V_0\cap{U}_1\neq\emptyset$. 取非空开 $V_1$ 使 $\overline{V_1}\subset{V}_0\cap{U}_1$ 且 $\overline{V_1}$ 紧 (由**定义 7.4 (局部紧空间)**, 局部紧豪斯多夫提供闭紧邻域基, 可在 $V_0\cap{U}_1$ 内取闭紧邻域). 归纳地, 由 $U_n$ 稠密, $V_{n-1}\cap{U}_n\neq\emptyset$, 取非空开 $V_n$ 使 $\overline{V_n}\subset{V}_{n-1}\cap{U}_n$ 且 $\overline{V_n}$ 紧.
 
-于是 $\left\{\overline{V_n}\right\}$ 是非空紧集套. 由紧集的有限交性质 (紧空间中具有有限交性质的闭集族之交非空), 存在 $x\in\bigcap_n\overline{V_n}$. 由 $\overline{V_n}\subset{U}_n$ 与 $\overline{V_n}\subset{V}_0$, 有 $x\in{V}_0\cap\bigcap_nU_n$. 故 $V_0$ 与 $\bigcap_nU_n$ 相交. $V_0$ 任意, 由**定义 3.32 (稠密)**, $\bigcap_nU_n$ 稠密. 这正是**定理 6.13 (贝尔纲定理)** 的局部紧版本. $\blacksquare$
+于是 $\left\{\overline{V_n}\right\}$ 是非空紧集套. 由紧集的有限交性质 (紧空间中具有有限交性质的闭集族之交非空), 存在 $x\in\bigcap_n\overline{V_n}$. 由 $\overline{V_n}\subset{U}_n$ 与 $\overline{V_n}\subset{V}_0$, 有 $x\in{V}_0\cap\bigcap_nU_n$. 故 $V_0$ 与 $\bigcap_nU_n$ 相交. $V_0$ 任意, 由**定义 3.32 (稠密)**, $\bigcap_nU_n$ 稠密. 这正是**定理 6.13 (贝尔纲定理)** 的局部紧版本.
+
+$\blacksquare$
 
 ## 11.2 (克罗夫特引理: 题集的版本与两份卷子的版本)
 
@@ -90,13 +92,19 @@ $$
 \frac{x_k}{p_k}=\frac{x_k}{\lfloor{x}_k/y\rfloor}\longrightarrow{y},
 $$
 
-故 $\frac{x_k}{p_k}\in\left(u,v\right)\subset{F}_N$ 对大的 $k$ 成立. 于是 $x_k=p_k\cdot\frac{x_k}{p_k}$ 且 $p_k\ge{N}$, 由 $F_N$ 的定义 $\left|f\left(x_k\right)\right|\le\frac{\varepsilon}{2}$, 与 $\left|f\left(x_k\right)\right|>\varepsilon$ 矛盾. $\blacksquare$
+故 $\frac{x_k}{p_k}\in\left(u,v\right)\subset{F}_N$ 对大的 $k$ 成立. 于是 $x_k=p_k\cdot\frac{x_k}{p_k}$ 且 $p_k\ge{N}$, 由 $F_N$ 的定义 $\left|f\left(x_k\right)\right|\le\frac{\varepsilon}{2}$, 与 $\left|f\left(x_k\right)\right|>\varepsilon$ 矛盾.
 
-(2) 闭性同 (1). 覆盖: 固定 $x>0$, $f\left(px\right)\to0$ 故存在 $n$ 使 $p\ge{n}$ 时 $\left|f\left(px\right)\right|\le\varepsilon$, 即 $x\in{F}_n$; 于是 $\bigcup_nF_n\supset\left(0,\infty\right)$. 收尾与 (1) 完全一样, 只把 $\frac{\varepsilon}{2}$ 换成 $\varepsilon$. 这两步正是卷 A 的分法. $\blacksquare$
+$\blacksquare$
 
-(3) $\Omega_n$ 开: $\Omega_n=\bigcup_{p\ge{n}}\frac{1}{p}\Omega$, 而 $\frac{1}{p}\Omega$ 是开集在连续映射 $x\mapsto\frac{x}{p}$ 下的像, 开. 稠密: 取非退化区间 $J\subset\mathbb{R}$, 要证 $J\cap\Omega_n\neq\emptyset$. 因 $\Omega$ 无界开, 取 $q\in\Omega$ 使 $q>{}n\cdot\max\left\{\left|t\right|:t\in{J}\right\}$; 则 $\frac{q}{p}\in{J}$ 对某个 $p\ge{n}$ 成立 (因 $\frac{q}{p}$ 随 $p$ 从 $\frac{q}{n}$ 递减到 $0$, 而 $J$ 含区间内所有足够小的正数), 且 $p\cdot\frac{q}{p}=q\in\Omega$, 故 $\frac{q}{p}\in\Omega_n$.
+(2) 闭性同 (1). 覆盖: 固定 $x>0$, $f\left(px\right)\to0$ 故存在 $n$ 使 $p\ge{n}$ 时 $\left|f\left(px\right)\right|\le\varepsilon$, 即 $x\in{F}_n$; 于是 $\bigcup_nF_n\supset\left(0,\infty\right)$. 收尾与 (1) 完全一样, 只把 $\frac{\varepsilon}{2}$ 换成 $\varepsilon$. 这两步正是卷 A 的分法.
 
-由**定理 6.13 (贝尔纲定理)**, 可数个稠密开集之交稠密, 取 $x_0\in\bigcap_n\Omega_n$ 且 $x_0>0$. 则对每个 $n$ 有 $p\ge{n}$ 使 $px_0\in\Omega$; 若 $\lim_{x\to\infty}f\left(x\right)\neq0$, 取 $\varepsilon$ 与 $y_m\to\infty$ 使 $\left|f\left(y_m\right)\right|>\varepsilon$, 则那些 $px_0$ 任意大而 $f\left(px_0\right)\to0$, 与 $\Omega$ 内 $\left|f\right|$ 一致地大于 $\varepsilon$ 的取法矛盾. 严格地说: 由 $\Omega$ 与 $\varepsilon$ 的取法 (把 $\Omega$ 取成 $\left|f\right|>\varepsilon$ 的开集, 它无界), Baire 给出的 $x_0$ 使无穷多个 $px_0$ 落在 $\Omega$, 于是沿这列 $\left|f\left(px_0\right)\right|>\varepsilon$, 与 $f\left(px_0\right)\to0$ 矛盾. $\blacksquare$
+$\blacksquare$
+
+(3) $\Omega_n$ 开: $\Omega_n=\bigcup_{p\ge{n}}\frac{1}{p}\Omega$, 而 $\frac{1}{p}\Omega$ 是开集在连续映射 $x\mapsto\frac{x}{p}$ 下的像, 开. 稠密: 取非退化区间 $J\subset\mathbb{R}$, 要证 $J\cap\Omega_n\neq\emptyset$. 因 $\Omega$ 无界开, 取 $q\in\Omega$ 使 $q>n\cdot\max\left\{\left|t\right|:t\in{J}\right\}$; 则 $\frac{q}{p}\in{J}$ 对某个 $p\ge{n}$ 成立 (因 $\frac{q}{p}$ 随 $p$ 从 $\frac{q}{n}$ 递减到 $0$, 而 $J$ 含区间内所有足够小的正数), 且 $p\cdot\frac{q}{p}=q\in\Omega$, 故 $\frac{q}{p}\in\Omega_n$.
+
+由**定理 6.13 (贝尔纲定理)**, 可数个稠密开集之交稠密, 取 $x_0\in\bigcap_n\Omega_n$ 且 $x_0>0$. 则对每个 $n$ 有 $p\ge{n}$ 使 $px_0\in\Omega$; 若 $\lim_{x\to\infty}f\left(x\right)\neq0$, 取 $\varepsilon$ 与 $y_m\to\infty$ 使 $\left|f\left(y_m\right)\right|>\varepsilon$, 则那些 $px_0$ 任意大而 $f\left(px_0\right)\to0$, 与 $\Omega$ 内 $\left|f\right|$ 一致地大于 $\varepsilon$ 的取法矛盾. 严格地说: 由 $\Omega$ 与 $\varepsilon$ 的取法 (把 $\Omega$ 取成 $\left|f\right|>\varepsilon$ 的开集, 它无界), Baire 给出的 $x_0$ 使无穷多个 $px_0$ 落在 $\Omega$, 于是沿这列 $\left|f\left(px_0\right)\right|>\varepsilon$, 与 $f\left(px_0\right)\to0$ 矛盾.
+
+$\blacksquare$
 
 > 三个版本是同一件事的三种包装: 卷 A 用闭集 $F_n$ 逼近, 卷 B 用稠密开集 $\Omega_n$ 逼近. 反设之后必须把"沿某个 $y$ 的所有整数倍"与"给定的坏列 $x_k$"接起来, 这一步靠的是 $\frac{x_k}{\lfloor{x}_k/y\rfloor}\to{y}$.
 
@@ -130,7 +138,9 @@ $$
 \left|f\left(y+\lambda\right)-f\left(y\right)\right|\ge\left|f\left(x_k+\lambda\right)-f\left(x_k\right)\right|-2\varepsilon>3\varepsilon-2\varepsilon=\varepsilon,
 $$
 
-其中用到了 $\left|y+\lambda-\left(x_k+\lambda\right)\right|=\left|y-x_k\right|\le\delta_k$. 故 $M\left(y\right)>\varepsilon$ 对整个区间 $\left(x_k-\delta_k,x_k+\delta_k\right)$ 成立, 即该区间与 $D_\varepsilon$ 不交. 但 $D_\varepsilon$ 稠密, 任何非空开区间必与它相交, 矛盾. $\blacksquare$
+其中用到了 $\left|y+\lambda-\left(x_k+\lambda\right)\right|=\left|y-x_k\right|\le\delta_k$. 故 $M\left(y\right)>\varepsilon$ 对整个区间 $\left(x_k-\delta_k,x_k+\delta_k\right)$ 成立, 即该区间与 $D_\varepsilon$ 不交. 但 $D_\varepsilon$ 稠密, 任何非空开区间必与它相交, 矛盾.
+
+$\blacksquare$
 
 > 一致性不能从"每个 $\lambda$ 都收敛"直接读出, 因为对 $\lambda$ 的收敛可能被 $\lambda$ 的微小移动放大; 贝尔纲在这里的作用就是禁止这种放大发生在任意大的 $x$ 处.
 
@@ -148,7 +158,7 @@ $$
 d\left(x_{n+1},x_n\right)=d\left(f\left(x_n\right),f\left(x_{n-1}\right)\right)\le{k}\,d\left(x_n,x_{n-1}\right)\le\cdots\le{k}^nd\left(x_1,x_0\right).
 $$
 
-对 $m>{}n$, 由**定义 6.35 (度量空间)** 的三角不等式,
+对 $m>n$, 由**定义 6.35 (度量空间)** 的三角不等式,
 
 $$
 d\left(x_m,x_n\right)\le\sum_{j=n}^{m-1}d\left(x_{j+1},x_j\right)\le{d}\left(x_1,x_0\right)\sum_{j=n}^{\infty}k^j=\frac{k^n}{1-k}d\left(x_1,x_0\right).
@@ -156,7 +166,9 @@ $$
 
 右端当 $n\to\infty$ 时趋于 $0$, 故 $\left(x_n\right)$ 是**定义 6.37 (柯西列)**. 由 $X$ 是**定义 6.38 (完备度量空间)**, $x_n\to{x}\in{X}$. 压缩映射满足 $d\left(f\left(x_n\right),f\left(x\right)\right)\le{k}\,d\left(x_n,x\right)\to0$, 即 $f$ 连续, 故 $f\left(x_n\right)\to{f}\left(x\right)$; 但 $f\left(x_n\right)=x_{n+1}\to{x}$, 由极限唯一性得 $f\left(x\right)=x$.
 
-唯一性: 若 $f\left(x\right)=x$, $f\left(y\right)=y$, 则 $d\left(x,y\right)=d\left(f\left(x\right),f\left(y\right)\right)\le{k}\,d\left(x,y\right)$, 而 $0<{}k<1$, 故 $d\left(x,y\right)=0$, 由**定义 6.35 (度量空间)** 的正定性得 $x=y$. 这就是**定理 6.16 (巴拿赫不动点定理)**. $\blacksquare$
+唯一性: 若 $f\left(x\right)=x$, $f\left(y\right)=y$, 则 $d\left(x,y\right)=d\left(f\left(x\right),f\left(y\right)\right)\le{k}\,d\left(x,y\right)$, 而 $0<{}k<1$, 故 $d\left(x,y\right)=0$, 由**定义 6.35 (度量空间)** 的正定性得 $x=y$. 这就是**定理 6.16 (巴拿赫不动点定理)**.
+
+$\blacksquare$
 
 ## 11.5 (连续线性映射的利普希茨估计)
 
@@ -182,7 +194,7 @@ $\blacksquare$
 
 ## 11.6 (压缩映射 $g_a$ 与解算子 $J$)
 
-沿用习题 11.5 的设定, $E$ 完备. 证明: 对给定的 $\lambda\in\mathbb{K}$ 满足 $\left|\lambda\right|>{}K$, 固定 $a\in{E}$, 映射
+沿用习题 11.5 的设定, $E$ 完备. 证明: 对给定的 $\lambda\in\mathbb{K}$ 满足 $\left|\lambda\right|>K$, 固定 $a\in{E}$, 映射
 
 $$
 g_a\left(x\right)=\frac{a-f\left(x\right)}{\lambda}
@@ -200,7 +212,9 @@ $$
 \left\|g_a\left(x\right)-g_a\left(y\right)\right\|=\frac{\left\|f\left(x\right)-f\left(y\right)\right\|}{\left|\lambda\right|}\le\frac{K}{\left|\lambda\right|}\left\|x-y\right\|.
 $$
 
-由假设 $\left|\lambda\right|>{}K$, 故 $k=K/\left|\lambda\right|<1$. 由**定义 6.19 (压缩映射)**, $g_a$ 是压缩映射. $E$ 非空且是**定义 6.38 (完备度量空间)**, 由**定理 6.16 (巴拿赫不动点定理)**, $g_a$ 有唯一不动点, 记为 $J\left(a\right)$. $\blacksquare$
+由假设 $\left|\lambda\right|>K$, 故 $k=K/\left|\lambda\right|<1$. 由**定义 6.19 (压缩映射)**, $g_a$ 是压缩映射. $E$ 非空且是**定义 6.38 (完备度量空间)**, 由**定理 6.16 (巴拿赫不动点定理)**, $g_a$ 有唯一不动点, 记为 $J\left(a\right)$.
+
+$\blacksquare$
 
 ## 11.7 (解算子 $J$ 的利普希茨估计)
 
@@ -238,21 +252,25 @@ $\blacksquare$
 
 ## 11.8 (方程 $f\left(x\right)-\lambda{x}=a$ 的唯一可解性与解的连续性)
 
-总结如下结论: 对任意连续线性映射 $f:E\to{E}$, 存在 $K>0$, 使对一切满足 $\left|\lambda\right|>{}K$ 的 $\lambda$ 与一切 $a\in{E}$, 方程 $f\left(x\right)-\lambda{x}=a$ (未知量 $x\in{E}$) 有唯一解 $J\left(a\right)$, 且映射 $a\mapsto{J}\left(a\right)$ 连续.
+总结如下结论: 对任意连续线性映射 $f:E\to{E}$, 存在 $K>0$, 使对一切满足 $\left|\lambda\right|>K$ 的 $\lambda$ 与一切 $a\in{E}$, 方程 $f\left(x\right)-\lambda{x}=a$ (未知量 $x\in{E}$) 有唯一解 $J\left(a\right)$, 且映射 $a\mapsto{J}\left(a\right)$ 连续.
 
 题集 §4.3 Q5.
 
 ### 解答 11.8
 
-由习题 11.5, 存在 $K>0$ 使 $\left\|f\left(x\right)-f\left(y\right)\right\|\le{K}\left\|x-y\right\|$. 设 $\left|\lambda\right|>{}K$. 方程 $f\left(x\right)-\lambda{x}=a$ 等价于
+由习题 11.5, 存在 $K>0$ 使 $\left\|f\left(x\right)-f\left(y\right)\right\|\le{K}\left\|x-y\right\|$. 设 $\left|\lambda\right|>K$. 方程 $f\left(x\right)-\lambda{x}=a$ 等价于
 
 $$
 x=\frac{a-f\left(x\right)}{\lambda}=g_a\left(x\right).
 $$
 
-由习题 11.6, $g_a$ 是**定义 6.19 (压缩映射)**, 由**定理 6.16 (巴拿赫不动点定理)**, 该方程有唯一解 $J\left(a\right)$. $\blacksquare$
+由习题 11.6, $g_a$ 是**定义 6.19 (压缩映射)**, 由**定理 6.16 (巴拿赫不动点定理)**, 该方程有唯一解 $J\left(a\right)$.
 
-由习题 11.7, $\left\|J\left(a\right)-J\left(b\right)\right\|\le\frac{1}{\left|\lambda\right|-K}\left\|a-b\right\|$, 即 $J$ 是利普希茨映射. 由利普希茨映射连续, $J$ 连续. $\blacksquare$
+$\blacksquare$
+
+由习题 11.7, $\left\|J\left(a\right)-J\left(b\right)\right\|\le\frac{1}{\left|\lambda\right|-K}\left\|a-b\right\|$, 即 $J$ 是利普希茨映射. 由利普希茨映射连续, $J$ 连续.
+
+$\blacksquare$
 
 ## 11.9 (交集的规范函数是各规范函数的上确界)
 
@@ -284,4 +302,6 @@ $$
 \left\|x\right\|_C=\sup_{\alpha\in{A}}\left\|x\right\|_{C_\alpha}.
 $$
 
-两边对一切 $x\in{E}$ 成立, 故函数相等. $\blacksquare$
+两边对一切 $x\in{E}$ 成立, 故函数相等.
+
+$\blacksquare$

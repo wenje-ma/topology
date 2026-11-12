@@ -132,7 +132,7 @@
 
 > **定义 6.37 (柯西列)**
 > 
-> 序列 $\left(x_n\right)$ 是柯西列, 若 $\lim_{N\to\infty}\sup_{i,j>{}N}d\left(x_i,x_j\right)=0$. (教材 $\S6$)
+> 序列 $\left(x_n\right)$ 是柯西列, 若 $\lim_{N\to\infty}\sup_{i,j>N}d\left(x_i,x_j\right)=0$. (教材 $\S6$)
 
 > **定义 6.42 (完全有界)**
 > 
@@ -192,7 +192,9 @@ $CX$ 紧: $X\times\left[0,1\right]$ 是紧空间之积 ($X$ 紧, $\left[0,1\righ
 
 $Y^*$ 豪斯多夫: 若 $\left(x,t\right)\neq\left(y,s\right)$ 皆非 $\infty$, 由 $Y$ 豪斯多夫取 $Y$ 中不相交开邻域 $U,V$; $U,V$ 不含 $\infty$, 由**定义 7.5 (单点紧化)** 它们在 $Y^*$ 中仍开. 对 $\infty$ 与 $\left(x,t\right)$: 取 $t'$ 使 $t<{}t'<1$, 令 $K=X\times\left[0,t'\right]$ (紧, 如上); 则 $U=X\times\left(0,t'\right)$ 是 $\left(x,t\right)$ 的开邻域, $\left(Y\setminus{K}\right)\cup\left\{\infty\right\}=X\times\left(t',1\right)\cup\left\{\infty\right\}$ 是 $\infty$ 的邻域 (由**定义 7.5 (单点紧化)**), 且 $U\cap\left(Y\setminus{K}\right)=\emptyset$. 故 $Y^*$ 豪斯多夫.
 
-由**定理 5.6 (紧豪斯多夫间的连续双射)**, $\psi$ 是同胚. $\blacksquare$
+由**定理 5.6 (紧豪斯多夫间的连续双射)**, $\psi$ 是同胚.
+
+$\blacksquare$
 
 (2) 由**定义 11.12 (塌缩商)**, $X/\left\langle{A}\right\rangle$ 把闭集 $A$ 整捏成一点 $\left\langle{A}\right\rangle$, 商映射 $\pi$ 在 $Z=X\setminus{A}$ 上单射; 由**定义 11.1 (商拓扑)**, $\pi$ 连续. $Z$ 豪斯多夫: $X$ 豪斯多夫 (题设), 由**定理 3.6 (豪斯多夫的遗传性)** 子空间仍豪斯多夫. $Z$ 局部紧 (按**定义 7.4 (局部紧空间)** 的等价表述): 对 $x\in{Z}$, 由**定义 3.10 (豪斯多夫空间)**, 对每个 $a\in{A}$ 有不相交开集 $U_a\ni{x}$, $V_a\ni{a}$; $A$ 是紧空间 $X$ 的闭子集, 由**定理 5.4 (闭子集紧)** 紧, 故 $A\subset\bigcup_{i=1}^{m}V_{a_i}$ 对某个有限子族成立; 令 $U=\bigcap_{i=1}^{m}U_{a_i}$, 由**定义 3.18 (拓扑空间)** $U$ 是含 $x$ 的开集且 $U\cap{A}=\emptyset$. 由**定义 3.26 (闭包)**, $\overline{U}\subset{X}\setminus\bigcup_{i=1}^{m}V_{a_i}\subset{Z}$ ($X\setminus\bigcup_iV_{a_i}$ 闭且含 $U$); $\overline{U}$ 是紧空间 $X$ 的闭子集, 由**定理 5.4 (闭子集紧)** 紧, 且是 $x$ 的紧邻域 (含 $x$ 的开邻域 $U$, 而 $U$ 在 $Z$ 中开). 故 $Z$ 局部紧.
 
@@ -200,7 +202,9 @@ $Y^*$ 豪斯多夫: 若 $\left(x,t\right)\neq\left(y,s\right)$ 皆非 $\infty$, 
 
 $\phi$ 连续: 对 $Z^*$ 的开集 $W$, 若 $\infty\notin{W}$, 则 $W$ 在 $Z$ 中开; $Z=X\setminus{A}$ 是 $X$ 的开子集 ($A$ 闭, 由**定义 3.21 (闭集)**), 故 $W$ 在 $X$ 中开, 且 $\pi^{-1}\left(\phi^{-1}\left(W\right)\right)=W$ 开. 若 $\infty\in{W}$, 则 $W=\left(Z\setminus{K}\right)\cup\left\{\infty\right\}$ 其中 $K\subset{Z}$ 紧 (由**定义 7.5 (单点紧化)**); $X$ 豪斯多夫, 由**定理 5.5 (豪斯多夫中紧集闭)** $K$ 在 $X$ 中闭, 故 $\pi^{-1}\left(\phi^{-1}\left(W\right)\right)=X\setminus{K}$ 开. 由**定义 11.1 (商拓扑)**, $\phi$ 连续.
 
-$X/\left\langle{A}\right\rangle$ 紧: $\pi$ 连续, $X$ 紧, 由**定理 5.1 (紧空间连续像紧)**. $Z^*$ 豪斯多夫: 两点皆非 $\infty$ 时由 $Z$ 豪斯多夫及**定义 7.5 (单点紧化)** (不含 $\infty$ 的开集在 $Z^*$ 中开); 对 $\infty$ 与 $x\in{Z}$, 取上面的开集 $U$ 与紧集 $\overline{U}$, 则 $U$ 与 $\left(Z\setminus\overline{U}\right)\cup\left\{\infty\right\}$ 不相交 ($U\subset\overline{U}$), 后者是 $\infty$ 的邻域 (由**定义 7.5 (单点紧化)**). 由**定理 5.6 (紧豪斯多夫间的连续双射)**, $\phi$ 是同胚. $\blacksquare$
+$X/\left\langle{A}\right\rangle$ 紧: $\pi$ 连续, $X$ 紧, 由**定理 5.1 (紧空间连续像紧)**. $Z^*$ 豪斯多夫: 两点皆非 $\infty$ 时由 $Z$ 豪斯多夫及**定义 7.5 (单点紧化)** (不含 $\infty$ 的开集在 $Z^*$ 中开); 对 $\infty$ 与 $x\in{Z}$, 取上面的开集 $U$ 与紧集 $\overline{U}$, 则 $U$ 与 $\left(Z\setminus\overline{U}\right)\cup\left\{\infty\right\}$ 不相交 ($U\subset\overline{U}$), 后者是 $\infty$ 的邻域 (由**定义 7.5 (单点紧化)**). 由**定理 5.6 (紧豪斯多夫间的连续双射)**, $\phi$ 是同胚.
+
+$\blacksquare$
 
 ## 8.2 (扎里斯基拓扑下 $\left(0,1\right)$ 紧但不闭)
 
@@ -212,9 +216,13 @@ $X/\left\langle{A}\right\rangle$ 紧: $\pi$ 连续, $X$ 紧, 由**定理 5.1 (�
 
 扎里斯基拓扑下, 由**定义 3.28 (扎里斯基拓扑)**, 闭集为有限集或全空间 ($n=1$ 时多项式零点集即有限集或全空间); 由**定义 3.21 (闭集)**, 开集为余有限集或空集.
 
-紧: 任取 $\left(0,1\right)$ 的开覆盖 $\left\{U_i\right\}$. 取其中一个非空开集 $U_0$; 由余有限性, $\mathbb{R}\setminus{U}_0$ 有限, 故 $\left(0,1\right)\setminus{U}_0$ 至多有限个点, 每个点再选一个覆盖元覆盖. 即得有限子覆盖. 由**定义 5.16 (紧致空间)**, $\left(0,1\right)$ 紧. $\blacksquare$
+紧: 任取 $\left(0,1\right)$ 的开覆盖 $\left\{U_i\right\}$. 取其中一个非空开集 $U_0$; 由余有限性, $\mathbb{R}\setminus{U}_0$ 有限, 故 $\left(0,1\right)\setminus{U}_0$ 至多有限个点, 每个点再选一个覆盖元覆盖. 即得有限子覆盖. 由**定义 5.16 (紧致空间)**, $\left(0,1\right)$ 紧.
 
-不闭: $\mathbb{R}\setminus\left(0,1\right)=\left(-\infty,0\right]\cup\left[1,\infty\right)$ 是无限集, 不是有限集, 故不是扎里斯基闭集; 因而由**定义 3.21 (闭集)** 它的补集 $\left(0,1\right)$ 不是扎里斯基开集的补, 即 $\left(0,1\right)$ 不闭. 故紧不蕴含闭. $\blacksquare$
+$\blacksquare$
+
+不闭: $\mathbb{R}\setminus\left(0,1\right)=\left(-\infty,0\right]\cup\left[1,\infty\right)$ 是无限集, 不是有限集, 故不是扎里斯基闭集; 因而由**定义 3.21 (闭集)** 它的补集 $\left(0,1\right)$ 不是扎里斯基开集的补, 即 $\left(0,1\right)$ 不闭. 故紧不蕴含闭.
+
+$\blacksquare$
 
 ## 8.3 ($\mathbb{R}$ 的单点紧化同胚于 $S^1$)
 
@@ -234,7 +242,9 @@ $S^1$ 是 $\mathbb{R}^2$ 的闭有界子集, 由**定理 5.3 ($\mathbb{R}^n$ 中
 
 定义 $F:\mathbb{R}^*\to{S}^1$: $F\left(x\right)=\sigma\left(x\right)$ 对 $x\in\mathbb{R}$, $F\left(\infty\right)=N$. $F$ 是双射 ($\sigma$ 双射到 $S^1\setminus\left\{N\right\}$, $\inftyrightarrow{N}$). $F$ 连续: 对不含 $N$ 的开集 $W\subset{S}^1$, $F^{-1}\left(W\right)=\sigma^{-1}\left(W\right)$ 是 $\mathbb{R}$ 中开集 ($\sigma$ 同胚); $\mathbb{R}$ 是 $\mathbb{R}^*$ 的开子集 (由**定义 7.5 (单点紧化)**: $\mathbb{R}\cap\mathbb{R}=\mathbb{R}$ 开且 $\infty\notin\mathbb{R}$), 故 $F^{-1}\left(W\right)$ 在 $\mathbb{R}^*$ 中开. 对含 $N$ 的开集 $W\subset{S}^1$, $S^1\setminus{W}$ 闭于紧 $S^1$, 由**定理 5.5 (豪斯多夫中紧集闭)** 紧, 故 $K=\sigma^{-1}\left(S^1\setminus{W}\right)$ 是 $\mathbb{R}$ 中紧集 (由**定理 5.1 (紧空间连续像紧)**, $\sigma$ 连续); 于是 $F^{-1}\left(W\right)=\left(\mathbb{R}\setminus{K}\right)\cup\left\{\infty\right\}$, 它是 $\infty$ 的邻域 (由**定义 7.5 (单点紧化)**), 且在 $\mathbb{R}^*$ 中开: 其与 $\mathbb{R}$ 之交 $\mathbb{R}\setminus{K}$ 开 ($K$ 紧, 由**定理 5.5 (豪斯多夫中紧集闭)** 闭), 其补 $K$ 紧. 故 $F$ 连续.
 
-由**定理 5.6 (紧豪斯多夫间的连续双射)**, $F$ 是同胚, 即 $\mathbb{R}$ 的单点紧化同胚于 $S^1$. $\blacksquare$
+由**定理 5.6 (紧豪斯多夫间的连续双射)**, $F$ 是同胚, 即 $\mathbb{R}$ 的单点紧化同胚于 $S^1$.
+
+$\blacksquare$
 
 ## 8.4 (每无穷子集皆有极限点的度量空间必紧 (2024 卷 C 题二))
 
@@ -254,15 +264,25 @@ $S^1$ 是 $\mathbb{R}^2$ 的闭有界子集, 由**定理 5.3 ($\mathbb{R}^n$ 中
 
 ### 解答 8.4
 
-(1) 固定 $\delta>0$. 依次选 $x_1,x_2,\dots$ 使 $d\left(x_i,x_j\right)\ge\delta$ ($i\neq{j}$). 若此过程无穷, $\left\{x_i\right\}$ 是无穷集, 由题设有极限点 $x$. 由**定义 3.24 (极限点)**, 开球 $B\left(x,\frac\delta2\right)$ 含 $S\setminus\left\{x\right\}$ 的无穷多点: 若仅含有限个, 取 $r$ 小于这些点到 $x$ 的距离, 则 $B\left(x,r\right)$ 与 $S\setminus\left\{x\right\}$ 无交, 与极限点定义矛盾. 取其中两个不同点 $x_i,x_j$, 由三角不等式 (**定义 6.35 (度量空间)**) $d\left(x_i,x_j\right)\le{d}\left(x_i,x\right)+d\left(x,x_j\right)<\delta$, 与 $d\left(x_i,x_j\right)\ge\delta$ 矛盾. 故过程有限停止, 得 $x_1,\dots,x_m$, 且 $\bigcup_{i=1}^mB\left(x_i,\delta\right)=X$ (否则可再选一点), 即有限 $\delta$-覆盖. 由**定义 6.42 (完全有界)**, $X$ 完全有界. $\blacksquare$
+(1) 固定 $\delta>0$. 依次选 $x_1,x_2,\dots$ 使 $d\left(x_i,x_j\right)\ge\delta$ ($i\neq{j}$). 若此过程无穷, $\left\{x_i\right\}$ 是无穷集, 由题设有极限点 $x$. 由**定义 3.24 (极限点)**, 开球 $B\left(x,\frac\delta2\right)$ 含 $S\setminus\left\{x\right\}$ 的无穷多点: 若仅含有限个, 取 $r$ 小于这些点到 $x$ 的距离, 则 $B\left(x,r\right)$ 与 $S\setminus\left\{x\right\}$ 无交, 与极限点定义矛盾. 取其中两个不同点 $x_i,x_j$, 由三角不等式 (**定义 6.35 (度量空间)**) $d\left(x_i,x_j\right)\le{d}\left(x_i,x\right)+d\left(x,x_j\right)<\delta$, 与 $d\left(x_i,x_j\right)\ge\delta$ 矛盾. 故过程有限停止, 得 $x_1,\dots,x_m$, 且 $\bigcup_{i=1}^mB\left(x_i,\delta\right)=X$ (否则可再选一点), 即有限 $\delta$-覆盖. 由**定义 6.42 (完全有界)**, $X$ 完全有界.
 
-(2) 对每个 $n$, 由第 (1) 小题取半径 $1/n$ 的有限覆盖球心集 $C_n$. 令 $C=\bigcup_{n\ge1}C_n$, 它可数 (可数个有限集之并). 任取 $x$ 与 $r>0$, 取 $n$ 使 $1/n<{}r$, 存在 $c\in{C}_n$ 使 $d\left(x,c\right)<1/n<{}r$, 即 $c\in{B}\left(x,r\right)$. 故 $x$ 的每个开球邻域都与 $C$ 相交; 开球构成度量拓扑的基 (由**定义 6.36 (开球)**), 故 $x$ 的每个邻域都与 $C$ 相交, 由**定义 3.24 (极限点)** 与**定理 3.5 (闭包与极限点)** $x\in\overline{C}$. 因 $x$ 任意, $\overline{C}=X$, 由**定义 3.32 (稠密)** $C$ 稠密. 由**定义 3.9 (可分)** $X$ 可分. $\blacksquare$
+$\blacksquare$
 
-(3) 令 $\mathcal{B}=\left\{B\left(c,q\right):c\in{C},q\in\mathbb{Q}_{>0}\right\}$. 它可数 ($C$ 可数, $\mathbb{Q}_{>0}$ 可数). 验证它是基: 任取开集 $U$ 与 $x\in{U}$, 由**定义 6.36 (开球)** 存在 $r>0$ 使 $B\left(x,r\right)\subset{U}$. 由 $C$ 稠密取 $c\in{C}$ 使 $d\left(x,c\right)<{}r/3$ (由**定义 3.32 (稠密)** 与**定义 3.26 (闭包)**), 再取有理数 $q$ 使 $d\left(x,c\right)<{}q<{}r/3$. 则 $x\in{B}\left(c,q\right)$ (因 $d\left(x,c\right)<{}q$), 且 $B\left(c,q\right)\subset{B}\left(x,r\right)\subset{U}$ (对 $z\in{B}\left(c,q\right)$, 由三角不等式 (**定义 6.35 (度量空间)**) $d\left(x,z\right)\le{d}\left(x,c\right)+d\left(c,z\right)<{}r/3+q<{}r$). 故 $U$ 是 $\mathcal{B}$ 中元素之并; 由**定义 3.15 (拓扑基)**, $\mathcal{B}$ 是可数基. $\blacksquare$
+(2) 对每个 $n$, 由第 (1) 小题取半径 $1/n$ 的有限覆盖球心集 $C_n$. 令 $C=\bigcup_{n\ge1}C_n$, 它可数 (可数个有限集之并). 任取 $x$ 与 $r>0$, 取 $n$ 使 $1/n<{}r$, 存在 $c\in{C}_n$ 使 $d\left(x,c\right)<1/n<{}r$, 即 $c\in{B}\left(x,r\right)$. 故 $x$ 的每个开球邻域都与 $C$ 相交; 开球构成度量拓扑的基 (由**定义 6.36 (开球)**), 故 $x$ 的每个邻域都与 $C$ 相交, 由**定义 3.24 (极限点)** 与**定理 3.5 (闭包与极限点)** $x\in\overline{C}$. 因 $x$ 任意, $\overline{C}=X$, 由**定义 3.32 (稠密)** $C$ 稠密. 由**定义 3.9 (可分)** $X$ 可分.
 
-(4) 设 $\left\{U_\alpha\right\}$ 是任意开覆盖. 由第 (3) 小题的可数基 $\mathcal{B}=\left\{V_\beta\right\}$, 每个开集是基元素之并 (**定义 3.15 (拓扑基)**); 对每个基元素 $V_\beta$, 若存在覆盖元 $U\supset{V}_\beta$ 则取定其一记为 $G_\beta$, 则 $\left\{G_\beta\right\}$ 可数且仍覆盖 $X$ (每个 $x\in{X}$ 在某 $U$ 中, $x$ 又在其某基元素 $V_\beta\subset{U}$ 中, 该 $V_\beta$ 被 $G_\beta$ 覆盖). 将 $\left\{G_\beta\right\}$ 编号为 $G_1,G_2,\dots$. 反证无有限子覆盖: 取 $x_n\notin{G}_1\cup\dots\cup{G}_n$. 集合 $\left\{x_n\right\}$ 无穷 (各 $x_n$ 互异), 由题设有极限点 $x$. 因 $\left\{G_n\right\}$ 覆盖 $X$, 存在 $N$ 使 $x\in{G}_N$. 由**定义 6.36 (开球)**, $G_N$ 含开球 $B\left(x,r\right)$, 由第 (1) 小题的论证 $B\left(x,r\right)$ 含 $S\setminus\left\{x\right\}$ 的无穷多点, 故 $G_N$ 含无穷多个 $x_n$. 但对 $n\ge{N}$, $x_n\notin{G}_1\cup\dots\cup{G}_n\supset{G}_N$, 故 $G_N$ 至多含 $x_1,\dots,x_{N-1}$ 有限个, 矛盾. 故存在有限子覆盖, 由**定义 5.16 (紧致空间)** $X$ 紧. $\blacksquare$
+$\blacksquare$
 
-(5) 设 $K$ 紧. 对每个 $n$, 由**定义 5.16 (紧致空间)**, 开覆盖 $\left\{B\left(x,1/n\right):x\in{K}\right\}$ 有有限子覆盖, 取其球心集 $C_n$. 令 $C=\bigcup_nC_n$, 可数. 任取 $x\in{K}$ 与 $r>0$, 取 $n$ 使 $1/n<{}r$, 有限覆盖给出 $c\in{C}_n$ 使 $d\left(x,c\right)<1/n<{}r$, 故 $x$ 的每个开球邻域都与 $C$ 相交; 由**定义 3.32 (稠密)** 与**定理 3.5 (闭包与极限点)** $C$ 在 $K$ 中稠密. 由**定义 3.9 (可分)**, $K$ 可分. $\blacksquare$
+(3) 令 $\mathcal{B}=\left\{B\left(c,q\right):c\in{C},q\in\mathbb{Q}_{>0}\right\}$. 它可数 ($C$ 可数, $\mathbb{Q}_{>0}$ 可数). 验证它是基: 任取开集 $U$ 与 $x\in{U}$, 由**定义 6.36 (开球)** 存在 $r>0$ 使 $B\left(x,r\right)\subset{U}$. 由 $C$ 稠密取 $c\in{C}$ 使 $d\left(x,c\right)<{}r/3$ (由**定义 3.32 (稠密)** 与**定义 3.26 (闭包)**), 再取有理数 $q$ 使 $d\left(x,c\right)<{}q<{}r/3$. 则 $x\in{B}\left(c,q\right)$ (因 $d\left(x,c\right)<{}q$), 且 $B\left(c,q\right)\subset{B}\left(x,r\right)\subset{U}$ (对 $z\in{B}\left(c,q\right)$, 由三角不等式 (**定义 6.35 (度量空间)**) $d\left(x,z\right)\le{d}\left(x,c\right)+d\left(c,z\right)<{}r/3+q<{}r$). 故 $U$ 是 $\mathcal{B}$ 中元素之并; 由**定义 3.15 (拓扑基)**, $\mathcal{B}$ 是可数基.
+
+$\blacksquare$
+
+(4) 设 $\left\{U_\alpha\right\}$ 是任意开覆盖. 由第 (3) 小题的可数基 $\mathcal{B}=\left\{V_\beta\right\}$, 每个开集是基元素之并 (**定义 3.15 (拓扑基)**); 对每个基元素 $V_\beta$, 若存在覆盖元 $U\supset{V}_\beta$ 则取定其一记为 $G_\beta$, 则 $\left\{G_\beta\right\}$ 可数且仍覆盖 $X$ (每个 $x\in{X}$ 在某 $U$ 中, $x$ 又在其某基元素 $V_\beta\subset{U}$ 中, 该 $V_\beta$ 被 $G_\beta$ 覆盖). 将 $\left\{G_\beta\right\}$ 编号为 $G_1,G_2,\dots$. 反证无有限子覆盖: 取 $x_n\notin{G}_1\cup\dots\cup{G}_n$. 集合 $\left\{x_n\right\}$ 无穷 (各 $x_n$ 互异), 由题设有极限点 $x$. 因 $\left\{G_n\right\}$ 覆盖 $X$, 存在 $N$ 使 $x\in{G}_N$. 由**定义 6.36 (开球)**, $G_N$ 含开球 $B\left(x,r\right)$, 由第 (1) 小题的论证 $B\left(x,r\right)$ 含 $S\setminus\left\{x\right\}$ 的无穷多点, 故 $G_N$ 含无穷多个 $x_n$. 但对 $n\ge{N}$, $x_n\notin{G}_1\cup\dots\cup{G}_n\supset{G}_N$, 故 $G_N$ 至多含 $x_1,\dots,x_{N-1}$ 有限个, 矛盾. 故存在有限子覆盖, 由**定义 5.16 (紧致空间)** $X$ 紧.
+
+$\blacksquare$
+
+(5) 设 $K$ 紧. 对每个 $n$, 由**定义 5.16 (紧致空间)**, 开覆盖 $\left\{B\left(x,1/n\right):x\in{K}\right\}$ 有有限子覆盖, 取其球心集 $C_n$. 令 $C=\bigcup_nC_n$, 可数. 任取 $x\in{K}$ 与 $r>0$, 取 $n$ 使 $1/n<{}r$, 有限覆盖给出 $c\in{C}_n$ 使 $d\left(x,c\right)<1/n<{}r$, 故 $x$ 的每个开球邻域都与 $C$ 相交; 由**定义 3.32 (稠密)** 与**定理 3.5 (闭包与极限点)** $C$ 在 $K$ 中稠密. 由**定义 3.9 (可分)**, $K$ 可分.
+
+$\blacksquare$
 
 ## 8.5 (单边染色集的闭性)
 
@@ -278,7 +298,9 @@ $$
 X_F=\bigcup_{i\neq{j}}\left\{f:f\left(x\right)=i,f\left(y\right)=j\right\}.
 $$
 
-每个柱集 $C_{ij}=\left\{f:f\left(x\right)=i,f\left(y\right)=j\right\}$ 是坐标投影 $\pi_x:X\to\left\{1,\dots,k\right\}$ 与 $\pi_y$ 的纤维之交. 由**定义 3.11 (乘积拓扑)**, 坐标投影连续; 离散空间 $\left\{1,\dots,k\right\}$ 中单点 $\left\{i\right\}$ 闭, 由**定义 3.22 (连续映射)** 其原像 $\pi_x^{-1}\left(\left\{i\right\}\right)$ 闭. 故 $C_{ij}$ 闭. 而 $X_F$ 是有限个 $C_{ij}$ ($i\neq{j}$) 之并, 闭集的有限并仍闭. 故 $X_F$ 闭. $\blacksquare$
+每个柱集 $C_{ij}=\left\{f:f\left(x\right)=i,f\left(y\right)=j\right\}$ 是坐标投影 $\pi_x:X\to\left\{1,\dots,k\right\}$ 与 $\pi_y$ 的纤维之交. 由**定义 3.11 (乘积拓扑)**, 坐标投影连续; 离散空间 $\left\{1,\dots,k\right\}$ 中单点 $\left\{i\right\}$ 闭, 由**定义 3.22 (连续映射)** 其原像 $\pi_x^{-1}\left(\left\{i\right\}\right)$ 闭. 故 $C_{ij}$ 闭. 而 $X_F$ 是有限个 $C_{ij}$ ($i\neq{j}$) 之并, 闭集的有限并仍闭. 故 $X_F$ 闭.
+
+$\blacksquare$
 
 ## 8.6 (任意边集的染色集闭)
 
@@ -294,7 +316,9 @@ $$
 X_F=\bigcap_{e\in{F}}X_{\left\{e\right\}}.
 $$
 
-由**习题 8.5**, 每个 $X_{\left\{e\right\}}$ 闭; 由**定义 3.21 (闭集)**, 闭集的任意交仍闭 (补集为开集的任意并). 故 $X_F$ 闭. $\blacksquare$
+由**习题 8.5**, 每个 $X_{\left\{e\right\}}$ 闭; 由**定义 3.21 (闭集)**, 闭集的任意交仍闭 (补集为开集的任意并). 故 $X_F$ 闭.
+
+$\blacksquare$
 
 ## 8.7 (有限子图可染蕴含染色集族的有限交非空)
 
@@ -310,7 +334,9 @@ $$
 \bigcap_{i=1}^{n}X_{F_i}=X_{\bigcup_{i=1}^{n}F_i}.
 $$
 
-边集 $\bigcup_{i=1}^{n}F_i$ 有限, 由假设对应的子图可 $k$-染色, 即由**定义 11.17 ($k$-染色与 $k$-可染色)**, $X_{\bigcup_iF_i}\neq\emptyset$. 故有限交非空. $\blacksquare$
+边集 $\bigcup_{i=1}^{n}F_i$ 有限, 由假设对应的子图可 $k$-染色, 即由**定义 11.17 ($k$-染色与 $k$-可染色)**, $X_{\bigcup_iF_i}\neq\emptyset$. 故有限交非空.
+
+$\blacksquare$
 
 ## 8.8 (用 $X$ 的紧致性得全族交非空)
 
@@ -342,7 +368,9 @@ $$
 f\in\bigcap_{F\subset{E}\text{~有限}}X_F.
 $$
 
-对任意边 $e=\left(x,y\right)\in{E}$, 取 $F=\left\{e\right\}$; 因 $f\in{X}_{\left\{e\right\}}$, 由**定义 11.17 ($k$-染色与 $k$-可染色)**, $f\left(x\right)\neq{f}\left(y\right)$. 故 $f$ 是全图 $G=\left(V,E\right)$ 的合法 $k$-染色. $\blacksquare$
+对任意边 $e=\left(x,y\right)\in{E}$, 取 $F=\left\{e\right\}$; 因 $f\in{X}_{\left\{e\right\}}$, 由**定义 11.17 ($k$-染色与 $k$-可染色)**, $f\left(x\right)\neq{f}\left(y\right)$. 故 $f$ 是全图 $G=\left(V,E\right)$ 的合法 $k$-染色.
+
+$\blacksquare$
 
 ## 8.10 (紧度量空间中相邻距离趋于零的序列: 聚点集紧且连通)
 
@@ -358,7 +386,9 @@ $$
 L=\bigcap_{N\ge1}\overline{\left\{u_n:n\ge{N}\right\}}.
 $$
 
-$L$ 正是序列 $\left\{u_n\right\}$ 的聚点集. 每个闭包是闭集, 故 $L$ 是紧空间 $X$ 的闭子集, 由**定理 5.4 (闭子集紧)**, $L$ 紧致. $\blacksquare$
+$L$ 正是序列 $\left\{u_n\right\}$ 的聚点集. 每个闭包是闭集, 故 $L$ 是紧空间 $X$ 的闭子集, 由**定理 5.4 (闭子集紧)**, $L$ 紧致.
+
+$\blacksquare$
 
 下证 $L$ 连通. 反证, 设 $L=C\cup{D}$, $C,D$ 为 $L$ 中非空不相交闭集. 因 $L$ 紧, $C,D$ 紧; 函数 $C\times{D}\to\mathbb{R}$, $\left(c,d\right)\mapsto{d}\left(c,d\right)$ 连续且 $C\times{D}$ 紧, 由**定理 5.11 (紧空间上连续函数取最大值)** (及最小值情形) 其最小值 $\delta=d\left(C,D\right)$ 可达; 又 $C\cap{D}=\emptyset$, 故 $\delta>0$. 由 $d\left(u_n,u_{n+1}\right)\to0$, 存在 $N$ 使 $n\ge{N}$ 时 $d\left(u_n,u_{n+1}\right)<\delta/3$. 因 $C,D\subset{L}$, 对任意 $c\in{C}$ 与 $d\in{D}$, 由 $L=\cap_N\overline{\left\{u_n:n\ge{N}\right\}}$ 的定义, $c$ 的每个邻域与 $\left\{u_n:n\ge{N}\right\}$ 相交, 故存在任意大的 $n,m\ge{N}$ 使 $d\left(u_n,C\right)<\delta/6$, $d\left(u_m,D\right)<\delta/6$. 沿链 $u_n,u_{n+1},\dots,u_m$, 函数 $h\left(t\right)=d\left(u_t,C\right)$ 从 $<\delta/6$ 变到 $\ge\delta-\delta/6=5\delta/6$ (后一步用三角不等式: $d\left(u_m,C\right)\ge{d}\left(C,D\right)-d\left(u_m,D\right)>\delta-\delta/6$), 且每步变化 $<\delta/3$, 故存在 $p$ 使
 
@@ -366,7 +396,9 @@ $$
 \delta/6\le{h}\left(p\right)\le\delta/2.
 $$
 
-对任意大的这样的 $n,m$ 重复选取 $p$, 并由 $X$ 紧致经**定理 6.1 (紧 $=$ 序列紧)** 提取收敛子列, 其极限 $z$ 满足 $d\left(z,C\right)\ge\delta/6$ 且 $d\left(z,D\right)\ge\delta/2$, 故 $z$ 是聚点但 $z\notin{C}\cup{D}=L$, 矛盾. 由**定义 4.18 (连通空间)**, $L$ 连通. $\blacksquare$
+对任意大的这样的 $n,m$ 重复选取 $p$, 并由 $X$ 紧致经**定理 6.1 (紧 $=$ 序列紧)** 提取收敛子列, 其极限 $z$ 满足 $d\left(z,C\right)\ge\delta/6$ 且 $d\left(z,D\right)\ge\delta/2$, 故 $z$ 是聚点但 $z\notin{C}\cup{D}=L$, 矛盾. 由**定义 4.18 (连通空间)**, $L$ 连通.
+
+$\blacksquare$
 
 ## 8.11 (紧度量空间上的等距自映射是满射同胚)
 
@@ -386,7 +418,9 @@ $$
 
 但 $\left\{f^n\left(a\right)\right\}$ 是紧空间 $X$ 中的序列, 由**定理 6.1 (紧 $=$ 序列紧)** 有收敛子列, 它必是**定义 6.37 (柯西列)**, 与两两距离 $\ge\varepsilon$ 矛盾. 故 $f$ 满.
 
-$f$ 连续 (由等距映射蕴含利普希茨连续), $X$ 紧致故为紧豪斯多夫空间, 由**定理 5.6 (紧豪斯多夫间的连续双射)**, $f$ 是同胚. $\blacksquare$
+$f$ 连续 (由等距映射蕴含利普希茨连续), $X$ 紧致故为紧豪斯多夫空间, 由**定理 5.6 (紧豪斯多夫间的连续双射)**, $f$ 是同胚.
+
+$\blacksquare$
 
 ## 8.12 (紧集上的膨胀映射是等距且双射, 满 $1$-利普希茨映射是等距)
 
@@ -406,11 +440,17 @@ $$
 \left|c_{n_j+1}-c_{n_j}\right|\le\left|f^{n_j+1}\left(a\right)-f^{n_j}\left(a\right)\right|+\left|f^{n_j+1}\left(b\right)-f^{n_j}\left(b\right)\right|.
 $$
 
-左端趋于 $0$, 故两项都趋于 $0$. 由 $f$ 连续 (膨胀条件蕴含利普希茨), $f\left(f^{n_j}\left(a\right)\right)=f^{n_j+1}\left(a\right)\to{f}\left(u\right)$; 而它也 $\to{u}$, 故 $f\left(u\right)=u$. 同理 $f\left(v\right)=v$. 由膨胀条件应用于 $\left(a,u\right)$: $\left|f^{n_j}\left(a\right)-f^{n_j}\left(u\right)\right|\ge\left|a-u\right|$, 即 $\left|f^{n_j}\left(a\right)-u\right|\ge\left|a-u\right|$. 令 $j\to\infty$ 得 $0\ge\left|a-u\right|$, 故 $u=a$. 同理 $v=b$. 于是 $L=\left|u-v\right|=\left|a-b\right|=c_0$, 而 $c_n$ 从 $c_0$ 起不减且收敛到 $c_0$, 故 $c_1=c_0$, 即 $\left|f\left(a\right)-f\left(b\right)\right|=\left|a-b\right|$. 由**定义 6.49 (等距映射)**, $f$ 是等距. $\blacksquare$
+左端趋于 $0$, 故两项都趋于 $0$. 由 $f$ 连续 (膨胀条件蕴含利普希茨), $f\left(f^{n_j}\left(a\right)\right)=f^{n_j+1}\left(a\right)\to{f}\left(u\right)$; 而它也 $\to{u}$, 故 $f\left(u\right)=u$. 同理 $f\left(v\right)=v$. 由膨胀条件应用于 $\left(a,u\right)$: $\left|f^{n_j}\left(a\right)-f^{n_j}\left(u\right)\right|\ge\left|a-u\right|$, 即 $\left|f^{n_j}\left(a\right)-u\right|\ge\left|a-u\right|$. 令 $j\to\infty$ 得 $0\ge\left|a-u\right|$, 故 $u=a$. 同理 $v=b$. 于是 $L=\left|u-v\right|=\left|a-b\right|=c_0$, 而 $c_n$ 从 $c_0$ 起不减且收敛到 $c_0$, 故 $c_1=c_0$, 即 $\left|f\left(a\right)-f\left(b\right)\right|=\left|a-b\right|$. 由**定义 6.49 (等距映射)**, $f$ 是等距.
 
-再由**定理 5.1 (紧空间连续像紧)** 及**习题 8.11**的论证, $f$ 双射. $\blacksquare$
+$\blacksquare$
 
-(2) 现设 $g:X\to{X}$ 满且 $\left|g\left(y\right)-g\left(x\right)\right|\le\left|y-x\right|$. 对任意 $u,v\in{X}$, 取原像 $x,y$ 使 $g\left(x\right)=u$, $g\left(y\right)=v$, 则 $\left|u-v\right|\le\left|x-y\right|$, 即 $g^{-1}$ 满足膨胀条件. 由上一段, $g^{-1}$ 是等距, 故 $g$ 也是等距. $\blacksquare$
+再由**定理 5.1 (紧空间连续像紧)** 及**习题 8.11**的论证, $f$ 双射.
+
+$\blacksquare$
+
+(2) 现设 $g:X\to{X}$ 满且 $\left|g\left(y\right)-g\left(x\right)\right|\le\left|y-x\right|$. 对任意 $u,v\in{X}$, 取原像 $x,y$ 使 $g\left(x\right)=u$, $g\left(y\right)=v$, 则 $\left|u-v\right|\le\left|x-y\right|$, 即 $g^{-1}$ 满足膨胀条件. 由上一段, $g^{-1}$ 是等距, 故 $g$ 也是等距.
+
+$\blacksquare$
 
 ## 8.13 (紧空间上的严格压缩映射有唯一不动点)
 
@@ -426,4 +466,6 @@ $$
 \left|f^2\left(x_0\right)-f\left(x_0\right)\right|<\left|f\left(x_0\right)-x_0\right|=g\left(x_0\right),
 $$
 
-即 $g\left(f\left(x_0\right)\right)<{}g\left(x_0\right)$, 矛盾. 故 $g\left(x_0\right)=0$, $x_0$ 是不动点. 唯一性: 若另有不动点 $y$, 则 $0<\left|y-x_0\right|=\left|f\left(y\right)-f\left(x_0\right)\right|<\left|y-x_0\right|$, 矛盾. 对 $a\in{K}$, $\left|f^{n+1}\left(a\right)-x_0\right|<\left|f^n\left(a\right)-x_0\right|$ 单调下降, 由 $K$ 紧 (**定理 6.1 (紧 $=$ 序列紧)**) 收敛到 $x_0$. $\blacksquare$
+即 $g\left(f\left(x_0\right)\right)<{}g\left(x_0\right)$, 矛盾. 故 $g\left(x_0\right)=0$, $x_0$ 是不动点. 唯一性: 若另有不动点 $y$, 则 $0<\left|y-x_0\right|=\left|f\left(y\right)-f\left(x_0\right)\right|<\left|y-x_0\right|$, 矛盾. 对 $a\in{K}$, $\left|f^{n+1}\left(a\right)-x_0\right|<\left|f^n\left(a\right)-x_0\right|$ 单调下降, 由 $K$ 紧 (**定理 6.1 (紧 $=$ 序列紧)**) 收敛到 $x_0$.
+
+$\blacksquare$

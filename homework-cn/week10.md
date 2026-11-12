@@ -62,7 +62,7 @@
 
 > **定义 6.37 (柯西列)**
 > 
-> 序列 $\left(x_n\right)$ 是柯西列, 若 $\lim_{N\to\infty}\sup_{i,j>{}N}d\left(x_i,x_j\right)=0$. (教材 $\S6$)
+> 序列 $\left(x_n\right)$ 是柯西列, 若 $\lim_{N\to\infty}\sup_{i,j>N}d\left(x_i,x_j\right)=0$. (教材 $\S6$)
 
 > **定义 6.38 (完备度量空间)**
 > 
@@ -100,13 +100,21 @@
 
 ### 解答 10.1
 
-(1) 令 $\varphi\left(x\right)=1/x$, 则 $\delta\left(x,y\right)=\left|\varphi\left(x\right)-\varphi\left(y\right)\right|$ 由绝对值诱导, 满足**定义 6.35 (度量空间)** 的全部四条公理. $\blacksquare$
+(1) 令 $\varphi\left(x\right)=1/x$, 则 $\delta\left(x,y\right)=\left|\varphi\left(x\right)-\varphi\left(y\right)\right|$ 由绝对值诱导, 满足**定义 6.35 (度量空间)** 的全部四条公理.
 
-(2) $\varphi:\left(0,\infty\right)\to\left(0,\infty\right)$ 在通常拓扑下是同胚 (连续双射, 逆 $x\mapsto1/x$ 连续). $\delta$ 是 $\varphi$ 拉回的通常距离, 故诱导通常拓扑. $\blacksquare$
+$\blacksquare$
 
-(3) 取 $x_n=n$. 则 $\delta\left(x_n,x_m\right)=\left|1/n-1/m\right|\to0$, 是**定义 6.37 (柯西列)**; 但若收敛于 $x\in\left(0,\infty\right)$, 则 $\delta\left(x_n,x\right)\to\left|0-1/x\right|=1/x>0$, 矛盾. 故它不收敛, $\left(\left(0,\infty\right),\delta\right)$ 不是**定义 6.38 (完备度量空间)**. $\blacksquare$
+(2) $\varphi:\left(0,\infty\right)\to\left(0,\infty\right)$ 在通常拓扑下是同胚 (连续双射, 逆 $x\mapsto1/x$ 连续). $\delta$ 是 $\varphi$ 拉回的通常距离, 故诱导通常拓扑.
 
-(4) 设 $x_n\in\left(0,1\right]$ 是 $\delta$-柯西列. 则 $1/x_n\in\left[1,\infty\right)$ 通常柯西, 由**定义 6.39 (完备化)** (即 $\mathbb{R}$ 完备), $1/x_n\to{L}\ge1$. 令 $x=1/L\in\left(0,1\right]$, 则 $\delta\left(x_n,x\right)\to0$. 故 $\left(\left(0,1\right],\delta\right)$ 完备. $\blacksquare$
+$\blacksquare$
+
+(3) 取 $x_n=n$. 则 $\delta\left(x_n,x_m\right)=\left|1/n-1/m\right|\to0$, 是**定义 6.37 (柯西列)**; 但若收敛于 $x\in\left(0,\infty\right)$, 则 $\delta\left(x_n,x\right)\to\left|0-1/x\right|=1/x>0$, 矛盾. 故它不收敛, $\left(\left(0,\infty\right),\delta\right)$ 不是**定义 6.38 (完备度量空间)**.
+
+$\blacksquare$
+
+(4) 设 $x_n\in\left(0,1\right]$ 是 $\delta$-柯西列. 则 $1/x_n\in\left[1,\infty\right)$ 通常柯西, 由**定义 6.39 (完备化)** (即 $\mathbb{R}$ 完备), $1/x_n\to{L}\ge1$. 令 $x=1/L\in\left(0,1\right]$, 则 $\delta\left(x_n,x\right)\to0$. 故 $\left(\left(0,1\right],\delta\right)$ 完备.
+
+$\blacksquare$
 
 ## 10.2 ($\mathbb{R}^n$ 中紧集与闭集的距离可达, $l^\infty$ 中不可达)
 
@@ -126,7 +134,9 @@ $$
 \left\|\boldsymbol{x}-\boldsymbol{y}\right\|=\lim_{k\to\infty}\left\|\boldsymbol{x}_{n_{j_k}}-\boldsymbol{y}_{n_{j_k}}\right\|=d\left(K,F\right).
 $$
 
-即距离在 $\boldsymbol{x}\in{K}$, $\boldsymbol{y}\in{F}$ 处取得. $\blacksquare$
+即距离在 $\boldsymbol{x}\in{K}$, $\boldsymbol{y}\in{F}$ 处取得.
+
+$\blacksquare$
 
 (2) 令 $E=l^\infty$, 范数 $\left\|a\right\|=\sup_n\left|a_n\right|$. 取紧集 $K=\left\{0\right\}$ 与闭集 $F=\left\{y_n=\left(1+2^{-n}\right)e_n:n\ge0\right\}$. 先验证 $F$ 闭: 对 $n\neq{m}$,
 
@@ -140,7 +150,9 @@ $$
 d\left(K,F\right)=\inf_n\left\|y_n\right\|=\inf_n\left(1+2^{-n}\right)=1,
 $$
 
-且该下确界是 $n\to\infty$ 时的极限, 没有任何 $y_n$ 满足 $\left\|y_n\right\|=1$ (均严格大于 $1$). 故距离 $d\left(K,F\right)=1$ 不能在某对 $x\in{K}$, $y\in{F}$ 处取得. $\blacksquare$
+且该下确界是 $n\to\infty$ 时的极限, 没有任何 $y_n$ 满足 $\left\|y_n\right\|=1$ (均严格大于 $1$). 故距离 $d\left(K,F\right)=1$ 不能在某对 $x\in{K}$, $y\in{F}$ 处取得.
+
+$\blacksquare$
 
 ## 10.3 (连续但处处不可导的函数在 $C\left[0,1\right]$ 中稠密)
 
@@ -170,7 +182,9 @@ $$
 
 可导处必落在某个 $D_k$: 若 $f$ 在 $x$ 可导, 取 $M>\left|f'\left(x\right)\right|$ 与 $\delta>0$ 使 $\left|f\left(x+h\right)-f\left(x\right)\right|\le{M}\left|h\right|$ 对 $\left|h\right|\le\delta$ 成立, 再取 $k$ 使 $1/k\le\delta$ 且 $k\ge{M}$, 即 $f\in{D}_k$.
 
-由**定理 6.13 (贝尔纲定理)**, $C\left[0,1\right]$ 完备, 可数个无处稠密集之并不能覆盖它, 故 $\bigcup_kD_k$ 的余集稠密; 而由上段, 该余集中的每个函数处处不可导. $\blacksquare$
+由**定理 6.13 (贝尔纲定理)**, $C\left[0,1\right]$ 完备, 可数个无处稠密集之并不能覆盖它, 故 $\bigcup_kD_k$ 的余集稠密; 而由上段, 该余集中的每个函数处处不可导.
+
+$\blacksquare$
 
 > 三个 $D_k$ 只是把"某点附近所有割线斜率不超过 $k$"这件事固定下来; 无处稠密性靠一个振幅很小, 斜率极大的三角波, 它在每个点附近都有陡割线.
 
@@ -188,7 +202,9 @@ $$
 
 ### 解答 10.4
 
-(1) 设 $\left\{r_1,r_2,\dots\right\}$ 是 $\left[0,1\right]$ 中全体有理数. 固定 $k$, 数列 $\left(f_n\left(r_k\right)\right)_{n\ge1}$ 有界: $\left|f_n\left(r_k\right)\right|\le{M}$. 由**定理 5.2 (区间紧)**, 有界闭区间 $\left[-M,M\right]$ 紧, 再由**定理 6.1 (紧 $=$ 序列紧)**, $\left(f_n\left(r_1\right)\right)$ 有收敛子列 $\left(f_{n_i^{\left(1\right)}}\left(r_1\right)\right)$. 接着在该子列内取子列使 $\left(f_n\left(r_2\right)\right)$ 收敛; 如此归纳, 得一串嵌套子列 $\left(f_{n_i^{\left(k\right)}}\right)$ 使第 $k$ 个子列在 $r_1,\dots,r_k$ 处都收敛. 对角线子列 $g_i=f_{n_i^{\left(i\right)}}$ 是每个嵌套子列的尾部, 故在每个有理点 $r_k$ 处收敛. $\blacksquare$
+(1) 设 $\left\{r_1,r_2,\dots\right\}$ 是 $\left[0,1\right]$ 中全体有理数. 固定 $k$, 数列 $\left(f_n\left(r_k\right)\right)_{n\ge1}$ 有界: $\left|f_n\left(r_k\right)\right|\le{M}$. 由**定理 5.2 (区间紧)**, 有界闭区间 $\left[-M,M\right]$ 紧, 再由**定理 6.1 (紧 $=$ 序列紧)**, $\left(f_n\left(r_1\right)\right)$ 有收敛子列 $\left(f_{n_i^{\left(1\right)}}\left(r_1\right)\right)$. 接着在该子列内取子列使 $\left(f_n\left(r_2\right)\right)$ 收敛; 如此归纳, 得一串嵌套子列 $\left(f_{n_i^{\left(k\right)}}\right)$ 使第 $k$ 个子列在 $r_1,\dots,r_k$ 处都收敛. 对角线子列 $g_i=f_{n_i^{\left(i\right)}}$ 是每个嵌套子列的尾部, 故在每个有理点 $r_k$ 处收敛.
+
+$\blacksquare$
 
 (2) 固定 $x\in\left[0,1\right]$ 与 $\varepsilon>0$. 由 $\left|g_n'\left(t\right)\right|\le{M}$ 与拉格朗日中值定理, $\left|g_n\left(x\right)-g_n\left(r\right)\right|\le{M}\left|x-r\right|$. 取有理点 $r$ 使 $\left|x-r\right|<\varepsilon/\left(3M\right)$. 则
 
@@ -196,7 +212,9 @@ $$
 \left|g_n\left(x\right)-g_m\left(x\right)\right|\le\left|g_n\left(x\right)-g_n\left(r\right)\right|+\left|g_n\left(r\right)-g_m\left(r\right)\right|+\left|g_m\left(r\right)-g_m\left(x\right)\right|.
 $$
 
-由有理点处收敛, $\left(g_n\left(r\right)\right)$ 是**定义 6.37 (柯西列)**, 对充分大的 $n,m$ 中间项 $<\varepsilon/3$; 两端各 $<\varepsilon/3$. 故 $\left|g_n\left(x\right)-g_m\left(x\right)\right|<\varepsilon$, 即 $\left(g_n\left(x\right)\right)$ 是柯西列. 由**定义 6.39 (完备化)** (即 $\mathbb{R}$ 完备), 逐点极限 $g\left(x\right)$ 存在. $\blacksquare$
+由有理点处收敛, $\left(g_n\left(r\right)\right)$ 是**定义 6.37 (柯西列)**, 对充分大的 $n,m$ 中间项 $<\varepsilon/3$; 两端各 $<\varepsilon/3$. 故 $\left|g_n\left(x\right)-g_m\left(x\right)\right|<\varepsilon$, 即 $\left(g_n\left(x\right)\right)$ 是柯西列. 由**定义 6.39 (完备化)** (即 $\mathbb{R}$ 完备), 逐点极限 $g\left(x\right)$ 存在.
+
+$\blacksquare$
 
 (3) 由**定理 5.2 (区间紧)** 与**定理 6.1 (紧 $=$ 序列紧)**, $\left[0,1\right]$ 可被有限个有理点 $r^{\left(1\right)},\dots,r^{\left(L\right)}$ 的邻域覆盖, 使每个 $x$ 到某 $r^{\left(j\right)}$ 的距离 $<\varepsilon/\left(3M\right)$. 对这有限个有理点, 由收敛性可取公共的 $N$, 使 $n\ge{N}$ 时 $\left|g_n\left(r^{\left(j\right)}\right)-g\left(r^{\left(j\right)}\right)\right|<\varepsilon/3$ 对一切 $j$ 成立. 又由 $\left|g_n'\right|\le{M}$ 取极限得 $\left|g\left(x\right)-g\left(r^{\left(j\right)}\right)\right|\le{M}\left|x-r^{\left(j\right)}\right|<\varepsilon/3$. 于是对任意 $x$,
 
@@ -204,7 +222,9 @@ $$
 \left|g_n\left(x\right)-g\left(x\right)\right|\le\left|g_n\left(x\right)-g_n\left(r^{\left(j\right)}\right)\right|+\left|g_n\left(r^{\left(j\right)}\right)-g\left(r^{\left(j\right)}\right)\right|+\left|g\left(r^{\left(j\right)}\right)-g\left(x\right)\right|<\varepsilon.
 $$
 
-由**定义 6.41 (一致收敛与一致度量)**, $g_n$ 一致收敛到 $g$. $\blacksquare$
+由**定义 6.41 (一致收敛与一致度量)**, $g_n$ 一致收敛到 $g$.
+
+$\blacksquare$
 
 ## 10.5 (点态收敛的连续函数列的极限不可能处处不连续)
 
@@ -230,7 +250,9 @@ $$
 
 在 $\Omega_\varepsilon$ 上 $f$ 连续: 若 $x_0\in\operatorname{int}\left(F_{N,\varepsilon}\right)$, 取邻域 $V\subset{F}_{N,\varepsilon}$. 则对 $x\in{V}$ 与一切 $p\ge{N}$ 有 $\left|f_p\left(x\right)-f_N\left(x\right)\right|\le\varepsilon$; 令 $p\to\infty$ 得 $\left|f\left(x\right)-f_N\left(x\right)\right|\le\varepsilon$. 故 $f$ 在 $V$ 上是连续函数列 $f_N$ 的一致极限, 由一致极限的连续性 (题集 $\S4.2$ Q5) $f$ 在 $V$ 上连续. 特别 $x_0$ 是连续点.
 
-最后令 $\Omega=\bigcap_{m}\Omega_{1/m}$, 它是稠密 $G_\delta$ (可数个稠密开集之交). 由上一段, $f$ 在 $\Omega$ 上每点连续. 稠密子集 $\Omega$ 中每点都是连续点, 故 $f$ 的连续点集稠密, 它不可能处处不连续. $\blacksquare$
+最后令 $\Omega=\bigcap_{m}\Omega_{1/m}$, 它是稠密 $G_\delta$ (可数个稠密开集之交). 由上一段, $f$ 在 $\Omega$ 上每点连续. 稠密子集 $\Omega$ 中每点都是连续点, 故 $f$ 的连续点集稠密, 它不可能处处不连续.
+
+$\blacksquare$
 
 > 关键是"$\Omega_\varepsilon$ 在每个子区间里都有点", 这是对每个 $J$ 单独用一次贝尔纲得到的, 这样稠密性才不依赖于整体.
 
@@ -242,7 +264,9 @@ $$
 
 ### 解答 10.6
 
-数列 $\left(f_n\left(1\right)\right)_{n\ge0}$ 含于有界闭区间 $\left[-C,C\right]$. 由**定理 5.2 (区间紧)** 平移即知 $\left[-C,C\right]$ 是紧集; 由**定理 6.1 (紧 $=$ 序列紧)**, 紧度量空间中每个序列都有收敛子列. 故存在子列 $\left(f_{n_i^{\left(1\right)}}\left(1\right)\right)_{i\ge0}$ 收敛. $\blacksquare$
+数列 $\left(f_n\left(1\right)\right)_{n\ge0}$ 含于有界闭区间 $\left[-C,C\right]$. 由**定理 5.2 (区间紧)** 平移即知 $\left[-C,C\right]$ 是紧集; 由**定理 6.1 (紧 $=$ 序列紧)**, 紧度量空间中每个序列都有收敛子列. 故存在子列 $\left(f_{n_i^{\left(1\right)}}\left(1\right)\right)_{i\ge0}$ 收敛.
+
+$\blacksquare$
 
 ## 10.7 (对角线子列的归纳构造)
 
@@ -252,7 +276,9 @@ $$
 
 ### 解答 10.7
 
-归纳构造. $k=1$ 时由**习题 10.6**已得子列 $\left(f_{n_i^{\left(1\right)}}\right)$, 使 $\left(f_{n_i^{\left(1\right)}}\left(1\right)\right)$ 收敛. 设已构造第 $k$ 个子列 $\left(f_{n_i^{\left(k\right)}}\right)$. 数列 $\left(f_{n_i^{\left(k\right)}}\left(k+1\right)\right)_{i\ge0}$ 仍含于 $\left[-C,C\right]$, 由**定理 5.2 (区间紧)** 与**定理 6.1 (紧 $=$ 序列紧)**, 有收敛子列, 记为 $\left(f_{n_i^{\left(k+1\right)}}\left(k+1\right)\right)_{i\ge0}$, 其中 $\left(n_i^{\left(k+1\right)}\right)$ 是 $\left(n_i^{\left(k\right)}\right)$ 的子列. 于是 $\left(f_{n_i^{\left(k+1\right)}}\right)$ 是 $\left(f_{n_i^{\left(k\right)}}\right)$ 的子列, 且由构造 $\left(f_{n_i^{\left(k\right)}}\left(k\right)\right)_{i\ge0}$ 收敛. 归纳完成. $\blacksquare$
+归纳构造. $k=1$ 时由**习题 10.6**已得子列 $\left(f_{n_i^{\left(1\right)}}\right)$, 使 $\left(f_{n_i^{\left(1\right)}}\left(1\right)\right)$ 收敛. 设已构造第 $k$ 个子列 $\left(f_{n_i^{\left(k\right)}}\right)$. 数列 $\left(f_{n_i^{\left(k\right)}}\left(k+1\right)\right)_{i\ge0}$ 仍含于 $\left[-C,C\right]$, 由**定理 5.2 (区间紧)** 与**定理 6.1 (紧 $=$ 序列紧)**, 有收敛子列, 记为 $\left(f_{n_i^{\left(k+1\right)}}\left(k+1\right)\right)_{i\ge0}$, 其中 $\left(n_i^{\left(k+1\right)}\right)$ 是 $\left(n_i^{\left(k\right)}\right)$ 的子列. 于是 $\left(f_{n_i^{\left(k+1\right)}}\right)$ 是 $\left(f_{n_i^{\left(k\right)}}\right)$ 的子列, 且由构造 $\left(f_{n_i^{\left(k\right)}}\left(k\right)\right)_{i\ge0}$ 收敛. 归纳完成.
+
+$\blacksquare$
 
 ## 10.8 (对角子列使各点收敛)
 
@@ -262,7 +288,9 @@ $$
 
 ### 解答 10.8
 
-取对角子列 $n_i=n_i^{\left(i\right)}$. 固定 $m$. 对一切 $i\ge{m}$, 由嵌套关系, $\left(n_j^{\left(i\right)}\right)_{j\ge1}$ 是 $\left(n_j^{\left(m\right)}\right)_{j\ge1}$ 的子列, 特别地 $n_i=n_i^{\left(i\right)}$ 本身是第 $m$ 个子列 $\left(n_j^{\left(m\right)}\right)_{j\ge1}$ 中序号充分大的一项. 而由构造, $\left(f_{n_j^{\left(m\right)}}\left(m\right)\right)_{j\ge1}$ 收敛. 收敛序列的尾部仍收敛, 故子列 $\left(f_{n_i}\left(m\right)\right)_{i\ge{m}}$ 收敛, 即 $\left(f_{n_i}\left(m\right)\right)_{i\ge0}$ 收敛. 对一切 $m$ 同时成立. $\blacksquare$
+取对角子列 $n_i=n_i^{\left(i\right)}$. 固定 $m$. 对一切 $i\ge{m}$, 由嵌套关系, $\left(n_j^{\left(i\right)}\right)_{j\ge1}$ 是 $\left(n_j^{\left(m\right)}\right)_{j\ge1}$ 的子列, 特别地 $n_i=n_i^{\left(i\right)}$ 本身是第 $m$ 个子列 $\left(n_j^{\left(m\right)}\right)_{j\ge1}$ 中序号充分大的一项. 而由构造, $\left(f_{n_j^{\left(m\right)}}\left(m\right)\right)_{j\ge1}$ 收敛. 收敛序列的尾部仍收敛, 故子列 $\left(f_{n_i}\left(m\right)\right)_{i\ge{m}}$ 收敛, 即 $\left(f_{n_i}\left(m\right)\right)_{i\ge0}$ 收敛. 对一切 $m$ 同时成立.
+
+$\blacksquare$
 
 ## 10.9 (上确界度量下的柯西列逐点收敛)
 
@@ -278,7 +306,9 @@ $$
 \sup_{x\in\left[a,b\right]}\left|f_n\left(x\right)-f_m\left(x\right)\right|<\varepsilon.
 $$
 
-固定 $x\in\left[a,b\right]$, 则 $\left|f_n\left(x\right)-f_m\left(x\right)\right|\le\sup<\varepsilon$, 故 $\left(f_n\left(x\right)\right)$ 是 $\mathbb{R}$ 中的**定义 6.37 (柯西列)**. 由**定义 6.39 (完备化)**, $\mathbb{R}$ 是**定义 6.38 (完备度量空间)**, 故 $\left(f_n\left(x\right)\right)$ 收敛. 记其极限为 $f\left(x\right)$. 逐点极限 $f$ 由此定义. $\blacksquare$
+固定 $x\in\left[a,b\right]$, 则 $\left|f_n\left(x\right)-f_m\left(x\right)\right|\le\sup<\varepsilon$, 故 $\left(f_n\left(x\right)\right)$ 是 $\mathbb{R}$ 中的**定义 6.37 (柯西列)**. 由**定义 6.39 (完备化)**, $\mathbb{R}$ 是**定义 6.38 (完备度量空间)**, 故 $\left(f_n\left(x\right)\right)$ 收敛. 记其极限为 $f\left(x\right)$. 逐点极限 $f$ 由此定义.
+
+$\blacksquare$
 
 ## 10.10 (一致极限的连续性 ($\varepsilon/3$ 论证))
 
@@ -300,9 +330,13 @@ $$
 \left|f_n\left(x\right)-f\left(x\right)\right|=\lim_{m\to\infty}\left|f_n\left(x\right)-f_m\left(x\right)\right|\le\varepsilon/3.
 $$
 
-对 $x$ 取上确界得 $\left\|f_n-f\right\|_\infty\le\varepsilon/3<\varepsilon/3$ (取严格不等号即可). 故存在 $n$ 使 $\left\|f_n-f\right\|_\infty<\varepsilon/3$. $\blacksquare$
+对 $x$ 取上确界得 $\left\|f_n-f\right\|_\infty\le\varepsilon/3<\varepsilon/3$ (取严格不等号即可). 故存在 $n$ 使 $\left\|f_n-f\right\|_\infty<\varepsilon/3$.
 
-(2) 固定该 $n$, 由 $f_n$ 连续, 存在 $\delta>0$, 使 $y\in\left[a,b\right]$ 且 $\left|x-y\right|<\delta$ 时 $\left|f_n\left(x\right)-f_n\left(y\right)\right|<\varepsilon/3$. $\blacksquare$
+$\blacksquare$
+
+(2) 固定该 $n$, 由 $f_n$ 连续, 存在 $\delta>0$, 使 $y\in\left[a,b\right]$ 且 $\left|x-y\right|<\delta$ 时 $\left|f_n\left(x\right)-f_n\left(y\right)\right|<\varepsilon/3$.
+
+$\blacksquare$
 
 (3) 对满足 $\left|x-y\right|<\delta$ 的 $y$,
 
@@ -310,7 +344,9 @@ $$
 \left|f\left(x\right)-f\left(y\right)\right|\le\left|f\left(x\right)-f_n\left(x\right)\right|+\left|f_n\left(x\right)-f_n\left(y\right)\right|+\left|f_n\left(y\right)-f\left(y\right)\right|<\frac{\varepsilon}{3}+\frac{\varepsilon}{3}+\frac{\varepsilon}{3}=\varepsilon.
 $$
 
-这正是**定理 6.7 (连续函数的一致极限连续)** 的 $\varepsilon/3$ 论证, 故 $f$ 在 $x$ 连续. $x$ 任意, $f$ 在 $\left[a,b\right]$ 上连续. $\blacksquare$
+这正是**定理 6.7 (连续函数的一致极限连续)** 的 $\varepsilon/3$ 论证, 故 $f$ 在 $x$ 连续. $x$ 任意, $f$ 在 $\left[a,b\right]$ 上连续.
+
+$\blacksquare$
 
 ## 10.11 ($C\left[a,b\right]$ 在上确界度量下完备)
 
@@ -326,9 +362,13 @@ $$
 \left|f_n\left(x\right)-f\left(x\right)\right|=\lim_{m\to\infty}\left|f_n\left(x\right)-f_m\left(x\right)\right|\le\varepsilon.
 $$
 
-对 $x$ 取上确界, 得 $\left\|f_n-f\right\|_\infty\le\varepsilon$ 对一切 $n\ge{N}$ 成立. 由**定义 6.41 (一致收敛与一致度量)** 与**定义 6.43 (上确界度量)**, $f_n\to{f}$ 一致收敛, 即在 $C\left[a,b\right]$ 中收敛. $\blacksquare$
+对 $x$ 取上确界, 得 $\left\|f_n-f\right\|_\infty\le\varepsilon$ 对一切 $n\ge{N}$ 成立. 由**定义 6.41 (一致收敛与一致度量)** 与**定义 6.43 (上确界度量)**, $f_n\to{f}$ 一致收敛, 即在 $C\left[a,b\right]$ 中收敛.
 
-由**习题 10.10**, $f$ 连续, 故 $f\in{C}\left[a,b\right]$. 于是 $C\left[a,b\right]$ 中每个**定义 6.37 (柯西列)** 都收敛到 $C\left[a,b\right]$ 中的元素, 由**定义 6.38 (完备度量空间)**, $C\left[a,b\right]$ 完备, 即**定理 6.8 ($C\left(X,Y\right)$ 完备)** 的特例. $\blacksquare$
+$\blacksquare$
+
+由**习题 10.10**, $f$ 连续, 故 $f\in{C}\left[a,b\right]$. 于是 $C\left[a,b\right]$ 中每个**定义 6.37 (柯西列)** 都收敛到 $C\left[a,b\right]$ 中的元素, 由**定义 6.38 (完备度量空间)**, $C\left[a,b\right]$ 完备, 即**定理 6.8 ($C\left(X,Y\right)$ 完备)** 的特例.
+
+$\blacksquare$
 
 ## 10.12 (豪斯多夫空间中极限唯一, 度量空间中聚点即子列极限)
 
@@ -344,11 +384,17 @@ $$
 
 ### 解答 10.12
 
-(1) 设 $x_n\to{x}$ 且 $x_n\to{y}$, $x\neq{y}$. 由**定义 3.10 (豪斯多夫空间)**, 存在不相交开集 $U,V$ 使 $x\in{U}$, $y\in{V}$. 由**定义 3.25 (邻域与极限)**, 对充分大的 $n$ 有 $x_n\in{U}$, 又对充分大的 $n$ 有 $x_n\in{V}$, 与 $U\cap{V}=\emptyset$ 矛盾. 故 $x=y$. $\blacksquare$
+(1) 设 $x_n\to{x}$ 且 $x_n\to{y}$, $x\neq{y}$. 由**定义 3.10 (豪斯多夫空间)**, 存在不相交开集 $U,V$ 使 $x\in{U}$, $y\in{V}$. 由**定义 3.25 (邻域与极限)**, 对充分大的 $n$ 有 $x_n\in{U}$, 又对充分大的 $n$ 有 $x_n\in{V}$, 与 $U\cap{V}=\emptyset$ 矛盾. 故 $x=y$.
 
-(2) 在**定义 6.35 (度量空间)** 中, 设 $x$ 是 $\left(x_n\right)$ 的聚点, 即 $x$ 的每个邻域含序列中无穷多项. 归纳地选 $n_k$ 严格递增, 使 $x_{n_k}\in{B}\left(x,1/k\right)$; 由**定义 6.36 (开球)**, $d\left(x_{n_k},x\right)<1/k\to0$, 故 $x_{n_k}\to{x}$. 反之, 若 $x_{n_k}\to{x}$, 由**定义 3.25 (邻域与极限)**, $x$ 的每个邻域含无穷多项, $x$ 是聚点. $\blacksquare$
+$\blacksquare$
 
-(3) 若不是度量空间: 豪斯多夫性仍保证极限唯一, 但聚点一般不再是子列极限, 因为没有可数邻域基把"每个邻域含无穷多项"逐步收窄成一个子列; 此时需要用网来刻画聚点. $\blacksquare$
+(2) 在**定义 6.35 (度量空间)** 中, 设 $x$ 是 $\left(x_n\right)$ 的聚点, 即 $x$ 的每个邻域含序列中无穷多项. 归纳地选 $n_k$ 严格递增, 使 $x_{n_k}\in{B}\left(x,1/k\right)$; 由**定义 6.36 (开球)**, $d\left(x_{n_k},x\right)<1/k\to0$, 故 $x_{n_k}\to{x}$. 反之, 若 $x_{n_k}\to{x}$, 由**定义 3.25 (邻域与极限)**, $x$ 的每个邻域含无穷多项, $x$ 是聚点.
+
+$\blacksquare$
+
+(3) 若不是度量空间: 豪斯多夫性仍保证极限唯一, 但聚点一般不再是子列极限, 因为没有可数邻域基把"每个邻域含无穷多项"逐步收窄成一个子列; 此时需要用网来刻画聚点.
+
+$\blacksquare$
 
 ## 10.13 (恰有一个聚点蕴含收敛)
 
@@ -360,7 +406,9 @@ $$
 
 记 $\boldsymbol{x}_n=f^n\left(\boldsymbol{x}_0\right)$, 设唯一聚点为 $\boldsymbol{z}$. 取子列 $\boldsymbol{x}_{n_j}\to\boldsymbol{z}$. 由 $f$ 连续, $\boldsymbol{x}_{n_j+1}=f\left(\boldsymbol{x}_{n_j}\right)\to{f}\left(\boldsymbol{z}\right)$. 而 $\left(\boldsymbol{x}_{n_j+1}\right)$ 是 $\left(\boldsymbol{x}_n\right)$ 的子列, 其极限 $f\left(\boldsymbol{z}\right)$ 必为聚点, 由唯一性 $f\left(\boldsymbol{z}\right)=\boldsymbol{z}$.
 
-反设 $\left(\boldsymbol{x}_n\right)$ 不收敛到 $\boldsymbol{z}$. 则存在 $\varepsilon>0$ 与无穷多个 $n$ 使 $\left\|\boldsymbol{x}_n-\boldsymbol{z}\right\|\ge\varepsilon$. 从每个 $n_j$ 出发, 若其后轨道始终在 $B\left(\boldsymbol{z},\varepsilon\right)$ 内, 则尾部落在紧闭球中, 由**定理 5.3 ($\mathbb{R}^n$ 中的紧集)** 与**定理 6.1 (紧 $=$ 序列紧)**, 该尾部的任何聚点都是 $\boldsymbol{z}$, 矛盾于不收敛. 故从每个 $n_j$ 出发, 存在第一个 $m_j>{}n_j$ 使 $\left\|\boldsymbol{x}_{m_j}-\boldsymbol{z}\right\|=\varepsilon$. 点 $\boldsymbol{x}_{m_j}$ 都落在紧球面 $\partial{B}\left(\boldsymbol{z},\varepsilon\right)$ 上, 抽子列 $\boldsymbol{x}_{m_{j_k}}\to\boldsymbol{w}$, $\left\|\boldsymbol{w}-\boldsymbol{z}\right\|=\varepsilon$. 则 $\boldsymbol{w}$ 是 $\left(\boldsymbol{x}_n\right)$ 的聚点且 $\boldsymbol{w}\neq\boldsymbol{z}$, 矛盾. 故 $\left(\boldsymbol{x}_n\right)\to\boldsymbol{z}$. $\blacksquare$
+反设 $\left(\boldsymbol{x}_n\right)$ 不收敛到 $\boldsymbol{z}$. 则存在 $\varepsilon>0$ 与无穷多个 $n$ 使 $\left\|\boldsymbol{x}_n-\boldsymbol{z}\right\|\ge\varepsilon$. 从每个 $n_j$ 出发, 若其后轨道始终在 $B\left(\boldsymbol{z},\varepsilon\right)$ 内, 则尾部落在紧闭球中, 由**定理 5.3 ($\mathbb{R}^n$ 中的紧集)** 与**定理 6.1 (紧 $=$ 序列紧)**, 该尾部的任何聚点都是 $\boldsymbol{z}$, 矛盾于不收敛. 故从每个 $n_j$ 出发, 存在第一个 $m_j>n_j$ 使 $\left\|\boldsymbol{x}_{m_j}-\boldsymbol{z}\right\|=\varepsilon$. 点 $\boldsymbol{x}_{m_j}$ 都落在紧球面 $\partial{B}\left(\boldsymbol{z},\varepsilon\right)$ 上, 抽子列 $\boldsymbol{x}_{m_{j_k}}\to\boldsymbol{w}$, $\left\|\boldsymbol{w}-\boldsymbol{z}\right\|=\varepsilon$. 则 $\boldsymbol{w}$ 是 $\left(\boldsymbol{x}_n\right)$ 的聚点且 $\boldsymbol{w}\neq\boldsymbol{z}$, 矛盾. 故 $\left(\boldsymbol{x}_n\right)\to\boldsymbol{z}$.
+
+$\blacksquare$
 
 ## 10.14 (紧集与闭集之和闭, 两闭集之和未必闭)
 
@@ -374,7 +422,9 @@ $$
 
 ### 解答 10.14
 
-(1) 取序列 $a_n+b_n\in{A}+B$ 收敛到 $y$. 由**定理 6.1 (紧 $=$ 序列紧)**, $A$ 紧, 故 $\left(a_n\right)$ 有子列 $a_{n_j}\to{a}\in{A}$. 则 $b_{n_j}=\left(a_{n_j}+b_{n_j}\right)-a_{n_j}\to{y}-a$. 因 $B$ 闭, 由**定义 3.21 (闭集)**, $y-a\in{B}$. 故 $y=a+\left(y-a\right)\in{A}+B$. $A+B$ 含一切收敛序列的极限, 故闭. $\blacksquare$
+(1) 取序列 $a_n+b_n\in{A}+B$ 收敛到 $y$. 由**定理 6.1 (紧 $=$ 序列紧)**, $A$ 紧, 故 $\left(a_n\right)$ 有子列 $a_{n_j}\to{a}\in{A}$. 则 $b_{n_j}=\left(a_{n_j}+b_{n_j}\right)-a_{n_j}\to{y}-a$. 因 $B$ 闭, 由**定义 3.21 (闭集)**, $y-a\in{B}$. 故 $y=a+\left(y-a\right)\in{A}+B$. $A+B$ 含一切收敛序列的极限, 故闭.
+
+$\blacksquare$
 
 (2) 反例: 取 $A=\left\{\left(x,0\right):x\in\mathbb{R}\right\}$, $B=\left\{\left(x,1/x\right):x>0\right\}$. $A$ 与 $B$ 都闭. 但
 
@@ -382,7 +432,9 @@ $$
 A+B=\left\{\left(x+t,1/t\right):t>0\right\}=\left\{\left(u,v\right):v>0\right\},
 $$
 
-即开的上半平面, 由**定义 3.21 (闭集)** 它不是闭集. $\blacksquare$
+即开的上半平面, 由**定义 3.21 (闭集)** 它不是闭集.
+
+$\blacksquare$
 
 ## 10.15 (度量空间的完备化)
 
@@ -394,9 +446,13 @@ $$
 
 $\widehat{d}$ 良定义: 若 $\left[x_n\right]=\left[x_n'\right]$, $\left[y_n\right]=\left[y_n'\right]$, 则 $d\left(x_n,y_n\right)-d\left(x_n',y_n'\right)$ 由三角不等式趋于 $0$, 极限与代表元无关. 由**定义 6.35 (度量空间)**, $\widehat{d}$ 满足四公理. 这里等价关系中出现的 $\left\{x_n\right\}$ 是**定义 6.37 (柯西列)** 意义下的柯西列.
 
-完备: 设 $\left\{\xi_k\right\}$ 是 $\widehat{M}$ 中柯西列, $\xi_k=\left[\left(x_n^{\left(k\right)}\right)_n\right]$. 对每个 $k$, 取代表列使其前 $k$ 项稳定逼近; 对角化取 $z_k=x_k^{\left(k\right)}$. 由柯西性与三角不等式, $\left(z_k\right)$ 是 $M$ 中柯西列, 记其等价类为 $\xi$. 则 $\xi_k\to\xi$. 由**定义 6.38 (完备度量空间)**, $\widehat{M}$ 完备. $\blacksquare$
+完备: 设 $\left\{\xi_k\right\}$ 是 $\widehat{M}$ 中柯西列, $\xi_k=\left[\left(x_n^{\left(k\right)}\right)_n\right]$. 对每个 $k$, 取代表列使其前 $k$ 项稳定逼近; 对角化取 $z_k=x_k^{\left(k\right)}$. 由柯西性与三角不等式, $\left(z_k\right)$ 是 $M$ 中柯西列, 记其等价类为 $\xi$. 则 $\xi_k\to\xi$. 由**定义 6.38 (完备度量空间)**, $\widehat{M}$ 完备.
 
-稠密嵌入: 映射 $i:M\to\widehat{M}$, $i\left(x\right)=\left[\left(x,x,\dots\right)\right]$. 任意 $\xi=\left[\left(x_n\right)\right]\in\widehat{M}$, $x_n\to\xi$ 在 $\widehat{M}$ 中, 而 $x_n\in{i}\left(M\right)$. 故 $i\left(M\right)$ 的闭包为全空间, 由**定义 3.32 (稠密)** $M$ 在 $\widehat{M}$ 中稠密. 由**定义 6.39 (完备化)**, 这就是 $M$ 的完备化. $\blacksquare$
+$\blacksquare$
+
+稠密嵌入: 映射 $i:M\to\widehat{M}$, $i\left(x\right)=\left[\left(x,x,\dots\right)\right]$. 任意 $\xi=\left[\left(x_n\right)\right]\in\widehat{M}$, $x_n\to\xi$ 在 $\widehat{M}$ 中, 而 $x_n\in{i}\left(M\right)$. 故 $i\left(M\right)$ 的闭包为全空间, 由**定义 3.32 (稠密)** $M$ 在 $\widehat{M}$ 中稠密. 由**定义 6.39 (完备化)**, 这就是 $M$ 的完备化.
+
+$\blacksquare$
 
 ## 10.16 (巴拿赫空间等价于绝对收敛级数皆收敛)
 
@@ -416,14 +472,20 @@ $$
 \sum_{k=1}^{\infty}\left\|x_{n_{k+1}}-x_{n_k}\right\|<\sum_{k=1}^{\infty}2^{-k}<\infty,
 $$
 
-即 $\sum_k\left(x_{n_{k+1}}-x_{n_k}\right)$ 绝对收敛, 由假设收敛. 其部分和即 $x_{n_{k+1}}-x_{n_1}$, 故子列 $x_{n_k}$ 收敛. 由柯西列含收敛子列则全列收敛, 全列 $x_n$ 收敛. 故 $E$ 完备. $\blacksquare$
+即 $\sum_k\left(x_{n_{k+1}}-x_{n_k}\right)$ 绝对收敛, 由假设收敛. 其部分和即 $x_{n_{k+1}}-x_{n_1}$, 故子列 $x_{n_k}$ 收敛. 由柯西列含收敛子列则全列收敛, 全列 $x_n$ 收敛. 故 $E$ 完备.
 
-($\Leftarrow$) 设 $E$ 完备, $\sum_n\left\|x_n\right\|<\infty$. 部分和 $S_N=\sum_{n=1}^Nx_n$ 满足对 $M>{}N$,
+$\blacksquare$
+
+($\Leftarrow$) 设 $E$ 完备, $\sum_n\left\|x_n\right\|<\infty$. 部分和 $S_N=\sum_{n=1}^Nx_n$ 满足对 $M>N$,
 
 $$
 \left\|S_M-S_N\right\|=\left\|\sum_{n=N+1}^Mx_n\right\|\le\sum_{n=N+1}^M\left\|x_n\right\|\to0,
 $$
 
-故 $\left(S_N\right)$ 是**定义 6.37 (柯西列)**. 由**定义 6.38 (完备度量空间)**, $S_N$ 收敛, 即级数收敛. $\blacksquare$
+故 $\left(S_N\right)$ 是**定义 6.37 (柯西列)**. 由**定义 6.38 (完备度量空间)**, $S_N$ 收敛, 即级数收敛.
 
-(2) 取 $E=C\left(\left[0,1\right]\right)$ 装备 $L^1$ 范数 $\left\|f\right\|_1=\int_0^1\left|f\left(t\right)\right|\,\mathrm{d}t$, 它不完备. 构造折线函数列 $f_n$, 使 $f_n$ 从 $0$ 线性升到 $1$ 的区间长度为 $1/n$. 则 $\sum_n\left\|f_n\right\|_1<\infty$ (每段面积 $\le1/n$), 但 $\sum_nf_n$ 在 $\left(0,1\right)$ 上无界, 不作为连续函数存在. 故绝对收敛但不收敛于 $E$ 中. $\blacksquare$
+$\blacksquare$
+
+(2) 取 $E=C\left(\left[0,1\right]\right)$ 装备 $L^1$ 范数 $\left\|f\right\|_1=\int_0^1\left|f\left(t\right)\right|\,\mathrm{d}t$, 它不完备. 构造折线函数列 $f_n$, 使 $f_n$ 从 $0$ 线性升到 $1$ 的区间长度为 $1/n$. 则 $\sum_n\left\|f_n\right\|_1<\infty$ (每段面积 $\le1/n$), 但 $\sum_nf_n$ 在 $\left(0,1\right)$ 上无界, 不作为连续函数存在. 故绝对收敛但不收敛于 $E$ 中.
+
+$\blacksquare$
