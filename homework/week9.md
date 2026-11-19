@@ -280,7 +280,7 @@ $\blacksquare$
 
 > 关键是"$\Omega_\varepsilon$ 在每个子区间里都有点", 这是对每个 $J$ 单独用一次贝尔纲得到的, 这样稠密性才不依赖于整体.
 
-## 10.6 (对角线的第一步: 有界数列取收敛子列)
+## 10.6 (对角线的构造: 有界数列取收敛子列)
 
 第一部分是对角线论证. 设 $f_n\left(m\right)$ 是正整数上的函数列, 一致有界, 即存在常数 $C$ 使对一切 $n,m$ 有 $\left|f_n\left(m\right)\right|\le{C}$. 证明序列 $\left(f_n\left(1\right)\right)_{n\ge0}$ 有收敛子列 $\left(f_{n_i^{\left(1\right)}}\left(1\right)\right)_{i\ge0}$.
 
