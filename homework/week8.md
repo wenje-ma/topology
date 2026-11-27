@@ -58,7 +58,7 @@ $$
 \delta\left(x,y\right)=\left|\phi\left(x\right)-\phi\left(y\right)\right|.
 $$
 
-设 $B_\delta\left(x,r\right)=\left\{y:\delta\left(x,y\right)<r\right\}$ 与 $B\left(u,r\right)=\left\{v:\left|v-u\right|<r\right\}$. 则
+设 $B_\delta\left(x,r\right)=\left\{y:\delta\left(x,y\right)<{}r\right\}$ 与 $B\left(u,r\right)=\left\{v:\left|v-u\right|<{}r\right\}$. 则
 
 $$
 B_\delta\left(x,r\right)=\phi^{-1}\left(B\left(\phi\left(x\right),r\right)\right),

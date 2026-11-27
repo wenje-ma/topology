@@ -72,9 +72,9 @@
 
 设 $f:\mathbb{R}_{\ge0}\to\mathbb{R}$ 连续, 且对任意 $x>0$, 数列 $\left\{f\left(nx\right)\right\}_{n\ge1}$ 收敛到 $0$.
 
-(1) 设 $\Omega\subset\left(0,\infty\right)$ 是一个非平凡开集且无界. 考虑集合 $\Omega_n=\left\{x\in\mathbb{R}:\exists{}p\ge{}n, px\in\Omega\right\}$. 证明对任意 $n\ge1$, $\Omega_n$ 在 $\mathbb{R}$ 中是稠密开集;
+(1) 设 $\Omega\subset\left(0,\infty\right)$ 是一个非平凡开集且无界. 考虑集合 $\Omega_n=\left\{x\in\mathbb{R}:\exists{}p\ge{}n,px\in\Omega\right\}$. 证明对任意 $n\ge1$, $\Omega_n$ 在 $\mathbb{R}$ 中是稠密开集;
 
-(2) 利用贝尔纲定理, 证明 $\exists{}x_0, \forall{}N\in\mathbb{N}, \exists{}n\ge{}N, nx_0\in\Omega$;
+(2) 利用贝尔纲定理, 证明 $\exists{}x_0,\forall{}N\in\mathbb{N},\exists{}n\ge{}N,nx_0\in\Omega$;
 
 (3) 证明 $\lim_{x\to\infty}f\left(x\right)=0$.
 
@@ -90,10 +90,10 @@ $$
 
 因 $\Omega$ 无界且 $\Omega\subset\left(0,\infty\right)$, $\Omega_n\subset\left(0,\infty\right)$; 下面的论证给出 $\Omega_n$ 在 $\left(0,\infty\right)$ 中稠密 (**定义 1.12 (稠密与可分)**).
 
-设 $0<a<b$ 是任一开区间. 取 $y\in\Omega$ 充分大, 使 $y\left(\frac{1}{a}-\frac{1}{b}\right)>1$ (因 $\Omega$ 无界), 则区间 $\left(\frac{y}{b},\frac{y}{a}\right)$ 长度大于 $1$, 取其中整数 $p\ge{}n$, 则
+设 $0<{}a<{}b$ 是任一开区间. 取 $y\in\Omega$ 充分大, 使 $y\left(\frac{1}{a}-\frac{1}{b}\right)>1$ (因 $\Omega$ 无界), 则区间 $\left(\frac{y}{b},\frac{y}{a}\right)$ 长度大于 $1$, 取其中整数 $p\ge{}n$, 则
 
 $$
-\frac{y}{p}\in\left(a,b\right),\quad p\cdot\frac{y}{p}=y\in\Omega,
+\frac{y}{p}\in\left(a,b\right),\quad{}p\cdot\frac{y}{p}=y\in\Omega,
 $$
 
 故 $\frac{y}{p}\in\Omega_n\cap\left(a,b\right)$. 于是每个开区间都含 $\Omega_n$ 的点, 由**定义 1.11 (闭包, 内部与边界)** $\Omega_n$ 在 $\left(0,\infty\right)$ 中稠密.

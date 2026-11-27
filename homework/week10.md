@@ -57,16 +57,16 @@ $\blacksquare$
 (3) 令
 
 $$
-\mathcal{B}=\left\{B\left(c,q\right):c\in{}C, q\in\mathbb{Q}_{>0}\right\},
+\mathcal{B}=\left\{B\left(c,q\right):c\in{}C,q\in\mathbb{Q}_{>0}\right\},
 $$
 
-它是可数集 (由**定义 1.12 (稠密与可分)** 中 $C$ 可数). 验证**定义 1.6 (拓扑基)** 的条件: 每个 $B\left(c,q\right)$ 是开集; 又 $\bigcup\mathcal{B}=X$ (取 $c$ 充分接近 $x$ 与 $q$ 充分大). 加细: 设 $x\in{}B\left(c_1,q_1\right)\cap{}B\left(c_2,q_2\right)$, 令 $r=\min\left(q_1-d\left(x,c_1\right),q_2-d\left(x,c_2\right)\right)>0$, 取 $c\in{}C$ 使 $d\left(x,c\right)<\frac{r}{4}$, 取有理 $q$ 使 $\frac{r}{4}<q<\frac{r}{2}$, 则 $x\in{}B\left(c,q\right)\subset{}B\left(c_1,q_1\right)\cap{}B\left(c_2,q_2\right)$: 对 $y\in{}B\left(c,q\right)$,
+它是可数集 (由**定义 1.12 (稠密与可分)** 中 $C$ 可数). 验证**定义 1.6 (拓扑基)** 的条件: 每个 $B\left(c,q\right)$ 是开集; 又 $\bigcup\mathcal{B}=X$ (取 $c$ 充分接近 $x$ 与 $q$ 充分大). 加细: 设 $x\in{}B\left(c_1,q_1\right)\cap{}B\left(c_2,q_2\right)$, 令 $r=\min\left(q_1-d\left(x,c_1\right),q_2-d\left(x,c_2\right)\right)>0$, 取 $c\in{}C$ 使 $d\left(x,c\right)<\frac{r}{4}$, 取有理 $q$ 使 $\frac{r}{4}<{}q<\frac{r}{2}$, 则 $x\in{}B\left(c,q\right)\subset{}B\left(c_1,q_1\right)\cap{}B\left(c_2,q_2\right)$: 对 $y\in{}B\left(c,q\right)$,
 
 $$
-d\left(y,c_1\right)\le{}d\left(y,c\right)+d\left(c,x\right)+d\left(x,c_1\right)<\frac{r}{2}+\frac{r}{4}+\left(q_1-r\right)<q_1,
+d\left(y,c_1\right)\le{}d\left(y,c\right)+d\left(c,x\right)+d\left(x,c_1\right)<\frac{r}{2}+\frac{r}{4}+\left(q_1-r\right)<{}q_1,
 $$
 
-同法得 $d\left(y,c_2\right)<q_2$. 故 $\mathcal{B}$ 是某拓扑的基; 而由**定理 1.7 (基判据)** 该拓扑与 $X$ 的原拓扑相同 (每个开集都含 $x$ 处的 $\mathcal{B}$ 元素). 故 $X$ 有可数基.
+同法得 $d\left(y,c_2\right)<{}q_2$. 故 $\mathcal{B}$ 是某拓扑的基; 而由**定理 1.7 (基判据)** 该拓扑与 $X$ 的原拓扑相同 (每个开集都含 $x$ 处的 $\mathcal{B}$ 元素). 故 $X$ 有可数基.
 
 $\blacksquare$
 

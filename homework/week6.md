@@ -40,11 +40,11 @@
 
 (1) 给定图 $G$. 记 $X$ 为所有从 $V$ 到 $\left\{1,\dots,k\right\}$ 的函数之集. 证明 $X=\left\{1,\dots,k\right\}^{\left|V\right|}$, 且若 $\left\{1,\dots,k\right\}$ 赋离散拓扑, 则 $X$ 在乘积拓扑下紧致;
 
-(2) 对 $F\subset{}E$ 记 $X_F=\left\{f:V\to\left\{1,\dots,k\right\}:f\text{ 是子图 }\left(V,F\right)\text{ 的 }k\text{ 染色}\right\}$. 证明若 $F=\left\{\left(x,y\right)\right\}$ 只有一条边, 则 $X_F$ 闭;
+(2) 对 $F\subset{}E$ 记 $X_F=\left\{f:V\to\left\{1,\dots,k\right\}:f\text{~是子图~}\left(V,F\right)\text{~的~}k\text{~染色}\right\}$. 证明若 $F=\left\{\left(x,y\right)\right\}$ 只有一条边, 则 $X_F$ 闭;
 
 (3) 证明对任意 $F\subset{}E$, $X_F$ 都闭;
 
-(4) 设 $G$ 的所有有限子图都可 $k$ 染色, $\mathcal{F}=\left\{X_F:F\subset{}E\text{ 有限}\right\}$. 证明 $\mathcal{F}$ 中有限个元素之交非空, 再证明 $\mathcal{F}$ 中所有元素之交非空;
+(4) 设 $G$ 的所有有限子图都可 $k$ 染色, $\mathcal{F}=\left\{X_F:F\subset{}E\text{~有限}\right\}$. 证明 $\mathcal{F}$ 中有限个元素之交非空, 再证明 $\mathcal{F}$ 中所有元素之交非空;
 
 (5) 证明德布鲁因-埃尔德什定理: 若 $G$ 的任意有限子图都可 $k$ 染色, 则 $G$ 可 $k$ 染色.
 

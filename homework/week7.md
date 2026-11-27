@@ -32,7 +32,7 @@
 
 设 $f:\mathbb{R}_{\ge0}\to\mathbb{R}$ 是一个连续函数, 并且对任意的 $x>0$, 数列 $\left\{f\left(nx\right)\right\}_{n\ge1}$ 都收敛到 $0$.
 
-(1) 取定 $\epsilon>0$, 考虑集合 $F_n=\left\{x\ge0:\forall{}p\in\mathbb{N}, p\ge{}n, \left|f\left(px\right)\right|\le\epsilon\right\}$. 证明对任意 $n\ge0$, $F_n$ 都是闭集;
+(1) 取定 $\epsilon>0$, 考虑集合 $F_n=\left\{x\ge0:\forall{}p\in\mathbb{N},p\ge{}n,\left|f\left(px\right)\right|\le\epsilon\right\}$. 证明对任意 $n\ge0$, $F_n$ 都是闭集;
 
 (2) 证明所有 $F_n$ 的并包含 $\left(0,\infty\right)$;
 
@@ -56,7 +56,7 @@ $\blacksquare$
 
 $\blacksquare$
 
-(3) 设 $\epsilon>0$. 记 $G_n=F_n\cap\left[1,\infty\right)$. 由**命题 4.8 ($\mathbb{R}^n$ 完备)** 与**定理 4.6 (完备空间的闭子集完备)**, $\left[1,\infty\right)$ 完备; $G_n$ 是 $\left[1,\infty\right)$ 中的闭集且在 $\epsilon$ 固定时随 $n$ 递增. 由第 (2) 小题 $\bigcup_nG_n\supset\left[1,\infty\right)$, 故由**推论 4.11 (递增闭集的覆盖)** 存在 $N$ 使 $G_N$ 在 $\left[1,\infty\right)$ 中有内点, 即存在 $1\le{}c<d$ 使 $\left(c,d\right)\subset{}G_N\subset{}F_N$.
+(3) 设 $\epsilon>0$. 记 $G_n=F_n\cap\left[1,\infty\right)$. 由**命题 4.8 ($\mathbb{R}^n$ 完备)** 与**定理 4.6 (完备空间的闭子集完备)**, $\left[1,\infty\right)$ 完备; $G_n$ 是 $\left[1,\infty\right)$ 中的闭集且在 $\epsilon$ 固定时随 $n$ 递增. 由第 (2) 小题 $\bigcup_nG_n\supset\left[1,\infty\right)$, 故由**推论 4.11 (递增闭集的覆盖)** 存在 $N$ 使 $G_N$ 在 $\left[1,\infty\right)$ 中有内点, 即存在 $1\le{}c<{}d$ 使 $\left(c,d\right)\subset{}G_N\subset{}F_N$.
 
 对 $x>Nc$, 区间 $\left(\frac{x}{d},\frac{x}{c}\right)$ 长度为正, 取其中的整数 $p\ge{}N$, 则 $\frac{x}{p}\in\left(c,d\right)\subset{}F_N$, 且 $p\ge{}N$, 故由 $F_N$ 的定义 $\left|f\left(x\right)\right|=\left|f\left(p\cdot\frac{x}{p}\right)\right|\le\epsilon$.
 

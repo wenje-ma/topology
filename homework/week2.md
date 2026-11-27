@@ -48,7 +48,7 @@
 
 考虑一个可微的函数 $f:\mathbb{R}\to\mathbb{R}$, 不假设 $f'$ 连续. 考虑 $\mathbb{R}$ 上的非平凡开区间 $I$.
 
-(1) 考虑集合 $A=\left\{\left(x,y\right)\in{}I^2:x<y\right\}$. 证明 $A$ 在最自然的拓扑下是连通集;
+(1) 考虑集合 $A=\left\{\left(x,y\right)\in{}I^2:x<{}y\right\}$. 证明 $A$ 在最自然的拓扑下是连通集;
 
 (2) 考虑在 $A$ 上定义的实函数 $F\left(x,y\right)=\frac{f\left(x\right)-f\left(y\right)}{x-y}$. 证明 $\Gamma=F\left(A\right)$ 是 $\mathbb{R}$ 中的连通集;
 
@@ -66,7 +66,7 @@ $$
 \left(1-t\right)x_1+tx_2<\left(1-t\right)y_1+ty_2
 $$
 
-是 $x_1<y_1$ 与 $x_2<y_2$ 的非负系数加权和, 故组合点属于 $A$. 由**定义 2.3 (凸集)**, $A$ 凸; 由**命题 2.4 (凸集路径连通)** $A$ 路径连通; 由**定理 2.5 (路径连通蕴含连通)** $A$ 连通.
+是 $x_1<{}y_1$ 与 $x_2<{}y_2$ 的非负系数加权和, 故组合点属于 $A$. 由**定义 2.3 (凸集)**, $A$ 凸; 由**命题 2.4 (凸集路径连通)** $A$ 路径连通; 由**定理 2.5 (路径连通蕴含连通)** $A$ 连通.
 
 $\blacksquare$
 
@@ -74,7 +74,7 @@ $\blacksquare$
 
 $\blacksquare$
 
-(3) 设 $x<y$ 属于 $I$. 由微分中值定理, 存在 $c\in\left(x,y\right)\subset{}I$ 使
+(3) 设 $x<{}y$ 属于 $I$. 由微分中值定理, 存在 $c\in\left(x,y\right)\subset{}I$ 使
 
 $$
 F\left(x,y\right)=\frac{f\left(x\right)-f\left(y\right)}{x-y}=f'\left(c\right),
@@ -94,6 +94,6 @@ $\blacksquare$
 
 (4) 由第 (2) 小题与**定理 2.6 (夹逼与闭包保持连通)**, $\overline{\Gamma}$ 连通, 由**命题 1.1 ($\mathbb{R}$ 中的连通集与紧集)** 它是区间.
 
-设 $a<b$ 属于 $f'\left(I\right)$, $c\in\left(a,b\right)$ 而 $c\notin{}f'\left(I\right)$. 由第 (3) 小题, $\Gamma\subset{}f'\left(I\right)\subset\mathbb{R}-\left\{c\right\}=\left(-\infty,c\right)\cup\left(c,+\infty\right)$, 右端是两个不交开集之并, 故由**定义 2.1 (连通空间)** 与 $\Gamma$ 连通, $\Gamma$ 落在其中一个, 设 $\Gamma\subset\left(-\infty,c\right)$. 集合 $\left(-\infty,c\right]$ 闭, 由**定义 1.11 (闭包, 内部与边界)** $\overline{\Gamma}\subset\left(-\infty,c\right]$, 于是 $f'\left(I\right)\subset\left(-\infty,c\right]$, 与 $b>c$ 矛盾. 故 $f'\left(I\right)$ 中任意两点的中间点仍属于它, 由**命题 1.1 ($\mathbb{R}$ 中的连通集与紧集)** 它是区间.
+设 $a<{}b$ 属于 $f'\left(I\right)$, $c\in\left(a,b\right)$ 而 $c\notin{}f'\left(I\right)$. 由第 (3) 小题, $\Gamma\subset{}f'\left(I\right)\subset\mathbb{R}-\left\{c\right\}=\left(-\infty,c\right)\cup\left(c,+\infty\right)$, 右端是两个不交开集之并, 故由**定义 2.1 (连通空间)** 与 $\Gamma$ 连通, $\Gamma$ 落在其中一个, 设 $\Gamma\subset\left(-\infty,c\right)$. 集合 $\left(-\infty,c\right]$ 闭, 由**定义 1.11 (闭包, 内部与边界)** $\overline{\Gamma}\subset\left(-\infty,c\right]$, 于是 $f'\left(I\right)\subset\left(-\infty,c\right]$, 与 $b>c$ 矛盾. 故 $f'\left(I\right)$ 中任意两点的中间点仍属于它, 由**命题 1.1 ($\mathbb{R}$ 中的连通集与紧集)** 它是区间.
 
 $\blacksquare$
